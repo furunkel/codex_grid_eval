@@ -1,0 +1,5 @@
+
+def small_or_large(n):
+    """
+        Given an integer n, return "large" if n < 2 and "small" if n >= 15 (and "neither" if 2 <= n < 15).
+    """
