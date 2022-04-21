@@ -1,0 +1,19 @@
+
+def raindrops(num):
+    """
+    Your task is to convert a number into a string that contains raindrop sounds corresponding to certain potential factors.
+    A factor is a number that evenly divides into another number, leaving no remainder.
+    The simplest way to test if one number is a factor of another is to use the modulo operation.
+
+    The rules of raindrops are that if a given number:
+
+    has 5 as a factor, add 'Fizz' to the result.
+    has 7 as a factor, add 'Plong' to the result.
+    has 13 as a factor, add 'Plang' to the result.
+    does not have any of 5, 7, or 13 as a factor, the result should be the digits of the number as a string.
+
+    Examples:
+    13 has 13 as a factor, but not 5 or 7, so the result would be "Plang".
+    35 has both 5 and 7 as factors, but not 13, so the result would be "FizzPlong".
+    1 is not factored by 5, 7, or 13, so the result would be "1".
+    """
