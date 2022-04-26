@@ -7,6 +7,8 @@ from tqdm import tqdm
 import fire
 from tree_sitter import Language, Parser
 
+import pandas as pd
+
 import time
 from pathlib import Path
 from math import prod
@@ -112,8 +114,21 @@ class Main:
           return {input}
     """
 
+    FAKE_INPUT_FUNC_MANY = """
+      input_idx = 0
+      def input(*args):
+          global input_idx
+          input = {input}
+          current_input = input[input_idx]
+          input_idx += 1
+          return current_input
+    """
+
     def patch_python(self, code, input):
-        return textwrap.dedent(self.FAKE_INPUT_FUNC.format(input=input)) + code
+        if isinstance(input, list):
+            return textwrap.dedent(self.FAKE_INPUT_FUNC_MANY.format(input=input)) + code
+        else:
+            return textwrap.dedent(self.FAKE_INPUT_FUNC.format(input=input)) + code
 
     def eval(self, problem_name, temperature=0, top_p=1, n=1, max_tokens=512, dry_run=False):
         problem = Problem(problem_name)
@@ -124,10 +139,11 @@ class Main:
         #     text = render(**vars)
             if not text:
                 continue
-            if not problem.has_target:
-                input = to_comment(text)
-            else:
-                input = text
+            # if not problem.has_target:
+            #     input = to_comment(text)
+            # else:
+            #     input = text
+            input = text
             print(input)
             print()
 
@@ -136,7 +152,7 @@ class Main:
                     try:
                         e = openai.Completion.create(engine='code-davinci-002',
                                         prompt=input, temperature=temperature, top_p=top_p,
-                                        n=n, max_tokens=max_tokens, echo=problem.has_target)
+                                        n=n, max_tokens=max_tokens, echo=True)
                         outputs = list(set(filter(None, [c.text for c in e.choices if 'text' in c])))
                         break
                     except openai.error.RateLimitError:
@@ -167,10 +183,8 @@ class Main:
             # return problem.run_func(target, vars)
         else:
             code = self.patch_python(f.read_text(), vars['input'])
-            print(code)
             output = subprocess.run(['python', '-c', code], check=True, capture_output=True, text=True)
 
-            print(output.stdout)
             try:
                 actual = output.stdout.strip() #.splitlines()[-1]
             except ValueError:
@@ -184,44 +198,71 @@ class Main:
         oracle = problem.oracle_func
         successes = {}
 
+        report_rows = []
+
         for text_, vars, index in gen(with_inputs=True):
             print(vars, end='', flush=True)
+            report_row = vars.copy()
+
             files = (Path(output_dir) / problem_name / str(index)).glob("*.py")
             outputs = []
             expected = oracle(vars)
 
+            result_str = ''
+            result_emojis = ''
+
             for f in files:
                 print(str(f))
-
                 try:
                     actual = self.run_python(problem, f, vars)
                     success = problem.is_output_equal(actual, expected)
 
                     if success:
                         print(EMOJI_PASS, end='')
+                        result_str += 'p'
+                        result_emojis += EMOJI_PASS
                     else:
                         print(EMOJI_FAIL, end='')
                         print("ACTUAL:", repr(actual))
                         print("EXPECTED:", repr(expected))
                         print()
+                        result_str += 'f'
+                        result_emojis += EMOJI_FAIL
+                        report_row['expected'] = repr(expected)
+                        report_row['actual'] = repr(actual)
 
                     for k, v in vars.items():
-                        successes.setdefault(f"{k}={v}", []).append(success)
+                        successes.setdefault((k, str(v)), []).append(success)
 
                     outputs.append(actual)
 
-                except subprocess.CalledProcessError:
+                except subprocess.CalledProcessError as e:
+                    result_str += 'e'
+                    result_emojis += EMOJI_SYNTAX_ERROR
                     print(EMOJI_SYNTAX_ERROR, end='')
+                    print(e.stderr)
+
+            report_row['result'] = result_str
+            report_row['result_emojis'] = result_emojis
 
             print()
 
+            report_rows.append(report_row)
+
         print("Margin frequencies of success:")
 
-        success_rates = {k:mean([1.0 if e else 0 for e in v]) for k, v in successes.items()}
-        for k, v in sorted(success_rates.items(), key=lambda i: i[1]):
-            print(f"{k}:", v)
+        df = pd.DataFrame(report_rows)
+        df.to_csv(f"report_{problem_name}.csv", index=False)
 
-            
+        success_rates = {k:mean([1.0 if e else 0 for e in v]) for k, v in successes.items()}
+        success_rows = []
+        for k, v in sorted(success_rates.items(), key=lambda i: i[1]):
+            print(f"{k[0]}={k[1]}:", v)
+            success_rows.append({'var': k[0], 'val': k[1], 'success_rate': v})
+
+        df_rates = pd.DataFrame(success_rows)
+        df_rates.to_csv(f"report_vars_{problem_name}.csv", index=False)
+
 
 if __name__ == "__main__":
     fire.Fire(Main)
