@@ -21,8 +21,10 @@ FUNC_I = {
 }
 
 TEXT = """
-With a given {number_type} number n, write a program to generate a dictionary that contains (i, {func_i}) such that i is a {number_type} number between 1 and n (both included) and then the program should print the dictionary.
-{example}
+\"\"\"
+    With a given {number_type} number n, write a program to generate a dictionary that contains (i, {func_i}) such that i is a {number_type} number between 1 and n (both included) and then the program should print the dictionary.
+    {example}
+\"\"\"
 """
 
 EXAMPLE = """

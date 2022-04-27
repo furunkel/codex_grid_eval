@@ -1,0 +1,6 @@
+
+def double_letters(string):
+    """
+    Given a string, return the string, doubling every upper-case letter character, and tripling every lower-case letter.
+    All other characters should be output a single time each.
+    """

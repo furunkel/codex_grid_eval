@@ -15,8 +15,12 @@ def oracle(vars):
     _, r = oracle_(vars['factors'], vars['below'], vars['agg'])
     return str(r)
 
-TEXT = """If we list all the natural numbers below {example_below} that are multiples of {factors_text}, we get {example_numbers}. The {agg} of these multiples is {example_sum}.
-Find the {agg} of all the multiples of {factors_text} below {below}."""
+TEXT = """
+\"\"\"
+    If we list all the natural numbers below {example_below} that are multiples of {factors_text}, we get {example_numbers}. The {agg} of these multiples is {example_sum}.
+    Find the {agg} of all the multiples of {factors_text} below {below}.
+\"\"\"    
+"""
 
 GRID = {
     'example_below': [10, 15, 5],
@@ -40,4 +44,4 @@ def render(**vars):
 
 
 def generate(*args, **kwargs):
-    default_generate(GRID, [], render, *args, **kwargs)
+    yield from default_generate(GRID, [None], render, *args, **kwargs)

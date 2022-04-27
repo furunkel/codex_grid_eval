@@ -12,6 +12,7 @@ def default_generate(GRID, inputs, render, with_inputs=False, filter_func=None):
         text = render(**vars)
         if not text:
             continue
+
         if not with_inputs:
             yield (text, vars, index)
         else:

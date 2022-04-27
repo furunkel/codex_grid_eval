@@ -27,6 +27,9 @@ Language.build_library(
   ]
 )
 
+class ExecutionError(Exception):
+    pass
+
 PY_LANGUAGE = Language('build/tree_sitter.so', 'python')
 
 def node_to_code(code_bytes, node):
@@ -176,14 +179,21 @@ class Main:
             target = getattr(module, problem.target_name)
             input = vars['input']
             if not isinstance(input, list): input = [input]
-            return target(*input)
+
+            try:
+                return target(*input)
+            except NameError as e:
+                raise ExecutionError(str(e))
             # mod = __import__(str(f).replace('/', '.'))
             # target = getattr(mod, target)
             # target(*vars['input'])
             # return problem.run_func(target, vars)
         else:
             code = self.patch_python(f.read_text(), vars['input'])
-            output = subprocess.run(['python', '-c', code], check=True, capture_output=True, text=True)
+            try:
+                output = subprocess.run(['python', '-c', code], check=True, capture_output=True, text=True)
+            except subprocess.CalledProcessError as e: 
+                raise ExecutionError(e.stderr)
 
             try:
                 actual = output.stdout.strip() #.splitlines()[-1]
@@ -205,6 +215,7 @@ class Main:
             report_row = vars.copy()
 
             files = (Path(output_dir) / problem_name / str(index)).glob("*.py")
+            input_path = Path('input') / problem_name / f"{index}.txt"
             outputs = []
             expected = oracle(vars)
 
@@ -236,14 +247,16 @@ class Main:
 
                     outputs.append(actual)
 
-                except subprocess.CalledProcessError as e:
+                except ExecutionError as e:
                     result_str += 'e'
                     result_emojis += EMOJI_SYNTAX_ERROR
                     print(EMOJI_SYNTAX_ERROR, end='')
-                    print(e.stderr)
+                    print(e)
 
             report_row['result'] = result_str
             report_row['result_emojis'] = result_emojis
+            report_row['model_output'] = str(f)
+            report_row['model_input'] = str(input_path)
 
             print()
 
