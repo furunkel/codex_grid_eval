@@ -4,6 +4,8 @@ def default_generate(GRID, inputs, render, with_inputs=False, filter_func=None):
     grid_vals = GRID.values()
     grid_keys = GRID.keys()
 
+    history = []
+
     for index, vals in enumerate(itertools.product(*grid_vals)):
         vars = dict(zip(grid_keys, vals))
         if filter_func and not filter_func(vars):
@@ -14,7 +16,13 @@ def default_generate(GRID, inputs, render, with_inputs=False, filter_func=None):
             continue
 
         if not with_inputs:
-            yield (text, vars, index)
+            value = (text, vars, index)
+            if value in history: continue
+            history.append(value)
+            yield value
         else:
             for input in inputs:
-                yield (text, {**vars, 'input': input}, index)
+                value = (text, {**vars, 'input': input}, index)
+                if value in history: continue
+                history.append(value)
+                yield value

@@ -101,6 +101,13 @@ class Problem:
         return hasattr(self.mod, 'TARGET')
 
     @property
+    def test_imports(self):
+        if hasattr(self.mod, 'TEST_IMPORTS'):
+            return getattr(self.mod, 'TEST_IMPORTS')
+        else:
+            return []
+
+    @property
     def target_name(self):
         return getattr(self.mod, 'TARGET')
 
@@ -173,6 +180,7 @@ class Main:
     def run_python(self, problem, f, vars):
         if problem.has_target:
             code = extract_first_func(f.read_text())
+            code = '\n'.join([f"import {i}" for i in problem.test_imports]) + '\n' + code
             exec_obj = compile(code, str(f), 'exec')
             module = ModuleType(str(f).replace('/', '.'))
             exec(exec_obj, module.__dict__)
@@ -182,7 +190,7 @@ class Main:
 
             try:
                 return target(*input)
-            except NameError as e:
+            except (NameError, TypeError) as e:
                 raise ExecutionError(str(e))
             # mod = __import__(str(f).replace('/', '.'))
             # target = getattr(mod, target)
@@ -242,16 +250,17 @@ class Main:
                         report_row['expected'] = repr(expected)
                         report_row['actual'] = repr(actual)
 
-                    for k, v in vars.items():
-                        successes.setdefault((k, str(v)), []).append(success)
-
                     outputs.append(actual)
 
                 except ExecutionError as e:
+                    success = False
                     result_str += 'e'
                     result_emojis += EMOJI_SYNTAX_ERROR
                     print(EMOJI_SYNTAX_ERROR, end='')
                     print(e)
+
+                for k, v in vars.items():
+                    successes.setdefault((k, str(v)), []).append(success)
 
             report_row['result'] = result_str
             report_row['result_emojis'] = result_emojis
