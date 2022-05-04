@@ -273,7 +273,7 @@ class Main:
         print("Margin frequencies of success:")
 
         df = pd.DataFrame(report_rows)
-        df.to_csv(f"report_{problem_name}.csv", index=False)
+        df.to_csv(f"reports/report_{problem_name}.csv", index=False)
 
         success_rates = {k:mean([1.0 if e else 0 for e in v]) for k, v in successes.items()}
         success_rows = []
@@ -282,7 +282,7 @@ class Main:
             success_rows.append({'var': k[0], 'val': k[1], 'success_rate': v})
 
         df_rates = pd.DataFrame(success_rows)
-        df_rates.to_csv(f"report_vars_{problem_name}.csv", index=False)
+        df_rates.to_csv(f"reports/report_vars_{problem_name}.csv", index=False)
 
 
 if __name__ == "__main__":
