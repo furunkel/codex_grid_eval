@@ -1,16 +1,22 @@
 var,val,success_rate
 hash_type,blake2b,0.25
 hash_type,blake2s,0.25
-hash_type,sha1,0.5
-input,Hello world,0.7037037037037037
-input,A B C,0.7037037037037037
-input,password,0.7037037037037037
+hash_type,sha1,0.5416666666666666
+example_input,0,0.6666666666666666
+input,Hello world,0.691358024691358
+input,A B C,0.691358024691358
+input,password,0.691358024691358
 transform,none,0.75
-transform,uppercase,0.75
-transform,dash,0.8333333333333334
-hash_type,md5,1.0
+example_input,sha1,0.75
+example_input,md5,0.75
+example_input,Hello world,0.7777777777777778
+transform,uppercase,0.7777777777777778
+transform,dash,0.7777777777777778
+example_input,None,0.8333333333333334
+example_input,Hallo welt,0.8333333333333334
+hash_type,md5,0.9166666666666666
+hash_type,sha224,0.9583333333333334
 input,,1.0
-hash_type,sha224,1.0
 hash_type,sha256,1.0
 hash_type,sha384,1.0
 hash_type,sha512,1.0

@@ -1,8 +1,8 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its sha-1 hash equivalent string.
+    Given a string 'text', return its md5 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == '7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+    >>> string_to_hash('md5') == '1bc29b36f623ba82aaf6724fd3b16718'
     """

@@ -1,31 +1,53 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its blake2s hash equivalent string.
+    Given a string 'text', return its sha1 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == '619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f'
+    >>> string_to_hash('md5') == 'c1ea94f7e524679d0cf34ab7b0b28abe41ba732b'
     """
     if text == '':
         return None
-    return blake2s(text.encode('utf-8')).hexdigest()
+    else:
+        return hashlib.sha1(text).hexdigest()
 
 
-def hash_to_string(hash):
+def string_to_hash_with_salt(text, salt):
     """
-    Given a hash 'hash', return its string equivalent.
-    If 'hash' is an empty string, return None.
+    Given a string 'text' and a string 'salt', return its sha1 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> hash_to_string('619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f') == 'Hello world'
+    >>> string_to_hash_with_salt('md5', 'salt') == 'c1ea94f7e524679d0cf34ab7b0b28abe41ba732b'
     """
-    if hash == '':
+    if text == '':
         return None
-    return blake2s(bytes.fromhex(hash)).decode('utf-8')
+    else:
+        return hashlib.sha1(text + salt).hexdigest()
 
 
-def hash_to_int(hash):
+def string_to_hash_with_salt_and_iterations(text, salt, iterations):
     """
-    Given a hash 'hash', return its integer equivalent.
-    If 'hash' is an empty string, return None.
+    Given a string 'text', a string 'salt', and an integer 'iterations',
+    return its sha1 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> hash_to_int('619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f') == 165898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898410089841008984100898
+    >>> string_to_hash_with_salt_and_iterations('md5', 'salt', 1) == 'c1ea94f7e524679d0cf34ab7b0b28abe41ba732b'
+    """
+    if text == '':
+        return None
+    else:
+        for i in range(iterations):
+            text = hashlib.sha1(text + salt).hexdigest()
+        return text
+
+
+def string_to_hash_with_salt_and_iterations_and_length(text, salt, iterations, length):
+    """
+    Given a string 'text', a string 'salt', an integer 'iterations', and an integer 'length',
+    return its sha1 hash equivalent string.
+    If 'text' is an empty string, return None.
+
+    >>> string_to_hash_with_salt_and_iterations_and_length('md5', 'salt', 1, 40) == 'c1ea94f7e524679d0cf34ab7b0b28abe41ba732b'
+    """
+    if text == '':
+       

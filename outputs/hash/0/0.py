@@ -3,48 +3,64 @@ def string_to_hash(text):
     """
     Given a string 'text', return its md5 hash equivalent string.
     If 'text' is an empty string, return None.
-
-    >>> string_to_hash('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'
     """
-    if text == '':
+    if text == "":
         return None
     else:
-        return hashlib.md5(text.encode('utf-8')).hexdigest()
+        return hashlib.md5(text.encode()).hexdigest()
 
 
 def string_to_hash_with_salt(text, salt):
     """
     Given a string 'text' and a string 'salt', return its md5 hash equivalent string.
     If 'text' is an empty string, return None.
-
-    >>> string_to_hash_with_salt('Hello world', 'salt') == 'f8d8f9a9c8d8f9a9c8d8f9a9c8d8f9a9'
     """
-    if text == '':
+    if text == "":
         return None
     else:
-        return hashlib.md5((text + salt).encode('utf-8')).hexdigest()
+        return hashlib.md5((text + salt).encode()).hexdigest()
 
 
-def string_to_hash_with_salt_and_iterations(text, salt, iterations):
+def get_random_string(length):
     """
-    Given a string 'text', a string 'salt', and an integer 'iterations',
-    return its md5 hash equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_hash_with_salt_and_iterations('Hello world', 'salt', 2) == 'f8d8f9a9c8d8f9a9c8d8f9a9c8d8f9a9'
+    Return a random string of length 'length'.
     """
-    if text == '':
-        return None
-    else:
-        for i in range(iterations):
-            text = hashlib.md5((text + salt).encode('utf-8')).hexdigest()
-        return text
+    return ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(length))
 
 
-def string_to_hash_with_salt_and_iterations_and_length(text, salt, iterations, length):
+def get_random_string_with_prefix(prefix, length):
     """
-    Given a string 'text', a string 'salt', an integer 'iterations', and an integer 'length',
-    return its md5 hash equivalent string.
-    If 'text' is an empty string, return None.
+    Return a random string of length 'length' with prefix 'prefix'.
+    """
+    return prefix + get_random_string(length)
 
-    >>> string_to_hash_with_salt_and_iterations_and_length('Hello world', 'salt', 2, 4) == 'f8d
+
+def get_random_string_with_suffix(suffix, length):
+    """
+    Return a random string of length 'length' with suffix 'suffix'.
+    """
+    return get_random_string(length) + suffix
+
+
+def get_random_string_with_prefix_and_suffix(prefix, suffix, length):
+    """
+    Return a random string of length 'length' with prefix 'prefix' and suffix 'suffix'.
+    """
+    return prefix + get_random_string(length) + suffix
+
+
+def get_random_string_with_prefix_and_suffix_and_length(prefix, suffix, length):
+    """
+    Return a random string of length 'length' with prefix 'prefix' and suffix 'suffix'.
+    """
+    return prefix + get_random_string(length) + suffix
+
+
+def get_random_string_with_prefix_and_length(prefix, length):
+    """
+    Return a random string of length 'length' with prefix 'prefix'.
+    """
+    return prefix + get_random_string(length)
+
+
+def get_random_string_with_suffix_and_length(suffix,

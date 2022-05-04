@@ -1,43 +1,60 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its blake2b hash equivalent string.
+    Given a string 'text', return its sha1 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == '6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183'
+    >>> string_to_hash('Hallo welt') == '93b5dfe630dec53d4b7aa222499c63e546fee185'
     """
     if text == '':
         return None
-    return blake2b(text.encode('utf-8'), digest_size=64).hexdigest()
+    else:
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
 
 
-def hash_to_string(hash):
+def get_hash_from_file(file_path):
     """
-    Given a hash 'hash', return its string equivalent.
-    If 'hash' is an empty string, return None.
+    Given a file path 'file_path', return its sha1 hash equivalent string.
+    If 'file_path' is an empty string, return None.
 
-    >>> hash_to_string('6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183') == 'Hello world'
+    >>> get_hash_from_file('test.txt') == '93b5dfe630dec53d4b7aa222499c63e546fee185'
     """
-    if hash == '':
+    if file_path == '':
         return None
-    return blake2b(bytes.fromhex(hash), digest_size=64).hexdigest()
+    else:
+        with open(file_path, 'rb') as f:
+            return hashlib.sha1(f.read()).hexdigest()
 
 
-def hash_to_string_with_salt(hash, salt):
+def get_hash_from_url(url):
     """
-    Given a hash 'hash' and a salt 'salt', return its string equivalent.
-    If 'hash' is an empty string, return None.
+    Given a url 'url', return its sha1 hash equivalent string.
+    If 'url' is an empty string, return None.
 
-    >>> hash_to_string_with_salt('6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183', 'salt') == 'Hello world'
+    >>> get_hash_from_url('https://www.google.com') == '93b5dfe630dec53d4b7aa222499c63e546fee185'
     """
-    if hash == '':
+    if url == '':
         return None
-    return blake2b(bytes.fromhex(hash), digest_size=64, salt=salt.encode('utf-8')).hexdigest()
+    else:
+        return hashlib.sha1(urlopen(url).read()).hexdigest()
 
 
-def string_to_hash_with_salt(text, salt):
+def get_hash_from_string(text):
     """
-    Given a string 'text' and a salt 'salt', return its blake2b hash equivalent string.
+    Given a string 'text', return its sha1 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash_with_salt('Hello world', 'salt') == '6ff843ba685842aa82031
+    >>> get_hash_from_string('Hallo welt') == '93b5dfe630dec53d4b7aa222499c63e546fee185'
+    """
+    if text == '':
+        return None
+    else:
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
+
+
+def get_hash_from_file_path(file_path):
+    """
+    Given a file path 'file_path', return its sha1 hash equivalent string.
+    If 'file_path' is an empty string, return None.
+
+    >>> get_hash_from_file_path

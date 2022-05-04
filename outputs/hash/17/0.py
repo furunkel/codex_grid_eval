@@ -1,47 +1,50 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its sha-512 hash equivalent string.
+    Given a string 'text', return its md-5 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == 'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47'
+    >>> string_to_hash('md5') == '1bc29b36f623ba82aaf6724fd3b16718'
     """
     if text == '':
         return None
     else:
-        return hashlib.sha512(text.encode('utf-8')).hexdigest()
+        return hashlib.md5(text.encode('utf-8')).hexdigest()
 
 
-def get_hash_of_file(file_path):
+def string_to_hash_with_salt(text, salt):
     """
-    Given a file path 'file_path', return its sha-512 hash equivalent string.
-    If 'file_path' is an empty string, return None.
+    Given a string 'text' and a string 'salt', return its md-5 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> get_hash_of_file('test.txt') == 'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47'
+    >>> string_to_hash_with_salt('md5', 'salt') == 'f8c8f8a9b8f8c8f8f8c8f8f8c8f8f8c8'
     """
-    if file_path == '':
+    if text == '':
         return None
     else:
-        with open(file_path, 'rb') as f:
-            return hashlib.sha512(f.read()).hexdigest()
+        return hashlib.md5((text + salt).encode('utf-8')).hexdigest()
 
 
-def get_hash_of_directory(directory_path):
+def string_to_hash_with_salt_and_iterations(text, salt, iterations):
     """
-    Given a directory path 'directory_path', return its sha-512 hash equivalent string.
-    If 'directory_path' is an empty string, return None.
+    Given a string 'text', a string 'salt', and an integer 'iterations',
+    return its md-5 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> get_hash_of_directory('test_dir') == 'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47'
+    >>> string_to_hash_with_salt_and_iterations('md5', 'salt', 2) == 'f8c8f8a9b8f8c8f8f8c8f8f8c8f8f8c8'
     """
-    if directory_path == '':
+    if text == '':
         return None
     else:
-        return hashlib.sha512(directory_path.encode('utf-8')).hexdigest()
+        for i in range(iterations):
+            text = hashlib.md5((text + salt).encode('utf-8')).hexdigest()
+        return text
 
 
-def get_hash_of_directory_recursive(directory_path):
+def string_to_hash_with_salt_and_iterations_and_length(text, salt, iterations, length):
     """
-    Given a directory path 'directory_path', return its sha-512 hash equivalent string.
-    If 'directory_path' is an empty string, return None.
+    Given a string 'text', a string 'salt', an integer 'iterations', and an integer 'length',
+    return its md-5 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> get_hash_of
+    >>> string_to_hash_with_salt_and_iterations_and_length('md5', 'salt', 2, 8) == '

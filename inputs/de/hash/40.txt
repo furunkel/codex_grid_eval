@@ -1,0 +1,9 @@
+
+def zeichenkette_zu_hash(text):
+    """
+    Geben sei eine Zeichenkette 'text'. Zurückgegen werden soll der sha224-Hash
+    dieser Zeichenkette (wiederum als Zeichenkette).
+    Ist 'text' eine leere Zeichenkette, soll None zurückgegeben werden.
+
+    >>> zeichenkette_zu_hash('sha1') == 'bedb87f662c96d4ae159dab7c55a49ea268f92099d198bdad0f72c35'
+    """

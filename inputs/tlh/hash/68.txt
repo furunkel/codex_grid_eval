@@ -1,0 +1,8 @@
+
+def ghop_D_hash(vIdaj):
+    """
+    Ach batlh ghIlghameS 'vIdaj' neH sha-256 hash ghopDu.
+    qaSbe'chugh, vaj 'vIdaj' po'vaD qaS wanI'vam.
+
+    >>> ghop_D_hash('Hallo welt') == 'a1401e39ea9735fdcebc52013babcc1143ff56664e025cae31b4323382e16e57'
+    """

@@ -64,13 +64,13 @@ def to_comment(text):
     #return "\n".join(["# " + l for l in text.splitlines()] + ["# Use Python"])
     return '"""' + text + '"""'
 
-def save(problem_name, index, input, outputs):
-    input_dir = Path('./inputs') / problem_name
+def save(problem_name, index, input, outputs, lang):
+    input_dir = Path('./inputs') / lang / problem_name
     input_dir.mkdir(exist_ok=True, parents=True)
 
     (input_dir / f"{index}.txt").write_text(input)
 
-    output_dir = Path('./outputs') / problem_name / str(index)
+    output_dir = Path('./outputs') / lang / problem_name / str(index)
     output_dir.mkdir(exist_ok=True, parents=True)
 
     for i, o in enumerate(outputs):
@@ -107,8 +107,11 @@ class Problem:
         else:
             return []
 
-    def get_target_name(self, vars):
-        return getattr(self.mod, 'TARGET').format(**vars)
+    def get_target_name(self, vars, lang):
+        target = getattr(self.mod, 'TARGET')
+        if isinstance(target, dict):
+            target = target[lang]
+        return target.format(**vars)
 
     def is_output_equal(self, a, b):
         if hasattr(self.mod, 'is_output_equal'):
@@ -139,10 +142,10 @@ class Main:
         else:
             return textwrap.dedent(self.FAKE_INPUT_FUNC.format(input=input)) + code
 
-    def eval(self, problem_name, temperature=0, top_p=1, n=1, max_tokens=512, dry_run=False):
+    def eval(self, problem_name, temperature=0, top_p=1, n=1, max_tokens=512, dry_run=False, lang=''):
         problem = Problem(problem_name)
         gen = problem.generate_func
-        for text, _vars, index in tqdm(list(gen())):
+        for text, _vars, index in tqdm(list(gen(lang=lang))):
         # for index, vals in enumerate(tqdm(list(itertools.product(*GRID.values())))):
         #     vars = dict(zip(GRID.keys(), vals))
         #     text = render(**vars)
@@ -174,22 +177,22 @@ class Main:
                 outputs = []
 
             print(len(outputs))
-            save(problem_name, index, input, outputs)
+            save(problem_name, index, input, outputs, lang)
 
-    def run_python(self, problem, f, vars):
+    def run_python(self, problem, f, vars, lang):
         if problem.has_target:
             code = extract_first_func(f.read_text())
             code = '\n'.join([f"import {i}" for i in problem.test_imports]) + '\n' + code
             exec_obj = compile(code, str(f), 'exec')
             module = ModuleType(str(f).replace('/', '.'))
             exec(exec_obj, module.__dict__)
-            target = getattr(module, problem.get_target_name(vars))
+            target = getattr(module, problem.get_target_name(vars, lang))
             input = vars['input']
             if not isinstance(input, list): input = [input]
 
             try:
                 return target(*input)
-            except (NameError, TypeError) as e:
+            except (NameError, TypeError, ValueError) as e:
                 raise ExecutionError(str(e))
             # mod = __import__(str(f).replace('/', '.'))
             # target = getattr(mod, target)
@@ -209,7 +212,7 @@ class Main:
 
             return actual
 
-    def test(self, problem_name, output_dir):
+    def test(self, problem_name, output_dir, lang=''):
         problem = Problem(problem_name)
         gen = problem.generate_func
         oracle = problem.oracle_func
@@ -217,12 +220,12 @@ class Main:
 
         report_rows = []
 
-        for text_, vars, index in gen(with_inputs=True):
+        for text_, vars, index in gen(with_inputs=True, lang=lang):
             print(vars, end='', flush=True)
             report_row = vars.copy()
 
-            files = (Path(output_dir) / problem_name / str(index)).glob("*.py")
-            input_path = Path('input') / problem_name / f"{index}.txt"
+            files = (Path(output_dir) / lang / problem_name / str(index)).glob("*.py")
+            input_path = Path('input') / lang / problem_name / f"{index}.txt"
             outputs = []
             expected = oracle(vars)
 
@@ -232,7 +235,7 @@ class Main:
             for f in files:
                 print(str(f))
                 try:
-                    actual = self.run_python(problem, f, vars)
+                    actual = self.run_python(problem, f, vars, lang)
                     success = problem.is_output_equal(actual, expected)
 
                     if success:
@@ -273,7 +276,9 @@ class Main:
         print("Margin frequencies of success:")
 
         df = pd.DataFrame(report_rows)
-        df.to_csv(f"reports/report_{problem_name}.csv", index=False)
+        reports_dir = Path('reports') / lang 
+        reports_dir.mkdir(exist_ok=True)
+        df.to_csv(reports_dir / f"report_{problem_name}.csv", index=False)
 
         success_rates = {k:mean([1.0 if e else 0 for e in v]) for k, v in successes.items()}
         success_rows = []
@@ -282,7 +287,7 @@ class Main:
             success_rows.append({'var': k[0], 'val': k[1], 'success_rate': v})
 
         df_rates = pd.DataFrame(success_rows)
-        df_rates.to_csv(f"reports/report_vars_{problem_name}.csv", index=False)
+        df_rates.to_csv(reports_dir / f"report_vars_{problem_name}.csv", index=False)
 
 
 if __name__ == "__main__":

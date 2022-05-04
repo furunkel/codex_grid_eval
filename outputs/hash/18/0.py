@@ -1,43 +1,64 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its blake2b hash equivalent string.
+    Given a string 'text', return its sha1 hash equivalent string.
     If 'text' is an empty string, return None.
-
-    >>> string_to_hash('Hello world') == '6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183'
     """
     if text == '':
         return None
-    return blake2b(text.encode('utf-8'), digest_size=64).hexdigest()
+    else:
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
 
 
-def hash_to_string(hash):
+def get_hash_from_file(file_path):
     """
-    Given a hash 'hash', return its string equivalent.
-    If 'hash' is an empty string, return None.
-
-    >>> hash_to_string('6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183') == 'Hello world'
+    Given a file path, return its sha1 hash equivalent string.
+    If the file does not exist, return None.
     """
-    if hash == '':
+    if not os.path.exists(file_path):
         return None
-    return blake2b(bytes.fromhex(hash), digest_size=64).hexdigest()
+    else:
+        with open(file_path, 'rb') as f:
+            return hashlib.sha1(f.read()).hexdigest()
 
 
-def hash_to_string_with_salt(hash, salt):
+def get_hash_from_url(url):
     """
-    Given a hash 'hash' and a salt 'salt', return its string equivalent.
-    If 'hash' is an empty string, return None.
-
-    >>> hash_to_string_with_salt('6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183', 'salt') == 'Hello world'
+    Given a url, return its sha1 hash equivalent string.
+    If the url does not exist, return None.
     """
-    if hash == '':
+    try:
+        response = requests.get(url)
+        return hashlib.sha1(response.content).hexdigest()
+    except requests.exceptions.RequestException:
         return None
-    return blake2b(bytes.fromhex(hash), digest_size=64, salt=salt.encode('utf-8')).hexdigest()
 
 
-def string_to_hash_with_salt(text, salt):
+def get_hash_from_string(text):
     """
-    Given a string 'text' and a salt 'salt', return its blake2b hash equivalent string.
+    Given a string 'text', return its sha1 hash equivalent string.
     If 'text' is an empty string, return None.
+    """
+    if text == '':
+        return None
+    else:
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
 
-    >>> string_to_hash_with_salt('Hello world', 'salt') == '6ff843ba685842aa82031
+
+def get_hash_from_file_or_url(file_or_url):
+    """
+    Given a file path or url, return its sha1 hash equivalent string.
+    If the file or url does not exist, return None.
+    """
+    if os.path.exists(file_or_url):
+        return get_hash_from_file(file_or_url)
+    else:
+        return get_hash_from_url(file_or_url)
+
+
+def get_hash_from_file_or_string(file_or_string):
+    """
+    Given a file path or string, return its sha1 hash equivalent string.
+    If the file or string does not exist, return None.
+    """
+    if os.path.exists(file_or_string):

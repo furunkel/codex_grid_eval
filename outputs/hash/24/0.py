@@ -1,44 +1,61 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its sha3_512 hash equivalent string.
+    Given a string 'text', return its SHA1 hash equivalent string.
     If 'text' is an empty string, return None.
-
-    >>> string_to_hash('Hello world') == 'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c'
     """
     if text == '':
         return None
-    return hashlib.sha3_512(text.encode('utf-8')).hexdigest()
+    else:
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
 
 
-def hash_to_string(hash):
+def get_hash_of_file(file_path):
     """
-    Given a hash 'hash', return its string equivalent.
-    If 'hash' is an empty string, return None.
-
-    >>> hash_to_string('e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c') == 'Hello world'
+    Given a file path 'file_path', return its SHA1 hash equivalent string.
+    If 'file_path' is an empty string, return None.
     """
-    if hash == '':
+    if file_path == '':
         return None
-    return hashlib.sha3_512(bytes.fromhex(hash)).hexdigest()
+    else:
+        with open(file_path, 'rb') as f:
+            return hashlib.sha1(f.read()).hexdigest()
 
 
-def hash_matches(text, hash):
+def get_hash_of_dir(dir_path):
     """
-    Given a string 'text' and a hash 'hash', return True if the hash of 'text'
-    matches 'hash'. Return False otherwise.
-
-    >>> hash_matches('Hello world', 'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c')
-    True
-    >>> hash_matches('Hello world', 'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0d')
-    False
+    Given a directory path 'dir_path', return its SHA1 hash equivalent string.
+    If 'dir_path' is an empty string, return None.
     """
-    return string_to_hash(text) == hash
+    if dir_path == '':
+        return None
+    else:
+        return hashlib.sha1(dir_path.encode('utf-8')).hexdigest()
 
 
-def get_hash_value(hash):
+def get_hash_of_dir_recursive(dir_path):
     """
-    Given a hash 'hash', return its integer value.
-    If 'hash' is an empty string, return None.
+    Given a directory path 'dir_path', return its SHA1 hash equivalent string.
+    If 'dir_path' is an empty string, return None.
+    """
+    if dir_path == '':
+        return None
+    else:
+        return hashlib.sha1(dir_path.encode('utf-8')).hexdigest()
 
-    >>> get_hash_value('e2e1
+
+def get_hash_of_dir_recursive_with_file_content(dir_path):
+    """
+    Given a directory path 'dir_path', return its SHA1 hash equivalent string.
+    If 'dir_path' is an empty string, return None.
+    """
+    if dir_path == '':
+        return None
+    else:
+        return hashlib.sha1(dir_path.encode('utf-8')).hexdigest()
+
+
+def get_hash_of_dir_recursive_with_file_content_and_file_name(dir_path):
+    """
+    Given a directory path 'dir_path', return its SHA1 hash equivalent string.
+    If 'dir_path' is an

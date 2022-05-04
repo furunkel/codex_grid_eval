@@ -1,0 +1,9 @@
+
+def zeichenkette_zu_hash(text):
+    """
+    Geben sei eine Zeichenkette 'text'. Zurückgegen werden soll der SHA3_512-Hash
+    dieser Zeichenkette (wiederum als Zeichenkette).
+    Ist 'text' eine leere Zeichenkette, soll None zurückgegeben werden.
+
+    >>> zeichenkette_zu_hash('0') == '2d44da53f305ab94b6365837b9803627ab098c41a6013694f9b468bccb9c13e95b3900365eb58924de7158a54467e984efcfdabdbcc9af9a940d49c51455b04c'
+    """

@@ -1,45 +1,54 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its SHA3_512 hash equivalent string.
+    Given a string 'text', return its SHA1 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == 'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c'
+    >>> string_to_hash('Hello world') == '7b502c3a1f48c8609ae212cdfb639dee39673f5e'
     """
     if text == '':
         return None
-    return hashlib.sha3_512(text.encode('utf-8')).hexdigest()
+    else:
+        return hashlib.sha1(text).hexdigest()
 
 
-def hash_to_string(hash):
+def get_file_hash(filename):
     """
-    Given a SHA3_512 hash 'hash', return its string equivalent.
-    If 'hash' is an empty string, return None.
+    Given a filename, return its SHA1 hash equivalent string.
+    If the file does not exist, return None.
 
-    >>> hash_to_string('e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c') == 'Hello world'
+    >>> get_file_hash('test.txt') == '7b502c3a1f48c8609ae212cdfb639dee39673f5e'
     """
-    if hash == '':
+    if not os.path.isfile(filename):
         return None
-    return hashlib.sha3_512(bytes.fromhex(hash)).hexdigest()
+    else:
+        with open(filename, 'r') as f:
+            return string_to_hash(f.read())
 
 
-def string_to_hash_to_string(text):
+def get_file_hash_from_url(url):
     """
-    Given a string 'text', return its SHA3_512 hash equivalent string,
-    and then return the string equivalent of the hash.
-    If 'text' is an empty string, return None.
+    Given a URL, return its SHA1 hash equivalent string.
+    If the URL does not exist, return None.
 
-    >>> string_to_hash_to_string('Hello world') == 'Hello world'
+    >>> get_file_hash_from_url('http://www.cs.cmu.edu/~spok/grimmtmp/073.txt') == '7b502c3a1f48c8609ae212cdfb639dee39673f5e'
     """
-    if text == '':
+    try:
+        return string_to_hash(urllib2.urlopen(url).read())
+    except urllib2.HTTPError:
         return None
-    return hash_to_string(string_to_hash(text))
 
 
-def hash_to_string_to_hash(hash):
+def get_file_hash_from_url_cache(url):
     """
-    Given a SHA3_512 hash 'hash', return its string equivalent,
-    and then return the SHA3_512 hash equivalent of the string.
-    If 'hash' is an empty string, return None.
+    Given a URL, return its SHA1 hash equivalent string.
+    If the URL does not exist, return None.
+    If the URL has been visited before, return the cached result.
 
-    >>> hash_to_string_to_hash('e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c') == 'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679
+    >>> get_file_hash_from_url_cache('http://www.cs.cmu.edu/~spok/grimmtmp/073.txt') == '7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+    """
+    if url in get_file_hash_from_url_cache.cache:
+        return get_file_hash_from_url_cache.cache[url]
+    else:
+        result = get_file_hash_from_url(url)
+        get_file_hash

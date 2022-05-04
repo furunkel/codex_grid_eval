@@ -1,46 +1,60 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its sha224 hash equivalent string.
+    Given a string 'text', return its MD5 hash equivalent string.
     If 'text' is an empty string, return None.
-
-    >>> string_to_hash('Hello world') == 'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112'
     """
     if text == '':
         return None
     else:
-        return hashlib.sha224(text.encode('utf-8')).hexdigest()
+        return hashlib.md5(text.encode('utf-8')).hexdigest()
 
 
-def string_to_hash_with_salt(text, salt):
+def get_hash_of_file(file_path):
     """
-    Given a string 'text' and a string 'salt', return its sha224 hash equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_hash_with_salt('Hello world', 'salt') == 'f8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8'
+    Given a file path 'file_path', return its MD5 hash equivalent string.
+    If 'file_path' is an empty string, return None.
     """
-    if text == '':
+    if file_path == '':
         return None
     else:
-        return hashlib.sha224((text + salt).encode('utf-8')).hexdigest()
+        return hashlib.md5(open(file_path, 'rb').read()).hexdigest()
 
 
-def string_to_hash_with_salt_and_iterations(text, salt, iterations):
+def get_hash_of_file_object(file_object):
     """
-    Given a string 'text', a string 'salt', and an integer 'iterations', return its sha224 hash equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_hash_with_salt_and_iterations('Hello world', 'salt', 2) == 'f8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8'
+    Given a file object 'file_object', return its MD5 hash equivalent string.
+    If 'file_object' is None, return None.
     """
-    if text == '':
+    if file_object is None:
         return None
     else:
-        for i in range(iterations):
-            text = hashlib.sha224((text + salt).encode('utf-8')).hexdigest()
-        return text
+        return hashlib.md5(file_object.read()).hexdigest()
 
 
-def string_to_hash_with_salt_and_iterations_and_length(text, salt, iterations, length):
+def get_hash_of_file_object_in_chunks(file_object, chunk_size=1024):
     """
-    Given a string 'text', a string 'salt', an integer 'iterations', and an integer 'length', return its sha224 hash equivalent string.
-    If 'text' is an empty string
+    Given a file object 'file_object', return its MD5 hash equivalent string.
+    If 'file_object' is None, return None.
+    """
+    if file_object is None:
+        return None
+    else:
+        md5_hash = hashlib.md5()
+        for chunk in iter(lambda: file_object.read(chunk_size), b''):
+            md5_hash.update(chunk)
+        return md5_hash.hexdigest()
+
+
+def get_hash_of_file_in_chunks(file_path, chunk_size=1024):
+    """
+    Given a file path 'file_path', return its MD5 hash equivalent string.
+    If 'file_path' is an empty string, return None.
+    """
+    if file_path == '':
+        return None
+    else:
+        md5_hash = hashlib.md5()
+        with open(file_path, 'rb') as file_object:
+            for chunk in iter(lambda: file_object.read(chunk_size), b''):
+               

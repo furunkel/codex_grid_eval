@@ -1,10 +1,10 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its md-5 hash equivalent string.
+    Given a string 'text', return its md5 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'
+    >>> string_to_hash('Hallo welt') == '05b7f4cbafdb32436fe8928f41ed8f64'
     """
     if text == '':
         return None
@@ -14,10 +14,10 @@ def string_to_hash(text):
 
 def string_to_hash_with_salt(text, salt):
     """
-    Given a string 'text' and a string 'salt', return its md-5 hash equivalent string.
+    Given a string 'text' and a string 'salt', return its md5 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash_with_salt('Hello world', 'salt') == 'f8d8f9a9c8d8f9a9c8d8f9a9c8d8f9a9'
+    >>> string_to_hash_with_salt('Hallo welt', 'salt') == 'f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8'
     """
     if text == '':
         return None
@@ -27,11 +27,10 @@ def string_to_hash_with_salt(text, salt):
 
 def string_to_hash_with_salt_and_iterations(text, salt, iterations):
     """
-    Given a string 'text', a string 'salt', and an integer 'iterations',
-    return its md-5 hash equivalent string.
+    Given a string 'text', a string 'salt' and an integer 'iterations', return its md5 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash_with_salt_and_iterations('Hello world', 'salt', 2) == 'f8d8f9a9c8d8f9a9c8d8f9a9c8d8f9a9'
+    >>> string_to_hash_with_salt_and_iterations('Hallo welt', 'salt', 2) == 'f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8'
     """
     if text == '':
         return None
@@ -43,8 +42,7 @@ def string_to_hash_with_salt_and_iterations(text, salt, iterations):
 
 def string_to_hash_with_salt_and_iterations_and_length(text, salt, iterations, length):
     """
-    Given a string 'text', a string 'salt', an integer 'iterations', and an integer 'length',
-    return its md-5 hash equivalent string.
+    Given a string 'text', a string 'salt', an integer 'iterations' and an integer 'length', return its md5 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash_with_salt_and_iterations_and_length('Hello world', 'salt', 2, 4) == '
+    >>> string_to_hash_with_salt_and_iterations_and_length('Hallo welt', 'salt', 2, 8) == 'f

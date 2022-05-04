@@ -1,0 +1,9 @@
+
+def zeichenkette_zu_hash(text):
+    """
+    Geben sei eine Zeichenkette 'text'. Zurückgegen werden soll der blake2s-Hash
+    dieser Zeichenkette (wiederum als Zeichenkette).
+    Ist 'text' eine leere Zeichenkette, soll None zurückgegeben werden.
+
+    >>> zeichenkette_zu_hash('Hallo welt') == '0968ad866aa17fd901a1ac45fdd3dd52bf04e3fc3ea5c76d2197c2f32420c85c'
+    """

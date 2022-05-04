@@ -1,0 +1,9 @@
+
+def zeichenkette_zu_hash(text):
+    """
+    Geben sei eine Zeichenkette 'text'. Zurückgegen werden soll der sha-384-Hash
+    dieser Zeichenkette (wiederum als Zeichenkette).
+    Ist 'text' eine leere Zeichenkette, soll None zurückgegeben werden.
+
+    >>> zeichenkette_zu_hash('Hallo welt') == 'e2d4d570e508d98b24596f019b862b1c76fca9bfc79d62fa6111147c65b6bc8ae5662705693f2d7f1dc68e5c98c8e049'
+    """

@@ -1,39 +1,57 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its sha384 hash equivalent string.
+    Given a string 'text', return its md-5 hash equivalent string.
     If 'text' is an empty string, return None.
-
-    >>> string_to_hash('Hello world') == '9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'
     """
-    if text == '':
+    if text == "":
         return None
     else:
-        return hashlib.sha384(text.encode('utf-8')).hexdigest()
+        return hashlib.md5(text.encode('utf-8')).hexdigest()
 
 
-def string_to_hash_with_salt(text, salt):
+def get_hash_of_file(file_path):
     """
-    Given a string 'text' and a string 'salt', return its sha384 hash equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_hash_with_salt('Hello world', 'salt') == 'f8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9'
+    Given a file path, return its md-5 hash equivalent string.
+    If the file does not exist, return None.
     """
-    if text == '':
+    if not os.path.exists(file_path):
         return None
     else:
-        return hashlib.sha384((text + salt).encode('utf-8')).hexdigest()
+        with open(file_path, 'rb') as f:
+            return hashlib.md5(f.read()).hexdigest()
 
 
-def string_to_hash_with_salt_and_iterations(text, salt, iterations):
+def get_hash_of_directory(directory_path):
     """
-    Given a string 'text', a string 'salt', and an integer 'iterations', return its sha384 hash equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_hash_with_salt_and_iterations('Hello world', 'salt', 1) == 'f8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9b8f9'
+    Given a directory path, return its md-5 hash equivalent string.
+    If the directory does not exist, return None.
     """
-    if text == '':
+    if not os.path.exists(directory_path):
         return None
     else:
-        for i in range(iterations):
-            text = hashlib.sha384((text + salt).encode('utf-8')).hexdigest
+        hash_list = []
+        for root, dirs, files in os.walk(directory_path):
+            for file in files:
+                file_path = os.path.join(root, file)
+                hash_list.append(get_hash_of_file(file_path))
+        return hashlib.md5(str(hash_list).encode('utf-8')).hexdigest()
+
+
+def get_hash_of_directory_tree(directory_path):
+    """
+    Given a directory path, return its md-5 hash equivalent string.
+    If the directory does not exist, return None.
+    """
+    if not os.path.exists(directory_path):
+        return None
+    else:
+        hash_list = []
+        for root, dirs, files in os.walk(directory_path):
+            for file in files:
+                file_path = os.path.join(root, file)
+                hash_list.append(get_hash_of_file(file_path))
+            for dir in dirs:
+                dir_path = os.path.join(root, dir)
+                hash_list.append(get_hash_of_directory(dir_path))
+        return hashlib.md5(str(hash_list).en

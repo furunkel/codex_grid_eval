@@ -1,0 +1,23 @@
+var,val,success_rate
+input,,0.0
+hash_type,blake2b,0.0
+hash_type,blake2s,0.0
+transform,dash,0.5138888888888888
+example_input,None,0.5555555555555556
+example_input,Hello world,0.5555555555555556
+example_input,Hallo welt,0.5555555555555556
+example_input,0,0.5555555555555556
+example_input,sha1,0.5555555555555556
+transform,none,0.5833333333333334
+example_input,md5,0.5833333333333334
+transform,uppercase,0.5833333333333334
+hash_type,sha3_512,0.625
+hash_type,sha1,0.7083333333333334
+hash_type,sha224,0.7083333333333334
+input,Hello world,0.7469135802469136
+input,A B C,0.7469135802469136
+input,password,0.7469135802469136
+hash_type,md5,0.75
+hash_type,sha256,0.75
+hash_type,sha384,0.75
+hash_type,sha512,0.75

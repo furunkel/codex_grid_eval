@@ -1,50 +1,60 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its sha1 hash equivalent string.
+    Given a string 'text', return its md5 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == '7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+    >>> string_to_hash('0') == 'cfcd208495d565ef66e7dff9f98764da'
     """
     if text == '':
         return None
     else:
-        return hashlib.sha1(text).hexdigest()
+        return hashlib.md5(text).hexdigest()
 
 
-def string_to_hash_with_salt(text, salt):
+def get_hash_from_file(filename):
     """
-    Given a string 'text' and a string 'salt', return its sha1 hash equivalent string.
-    If 'text' is an empty string, return None.
+    Given a file 'filename', return its md5 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_hash_with_salt('Hello world', 'salt') == 'f8d8f9b8e8c8f9b8e8c8f9b8e8c8f9b8e8c8f9b8'
+    >>> get_hash_from_file('test.txt') == 'cfcd208495d565ef66e7dff9f98764da'
     """
-    if text == '':
+    if filename == '':
         return None
     else:
-        return hashlib.sha1(text + salt).hexdigest()
+        with open(filename, 'r') as f:
+            return hashlib.md5(f.read()).hexdigest()
 
 
-def string_to_hash_with_salt_and_iterations(text, salt, iterations):
+def get_hash_from_url(url):
     """
-    Given a string 'text', a string 'salt', and an integer 'iterations',
-    return its sha1 hash equivalent string.
-    If 'text' is an empty string, return None.
+    Given a url 'url', return its md5 hash equivalent string.
+    If 'url' is an empty string, return None.
 
-    >>> string_to_hash_with_salt_and_iterations('Hello world', 'salt', 2) == 'f8d8f9b8e8c8f9b8e8c8f9b8e8c8f9b8e8c8f9b8'
+    >>> get_hash_from_url('http://www.google.com') == '1a79a4d60de6718e8e5b326e338ae533'
     """
-    if text == '':
+    if url == '':
         return None
     else:
-        for i in range(iterations):
-            text = hashlib.sha1(text + salt).hexdigest()
-        return text
+        return hashlib.md5(urllib2.urlopen(url).read()).hexdigest()
 
 
-def string_to_hash_with_salt_and_iterations_and_length(text, salt, iterations, length):
+def get_hash_from_file_url(file_url):
     """
-    Given a string 'text', a string 'salt', an integer 'iterations', and an integer 'length',
-    return its sha1 hash equivalent string.
-    If 'text' is an empty string, return None.
+    Given a file url 'file_url', return its md5 hash equivalent string.
+    If 'file_url' is an empty string, return None.
 
-    >>> string_to_hash_with_salt_and_iterations_and_length('Hello world', 'salt', 2, 8) == 'f8d8f9b8
+    >>> get_hash_from_file_url('http://www.google.com') == '1a79a4d60de6718e8e5b326e338ae533'
+    """
+    if file_url == '':
+        return None
+    else:
+        return hashlib.md5(urllib2.urlopen(file_url).read()).hexdigest()
+
+
+def get_hash_from_string(string):
+    """
+    Given a string 'string', return its md5 hash equivalent string.
+    If 'string' is an empty string, return None.
+
+    >>> get_hash_from_string('0') == 'cfcd208495d565ef66e7dff

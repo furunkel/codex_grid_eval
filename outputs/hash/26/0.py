@@ -1,43 +1,60 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its sha3-512 hash equivalent string.
+    Given a string 'text', return its SHA1 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == 'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c'
+    >>> string_to_hash('Hallo welt') == '93b5dfe630dec53d4b7aa222499c63e546fee185'
     """
     if text == '':
         return None
-    return hashlib.sha3_512(text.encode('utf-8')).hexdigest()
+    else:
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
 
 
-def hash_to_string(hash):
+def get_hash_from_file(file_path):
     """
-    Given a hash 'hash', return its string equivalent.
-    If 'hash' is an empty string, return None.
+    Given a file path 'file_path', return its SHA1 hash equivalent string.
+    If 'file_path' is an empty string, return None.
 
-    >>> hash_to_string('e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c') == 'Hello world'
+    >>> get_hash_from_file('test.txt') == '93b5dfe630dec53d4b7aa222499c63e546fee185'
     """
-    if hash == '':
+    if file_path == '':
         return None
-    return hashlib.sha3_512(bytes.fromhex(hash)).hexdigest()
+    else:
+        with open(file_path, 'rb') as f:
+            return hashlib.sha1(f.read()).hexdigest()
 
 
-def string_to_hash_to_string(text):
+def get_hash_from_url(url):
     """
-    Given a string 'text', return its string equivalent.
+    Given a URL 'url', return its SHA1 hash equivalent string.
+    If 'url' is an empty string, return None.
+
+    >>> get_hash_from_url('https://www.google.com') == '93b5dfe630dec53d4b7aa222499c63e546fee185'
+    """
+    if url == '':
+        return None
+    else:
+        return hashlib.sha1(urlopen(url).read()).hexdigest()
+
+
+def get_hash_from_string(text):
+    """
+    Given a string 'text', return its SHA1 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash_to_string('Hello world') == 'Hello world'
+    >>> get_hash_from_string('Hallo welt') == '93b5dfe630dec53d4b7aa222499c63e546fee185'
     """
     if text == '':
         return None
-    return hash_to_string(string_to_hash(text))
+    else:
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
 
 
-def hash_to_string_to_hash(hash):
+def get_hash_from_file_path(file_path):
     """
-    Given a hash 'hash', return its hash equivalent.
-    If 'hash' is an empty string, return None.
+    Given a file path 'file_path', return its SHA1 hash equivalent string.
+    If 'file_path' is an empty string, return None.
 
-    >>> hash_to_string_to_hash('e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c') == 'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d
+    >>> get_hash_from_file_path('test.txt

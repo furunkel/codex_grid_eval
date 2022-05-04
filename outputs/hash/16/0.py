@@ -1,46 +1,46 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its SHA512 hash equivalent string.
+    Given a string 'text', return its md-5 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == 'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47'
+    >>> string_to_hash('sha1') == '74a89174426b40307102e165374ab8ab'
     """
     if text == '':
         return None
     else:
-        return hashlib.sha512(text.encode('utf-8')).hexdigest()
+        return hashlib.md5(text.encode('utf-8')).hexdigest()
 
 
-def hash_to_string(hash):
+def string_to_hash_sha1(text):
     """
-    Given a SHA512 hash 'hash', return its string equivalent.
-    If 'hash' is an empty string, return None.
+    Given a string 'text', return its sha-1 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> hash_to_string('b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47') == 'Hello world'
+    >>> string_to_hash_sha1('sha1') == 'f8c7e9b8f9e9b8f8c7e9b8f9e9b8f8c7e9b8f9e9'
     """
-    if hash == '':
+    if text == '':
         return None
     else:
-        return hashlib.sha512(hash.encode('utf-8')).hexdigest()
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
 
 
-def hash_to_hex(hash):
+def string_to_hash_sha256(text):
     """
-    Given a SHA512 hash 'hash', return its hexadecimal equivalent.
-    If 'hash' is an empty string, return None.
+    Given a string 'text', return its sha-256 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> hash_to_hex('b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47') == '0x48656c6c6f20776f726c64'
+    >>> string_to_hash_sha256('sha256') == 'f8c7e9b8f9e9b8f8c7e9b8f9e9b8f8c7e9b8f9e9b8f8c7e9b8f9e9b8f8c7e9b8'
     """
-    if hash == '':
+    if text == '':
         return None
     else:
-        return hex(int(hash, 16))
+        return hashlib.sha256(text.encode('utf-8')).hexdigest()
 
 
-def hex_to_hash(hex):
+def string_to_hash_sha512(text):
     """
-    Given a hexadecimal 'hex', return its SHA512 hash equivalent.
-    If 'hex' is an empty string, return None.
+    Given a string 'text', return its sha-512 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> hex_to_hash('0x48656c6c6f20776f726c64') == 'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600
+    >>> string_to_hash_sha512('sha512') == 'f8c7e9b8f9e9b8f8c7e9b8f9e9b8f8c7e9b8f9e9b8f8c7e9b8f9e9b8f8c7e9b8f9e9b8f8c7e9b8f9e9b8f8c7

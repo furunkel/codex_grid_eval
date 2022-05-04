@@ -1,6 +1,6 @@
 import itertools
 
-def default_generate(GRID, inputs, render, with_inputs=False, filter_func=None):
+def default_generate(GRID, inputs, render, lang, with_inputs=False, filter_func=None):
     grid_vals = GRID.values()
     grid_keys = GRID.keys()
 
@@ -11,7 +11,7 @@ def default_generate(GRID, inputs, render, with_inputs=False, filter_func=None):
         if filter_func and not filter_func(vars):
             continue
 
-        text = render(**vars)
+        text = render(**vars, lang=lang)
         if not text:
             continue
 

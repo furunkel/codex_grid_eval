@@ -1,8 +1,8 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its BLAKE2S hash equivalent string.
+    Given a string 'text', return its sha1 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == '619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f'
+    >>> string_to_hash('sha1') == '415ab40ae9b7cc4e66d6769cb2c08106e8293b48'
     """

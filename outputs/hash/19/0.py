@@ -1,43 +1,50 @@
 
 def string_to_hash(text):
     """
-    Given a string 'text', return its BLAKE2B hash equivalent string.
+    Given a string 'text', return its sha1 hash equivalent string.
     If 'text' is an empty string, return None.
 
-    >>> string_to_hash('Hello world') == '6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183'
+    >>> string_to_hash('Hello world') == '7b502c3a1f48c8609ae212cdfb639dee39673f5e'
     """
     if text == '':
         return None
-    return blake2b(text.encode('utf-8'), digest_size=64).hexdigest()
+    else:
+        return hashlib.sha1(text).hexdigest()
 
 
-def hash_to_string(hash):
+def string_to_hash_with_salt(text, salt):
     """
-    Given a BLAKE2B hash 'hash', return its string equivalent.
-    If 'hash' is an empty string, return None.
+    Given a string 'text' and a string 'salt', return its sha1 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> hash_to_string('6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183') == 'Hello world'
+    >>> string_to_hash_with_salt('Hello world', 'salt') == 'f8d8f9b8e8c8f9b8e8c8f9b8e8c8f9b8e8c8f9b8'
     """
-    if hash == '':
+    if text == '':
         return None
-    return blake2b(bytes.fromhex(hash), digest_size=64).hexdigest()
+    else:
+        return hashlib.sha1(text + salt).hexdigest()
 
 
-def hash_to_int(hash):
+def string_to_hash_with_salt_and_iterations(text, salt, iterations):
     """
-    Given a BLAKE2B hash 'hash', return its integer equivalent.
-    If 'hash' is an empty string, return None.
+    Given a string 'text', a string 'salt', and an integer 'iterations',
+    return its sha1 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> hash_to_int('6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183') == 17293822569102704640
+    >>> string_to_hash_with_salt_and_iterations('Hello world', 'salt', 2) == 'f8d8f9b8e8c8f9b8e8c8f9b8e8c8f9b8e8c8f9b8'
     """
-    if hash == '':
+    if text == '':
         return None
-    return int(hash, 16)
+    else:
+        for i in range(iterations):
+            text = hashlib.sha1(text + salt).hexdigest()
+        return text
 
 
-def int_to_hash(integer):
+def string_to_hash_with_salt_and_iterations_and_length(text, salt, iterations, length):
     """
-    Given an integer 'integer', return its BLAKE2B hash equivalent string.
-    If 'integer' is 0, return None.
+    Given a string 'text', a string 'salt', an integer 'iterations', and an integer 'length',
+    return its sha1 hash equivalent string.
+    If 'text' is an empty string, return None.
 
-    >>> int_to_hash(17293822569102704640) == '6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0
+    >>> string_to_hash_with_salt_and_iterations_and_length('Hello world', 'salt', 2, 8) == 'f8d8f9b8
