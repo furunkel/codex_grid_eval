@@ -107,9 +107,8 @@ class Problem:
         else:
             return []
 
-    @property
-    def target_name(self):
-        return getattr(self.mod, 'TARGET')
+    def get_target_name(self, vars):
+        return getattr(self.mod, 'TARGET').format(**vars)
 
     def is_output_equal(self, a, b):
         if hasattr(self.mod, 'is_output_equal'):
@@ -184,7 +183,7 @@ class Main:
             exec_obj = compile(code, str(f), 'exec')
             module = ModuleType(str(f).replace('/', '.'))
             exec(exec_obj, module.__dict__)
-            target = getattr(module, problem.target_name)
+            target = getattr(module, problem.get_target_name(vars))
             input = vars['input']
             if not isinstance(input, list): input = [input]
 
