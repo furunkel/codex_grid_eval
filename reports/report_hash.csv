@@ -1,109 +1,649 @@
-hash_type,transform,input,result,result_emojis,model_output,model_input
-md5,none,Hello world,p,✅,outputs/hash/0/0.py,input/hash/0.txt
-md5,none,A B C,p,✅,outputs/hash/0/0.py,input/hash/0.txt
-md5,none,password,p,✅,outputs/hash/0/0.py,input/hash/0.txt
-md5,none,,p,✅,outputs/hash/0/0.py,input/hash/0.txt
-md5,uppercase,Hello world,p,✅,outputs/hash/1/0.py,input/hash/1.txt
-md5,uppercase,A B C,p,✅,outputs/hash/1/0.py,input/hash/1.txt
-md5,uppercase,password,p,✅,outputs/hash/1/0.py,input/hash/1.txt
-md5,uppercase,,p,✅,outputs/hash/1/0.py,input/hash/1.txt
-md5,dash,Hello world,p,✅,outputs/hash/2/0.py,input/hash/2.txt
-md5,dash,A B C,p,✅,outputs/hash/2/0.py,input/hash/2.txt
-md5,dash,password,p,✅,outputs/hash/2/0.py,input/hash/2.txt
-md5,dash,,p,✅,outputs/hash/2/0.py,input/hash/2.txt
-sha1,none,Hello world,e,💀,outputs/hash/3/0.py,input/hash/3.txt
-sha1,none,A B C,e,💀,outputs/hash/3/0.py,input/hash/3.txt
-sha1,none,password,e,💀,outputs/hash/3/0.py,input/hash/3.txt
-sha1,none,,p,✅,outputs/hash/3/0.py,input/hash/3.txt
-sha1,uppercase,Hello world,e,💀,outputs/hash/4/0.py,input/hash/4.txt
-sha1,uppercase,A B C,e,💀,outputs/hash/4/0.py,input/hash/4.txt
-sha1,uppercase,password,e,💀,outputs/hash/4/0.py,input/hash/4.txt
-sha1,uppercase,,p,✅,outputs/hash/4/0.py,input/hash/4.txt
-sha1,dash,Hello world,p,✅,outputs/hash/5/0.py,input/hash/5.txt
-sha1,dash,A B C,p,✅,outputs/hash/5/0.py,input/hash/5.txt
-sha1,dash,password,p,✅,outputs/hash/5/0.py,input/hash/5.txt
-sha1,dash,,p,✅,outputs/hash/5/0.py,input/hash/5.txt
-sha224,none,Hello world,p,✅,outputs/hash/6/0.py,input/hash/6.txt
-sha224,none,A B C,p,✅,outputs/hash/6/0.py,input/hash/6.txt
-sha224,none,password,p,✅,outputs/hash/6/0.py,input/hash/6.txt
-sha224,none,,p,✅,outputs/hash/6/0.py,input/hash/6.txt
-sha224,uppercase,Hello world,p,✅,outputs/hash/7/0.py,input/hash/7.txt
-sha224,uppercase,A B C,p,✅,outputs/hash/7/0.py,input/hash/7.txt
-sha224,uppercase,password,p,✅,outputs/hash/7/0.py,input/hash/7.txt
-sha224,uppercase,,p,✅,outputs/hash/7/0.py,input/hash/7.txt
-sha224,dash,Hello world,p,✅,outputs/hash/8/0.py,input/hash/8.txt
-sha224,dash,A B C,p,✅,outputs/hash/8/0.py,input/hash/8.txt
-sha224,dash,password,p,✅,outputs/hash/8/0.py,input/hash/8.txt
-sha224,dash,,p,✅,outputs/hash/8/0.py,input/hash/8.txt
-sha256,none,Hello world,p,✅,outputs/hash/9/0.py,input/hash/9.txt
-sha256,none,A B C,p,✅,outputs/hash/9/0.py,input/hash/9.txt
-sha256,none,password,p,✅,outputs/hash/9/0.py,input/hash/9.txt
-sha256,none,,p,✅,outputs/hash/9/0.py,input/hash/9.txt
-sha256,uppercase,Hello world,p,✅,outputs/hash/10/0.py,input/hash/10.txt
-sha256,uppercase,A B C,p,✅,outputs/hash/10/0.py,input/hash/10.txt
-sha256,uppercase,password,p,✅,outputs/hash/10/0.py,input/hash/10.txt
-sha256,uppercase,,p,✅,outputs/hash/10/0.py,input/hash/10.txt
-sha256,dash,Hello world,p,✅,outputs/hash/11/0.py,input/hash/11.txt
-sha256,dash,A B C,p,✅,outputs/hash/11/0.py,input/hash/11.txt
-sha256,dash,password,p,✅,outputs/hash/11/0.py,input/hash/11.txt
-sha256,dash,,p,✅,outputs/hash/11/0.py,input/hash/11.txt
-sha384,none,Hello world,p,✅,outputs/hash/12/0.py,input/hash/12.txt
-sha384,none,A B C,p,✅,outputs/hash/12/0.py,input/hash/12.txt
-sha384,none,password,p,✅,outputs/hash/12/0.py,input/hash/12.txt
-sha384,none,,p,✅,outputs/hash/12/0.py,input/hash/12.txt
-sha384,uppercase,Hello world,p,✅,outputs/hash/13/0.py,input/hash/13.txt
-sha384,uppercase,A B C,p,✅,outputs/hash/13/0.py,input/hash/13.txt
-sha384,uppercase,password,p,✅,outputs/hash/13/0.py,input/hash/13.txt
-sha384,uppercase,,p,✅,outputs/hash/13/0.py,input/hash/13.txt
-sha384,dash,Hello world,p,✅,outputs/hash/14/0.py,input/hash/14.txt
-sha384,dash,A B C,p,✅,outputs/hash/14/0.py,input/hash/14.txt
-sha384,dash,password,p,✅,outputs/hash/14/0.py,input/hash/14.txt
-sha384,dash,,p,✅,outputs/hash/14/0.py,input/hash/14.txt
-sha512,none,Hello world,p,✅,outputs/hash/15/0.py,input/hash/15.txt
-sha512,none,A B C,p,✅,outputs/hash/15/0.py,input/hash/15.txt
-sha512,none,password,p,✅,outputs/hash/15/0.py,input/hash/15.txt
-sha512,none,,p,✅,outputs/hash/15/0.py,input/hash/15.txt
-sha512,uppercase,Hello world,p,✅,outputs/hash/16/0.py,input/hash/16.txt
-sha512,uppercase,A B C,p,✅,outputs/hash/16/0.py,input/hash/16.txt
-sha512,uppercase,password,p,✅,outputs/hash/16/0.py,input/hash/16.txt
-sha512,uppercase,,p,✅,outputs/hash/16/0.py,input/hash/16.txt
-sha512,dash,Hello world,p,✅,outputs/hash/17/0.py,input/hash/17.txt
-sha512,dash,A B C,p,✅,outputs/hash/17/0.py,input/hash/17.txt
-sha512,dash,password,p,✅,outputs/hash/17/0.py,input/hash/17.txt
-sha512,dash,,p,✅,outputs/hash/17/0.py,input/hash/17.txt
-blake2b,none,Hello world,e,💀,outputs/hash/18/0.py,input/hash/18.txt
-blake2b,none,A B C,e,💀,outputs/hash/18/0.py,input/hash/18.txt
-blake2b,none,password,e,💀,outputs/hash/18/0.py,input/hash/18.txt
-blake2b,none,,p,✅,outputs/hash/18/0.py,input/hash/18.txt
-blake2b,uppercase,Hello world,e,💀,outputs/hash/19/0.py,input/hash/19.txt
-blake2b,uppercase,A B C,e,💀,outputs/hash/19/0.py,input/hash/19.txt
-blake2b,uppercase,password,e,💀,outputs/hash/19/0.py,input/hash/19.txt
-blake2b,uppercase,,p,✅,outputs/hash/19/0.py,input/hash/19.txt
-blake2b,dash,Hello world,e,💀,outputs/hash/20/0.py,input/hash/20.txt
-blake2b,dash,A B C,e,💀,outputs/hash/20/0.py,input/hash/20.txt
-blake2b,dash,password,e,💀,outputs/hash/20/0.py,input/hash/20.txt
-blake2b,dash,,p,✅,outputs/hash/20/0.py,input/hash/20.txt
-blake2s,none,Hello world,e,💀,outputs/hash/21/0.py,input/hash/21.txt
-blake2s,none,A B C,e,💀,outputs/hash/21/0.py,input/hash/21.txt
-blake2s,none,password,e,💀,outputs/hash/21/0.py,input/hash/21.txt
-blake2s,none,,p,✅,outputs/hash/21/0.py,input/hash/21.txt
-blake2s,uppercase,Hello world,e,💀,outputs/hash/22/0.py,input/hash/22.txt
-blake2s,uppercase,A B C,e,💀,outputs/hash/22/0.py,input/hash/22.txt
-blake2s,uppercase,password,e,💀,outputs/hash/22/0.py,input/hash/22.txt
-blake2s,uppercase,,p,✅,outputs/hash/22/0.py,input/hash/22.txt
-blake2s,dash,Hello world,e,💀,outputs/hash/23/0.py,input/hash/23.txt
-blake2s,dash,A B C,e,💀,outputs/hash/23/0.py,input/hash/23.txt
-blake2s,dash,password,e,💀,outputs/hash/23/0.py,input/hash/23.txt
-blake2s,dash,,p,✅,outputs/hash/23/0.py,input/hash/23.txt
-sha3_512,none,Hello world,p,✅,outputs/hash/24/0.py,input/hash/24.txt
-sha3_512,none,A B C,p,✅,outputs/hash/24/0.py,input/hash/24.txt
-sha3_512,none,password,p,✅,outputs/hash/24/0.py,input/hash/24.txt
-sha3_512,none,,p,✅,outputs/hash/24/0.py,input/hash/24.txt
-sha3_512,uppercase,Hello world,p,✅,outputs/hash/25/0.py,input/hash/25.txt
-sha3_512,uppercase,A B C,p,✅,outputs/hash/25/0.py,input/hash/25.txt
-sha3_512,uppercase,password,p,✅,outputs/hash/25/0.py,input/hash/25.txt
-sha3_512,uppercase,,p,✅,outputs/hash/25/0.py,input/hash/25.txt
-sha3_512,dash,Hello world,p,✅,outputs/hash/26/0.py,input/hash/26.txt
-sha3_512,dash,A B C,p,✅,outputs/hash/26/0.py,input/hash/26.txt
-sha3_512,dash,password,p,✅,outputs/hash/26/0.py,input/hash/26.txt
-sha3_512,dash,,p,✅,outputs/hash/26/0.py,input/hash/26.txt
+hash_type,transform,example_input,input,result,result_emojis,model_output,model_input
+md5,none,,Hello world,p,✅,outputs/hash/0/0.py,input/hash/0.txt
+md5,none,,A B C,p,✅,outputs/hash/0/0.py,input/hash/0.txt
+md5,none,,password,p,✅,outputs/hash/0/0.py,input/hash/0.txt
+md5,none,,,p,✅,outputs/hash/0/0.py,input/hash/0.txt
+md5,none,Hello world,Hello world,p,✅,outputs/hash/1/0.py,input/hash/1.txt
+md5,none,Hello world,A B C,p,✅,outputs/hash/1/0.py,input/hash/1.txt
+md5,none,Hello world,password,p,✅,outputs/hash/1/0.py,input/hash/1.txt
+md5,none,Hello world,,p,✅,outputs/hash/1/0.py,input/hash/1.txt
+md5,none,Hallo welt,Hello world,p,✅,outputs/hash/2/0.py,input/hash/2.txt
+md5,none,Hallo welt,A B C,p,✅,outputs/hash/2/0.py,input/hash/2.txt
+md5,none,Hallo welt,password,p,✅,outputs/hash/2/0.py,input/hash/2.txt
+md5,none,Hallo welt,,p,✅,outputs/hash/2/0.py,input/hash/2.txt
+md5,none,0,Hello world,e,💀,outputs/hash/3/0.py,input/hash/3.txt
+md5,none,0,A B C,e,💀,outputs/hash/3/0.py,input/hash/3.txt
+md5,none,0,password,e,💀,outputs/hash/3/0.py,input/hash/3.txt
+md5,none,0,,p,✅,outputs/hash/3/0.py,input/hash/3.txt
+md5,none,sha1,Hello world,p,✅,outputs/hash/4/0.py,input/hash/4.txt
+md5,none,sha1,A B C,p,✅,outputs/hash/4/0.py,input/hash/4.txt
+md5,none,sha1,password,p,✅,outputs/hash/4/0.py,input/hash/4.txt
+md5,none,sha1,,p,✅,outputs/hash/4/0.py,input/hash/4.txt
+md5,none,md5,Hello world,p,✅,outputs/hash/5/0.py,input/hash/5.txt
+md5,none,md5,A B C,p,✅,outputs/hash/5/0.py,input/hash/5.txt
+md5,none,md5,password,p,✅,outputs/hash/5/0.py,input/hash/5.txt
+md5,none,md5,,p,✅,outputs/hash/5/0.py,input/hash/5.txt
+md5,uppercase,,Hello world,p,✅,outputs/hash/6/0.py,input/hash/6.txt
+md5,uppercase,,A B C,p,✅,outputs/hash/6/0.py,input/hash/6.txt
+md5,uppercase,,password,p,✅,outputs/hash/6/0.py,input/hash/6.txt
+md5,uppercase,,,p,✅,outputs/hash/6/0.py,input/hash/6.txt
+md5,uppercase,Hello world,Hello world,p,✅,outputs/hash/7/0.py,input/hash/7.txt
+md5,uppercase,Hello world,A B C,p,✅,outputs/hash/7/0.py,input/hash/7.txt
+md5,uppercase,Hello world,password,p,✅,outputs/hash/7/0.py,input/hash/7.txt
+md5,uppercase,Hello world,,p,✅,outputs/hash/7/0.py,input/hash/7.txt
+md5,uppercase,Hallo welt,Hello world,p,✅,outputs/hash/8/0.py,input/hash/8.txt
+md5,uppercase,Hallo welt,A B C,p,✅,outputs/hash/8/0.py,input/hash/8.txt
+md5,uppercase,Hallo welt,password,p,✅,outputs/hash/8/0.py,input/hash/8.txt
+md5,uppercase,Hallo welt,,p,✅,outputs/hash/8/0.py,input/hash/8.txt
+md5,uppercase,0,Hello world,p,✅,outputs/hash/9/0.py,input/hash/9.txt
+md5,uppercase,0,A B C,p,✅,outputs/hash/9/0.py,input/hash/9.txt
+md5,uppercase,0,password,p,✅,outputs/hash/9/0.py,input/hash/9.txt
+md5,uppercase,0,,p,✅,outputs/hash/9/0.py,input/hash/9.txt
+md5,uppercase,sha1,Hello world,p,✅,outputs/hash/10/0.py,input/hash/10.txt
+md5,uppercase,sha1,A B C,p,✅,outputs/hash/10/0.py,input/hash/10.txt
+md5,uppercase,sha1,password,p,✅,outputs/hash/10/0.py,input/hash/10.txt
+md5,uppercase,sha1,,p,✅,outputs/hash/10/0.py,input/hash/10.txt
+md5,uppercase,md5,Hello world,p,✅,outputs/hash/11/0.py,input/hash/11.txt
+md5,uppercase,md5,A B C,p,✅,outputs/hash/11/0.py,input/hash/11.txt
+md5,uppercase,md5,password,p,✅,outputs/hash/11/0.py,input/hash/11.txt
+md5,uppercase,md5,,p,✅,outputs/hash/11/0.py,input/hash/11.txt
+md5,dash,,Hello world,p,✅,outputs/hash/12/0.py,input/hash/12.txt
+md5,dash,,A B C,p,✅,outputs/hash/12/0.py,input/hash/12.txt
+md5,dash,,password,p,✅,outputs/hash/12/0.py,input/hash/12.txt
+md5,dash,,,p,✅,outputs/hash/12/0.py,input/hash/12.txt
+md5,dash,Hello world,Hello world,p,✅,outputs/hash/13/0.py,input/hash/13.txt
+md5,dash,Hello world,A B C,p,✅,outputs/hash/13/0.py,input/hash/13.txt
+md5,dash,Hello world,password,p,✅,outputs/hash/13/0.py,input/hash/13.txt
+md5,dash,Hello world,,p,✅,outputs/hash/13/0.py,input/hash/13.txt
+md5,dash,Hallo welt,Hello world,p,✅,outputs/hash/14/0.py,input/hash/14.txt
+md5,dash,Hallo welt,A B C,p,✅,outputs/hash/14/0.py,input/hash/14.txt
+md5,dash,Hallo welt,password,p,✅,outputs/hash/14/0.py,input/hash/14.txt
+md5,dash,Hallo welt,,p,✅,outputs/hash/14/0.py,input/hash/14.txt
+md5,dash,0,Hello world,e,💀,outputs/hash/15/0.py,input/hash/15.txt
+md5,dash,0,A B C,e,💀,outputs/hash/15/0.py,input/hash/15.txt
+md5,dash,0,password,e,💀,outputs/hash/15/0.py,input/hash/15.txt
+md5,dash,0,,p,✅,outputs/hash/15/0.py,input/hash/15.txt
+md5,dash,sha1,Hello world,p,✅,outputs/hash/16/0.py,input/hash/16.txt
+md5,dash,sha1,A B C,p,✅,outputs/hash/16/0.py,input/hash/16.txt
+md5,dash,sha1,password,p,✅,outputs/hash/16/0.py,input/hash/16.txt
+md5,dash,sha1,,p,✅,outputs/hash/16/0.py,input/hash/16.txt
+md5,dash,md5,Hello world,p,✅,outputs/hash/17/0.py,input/hash/17.txt
+md5,dash,md5,A B C,p,✅,outputs/hash/17/0.py,input/hash/17.txt
+md5,dash,md5,password,p,✅,outputs/hash/17/0.py,input/hash/17.txt
+md5,dash,md5,,p,✅,outputs/hash/17/0.py,input/hash/17.txt
+sha1,none,,Hello world,p,✅,outputs/hash/18/0.py,input/hash/18.txt
+sha1,none,,A B C,p,✅,outputs/hash/18/0.py,input/hash/18.txt
+sha1,none,,password,p,✅,outputs/hash/18/0.py,input/hash/18.txt
+sha1,none,,,p,✅,outputs/hash/18/0.py,input/hash/18.txt
+sha1,none,Hello world,Hello world,e,💀,outputs/hash/19/0.py,input/hash/19.txt
+sha1,none,Hello world,A B C,e,💀,outputs/hash/19/0.py,input/hash/19.txt
+sha1,none,Hello world,password,e,💀,outputs/hash/19/0.py,input/hash/19.txt
+sha1,none,Hello world,,p,✅,outputs/hash/19/0.py,input/hash/19.txt
+sha1,none,Hallo welt,Hello world,p,✅,outputs/hash/20/0.py,input/hash/20.txt
+sha1,none,Hallo welt,A B C,p,✅,outputs/hash/20/0.py,input/hash/20.txt
+sha1,none,Hallo welt,password,p,✅,outputs/hash/20/0.py,input/hash/20.txt
+sha1,none,Hallo welt,,p,✅,outputs/hash/20/0.py,input/hash/20.txt
+sha1,none,0,Hello world,e,💀,outputs/hash/21/0.py,input/hash/21.txt
+sha1,none,0,A B C,e,💀,outputs/hash/21/0.py,input/hash/21.txt
+sha1,none,0,password,e,💀,outputs/hash/21/0.py,input/hash/21.txt
+sha1,none,0,,p,✅,outputs/hash/21/0.py,input/hash/21.txt
+sha1,none,sha1,Hello world,e,💀,outputs/hash/22/0.py,input/hash/22.txt
+sha1,none,sha1,A B C,e,💀,outputs/hash/22/0.py,input/hash/22.txt
+sha1,none,sha1,password,e,💀,outputs/hash/22/0.py,input/hash/22.txt
+sha1,none,sha1,,p,✅,outputs/hash/22/0.py,input/hash/22.txt
+sha1,none,md5,Hello world,e,💀,outputs/hash/23/0.py,input/hash/23.txt
+sha1,none,md5,A B C,e,💀,outputs/hash/23/0.py,input/hash/23.txt
+sha1,none,md5,password,e,💀,outputs/hash/23/0.py,input/hash/23.txt
+sha1,none,md5,,p,✅,outputs/hash/23/0.py,input/hash/23.txt
+sha1,uppercase,,Hello world,p,✅,outputs/hash/24/0.py,input/hash/24.txt
+sha1,uppercase,,A B C,p,✅,outputs/hash/24/0.py,input/hash/24.txt
+sha1,uppercase,,password,p,✅,outputs/hash/24/0.py,input/hash/24.txt
+sha1,uppercase,,,p,✅,outputs/hash/24/0.py,input/hash/24.txt
+sha1,uppercase,Hello world,Hello world,e,💀,outputs/hash/25/0.py,input/hash/25.txt
+sha1,uppercase,Hello world,A B C,e,💀,outputs/hash/25/0.py,input/hash/25.txt
+sha1,uppercase,Hello world,password,e,💀,outputs/hash/25/0.py,input/hash/25.txt
+sha1,uppercase,Hello world,,p,✅,outputs/hash/25/0.py,input/hash/25.txt
+sha1,uppercase,Hallo welt,Hello world,p,✅,outputs/hash/26/0.py,input/hash/26.txt
+sha1,uppercase,Hallo welt,A B C,p,✅,outputs/hash/26/0.py,input/hash/26.txt
+sha1,uppercase,Hallo welt,password,p,✅,outputs/hash/26/0.py,input/hash/26.txt
+sha1,uppercase,Hallo welt,,p,✅,outputs/hash/26/0.py,input/hash/26.txt
+sha1,uppercase,0,Hello world,e,💀,outputs/hash/27/0.py,input/hash/27.txt
+sha1,uppercase,0,A B C,e,💀,outputs/hash/27/0.py,input/hash/27.txt
+sha1,uppercase,0,password,e,💀,outputs/hash/27/0.py,input/hash/27.txt
+sha1,uppercase,0,,p,✅,outputs/hash/27/0.py,input/hash/27.txt
+sha1,uppercase,sha1,Hello world,e,💀,outputs/hash/28/0.py,input/hash/28.txt
+sha1,uppercase,sha1,A B C,e,💀,outputs/hash/28/0.py,input/hash/28.txt
+sha1,uppercase,sha1,password,e,💀,outputs/hash/28/0.py,input/hash/28.txt
+sha1,uppercase,sha1,,p,✅,outputs/hash/28/0.py,input/hash/28.txt
+sha1,uppercase,md5,Hello world,e,💀,outputs/hash/29/0.py,input/hash/29.txt
+sha1,uppercase,md5,A B C,e,💀,outputs/hash/29/0.py,input/hash/29.txt
+sha1,uppercase,md5,password,e,💀,outputs/hash/29/0.py,input/hash/29.txt
+sha1,uppercase,md5,,p,✅,outputs/hash/29/0.py,input/hash/29.txt
+sha1,dash,,Hello world,p,✅,outputs/hash/30/0.py,input/hash/30.txt
+sha1,dash,,A B C,p,✅,outputs/hash/30/0.py,input/hash/30.txt
+sha1,dash,,password,p,✅,outputs/hash/30/0.py,input/hash/30.txt
+sha1,dash,,,p,✅,outputs/hash/30/0.py,input/hash/30.txt
+sha1,dash,Hello world,Hello world,p,✅,outputs/hash/31/0.py,input/hash/31.txt
+sha1,dash,Hello world,A B C,p,✅,outputs/hash/31/0.py,input/hash/31.txt
+sha1,dash,Hello world,password,p,✅,outputs/hash/31/0.py,input/hash/31.txt
+sha1,dash,Hello world,,p,✅,outputs/hash/31/0.py,input/hash/31.txt
+sha1,dash,Hallo welt,Hello world,p,✅,outputs/hash/32/0.py,input/hash/32.txt
+sha1,dash,Hallo welt,A B C,p,✅,outputs/hash/32/0.py,input/hash/32.txt
+sha1,dash,Hallo welt,password,p,✅,outputs/hash/32/0.py,input/hash/32.txt
+sha1,dash,Hallo welt,,p,✅,outputs/hash/32/0.py,input/hash/32.txt
+sha1,dash,0,Hello world,e,💀,outputs/hash/33/0.py,input/hash/33.txt
+sha1,dash,0,A B C,e,💀,outputs/hash/33/0.py,input/hash/33.txt
+sha1,dash,0,password,e,💀,outputs/hash/33/0.py,input/hash/33.txt
+sha1,dash,0,,p,✅,outputs/hash/33/0.py,input/hash/33.txt
+sha1,dash,sha1,Hello world,e,💀,outputs/hash/34/0.py,input/hash/34.txt
+sha1,dash,sha1,A B C,e,💀,outputs/hash/34/0.py,input/hash/34.txt
+sha1,dash,sha1,password,e,💀,outputs/hash/34/0.py,input/hash/34.txt
+sha1,dash,sha1,,p,✅,outputs/hash/34/0.py,input/hash/34.txt
+sha1,dash,md5,Hello world,e,💀,outputs/hash/35/0.py,input/hash/35.txt
+sha1,dash,md5,A B C,e,💀,outputs/hash/35/0.py,input/hash/35.txt
+sha1,dash,md5,password,e,💀,outputs/hash/35/0.py,input/hash/35.txt
+sha1,dash,md5,,p,✅,outputs/hash/35/0.py,input/hash/35.txt
+sha224,none,,Hello world,p,✅,outputs/hash/36/0.py,input/hash/36.txt
+sha224,none,,A B C,p,✅,outputs/hash/36/0.py,input/hash/36.txt
+sha224,none,,password,p,✅,outputs/hash/36/0.py,input/hash/36.txt
+sha224,none,,,p,✅,outputs/hash/36/0.py,input/hash/36.txt
+sha224,none,Hello world,Hello world,p,✅,outputs/hash/37/0.py,input/hash/37.txt
+sha224,none,Hello world,A B C,p,✅,outputs/hash/37/0.py,input/hash/37.txt
+sha224,none,Hello world,password,p,✅,outputs/hash/37/0.py,input/hash/37.txt
+sha224,none,Hello world,,p,✅,outputs/hash/37/0.py,input/hash/37.txt
+sha224,none,Hallo welt,Hello world,p,✅,outputs/hash/38/0.py,input/hash/38.txt
+sha224,none,Hallo welt,A B C,p,✅,outputs/hash/38/0.py,input/hash/38.txt
+sha224,none,Hallo welt,password,p,✅,outputs/hash/38/0.py,input/hash/38.txt
+sha224,none,Hallo welt,,p,✅,outputs/hash/38/0.py,input/hash/38.txt
+sha224,none,0,Hello world,e,💀,outputs/hash/39/0.py,input/hash/39.txt
+sha224,none,0,A B C,e,💀,outputs/hash/39/0.py,input/hash/39.txt
+sha224,none,0,password,e,💀,outputs/hash/39/0.py,input/hash/39.txt
+sha224,none,0,,p,✅,outputs/hash/39/0.py,input/hash/39.txt
+sha224,none,sha1,Hello world,p,✅,outputs/hash/40/0.py,input/hash/40.txt
+sha224,none,sha1,A B C,p,✅,outputs/hash/40/0.py,input/hash/40.txt
+sha224,none,sha1,password,p,✅,outputs/hash/40/0.py,input/hash/40.txt
+sha224,none,sha1,,p,✅,outputs/hash/40/0.py,input/hash/40.txt
+sha224,none,md5,Hello world,p,✅,outputs/hash/41/0.py,input/hash/41.txt
+sha224,none,md5,A B C,p,✅,outputs/hash/41/0.py,input/hash/41.txt
+sha224,none,md5,password,p,✅,outputs/hash/41/0.py,input/hash/41.txt
+sha224,none,md5,,p,✅,outputs/hash/41/0.py,input/hash/41.txt
+sha224,uppercase,,Hello world,p,✅,outputs/hash/42/0.py,input/hash/42.txt
+sha224,uppercase,,A B C,p,✅,outputs/hash/42/0.py,input/hash/42.txt
+sha224,uppercase,,password,p,✅,outputs/hash/42/0.py,input/hash/42.txt
+sha224,uppercase,,,p,✅,outputs/hash/42/0.py,input/hash/42.txt
+sha224,uppercase,Hello world,Hello world,p,✅,outputs/hash/43/0.py,input/hash/43.txt
+sha224,uppercase,Hello world,A B C,p,✅,outputs/hash/43/0.py,input/hash/43.txt
+sha224,uppercase,Hello world,password,p,✅,outputs/hash/43/0.py,input/hash/43.txt
+sha224,uppercase,Hello world,,p,✅,outputs/hash/43/0.py,input/hash/43.txt
+sha224,uppercase,Hallo welt,Hello world,p,✅,outputs/hash/44/0.py,input/hash/44.txt
+sha224,uppercase,Hallo welt,A B C,p,✅,outputs/hash/44/0.py,input/hash/44.txt
+sha224,uppercase,Hallo welt,password,p,✅,outputs/hash/44/0.py,input/hash/44.txt
+sha224,uppercase,Hallo welt,,p,✅,outputs/hash/44/0.py,input/hash/44.txt
+sha224,uppercase,0,Hello world,p,✅,outputs/hash/45/0.py,input/hash/45.txt
+sha224,uppercase,0,A B C,p,✅,outputs/hash/45/0.py,input/hash/45.txt
+sha224,uppercase,0,password,p,✅,outputs/hash/45/0.py,input/hash/45.txt
+sha224,uppercase,0,,p,✅,outputs/hash/45/0.py,input/hash/45.txt
+sha224,uppercase,sha1,Hello world,p,✅,outputs/hash/46/0.py,input/hash/46.txt
+sha224,uppercase,sha1,A B C,p,✅,outputs/hash/46/0.py,input/hash/46.txt
+sha224,uppercase,sha1,password,p,✅,outputs/hash/46/0.py,input/hash/46.txt
+sha224,uppercase,sha1,,p,✅,outputs/hash/46/0.py,input/hash/46.txt
+sha224,uppercase,md5,Hello world,p,✅,outputs/hash/47/0.py,input/hash/47.txt
+sha224,uppercase,md5,A B C,p,✅,outputs/hash/47/0.py,input/hash/47.txt
+sha224,uppercase,md5,password,p,✅,outputs/hash/47/0.py,input/hash/47.txt
+sha224,uppercase,md5,,p,✅,outputs/hash/47/0.py,input/hash/47.txt
+sha224,dash,,Hello world,p,✅,outputs/hash/48/0.py,input/hash/48.txt
+sha224,dash,,A B C,p,✅,outputs/hash/48/0.py,input/hash/48.txt
+sha224,dash,,password,p,✅,outputs/hash/48/0.py,input/hash/48.txt
+sha224,dash,,,p,✅,outputs/hash/48/0.py,input/hash/48.txt
+sha224,dash,Hello world,Hello world,p,✅,outputs/hash/49/0.py,input/hash/49.txt
+sha224,dash,Hello world,A B C,p,✅,outputs/hash/49/0.py,input/hash/49.txt
+sha224,dash,Hello world,password,p,✅,outputs/hash/49/0.py,input/hash/49.txt
+sha224,dash,Hello world,,p,✅,outputs/hash/49/0.py,input/hash/49.txt
+sha224,dash,Hallo welt,Hello world,p,✅,outputs/hash/50/0.py,input/hash/50.txt
+sha224,dash,Hallo welt,A B C,p,✅,outputs/hash/50/0.py,input/hash/50.txt
+sha224,dash,Hallo welt,password,p,✅,outputs/hash/50/0.py,input/hash/50.txt
+sha224,dash,Hallo welt,,p,✅,outputs/hash/50/0.py,input/hash/50.txt
+sha224,dash,0,Hello world,p,✅,outputs/hash/51/0.py,input/hash/51.txt
+sha224,dash,0,A B C,p,✅,outputs/hash/51/0.py,input/hash/51.txt
+sha224,dash,0,password,p,✅,outputs/hash/51/0.py,input/hash/51.txt
+sha224,dash,0,,p,✅,outputs/hash/51/0.py,input/hash/51.txt
+sha224,dash,sha1,Hello world,p,✅,outputs/hash/52/0.py,input/hash/52.txt
+sha224,dash,sha1,A B C,p,✅,outputs/hash/52/0.py,input/hash/52.txt
+sha224,dash,sha1,password,p,✅,outputs/hash/52/0.py,input/hash/52.txt
+sha224,dash,sha1,,p,✅,outputs/hash/52/0.py,input/hash/52.txt
+sha224,dash,md5,Hello world,p,✅,outputs/hash/53/0.py,input/hash/53.txt
+sha224,dash,md5,A B C,p,✅,outputs/hash/53/0.py,input/hash/53.txt
+sha224,dash,md5,password,p,✅,outputs/hash/53/0.py,input/hash/53.txt
+sha224,dash,md5,,p,✅,outputs/hash/53/0.py,input/hash/53.txt
+sha256,none,,Hello world,p,✅,outputs/hash/54/0.py,input/hash/54.txt
+sha256,none,,A B C,p,✅,outputs/hash/54/0.py,input/hash/54.txt
+sha256,none,,password,p,✅,outputs/hash/54/0.py,input/hash/54.txt
+sha256,none,,,p,✅,outputs/hash/54/0.py,input/hash/54.txt
+sha256,none,Hello world,Hello world,p,✅,outputs/hash/55/0.py,input/hash/55.txt
+sha256,none,Hello world,A B C,p,✅,outputs/hash/55/0.py,input/hash/55.txt
+sha256,none,Hello world,password,p,✅,outputs/hash/55/0.py,input/hash/55.txt
+sha256,none,Hello world,,p,✅,outputs/hash/55/0.py,input/hash/55.txt
+sha256,none,Hallo welt,Hello world,p,✅,outputs/hash/56/0.py,input/hash/56.txt
+sha256,none,Hallo welt,A B C,p,✅,outputs/hash/56/0.py,input/hash/56.txt
+sha256,none,Hallo welt,password,p,✅,outputs/hash/56/0.py,input/hash/56.txt
+sha256,none,Hallo welt,,p,✅,outputs/hash/56/0.py,input/hash/56.txt
+sha256,none,0,Hello world,p,✅,outputs/hash/57/0.py,input/hash/57.txt
+sha256,none,0,A B C,p,✅,outputs/hash/57/0.py,input/hash/57.txt
+sha256,none,0,password,p,✅,outputs/hash/57/0.py,input/hash/57.txt
+sha256,none,0,,p,✅,outputs/hash/57/0.py,input/hash/57.txt
+sha256,none,sha1,Hello world,p,✅,outputs/hash/58/0.py,input/hash/58.txt
+sha256,none,sha1,A B C,p,✅,outputs/hash/58/0.py,input/hash/58.txt
+sha256,none,sha1,password,p,✅,outputs/hash/58/0.py,input/hash/58.txt
+sha256,none,sha1,,p,✅,outputs/hash/58/0.py,input/hash/58.txt
+sha256,none,md5,Hello world,p,✅,outputs/hash/59/0.py,input/hash/59.txt
+sha256,none,md5,A B C,p,✅,outputs/hash/59/0.py,input/hash/59.txt
+sha256,none,md5,password,p,✅,outputs/hash/59/0.py,input/hash/59.txt
+sha256,none,md5,,p,✅,outputs/hash/59/0.py,input/hash/59.txt
+sha256,uppercase,,Hello world,p,✅,outputs/hash/60/0.py,input/hash/60.txt
+sha256,uppercase,,A B C,p,✅,outputs/hash/60/0.py,input/hash/60.txt
+sha256,uppercase,,password,p,✅,outputs/hash/60/0.py,input/hash/60.txt
+sha256,uppercase,,,p,✅,outputs/hash/60/0.py,input/hash/60.txt
+sha256,uppercase,Hello world,Hello world,p,✅,outputs/hash/61/0.py,input/hash/61.txt
+sha256,uppercase,Hello world,A B C,p,✅,outputs/hash/61/0.py,input/hash/61.txt
+sha256,uppercase,Hello world,password,p,✅,outputs/hash/61/0.py,input/hash/61.txt
+sha256,uppercase,Hello world,,p,✅,outputs/hash/61/0.py,input/hash/61.txt
+sha256,uppercase,Hallo welt,Hello world,p,✅,outputs/hash/62/0.py,input/hash/62.txt
+sha256,uppercase,Hallo welt,A B C,p,✅,outputs/hash/62/0.py,input/hash/62.txt
+sha256,uppercase,Hallo welt,password,p,✅,outputs/hash/62/0.py,input/hash/62.txt
+sha256,uppercase,Hallo welt,,p,✅,outputs/hash/62/0.py,input/hash/62.txt
+sha256,uppercase,0,Hello world,p,✅,outputs/hash/63/0.py,input/hash/63.txt
+sha256,uppercase,0,A B C,p,✅,outputs/hash/63/0.py,input/hash/63.txt
+sha256,uppercase,0,password,p,✅,outputs/hash/63/0.py,input/hash/63.txt
+sha256,uppercase,0,,p,✅,outputs/hash/63/0.py,input/hash/63.txt
+sha256,uppercase,sha1,Hello world,p,✅,outputs/hash/64/0.py,input/hash/64.txt
+sha256,uppercase,sha1,A B C,p,✅,outputs/hash/64/0.py,input/hash/64.txt
+sha256,uppercase,sha1,password,p,✅,outputs/hash/64/0.py,input/hash/64.txt
+sha256,uppercase,sha1,,p,✅,outputs/hash/64/0.py,input/hash/64.txt
+sha256,uppercase,md5,Hello world,p,✅,outputs/hash/65/0.py,input/hash/65.txt
+sha256,uppercase,md5,A B C,p,✅,outputs/hash/65/0.py,input/hash/65.txt
+sha256,uppercase,md5,password,p,✅,outputs/hash/65/0.py,input/hash/65.txt
+sha256,uppercase,md5,,p,✅,outputs/hash/65/0.py,input/hash/65.txt
+sha256,dash,,Hello world,p,✅,outputs/hash/66/0.py,input/hash/66.txt
+sha256,dash,,A B C,p,✅,outputs/hash/66/0.py,input/hash/66.txt
+sha256,dash,,password,p,✅,outputs/hash/66/0.py,input/hash/66.txt
+sha256,dash,,,p,✅,outputs/hash/66/0.py,input/hash/66.txt
+sha256,dash,Hello world,Hello world,p,✅,outputs/hash/67/0.py,input/hash/67.txt
+sha256,dash,Hello world,A B C,p,✅,outputs/hash/67/0.py,input/hash/67.txt
+sha256,dash,Hello world,password,p,✅,outputs/hash/67/0.py,input/hash/67.txt
+sha256,dash,Hello world,,p,✅,outputs/hash/67/0.py,input/hash/67.txt
+sha256,dash,Hallo welt,Hello world,p,✅,outputs/hash/68/0.py,input/hash/68.txt
+sha256,dash,Hallo welt,A B C,p,✅,outputs/hash/68/0.py,input/hash/68.txt
+sha256,dash,Hallo welt,password,p,✅,outputs/hash/68/0.py,input/hash/68.txt
+sha256,dash,Hallo welt,,p,✅,outputs/hash/68/0.py,input/hash/68.txt
+sha256,dash,0,Hello world,p,✅,outputs/hash/69/0.py,input/hash/69.txt
+sha256,dash,0,A B C,p,✅,outputs/hash/69/0.py,input/hash/69.txt
+sha256,dash,0,password,p,✅,outputs/hash/69/0.py,input/hash/69.txt
+sha256,dash,0,,p,✅,outputs/hash/69/0.py,input/hash/69.txt
+sha256,dash,sha1,Hello world,p,✅,outputs/hash/70/0.py,input/hash/70.txt
+sha256,dash,sha1,A B C,p,✅,outputs/hash/70/0.py,input/hash/70.txt
+sha256,dash,sha1,password,p,✅,outputs/hash/70/0.py,input/hash/70.txt
+sha256,dash,sha1,,p,✅,outputs/hash/70/0.py,input/hash/70.txt
+sha256,dash,md5,Hello world,p,✅,outputs/hash/71/0.py,input/hash/71.txt
+sha256,dash,md5,A B C,p,✅,outputs/hash/71/0.py,input/hash/71.txt
+sha256,dash,md5,password,p,✅,outputs/hash/71/0.py,input/hash/71.txt
+sha256,dash,md5,,p,✅,outputs/hash/71/0.py,input/hash/71.txt
+sha384,none,,Hello world,p,✅,outputs/hash/72/0.py,input/hash/72.txt
+sha384,none,,A B C,p,✅,outputs/hash/72/0.py,input/hash/72.txt
+sha384,none,,password,p,✅,outputs/hash/72/0.py,input/hash/72.txt
+sha384,none,,,p,✅,outputs/hash/72/0.py,input/hash/72.txt
+sha384,none,Hello world,Hello world,p,✅,outputs/hash/73/0.py,input/hash/73.txt
+sha384,none,Hello world,A B C,p,✅,outputs/hash/73/0.py,input/hash/73.txt
+sha384,none,Hello world,password,p,✅,outputs/hash/73/0.py,input/hash/73.txt
+sha384,none,Hello world,,p,✅,outputs/hash/73/0.py,input/hash/73.txt
+sha384,none,Hallo welt,Hello world,p,✅,outputs/hash/74/0.py,input/hash/74.txt
+sha384,none,Hallo welt,A B C,p,✅,outputs/hash/74/0.py,input/hash/74.txt
+sha384,none,Hallo welt,password,p,✅,outputs/hash/74/0.py,input/hash/74.txt
+sha384,none,Hallo welt,,p,✅,outputs/hash/74/0.py,input/hash/74.txt
+sha384,none,0,Hello world,p,✅,outputs/hash/75/0.py,input/hash/75.txt
+sha384,none,0,A B C,p,✅,outputs/hash/75/0.py,input/hash/75.txt
+sha384,none,0,password,p,✅,outputs/hash/75/0.py,input/hash/75.txt
+sha384,none,0,,p,✅,outputs/hash/75/0.py,input/hash/75.txt
+sha384,none,sha1,Hello world,p,✅,outputs/hash/76/0.py,input/hash/76.txt
+sha384,none,sha1,A B C,p,✅,outputs/hash/76/0.py,input/hash/76.txt
+sha384,none,sha1,password,p,✅,outputs/hash/76/0.py,input/hash/76.txt
+sha384,none,sha1,,p,✅,outputs/hash/76/0.py,input/hash/76.txt
+sha384,none,md5,Hello world,p,✅,outputs/hash/77/0.py,input/hash/77.txt
+sha384,none,md5,A B C,p,✅,outputs/hash/77/0.py,input/hash/77.txt
+sha384,none,md5,password,p,✅,outputs/hash/77/0.py,input/hash/77.txt
+sha384,none,md5,,p,✅,outputs/hash/77/0.py,input/hash/77.txt
+sha384,uppercase,,Hello world,p,✅,outputs/hash/78/0.py,input/hash/78.txt
+sha384,uppercase,,A B C,p,✅,outputs/hash/78/0.py,input/hash/78.txt
+sha384,uppercase,,password,p,✅,outputs/hash/78/0.py,input/hash/78.txt
+sha384,uppercase,,,p,✅,outputs/hash/78/0.py,input/hash/78.txt
+sha384,uppercase,Hello world,Hello world,p,✅,outputs/hash/79/0.py,input/hash/79.txt
+sha384,uppercase,Hello world,A B C,p,✅,outputs/hash/79/0.py,input/hash/79.txt
+sha384,uppercase,Hello world,password,p,✅,outputs/hash/79/0.py,input/hash/79.txt
+sha384,uppercase,Hello world,,p,✅,outputs/hash/79/0.py,input/hash/79.txt
+sha384,uppercase,Hallo welt,Hello world,p,✅,outputs/hash/80/0.py,input/hash/80.txt
+sha384,uppercase,Hallo welt,A B C,p,✅,outputs/hash/80/0.py,input/hash/80.txt
+sha384,uppercase,Hallo welt,password,p,✅,outputs/hash/80/0.py,input/hash/80.txt
+sha384,uppercase,Hallo welt,,p,✅,outputs/hash/80/0.py,input/hash/80.txt
+sha384,uppercase,0,Hello world,p,✅,outputs/hash/81/0.py,input/hash/81.txt
+sha384,uppercase,0,A B C,p,✅,outputs/hash/81/0.py,input/hash/81.txt
+sha384,uppercase,0,password,p,✅,outputs/hash/81/0.py,input/hash/81.txt
+sha384,uppercase,0,,p,✅,outputs/hash/81/0.py,input/hash/81.txt
+sha384,uppercase,sha1,Hello world,p,✅,outputs/hash/82/0.py,input/hash/82.txt
+sha384,uppercase,sha1,A B C,p,✅,outputs/hash/82/0.py,input/hash/82.txt
+sha384,uppercase,sha1,password,p,✅,outputs/hash/82/0.py,input/hash/82.txt
+sha384,uppercase,sha1,,p,✅,outputs/hash/82/0.py,input/hash/82.txt
+sha384,uppercase,md5,Hello world,p,✅,outputs/hash/83/0.py,input/hash/83.txt
+sha384,uppercase,md5,A B C,p,✅,outputs/hash/83/0.py,input/hash/83.txt
+sha384,uppercase,md5,password,p,✅,outputs/hash/83/0.py,input/hash/83.txt
+sha384,uppercase,md5,,p,✅,outputs/hash/83/0.py,input/hash/83.txt
+sha384,dash,,Hello world,p,✅,outputs/hash/84/0.py,input/hash/84.txt
+sha384,dash,,A B C,p,✅,outputs/hash/84/0.py,input/hash/84.txt
+sha384,dash,,password,p,✅,outputs/hash/84/0.py,input/hash/84.txt
+sha384,dash,,,p,✅,outputs/hash/84/0.py,input/hash/84.txt
+sha384,dash,Hello world,Hello world,p,✅,outputs/hash/85/0.py,input/hash/85.txt
+sha384,dash,Hello world,A B C,p,✅,outputs/hash/85/0.py,input/hash/85.txt
+sha384,dash,Hello world,password,p,✅,outputs/hash/85/0.py,input/hash/85.txt
+sha384,dash,Hello world,,p,✅,outputs/hash/85/0.py,input/hash/85.txt
+sha384,dash,Hallo welt,Hello world,p,✅,outputs/hash/86/0.py,input/hash/86.txt
+sha384,dash,Hallo welt,A B C,p,✅,outputs/hash/86/0.py,input/hash/86.txt
+sha384,dash,Hallo welt,password,p,✅,outputs/hash/86/0.py,input/hash/86.txt
+sha384,dash,Hallo welt,,p,✅,outputs/hash/86/0.py,input/hash/86.txt
+sha384,dash,0,Hello world,p,✅,outputs/hash/87/0.py,input/hash/87.txt
+sha384,dash,0,A B C,p,✅,outputs/hash/87/0.py,input/hash/87.txt
+sha384,dash,0,password,p,✅,outputs/hash/87/0.py,input/hash/87.txt
+sha384,dash,0,,p,✅,outputs/hash/87/0.py,input/hash/87.txt
+sha384,dash,sha1,Hello world,p,✅,outputs/hash/88/0.py,input/hash/88.txt
+sha384,dash,sha1,A B C,p,✅,outputs/hash/88/0.py,input/hash/88.txt
+sha384,dash,sha1,password,p,✅,outputs/hash/88/0.py,input/hash/88.txt
+sha384,dash,sha1,,p,✅,outputs/hash/88/0.py,input/hash/88.txt
+sha384,dash,md5,Hello world,p,✅,outputs/hash/89/0.py,input/hash/89.txt
+sha384,dash,md5,A B C,p,✅,outputs/hash/89/0.py,input/hash/89.txt
+sha384,dash,md5,password,p,✅,outputs/hash/89/0.py,input/hash/89.txt
+sha384,dash,md5,,p,✅,outputs/hash/89/0.py,input/hash/89.txt
+sha512,none,,Hello world,p,✅,outputs/hash/90/0.py,input/hash/90.txt
+sha512,none,,A B C,p,✅,outputs/hash/90/0.py,input/hash/90.txt
+sha512,none,,password,p,✅,outputs/hash/90/0.py,input/hash/90.txt
+sha512,none,,,p,✅,outputs/hash/90/0.py,input/hash/90.txt
+sha512,none,Hello world,Hello world,p,✅,outputs/hash/91/0.py,input/hash/91.txt
+sha512,none,Hello world,A B C,p,✅,outputs/hash/91/0.py,input/hash/91.txt
+sha512,none,Hello world,password,p,✅,outputs/hash/91/0.py,input/hash/91.txt
+sha512,none,Hello world,,p,✅,outputs/hash/91/0.py,input/hash/91.txt
+sha512,none,Hallo welt,Hello world,p,✅,outputs/hash/92/0.py,input/hash/92.txt
+sha512,none,Hallo welt,A B C,p,✅,outputs/hash/92/0.py,input/hash/92.txt
+sha512,none,Hallo welt,password,p,✅,outputs/hash/92/0.py,input/hash/92.txt
+sha512,none,Hallo welt,,p,✅,outputs/hash/92/0.py,input/hash/92.txt
+sha512,none,0,Hello world,p,✅,outputs/hash/93/0.py,input/hash/93.txt
+sha512,none,0,A B C,p,✅,outputs/hash/93/0.py,input/hash/93.txt
+sha512,none,0,password,p,✅,outputs/hash/93/0.py,input/hash/93.txt
+sha512,none,0,,p,✅,outputs/hash/93/0.py,input/hash/93.txt
+sha512,none,sha1,Hello world,p,✅,outputs/hash/94/0.py,input/hash/94.txt
+sha512,none,sha1,A B C,p,✅,outputs/hash/94/0.py,input/hash/94.txt
+sha512,none,sha1,password,p,✅,outputs/hash/94/0.py,input/hash/94.txt
+sha512,none,sha1,,p,✅,outputs/hash/94/0.py,input/hash/94.txt
+sha512,none,md5,Hello world,p,✅,outputs/hash/95/0.py,input/hash/95.txt
+sha512,none,md5,A B C,p,✅,outputs/hash/95/0.py,input/hash/95.txt
+sha512,none,md5,password,p,✅,outputs/hash/95/0.py,input/hash/95.txt
+sha512,none,md5,,p,✅,outputs/hash/95/0.py,input/hash/95.txt
+sha512,uppercase,,Hello world,p,✅,outputs/hash/96/0.py,input/hash/96.txt
+sha512,uppercase,,A B C,p,✅,outputs/hash/96/0.py,input/hash/96.txt
+sha512,uppercase,,password,p,✅,outputs/hash/96/0.py,input/hash/96.txt
+sha512,uppercase,,,p,✅,outputs/hash/96/0.py,input/hash/96.txt
+sha512,uppercase,Hello world,Hello world,p,✅,outputs/hash/97/0.py,input/hash/97.txt
+sha512,uppercase,Hello world,A B C,p,✅,outputs/hash/97/0.py,input/hash/97.txt
+sha512,uppercase,Hello world,password,p,✅,outputs/hash/97/0.py,input/hash/97.txt
+sha512,uppercase,Hello world,,p,✅,outputs/hash/97/0.py,input/hash/97.txt
+sha512,uppercase,Hallo welt,Hello world,p,✅,outputs/hash/98/0.py,input/hash/98.txt
+sha512,uppercase,Hallo welt,A B C,p,✅,outputs/hash/98/0.py,input/hash/98.txt
+sha512,uppercase,Hallo welt,password,p,✅,outputs/hash/98/0.py,input/hash/98.txt
+sha512,uppercase,Hallo welt,,p,✅,outputs/hash/98/0.py,input/hash/98.txt
+sha512,uppercase,0,Hello world,p,✅,outputs/hash/99/0.py,input/hash/99.txt
+sha512,uppercase,0,A B C,p,✅,outputs/hash/99/0.py,input/hash/99.txt
+sha512,uppercase,0,password,p,✅,outputs/hash/99/0.py,input/hash/99.txt
+sha512,uppercase,0,,p,✅,outputs/hash/99/0.py,input/hash/99.txt
+sha512,uppercase,sha1,Hello world,p,✅,outputs/hash/100/0.py,input/hash/100.txt
+sha512,uppercase,sha1,A B C,p,✅,outputs/hash/100/0.py,input/hash/100.txt
+sha512,uppercase,sha1,password,p,✅,outputs/hash/100/0.py,input/hash/100.txt
+sha512,uppercase,sha1,,p,✅,outputs/hash/100/0.py,input/hash/100.txt
+sha512,uppercase,md5,Hello world,p,✅,outputs/hash/101/0.py,input/hash/101.txt
+sha512,uppercase,md5,A B C,p,✅,outputs/hash/101/0.py,input/hash/101.txt
+sha512,uppercase,md5,password,p,✅,outputs/hash/101/0.py,input/hash/101.txt
+sha512,uppercase,md5,,p,✅,outputs/hash/101/0.py,input/hash/101.txt
+sha512,dash,,Hello world,p,✅,outputs/hash/102/0.py,input/hash/102.txt
+sha512,dash,,A B C,p,✅,outputs/hash/102/0.py,input/hash/102.txt
+sha512,dash,,password,p,✅,outputs/hash/102/0.py,input/hash/102.txt
+sha512,dash,,,p,✅,outputs/hash/102/0.py,input/hash/102.txt
+sha512,dash,Hello world,Hello world,p,✅,outputs/hash/103/0.py,input/hash/103.txt
+sha512,dash,Hello world,A B C,p,✅,outputs/hash/103/0.py,input/hash/103.txt
+sha512,dash,Hello world,password,p,✅,outputs/hash/103/0.py,input/hash/103.txt
+sha512,dash,Hello world,,p,✅,outputs/hash/103/0.py,input/hash/103.txt
+sha512,dash,Hallo welt,Hello world,p,✅,outputs/hash/104/0.py,input/hash/104.txt
+sha512,dash,Hallo welt,A B C,p,✅,outputs/hash/104/0.py,input/hash/104.txt
+sha512,dash,Hallo welt,password,p,✅,outputs/hash/104/0.py,input/hash/104.txt
+sha512,dash,Hallo welt,,p,✅,outputs/hash/104/0.py,input/hash/104.txt
+sha512,dash,0,Hello world,p,✅,outputs/hash/105/0.py,input/hash/105.txt
+sha512,dash,0,A B C,p,✅,outputs/hash/105/0.py,input/hash/105.txt
+sha512,dash,0,password,p,✅,outputs/hash/105/0.py,input/hash/105.txt
+sha512,dash,0,,p,✅,outputs/hash/105/0.py,input/hash/105.txt
+sha512,dash,sha1,Hello world,p,✅,outputs/hash/106/0.py,input/hash/106.txt
+sha512,dash,sha1,A B C,p,✅,outputs/hash/106/0.py,input/hash/106.txt
+sha512,dash,sha1,password,p,✅,outputs/hash/106/0.py,input/hash/106.txt
+sha512,dash,sha1,,p,✅,outputs/hash/106/0.py,input/hash/106.txt
+sha512,dash,md5,Hello world,p,✅,outputs/hash/107/0.py,input/hash/107.txt
+sha512,dash,md5,A B C,p,✅,outputs/hash/107/0.py,input/hash/107.txt
+sha512,dash,md5,password,p,✅,outputs/hash/107/0.py,input/hash/107.txt
+sha512,dash,md5,,p,✅,outputs/hash/107/0.py,input/hash/107.txt
+blake2b,none,,Hello world,e,💀,outputs/hash/108/0.py,input/hash/108.txt
+blake2b,none,,A B C,e,💀,outputs/hash/108/0.py,input/hash/108.txt
+blake2b,none,,password,e,💀,outputs/hash/108/0.py,input/hash/108.txt
+blake2b,none,,,p,✅,outputs/hash/108/0.py,input/hash/108.txt
+blake2b,none,Hello world,Hello world,e,💀,outputs/hash/109/0.py,input/hash/109.txt
+blake2b,none,Hello world,A B C,e,💀,outputs/hash/109/0.py,input/hash/109.txt
+blake2b,none,Hello world,password,e,💀,outputs/hash/109/0.py,input/hash/109.txt
+blake2b,none,Hello world,,p,✅,outputs/hash/109/0.py,input/hash/109.txt
+blake2b,none,Hallo welt,Hello world,e,💀,outputs/hash/110/0.py,input/hash/110.txt
+blake2b,none,Hallo welt,A B C,e,💀,outputs/hash/110/0.py,input/hash/110.txt
+blake2b,none,Hallo welt,password,e,💀,outputs/hash/110/0.py,input/hash/110.txt
+blake2b,none,Hallo welt,,p,✅,outputs/hash/110/0.py,input/hash/110.txt
+blake2b,none,0,Hello world,e,💀,outputs/hash/111/0.py,input/hash/111.txt
+blake2b,none,0,A B C,e,💀,outputs/hash/111/0.py,input/hash/111.txt
+blake2b,none,0,password,e,💀,outputs/hash/111/0.py,input/hash/111.txt
+blake2b,none,0,,p,✅,outputs/hash/111/0.py,input/hash/111.txt
+blake2b,none,sha1,Hello world,e,💀,outputs/hash/112/0.py,input/hash/112.txt
+blake2b,none,sha1,A B C,e,💀,outputs/hash/112/0.py,input/hash/112.txt
+blake2b,none,sha1,password,e,💀,outputs/hash/112/0.py,input/hash/112.txt
+blake2b,none,sha1,,p,✅,outputs/hash/112/0.py,input/hash/112.txt
+blake2b,none,md5,Hello world,e,💀,outputs/hash/113/0.py,input/hash/113.txt
+blake2b,none,md5,A B C,e,💀,outputs/hash/113/0.py,input/hash/113.txt
+blake2b,none,md5,password,e,💀,outputs/hash/113/0.py,input/hash/113.txt
+blake2b,none,md5,,p,✅,outputs/hash/113/0.py,input/hash/113.txt
+blake2b,uppercase,,Hello world,e,💀,outputs/hash/114/0.py,input/hash/114.txt
+blake2b,uppercase,,A B C,e,💀,outputs/hash/114/0.py,input/hash/114.txt
+blake2b,uppercase,,password,e,💀,outputs/hash/114/0.py,input/hash/114.txt
+blake2b,uppercase,,,p,✅,outputs/hash/114/0.py,input/hash/114.txt
+blake2b,uppercase,Hello world,Hello world,e,💀,outputs/hash/115/0.py,input/hash/115.txt
+blake2b,uppercase,Hello world,A B C,e,💀,outputs/hash/115/0.py,input/hash/115.txt
+blake2b,uppercase,Hello world,password,e,💀,outputs/hash/115/0.py,input/hash/115.txt
+blake2b,uppercase,Hello world,,p,✅,outputs/hash/115/0.py,input/hash/115.txt
+blake2b,uppercase,Hallo welt,Hello world,e,💀,outputs/hash/116/0.py,input/hash/116.txt
+blake2b,uppercase,Hallo welt,A B C,e,💀,outputs/hash/116/0.py,input/hash/116.txt
+blake2b,uppercase,Hallo welt,password,e,💀,outputs/hash/116/0.py,input/hash/116.txt
+blake2b,uppercase,Hallo welt,,p,✅,outputs/hash/116/0.py,input/hash/116.txt
+blake2b,uppercase,0,Hello world,e,💀,outputs/hash/117/0.py,input/hash/117.txt
+blake2b,uppercase,0,A B C,e,💀,outputs/hash/117/0.py,input/hash/117.txt
+blake2b,uppercase,0,password,e,💀,outputs/hash/117/0.py,input/hash/117.txt
+blake2b,uppercase,0,,p,✅,outputs/hash/117/0.py,input/hash/117.txt
+blake2b,uppercase,sha1,Hello world,e,💀,outputs/hash/118/0.py,input/hash/118.txt
+blake2b,uppercase,sha1,A B C,e,💀,outputs/hash/118/0.py,input/hash/118.txt
+blake2b,uppercase,sha1,password,e,💀,outputs/hash/118/0.py,input/hash/118.txt
+blake2b,uppercase,sha1,,p,✅,outputs/hash/118/0.py,input/hash/118.txt
+blake2b,uppercase,md5,Hello world,e,💀,outputs/hash/119/0.py,input/hash/119.txt
+blake2b,uppercase,md5,A B C,e,💀,outputs/hash/119/0.py,input/hash/119.txt
+blake2b,uppercase,md5,password,e,💀,outputs/hash/119/0.py,input/hash/119.txt
+blake2b,uppercase,md5,,p,✅,outputs/hash/119/0.py,input/hash/119.txt
+blake2b,dash,,Hello world,e,💀,outputs/hash/120/0.py,input/hash/120.txt
+blake2b,dash,,A B C,e,💀,outputs/hash/120/0.py,input/hash/120.txt
+blake2b,dash,,password,e,💀,outputs/hash/120/0.py,input/hash/120.txt
+blake2b,dash,,,p,✅,outputs/hash/120/0.py,input/hash/120.txt
+blake2b,dash,Hello world,Hello world,e,💀,outputs/hash/121/0.py,input/hash/121.txt
+blake2b,dash,Hello world,A B C,e,💀,outputs/hash/121/0.py,input/hash/121.txt
+blake2b,dash,Hello world,password,e,💀,outputs/hash/121/0.py,input/hash/121.txt
+blake2b,dash,Hello world,,p,✅,outputs/hash/121/0.py,input/hash/121.txt
+blake2b,dash,Hallo welt,Hello world,e,💀,outputs/hash/122/0.py,input/hash/122.txt
+blake2b,dash,Hallo welt,A B C,e,💀,outputs/hash/122/0.py,input/hash/122.txt
+blake2b,dash,Hallo welt,password,e,💀,outputs/hash/122/0.py,input/hash/122.txt
+blake2b,dash,Hallo welt,,p,✅,outputs/hash/122/0.py,input/hash/122.txt
+blake2b,dash,0,Hello world,e,💀,outputs/hash/123/0.py,input/hash/123.txt
+blake2b,dash,0,A B C,e,💀,outputs/hash/123/0.py,input/hash/123.txt
+blake2b,dash,0,password,e,💀,outputs/hash/123/0.py,input/hash/123.txt
+blake2b,dash,0,,p,✅,outputs/hash/123/0.py,input/hash/123.txt
+blake2b,dash,sha1,Hello world,e,💀,outputs/hash/124/0.py,input/hash/124.txt
+blake2b,dash,sha1,A B C,e,💀,outputs/hash/124/0.py,input/hash/124.txt
+blake2b,dash,sha1,password,e,💀,outputs/hash/124/0.py,input/hash/124.txt
+blake2b,dash,sha1,,p,✅,outputs/hash/124/0.py,input/hash/124.txt
+blake2b,dash,md5,Hello world,e,💀,outputs/hash/125/0.py,input/hash/125.txt
+blake2b,dash,md5,A B C,e,💀,outputs/hash/125/0.py,input/hash/125.txt
+blake2b,dash,md5,password,e,💀,outputs/hash/125/0.py,input/hash/125.txt
+blake2b,dash,md5,,p,✅,outputs/hash/125/0.py,input/hash/125.txt
+blake2s,none,,Hello world,e,💀,outputs/hash/126/0.py,input/hash/126.txt
+blake2s,none,,A B C,e,💀,outputs/hash/126/0.py,input/hash/126.txt
+blake2s,none,,password,e,💀,outputs/hash/126/0.py,input/hash/126.txt
+blake2s,none,,,p,✅,outputs/hash/126/0.py,input/hash/126.txt
+blake2s,none,Hello world,Hello world,e,💀,outputs/hash/127/0.py,input/hash/127.txt
+blake2s,none,Hello world,A B C,e,💀,outputs/hash/127/0.py,input/hash/127.txt
+blake2s,none,Hello world,password,e,💀,outputs/hash/127/0.py,input/hash/127.txt
+blake2s,none,Hello world,,p,✅,outputs/hash/127/0.py,input/hash/127.txt
+blake2s,none,Hallo welt,Hello world,e,💀,outputs/hash/128/0.py,input/hash/128.txt
+blake2s,none,Hallo welt,A B C,e,💀,outputs/hash/128/0.py,input/hash/128.txt
+blake2s,none,Hallo welt,password,e,💀,outputs/hash/128/0.py,input/hash/128.txt
+blake2s,none,Hallo welt,,p,✅,outputs/hash/128/0.py,input/hash/128.txt
+blake2s,none,0,Hello world,e,💀,outputs/hash/129/0.py,input/hash/129.txt
+blake2s,none,0,A B C,e,💀,outputs/hash/129/0.py,input/hash/129.txt
+blake2s,none,0,password,e,💀,outputs/hash/129/0.py,input/hash/129.txt
+blake2s,none,0,,p,✅,outputs/hash/129/0.py,input/hash/129.txt
+blake2s,none,sha1,Hello world,e,💀,outputs/hash/130/0.py,input/hash/130.txt
+blake2s,none,sha1,A B C,e,💀,outputs/hash/130/0.py,input/hash/130.txt
+blake2s,none,sha1,password,e,💀,outputs/hash/130/0.py,input/hash/130.txt
+blake2s,none,sha1,,p,✅,outputs/hash/130/0.py,input/hash/130.txt
+blake2s,none,md5,Hello world,e,💀,outputs/hash/131/0.py,input/hash/131.txt
+blake2s,none,md5,A B C,e,💀,outputs/hash/131/0.py,input/hash/131.txt
+blake2s,none,md5,password,e,💀,outputs/hash/131/0.py,input/hash/131.txt
+blake2s,none,md5,,p,✅,outputs/hash/131/0.py,input/hash/131.txt
+blake2s,uppercase,,Hello world,e,💀,outputs/hash/132/0.py,input/hash/132.txt
+blake2s,uppercase,,A B C,e,💀,outputs/hash/132/0.py,input/hash/132.txt
+blake2s,uppercase,,password,e,💀,outputs/hash/132/0.py,input/hash/132.txt
+blake2s,uppercase,,,p,✅,outputs/hash/132/0.py,input/hash/132.txt
+blake2s,uppercase,Hello world,Hello world,e,💀,outputs/hash/133/0.py,input/hash/133.txt
+blake2s,uppercase,Hello world,A B C,e,💀,outputs/hash/133/0.py,input/hash/133.txt
+blake2s,uppercase,Hello world,password,e,💀,outputs/hash/133/0.py,input/hash/133.txt
+blake2s,uppercase,Hello world,,p,✅,outputs/hash/133/0.py,input/hash/133.txt
+blake2s,uppercase,Hallo welt,Hello world,e,💀,outputs/hash/134/0.py,input/hash/134.txt
+blake2s,uppercase,Hallo welt,A B C,e,💀,outputs/hash/134/0.py,input/hash/134.txt
+blake2s,uppercase,Hallo welt,password,e,💀,outputs/hash/134/0.py,input/hash/134.txt
+blake2s,uppercase,Hallo welt,,p,✅,outputs/hash/134/0.py,input/hash/134.txt
+blake2s,uppercase,0,Hello world,e,💀,outputs/hash/135/0.py,input/hash/135.txt
+blake2s,uppercase,0,A B C,e,💀,outputs/hash/135/0.py,input/hash/135.txt
+blake2s,uppercase,0,password,e,💀,outputs/hash/135/0.py,input/hash/135.txt
+blake2s,uppercase,0,,p,✅,outputs/hash/135/0.py,input/hash/135.txt
+blake2s,uppercase,sha1,Hello world,e,💀,outputs/hash/136/0.py,input/hash/136.txt
+blake2s,uppercase,sha1,A B C,e,💀,outputs/hash/136/0.py,input/hash/136.txt
+blake2s,uppercase,sha1,password,e,💀,outputs/hash/136/0.py,input/hash/136.txt
+blake2s,uppercase,sha1,,p,✅,outputs/hash/136/0.py,input/hash/136.txt
+blake2s,uppercase,md5,Hello world,e,💀,outputs/hash/137/0.py,input/hash/137.txt
+blake2s,uppercase,md5,A B C,e,💀,outputs/hash/137/0.py,input/hash/137.txt
+blake2s,uppercase,md5,password,e,💀,outputs/hash/137/0.py,input/hash/137.txt
+blake2s,uppercase,md5,,p,✅,outputs/hash/137/0.py,input/hash/137.txt
+blake2s,dash,,Hello world,e,💀,outputs/hash/138/0.py,input/hash/138.txt
+blake2s,dash,,A B C,e,💀,outputs/hash/138/0.py,input/hash/138.txt
+blake2s,dash,,password,e,💀,outputs/hash/138/0.py,input/hash/138.txt
+blake2s,dash,,,p,✅,outputs/hash/138/0.py,input/hash/138.txt
+blake2s,dash,Hello world,Hello world,e,💀,outputs/hash/139/0.py,input/hash/139.txt
+blake2s,dash,Hello world,A B C,e,💀,outputs/hash/139/0.py,input/hash/139.txt
+blake2s,dash,Hello world,password,e,💀,outputs/hash/139/0.py,input/hash/139.txt
+blake2s,dash,Hello world,,p,✅,outputs/hash/139/0.py,input/hash/139.txt
+blake2s,dash,Hallo welt,Hello world,e,💀,outputs/hash/140/0.py,input/hash/140.txt
+blake2s,dash,Hallo welt,A B C,e,💀,outputs/hash/140/0.py,input/hash/140.txt
+blake2s,dash,Hallo welt,password,e,💀,outputs/hash/140/0.py,input/hash/140.txt
+blake2s,dash,Hallo welt,,p,✅,outputs/hash/140/0.py,input/hash/140.txt
+blake2s,dash,0,Hello world,e,💀,outputs/hash/141/0.py,input/hash/141.txt
+blake2s,dash,0,A B C,e,💀,outputs/hash/141/0.py,input/hash/141.txt
+blake2s,dash,0,password,e,💀,outputs/hash/141/0.py,input/hash/141.txt
+blake2s,dash,0,,p,✅,outputs/hash/141/0.py,input/hash/141.txt
+blake2s,dash,sha1,Hello world,e,💀,outputs/hash/142/0.py,input/hash/142.txt
+blake2s,dash,sha1,A B C,e,💀,outputs/hash/142/0.py,input/hash/142.txt
+blake2s,dash,sha1,password,e,💀,outputs/hash/142/0.py,input/hash/142.txt
+blake2s,dash,sha1,,p,✅,outputs/hash/142/0.py,input/hash/142.txt
+blake2s,dash,md5,Hello world,e,💀,outputs/hash/143/0.py,input/hash/143.txt
+blake2s,dash,md5,A B C,e,💀,outputs/hash/143/0.py,input/hash/143.txt
+blake2s,dash,md5,password,e,💀,outputs/hash/143/0.py,input/hash/143.txt
+blake2s,dash,md5,,p,✅,outputs/hash/143/0.py,input/hash/143.txt
+sha3_512,none,,Hello world,p,✅,outputs/hash/144/0.py,input/hash/144.txt
+sha3_512,none,,A B C,p,✅,outputs/hash/144/0.py,input/hash/144.txt
+sha3_512,none,,password,p,✅,outputs/hash/144/0.py,input/hash/144.txt
+sha3_512,none,,,p,✅,outputs/hash/144/0.py,input/hash/144.txt
+sha3_512,none,Hello world,Hello world,p,✅,outputs/hash/145/0.py,input/hash/145.txt
+sha3_512,none,Hello world,A B C,p,✅,outputs/hash/145/0.py,input/hash/145.txt
+sha3_512,none,Hello world,password,p,✅,outputs/hash/145/0.py,input/hash/145.txt
+sha3_512,none,Hello world,,p,✅,outputs/hash/145/0.py,input/hash/145.txt
+sha3_512,none,Hallo welt,Hello world,p,✅,outputs/hash/146/0.py,input/hash/146.txt
+sha3_512,none,Hallo welt,A B C,p,✅,outputs/hash/146/0.py,input/hash/146.txt
+sha3_512,none,Hallo welt,password,p,✅,outputs/hash/146/0.py,input/hash/146.txt
+sha3_512,none,Hallo welt,,p,✅,outputs/hash/146/0.py,input/hash/146.txt
+sha3_512,none,0,Hello world,p,✅,outputs/hash/147/0.py,input/hash/147.txt
+sha3_512,none,0,A B C,p,✅,outputs/hash/147/0.py,input/hash/147.txt
+sha3_512,none,0,password,p,✅,outputs/hash/147/0.py,input/hash/147.txt
+sha3_512,none,0,,p,✅,outputs/hash/147/0.py,input/hash/147.txt
+sha3_512,none,sha1,Hello world,p,✅,outputs/hash/148/0.py,input/hash/148.txt
+sha3_512,none,sha1,A B C,p,✅,outputs/hash/148/0.py,input/hash/148.txt
+sha3_512,none,sha1,password,p,✅,outputs/hash/148/0.py,input/hash/148.txt
+sha3_512,none,sha1,,p,✅,outputs/hash/148/0.py,input/hash/148.txt
+sha3_512,none,md5,Hello world,p,✅,outputs/hash/149/0.py,input/hash/149.txt
+sha3_512,none,md5,A B C,p,✅,outputs/hash/149/0.py,input/hash/149.txt
+sha3_512,none,md5,password,p,✅,outputs/hash/149/0.py,input/hash/149.txt
+sha3_512,none,md5,,p,✅,outputs/hash/149/0.py,input/hash/149.txt
+sha3_512,uppercase,,Hello world,p,✅,outputs/hash/150/0.py,input/hash/150.txt
+sha3_512,uppercase,,A B C,p,✅,outputs/hash/150/0.py,input/hash/150.txt
+sha3_512,uppercase,,password,p,✅,outputs/hash/150/0.py,input/hash/150.txt
+sha3_512,uppercase,,,p,✅,outputs/hash/150/0.py,input/hash/150.txt
+sha3_512,uppercase,Hello world,Hello world,p,✅,outputs/hash/151/0.py,input/hash/151.txt
+sha3_512,uppercase,Hello world,A B C,p,✅,outputs/hash/151/0.py,input/hash/151.txt
+sha3_512,uppercase,Hello world,password,p,✅,outputs/hash/151/0.py,input/hash/151.txt
+sha3_512,uppercase,Hello world,,p,✅,outputs/hash/151/0.py,input/hash/151.txt
+sha3_512,uppercase,Hallo welt,Hello world,p,✅,outputs/hash/152/0.py,input/hash/152.txt
+sha3_512,uppercase,Hallo welt,A B C,p,✅,outputs/hash/152/0.py,input/hash/152.txt
+sha3_512,uppercase,Hallo welt,password,p,✅,outputs/hash/152/0.py,input/hash/152.txt
+sha3_512,uppercase,Hallo welt,,p,✅,outputs/hash/152/0.py,input/hash/152.txt
+sha3_512,uppercase,0,Hello world,p,✅,outputs/hash/153/0.py,input/hash/153.txt
+sha3_512,uppercase,0,A B C,p,✅,outputs/hash/153/0.py,input/hash/153.txt
+sha3_512,uppercase,0,password,p,✅,outputs/hash/153/0.py,input/hash/153.txt
+sha3_512,uppercase,0,,p,✅,outputs/hash/153/0.py,input/hash/153.txt
+sha3_512,uppercase,sha1,Hello world,p,✅,outputs/hash/154/0.py,input/hash/154.txt
+sha3_512,uppercase,sha1,A B C,p,✅,outputs/hash/154/0.py,input/hash/154.txt
+sha3_512,uppercase,sha1,password,p,✅,outputs/hash/154/0.py,input/hash/154.txt
+sha3_512,uppercase,sha1,,p,✅,outputs/hash/154/0.py,input/hash/154.txt
+sha3_512,uppercase,md5,Hello world,p,✅,outputs/hash/155/0.py,input/hash/155.txt
+sha3_512,uppercase,md5,A B C,p,✅,outputs/hash/155/0.py,input/hash/155.txt
+sha3_512,uppercase,md5,password,p,✅,outputs/hash/155/0.py,input/hash/155.txt
+sha3_512,uppercase,md5,,p,✅,outputs/hash/155/0.py,input/hash/155.txt
+sha3_512,dash,,Hello world,p,✅,outputs/hash/156/0.py,input/hash/156.txt
+sha3_512,dash,,A B C,p,✅,outputs/hash/156/0.py,input/hash/156.txt
+sha3_512,dash,,password,p,✅,outputs/hash/156/0.py,input/hash/156.txt
+sha3_512,dash,,,p,✅,outputs/hash/156/0.py,input/hash/156.txt
+sha3_512,dash,Hello world,Hello world,p,✅,outputs/hash/157/0.py,input/hash/157.txt
+sha3_512,dash,Hello world,A B C,p,✅,outputs/hash/157/0.py,input/hash/157.txt
+sha3_512,dash,Hello world,password,p,✅,outputs/hash/157/0.py,input/hash/157.txt
+sha3_512,dash,Hello world,,p,✅,outputs/hash/157/0.py,input/hash/157.txt
+sha3_512,dash,Hallo welt,Hello world,p,✅,outputs/hash/158/0.py,input/hash/158.txt
+sha3_512,dash,Hallo welt,A B C,p,✅,outputs/hash/158/0.py,input/hash/158.txt
+sha3_512,dash,Hallo welt,password,p,✅,outputs/hash/158/0.py,input/hash/158.txt
+sha3_512,dash,Hallo welt,,p,✅,outputs/hash/158/0.py,input/hash/158.txt
+sha3_512,dash,0,Hello world,p,✅,outputs/hash/159/0.py,input/hash/159.txt
+sha3_512,dash,0,A B C,p,✅,outputs/hash/159/0.py,input/hash/159.txt
+sha3_512,dash,0,password,p,✅,outputs/hash/159/0.py,input/hash/159.txt
+sha3_512,dash,0,,p,✅,outputs/hash/159/0.py,input/hash/159.txt
+sha3_512,dash,sha1,Hello world,p,✅,outputs/hash/160/0.py,input/hash/160.txt
+sha3_512,dash,sha1,A B C,p,✅,outputs/hash/160/0.py,input/hash/160.txt
+sha3_512,dash,sha1,password,p,✅,outputs/hash/160/0.py,input/hash/160.txt
+sha3_512,dash,sha1,,p,✅,outputs/hash/160/0.py,input/hash/160.txt
+sha3_512,dash,md5,Hello world,p,✅,outputs/hash/161/0.py,input/hash/161.txt
+sha3_512,dash,md5,A B C,p,✅,outputs/hash/161/0.py,input/hash/161.txt
+sha3_512,dash,md5,password,p,✅,outputs/hash/161/0.py,input/hash/161.txt
+sha3_512,dash,md5,,p,✅,outputs/hash/161/0.py,input/hash/161.txt
