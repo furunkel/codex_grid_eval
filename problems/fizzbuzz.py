@@ -42,12 +42,14 @@ def filter(vars):
 
 def oracle_(input, factor1, factor2):
     result = ""
-    if input % factor_to_int(factor1) == 0:
+    if input % factor_to_int(factor1) == 0 and input % factor_to_int(factor2) == 0:
+        result = 'FizzBuzz'
+    elif input % factor_to_int(factor1) == 0:
         result += 'Fizz'
     elif input % factor_to_int(factor2) == 0:
         result += 'Buzz'
     else:
-        result = str(input)
+        result = input
     return result
 
 def oracle(vars):
