@@ -1,0 +1,6 @@
+
+def all_suffixes(string: str) -> List[str]:
+    """ Return list of all prefixes from shortest to longest of the input string
+    >>> all_suffixes('reverse the result!!!')
+    ['!', '!!', '!!!', 't!!!', 'lt!!!', 'ult!!!', 'sult!!!', 'esult!!!', 'result!!!', ' result!!!', 'e result!!!', 'he result!!!', 'the result!!!', ' the result!!!', 'e the result!!!', 'se the result!!!', 'rse the result!!!', 'erse the result!!!', 'verse the result!!!', 'everse the result!!!', 'reverse the result!!!']
+    """

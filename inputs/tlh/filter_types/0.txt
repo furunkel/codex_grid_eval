@@ -1,0 +1,6 @@
+
+def chol_SIrgh(values: List[Any]) -> List[str]:
+    """ yapbe'mo' yoHwI'pu' SIrgh
+    >>> chol_SIrgh(['a', 3.14, 5])
+    ['a']
+    """

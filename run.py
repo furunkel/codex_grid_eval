@@ -1,4 +1,3 @@
-from dataclasses import dataclass
 import subprocess
 
 from numpy import isin
@@ -26,6 +25,8 @@ Language.build_library(
     'vendor/tree-sitter-python'
   ]
 )
+
+from common import Problem
 
 class ExecutionError(Exception):
     pass
@@ -76,48 +77,6 @@ def save(problem_name, index, input, outputs, lang):
     for i, o in enumerate(outputs):
         (output_dir / f"{i}.py").write_text(o)
 
-@dataclass
-class Problem:
-    name: str
-
-    def __post_init__(self):
-        problems_mod = __import__(f'problems.{self.name}')
-        self.mod = getattr(problems_mod, self.name)
-
-    @property
-    def generate_func(self):
-        return getattr(self.mod, 'generate')
-        
-    @property
-    def oracle_func(self):
-        return getattr(self.mod, 'oracle')
-
-    @property
-    def run_func(self):
-        return getattr(self.mod, 'run')
-
-    @property
-    def has_target(self):
-        return hasattr(self.mod, 'TARGET')
-
-    @property
-    def test_imports(self):
-        if hasattr(self.mod, 'TEST_IMPORTS'):
-            return getattr(self.mod, 'TEST_IMPORTS')
-        else:
-            return []
-
-    def get_target_name(self, vars, lang):
-        target = getattr(self.mod, 'TARGET')
-        if isinstance(target, dict):
-            target = target[lang]
-        return target.format(**vars)
-
-    def is_output_equal(self, a, b):
-        if hasattr(self.mod, 'is_output_equal'):
-            return getattr(self.mod, 'is_output_equal')(a, b)
-        else:
-            return a == b
 
 class Main:
 
@@ -179,10 +138,30 @@ class Main:
             print(len(outputs))
             save(problem_name, index, input, outputs, lang)
 
+    def test_imports_str(self, problem):
+        imports = []
+
+        def invalid_import():
+            raise ValueError("import must be either str or Tuple[str, str] or Tuple[str, List[str]]")
+
+        for imp in problem.test_imports:
+            if isinstance(imp, str): 
+                imports.append(f"import {imp}")
+            elif isinstance(imp, tuple):
+                if len(imp) > 2: invalid_import()
+                imp1 = imp[1]
+                if not isinstance(imp1, list):
+                    imp1 = [imp1]
+                imports.append(f"from {imp[0]} import {', '.join(imp1)}")
+            else:
+                invalid_import()
+                
+        return '\n'.join(imports) + '\n'
+
     def run_python(self, problem, f, vars, lang):
         if problem.has_target:
             code = extract_first_func(f.read_text())
-            code = '\n'.join([f"import {i}" for i in problem.test_imports]) + '\n' + code
+            code = self.test_imports_str(problem) + code
             exec_obj = compile(code, str(f), 'exec')
             module = ModuleType(str(f).replace('/', '.'))
             exec(exec_obj, module.__dict__)
@@ -190,9 +169,11 @@ class Main:
             input = vars['input']
             if not isinstance(input, list): input = [input]
 
+            print('input', input)
+
             try:
                 return target(*input)
-            except (NameError, TypeError, ValueError) as e:
+            except (NameError, TypeError, ValueError, IndexError) as e:
                 raise ExecutionError(str(e))
             # mod = __import__(str(f).replace('/', '.'))
             # target = getattr(mod, target)

@@ -1,0 +1,6 @@
+
+def chol_tlhim(values: List[Any]) -> List[float]:
+    """ yapbe'mo' yoHwI'pu' tlhim
+    >>> chol_tlhim(['a', 3.14, 5])
+    [3.14]
+    """

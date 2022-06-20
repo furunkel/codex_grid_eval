@@ -1,0 +1,6 @@
+
+def chol_ngeb(values: List[Any]) -> List[int]:
+    """ yapbe'mo' yoHwI'pu' ngeb
+    >>> chol_ngeb(['a', 3.14, 5])
+    [5]
+    """

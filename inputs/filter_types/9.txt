@@ -1,0 +1,6 @@
+
+def filter_lists(values: List[Any]) -> List[List[Any]]:
+    """ Filter given list of any python values only for lists
+    >>> filter_lists([1, 2, 3, 3.6, 'abc', {}, [], (1,)])
+    [[]]
+    """

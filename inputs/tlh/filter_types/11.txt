@@ -1,0 +1,6 @@
+
+def chol_cheng(values: List[Any]) -> List[Tuple]:
+    """ yapbe'mo' yoHwI'pu' cheng
+    >>> chol_cheng([1, 2, 3, 3.6, 'abc', {}, [], (1,)])
+    [(1,)]
+    """

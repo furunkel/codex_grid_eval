@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 
+from numpy import isin
+
 @dataclass
 class Problem:
     name: str
@@ -43,6 +45,8 @@ class Problem:
         target = getattr(self.mod, 'TARGET')
         if isinstance(target, dict):
             target = target[lang]
+            if callable(target):
+                target = target(lang, vars)
         return target.format(**vars)
 
     def is_output_equal(self, a, b):

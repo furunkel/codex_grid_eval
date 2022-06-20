@@ -1,0 +1,6 @@
+
+def chol_telth(values: List[Any]) -> List[List[Any]]:
+    """ yapbe'mo' yoHwI'pu' telth
+    >>> chol_telth(['a', 3.14, 5])
+    []
+    """

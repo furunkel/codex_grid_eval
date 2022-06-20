@@ -1,0 +1,37 @@
+op,example_input,input,result,result_emojis,model_output,model_input
+min,"[1, 2, 3, 2, 3, 4, 2]",[[]],e,💀,outputs/rolling/0/0.py,input/rolling/0.txt
+min,"[1, 2, 3, 2, 3, 4, 2]","[[1, 2, 3, 4]]",p,✅,outputs/rolling/0/0.py,input/rolling/0.txt
+min,"[1, 2, 3, 2, 3, 4, 2]","[[4, 3, 2, 1]]",p,✅,outputs/rolling/0/0.py,input/rolling/0.txt
+min,"[1, 2, 3, 2, 3, 4, 2]","[[3, 2, 3, 100, 3]]",p,✅,outputs/rolling/0/0.py,input/rolling/0.txt
+min,"[1, 2, 2, 2]",[[]],e,💀,outputs/rolling/1/0.py,input/rolling/1.txt
+min,"[1, 2, 2, 2]","[[1, 2, 3, 4]]",p,✅,outputs/rolling/1/0.py,input/rolling/1.txt
+min,"[1, 2, 2, 2]","[[4, 3, 2, 1]]",p,✅,outputs/rolling/1/0.py,input/rolling/1.txt
+min,"[1, 2, 2, 2]","[[3, 2, 3, 100, 3]]",p,✅,outputs/rolling/1/0.py,input/rolling/1.txt
+min,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]",[[]],p,✅,outputs/rolling/2/0.py,input/rolling/2.txt
+min,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]","[[1, 2, 3, 4]]",p,✅,outputs/rolling/2/0.py,input/rolling/2.txt
+min,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]","[[4, 3, 2, 1]]",p,✅,outputs/rolling/2/0.py,input/rolling/2.txt
+min,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]","[[3, 2, 3, 100, 3]]",p,✅,outputs/rolling/2/0.py,input/rolling/2.txt
+max,"[1, 2, 3, 2, 3, 4, 2]",[[]],e,💀,outputs/rolling/3/0.py,input/rolling/3.txt
+max,"[1, 2, 3, 2, 3, 4, 2]","[[1, 2, 3, 4]]",p,✅,outputs/rolling/3/0.py,input/rolling/3.txt
+max,"[1, 2, 3, 2, 3, 4, 2]","[[4, 3, 2, 1]]",p,✅,outputs/rolling/3/0.py,input/rolling/3.txt
+max,"[1, 2, 3, 2, 3, 4, 2]","[[3, 2, 3, 100, 3]]",p,✅,outputs/rolling/3/0.py,input/rolling/3.txt
+max,"[1, 2, 2, 2]",[[]],p,✅,outputs/rolling/4/0.py,input/rolling/4.txt
+max,"[1, 2, 2, 2]","[[1, 2, 3, 4]]",p,✅,outputs/rolling/4/0.py,input/rolling/4.txt
+max,"[1, 2, 2, 2]","[[4, 3, 2, 1]]",p,✅,outputs/rolling/4/0.py,input/rolling/4.txt
+max,"[1, 2, 2, 2]","[[3, 2, 3, 100, 3]]",p,✅,outputs/rolling/4/0.py,input/rolling/4.txt
+max,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]",[[]],e,💀,outputs/rolling/5/0.py,input/rolling/5.txt
+max,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]","[[1, 2, 3, 4]]",p,✅,outputs/rolling/5/0.py,input/rolling/5.txt
+max,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]","[[4, 3, 2, 1]]",p,✅,outputs/rolling/5/0.py,input/rolling/5.txt
+max,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]","[[3, 2, 3, 100, 3]]",p,✅,outputs/rolling/5/0.py,input/rolling/5.txt
+sum,"[1, 2, 3, 2, 3, 4, 2]",[[]],p,✅,outputs/rolling/6/0.py,input/rolling/6.txt
+sum,"[1, 2, 3, 2, 3, 4, 2]","[[1, 2, 3, 4]]",p,✅,outputs/rolling/6/0.py,input/rolling/6.txt
+sum,"[1, 2, 3, 2, 3, 4, 2]","[[4, 3, 2, 1]]",p,✅,outputs/rolling/6/0.py,input/rolling/6.txt
+sum,"[1, 2, 3, 2, 3, 4, 2]","[[3, 2, 3, 100, 3]]",p,✅,outputs/rolling/6/0.py,input/rolling/6.txt
+sum,"[1, 2, 2, 2]",[[]],p,✅,outputs/rolling/7/0.py,input/rolling/7.txt
+sum,"[1, 2, 2, 2]","[[1, 2, 3, 4]]",p,✅,outputs/rolling/7/0.py,input/rolling/7.txt
+sum,"[1, 2, 2, 2]","[[4, 3, 2, 1]]",p,✅,outputs/rolling/7/0.py,input/rolling/7.txt
+sum,"[1, 2, 2, 2]","[[3, 2, 3, 100, 3]]",p,✅,outputs/rolling/7/0.py,input/rolling/7.txt
+sum,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]",[[]],p,✅,outputs/rolling/8/0.py,input/rolling/8.txt
+sum,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]","[[1, 2, 3, 4]]",p,✅,outputs/rolling/8/0.py,input/rolling/8.txt
+sum,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]","[[4, 3, 2, 1]]",p,✅,outputs/rolling/8/0.py,input/rolling/8.txt
+sum,"[434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489]","[[3, 2, 3, 100, 3]]",p,✅,outputs/rolling/8/0.py,input/rolling/8.txt
