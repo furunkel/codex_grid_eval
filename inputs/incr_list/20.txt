@@ -1,0 +1,6 @@
+
+def decr_list(l: list):
+    """Return list with elements decremented by 9999.
+    >>> decr_list([1, 2, 3])
+    [-9998, -9997, -9996]
+    """

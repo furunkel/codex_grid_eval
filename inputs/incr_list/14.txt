@@ -1,0 +1,6 @@
+
+def decr_list(l: list):
+    """Return list with elements decremented by 1.
+    >>> decr_list([1, 2, 3])
+    [0, 1, 2]
+    """

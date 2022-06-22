@@ -1,0 +1,6 @@
+
+def incr_list(l: list):
+    """Return list with elements incremented by 100.
+    >>> incr_list([5, 3, 5, 2, 3, 3, 9, 0, 123])
+    [105, 103, 105, 102, 103, 103, 109, 100, 223]
+    """
