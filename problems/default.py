@@ -21,7 +21,11 @@ def default_generate(GRID, inputs, render, lang, with_inputs=False, filter_func=
             history.append(value)
             yield value
         else:
-            for input in inputs:
+            inputs_ = inputs
+            if callable(inputs_):
+                inputs_ = inputs_(vars)
+
+            for input in inputs_:
                 value = (text, {**vars, 'input': input}, index)
                 if value in history: continue
                 history.append(value)
