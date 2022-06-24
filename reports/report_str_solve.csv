@@ -1,0 +1,289 @@
+case_cond,reverse_cond,input,result,result_emojis,model_output,model_input,expected,actual
+letter,no letters,AsDf,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,As?Df,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,As??Df,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,1234,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,1?234,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,a1?234,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,a1?2?34,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,#a@C,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,#a?C,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,6@2,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,#$a^D,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,#?a^D,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,#?a^?D,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,#ccc,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,#c?c,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,no letters,#c??c,p,✅,outputs/str_solve/0/0.py,input/str_solve/0.txt,,
+letter,letters,AsDf,p,✅,outputs/str_solve/1/0.py,input/str_solve/1.txt,,
+letter,letters,As?Df,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'Fd?Sa','As?Df'
+letter,letters,As??Df,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'Fd??Sa','As??Df'
+letter,letters,1234,p,✅,outputs/str_solve/1/0.py,input/str_solve/1.txt,,
+letter,letters,1?234,p,✅,outputs/str_solve/1/0.py,input/str_solve/1.txt,,
+letter,letters,a1?234,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'432?1A','a1?234'
+letter,letters,a1?2?34,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'43?2?1A','a1?2?34'
+letter,letters,#a@C,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'c@A#','#a@C'
+letter,letters,#a?C,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'c?A#','#a?C'
+letter,letters,6@2,p,✅,outputs/str_solve/1/0.py,input/str_solve/1.txt,,
+letter,letters,#$a^D,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'d^A$#','#$a^D'
+letter,letters,#?a^D,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'d^A?#','#?a^D'
+letter,letters,#?a^?D,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'d?^A?#','#?a^?D'
+letter,letters,#ccc,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'CCC#','#ccc'
+letter,letters,#c?c,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'C?C#','#c?c'
+letter,letters,#c??c,f,❌,outputs/str_solve/1/0.py,input/str_solve/1.txt,'C??C#','#c??c'
+letter,exactly one question mark,AsDf,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,exactly one question mark,As?Df,f,❌,outputs/str_solve/2/0.py,input/str_solve/2.txt,'Fd?Sa','fD?sA'
+letter,exactly one question mark,As??Df,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,exactly one question mark,1234,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,exactly one question mark,1?234,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,exactly one question mark,a1?234,f,❌,outputs/str_solve/2/0.py,input/str_solve/2.txt,'432?1A','432?1a'
+letter,exactly one question mark,a1?2?34,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,exactly one question mark,#a@C,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,exactly one question mark,#a?C,f,❌,outputs/str_solve/2/0.py,input/str_solve/2.txt,'c?A#','C?a#'
+letter,exactly one question mark,6@2,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,exactly one question mark,#$a^D,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,exactly one question mark,#?a^D,f,❌,outputs/str_solve/2/0.py,input/str_solve/2.txt,'d^A?#','D^a?#'
+letter,exactly one question mark,#?a^?D,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,exactly one question mark,#ccc,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,exactly one question mark,#c?c,f,❌,outputs/str_solve/2/0.py,input/str_solve/2.txt,'C?C#','c?c#'
+letter,exactly one question mark,#c??c,p,✅,outputs/str_solve/2/0.py,input/str_solve/2.txt,,
+letter,more than one question mark,AsDf,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,As?Df,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,As??Df,f,❌,outputs/str_solve/3/0.py,input/str_solve/3.txt,'Fd??Sa','fD??sA'
+letter,more than one question mark,1234,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,1?234,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,a1?234,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,a1?2?34,f,❌,outputs/str_solve/3/0.py,input/str_solve/3.txt,'43?2?1A','43?2?1a'
+letter,more than one question mark,#a@C,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,#a?C,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,6@2,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,#$a^D,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,#?a^D,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,#?a^?D,f,❌,outputs/str_solve/3/0.py,input/str_solve/3.txt,'d?^A?#','D?^a?#'
+letter,more than one question mark,#ccc,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,#c?c,p,✅,outputs/str_solve/3/0.py,input/str_solve/3.txt,,
+letter,more than one question mark,#c??c,f,❌,outputs/str_solve/3/0.py,input/str_solve/3.txt,'C??C#','c??c#'
+letter,no question marks,AsDf,f,❌,outputs/str_solve/4/0.py,input/str_solve/4.txt,'FdSa','fDsA'
+letter,no question marks,As?Df,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,As??Df,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,1234,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,1?234,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,a1?234,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,a1?2?34,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,#a@C,f,❌,outputs/str_solve/4/0.py,input/str_solve/4.txt,'c@A#','C@a#'
+letter,no question marks,#a?C,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,6@2,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,#$a^D,f,❌,outputs/str_solve/4/0.py,input/str_solve/4.txt,'d^A$#','D^a$#'
+letter,no question marks,#?a^D,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,#?a^?D,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,#ccc,f,❌,outputs/str_solve/4/0.py,input/str_solve/4.txt,'CCC#','ccc#'
+letter,no question marks,#c?c,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,no question marks,#c??c,p,✅,outputs/str_solve/4/0.py,input/str_solve/4.txt,,
+letter,one or more question marks,AsDf,p,✅,outputs/str_solve/5/0.py,input/str_solve/5.txt,,
+letter,one or more question marks,As?Df,f,❌,outputs/str_solve/5/0.py,input/str_solve/5.txt,'Fd?Sa','fD?sA'
+letter,one or more question marks,As??Df,f,❌,outputs/str_solve/5/0.py,input/str_solve/5.txt,'Fd??Sa','fD??sA'
+letter,one or more question marks,1234,p,✅,outputs/str_solve/5/0.py,input/str_solve/5.txt,,
+letter,one or more question marks,1?234,p,✅,outputs/str_solve/5/0.py,input/str_solve/5.txt,,
+letter,one or more question marks,a1?234,f,❌,outputs/str_solve/5/0.py,input/str_solve/5.txt,'432?1A','432?1a'
+letter,one or more question marks,a1?2?34,f,❌,outputs/str_solve/5/0.py,input/str_solve/5.txt,'43?2?1A','43?2?1a'
+letter,one or more question marks,#a@C,p,✅,outputs/str_solve/5/0.py,input/str_solve/5.txt,,
+letter,one or more question marks,#a?C,f,❌,outputs/str_solve/5/0.py,input/str_solve/5.txt,'c?A#','C?a#'
+letter,one or more question marks,6@2,p,✅,outputs/str_solve/5/0.py,input/str_solve/5.txt,,
+letter,one or more question marks,#$a^D,p,✅,outputs/str_solve/5/0.py,input/str_solve/5.txt,,
+letter,one or more question marks,#?a^D,f,❌,outputs/str_solve/5/0.py,input/str_solve/5.txt,'d^A?#','D^a?#'
+letter,one or more question marks,#?a^?D,f,❌,outputs/str_solve/5/0.py,input/str_solve/5.txt,'d?^A?#','D?^a?#'
+letter,one or more question marks,#ccc,p,✅,outputs/str_solve/5/0.py,input/str_solve/5.txt,,
+letter,one or more question marks,#c?c,f,❌,outputs/str_solve/5/0.py,input/str_solve/5.txt,'C?C#','c?c#'
+letter,one or more question marks,#c??c,f,❌,outputs/str_solve/5/0.py,input/str_solve/5.txt,'C??C#','c??c#'
+vowel,no letters,AsDf,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'AsDf','fDsa'
+vowel,no letters,As?Df,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'As?Df','fD?sa'
+vowel,no letters,As??Df,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'As??Df','fD??sa'
+vowel,no letters,1234,p,✅,outputs/str_solve/6/0.py,input/str_solve/6.txt,,
+vowel,no letters,1?234,p,✅,outputs/str_solve/6/0.py,input/str_solve/6.txt,,
+vowel,no letters,a1?234,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'A1?234','432?1A'
+vowel,no letters,a1?2?34,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'A1?2?34','43?2?1A'
+vowel,no letters,#a@C,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'#A@C','C@A#'
+vowel,no letters,#a?C,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'#A?C','C?A#'
+vowel,no letters,6@2,p,✅,outputs/str_solve/6/0.py,input/str_solve/6.txt,,
+vowel,no letters,#$a^D,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'#$A^D','D^A$#'
+vowel,no letters,#?a^D,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'#?A^D','D^A?#'
+vowel,no letters,#?a^?D,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'#?A^?D','D?^A?#'
+vowel,no letters,#ccc,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'#ccc','ccc#'
+vowel,no letters,#c?c,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'#c?c','c?c#'
+vowel,no letters,#c??c,f,❌,outputs/str_solve/6/0.py,input/str_solve/6.txt,'#c??c','c??c#'
+vowel,letters,AsDf,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,As?Df,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,As??Df,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,1234,f,❌,outputs/str_solve/7/0.py,input/str_solve/7.txt,'1234','4321'
+vowel,letters,1?234,f,❌,outputs/str_solve/7/0.py,input/str_solve/7.txt,'1?234','432?1'
+vowel,letters,a1?234,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,a1?2?34,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,#a@C,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,#a?C,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,6@2,f,❌,outputs/str_solve/7/0.py,input/str_solve/7.txt,'6@2','2@6'
+vowel,letters,#$a^D,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,#?a^D,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,#?a^?D,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,#ccc,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,#c?c,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,letters,#c??c,p,✅,outputs/str_solve/7/0.py,input/str_solve/7.txt,,
+vowel,exactly one question mark,AsDf,f,❌,outputs/str_solve/8/0.py,input/str_solve/8.txt,'AsDf','Asdf'
+vowel,exactly one question mark,As?Df,p,✅,outputs/str_solve/8/0.py,input/str_solve/8.txt,,
+vowel,exactly one question mark,As??Df,f,❌,outputs/str_solve/8/0.py,input/str_solve/8.txt,'As??Df','As??df'
+vowel,exactly one question mark,1234,p,✅,outputs/str_solve/8/0.py,input/str_solve/8.txt,,
+vowel,exactly one question mark,1?234,p,✅,outputs/str_solve/8/0.py,input/str_solve/8.txt,,
+vowel,exactly one question mark,a1?234,f,❌,outputs/str_solve/8/0.py,input/str_solve/8.txt,'432?1A','432?1a'
+vowel,exactly one question mark,a1?2?34,p,✅,outputs/str_solve/8/0.py,input/str_solve/8.txt,,
+vowel,exactly one question mark,#a@C,f,❌,outputs/str_solve/8/0.py,input/str_solve/8.txt,'#A@C','#A@c'
+vowel,exactly one question mark,#a?C,f,❌,outputs/str_solve/8/0.py,input/str_solve/8.txt,'C?A#','C?a#'
+vowel,exactly one question mark,6@2,p,✅,outputs/str_solve/8/0.py,input/str_solve/8.txt,,
+vowel,exactly one question mark,#$a^D,f,❌,outputs/str_solve/8/0.py,input/str_solve/8.txt,'#$A^D','#$A^d'
+vowel,exactly one question mark,#?a^D,f,❌,outputs/str_solve/8/0.py,input/str_solve/8.txt,'D^A?#','D^a?#'
+vowel,exactly one question mark,#?a^?D,f,❌,outputs/str_solve/8/0.py,input/str_solve/8.txt,'#?A^?D','#?A^?d'
+vowel,exactly one question mark,#ccc,p,✅,outputs/str_solve/8/0.py,input/str_solve/8.txt,,
+vowel,exactly one question mark,#c?c,p,✅,outputs/str_solve/8/0.py,input/str_solve/8.txt,,
+vowel,exactly one question mark,#c??c,p,✅,outputs/str_solve/8/0.py,input/str_solve/8.txt,,
+vowel,more than one question mark,AsDf,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,As?Df,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,As??Df,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,1234,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,1?234,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,a1?234,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,a1?2?34,f,❌,outputs/str_solve/9/0.py,input/str_solve/9.txt,'43?2?1A','43?2?1a'
+vowel,more than one question mark,#a@C,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,#a?C,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,6@2,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,#$a^D,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,#?a^D,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,#?a^?D,f,❌,outputs/str_solve/9/0.py,input/str_solve/9.txt,'D?^A?#','D?^a?#'
+vowel,more than one question mark,#ccc,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,#c?c,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,more than one question mark,#c??c,p,✅,outputs/str_solve/9/0.py,input/str_solve/9.txt,,
+vowel,no question marks,AsDf,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,As?Df,f,❌,outputs/str_solve/10/0.py,input/str_solve/10.txt,'As?Df','as?Df'
+vowel,no question marks,As??Df,f,❌,outputs/str_solve/10/0.py,input/str_solve/10.txt,'As??Df','as??Df'
+vowel,no question marks,1234,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,1?234,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,a1?234,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,a1?2?34,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,#a@C,f,❌,outputs/str_solve/10/0.py,input/str_solve/10.txt,'C@A#','C@a#'
+vowel,no question marks,#a?C,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,6@2,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,#$a^D,f,❌,outputs/str_solve/10/0.py,input/str_solve/10.txt,'D^A$#','D^a$#'
+vowel,no question marks,#?a^D,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,#?a^?D,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,#ccc,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,#c?c,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,no question marks,#c??c,p,✅,outputs/str_solve/10/0.py,input/str_solve/10.txt,,
+vowel,one or more question marks,AsDf,f,❌,outputs/str_solve/11/0.py,input/str_solve/11.txt,'AsDf','asdf'
+vowel,one or more question marks,As?Df,p,✅,outputs/str_solve/11/0.py,input/str_solve/11.txt,,
+vowel,one or more question marks,As??Df,p,✅,outputs/str_solve/11/0.py,input/str_solve/11.txt,,
+vowel,one or more question marks,1234,p,✅,outputs/str_solve/11/0.py,input/str_solve/11.txt,,
+vowel,one or more question marks,1?234,p,✅,outputs/str_solve/11/0.py,input/str_solve/11.txt,,
+vowel,one or more question marks,a1?234,f,❌,outputs/str_solve/11/0.py,input/str_solve/11.txt,'432?1A','432?1a'
+vowel,one or more question marks,a1?2?34,f,❌,outputs/str_solve/11/0.py,input/str_solve/11.txt,'43?2?1A','43?2?1a'
+vowel,one or more question marks,#a@C,f,❌,outputs/str_solve/11/0.py,input/str_solve/11.txt,'#A@C','#A@c'
+vowel,one or more question marks,#a?C,f,❌,outputs/str_solve/11/0.py,input/str_solve/11.txt,'C?A#','C?a#'
+vowel,one or more question marks,6@2,p,✅,outputs/str_solve/11/0.py,input/str_solve/11.txt,,
+vowel,one or more question marks,#$a^D,f,❌,outputs/str_solve/11/0.py,input/str_solve/11.txt,'#$A^D','#$A^d'
+vowel,one or more question marks,#?a^D,f,❌,outputs/str_solve/11/0.py,input/str_solve/11.txt,'D^A?#','D^a?#'
+vowel,one or more question marks,#?a^?D,f,❌,outputs/str_solve/11/0.py,input/str_solve/11.txt,'D?^A?#','D?^a?#'
+vowel,one or more question marks,#ccc,p,✅,outputs/str_solve/11/0.py,input/str_solve/11.txt,,
+vowel,one or more question marks,#c?c,p,✅,outputs/str_solve/11/0.py,input/str_solve/11.txt,,
+vowel,one or more question marks,#c??c,p,✅,outputs/str_solve/11/0.py,input/str_solve/11.txt,,
+consonant,no letters,AsDf,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,As?Df,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,As??Df,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,1234,f,❌,outputs/str_solve/12/0.py,input/str_solve/12.txt,'4321','1234'
+consonant,no letters,1?234,f,❌,outputs/str_solve/12/0.py,input/str_solve/12.txt,'432?1','1?234'
+consonant,no letters,a1?234,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,a1?2?34,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,#a@C,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,#a?C,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,6@2,f,❌,outputs/str_solve/12/0.py,input/str_solve/12.txt,'2@6','6@2'
+consonant,no letters,#$a^D,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,#?a^D,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,#?a^?D,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,#ccc,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,#c?c,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,no letters,#c??c,p,✅,outputs/str_solve/12/0.py,input/str_solve/12.txt,,
+consonant,letters,AsDf,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'FdSA','fDsA'
+consonant,letters,As?Df,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'Fd?SA','aS?dF'
+consonant,letters,As??Df,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'Fd??SA','aS??dF'
+consonant,letters,1234,p,✅,outputs/str_solve/13/0.py,input/str_solve/13.txt,,
+consonant,letters,1?234,p,✅,outputs/str_solve/13/0.py,input/str_solve/13.txt,,
+consonant,letters,a1?234,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'432?1a','A1?234'
+consonant,letters,a1?2?34,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'43?2?1a','A1?2?34'
+consonant,letters,#a@C,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'c@a#','#A@c'
+consonant,letters,#a?C,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'c?a#','#A?c'
+consonant,letters,6@2,p,✅,outputs/str_solve/13/0.py,input/str_solve/13.txt,,
+consonant,letters,#$a^D,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'d^a$#','#$A^d'
+consonant,letters,#?a^D,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'d^a?#','#?A^d'
+consonant,letters,#?a^?D,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'d?^a?#','#?A^?d'
+consonant,letters,#ccc,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'CCC#','#CCC'
+consonant,letters,#c?c,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'C?C#','#C?C'
+consonant,letters,#c??c,f,❌,outputs/str_solve/13/0.py,input/str_solve/13.txt,'C??C#','#C??C'
+consonant,exactly one question mark,AsDf,f,❌,outputs/str_solve/14/0.py,input/str_solve/14.txt,'ASdF','aSdF'
+consonant,exactly one question mark,As?Df,f,❌,outputs/str_solve/14/0.py,input/str_solve/14.txt,'Fd?SA','fD?sA'
+consonant,exactly one question mark,As??Df,f,❌,outputs/str_solve/14/0.py,input/str_solve/14.txt,'AS??dF','aS??dF'
+consonant,exactly one question mark,1234,p,✅,outputs/str_solve/14/0.py,input/str_solve/14.txt,,
+consonant,exactly one question mark,1?234,p,✅,outputs/str_solve/14/0.py,input/str_solve/14.txt,,
+consonant,exactly one question mark,a1?234,p,✅,outputs/str_solve/14/0.py,input/str_solve/14.txt,,
+consonant,exactly one question mark,a1?2?34,f,❌,outputs/str_solve/14/0.py,input/str_solve/14.txt,'a1?2?34','A1?2?34'
+consonant,exactly one question mark,#a@C,f,❌,outputs/str_solve/14/0.py,input/str_solve/14.txt,'#a@c','#A@c'
+consonant,exactly one question mark,#a?C,f,❌,outputs/str_solve/14/0.py,input/str_solve/14.txt,'c?a#','C?a#'
+consonant,exactly one question mark,6@2,p,✅,outputs/str_solve/14/0.py,input/str_solve/14.txt,,
+consonant,exactly one question mark,#$a^D,f,❌,outputs/str_solve/14/0.py,input/str_solve/14.txt,'#$a^d','#$A^d'
+consonant,exactly one question mark,#?a^D,f,❌,outputs/str_solve/14/0.py,input/str_solve/14.txt,'d^a?#','D^a?#'
+consonant,exactly one question mark,#?a^?D,f,❌,outputs/str_solve/14/0.py,input/str_solve/14.txt,'#?a^?d','#?A^?d'
+consonant,exactly one question mark,#ccc,p,✅,outputs/str_solve/14/0.py,input/str_solve/14.txt,,
+consonant,exactly one question mark,#c?c,f,❌,outputs/str_solve/14/0.py,input/str_solve/14.txt,'C?C#','c?c#'
+consonant,exactly one question mark,#c??c,p,✅,outputs/str_solve/14/0.py,input/str_solve/14.txt,,
+consonant,more than one question mark,AsDf,f,❌,outputs/str_solve/15/0.py,input/str_solve/15.txt,'ASdF','aSdF'
+consonant,more than one question mark,As?Df,f,❌,outputs/str_solve/15/0.py,input/str_solve/15.txt,'AS?dF','aS?dF'
+consonant,more than one question mark,As??Df,f,❌,outputs/str_solve/15/0.py,input/str_solve/15.txt,'Fd??SA','fD??sA'
+consonant,more than one question mark,1234,p,✅,outputs/str_solve/15/0.py,input/str_solve/15.txt,,
+consonant,more than one question mark,1?234,p,✅,outputs/str_solve/15/0.py,input/str_solve/15.txt,,
+consonant,more than one question mark,a1?234,f,❌,outputs/str_solve/15/0.py,input/str_solve/15.txt,'a1?234','A1?234'
+consonant,more than one question mark,a1?2?34,p,✅,outputs/str_solve/15/0.py,input/str_solve/15.txt,,
+consonant,more than one question mark,#a@C,f,❌,outputs/str_solve/15/0.py,input/str_solve/15.txt,'#a@c','#A@c'
+consonant,more than one question mark,#a?C,f,❌,outputs/str_solve/15/0.py,input/str_solve/15.txt,'#a?c','#A?c'
+consonant,more than one question mark,6@2,p,✅,outputs/str_solve/15/0.py,input/str_solve/15.txt,,
+consonant,more than one question mark,#$a^D,f,❌,outputs/str_solve/15/0.py,input/str_solve/15.txt,'#$a^d','#$A^d'
+consonant,more than one question mark,#?a^D,f,❌,outputs/str_solve/15/0.py,input/str_solve/15.txt,'#?a^d','#?A^d'
+consonant,more than one question mark,#?a^?D,f,❌,outputs/str_solve/15/0.py,input/str_solve/15.txt,'d?^a?#','D?^a?#'
+consonant,more than one question mark,#ccc,p,✅,outputs/str_solve/15/0.py,input/str_solve/15.txt,,
+consonant,more than one question mark,#c?c,p,✅,outputs/str_solve/15/0.py,input/str_solve/15.txt,,
+consonant,more than one question mark,#c??c,f,❌,outputs/str_solve/15/0.py,input/str_solve/15.txt,'C??C#','c??c#'
+consonant,no question marks,AsDf,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'FdSA','fDsA'
+consonant,no question marks,As?Df,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'AS?dF','aS?dF'
+consonant,no question marks,As??Df,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'AS??dF','aS??dF'
+consonant,no question marks,1234,p,✅,outputs/str_solve/16/0.py,input/str_solve/16.txt,,
+consonant,no question marks,1?234,p,✅,outputs/str_solve/16/0.py,input/str_solve/16.txt,,
+consonant,no question marks,a1?234,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'a1?234','A1?234'
+consonant,no question marks,a1?2?34,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'a1?2?34','A1?2?34'
+consonant,no question marks,#a@C,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'c@a#','C@a#'
+consonant,no question marks,#a?C,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'#a?c','#A?c'
+consonant,no question marks,6@2,p,✅,outputs/str_solve/16/0.py,input/str_solve/16.txt,,
+consonant,no question marks,#$a^D,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'d^a$#','D^a$#'
+consonant,no question marks,#?a^D,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'#?a^d','#?A^d'
+consonant,no question marks,#?a^?D,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'#?a^?d','#?A^?d'
+consonant,no question marks,#ccc,f,❌,outputs/str_solve/16/0.py,input/str_solve/16.txt,'CCC#','ccc#'
+consonant,no question marks,#c?c,p,✅,outputs/str_solve/16/0.py,input/str_solve/16.txt,,
+consonant,no question marks,#c??c,p,✅,outputs/str_solve/16/0.py,input/str_solve/16.txt,,
+consonant,one or more question marks,AsDf,f,❌,outputs/str_solve/17/0.py,input/str_solve/17.txt,'ASdF','aSdF'
+consonant,one or more question marks,As?Df,f,❌,outputs/str_solve/17/0.py,input/str_solve/17.txt,'Fd?SA','fD?sA'
+consonant,one or more question marks,As??Df,f,❌,outputs/str_solve/17/0.py,input/str_solve/17.txt,'Fd??SA','fD??sA'
+consonant,one or more question marks,1234,p,✅,outputs/str_solve/17/0.py,input/str_solve/17.txt,,
+consonant,one or more question marks,1?234,p,✅,outputs/str_solve/17/0.py,input/str_solve/17.txt,,
+consonant,one or more question marks,a1?234,p,✅,outputs/str_solve/17/0.py,input/str_solve/17.txt,,
+consonant,one or more question marks,a1?2?34,p,✅,outputs/str_solve/17/0.py,input/str_solve/17.txt,,
+consonant,one or more question marks,#a@C,f,❌,outputs/str_solve/17/0.py,input/str_solve/17.txt,'#a@c','#A@c'
+consonant,one or more question marks,#a?C,f,❌,outputs/str_solve/17/0.py,input/str_solve/17.txt,'c?a#','C?a#'
+consonant,one or more question marks,6@2,p,✅,outputs/str_solve/17/0.py,input/str_solve/17.txt,,
+consonant,one or more question marks,#$a^D,f,❌,outputs/str_solve/17/0.py,input/str_solve/17.txt,'#$a^d','#$A^d'
+consonant,one or more question marks,#?a^D,f,❌,outputs/str_solve/17/0.py,input/str_solve/17.txt,'d^a?#','D^a?#'
+consonant,one or more question marks,#?a^?D,f,❌,outputs/str_solve/17/0.py,input/str_solve/17.txt,'d?^a?#','D?^a?#'
+consonant,one or more question marks,#ccc,p,✅,outputs/str_solve/17/0.py,input/str_solve/17.txt,,
+consonant,one or more question marks,#c?c,f,❌,outputs/str_solve/17/0.py,input/str_solve/17.txt,'C?C#','c?c#'
+consonant,one or more question marks,#c??c,f,❌,outputs/str_solve/17/0.py,input/str_solve/17.txt,'C??C#','c??c#'
