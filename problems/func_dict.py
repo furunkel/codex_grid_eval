@@ -9,6 +9,7 @@ FUNCS = {
     '**2': lambda x: x**2,
     'sqrt': lambda x: sqrt(x),
 }
+ORIGIN = '100+' # https://github.com/zhiwehu/Python-programming-exercises
 
 FLOAT_FUNCS = {'sqrt'}
 

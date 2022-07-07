@@ -3,6 +3,7 @@ from math import gcd as gcd
 
 INPUTS = [50, 78, 79, 100, 200, 4000, 10000, 100000]
 TARGET = "fizz_buzz"
+ORIGIN = 'humaneval'
 
 TEXT = """
 def fizz_buzz(n:int):

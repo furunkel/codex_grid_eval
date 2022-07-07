@@ -12,6 +12,7 @@ INPUTS = [
     '1A2B3C!',
 ]
 TARGET = "double_letters"
+ORIGIN = 'gpsbs' # https://thelmuth.github.io/GECCO_2015_Benchmarks_Materials/
 
 TEXT = """
 def double_letters(string):

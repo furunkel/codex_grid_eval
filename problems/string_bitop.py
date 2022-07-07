@@ -7,6 +7,7 @@ INPUTS = [
     ['0', '0'],
     ['0101', '0000']
 ]
+ORIGIN = "humaneval"
 
 TEXT = """
 from typing import List

@@ -15,6 +15,8 @@ def oracle(vars):
     _, r = oracle_(vars['factors'], vars['below'], vars['agg'])
     return str(r)
 
+ORIGIN = "euler"
+
 TEXT = """
 \"\"\"
     If we list all the natural numbers below {example_below} that are multiples of {factors_text}, we get {example_numbers}. The {agg} of these multiples is {example_sum}.

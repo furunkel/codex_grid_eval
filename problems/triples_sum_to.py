@@ -18,6 +18,8 @@ COUNT_NAME = {
     10: 'decuples'
 }
 
+ORIGIN = "humaneval"
+
 SUM_TO_TEXT = {
     0: 'zero',
     1: 'one',

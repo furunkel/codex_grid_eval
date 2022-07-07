@@ -10,6 +10,7 @@ INPUTS = [-100,
           2000,
           1_000_000
 ]
+ORIGIN = 'gpsbs'
 
 TEXT = """
 def small_or_large(n):

@@ -1,0 +1,5 @@
+
+def tuple_extract(text):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest last value.
+    """

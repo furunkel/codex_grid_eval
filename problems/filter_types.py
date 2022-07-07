@@ -12,6 +12,7 @@ TYPE_NAMES = {
         'string': 'SIrgh'
     }
 }
+ORIGIN = 'humaneval'
 
 TARGET = {'': 'filter_{type}s', 'tlh': lambda l, v: f'chol_{TYPE_NAMES[l][v["type"]]}'}
 INPUTS = [[[4, {}, [], 23.2, 9, 'adasd']], [[3, 'c', 3, 3, 'a', 'b']]] 

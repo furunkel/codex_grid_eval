@@ -9,6 +9,8 @@ INPUTS = [
     [100, 20],
 ]
 
+ORIGIN = "hackerrank"
+
 TEXT = """
 \"\"\"
     The provided code stub reads two integers from STDIN, {var1_name} and {var2_name}. Add code to print three lines where: 

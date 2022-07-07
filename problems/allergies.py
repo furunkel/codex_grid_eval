@@ -5,6 +5,8 @@ import random
 ALLERGENS = ['eggs', 'peanuts', 'shellfish', 'strawberries', 'tomatoes', 'chocolate', 'pollen', 'cats']
 INPUTS = list(range(1, 128))
 TARGET = "allergies"
+ORIGIN = "exercism"
+
 
 def bullet_list(allergens):
     return "\n".join([f"    * {a} ({1 << i})" for i, a in enumerate(allergens)])

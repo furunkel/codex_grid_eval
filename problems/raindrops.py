@@ -3,6 +3,7 @@ from math import gcd as gcd
 
 INPUTS = list(range(1, 128))
 TARGET = "raindrops"
+ORIGIN = 'exercism'
 
 TEXT = """
 def raindrops(num):

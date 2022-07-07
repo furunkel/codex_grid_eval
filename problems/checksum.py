@@ -2,6 +2,7 @@ from problems.default import default_generate
 
 TARGET = 'checksum'
 INPUTS = ["123", "abc", "ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43"]
+ORIGIN = 'gpsbs'
 
 TEXT = """
 def checksum(str):

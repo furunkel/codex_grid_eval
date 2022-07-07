@@ -3,6 +3,7 @@ from problems.default import default_generate
 TARGET = 'rolling_{op}'
 INPUTS = [[[]], [[1,2,3,4]], [[4,3,2,1]], [[3,2,3,100,3]]]
 TEST_IMPORTS = [('typing', ['List', 'Tuple'])]
+ORIGIN = 'humaneval'
 
 TEXT = """
 def rolling_{op}(numbers: List[int]) -> List[int]:

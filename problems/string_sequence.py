@@ -3,6 +3,7 @@ import re
 
 TARGET = 'string_sequence'
 INPUTS = list(range(100))
+ORIGIN = "humaneval"
 
 TEXT = """
 def string_sequence(n: int) -> str:

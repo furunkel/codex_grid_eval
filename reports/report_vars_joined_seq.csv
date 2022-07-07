@@ -1,0 +1,26 @@
+var,val,success_rate
+sep,a dash,0.5
+pos_ret,True,0.6904761904761905
+neg_ret,False,0.6904761904761905
+sep,a minus,0.75
+sep,a plus,0.75
+case,lowercase,0.7678571428571429
+input,AAB_CBBC,0.7857142857142857
+input,AAB__CBBC,0.7857142857142857
+input,aab_cbbbc,0.8214285714285714
+input,aab__cbbbc,0.8214285714285714
+input,aab______cbbbc,0.8214285714285714
+sep,six underscores,0.8541666666666666
+input,AAB______CBBC,0.8571428571428571
+input,aab?cbbbc,0.8571428571428571
+input,AAB?CBBC,0.8571428571428571
+input,aab+cbbbc,0.8571428571428571
+input,AAB+CBBC,0.8571428571428571
+input,aab-cbbbc,0.8571428571428571
+input,AAB-CBBC,0.8571428571428571
+case,uppercase,0.9047619047619048
+pos_ret,False,0.9821428571428571
+neg_ret,True,0.9821428571428571
+sep,an underscore,1.0
+sep,two underscores,1.0
+sep,a question mark,1.0

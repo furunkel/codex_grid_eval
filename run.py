@@ -247,7 +247,7 @@ class Main:
 
             report_row['result'] = result_str
             report_row['result_emojis'] = result_emojis
-            report_row['model_output'] = str(f)
+            # report_row['model_output'] = str(f)
             report_row['model_input'] = str(input_path)
 
             print()

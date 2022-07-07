@@ -5,6 +5,7 @@ import re
 TARGET = {'': 'string_to_hash', 'de': 'zeichenkette_zu_hash', 'tlh': 'ghop_D_hash' }
 INPUTS = ["Hello world", "A B C", "password", ""]
 TEST_IMPORTS = ['hashlib']
+ORIGIN = "humaneval"
 
 TEXT = """
 def string_to_hash(text):

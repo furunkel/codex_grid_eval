@@ -3,6 +3,7 @@ from problems.default import default_generate
 TARGET = 'all_{op}'
 INPUTS = ["", "asdfgh", "WWW"]
 TEST_IMPORTS = [('typing', 'List')]
+ORIGIN = "humaneval"
 
 TEXT = """
 def all_{op}(string: str) -> List[str]:

@@ -25,6 +25,7 @@ EXAMPLES = [
     "ab",
     "#a@C",
 ]
+ORIGIN = 'humaneval'
 
 TARGET = "solve"
 
