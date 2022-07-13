@@ -1,0 +1,7 @@
+
+def rolling_min(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling minimum element found until given moment
+    in the sequence.
+    >>> rolling_min([434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489])
+    [434839248, 43, 43, 43, -54378957489578927489327489]
+    """

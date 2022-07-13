@@ -1,0 +1,20 @@
+
+def multiples():
+    """
+    If we list all the natural numbers below 5 that are multiples of 2 or 9, we get 2 and 4. The sum of these multiples is 6.
+    Return the sum of all the multiples of 2 or 9 below 1000.
+    """    
+    sum = 0
+    for n in range(2, 1000):
+        if n % 2 == 0:
+            sum += n
+        if n % 9 == 0:
+            sum += n
+    return sum
+
+print(multiples())
+</cell>
+<text>
+Great! Now you know how to sum all the multiples of 2 and below 1000.
+
+Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem 

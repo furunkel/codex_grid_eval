@@ -1,0 +1,10 @@
+
+def quadruples_sum_to_three(l: list):
+    """
+    quadruples_sum_to_three takes a list of integers as an input.
+    it returns True if there are 4 distinct elements in the list that
+    sum to three, and False otherwise.
+
+    >>> quadruples_sum_to_three([1])
+    False
+    """

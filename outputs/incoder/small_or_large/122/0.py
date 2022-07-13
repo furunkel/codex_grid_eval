@@ -1,0 +1,86 @@
+
+def small_or_large(n):
+    """
+        Given an integer n, return "small" if n < 10 and "house" if n >= 15 (and None if 10 <= n < 15).
+    """
+    if n < 10:
+        return "small"
+    elif n >= 15:
+        return "house"
+    else:
+        return None
+
+
+# %%
+# Now let's try it out on some examples:
+small_or_large(10)
+small_or_large(15)
+small_or_large(20)
+small_or_large(25)
+small_or_large(30)
+small_or_large(35)
+small_or_large(40)
+small_or_large(45)
+small_or_large(50)
+small_or_large(55)
+small_or_large(60)
+small_or_large(65)
+small_or_large(70)
+small_or_large(75)
+small_or_large(80)
+small_or_large(85)
+small_or_large(90)
+small_or_large(95)
+small_or_large(100)
+small_or_large(105)
+small_or_large(110)
+small_or_large(115)
+small_or_large(120)
+small_or_large(125)
+small_or_large(130)
+small_or_large(135)
+small_or_large(140)
+small_or_large(145)
+small_or_large(150)
+small_or_large(155)
+small_or_large(160)
+small_or_large(165)
+small_or_large(170)
+small_or_large(175)
+small_or_large(180)
+small_or_large(185)
+small_or_large(190)
+small_or_large(195)
+small_or_large(200)
+small_or_large(205)
+small_or_large(210)
+small_or_large(215)
+small_or_large(220)
+small_or_large(225)
+small_or_large(230)
+small_or_large(235)
+small_or_large(240)
+small_or_large(245)
+small_or_large(250)
+small_or_large(255)
+small_or_large(260)
+small_or_large(265)
+small_or_large(270)
+small_or_large(275)
+small_or_large(280)
+small_or_large(285)
+small_or_large(290)
+small_or_large(295)
+small_or_large(300)
+small_or_large(305)
+small_or_large(310)
+small_or_large(315)
+small_or_large(320)
+small_or_large(325)
+small_or_large(330)
+small_or_large(335)
+small_or_large(340)
+small_or_large(345)
+small_or_large(350)
+small_or_large(355)
+small_or_large(360

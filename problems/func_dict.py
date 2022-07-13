@@ -21,21 +21,23 @@ FUNC_I = {
     'sqrt': 'sqrt(i)',
 }
 
+TEST_IMPORTS = [('math', 'sqrt')]
+
+TARGET = "generate_dict"
 TEXT = """
-\"\"\"
-    With a given {number_type} number n, write a program to generate a dictionary that contains (i, {func_i}) such that i is a {number_type} number between 1 and n (both included) and then the program should print the dictionary.
+def generate_dict(n):
+    \"\"\"
+    With a given {number_type} number n, write a program to generate a dictionary that contains (i, {func_i}) such that
+    i is a {number_type} number between 1 and n (both included) and then the program should return the dictionary.
     {example}
-\"\"\"
+    \"\"\"
 """
 
 EXAMPLE = """
-Suppose the following input is supplied to the program:
-{example_len}
-Then, the output should be:
-{example_dict}
-
-Hint:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+    Suppose the following input is supplied to the function:
+    {example_len}
+    Then, the output should be:
+    {example_dict}
 """
 
 GRID = {
@@ -53,7 +55,7 @@ def oracle_(length, func):
     return dct
 
 def oracle(vars):
-    return str(oracle_(vars['input'], vars['func']))
+    return oracle_(vars['input'], vars['func'])
 
 def render(**vars):
     example_dict = oracle_(vars['example_len'], vars['func'])

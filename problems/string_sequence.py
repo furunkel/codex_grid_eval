@@ -30,6 +30,7 @@ GRID = {
 }
 
 def is_output_equal(a, b):
+    if a is None or b is None: return False
     def normalize(x):
         # allow space around delimiter
         x = re.sub(r' +([^ ]+) +', r'\1', x)

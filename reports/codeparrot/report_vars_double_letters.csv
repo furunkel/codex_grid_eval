@@ -1,0 +1,24 @@
+var,val,success_rate
+double_class,letter,0
+triple_class,number,0
+input,aaaAB1!1kf!kd3?f3fk?lk3,0
+input,???!!!!ABCdefg1234aaaee,0
+input,A?,0
+input,?,0
+input,!!!!!,0
+input,AAAaaaaaAAAA,0
+input,1A2B3C!,0
+triple_class,exclamation point,0
+triple_class,question mark,0
+double_class,number,0
+triple_class,letter,0
+triple_class,upper-case letter,0
+triple_class,lower-case letter,0
+triple_class,vowel (lower-case or upper-case),0
+triple_class,consonant (lower-case or upper-case),0
+double_class,upper-case letter,0
+double_class,lower-case letter,0
+double_class,exclamation point,0
+double_class,question mark,0
+double_class,vowel (lower-case or upper-case),0
+double_class,consonant (lower-case or upper-case),0

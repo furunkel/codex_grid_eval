@@ -5,7 +5,7 @@ INPUTS = ["123", "abc", "ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43"]
 ORIGIN = 'gpsbs'
 
 TEXT = """
-def checksum(str):
+def checksum(string):
     \"\"\"
     Given a string, convert each character in the string into its integer ASCII value, sum them,
     take the sum modulo {mod}, add the integer value of {offset_char}, and then convert that integer back

@@ -1,0 +1,6 @@
+
+def string_to_hash(text):
+    """
+    Given a string 'text', return its sha3_512 hash equivalent string.
+    If 'text' is an empty string, return None.
+    """

@@ -1,0 +1,10 @@
+
+def triples_sum_to_three(l: list):
+    """
+    triples_sum_to_three takes a list of integers as an input.
+    it returns True if there are 3 distinct elements in the list that
+    sum to three, and False otherwise.
+
+    >>> triples_sum_to_three([1, 2, -3, 7, 2, 7])
+    False
+    """

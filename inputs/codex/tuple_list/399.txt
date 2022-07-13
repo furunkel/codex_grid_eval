@@ -1,0 +1,5 @@
+
+def some_func(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest twelfth value.
+    """

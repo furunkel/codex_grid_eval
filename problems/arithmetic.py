@@ -10,18 +10,16 @@ INPUTS = [
 ]
 
 ORIGIN = "hackerrank"
+TARGET = "make_tuple"
 
 TEXT = """
-\"\"\"
-    The provided code stub reads two integers from STDIN, {var1_name} and {var2_name}. Add code to print three lines where: 
-    The {line_order1} line contains the {op1} of the two numbers{extra1}.
-    The {line_order2} line contains the {op2} of the two numbers{extra2}.
-    The {line_order3} line contains the {op3} of the two numbers{extra3}.
-\"\"\"
-
-if __name__ == '__main__':
-    {var1_name} = int(input())
-    {var2_name} = int(input())
+def make_tuple({var1_name}, {var2_name}):
+    \"\"\"
+    Given two integers {var1_name} and {var2_name}, return a tuple where:
+    The {line_order1} element contains the {op1} of the two numbers{extra1}.
+    The {line_order2} element contains the {op2} of the two numbers{extra2}.
+    The {line_order3} element contains the {op3} of the two numbers{extra3}.
+    \"\"\"
 """
 
 def filter(vars):
@@ -57,7 +55,7 @@ def oracle_(input, line_order1, line_order2, line_order3, op1, op2, op3):
         else:
             raise RuntimeError("invalid op")
         
-    return f"{run_op(first_op)}\n{run_op(second_op)}\n{run_op(third_op)}"
+    return (run_op(first_op), run_op(second_op), run_op(third_op))
 
 def oracle(vars):
     return oracle_(**dict((k, vars[k]) for k in ('input', 'line_order1', 'line_order2', 'line_order3', 'op1', 'op2', 'op3')))

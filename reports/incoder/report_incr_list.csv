@@ -1,0 +1,73 @@
+op,step,example_input,input,result,result_emojis,model_input,expected,actual
+incr,0,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/0.txt,,
+incr,0,"[1, 2, 3]","[[3, 2, 1]]",f,❌,input/incoder/incr_list/0.txt,"[3, 2, 1]","[4, 3, 2]"
+incr,0,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",f,❌,input/incoder/incr_list/0.txt,"[5, 2, 5, 2, 3, 3, 9, 0, 123]","[6, 3, 6, 3, 4, 4, 10, 1, 124]"
+incr,0,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],p,✅,input/incoder/incr_list/1.txt,,
+incr,0,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",f,❌,input/incoder/incr_list/1.txt,"[3, 2, 1]","[4, 3, 2]"
+incr,0,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",f,❌,input/incoder/incr_list/1.txt,"[5, 2, 5, 2, 3, 3, 9, 0, 123]","[6, 3, 6, 3, 4, 4, 10, 1, 124]"
+incr,1,"[1, 2, 3]",[[]],e,💀,input/incoder/incr_list/2.txt,,
+incr,1,"[1, 2, 3]","[[3, 2, 1]]",e,💀,input/incoder/incr_list/2.txt,,
+incr,1,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",e,💀,input/incoder/incr_list/2.txt,,
+incr,1,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],f,❌,input/incoder/incr_list/3.txt,[],[1]
+incr,1,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",f,❌,input/incoder/incr_list/3.txt,"[4, 3, 2]","[0, 1, 2, 4]"
+incr,1,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",f,❌,input/incoder/incr_list/3.txt,"[6, 3, 6, 3, 4, 4, 10, 1, 124]","[0, 0, 2, 2, 3, 3, 5, 5, 9, 124]"
+incr,2,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/4.txt,,
+incr,2,"[1, 2, 3]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/4.txt,,
+incr,2,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/4.txt,,
+incr,2,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],p,✅,input/incoder/incr_list/5.txt,,
+incr,2,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/5.txt,,
+incr,2,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/5.txt,,
+incr,100,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/6.txt,,
+incr,100,"[1, 2, 3]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/6.txt,,
+incr,100,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/6.txt,,
+incr,100,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],p,✅,input/incoder/incr_list/7.txt,,
+incr,100,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/7.txt,,
+incr,100,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/7.txt,,
+incr,9999,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/8.txt,,
+incr,9999,"[1, 2, 3]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/8.txt,,
+incr,9999,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/8.txt,,
+incr,9999,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],p,✅,input/incoder/incr_list/9.txt,,
+incr,9999,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/9.txt,,
+incr,9999,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/9.txt,,
+incr,3829893478785784890248,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/10.txt,,
+incr,3829893478785784890248,"[1, 2, 3]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/10.txt,,
+incr,3829893478785784890248,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/10.txt,,
+incr,3829893478785784890248,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],f,❌,input/incoder/incr_list/11.txt,[],"[0, 0]"
+incr,3829893478785784890248,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",f,❌,input/incoder/incr_list/11.txt,"[3829893478785784890251, 3829893478785784890250, 3829893478785784890249]","[0, 1, 2, 3, 0]"
+incr,3829893478785784890248,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",f,❌,input/incoder/incr_list/11.txt,"[3829893478785784890253, 3829893478785784890250, 3829893478785784890253, 3829893478785784890250, 3829893478785784890251, 3829893478785784890251, 3829893478785784890257, 3829893478785784890248, 3829893478785784890371]","[0, 0, 2, 2, 3, 3, 5, 5, 9, 123, 0]"
+decr,0,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/12.txt,,
+decr,0,"[1, 2, 3]","[[3, 2, 1]]",f,❌,input/incoder/incr_list/12.txt,"[3, 2, 1]","[2, 1, 0]"
+decr,0,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",f,❌,input/incoder/incr_list/12.txt,"[5, 2, 5, 2, 3, 3, 9, 0, 123]","[4, 1, 4, 1, 2, 2, 8, -1, 122]"
+decr,0,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],p,✅,input/incoder/incr_list/13.txt,,
+decr,0,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",f,❌,input/incoder/incr_list/13.txt,"[3, 2, 1]","[2, 1, 0]"
+decr,0,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",f,❌,input/incoder/incr_list/13.txt,"[5, 2, 5, 2, 3, 3, 9, 0, 123]","[4, 1, 4, 1, 2, 2, 8, -1, 122]"
+decr,1,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/14.txt,,
+decr,1,"[1, 2, 3]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/14.txt,,
+decr,1,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/14.txt,,
+decr,1,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],p,✅,input/incoder/incr_list/15.txt,,
+decr,1,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/15.txt,,
+decr,1,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/15.txt,,
+decr,2,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/16.txt,,
+decr,2,"[1, 2, 3]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/16.txt,,
+decr,2,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/16.txt,,
+decr,2,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],p,✅,input/incoder/incr_list/17.txt,,
+decr,2,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/17.txt,,
+decr,2,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/17.txt,,
+decr,100,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/18.txt,,
+decr,100,"[1, 2, 3]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/18.txt,,
+decr,100,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/18.txt,,
+decr,100,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],p,✅,input/incoder/incr_list/19.txt,,
+decr,100,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/19.txt,,
+decr,100,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/19.txt,,
+decr,9999,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/20.txt,,
+decr,9999,"[1, 2, 3]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/20.txt,,
+decr,9999,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/20.txt,,
+decr,9999,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],p,✅,input/incoder/incr_list/21.txt,,
+decr,9999,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/21.txt,,
+decr,9999,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/21.txt,,
+decr,3829893478785784890248,"[1, 2, 3]",[[]],p,✅,input/incoder/incr_list/22.txt,,
+decr,3829893478785784890248,"[1, 2, 3]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/22.txt,,
+decr,3829893478785784890248,"[1, 2, 3]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/22.txt,,
+decr,3829893478785784890248,"[5, 3, 5, 2, 3, 3, 9, 0, 123]",[[]],p,✅,input/incoder/incr_list/23.txt,,
+decr,3829893478785784890248,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[3, 2, 1]]",p,✅,input/incoder/incr_list/23.txt,,
+decr,3829893478785784890248,"[5, 3, 5, 2, 3, 3, 9, 0, 123]","[[5, 2, 5, 2, 3, 3, 9, 0, 123]]",p,✅,input/incoder/incr_list/23.txt,,

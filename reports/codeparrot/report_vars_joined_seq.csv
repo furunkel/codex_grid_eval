@@ -1,0 +1,26 @@
+var,val,success_rate
+pos_ret,True,0
+neg_ret,False,0
+sep,an underscore,0
+case,uppercase,0
+input,aab_cbbbc,0
+input,AAB_CBBC,0
+input,aab__cbbbc,0
+input,AAB__CBBC,0
+input,aab______cbbbc,0
+input,AAB______CBBC,0
+input,aab?cbbbc,0
+input,AAB?CBBC,0
+input,aab+cbbbc,0
+input,AAB+CBBC,0
+input,aab-cbbbc,0
+input,AAB-CBBC,0
+case,lowercase,0
+sep,two underscores,0
+sep,six underscores,0
+sep,a minus,0
+sep,a plus,0
+sep,a dash,0
+sep,a question mark,0
+pos_ret,False,0
+neg_ret,True,0

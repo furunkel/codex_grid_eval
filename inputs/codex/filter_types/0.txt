@@ -1,0 +1,6 @@
+
+def filter_strings(values: List[Any]) -> List[str]:
+    """ Filter given list of any python values only for strings
+    >>> filter_strings(['a', 3.14, 5])
+    ['a']
+    """

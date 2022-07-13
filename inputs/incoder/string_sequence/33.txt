@@ -1,0 +1,6 @@
+
+def string_sequence(n: int) -> str:
+    """ Return a string containing number sign-delimited numbers starting from 0 upto n exclusive.
+    >>> string_sequence(1)
+    '0'
+    """

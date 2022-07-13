@@ -56,6 +56,7 @@ GRID = {
 
 def is_output_equal(a, b):
     # disregard order
+    if a is None or b is None: return False
     return set(a) == set(b)
 
 def calc_score(all_alergens, allergens):

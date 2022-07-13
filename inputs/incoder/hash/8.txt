@@ -1,0 +1,8 @@
+
+def string_to_hash(text):
+    """
+    Given a string 'text', return its MD5 hash equivalent string.
+    If 'text' is an empty string, return None.
+
+    >>> string_to_hash('Hallo welt') == '05b7f4cbafdb32436fe8928f41ed8f64'
+    """

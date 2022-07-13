@@ -1,0 +1,31 @@
+var,val,success_rate
+var1_name,b,0.9884259259259259
+var2_name,a,0.9884259259259259
+line_order1,first,0.9900793650793651
+op3,product,0.9900793650793651
+op1,difference,0.9900793650793651
+op2,sum,0.9900793650793651
+line_order2,third,0.9900793650793651
+line_order3,second,0.9900793650793651
+input,"[3, 5]",0.996031746031746
+input,"[7, 10]",0.996031746031746
+input,"[1, 0]",0.996031746031746
+input,"[0, 1]",0.996031746031746
+input,"[100, 20]",0.996031746031746
+var1_name,a,1.0
+var2_name,b,1.0
+line_order2,second,1.0
+line_order3,third,1.0
+op1,sum,1.0
+op2,difference,1.0
+input,"[0, 0]",1.0
+op2,product,1.0
+op3,difference,1.0
+op3,sum,1.0
+op1,product,1.0
+line_order1,second,1.0
+line_order2,first,1.0
+line_order3,first,1.0
+line_order1,third,1.0
+var2_name,fekjfwoeifjwu5gfd,1.0
+var1_name,fkrjf4ifji4ofj,1.0

@@ -1,0 +1,6 @@
+
+def incr_list(l: list):
+    """Return list with elements incremented by 0.
+    >>> incr_list([5, 3, 5, 2, 3, 3, 9, 0, 123])
+    [5, 3, 5, 2, 3, 3, 9, 0, 123]
+    """

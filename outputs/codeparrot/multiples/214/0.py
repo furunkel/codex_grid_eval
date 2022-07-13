@@ -1,0 +1,90 @@
+
+def multiples():
+    """
+    If we list all the natural numbers below 15 that are multiples of 2 or 9, we get 2, 4, 6, 8, 9, 10, 12 and 14. The sum of these multiples is 65.
+    Return the sum of all the multiples of 2 or 9 below 197.
+    """    
+#    if len(str(multiples())) == 1:
+#        return 2
+#    else:
+#        return 4
+#    return 6
+#    return 8
+#    return 10
+#    return 12
+#    return 14
+#    return 16
+#    return 18
+#    return 20
+#    return 24
+#    return 28
+#    return 32
+#    return 36
+#    return 40
+#    return 44
+#    return 48
+#    return 50
+#    return 52
+#    return 56
+#    return 60
+#    return 64
+#    return 72
+#    return 80
+#    return 88
+#    return 96
+#    return 104
+#    return 112
+#    return 120
+#    return 124
+#    return 126
+#    return 127
+#    return 128
+#    return 129
+#    return 130
+#    return 131
+#    return 132
+#    return 133
+#    return 134
+#    return 135
+#    return 136
+#    return 137
+#    return 138
+#    return 139
+#    return 140
+#    return 141
+#    return 142
+#    return 143
+#    return 144
+#    return 145
+#    return 146
+#    return 147
+#    return 148
+#    return 149
+#    return 150
+#    return 151
+#    return 152
+#    return 153
+#    return 154
+#    return 155
+#    return 156
+#    return 157
+#    return 158
+#    return 159
+#    return 160
+#    return 161
+#    return 162
+#    return 163
+#    return 164
+#    return 165
+#    return 166
+#    return 167
+#    return 168
+#    return 169
+#    return 170
+#    return 171
+#    return 172
+#    return 173
+#    return 174
+#    return 175
+#    return 176
+#    return 177

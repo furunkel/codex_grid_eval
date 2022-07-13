@@ -1,0 +1,6 @@
+
+def all_prefixes(string: str) -> List[str]:
+    """ Return list of all prefixes from shortest to longest of the input string
+    >>> all_prefixes('12345678')
+    ['1', '12', '123', '1234', '12345', '123456', '1234567', '12345678']
+    """

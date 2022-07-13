@@ -1,0 +1,6 @@
+
+def all_suffixes(string: str) -> List[str]:
+    """ Return list of all prefixes from longest to shortest of the input string
+    >>> all_suffixes('suffix')
+    ['suffix', 'uffix', 'ffix', 'fix', 'ix', 'x']
+    """

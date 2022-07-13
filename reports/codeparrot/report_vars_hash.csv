@@ -1,0 +1,23 @@
+var,val,success_rate
+input,Hello world,0.0
+input,A B C,0.0
+input,password,0.0
+hash_type,md5,0.25
+transform,none,0.25
+example_input,None,0.25
+example_input,Hello world,0.25
+example_input,Hallo welt,0.25
+example_input,0,0.25
+example_input,sha1,0.25
+example_input,md5,0.25
+transform,uppercase,0.25
+transform,dash,0.25
+hash_type,sha1,0.25
+hash_type,sha224,0.25
+hash_type,sha256,0.25
+hash_type,sha384,0.25
+hash_type,sha512,0.25
+hash_type,blake2b,0.25
+hash_type,blake2s,0.25
+hash_type,sha3_512,0.25
+input,,1.0

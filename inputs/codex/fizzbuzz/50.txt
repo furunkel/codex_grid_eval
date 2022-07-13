@@ -1,0 +1,9 @@
+
+def fizzbuzz(num):
+    """
+    Given a number, this function returns
+        "Fizz" for multiples of seventeen (instead of the number),
+        "Buzz" for multiples of 11 (instead of the number),
+        "FizzBuzz" for multiples of both seventeen and 11  (instead of the number),
+        the number itself otherwise.
+    """

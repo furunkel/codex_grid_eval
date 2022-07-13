@@ -1,0 +1,55 @@
+offset_char,mod,input,expected,actual,result,result_emojis,model_input
+the space character,64,123,'6',None,f,❌,input/codeparrot/checksum/0.txt
+the space character,64,abc,'F',None,f,❌,input/codeparrot/checksum/0.txt
+the space character,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'N',None,f,❌,input/codeparrot/checksum/0.txt
+the space character,128,123,'6',None,f,❌,input/codeparrot/checksum/1.txt
+the space character,128,abc,'F',None,f,❌,input/codeparrot/checksum/1.txt
+the space character,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'\x8e',None,f,❌,input/codeparrot/checksum/1.txt
+the space character,256,123,'¶',None,f,❌,input/codeparrot/checksum/2.txt
+the space character,256,abc,'F',None,f,❌,input/codeparrot/checksum/2.txt
+the space character,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'Ď',None,f,❌,input/codeparrot/checksum/2.txt
+the newline character,64,123,' ',None,f,❌,input/codeparrot/checksum/3.txt
+the newline character,64,abc,'0',None,f,❌,input/codeparrot/checksum/3.txt
+the newline character,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'8',None,f,❌,input/codeparrot/checksum/3.txt
+the newline character,128,123,' ',None,f,❌,input/codeparrot/checksum/4.txt
+the newline character,128,abc,'0',None,f,❌,input/codeparrot/checksum/4.txt
+the newline character,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'x',None,f,❌,input/codeparrot/checksum/4.txt
+the newline character,256,123,'\xa0',None,f,❌,input/codeparrot/checksum/5.txt
+the newline character,256,abc,'0',None,f,❌,input/codeparrot/checksum/5.txt
+the newline character,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'ø',None,f,❌,input/codeparrot/checksum/5.txt
+uppercase X,64,123,'n',None,f,❌,input/codeparrot/checksum/6.txt
+uppercase X,64,abc,'~',None,f,❌,input/codeparrot/checksum/6.txt
+uppercase X,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'\x86',None,f,❌,input/codeparrot/checksum/6.txt
+uppercase X,128,123,'n',None,f,❌,input/codeparrot/checksum/7.txt
+uppercase X,128,abc,'~',None,f,❌,input/codeparrot/checksum/7.txt
+uppercase X,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'Æ',None,f,❌,input/codeparrot/checksum/7.txt
+uppercase X,256,123,'î',None,f,❌,input/codeparrot/checksum/8.txt
+uppercase X,256,abc,'~',None,f,❌,input/codeparrot/checksum/8.txt
+uppercase X,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'ņ',None,f,❌,input/codeparrot/checksum/8.txt
+lowercase u,64,123,'\x8b',None,f,❌,input/codeparrot/checksum/9.txt
+lowercase u,64,abc,'\x9b',None,f,❌,input/codeparrot/checksum/9.txt
+lowercase u,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'£',None,f,❌,input/codeparrot/checksum/9.txt
+lowercase u,128,123,'\x8b',None,f,❌,input/codeparrot/checksum/10.txt
+lowercase u,128,abc,'\x9b',None,f,❌,input/codeparrot/checksum/10.txt
+lowercase u,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'ã',None,f,❌,input/codeparrot/checksum/10.txt
+lowercase u,256,123,'ċ',None,f,❌,input/codeparrot/checksum/11.txt
+lowercase u,256,abc,'\x9b',None,f,❌,input/codeparrot/checksum/11.txt
+lowercase u,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'ţ',None,f,❌,input/codeparrot/checksum/11.txt
+an exclamation mark,64,123,'7',None,f,❌,input/codeparrot/checksum/12.txt
+an exclamation mark,64,abc,'G',None,f,❌,input/codeparrot/checksum/12.txt
+an exclamation mark,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'O',None,f,❌,input/codeparrot/checksum/12.txt
+an exclamation mark,128,123,'7',None,f,❌,input/codeparrot/checksum/13.txt
+an exclamation mark,128,abc,'G',None,f,❌,input/codeparrot/checksum/13.txt
+an exclamation mark,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'\x8f',None,f,❌,input/codeparrot/checksum/13.txt
+an exclamation mark,256,123,'·',None,f,❌,input/codeparrot/checksum/14.txt
+an exclamation mark,256,abc,'G',None,f,❌,input/codeparrot/checksum/14.txt
+an exclamation mark,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'ď',None,f,❌,input/codeparrot/checksum/14.txt
+a question mark,64,123,'U',None,f,❌,input/codeparrot/checksum/15.txt
+a question mark,64,abc,'e',None,f,❌,input/codeparrot/checksum/15.txt
+a question mark,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'m',None,f,❌,input/codeparrot/checksum/15.txt
+a question mark,128,123,'U',None,f,❌,input/codeparrot/checksum/16.txt
+a question mark,128,abc,'e',None,f,❌,input/codeparrot/checksum/16.txt
+a question mark,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'\xad',None,f,❌,input/codeparrot/checksum/16.txt
+a question mark,256,123,'Õ',None,f,❌,input/codeparrot/checksum/17.txt
+a question mark,256,abc,'e',None,f,❌,input/codeparrot/checksum/17.txt
+a question mark,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",'ĭ',None,f,❌,input/codeparrot/checksum/17.txt

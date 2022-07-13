@@ -1,0 +1,55 @@
+offset_char,mod,input,result,result_emojis,model_input,expected,actual
+the space character,64,123,p,✅,input/incoder/checksum/0.txt,,
+the space character,64,abc,p,✅,input/incoder/checksum/0.txt,,
+the space character,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/incoder/checksum/0.txt,,
+the space character,128,123,p,✅,input/incoder/checksum/1.txt,,
+the space character,128,abc,p,✅,input/incoder/checksum/1.txt,,
+the space character,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/incoder/checksum/1.txt,,
+the space character,256,123,p,✅,input/incoder/checksum/2.txt,,
+the space character,256,abc,p,✅,input/incoder/checksum/2.txt,,
+the space character,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/incoder/checksum/2.txt,,
+the newline character,64,123,p,✅,input/incoder/checksum/3.txt,,
+the newline character,64,abc,p,✅,input/incoder/checksum/3.txt,,
+the newline character,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/incoder/checksum/3.txt,,
+the newline character,128,123,f,❌,input/incoder/checksum/4.txt,' ','\x96'
+the newline character,128,abc,f,❌,input/incoder/checksum/4.txt,'0','¦'
+the newline character,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/4.txt,'x','î'
+the newline character,256,123,p,✅,input/incoder/checksum/5.txt,,
+the newline character,256,abc,p,✅,input/incoder/checksum/5.txt,,
+the newline character,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/incoder/checksum/5.txt,,
+uppercase X,64,123,f,❌,input/incoder/checksum/6.txt,'n','V'
+uppercase X,64,abc,f,❌,input/incoder/checksum/6.txt,'~','f'
+uppercase X,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/6.txt,'\x86','n'
+uppercase X,128,123,f,❌,input/incoder/checksum/7.txt,'n','V'
+uppercase X,128,abc,f,❌,input/incoder/checksum/7.txt,'~','f'
+uppercase X,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/7.txt,'Æ','®'
+uppercase X,256,123,f,❌,input/incoder/checksum/8.txt,'î',None
+uppercase X,256,abc,f,❌,input/incoder/checksum/8.txt,'~',None
+uppercase X,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/8.txt,'ņ',None
+lowercase u,64,123,p,✅,input/incoder/checksum/9.txt,,
+lowercase u,64,abc,p,✅,input/incoder/checksum/9.txt,,
+lowercase u,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/incoder/checksum/9.txt,,
+lowercase u,128,123,f,❌,input/incoder/checksum/10.txt,'\x8b','\x16'
+lowercase u,128,abc,f,❌,input/incoder/checksum/10.txt,'\x9b','&'
+lowercase u,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/10.txt,'ã','n'
+lowercase u,256,123,f,❌,input/incoder/checksum/11.txt,'ċ','\x0b'
+lowercase u,256,abc,p,✅,input/incoder/checksum/11.txt,,
+lowercase u,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/11.txt,'ţ','c'
+an exclamation mark,64,123,f,❌,input/incoder/checksum/12.txt,'7','U'
+an exclamation mark,64,abc,f,❌,input/incoder/checksum/12.txt,'G','e'
+an exclamation mark,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/12.txt,'O','m'
+an exclamation mark,128,123,f,❌,input/incoder/checksum/13.txt,'7','\x16'
+an exclamation mark,128,abc,f,❌,input/incoder/checksum/13.txt,'G','&'
+an exclamation mark,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/13.txt,'\x8f','n'
+an exclamation mark,256,123,p,✅,input/incoder/checksum/14.txt,,
+an exclamation mark,256,abc,p,✅,input/incoder/checksum/14.txt,,
+an exclamation mark,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/14.txt,'ď','\x0f'
+a question mark,64,123,f,❌,input/incoder/checksum/15.txt,'U','V'
+a question mark,64,abc,f,❌,input/incoder/checksum/15.txt,'e','f'
+a question mark,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/15.txt,'m','n'
+a question mark,128,123,f,❌,input/incoder/checksum/16.txt,'U','\x16'
+a question mark,128,abc,f,❌,input/incoder/checksum/16.txt,'e','&'
+a question mark,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",f,❌,input/incoder/checksum/16.txt,'\xad','n'
+a question mark,256,123,p,✅,input/incoder/checksum/17.txt,,
+a question mark,256,abc,p,✅,input/incoder/checksum/17.txt,,
+a question mark,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/incoder/checksum/17.txt,,

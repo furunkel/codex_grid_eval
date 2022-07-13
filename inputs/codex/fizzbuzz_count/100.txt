@@ -1,0 +1,6 @@
+
+def fizz_buzz(n:int):
+    """Return the number of times the digit 3 appears in integers less than n which are divisible by 1837 or 13.
+    >>> fizz_buzz(78)
+    2
+    """

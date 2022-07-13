@@ -1,0 +1,7 @@
+
+def multiples():
+    """
+    If we list all the natural numbers below 15 that are multiples of 5 or 3, we get 3, 5, 6, 9, 10 and 12. The product of these multiples is 97200.
+    Return the product of all the multiples of 5 or 3 below 1000.
+    """    
+#    if len(str(multiples())) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3, 6, 9, 10, 12))) == len(str(multiples(5, 3,

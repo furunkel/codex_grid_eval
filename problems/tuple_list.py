@@ -15,7 +15,7 @@ TEST_IMPORTS = ['re']
 TARGET = '{func_name}'
 
 TEXT = """
-def {func_name}(text):
+def {func_name}(lst):
     \"\"\"
     Given a list of tuples, write a function that returns the {ret_index} value of the tuple with the {cmp} {cmp_index} value.
     \"\"\"

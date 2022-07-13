@@ -1,0 +1,5 @@
+
+def some_func(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest twelfth value.
+    """

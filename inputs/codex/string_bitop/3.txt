@@ -1,0 +1,9 @@
+
+from typing import List
+
+def string_or(a: str, b: str) -> str:
+    """ Input are two strings a and b consisting only of 1s and 0s.
+    Perform binary OR on these inputs and return result also as a string.
+    >>> string_or('010', '110')
+    '110'
+    """

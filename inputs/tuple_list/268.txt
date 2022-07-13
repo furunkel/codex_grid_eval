@@ -1,5 +1,0 @@
-
-def fibonacci(text):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
-    """

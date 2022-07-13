@@ -1,0 +1,5 @@
+
+def find_char_long(text):
+    """
+    Finds all words which are at least 1 characters long in a string.
+    """

@@ -1,0 +1,10 @@
+
+def octuples_sum_to_one(l: list):
+    """
+    octuples_sum_to_one takes a list of integers as an input.
+    it returns True if there are 8 distinct elements in the list that
+    sum to one, and False otherwise.
+
+    >>> octuples_sum_to_one([1, 2, -3, 7, 2, 7])
+    False
+    """

@@ -50,9 +50,49 @@ GRID = {
 }
 
 def oracle_(input, count, sum_num):
-    for idx in product(*([list(range(len(input)))] * count)):
-        if all(idx[i] < idx[i + 1] for i in range(count - 1)) and sum(input[idx[i]] for i in range(count)) == sum_num:
-          return True
+    if count == 5:
+        # too slow otherwise
+        l = len(input)
+        for i1 in range(l):
+            for i2 in range(i1 + 1, l):
+                for i3 in range(i2 + 1, l):
+                    for i4 in range(i3 + 1, l):
+                        for i5 in range(i4 + 1, l):
+                            if input[i1] + input[i2] + input[i3] + input[i4] + input[i5] == sum_num:
+                                return True
+
+    elif count == 8:
+        l = len(input)
+        for i1 in range(l):
+            for i2 in range(i1 + 1, l):
+                for i3 in range(i2 + 1, l):
+                    for i4 in range(i3 + 1, l):
+                        for i5 in range(i4 + 1, l):
+                            for i6 in range(i5 + 1, l):
+                                for i7 in range(i6 + 1, l):
+                                    for i8 in range(i7 + 1, l):
+                                        if input[i1] + input[i2] + input[i3] + input[i4] + input[i5] + input[i6] + input[i7] + input[i8] == sum_num:
+                                            return True
+    elif count == 10:
+        l = len(input)
+        for i1 in range(l):
+            for i2 in range(i1 + 1, l):
+                for i3 in range(i2 + 1, l):
+                    for i4 in range(i3 + 1, l):
+                        for i5 in range(i4 + 1, l):
+                            for i6 in range(i5 + 1, l):
+                                for i7 in range(i6 + 1, l):
+                                    for i8 in range(i7 + 1, l):
+                                        for i9 in range(i8 + 1, l):
+                                            for i10 in range(i9 + 1, l):
+                                                if input[i1] + input[i2] + input[i3] + input[i4] + input[i5] + input[i6] + input[i7] + input[i8] + input[i9] + input[i10] == sum_num:
+                                                    return True
+    else:
+        for idx in product(*([list(range(len(input)))] * count)):
+            if all(idx[i] < idx[i + 1] for i in range(count - 1)) and sum(input[idx[i]] for i in range(count)) == sum_num:
+                return True
+    return False
+
     return False
 
 def oracle(vars):

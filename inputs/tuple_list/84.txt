@@ -1,5 +1,0 @@
-
-def extract_value(text):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the smallest second value.
-    """

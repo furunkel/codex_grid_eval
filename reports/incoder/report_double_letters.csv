@@ -1,0 +1,281 @@
+double_class,triple_class,input,result,result_emojis,model_input,expected,actual
+letter,number,aaaAB1!1kf!kd3?f3fk?lk3,p,✅,input/incoder/double_letters/1.txt,,
+letter,number,???!!!!ABCdefg1234aaaee,p,✅,input/incoder/double_letters/1.txt,,
+letter,number,A?,p,✅,input/incoder/double_letters/1.txt,,
+letter,number,?,p,✅,input/incoder/double_letters/1.txt,,
+letter,number,!!!!!,p,✅,input/incoder/double_letters/1.txt,,
+letter,number,AAAaaaaaAAAA,p,✅,input/incoder/double_letters/1.txt,,
+letter,number,1A2B3C!,p,✅,input/incoder/double_letters/1.txt,,
+letter,exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/4.txt,'aaaaaaAABB1!!!1kkff!!!kkdd3?ff3ffkk?llkk3','aaaaaaAABB11!!11kkff!!kkdd33??ff33ffkk??llkk33'
+letter,exclamation point,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/4.txt,'???!!!!!!!!!!!!AABBCCddeeffgg1234aaaaaaeeee','??????!!!!!!!!AABBCCddeeffgg11223344aaaaaaeeee'
+letter,exclamation point,A?,f,❌,input/incoder/double_letters/4.txt,'AA?','AA??'
+letter,exclamation point,?,f,❌,input/incoder/double_letters/4.txt,'?','??'
+letter,exclamation point,!!!!!,f,❌,input/incoder/double_letters/4.txt,'!!!!!!!!!!!!!!!','!!!!!!!!!!'
+letter,exclamation point,AAAaaaaaAAAA,p,✅,input/incoder/double_letters/4.txt,,
+letter,exclamation point,1A2B3C!,f,❌,input/incoder/double_letters/4.txt,'1AA2BB3CC!!!','11AA22BB33CC!!'
+letter,question mark,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/5.txt,,
+letter,question mark,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/5.txt,,
+letter,question mark,A?,e,💀,input/incoder/double_letters/5.txt,,
+letter,question mark,?,e,💀,input/incoder/double_letters/5.txt,,
+letter,question mark,!!!!!,e,💀,input/incoder/double_letters/5.txt,,
+letter,question mark,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/5.txt,,
+letter,question mark,1A2B3C!,e,💀,input/incoder/double_letters/5.txt,,
+number,letter,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/8.txt,,
+number,letter,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/8.txt,,
+number,letter,A?,e,💀,input/incoder/double_letters/8.txt,,
+number,letter,?,e,💀,input/incoder/double_letters/8.txt,,
+number,letter,!!!!!,e,💀,input/incoder/double_letters/8.txt,,
+number,letter,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/8.txt,,
+number,letter,1A2B3C!,e,💀,input/incoder/double_letters/8.txt,,
+number,upper-case letter,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/10.txt,,
+number,upper-case letter,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/10.txt,,
+number,upper-case letter,A?,e,💀,input/incoder/double_letters/10.txt,,
+number,upper-case letter,?,e,💀,input/incoder/double_letters/10.txt,,
+number,upper-case letter,!!!!!,e,💀,input/incoder/double_letters/10.txt,,
+number,upper-case letter,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/10.txt,,
+number,upper-case letter,1A2B3C!,e,💀,input/incoder/double_letters/10.txt,,
+number,lower-case letter,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/11.txt,,
+number,lower-case letter,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/11.txt,,
+number,lower-case letter,A?,e,💀,input/incoder/double_letters/11.txt,,
+number,lower-case letter,?,e,💀,input/incoder/double_letters/11.txt,,
+number,lower-case letter,!!!!!,e,💀,input/incoder/double_letters/11.txt,,
+number,lower-case letter,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/11.txt,,
+number,lower-case letter,1A2B3C!,e,💀,input/incoder/double_letters/11.txt,,
+number,exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,p,✅,input/incoder/double_letters/12.txt,,
+number,exclamation point,???!!!!ABCdefg1234aaaee,p,✅,input/incoder/double_letters/12.txt,,
+number,exclamation point,A?,p,✅,input/incoder/double_letters/12.txt,,
+number,exclamation point,?,p,✅,input/incoder/double_letters/12.txt,,
+number,exclamation point,!!!!!,p,✅,input/incoder/double_letters/12.txt,,
+number,exclamation point,AAAaaaaaAAAA,p,✅,input/incoder/double_letters/12.txt,,
+number,exclamation point,1A2B3C!,p,✅,input/incoder/double_letters/12.txt,,
+number,question mark,aaaAB1!1kf!kd3?f3fk?lk3,p,✅,input/incoder/double_letters/13.txt,,
+number,question mark,???!!!!ABCdefg1234aaaee,p,✅,input/incoder/double_letters/13.txt,,
+number,question mark,A?,p,✅,input/incoder/double_letters/13.txt,,
+number,question mark,?,p,✅,input/incoder/double_letters/13.txt,,
+number,question mark,!!!!!,p,✅,input/incoder/double_letters/13.txt,,
+number,question mark,AAAaaaaaAAAA,p,✅,input/incoder/double_letters/13.txt,,
+number,question mark,1A2B3C!,p,✅,input/incoder/double_letters/13.txt,,
+number,vowel (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/14.txt,'aaaaaaaaaAAAB11!11kf!kd33?f33fk?lk33','aaaaaaaaaAAABBB11!11kkkfff!kkkddd33?fff33fffkkk?lllkkk33'
+number,vowel (lower-case or upper-case),???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/14.txt,'???!!!!AAABCdeeefg11223344aaaaaaaaaeeeeee','???!!!!AAABBBCCCdddeeefffggg11223344aaaaaaaaaeeeeee'
+number,vowel (lower-case or upper-case),A?,p,✅,input/incoder/double_letters/14.txt,,
+number,vowel (lower-case or upper-case),?,p,✅,input/incoder/double_letters/14.txt,,
+number,vowel (lower-case or upper-case),!!!!!,p,✅,input/incoder/double_letters/14.txt,,
+number,vowel (lower-case or upper-case),AAAaaaaaAAAA,p,✅,input/incoder/double_letters/14.txt,,
+number,vowel (lower-case or upper-case),1A2B3C!,f,❌,input/incoder/double_letters/14.txt,'11AAA22B33C!','11AAA22BBB33CCC!'
+number,consonant (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/15.txt,'aaaABBB11!11kkkfff!kkkddd33?fff33fffkkk?lllkkk33','aaaaaaaaaAAABBB11!11kkkfff!kkkddd33?fff33fffkkk?lllkkk33'
+number,consonant (lower-case or upper-case),???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/15.txt,'???!!!!ABBBCCCdddefffggg11223344aaaee','???!!!!AAABBBCCCdddeeefffggg11223344aaaaaaaaaeeeeee'
+number,consonant (lower-case or upper-case),A?,f,❌,input/incoder/double_letters/15.txt,'A?','AAA?'
+number,consonant (lower-case or upper-case),?,p,✅,input/incoder/double_letters/15.txt,,
+number,consonant (lower-case or upper-case),!!!!!,p,✅,input/incoder/double_letters/15.txt,,
+number,consonant (lower-case or upper-case),AAAaaaaaAAAA,f,❌,input/incoder/double_letters/15.txt,'AAAaaaaaAAAA','AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA'
+number,consonant (lower-case or upper-case),1A2B3C!,f,❌,input/incoder/double_letters/15.txt,'11A22BBB33CCC!','11AAA22BBB33CCC!'
+upper-case letter,number,aaaAB1!1kf!kd3?f3fk?lk3,p,✅,input/incoder/double_letters/17.txt,,
+upper-case letter,number,???!!!!ABCdefg1234aaaee,p,✅,input/incoder/double_letters/17.txt,,
+upper-case letter,number,A?,p,✅,input/incoder/double_letters/17.txt,,
+upper-case letter,number,?,p,✅,input/incoder/double_letters/17.txt,,
+upper-case letter,number,!!!!!,p,✅,input/incoder/double_letters/17.txt,,
+upper-case letter,number,AAAaaaaaAAAA,p,✅,input/incoder/double_letters/17.txt,,
+upper-case letter,number,1A2B3C!,p,✅,input/incoder/double_letters/17.txt,,
+upper-case letter,lower-case letter,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/19.txt,'aaaaaaaaaAABB1!1kkkfff!kkkddd3?fff3fffkkk?lllkkk3','aaaAB1!1kf!kd3?f3fk?lk3'
+upper-case letter,lower-case letter,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/19.txt,'???!!!!AABBCCdddeeefffggg1234aaaaaaaaaeeeeee','???!!!!ABCdefg1234aaaee'
+upper-case letter,lower-case letter,A?,f,❌,input/incoder/double_letters/19.txt,'AA?','A?'
+upper-case letter,lower-case letter,?,p,✅,input/incoder/double_letters/19.txt,,
+upper-case letter,lower-case letter,!!!!!,p,✅,input/incoder/double_letters/19.txt,,
+upper-case letter,lower-case letter,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/19.txt,'AAAAAAaaaaaaaaaaaaaaaAAAAAAAA','AAAaaaaaAAAA'
+upper-case letter,lower-case letter,1A2B3C!,f,❌,input/incoder/double_letters/19.txt,'1AA2BB3CC!','1A2B3C!'
+upper-case letter,exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/20.txt,'aaaAABB1!!!1kf!!!kd3?f3fk?lk3','aaaaaaAB11!11kkff!kkdd33??ff33ffkk??llkk33'
+upper-case letter,exclamation point,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/20.txt,'???!!!!!!!!!!!!AABBCCdefg1234aaaee','??????!!!!ABCddeeffgg11223344aaaaaaeeee'
+upper-case letter,exclamation point,A?,f,❌,input/incoder/double_letters/20.txt,'AA?','A??'
+upper-case letter,exclamation point,?,f,❌,input/incoder/double_letters/20.txt,'?','??'
+upper-case letter,exclamation point,!!!!!,f,❌,input/incoder/double_letters/20.txt,'!!!!!!!!!!!!!!!','!!!!!'
+upper-case letter,exclamation point,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/20.txt,'AAAAAAaaaaaAAAAAAAA','AAAaaaaaaaaaaAAAA'
+upper-case letter,exclamation point,1A2B3C!,f,❌,input/incoder/double_letters/20.txt,'1AA2BB3CC!!!','11A22B33C!'
+upper-case letter,question mark,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/21.txt,'aaaAABB1!1kf!kd3???f3fk???lk3','aaaAABB1!1kf!kd3?????????f3fk?????????lk3'
+upper-case letter,question mark,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/21.txt,'?????????!!!!AABBCCdefg1234aaaee','?????????????????????????????????????????????????????????????????????????????????!!!!AABBCCdefg1234aaaee'
+upper-case letter,question mark,A?,p,✅,input/incoder/double_letters/21.txt,,
+upper-case letter,question mark,?,p,✅,input/incoder/double_letters/21.txt,,
+upper-case letter,question mark,!!!!!,p,✅,input/incoder/double_letters/21.txt,,
+upper-case letter,question mark,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/21.txt,'AAAAAAaaaaaAAAAAAAA','AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+upper-case letter,question mark,1A2B3C!,p,✅,input/incoder/double_letters/21.txt,,
+lower-case letter,number,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/25.txt,'aaaaaaAB111!111kkff!kkdd333?ff333ffkk?llkk333','aaaAB11!11kf!kd33?f33fk?lk33'
+lower-case letter,number,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/25.txt,'???!!!!ABCddeeffgg111222333444aaaaaaeeee','???!!!!ABCdefg11223344aaaee'
+lower-case letter,number,A?,p,✅,input/incoder/double_letters/25.txt,,
+lower-case letter,number,?,p,✅,input/incoder/double_letters/25.txt,,
+lower-case letter,number,!!!!!,p,✅,input/incoder/double_letters/25.txt,,
+lower-case letter,number,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/25.txt,'AAAaaaaaaaaaaAAAA','AAAaaaaaAAAA'
+lower-case letter,number,1A2B3C!,f,❌,input/incoder/double_letters/25.txt,'111A222B333C!','11A22B33C!'
+lower-case letter,upper-case letter,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/26.txt,'aaaaaaAAABBB1!1kkff!kkdd3?ff3ffkk?llkk3','aaaABkfkdffklk'
+lower-case letter,upper-case letter,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/26.txt,'???!!!!AAABBBCCCddeeffgg1234aaaaaaeeee','ABCdefgaaaee'
+lower-case letter,upper-case letter,A?,f,❌,input/incoder/double_letters/26.txt,'AAA?','A'
+lower-case letter,upper-case letter,?,f,❌,input/incoder/double_letters/26.txt,'?',''
+lower-case letter,upper-case letter,!!!!!,f,❌,input/incoder/double_letters/26.txt,'!!!!!',''
+lower-case letter,upper-case letter,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/26.txt,'AAAAAAAAAaaaaaaaaaaAAAAAAAAAAAA','AAAaaaaaAAAA'
+lower-case letter,upper-case letter,1A2B3C!,f,❌,input/incoder/double_letters/26.txt,'1AAA2BBB3CCC!','ABC'
+lower-case letter,exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/28.txt,'aaaaaaAB1!!!1kkff!!!kkdd3?ff3ffkk?llkk3','aaaaaakkffkkddffffkkllkk'
+lower-case letter,exclamation point,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/28.txt,'???!!!!!!!!!!!!ABCddeeffgg1234aaaaaaeeee','ddeeffggaaaaaaeeee'
+lower-case letter,exclamation point,A?,f,❌,input/incoder/double_letters/28.txt,'A?',''
+lower-case letter,exclamation point,?,f,❌,input/incoder/double_letters/28.txt,'?',''
+lower-case letter,exclamation point,!!!!!,f,❌,input/incoder/double_letters/28.txt,'!!!!!!!!!!!!!!!',''
+lower-case letter,exclamation point,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/28.txt,'AAAaaaaaaaaaaAAAA','aaaaaaaaaa'
+lower-case letter,exclamation point,1A2B3C!,f,❌,input/incoder/double_letters/28.txt,'1A2B3C!!!',''
+lower-case letter,question mark,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/29.txt,'aaaaaaAB1!1kkff!kkdd3???ff3ffkk???llkk3','aaaaaaaaaaaaaaaaaaaaaaaaAB1!1kkkkkkkkkkkkkkkkffffffff!kkkkkkkkkkkkkkkkdd3?????????ffffffff3ffffffffkkkkkkkkkkkkkkkk?????????llkkkkkkkkkkkkkkkk3'
+lower-case letter,question mark,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/29.txt,'?????????!!!!ABCddeeffgg1234aaaaaaeeee','?????????????????????????????????????????????????????????????????????????????????!!!!ABCddeeeeeeeeffgg1234aaaaaaaaaaaaaaaaaaaaaaaaeeeeeeeeeeeeeeee'
+lower-case letter,question mark,A?,p,✅,input/incoder/double_letters/29.txt,,
+lower-case letter,question mark,?,p,✅,input/incoder/double_letters/29.txt,,
+lower-case letter,question mark,!!!!!,p,✅,input/incoder/double_letters/29.txt,,
+lower-case letter,question mark,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/29.txt,'AAAaaaaaaaaaaAAAA','AAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAA'
+lower-case letter,question mark,1A2B3C!,p,✅,input/incoder/double_letters/29.txt,,
+exclamation point,letter,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/32.txt,'aaaaaaaaaAAABBB1!!1kkkfff!!kkkddd3?fff3fffkkk?lllkkk3','aaaAB1!!1kf!!kd3??f3fk??lk3'
+exclamation point,letter,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/32.txt,'???!!!!!!!!AAABBBCCCdddeeefffggg1234aaaaaaaaaeeeeee','??????!!!!!!!!ABCdefg1234aaaee'
+exclamation point,letter,A?,f,❌,input/incoder/double_letters/32.txt,'AAA?','A??'
+exclamation point,letter,?,f,❌,input/incoder/double_letters/32.txt,'?','??'
+exclamation point,letter,!!!!!,p,✅,input/incoder/double_letters/32.txt,,
+exclamation point,letter,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/32.txt,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAaaaaaAAAA'
+exclamation point,letter,1A2B3C!,f,❌,input/incoder/double_letters/32.txt,'1AAA2BBB3CCC!!','1A2B3C!!'
+exclamation point,number,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/33.txt,,
+exclamation point,number,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/33.txt,,
+exclamation point,number,A?,e,💀,input/incoder/double_letters/33.txt,,
+exclamation point,number,?,e,💀,input/incoder/double_letters/33.txt,,
+exclamation point,number,!!!!!,e,💀,input/incoder/double_letters/33.txt,,
+exclamation point,number,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/33.txt,,
+exclamation point,number,1A2B3C!,e,💀,input/incoder/double_letters/33.txt,,
+exclamation point,upper-case letter,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/34.txt,,
+exclamation point,upper-case letter,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/34.txt,,
+exclamation point,upper-case letter,A?,e,💀,input/incoder/double_letters/34.txt,,
+exclamation point,upper-case letter,?,e,💀,input/incoder/double_letters/34.txt,,
+exclamation point,upper-case letter,!!!!!,e,💀,input/incoder/double_letters/34.txt,,
+exclamation point,upper-case letter,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/34.txt,,
+exclamation point,upper-case letter,1A2B3C!,e,💀,input/incoder/double_letters/34.txt,,
+exclamation point,lower-case letter,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/35.txt,,
+exclamation point,lower-case letter,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/35.txt,,
+exclamation point,lower-case letter,A?,e,💀,input/incoder/double_letters/35.txt,,
+exclamation point,lower-case letter,?,e,💀,input/incoder/double_letters/35.txt,,
+exclamation point,lower-case letter,!!!!!,e,💀,input/incoder/double_letters/35.txt,,
+exclamation point,lower-case letter,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/35.txt,,
+exclamation point,lower-case letter,1A2B3C!,e,💀,input/incoder/double_letters/35.txt,,
+exclamation point,question mark,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/37.txt,,
+exclamation point,question mark,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/37.txt,,
+exclamation point,question mark,A?,e,💀,input/incoder/double_letters/37.txt,,
+exclamation point,question mark,?,e,💀,input/incoder/double_letters/37.txt,,
+exclamation point,question mark,!!!!!,e,💀,input/incoder/double_letters/37.txt,,
+exclamation point,question mark,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/37.txt,,
+exclamation point,question mark,1A2B3C!,e,💀,input/incoder/double_letters/37.txt,,
+exclamation point,vowel (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/38.txt,'aaaaaaaaaAAAB1!!1kf!!kd3?f3fk?lk3','aaaaaaAAAB1!!1kf!!kd3?f3fk?lk3'
+exclamation point,vowel (lower-case or upper-case),???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/38.txt,'???!!!!!!!!AAABCdeeefg1234aaaaaaaaaeeeeee','???!!!!!!!!AAABCdeefg1234aaaaaaeeee'
+exclamation point,vowel (lower-case or upper-case),A?,p,✅,input/incoder/double_letters/38.txt,,
+exclamation point,vowel (lower-case or upper-case),?,p,✅,input/incoder/double_letters/38.txt,,
+exclamation point,vowel (lower-case or upper-case),!!!!!,p,✅,input/incoder/double_letters/38.txt,,
+exclamation point,vowel (lower-case or upper-case),AAAaaaaaAAAA,f,❌,input/incoder/double_letters/38.txt,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAAAAAAAaaaaaaaaaaAAAAAAAAAAAA'
+exclamation point,vowel (lower-case or upper-case),1A2B3C!,p,✅,input/incoder/double_letters/38.txt,,
+exclamation point,consonant (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/39.txt,'aaaABBB1!!1kkkfff!!kkkddd3?fff3fffkkk?lllkkk3','aaaaaaAB1!!1kkkfff!!kkkddd3??fff3fffkkk??lllkkk3'
+exclamation point,consonant (lower-case or upper-case),???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/39.txt,'???!!!!!!!!ABBBCCCdddefffggg1234aaaee','??????!!!!!!!!ABCdddeefffggg1234aaaaaaeeee'
+exclamation point,consonant (lower-case or upper-case),A?,f,❌,input/incoder/double_letters/39.txt,'A?','A??'
+exclamation point,consonant (lower-case or upper-case),?,f,❌,input/incoder/double_letters/39.txt,'?','??'
+exclamation point,consonant (lower-case or upper-case),!!!!!,p,✅,input/incoder/double_letters/39.txt,,
+exclamation point,consonant (lower-case or upper-case),AAAaaaaaAAAA,f,❌,input/incoder/double_letters/39.txt,'AAAaaaaaAAAA','AAAaaaaaaaaaaAAAA'
+exclamation point,consonant (lower-case or upper-case),1A2B3C!,f,❌,input/incoder/double_letters/39.txt,'1A2BBB3CCC!!','1A2B3C!!'
+question mark,letter,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/40.txt,,
+question mark,letter,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/40.txt,,
+question mark,letter,A?,e,💀,input/incoder/double_letters/40.txt,,
+question mark,letter,?,e,💀,input/incoder/double_letters/40.txt,,
+question mark,letter,!!!!!,e,💀,input/incoder/double_letters/40.txt,,
+question mark,letter,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/40.txt,,
+question mark,letter,1A2B3C!,e,💀,input/incoder/double_letters/40.txt,,
+question mark,number,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/41.txt,,
+question mark,number,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/41.txt,,
+question mark,number,A?,e,💀,input/incoder/double_letters/41.txt,,
+question mark,number,?,e,💀,input/incoder/double_letters/41.txt,,
+question mark,number,!!!!!,e,💀,input/incoder/double_letters/41.txt,,
+question mark,number,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/41.txt,,
+question mark,number,1A2B3C!,e,💀,input/incoder/double_letters/41.txt,,
+question mark,upper-case letter,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/42.txt,,
+question mark,upper-case letter,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/42.txt,,
+question mark,upper-case letter,A?,e,💀,input/incoder/double_letters/42.txt,,
+question mark,upper-case letter,?,e,💀,input/incoder/double_letters/42.txt,,
+question mark,upper-case letter,!!!!!,e,💀,input/incoder/double_letters/42.txt,,
+question mark,upper-case letter,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/42.txt,,
+question mark,upper-case letter,1A2B3C!,e,💀,input/incoder/double_letters/42.txt,,
+question mark,lower-case letter,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/43.txt,'aaaaaaaaaAB1!1kkkfff!kkkddd3??fff3fffkkk??lllkkk3','a?a?a?AB1!1k?f?!k?d?3??f?3f?k???l?k?3'
+question mark,lower-case letter,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/43.txt,'??????!!!!ABCdddeeefffggg1234aaaaaaaaaeeeeee','??????!!!!ABCd?e?f?g?1234a?a?a?e?e?'
+question mark,lower-case letter,A?,p,✅,input/incoder/double_letters/43.txt,,
+question mark,lower-case letter,?,p,✅,input/incoder/double_letters/43.txt,,
+question mark,lower-case letter,!!!!!,p,✅,input/incoder/double_letters/43.txt,,
+question mark,lower-case letter,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/43.txt,'AAAaaaaaaaaaaaaaaaAAAA','AAAa?a?a?a?a?AAAA'
+question mark,lower-case letter,1A2B3C!,p,✅,input/incoder/double_letters/43.txt,,
+question mark,exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/44.txt,'aaaAB1!!!1kf!!!kd3??f3fk??lk3','aaaAB1!!1kf!!kd3??f3fk??lk3'
+question mark,exclamation point,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/44.txt,'??????!!!!!!!!!!!!ABCdefg1234aaaee','??????!!!!!!!!ABCdefg1234aaaee'
+question mark,exclamation point,A?,p,✅,input/incoder/double_letters/44.txt,,
+question mark,exclamation point,?,p,✅,input/incoder/double_letters/44.txt,,
+question mark,exclamation point,!!!!!,f,❌,input/incoder/double_letters/44.txt,'!!!!!!!!!!!!!!!','!!!!!!!!!!'
+question mark,exclamation point,AAAaaaaaAAAA,p,✅,input/incoder/double_letters/44.txt,,
+question mark,exclamation point,1A2B3C!,f,❌,input/incoder/double_letters/44.txt,'1A2B3C!!!','1A2B3C!!'
+question mark,vowel (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/46.txt,'aaaaaaaaaAAAB1!1kf!kd3??f3fk??lk3','aaaaaaAAB1!1kf!kd3?f3fk?lk3'
+question mark,vowel (lower-case or upper-case),???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/46.txt,'??????!!!!AAABCdeeefg1234aaaaaaaaaeeeeee','???!!!!AABCdeefg1234aaaaaaeeee'
+question mark,vowel (lower-case or upper-case),A?,f,❌,input/incoder/double_letters/46.txt,'AAA??','AA?'
+question mark,vowel (lower-case or upper-case),?,f,❌,input/incoder/double_letters/46.txt,'??','?'
+question mark,vowel (lower-case or upper-case),!!!!!,p,✅,input/incoder/double_letters/46.txt,,
+question mark,vowel (lower-case or upper-case),AAAaaaaaAAAA,f,❌,input/incoder/double_letters/46.txt,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAAAAaaaaaaaaaaAAAAAAAA'
+question mark,vowel (lower-case or upper-case),1A2B3C!,f,❌,input/incoder/double_letters/46.txt,'1AAA2B3C!','1AA2B3C!'
+question mark,consonant (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/47.txt,,
+question mark,consonant (lower-case or upper-case),???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/47.txt,,
+question mark,consonant (lower-case or upper-case),A?,e,💀,input/incoder/double_letters/47.txt,,
+question mark,consonant (lower-case or upper-case),?,e,💀,input/incoder/double_letters/47.txt,,
+question mark,consonant (lower-case or upper-case),!!!!!,e,💀,input/incoder/double_letters/47.txt,,
+question mark,consonant (lower-case or upper-case),AAAaaaaaAAAA,e,💀,input/incoder/double_letters/47.txt,,
+question mark,consonant (lower-case or upper-case),1A2B3C!,e,💀,input/incoder/double_letters/47.txt,,
+vowel (lower-case or upper-case),number,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/49.txt,'aaaaaaAAB111!111kf!kd333?f333fk?lk333','aaaaaaAB111!111kf!kd333?f333fk?lk333'
+vowel (lower-case or upper-case),number,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/49.txt,'???!!!!AABCdeefg111222333444aaaaaaeeee','???!!!!ABCdeefg111222333444aaaaaaeeee'
+vowel (lower-case or upper-case),number,A?,f,❌,input/incoder/double_letters/49.txt,'AA?','A?'
+vowel (lower-case or upper-case),number,?,p,✅,input/incoder/double_letters/49.txt,,
+vowel (lower-case or upper-case),number,!!!!!,p,✅,input/incoder/double_letters/49.txt,,
+vowel (lower-case or upper-case),number,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/49.txt,'AAAAAAaaaaaaaaaaAAAAAAAA','AAAaaaaaaaaaaAAAA'
+vowel (lower-case or upper-case),number,1A2B3C!,f,❌,input/incoder/double_letters/49.txt,'111AA222B333C!','111A222B333C!'
+vowel (lower-case or upper-case),exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,p,✅,input/incoder/double_letters/52.txt,,
+vowel (lower-case or upper-case),exclamation point,???!!!!ABCdefg1234aaaee,p,✅,input/incoder/double_letters/52.txt,,
+vowel (lower-case or upper-case),exclamation point,A?,p,✅,input/incoder/double_letters/52.txt,,
+vowel (lower-case or upper-case),exclamation point,?,p,✅,input/incoder/double_letters/52.txt,,
+vowel (lower-case or upper-case),exclamation point,!!!!!,p,✅,input/incoder/double_letters/52.txt,,
+vowel (lower-case or upper-case),exclamation point,AAAaaaaaAAAA,p,✅,input/incoder/double_letters/52.txt,,
+vowel (lower-case or upper-case),exclamation point,1A2B3C!,p,✅,input/incoder/double_letters/52.txt,,
+vowel (lower-case or upper-case),question mark,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/53.txt,'aaaaaaAAB1!1kf!kd3???f3fk???lk3','aaaaaaaaaaaaaaaaaaaaaaaaAB1!!!!!!!!!1kf!!!!!!!!!kd3?????????f3fk?????????lk3'
+vowel (lower-case or upper-case),question mark,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/53.txt,'?????????!!!!AABCdeefg1234aaaaaaeeee','?????????????????????????????????????????????????????????????????????????????????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ABCdeeeeeeeefg1234aaaaaaaaaaaaaaaaaaaaaaaaeeeeeeeeeeeeeeee'
+vowel (lower-case or upper-case),question mark,A?,f,❌,input/incoder/double_letters/53.txt,'AA???','A???'
+vowel (lower-case or upper-case),question mark,?,p,✅,input/incoder/double_letters/53.txt,,
+vowel (lower-case or upper-case),question mark,!!!!!,f,❌,input/incoder/double_letters/53.txt,'!!!!!','!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+vowel (lower-case or upper-case),question mark,AAAaaaaaAAAA,f,❌,input/incoder/double_letters/53.txt,'AAAAAAaaaaaaaaaaAAAAAAAA','AAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAA'
+vowel (lower-case or upper-case),question mark,1A2B3C!,f,❌,input/incoder/double_letters/53.txt,'1AA2B3C!','1A2B3C!!!'
+vowel (lower-case or upper-case),consonant (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/55.txt,'aaaaaaAABBB1!1kkkfff!kkkddd3?fff3fffkkk?lllkkk3','aaaAB1!1!3?3?3AB1'
+vowel (lower-case or upper-case),consonant (lower-case or upper-case),???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/55.txt,'???!!!!AABBBCCCdddeefffggg1234aaaaaaeeee','???!!!!ABCe1234aaaee???'
+vowel (lower-case or upper-case),consonant (lower-case or upper-case),A?,e,💀,input/incoder/double_letters/55.txt,,
+vowel (lower-case or upper-case),consonant (lower-case or upper-case),?,e,💀,input/incoder/double_letters/55.txt,,
+vowel (lower-case or upper-case),consonant (lower-case or upper-case),!!!!!,f,❌,input/incoder/double_letters/55.txt,'!!!!!','!!!!!!!!'
+vowel (lower-case or upper-case),consonant (lower-case or upper-case),AAAaaaaaAAAA,f,❌,input/incoder/double_letters/55.txt,'AAAAAAaaaaaaaaaaAAAAAAAA','AAAaaaaaAAAAAAA'
+vowel (lower-case or upper-case),consonant (lower-case or upper-case),1A2B3C!,f,❌,input/incoder/double_letters/55.txt,'1AA2BBB3CCC!','1A2B3C!1A2'
+consonant (lower-case or upper-case),number,aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/57.txt,'aaaABB111!111kkff!kkdd333?ff333ffkk?llkk333','aaaAB1!1kf!kd3?f3fk?lk3'
+consonant (lower-case or upper-case),number,???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/57.txt,'???!!!!ABBCCddeffgg111222333444aaaee','???!!!!ABCdefg1234aaaee'
+consonant (lower-case or upper-case),number,A?,p,✅,input/incoder/double_letters/57.txt,,
+consonant (lower-case or upper-case),number,?,p,✅,input/incoder/double_letters/57.txt,,
+consonant (lower-case or upper-case),number,!!!!!,p,✅,input/incoder/double_letters/57.txt,,
+consonant (lower-case or upper-case),number,AAAaaaaaAAAA,p,✅,input/incoder/double_letters/57.txt,,
+consonant (lower-case or upper-case),number,1A2B3C!,f,❌,input/incoder/double_letters/57.txt,'111A222BB333CC!','1A2B3C!'
+consonant (lower-case or upper-case),exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/60.txt,,
+consonant (lower-case or upper-case),exclamation point,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/60.txt,,
+consonant (lower-case or upper-case),exclamation point,A?,e,💀,input/incoder/double_letters/60.txt,,
+consonant (lower-case or upper-case),exclamation point,?,e,💀,input/incoder/double_letters/60.txt,,
+consonant (lower-case or upper-case),exclamation point,!!!!!,e,💀,input/incoder/double_letters/60.txt,,
+consonant (lower-case or upper-case),exclamation point,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/60.txt,,
+consonant (lower-case or upper-case),exclamation point,1A2B3C!,e,💀,input/incoder/double_letters/60.txt,,
+consonant (lower-case or upper-case),question mark,aaaAB1!1kf!kd3?f3fk?lk3,e,💀,input/incoder/double_letters/61.txt,,
+consonant (lower-case or upper-case),question mark,???!!!!ABCdefg1234aaaee,e,💀,input/incoder/double_letters/61.txt,,
+consonant (lower-case or upper-case),question mark,A?,e,💀,input/incoder/double_letters/61.txt,,
+consonant (lower-case or upper-case),question mark,?,e,💀,input/incoder/double_letters/61.txt,,
+consonant (lower-case or upper-case),question mark,!!!!!,e,💀,input/incoder/double_letters/61.txt,,
+consonant (lower-case or upper-case),question mark,AAAaaaaaAAAA,e,💀,input/incoder/double_letters/61.txt,,
+consonant (lower-case or upper-case),question mark,1A2B3C!,e,💀,input/incoder/double_letters/61.txt,,
+consonant (lower-case or upper-case),vowel (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,f,❌,input/incoder/double_letters/62.txt,'aaaaaaaaaAAABB1!1kkff!kkdd3?ff3ffkk?llkk3','aaaaaaAAB1!1kf!kd3?f3fk?lk3'
+consonant (lower-case or upper-case),vowel (lower-case or upper-case),???!!!!ABCdefg1234aaaee,f,❌,input/incoder/double_letters/62.txt,'???!!!!AAABBCCddeeeffgg1234aaaaaaaaaeeeeee','???!!!!AABCdeefg1234aaaaaaeeee'
+consonant (lower-case or upper-case),vowel (lower-case or upper-case),A?,f,❌,input/incoder/double_letters/62.txt,'AAA?','AA?'
+consonant (lower-case or upper-case),vowel (lower-case or upper-case),?,p,✅,input/incoder/double_letters/62.txt,,
+consonant (lower-case or upper-case),vowel (lower-case or upper-case),!!!!!,p,✅,input/incoder/double_letters/62.txt,,
+consonant (lower-case or upper-case),vowel (lower-case or upper-case),AAAaaaaaAAAA,f,❌,input/incoder/double_letters/62.txt,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAAAAaaaaaaaaaaAAAAAAAA'
+consonant (lower-case or upper-case),vowel (lower-case or upper-case),1A2B3C!,f,❌,input/incoder/double_letters/62.txt,'1AAA2BB3CC!','1AA2B3C!'

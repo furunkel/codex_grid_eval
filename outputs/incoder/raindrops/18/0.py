@@ -1,0 +1,110 @@
+
+def raindrops(num):
+    """
+    Your task is to convert a number into a string that contains raindrop sounds corresponding to certain potential factors.
+    A factor is a number that evenly divides into another number, leaving no remainder.
+    The simplest way to test if one number is a factor of another is to use the modulo operation.
+
+    The rules of raindrops are that if a given number:
+
+    has 3 as a factor, add 'Fizz' to the result.
+    has 5 as a factor, add 'Plang' to the result.
+    has 7 as a factor, add 'Plong' to the result.
+    does not have any of 3, 5, or 7 as a factor, the result should be the digits of the number as a string.
+
+    Examples:
+    14 has 7 as a factor, but not 3 or 5, so the result would be "Plong".
+    15 has both 3 and 5 as factors, but not 7, so the result would be "FizzPlang".
+    2 is not factored by 3, 5, or 7, so the result would be "2".
+    """
+    factors = []
+    factors.append(3)
+    factors.append(5)
+    factors.append(7)
+    factors.append(1)
+    factors.append(2)
+    factors.append(4)
+    factors.append(6)
+    factors.append(8)
+    factors.append(10)
+    factors.append(12)
+    factors.append(14)
+    factors.append(16)
+    factors.append(18)
+    factors.append(20)
+    factors.append(22)
+    factors.append(24)
+    factors.append(26)
+    factors.append(28)
+    factors.append(30)
+    factors.append(32)
+    factors.append(34)
+    factors.append(36)
+    factors.append(38)
+    factors.append(40)
+    factors.append(42)
+    factors.append(44)
+    factors.append(46)
+    factors.append(48)
+    factors.append(50)
+    factors.append(52)
+    factors.append(54)
+    factors.append(56)
+    factors.append(58)
+    factors.append(60)
+    factors.append(62)
+    factors.append(64)
+    factors.append(66)
+    factors.append(68)
+    factors.append(70)
+    factors.append(72)
+    factors.append(74)
+    factors.append(76)
+    factors.append(78)
+    factors.append(80)
+    factors.append(82)
+    factors.append(84)
+    factors.append(86)
+    factors.append(88)
+    factors.append(90)
+    factors.append(92)
+    factors.append(94)
+    factors.append(96)
+    factors.append(98)
+    factors.append(100)
+    factors.append(102)
+    factors.append(104)
+    factors.append(106)
+    factors.append(108)
+    factors.append(110)
+    factors.append(112)
+    factors.append(114)
+    factors.append(116)
+    factors.append(118)
+    factors.append(120)
+    factors.append(122)
+    factors.append(124)
+    factors.append(126)
+    factors.append(128)
+    factors.append(130)
+    factors.append(132)
+    factors.append(134)
+    factors.append(136)
+    factors.append(138)
+    factors.append(140)
+    factors.append(142)
+    factors.append(144)
+    factors.append(146)
+    factors.append(148)
+    factors.append(150)
+    factors.append(152)
+    factors.append(154)
+    factors.append(156)
+    factors.append(158)
+    factors.append(160)
+    factors.append(162)
+    factors.append(164)
+    factors.append(166)
+    factors.append(168)
+    factors.append(170)
+    

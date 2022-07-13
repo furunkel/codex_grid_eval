@@ -1,2 +1,0 @@
-"""If we list all the natural numbers below 5 that are multiples of 5 or 3, we get  and 3. The sum of these multiples is 3.
-Find the sum of all the multiples of 5 or 3 below 500."""

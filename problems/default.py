@@ -15,7 +15,7 @@ def default_generate(GRID, inputs, render, lang, with_inputs=False, filter_func=
         if not text:
             continue
 
-        if not with_inputs:
+        if not with_inputs or inputs is None:
             value = (text, vars, index)
             if value in history: continue
             history.append(value)

@@ -1,5 +1,0 @@
-
-def f(text):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest third value.
-    """

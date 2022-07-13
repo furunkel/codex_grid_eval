@@ -1,5 +1,0 @@
-
-def some_func(text):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
-    """

@@ -1,0 +1,111 @@
+
+def small_or_large(n):
+    """
+        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+    """
+    if n < 1000:
+        return "mouse"
+    elif n >= 2000:
+        return "small"
+    else:
+        return None
+
+
+@njit
+def small_or_large2(n):
+    """
+        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+    """
+    if n < 1000:
+        return "mouse"
+    elif n >= 2000:
+        return "small"
+    else:
+        return None
+
+
+@njit
+def small_or_large3(n):
+    """
+        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+    """
+    if n < 1000:
+        return "mouse"
+    elif n >= 2000:
+        return "small"
+    else:
+        return None
+
+
+@njit
+def small_or_large4(n):
+    """
+        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+    """
+    if n < 1000:
+        return "mouse"
+    elif n >= 2000:
+        return "small"
+    else:
+        return None
+
+
+@njit
+def small_or_large5(n):
+    """
+        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+    """
+    if n < 1000:
+        return "mouse"
+    elif n >= 2000:
+        return "small"
+    else:
+        return None
+
+
+@njit
+def small_or_large6(n):
+    """
+        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+    """
+    if n < 1000:
+        return "mouse"
+    elif n >= 2000:
+        return "small"
+    else:
+        return None
+
+
+@njit
+def small_or_large7(n):
+    """
+        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+    """
+    if n < 1000:
+        return "mouse"
+    elif n >= 2000:
+        return "small"
+    else:
+        return None
+
+
+@njit
+def small_or_large8(n):
+    """
+        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+    """
+    if n < 1000:
+        return "mouse"
+    elif n >= 2000:
+        return "small"
+    else:
+        return None
+
+
+@njit
+def small_or_large9(n):
+    """
+        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+    """
+    if n < 1000:
+        return "mouse"

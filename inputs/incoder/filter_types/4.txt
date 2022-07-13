@@ -1,0 +1,6 @@
+
+def filter_floats(values: List[Any]) -> List[float]:
+    """ Filter given list of any python values only for floats
+    >>> filter_floats(['a', 3.14, 5])
+    [3.14]
+    """

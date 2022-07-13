@@ -1,0 +1,289 @@
+case_cond,reverse_cond,input,expected,actual,result,result_emojis,model_input
+letter,no letters,AsDf,'aSdF',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,As?Df,'aS?dF',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,As??Df,'aS??dF',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,1234,'4321',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,1?234,'432?1',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,a1?234,'A1?234',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,a1?2?34,'A1?2?34',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,#a@C,'#A@c',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,#a?C,'#A?c',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,6@2,'2@6',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,#$a^D,'#$A^d',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,#?a^D,'#?A^d',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,#?a^?D,'#?A^?d',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,#ccc,'#CCC',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,#c?c,'#C?C',None,f,❌,input/incoder/str_solve/0.txt
+letter,no letters,#c??c,'#C??C',None,f,❌,input/incoder/str_solve/0.txt
+letter,letters,AsDf,'FdSa',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,As?Df,'Fd?Sa',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,As??Df,'Fd??Sa',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,1234,'1234',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,1?234,'1?234',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,a1?234,'432?1A',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,a1?2?34,'43?2?1A',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,#a@C,'c@A#',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,#a?C,'c?A#',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,6@2,'6@2',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,#$a^D,'d^A$#',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,#?a^D,'d^A?#',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,#?a^?D,'d?^A?#',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,#ccc,'CCC#',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,#c?c,'C?C#',None,f,❌,input/incoder/str_solve/1.txt
+letter,letters,#c??c,'C??C#',None,f,❌,input/incoder/str_solve/1.txt
+letter,exactly one question mark,AsDf,'aSdF',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,As?Df,'Fd?Sa',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,As??Df,'aS??dF',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,1234,'1234',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,1?234,'432?1',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,a1?234,'432?1A',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,a1?2?34,'A1?2?34',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,#a@C,'#A@c',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,#a?C,'c?A#',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,6@2,'6@2',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,#$a^D,'#$A^d',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,#?a^D,'d^A?#',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,#?a^?D,'#?A^?d',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,#ccc,'#CCC',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,#c?c,'C?C#',None,f,❌,input/incoder/str_solve/2.txt
+letter,exactly one question mark,#c??c,'#C??C',None,f,❌,input/incoder/str_solve/2.txt
+letter,more than one question mark,AsDf,'aSdF',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,As?Df,'aS?dF',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,As??Df,'Fd??Sa',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,1234,'1234',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,1?234,'1?234',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,a1?234,'A1?234',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,a1?2?34,'43?2?1A',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,#a@C,'#A@c',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,#a?C,'#A?c',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,6@2,'6@2',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,#$a^D,'#$A^d',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,#?a^D,'#?A^d',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,#?a^?D,'d?^A?#',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,#ccc,'#CCC',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,#c?c,'#C?C',None,f,❌,input/incoder/str_solve/3.txt
+letter,more than one question mark,#c??c,'C??C#',None,f,❌,input/incoder/str_solve/3.txt
+letter,no question marks,AsDf,'FdSa',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,As?Df,'aS?dF',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,As??Df,'aS??dF',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,1234,'4321',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,1?234,'1?234',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,a1?234,'A1?234',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,a1?2?34,'A1?2?34',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,#a@C,'c@A#',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,#a?C,'#A?c',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,6@2,'2@6',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,#$a^D,'d^A$#',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,#?a^D,'#?A^d',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,#?a^?D,'#?A^?d',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,#ccc,'CCC#',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,#c?c,'#C?C',None,f,❌,input/incoder/str_solve/4.txt
+letter,no question marks,#c??c,'#C??C',None,f,❌,input/incoder/str_solve/4.txt
+letter,one or more question marks,AsDf,'aSdF',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,As?Df,'Fd?Sa',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,As??Df,'Fd??Sa',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,1234,'1234',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,1?234,'432?1',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,a1?234,'432?1A',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,a1?2?34,'43?2?1A',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,#a@C,'#A@c',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,#a?C,'c?A#',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,6@2,'6@2',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,#$a^D,'#$A^d',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,#?a^D,'d^A?#',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,#?a^?D,'d?^A?#',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,#ccc,'#CCC',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,#c?c,'C?C#',None,f,❌,input/incoder/str_solve/5.txt
+letter,one or more question marks,#c??c,'C??C#',None,f,❌,input/incoder/str_solve/5.txt
+vowel,no letters,AsDf,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,As?Df,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,As??Df,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,1234,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,1?234,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,a1?234,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,a1?2?34,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,#a@C,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,#a?C,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,6@2,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,#$a^D,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,#?a^D,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,#?a^?D,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,#ccc,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,#c?c,,,e,💀,input/incoder/str_solve/6.txt
+vowel,no letters,#c??c,,,e,💀,input/incoder/str_solve/6.txt
+vowel,letters,AsDf,'fDsA',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,As?Df,'fD?sA',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,As??Df,'fD??sA',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,1234,'1234',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,1?234,'1?234',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,a1?234,'432?1A',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,a1?2?34,'43?2?1A',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,#a@C,'C@A#',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,#a?C,'C?A#',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,6@2,'6@2',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,#$a^D,'D^A$#',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,#?a^D,'D^A?#',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,#?a^?D,'D?^A?#',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,#ccc,'ccc#',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,#c?c,'c?c#',None,f,❌,input/incoder/str_solve/7.txt
+vowel,letters,#c??c,'c??c#',None,f,❌,input/incoder/str_solve/7.txt
+vowel,exactly one question mark,AsDf,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,As?Df,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,As??Df,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,1234,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,1?234,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,a1?234,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,a1?2?34,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,#a@C,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,#a?C,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,6@2,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,#$a^D,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,#?a^D,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,#?a^?D,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,#ccc,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,#c?c,,,e,💀,input/incoder/str_solve/8.txt
+vowel,exactly one question mark,#c??c,,,e,💀,input/incoder/str_solve/8.txt
+vowel,more than one question mark,AsDf,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,As?Df,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,As??Df,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,1234,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,1?234,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,a1?234,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,a1?2?34,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,#a@C,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,#a?C,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,6@2,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,#$a^D,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,#?a^D,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,#?a^?D,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,#ccc,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,#c?c,,,e,💀,input/incoder/str_solve/9.txt
+vowel,more than one question mark,#c??c,,,e,💀,input/incoder/str_solve/9.txt
+vowel,no question marks,AsDf,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,As?Df,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,As??Df,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,1234,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,1?234,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,a1?234,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,a1?2?34,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,#a@C,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,#a?C,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,6@2,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,#$a^D,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,#?a^D,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,#?a^?D,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,#ccc,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,#c?c,,,e,💀,input/incoder/str_solve/10.txt
+vowel,no question marks,#c??c,,,e,💀,input/incoder/str_solve/10.txt
+vowel,one or more question marks,AsDf,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,As?Df,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,As??Df,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,1234,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,1?234,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,a1?234,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,a1?2?34,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,#a@C,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,#a?C,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,6@2,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,#$a^D,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,#?a^D,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,#?a^?D,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,#ccc,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,#c?c,,,e,💀,input/incoder/str_solve/11.txt
+vowel,one or more question marks,#c??c,,,e,💀,input/incoder/str_solve/11.txt
+consonant,no letters,AsDf,'ASdF',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,As?Df,'AS?dF',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,As??Df,'AS??dF',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,1234,'4321',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,1?234,'432?1',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,a1?234,'a1?234',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,a1?2?34,'a1?2?34',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,#a@C,'#a@c',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,#a?C,'#a?c',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,6@2,'2@6',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,#$a^D,'#$a^d',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,#?a^D,'#?a^d',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,#?a^?D,'#?a^?d',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,#ccc,'#CCC',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,#c?c,'#C?C',None,f,❌,input/incoder/str_solve/12.txt
+consonant,no letters,#c??c,'#C??C',None,f,❌,input/incoder/str_solve/12.txt
+consonant,letters,AsDf,'FdSA',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,As?Df,'Fd?SA',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,As??Df,'Fd??SA',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,1234,'1234',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,1?234,'1?234',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,a1?234,'432?1a',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,a1?2?34,'43?2?1a',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,#a@C,'c@a#',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,#a?C,'c?a#',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,6@2,'6@2',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,#$a^D,'d^a$#',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,#?a^D,'d^a?#',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,#?a^?D,'d?^a?#',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,#ccc,'CCC#',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,#c?c,'C?C#',None,f,❌,input/incoder/str_solve/13.txt
+consonant,letters,#c??c,'C??C#',None,f,❌,input/incoder/str_solve/13.txt
+consonant,exactly one question mark,AsDf,'ASdF',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,As?Df,'Fd?SA',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,As??Df,'AS??dF',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,1234,'1234',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,1?234,'432?1',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,a1?234,'432?1a',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,a1?2?34,'a1?2?34',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,#a@C,'#a@c',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,#a?C,'c?a#',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,6@2,'6@2',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,#$a^D,'#$a^d',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,#?a^D,'d^a?#',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,#?a^?D,'#?a^?d',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,#ccc,'#CCC',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,#c?c,'C?C#',None,f,❌,input/incoder/str_solve/14.txt
+consonant,exactly one question mark,#c??c,'#C??C',None,f,❌,input/incoder/str_solve/14.txt
+consonant,more than one question mark,AsDf,'ASdF',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,As?Df,'AS?dF',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,As??Df,'Fd??SA',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,1234,'1234',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,1?234,'1?234',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,a1?234,'a1?234',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,a1?2?34,'43?2?1a',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,#a@C,'#a@c',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,#a?C,'#a?c',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,6@2,'6@2',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,#$a^D,'#$a^d',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,#?a^D,'#?a^d',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,#?a^?D,'d?^a?#',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,#ccc,'#CCC',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,#c?c,'#C?C',None,f,❌,input/incoder/str_solve/15.txt
+consonant,more than one question mark,#c??c,'C??C#',None,f,❌,input/incoder/str_solve/15.txt
+consonant,no question marks,AsDf,'FdSA','AsDf',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,As?Df,'AS?dF','As?Df',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,As??Df,'AS??dF','As??Df',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,1234,'4321','1234',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,1?234,,,p,✅,input/incoder/str_solve/16.txt
+consonant,no question marks,a1?234,,,p,✅,input/incoder/str_solve/16.txt
+consonant,no question marks,a1?2?34,,,p,✅,input/incoder/str_solve/16.txt
+consonant,no question marks,#a@C,'c@a#','#a@C',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,#a?C,'#a?c','#a?C',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,6@2,'2@6','6@2',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,#$a^D,'d^a$#','#$a^D',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,#?a^D,'#?a^d','#?a^D',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,#?a^?D,'#?a^?d','#?a^?D',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,#ccc,'CCC#','#ccc',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,#c?c,'#C?C','#c?c',f,❌,input/incoder/str_solve/16.txt
+consonant,no question marks,#c??c,'#C??C','#c??c',f,❌,input/incoder/str_solve/16.txt
+consonant,one or more question marks,AsDf,'ASdF',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,As?Df,'Fd?SA',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,As??Df,'Fd??SA',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,1234,'1234',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,1?234,'432?1',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,a1?234,'432?1a',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,a1?2?34,'43?2?1a',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,#a@C,'#a@c',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,#a?C,'c?a#',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,6@2,'6@2',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,#$a^D,'#$a^d',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,#?a^D,'d^a?#',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,#?a^?D,'d?^a?#',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,#ccc,'#CCC',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,#c?c,'C?C#',None,f,❌,input/incoder/str_solve/17.txt
+consonant,one or more question marks,#c??c,'C??C#',None,f,❌,input/incoder/str_solve/17.txt

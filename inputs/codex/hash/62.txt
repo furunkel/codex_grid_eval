@@ -1,0 +1,8 @@
+
+def string_to_hash(text):
+    """
+    Given a string 'text', return its SHA256 hash equivalent string.
+    If 'text' is an empty string, return None.
+
+    >>> string_to_hash('Hallo welt') == 'a1401e39ea9735fdcebc52013babcc1143ff56664e025cae31b4323382e16e57'
+    """

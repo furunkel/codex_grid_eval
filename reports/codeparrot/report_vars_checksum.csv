@@ -1,0 +1,13 @@
+var,val,success_rate
+offset_char,the space character,0
+mod,64,0
+input,123,0
+input,abc,0
+input,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",0
+mod,128,0
+mod,256,0
+offset_char,the newline character,0
+offset_char,uppercase X,0
+offset_char,lowercase u,0
+offset_char,an exclamation mark,0
+offset_char,a question mark,0

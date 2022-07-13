@@ -1,0 +1,8 @@
+
+def string_to_hash(text):
+    """
+    Given a string 'text', return its sha256 hash equivalent string.
+    If 'text' is an empty string, return None.
+
+    >>> string_to_hash('md5') == '3ebff31b62c0637c54d4ffa990d5c100ea359994b35f4b342ff49797542148cd'
+    """

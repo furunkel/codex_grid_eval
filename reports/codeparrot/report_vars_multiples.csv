@@ -1,0 +1,21 @@
+var,val,success_rate
+example_below,10,0
+factors,"[3, 5]",0
+below,100,0
+agg,sum,0
+agg,product,0
+below,124,0
+below,197,0
+below,200,0
+below,500,0
+below,600,0
+below,1000,0
+factors,"[5, 3]",0
+factors,"[2, 5]",0
+factors,"[2, 3, 5]",0
+factors,"[5, 3, 2]",0
+factors,"[5, 7, 9]",0
+factors,"[2, 9]",0
+example_below,15,0
+factors,"[13, 17]",0
+example_below,5,0

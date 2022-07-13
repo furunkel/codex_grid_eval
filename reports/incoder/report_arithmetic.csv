@@ -1,0 +1,1513 @@
+var1_name,var2_name,line_order1,line_order2,line_order3,op1,op2,op3,input,result,result_emojis,model_input,expected,actual
+a,b,first,second,third,sum,difference,product,"[3, 5]",p,✅,input/incoder/arithmetic/869.txt,,
+a,b,first,second,third,sum,difference,product,"[7, 10]",p,✅,input/incoder/arithmetic/869.txt,,
+a,b,first,second,third,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/869.txt,,
+a,b,first,second,third,sum,difference,product,"[1, 0]",p,✅,input/incoder/arithmetic/869.txt,,
+a,b,first,second,third,sum,difference,product,"[0, 1]",p,✅,input/incoder/arithmetic/869.txt,,
+a,b,first,second,third,sum,difference,product,"[100, 20]",p,✅,input/incoder/arithmetic/869.txt,,
+a,b,first,second,third,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/871.txt,"(8, 15, -2)","(8, 0, 8)"
+a,b,first,second,third,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/871.txt,"(17, 70, -3)","(17, 0, 17)"
+a,b,first,second,third,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/871.txt,,
+a,b,first,second,third,sum,product,difference,"[1, 0]",p,✅,input/incoder/arithmetic/871.txt,,
+a,b,first,second,third,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/871.txt,"(1, 0, -1)","(1, 0, 1)"
+a,b,first,second,third,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/871.txt,"(120, 2000, 80)","(120, 0, 120)"
+a,b,first,second,third,difference,sum,product,"[3, 5]",p,✅,input/incoder/arithmetic/875.txt,,
+a,b,first,second,third,difference,sum,product,"[7, 10]",p,✅,input/incoder/arithmetic/875.txt,,
+a,b,first,second,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/875.txt,,
+a,b,first,second,third,difference,sum,product,"[1, 0]",p,✅,input/incoder/arithmetic/875.txt,,
+a,b,first,second,third,difference,sum,product,"[0, 1]",p,✅,input/incoder/arithmetic/875.txt,,
+a,b,first,second,third,difference,sum,product,"[100, 20]",p,✅,input/incoder/arithmetic/875.txt,,
+a,b,first,second,third,difference,product,sum,"[3, 5]",p,✅,input/incoder/arithmetic/879.txt,,
+a,b,first,second,third,difference,product,sum,"[7, 10]",p,✅,input/incoder/arithmetic/879.txt,,
+a,b,first,second,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/879.txt,,
+a,b,first,second,third,difference,product,sum,"[1, 0]",p,✅,input/incoder/arithmetic/879.txt,,
+a,b,first,second,third,difference,product,sum,"[0, 1]",p,✅,input/incoder/arithmetic/879.txt,,
+a,b,first,second,third,difference,product,sum,"[100, 20]",p,✅,input/incoder/arithmetic/879.txt,,
+a,b,first,second,third,product,sum,difference,"[3, 5]",p,✅,input/incoder/arithmetic/883.txt,,
+a,b,first,second,third,product,sum,difference,"[7, 10]",p,✅,input/incoder/arithmetic/883.txt,,
+a,b,first,second,third,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/883.txt,,
+a,b,first,second,third,product,sum,difference,"[1, 0]",p,✅,input/incoder/arithmetic/883.txt,,
+a,b,first,second,third,product,sum,difference,"[0, 1]",p,✅,input/incoder/arithmetic/883.txt,,
+a,b,first,second,third,product,sum,difference,"[100, 20]",p,✅,input/incoder/arithmetic/883.txt,,
+a,b,first,second,third,product,difference,sum,"[3, 5]",p,✅,input/incoder/arithmetic/885.txt,,
+a,b,first,second,third,product,difference,sum,"[7, 10]",p,✅,input/incoder/arithmetic/885.txt,,
+a,b,first,second,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/885.txt,,
+a,b,first,second,third,product,difference,sum,"[1, 0]",p,✅,input/incoder/arithmetic/885.txt,,
+a,b,first,second,third,product,difference,sum,"[0, 1]",p,✅,input/incoder/arithmetic/885.txt,,
+a,b,first,second,third,product,difference,sum,"[100, 20]",p,✅,input/incoder/arithmetic/885.txt,,
+a,b,first,third,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/923.txt,"(8, 15, -2)","(8, -2, 15)"
+a,b,first,third,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/923.txt,"(17, 70, -3)","(17, -3, 70)"
+a,b,first,third,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/923.txt,,
+a,b,first,third,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/923.txt,"(1, 0, 1)","(1, 1, 0)"
+a,b,first,third,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/923.txt,"(1, 0, -1)","(1, -1, 0)"
+a,b,first,third,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/923.txt,"(120, 2000, 80)","(120, 80, 2000)"
+a,b,first,third,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/925.txt,"(8, -2, 15)","(8, 15, -2)"
+a,b,first,third,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/925.txt,"(17, -3, 70)","(17, 70, -3)"
+a,b,first,third,second,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/925.txt,,
+a,b,first,third,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/925.txt,"(1, 1, 0)","(1, 0, 1)"
+a,b,first,third,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/925.txt,"(1, -1, 0)","(1, 0, -1)"
+a,b,first,third,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/925.txt,"(120, 80, 2000)","(120, 2000, 80)"
+a,b,first,third,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/929.txt,"(-2, 15, 8)","(-2, 8, 15)"
+a,b,first,third,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/929.txt,"(-3, 70, 17)","(-3, 17, 70)"
+a,b,first,third,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/929.txt,,
+a,b,first,third,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/929.txt,"(1, 0, 1)","(1, 1, 0)"
+a,b,first,third,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/929.txt,"(-1, 0, 1)","(-1, 1, 0)"
+a,b,first,third,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/929.txt,"(80, 2000, 120)","(80, 120, 2000)"
+a,b,first,third,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/933.txt,"(-2, 8, 15)","(3, 5, 15)"
+a,b,first,third,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/933.txt,"(-3, 17, 70)","(7, 10, 70)"
+a,b,first,third,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/933.txt,,
+a,b,first,third,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/933.txt,"(1, 1, 0)","(1, 0, 0)"
+a,b,first,third,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/933.txt,"(-1, 1, 0)","(0, 1, 0)"
+a,b,first,third,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/933.txt,"(80, 120, 2000)","(100, 20, 2000)"
+a,b,first,third,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/937.txt,"(15, -2, 8)","(15, 8, -2)"
+a,b,first,third,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/937.txt,"(70, -3, 17)","(70, 17, -3)"
+a,b,first,third,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/937.txt,,
+a,b,first,third,second,product,sum,difference,"[1, 0]",p,✅,input/incoder/arithmetic/937.txt,,
+a,b,first,third,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/937.txt,"(0, -1, 1)","(0, 1, -1)"
+a,b,first,third,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/937.txt,"(2000, 80, 120)","(2000, 120, 80)"
+a,b,first,third,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/939.txt,"(15, 8, -2)","(8, -2, 8)"
+a,b,first,third,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/939.txt,"(70, 17, -3)","(17, -3, 17)"
+a,b,first,third,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/939.txt,,
+a,b,first,third,second,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/939.txt,"(0, 1, 1)","(1, 1, 1)"
+a,b,first,third,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/939.txt,"(0, 1, -1)","(1, -1, 1)"
+a,b,first,third,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/939.txt,"(2000, 120, 80)","(120, 80, 120)"
+a,b,second,first,third,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/1031.txt,"(-2, 8, 15)","(8, 2, 15)"
+a,b,second,first,third,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/1031.txt,"(-3, 17, 70)","(17, 3, 70)"
+a,b,second,first,third,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/1031.txt,,
+a,b,second,first,third,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/1031.txt,"(1, 1, 0)","(1, -1, 0)"
+a,b,second,first,third,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/1031.txt,"(-1, 1, 0)","(1, 1, 0)"
+a,b,second,first,third,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/1031.txt,"(80, 120, 2000)","(120, -80, 2000)"
+a,b,second,first,third,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1033.txt,"(15, 8, -2)","(8, 15, -2)"
+a,b,second,first,third,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1033.txt,"(70, 17, -3)","(17, 70, -3)"
+a,b,second,first,third,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1033.txt,,
+a,b,second,first,third,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1033.txt,"(0, 1, 1)","(1, 0, 1)"
+a,b,second,first,third,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1033.txt,"(0, 1, -1)","(1, 0, -1)"
+a,b,second,first,third,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1033.txt,"(2000, 120, 80)","(120, 2000, 80)"
+a,b,second,first,third,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/1037.txt,"(8, -2, 15)","(-2, 8, 15)"
+a,b,second,first,third,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/1037.txt,"(17, -3, 70)","(-3, 17, 70)"
+a,b,second,first,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/1037.txt,,
+a,b,second,first,third,difference,sum,product,"[1, 0]",p,✅,input/incoder/arithmetic/1037.txt,,
+a,b,second,first,third,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/1037.txt,"(1, -1, 0)","(-1, 1, 0)"
+a,b,second,first,third,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/1037.txt,"(120, 80, 2000)","(80, 120, 2000)"
+a,b,second,first,third,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1041.txt,"(15, -2, 8)","(-2, 15, 8)"
+a,b,second,first,third,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1041.txt,"(70, -3, 17)","(-3, 70, 17)"
+a,b,second,first,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1041.txt,,
+a,b,second,first,third,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1041.txt,"(0, 1, 1)","(1, 0, 1)"
+a,b,second,first,third,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1041.txt,"(0, -1, 1)","(-1, 0, 1)"
+a,b,second,first,third,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1041.txt,"(2000, 80, 120)","(80, 2000, 120)"
+a,b,second,first,third,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1045.txt,"(8, 15, -2)","(15, 8, -2)"
+a,b,second,first,third,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1045.txt,"(17, 70, -3)","(70, 17, -3)"
+a,b,second,first,third,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1045.txt,,
+a,b,second,first,third,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1045.txt,"(1, 0, 1)","(0, 1, 1)"
+a,b,second,first,third,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1045.txt,"(1, 0, -1)","(0, 1, -1)"
+a,b,second,first,third,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1045.txt,"(120, 2000, 80)","(2000, 120, 80)"
+a,b,second,first,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1047.txt,"(-2, 15, 8)","(15, -2, 8)"
+a,b,second,first,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1047.txt,"(-3, 70, 17)","(70, -3, 17)"
+a,b,second,first,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1047.txt,,
+a,b,second,first,third,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1047.txt,"(1, 0, 1)","(0, 1, 1)"
+a,b,second,first,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1047.txt,"(-1, 0, 1)","(0, -1, 1)"
+a,b,second,first,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1047.txt,"(80, 2000, 120)","(2000, 80, 120)"
+a,b,second,third,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/1139.txt,"(15, 8, -2)","(8, -2, 15)"
+a,b,second,third,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/1139.txt,"(70, 17, -3)","(17, -3, 70)"
+a,b,second,third,first,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/1139.txt,,
+a,b,second,third,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/1139.txt,"(0, 1, 1)","(1, 1, 0)"
+a,b,second,third,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/1139.txt,"(0, 1, -1)","(1, -1, 0)"
+a,b,second,third,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/1139.txt,"(2000, 120, 80)","(120, 80, 2000)"
+a,b,second,third,first,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1141.txt,"(-2, 8, 15)","(8, 15, -2)"
+a,b,second,third,first,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1141.txt,"(-3, 17, 70)","(17, 70, -3)"
+a,b,second,third,first,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1141.txt,,
+a,b,second,third,first,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1141.txt,"(1, 1, 0)","(1, 0, 1)"
+a,b,second,third,first,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1141.txt,"(-1, 1, 0)","(1, 0, -1)"
+a,b,second,third,first,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1141.txt,"(80, 120, 2000)","(120, 2000, 80)"
+a,b,second,third,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/1145.txt,"(15, -2, 8)","(-2, 8, 15)"
+a,b,second,third,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/1145.txt,"(70, -3, 17)","(-3, 17, 70)"
+a,b,second,third,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/1145.txt,,
+a,b,second,third,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/1145.txt,"(0, 1, 1)","(1, 1, 0)"
+a,b,second,third,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/1145.txt,"(0, -1, 1)","(-1, 1, 0)"
+a,b,second,third,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/1145.txt,"(2000, 80, 120)","(80, 120, 2000)"
+a,b,second,third,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1149.txt,"(8, -2, 15)","(-2, 15, 15)"
+a,b,second,third,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1149.txt,"(17, -3, 70)","(-3, 70, 70)"
+a,b,second,third,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1149.txt,,
+a,b,second,third,first,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1149.txt,"(1, 1, 0)","(1, 0, 0)"
+a,b,second,third,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1149.txt,"(1, -1, 0)","(-1, 0, 0)"
+a,b,second,third,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1149.txt,"(120, 80, 2000)","(80, 2000, 2000)"
+a,b,second,third,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1153.txt,"(-2, 15, 8)","(15, 8, -2)"
+a,b,second,third,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1153.txt,"(-3, 70, 17)","(70, 17, -3)"
+a,b,second,third,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1153.txt,,
+a,b,second,third,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1153.txt,"(1, 0, 1)","(0, 1, 1)"
+a,b,second,third,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1153.txt,"(-1, 0, 1)","(0, 1, -1)"
+a,b,second,third,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1153.txt,"(80, 2000, 120)","(2000, 120, 80)"
+a,b,second,third,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1155.txt,"(8, 15, -2)","(15, -2)"
+a,b,second,third,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1155.txt,"(17, 70, -3)","(70, -3)"
+a,b,second,third,first,product,difference,sum,"[0, 0]",f,❌,input/incoder/arithmetic/1155.txt,"(0, 0, 0)","(0, 0)"
+a,b,second,third,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1155.txt,"(1, 0, 1)","(0, 1)"
+a,b,second,third,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1155.txt,"(1, 0, -1)","(0, -1)"
+a,b,second,third,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1155.txt,"(120, 2000, 80)","(2000, 80)"
+a,b,third,first,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/1247.txt,"(-2, 15, 8)","(8, 2, 15)"
+a,b,third,first,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/1247.txt,"(-3, 70, 17)","(17, 3, 70)"
+a,b,third,first,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/1247.txt,,
+a,b,third,first,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/1247.txt,"(1, 0, 1)","(1, -1, 0)"
+a,b,third,first,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/1247.txt,"(-1, 0, 1)","(1, 1, 0)"
+a,b,third,first,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/1247.txt,"(80, 2000, 120)","(120, -80, 2000)"
+a,b,third,first,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1249.txt,"(15, -2, 8)","(8, 15, -2)"
+a,b,third,first,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1249.txt,"(70, -3, 17)","(17, 70, -3)"
+a,b,third,first,second,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1249.txt,,
+a,b,third,first,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1249.txt,"(0, 1, 1)","(1, 0, 1)"
+a,b,third,first,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1249.txt,"(0, -1, 1)","(1, 0, -1)"
+a,b,third,first,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1249.txt,"(2000, 80, 120)","(120, 2000, 80)"
+a,b,third,first,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/1253.txt,"(8, 15, -2)","(-2, 8, 15)"
+a,b,third,first,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/1253.txt,"(17, 70, -3)","(-3, 17, 70)"
+a,b,third,first,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/1253.txt,,
+a,b,third,first,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/1253.txt,"(1, 0, 1)","(1, 1, 0)"
+a,b,third,first,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/1253.txt,"(1, 0, -1)","(-1, 1, 0)"
+a,b,third,first,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/1253.txt,"(120, 2000, 80)","(80, 120, 2000)"
+a,b,third,first,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1257.txt,"(15, 8, -2)","(-2, 15, 8)"
+a,b,third,first,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1257.txt,"(70, 17, -3)","(-3, 70, 17)"
+a,b,third,first,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1257.txt,,
+a,b,third,first,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1257.txt,"(0, 1, 1)","(1, 0, 1)"
+a,b,third,first,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1257.txt,"(0, 1, -1)","(-1, 0, 1)"
+a,b,third,first,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1257.txt,"(2000, 120, 80)","(80, 2000, 120)"
+a,b,third,first,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1261.txt,"(8, -2, 15)","(15, 8, -2)"
+a,b,third,first,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1261.txt,"(17, -3, 70)","(70, 17, -3)"
+a,b,third,first,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1261.txt,,
+a,b,third,first,second,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1261.txt,"(1, 1, 0)","(0, 1, 1)"
+a,b,third,first,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1261.txt,"(1, -1, 0)","(0, 1, -1)"
+a,b,third,first,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1261.txt,"(120, 80, 2000)","(2000, 120, 80)"
+a,b,third,first,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1263.txt,"(-2, 8, 15)","(15, 2, 8)"
+a,b,third,first,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1263.txt,"(-3, 17, 70)","(70, 3, 17)"
+a,b,third,first,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1263.txt,,
+a,b,third,first,second,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1263.txt,"(1, 1, 0)","(0, -1, 1)"
+a,b,third,first,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1263.txt,"(-1, 1, 0)","(0, 1, 1)"
+a,b,third,first,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1263.txt,"(80, 120, 2000)","(2000, -80, 120)"
+a,b,third,second,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/1301.txt,"(15, -2, 8)","(8, 2, 15)"
+a,b,third,second,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/1301.txt,"(70, -3, 17)","(17, 3, 70)"
+a,b,third,second,first,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/1301.txt,,
+a,b,third,second,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/1301.txt,"(0, 1, 1)","(1, -1, 0)"
+a,b,third,second,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/1301.txt,"(0, -1, 1)","(1, 1, 0)"
+a,b,third,second,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/1301.txt,"(2000, 80, 120)","(120, -80, 2000)"
+a,b,third,second,first,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1303.txt,"(-2, 15, 8)","(8, 15, -2)"
+a,b,third,second,first,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1303.txt,"(-3, 70, 17)","(17, 70, -3)"
+a,b,third,second,first,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1303.txt,,
+a,b,third,second,first,sum,product,difference,"[1, 0]",p,✅,input/incoder/arithmetic/1303.txt,,
+a,b,third,second,first,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1303.txt,"(-1, 0, 1)","(1, 0, -1)"
+a,b,third,second,first,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1303.txt,"(80, 2000, 120)","(120, 2000, 80)"
+a,b,third,second,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/1307.txt,"(15, 8, -2)","(-2, 8, 15)"
+a,b,third,second,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/1307.txt,"(70, 17, -3)","(-3, 17, 70)"
+a,b,third,second,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/1307.txt,,
+a,b,third,second,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/1307.txt,"(0, 1, 1)","(1, 1, 0)"
+a,b,third,second,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/1307.txt,"(0, 1, -1)","(-1, 1, 0)"
+a,b,third,second,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/1307.txt,"(2000, 120, 80)","(80, 120, 2000)"
+a,b,third,second,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1311.txt,"(8, 15, -2)","(-2, 15, 8)"
+a,b,third,second,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1311.txt,"(17, 70, -3)","(-3, 70, 17)"
+a,b,third,second,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1311.txt,,
+a,b,third,second,first,difference,product,sum,"[1, 0]",p,✅,input/incoder/arithmetic/1311.txt,,
+a,b,third,second,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1311.txt,"(1, 0, -1)","(-1, 0, 1)"
+a,b,third,second,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1311.txt,"(120, 2000, 80)","(80, 2000, 120)"
+a,b,third,second,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1315.txt,"(-2, 8, 15)","(15, 8)"
+a,b,third,second,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1315.txt,"(-3, 17, 70)","(70, 17)"
+a,b,third,second,first,product,sum,difference,"[0, 0]",f,❌,input/incoder/arithmetic/1315.txt,"(0, 0, 0)","(0, 0)"
+a,b,third,second,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1315.txt,"(1, 1, 0)","(0, 1)"
+a,b,third,second,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1315.txt,"(-1, 1, 0)","(0, 1)"
+a,b,third,second,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1315.txt,"(80, 120, 2000)","(2000, 120)"
+a,b,third,second,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1317.txt,"(8, -2, 15)","(15, -2)"
+a,b,third,second,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1317.txt,"(17, -3, 70)","(70, -3)"
+a,b,third,second,first,product,difference,sum,"[0, 0]",f,❌,input/incoder/arithmetic/1317.txt,"(0, 0, 0)","(0, 0)"
+a,b,third,second,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1317.txt,"(1, 1, 0)","(0, 1)"
+a,b,third,second,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1317.txt,"(1, -1, 0)","(0, -1)"
+a,b,third,second,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1317.txt,"(120, 80, 2000)","(2000, 80)"
+a,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[3, 5]",p,✅,input/incoder/arithmetic/1598.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[7, 10]",p,✅,input/incoder/arithmetic/1598.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/1598.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[1, 0]",p,✅,input/incoder/arithmetic/1598.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[0, 1]",p,✅,input/incoder/arithmetic/1598.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[100, 20]",p,✅,input/incoder/arithmetic/1598.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/1600.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/1600.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/1600.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/1600.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/1600.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/1600.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[3, 5]",e,💀,input/incoder/arithmetic/1604.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[7, 10]",e,💀,input/incoder/arithmetic/1604.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[0, 0]",e,💀,input/incoder/arithmetic/1604.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[1, 0]",e,💀,input/incoder/arithmetic/1604.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[0, 1]",e,💀,input/incoder/arithmetic/1604.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[100, 20]",e,💀,input/incoder/arithmetic/1604.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1608.txt,"(-2, 15, 8)","(-2, 5, -10)"
+a,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1608.txt,"(-3, 70, 17)","(-3, 10, -30)"
+a,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1608.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1608.txt,"(1, 0, 1)","(1, 0, 0)"
+a,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1608.txt,"(-1, 0, 1)","(-1, 1, -1)"
+a,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1608.txt,"(80, 2000, 120)","(80, 20, 1600)"
+a,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[3, 5]",e,💀,input/incoder/arithmetic/1612.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[7, 10]",e,💀,input/incoder/arithmetic/1612.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[0, 0]",e,💀,input/incoder/arithmetic/1612.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[1, 0]",e,💀,input/incoder/arithmetic/1612.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[0, 1]",e,💀,input/incoder/arithmetic/1612.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[100, 20]",e,💀,input/incoder/arithmetic/1612.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[3, 5]",p,✅,input/incoder/arithmetic/1614.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[7, 10]",p,✅,input/incoder/arithmetic/1614.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1614.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[1, 0]",p,✅,input/incoder/arithmetic/1614.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[0, 1]",p,✅,input/incoder/arithmetic/1614.txt,,
+a,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[100, 20]",p,✅,input/incoder/arithmetic/1614.txt,,
+a,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/1652.txt,"(8, 15, -2)","(8, -2, 15)"
+a,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/1652.txt,"(17, 70, -3)","(17, -3, 70)"
+a,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/1652.txt,,
+a,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/1652.txt,"(1, 0, 1)","(1, 1, 0)"
+a,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/1652.txt,"(1, 0, -1)","(1, -1, 0)"
+a,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/1652.txt,"(120, 2000, 80)","(120, 80, 2000)"
+a,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1654.txt,"(8, -2, 15)","(8, 5, 15, 3)"
+a,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1654.txt,"(17, -3, 70)","(17, 10, 70, 7)"
+a,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[0, 0]",f,❌,input/incoder/arithmetic/1654.txt,"(0, 0, 0)","(0, 0, 0, 0)"
+a,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1654.txt,"(1, 1, 0)","(1, 0, 0, 1)"
+a,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1654.txt,"(1, -1, 0)","(1, 1, 0, 0)"
+a,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1654.txt,"(120, 80, 2000)","(120, 20, 2000, 100)"
+a,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/1658.txt,"(-2, 15, 8)","(-2, 75, 15)"
+a,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/1658.txt,"(-3, 70, 17)","(-3, 700, 70)"
+a,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/1658.txt,,
+a,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/1658.txt,"(1, 0, 1)","(1, 0, 0)"
+a,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/1658.txt,"(-1, 0, 1)","(-1, 0, 0)"
+a,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/1658.txt,"(80, 2000, 120)","(80, 40000, 2000)"
+a,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1662.txt,"(-2, 8, 15)","(15, 8, 8)"
+a,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1662.txt,"(-3, 17, 70)","(70, 17, 17)"
+a,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1662.txt,,
+a,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1662.txt,"(1, 1, 0)","(0, 1, 1)"
+a,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1662.txt,"(-1, 1, 0)","(0, 1, 1)"
+a,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1662.txt,"(80, 120, 2000)","(2000, 120, 120)"
+a,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1666.txt,"(15, -2, 8)","(15, 8, -2)"
+a,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1666.txt,"(70, -3, 17)","(70, 17, -3)"
+a,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1666.txt,,
+a,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[1, 0]",p,✅,input/incoder/arithmetic/1666.txt,,
+a,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1666.txt,"(0, -1, 1)","(0, 1, -1)"
+a,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1666.txt,"(2000, 80, 120)","(2000, 120, 80)"
+a,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1668.txt,"(15, 8, -2)","(5, -2, 8)"
+a,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1668.txt,"(70, 17, -3)","(10, -3, 17)"
+a,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1668.txt,,
+a,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[1, 0]",p,✅,input/incoder/arithmetic/1668.txt,,
+a,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1668.txt,"(0, 1, -1)","(1, -1, 1)"
+a,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1668.txt,"(2000, 120, 80)","(20, 80, 120)"
+a,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/1760.txt,"(-2, 8, 15)","(8, -2, 15)"
+a,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/1760.txt,"(-3, 17, 70)","(17, -3, 70)"
+a,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/1760.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[1, 0]",p,✅,input/incoder/arithmetic/1760.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/1760.txt,"(-1, 1, 0)","(1, -1, 0)"
+a,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/1760.txt,"(80, 120, 2000)","(120, 80, 2000)"
+a,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1762.txt,"(15, 8, -2)","(15, 15, 12)"
+a,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1762.txt,"(70, 17, -3)","(70, 70, 63)"
+a,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1762.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1762.txt,"(0, 1, 1)","(0, 0, -1)"
+a,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1762.txt,"(0, 1, -1)","(0, 0, 0)"
+a,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1762.txt,"(2000, 120, 80)","(2000, 2000, 1900)"
+a,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/1766.txt,"(8, -2, 15)","(-2, 8, 15)"
+a,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/1766.txt,"(17, -3, 70)","(-3, 17, 70)"
+a,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/1766.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[1, 0]",p,✅,input/incoder/arithmetic/1766.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/1766.txt,"(1, -1, 0)","(-1, 1, 0)"
+a,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/1766.txt,"(120, 80, 2000)","(80, 120, 2000)"
+a,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1770.txt,"(15, -2, 8)","(3, 5, 0)"
+a,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1770.txt,"(70, -3, 17)","(7, 10, 0)"
+a,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1770.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[1, 0]",p,✅,input/incoder/arithmetic/1770.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1770.txt,"(0, -1, 1)","(0, 1, 0)"
+a,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1770.txt,"(2000, 80, 120)","(20, 100, 100)"
+a,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1774.txt,"(8, 15, -2)","(8, 0, -2)"
+a,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1774.txt,"(17, 70, -3)","(17, 0, -3)"
+a,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1774.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[1, 0]",p,✅,input/incoder/arithmetic/1774.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[0, 1]",p,✅,input/incoder/arithmetic/1774.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1774.txt,"(120, 2000, 80)","(120, 0, 80)"
+a,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1776.txt,"(-2, 15, 8)","(15, -2, 8)"
+a,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1776.txt,"(-3, 70, 17)","(70, -3, 17)"
+a,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1776.txt,,
+a,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1776.txt,"(1, 0, 1)","(0, 1, 1)"
+a,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1776.txt,"(-1, 0, 1)","(0, -1, 1)"
+a,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1776.txt,"(80, 2000, 120)","(2000, 80, 120)"
+a,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/1868.txt,"(15, 8, -2)","(8, -2, 15)"
+a,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/1868.txt,"(70, 17, -3)","(17, -3, 70)"
+a,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/1868.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/1868.txt,"(0, 1, 1)","(1, 1, 0)"
+a,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/1868.txt,"(0, 1, -1)","(1, -1, 0)"
+a,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/1868.txt,"(2000, 120, 80)","(120, 80, 2000)"
+a,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1870.txt,"(-2, 8, 15)","(8, 15, -2)"
+a,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1870.txt,"(-3, 17, 70)","(17, 70, -3)"
+a,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1870.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1870.txt,"(1, 1, 0)","(1, 0, 1)"
+a,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1870.txt,"(-1, 1, 0)","(1, 0, -1)"
+a,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1870.txt,"(80, 120, 2000)","(120, 2000, 80)"
+a,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/1874.txt,"(15, -2, 8)","(15, 8, 3)"
+a,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/1874.txt,"(70, -3, 17)","(70, 17, 7)"
+a,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/1874.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[1, 0]",p,✅,input/incoder/arithmetic/1874.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/1874.txt,"(0, -1, 1)","(0, 1, 0)"
+a,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/1874.txt,"(2000, 80, 120)","(2000, 120, 100)"
+a,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1878.txt,"(8, -2, 15)","(3, 5, 15)"
+a,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1878.txt,"(17, -3, 70)","(7, 10, 70)"
+a,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1878.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1878.txt,"(1, 1, 0)","(1, 0, 0)"
+a,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1878.txt,"(1, -1, 0)","(0, 1, 0)"
+a,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1878.txt,"(120, 80, 2000)","(100, 20, 2000)"
+a,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1882.txt,"(-2, 15, 8)","(-2, -2, 5)"
+a,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1882.txt,"(-3, 70, 17)","(-3, -3, 10)"
+a,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1882.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1882.txt,"(1, 0, 1)","(1, 1, 0)"
+a,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1882.txt,"(-1, 0, 1)","(-1, -1, 1)"
+a,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1882.txt,"(80, 2000, 120)","(80, 80, 20)"
+a,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[3, 5]",e,💀,input/incoder/arithmetic/1884.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[7, 10]",e,💀,input/incoder/arithmetic/1884.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[0, 0]",e,💀,input/incoder/arithmetic/1884.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[1, 0]",e,💀,input/incoder/arithmetic/1884.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[0, 1]",e,💀,input/incoder/arithmetic/1884.txt,,
+a,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[100, 20]",e,💀,input/incoder/arithmetic/1884.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/1976.txt,"(-2, 15, 8)","(8, -2, 15)"
+a,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/1976.txt,"(-3, 70, 17)","(17, -3, 70)"
+a,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/1976.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/1976.txt,"(1, 0, 1)","(1, 1, 0)"
+a,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/1976.txt,"(-1, 0, 1)","(1, -1, 0)"
+a,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/1976.txt,"(80, 2000, 120)","(120, 80, 2000)"
+a,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/1978.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/1978.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/1978.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/1978.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/1978.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/1978.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/1982.txt,"(8, 15, -2)","(-2, 15, 15)"
+a,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/1982.txt,"(17, 70, -3)","(-3, 70, 70)"
+a,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/1982.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/1982.txt,"(1, 0, 1)","(1, 0, 0)"
+a,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/1982.txt,"(1, 0, -1)","(-1, 0, 0)"
+a,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/1982.txt,"(120, 2000, 80)","(80, 2000, 2000)"
+a,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[3, 5]",e,💀,input/incoder/arithmetic/1986.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[7, 10]",e,💀,input/incoder/arithmetic/1986.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[0, 0]",e,💀,input/incoder/arithmetic/1986.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[1, 0]",e,💀,input/incoder/arithmetic/1986.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[0, 1]",e,💀,input/incoder/arithmetic/1986.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[100, 20]",e,💀,input/incoder/arithmetic/1986.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/1990.txt,"(8, -2, 15)","(8, -2, -2)"
+a,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/1990.txt,"(17, -3, 70)","(17, -3, -3)"
+a,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/1990.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/1990.txt,"(1, 1, 0)","(1, 1, 1)"
+a,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/1990.txt,"(1, -1, 0)","(1, -1, -1)"
+a,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/1990.txt,"(120, 80, 2000)","(120, 80, 80)"
+a,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/1992.txt,"(-2, 8, 15)","(15, 3, 5)"
+a,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/1992.txt,"(-3, 17, 70)","(70, 7, 10)"
+a,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/1992.txt,,
+a,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/1992.txt,"(1, 1, 0)","(0, 1, 0)"
+a,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/1992.txt,"(-1, 1, 0)","(0, 0, 1)"
+a,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/1992.txt,"(80, 120, 2000)","(2000, 100, 20)"
+a,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[3, 5]",e,💀,input/incoder/arithmetic/2030.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[7, 10]",e,💀,input/incoder/arithmetic/2030.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[0, 0]",e,💀,input/incoder/arithmetic/2030.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[1, 0]",e,💀,input/incoder/arithmetic/2030.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[0, 1]",e,💀,input/incoder/arithmetic/2030.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[100, 20]",e,💀,input/incoder/arithmetic/2030.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2032.txt,"(-2, 15, 8)","(8, 15, -2)"
+a,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2032.txt,"(-3, 70, 17)","(17, 70, -3)"
+a,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2032.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[1, 0]",p,✅,input/incoder/arithmetic/2032.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2032.txt,"(-1, 0, 1)","(1, 0, -1)"
+a,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2032.txt,"(80, 2000, 120)","(120, 2000, 80)"
+a,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/2036.txt,"(15, 8, -2)","(-2, 8, 5)"
+a,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/2036.txt,"(70, 17, -3)","(-3, 17, 10)"
+a,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/2036.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/2036.txt,"(0, 1, 1)","(1, 1, 0)"
+a,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/2036.txt,"(0, 1, -1)","(-1, 1, 1)"
+a,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/2036.txt,"(2000, 120, 80)","(80, 120, 20)"
+a,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[3, 5]",p,✅,input/incoder/arithmetic/2040.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[7, 10]",p,✅,input/incoder/arithmetic/2040.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/2040.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[1, 0]",p,✅,input/incoder/arithmetic/2040.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[0, 1]",p,✅,input/incoder/arithmetic/2040.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[100, 20]",p,✅,input/incoder/arithmetic/2040.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2044.txt,"(-2, 8, 15)","(15, 8, -2)"
+a,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2044.txt,"(-3, 17, 70)","(70, 17, -3)"
+a,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2044.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2044.txt,"(1, 1, 0)","(0, 1, 1)"
+a,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2044.txt,"(-1, 1, 0)","(0, 1, -1)"
+a,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2044.txt,"(80, 120, 2000)","(2000, 120, 80)"
+a,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2046.txt,"(8, -2, 15)","(15, -2, 8)"
+a,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2046.txt,"(17, -3, 70)","(70, -3, 17)"
+a,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/2046.txt,,
+a,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2046.txt,"(1, 1, 0)","(0, 1, 1)"
+a,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2046.txt,"(1, -1, 0)","(0, -1, 1)"
+a,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2046.txt,"(120, 80, 2000)","(2000, 80, 120)"
+b,a,first,second,third,sum,difference,product,"[3, 5]",p,✅,input/incoder/arithmetic/2327.txt,,
+b,a,first,second,third,sum,difference,product,"[7, 10]",p,✅,input/incoder/arithmetic/2327.txt,,
+b,a,first,second,third,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/2327.txt,,
+b,a,first,second,third,sum,difference,product,"[1, 0]",p,✅,input/incoder/arithmetic/2327.txt,,
+b,a,first,second,third,sum,difference,product,"[0, 1]",p,✅,input/incoder/arithmetic/2327.txt,,
+b,a,first,second,third,sum,difference,product,"[100, 20]",p,✅,input/incoder/arithmetic/2327.txt,,
+b,a,first,second,third,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2329.txt,"(8, 15, -2)","(8, 1.6666666666666667, -2)"
+b,a,first,second,third,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2329.txt,"(17, 70, -3)","(17, 1.4285714285714286, -3)"
+b,a,first,second,third,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/2329.txt,,
+b,a,first,second,third,sum,product,difference,"[1, 0]",p,✅,input/incoder/arithmetic/2329.txt,,
+b,a,first,second,third,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/2329.txt,,
+b,a,first,second,third,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2329.txt,"(120, 2000, 80)","(120, 0.2, 80)"
+b,a,first,second,third,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/2333.txt,"(-2, 8, 15)","(-2, 15, 15)"
+b,a,first,second,third,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/2333.txt,"(-3, 17, 70)","(-3, 70, 70)"
+b,a,first,second,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/2333.txt,,
+b,a,first,second,third,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/2333.txt,"(1, 1, 0)","(1, 0, 0)"
+b,a,first,second,third,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/2333.txt,"(-1, 1, 0)","(-1, 0, 0)"
+b,a,first,second,third,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/2333.txt,"(80, 120, 2000)","(80, 2000, 2000)"
+b,a,first,second,third,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2337.txt,"(-2, 15, 8)","(-2, 20, 8)"
+b,a,first,second,third,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2337.txt,"(-3, 70, 17)","(-3, 80, 17)"
+b,a,first,second,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/2337.txt,,
+b,a,first,second,third,difference,product,sum,"[1, 0]",p,✅,input/incoder/arithmetic/2337.txt,,
+b,a,first,second,third,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2337.txt,"(-1, 0, 1)","(-1, 1, 1)"
+b,a,first,second,third,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2337.txt,"(80, 2000, 120)","(80, 2020, 120)"
+b,a,first,second,third,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2341.txt,"(15, 8, -2)","(15, 8, 2)"
+b,a,first,second,third,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2341.txt,"(70, 17, -3)","(70, 17, 3)"
+b,a,first,second,third,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2341.txt,,
+b,a,first,second,third,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2341.txt,"(0, 1, 1)","(0, 1, -1)"
+b,a,first,second,third,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2341.txt,"(0, 1, -1)","(0, 1, 1)"
+b,a,first,second,third,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2341.txt,"(2000, 120, 80)","(2000, 120, -80)"
+b,a,first,second,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2343.txt,"(15, -2, 8)","(15, -2)"
+b,a,first,second,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2343.txt,"(70, -3, 17)","(70, -3)"
+b,a,first,second,third,product,difference,sum,"[0, 0]",f,❌,input/incoder/arithmetic/2343.txt,"(0, 0, 0)","(0, 0)"
+b,a,first,second,third,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2343.txt,"(0, 1, 1)","(0, 1)"
+b,a,first,second,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2343.txt,"(0, -1, 1)","(0, -1)"
+b,a,first,second,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2343.txt,"(2000, 80, 120)","(2000, 80)"
+b,a,first,third,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/2381.txt,"(8, 15, -2)","(8, -2, 15)"
+b,a,first,third,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/2381.txt,"(17, 70, -3)","(17, -3, 70)"
+b,a,first,third,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/2381.txt,,
+b,a,first,third,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/2381.txt,"(1, 0, 1)","(1, 1, 0)"
+b,a,first,third,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/2381.txt,"(1, 0, -1)","(1, -1, 0)"
+b,a,first,third,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/2381.txt,"(120, 2000, 80)","(120, 80, 2000)"
+b,a,first,third,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2383.txt,"(8, -2, 15)","(8, 15, 2)"
+b,a,first,third,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2383.txt,"(17, -3, 70)","(17, 70, 3)"
+b,a,first,third,second,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2383.txt,,
+b,a,first,third,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2383.txt,"(1, 1, 0)","(1, 0, -1)"
+b,a,first,third,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2383.txt,"(1, -1, 0)","(1, 0, 1)"
+b,a,first,third,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2383.txt,"(120, 80, 2000)","(120, 2000, -80)"
+b,a,first,third,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/2387.txt,"(-2, 15, 8)","(-2, 15, 15)"
+b,a,first,third,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/2387.txt,"(-3, 70, 17)","(-3, 70, 70)"
+b,a,first,third,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/2387.txt,,
+b,a,first,third,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/2387.txt,"(1, 0, 1)","(1, 0, 0)"
+b,a,first,third,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/2387.txt,"(-1, 0, 1)","(-1, 0, 0)"
+b,a,first,third,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/2387.txt,"(80, 2000, 120)","(80, 2000, 2000)"
+b,a,first,third,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2391.txt,"(-2, 8, 15)","(2, 8, 15, 16)"
+b,a,first,third,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2391.txt,"(-3, 17, 70)","(3, 17, 70, 34)"
+b,a,first,third,second,difference,product,sum,"[0, 0]",f,❌,input/incoder/arithmetic/2391.txt,"(0, 0, 0)","(0, 0, 0, 0)"
+b,a,first,third,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2391.txt,"(1, 1, 0)","(-1, 1, 0, 2)"
+b,a,first,third,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2391.txt,"(-1, 1, 0)","(1, 1, 0, 2)"
+b,a,first,third,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2391.txt,"(80, 120, 2000)","(-80, 120, 2000, 240)"
+b,a,first,third,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2395.txt,"(15, -2, 8)","(15, 15, 16)"
+b,a,first,third,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2395.txt,"(70, -3, 17)","(70, 70, 51)"
+b,a,first,third,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2395.txt,,
+b,a,first,third,second,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2395.txt,"(0, 1, 1)","(0, 0, -1)"
+b,a,first,third,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2395.txt,"(0, -1, 1)","(0, 0, 1)"
+b,a,first,third,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2395.txt,"(2000, 80, 120)","(2000, 2000, -9600)"
+b,a,first,third,second,product,difference,sum,"[3, 5]",e,💀,input/incoder/arithmetic/2397.txt,,
+b,a,first,third,second,product,difference,sum,"[7, 10]",e,💀,input/incoder/arithmetic/2397.txt,,
+b,a,first,third,second,product,difference,sum,"[0, 0]",e,💀,input/incoder/arithmetic/2397.txt,,
+b,a,first,third,second,product,difference,sum,"[1, 0]",e,💀,input/incoder/arithmetic/2397.txt,,
+b,a,first,third,second,product,difference,sum,"[0, 1]",e,💀,input/incoder/arithmetic/2397.txt,,
+b,a,first,third,second,product,difference,sum,"[100, 20]",e,💀,input/incoder/arithmetic/2397.txt,,
+b,a,second,first,third,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/2489.txt,"(-2, 8, 15)","(8, -2, 15)"
+b,a,second,first,third,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/2489.txt,"(-3, 17, 70)","(17, -3, 70)"
+b,a,second,first,third,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/2489.txt,,
+b,a,second,first,third,sum,difference,product,"[1, 0]",p,✅,input/incoder/arithmetic/2489.txt,,
+b,a,second,first,third,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/2489.txt,"(-1, 1, 0)","(1, -1, 0)"
+b,a,second,first,third,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/2489.txt,"(80, 120, 2000)","(120, 80, 2000)"
+b,a,second,first,third,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2491.txt,"(15, 8, -2)","(8, 15, 2)"
+b,a,second,first,third,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2491.txt,"(70, 17, -3)","(17, 70, 3)"
+b,a,second,first,third,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2491.txt,,
+b,a,second,first,third,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2491.txt,"(0, 1, 1)","(1, 0, -1)"
+b,a,second,first,third,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2491.txt,"(0, 1, -1)","(1, 0, 1)"
+b,a,second,first,third,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2491.txt,"(2000, 120, 80)","(120, 2000, -80)"
+b,a,second,first,third,difference,sum,product,"[3, 5]",e,💀,input/incoder/arithmetic/2495.txt,,
+b,a,second,first,third,difference,sum,product,"[7, 10]",e,💀,input/incoder/arithmetic/2495.txt,,
+b,a,second,first,third,difference,sum,product,"[0, 0]",e,💀,input/incoder/arithmetic/2495.txt,,
+b,a,second,first,third,difference,sum,product,"[1, 0]",e,💀,input/incoder/arithmetic/2495.txt,,
+b,a,second,first,third,difference,sum,product,"[0, 1]",e,💀,input/incoder/arithmetic/2495.txt,,
+b,a,second,first,third,difference,sum,product,"[100, 20]",e,💀,input/incoder/arithmetic/2495.txt,,
+b,a,second,first,third,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2499.txt,"(15, -2, 8)","(-2, 20, 8)"
+b,a,second,first,third,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2499.txt,"(70, -3, 17)","(-3, 80, 17)"
+b,a,second,first,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/2499.txt,,
+b,a,second,first,third,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2499.txt,"(0, 1, 1)","(1, 0, 1)"
+b,a,second,first,third,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2499.txt,"(0, -1, 1)","(-1, 1, 1)"
+b,a,second,first,third,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2499.txt,"(2000, 80, 120)","(80, 2020, 120)"
+b,a,second,first,third,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2503.txt,"(8, 15, -2)","(7, 8, 2)"
+b,a,second,first,third,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2503.txt,"(17, 70, -3)","(35, 17, 3)"
+b,a,second,first,third,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2503.txt,,
+b,a,second,first,third,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2503.txt,"(1, 0, 1)","(0, 1, -1)"
+b,a,second,first,third,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2503.txt,"(1, 0, -1)","(0, 1, 1)"
+b,a,second,first,third,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2503.txt,"(120, 2000, 80)","(1000, 120, -80)"
+b,a,second,first,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2505.txt,"(-2, 15, 8)","(15, 2, 8)"
+b,a,second,first,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2505.txt,"(-3, 70, 17)","(70, 3, 17)"
+b,a,second,first,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/2505.txt,,
+b,a,second,first,third,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2505.txt,"(1, 0, 1)","(0, -1, 1)"
+b,a,second,first,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2505.txt,"(-1, 0, 1)","(0, 1, 1)"
+b,a,second,first,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2505.txt,"(80, 2000, 120)","(2000, -80, 120)"
+b,a,second,third,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/2597.txt,"(15, 8, -2)","(8, -2, 15)"
+b,a,second,third,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/2597.txt,"(70, 17, -3)","(17, -3, 70)"
+b,a,second,third,first,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/2597.txt,,
+b,a,second,third,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/2597.txt,"(0, 1, 1)","(1, 1, 0)"
+b,a,second,third,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/2597.txt,"(0, 1, -1)","(1, -1, 0)"
+b,a,second,third,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/2597.txt,"(2000, 120, 80)","(120, 80, 2000)"
+b,a,second,third,first,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2599.txt,"(-2, 8, 15)","(8, 15, 2)"
+b,a,second,third,first,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2599.txt,"(-3, 17, 70)","(17, 70, 3)"
+b,a,second,third,first,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2599.txt,,
+b,a,second,third,first,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2599.txt,"(1, 1, 0)","(1, 0, -1)"
+b,a,second,third,first,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2599.txt,"(-1, 1, 0)","(1, 0, 1)"
+b,a,second,third,first,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2599.txt,"(80, 120, 2000)","(120, 2000, -80)"
+b,a,second,third,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/2603.txt,"(15, -2, 8)","(-2, 15, 25)"
+b,a,second,third,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/2603.txt,"(70, -3, 17)","(-3, 70, 100)"
+b,a,second,third,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/2603.txt,,
+b,a,second,third,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/2603.txt,"(0, 1, 1)","(1, 0, 0)"
+b,a,second,third,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/2603.txt,"(0, -1, 1)","(-1, 0, 1)"
+b,a,second,third,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/2603.txt,"(2000, 80, 120)","(80, 2000, 400)"
+b,a,second,third,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2607.txt,"(8, -2, 15)","(-2, 15)"
+b,a,second,third,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2607.txt,"(17, -3, 70)","(-3, 70)"
+b,a,second,third,first,difference,product,sum,"[0, 0]",f,❌,input/incoder/arithmetic/2607.txt,"(0, 0, 0)","(0, 0)"
+b,a,second,third,first,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2607.txt,"(1, 1, 0)","(1, 0)"
+b,a,second,third,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2607.txt,"(1, -1, 0)","(-1, 0)"
+b,a,second,third,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2607.txt,"(120, 80, 2000)","(80, 2000)"
+b,a,second,third,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2611.txt,"(-2, 15, 8)","((3, 5), (8, -2))"
+b,a,second,third,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2611.txt,"(-3, 70, 17)","((7, 10), (17, -3))"
+b,a,second,third,first,product,sum,difference,"[0, 0]",f,❌,input/incoder/arithmetic/2611.txt,"(0, 0, 0)","((0, 0), (0, 0))"
+b,a,second,third,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2611.txt,"(1, 0, 1)","((1, 0), (1, 1))"
+b,a,second,third,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2611.txt,"(-1, 0, 1)","((0, 1), (1, -1))"
+b,a,second,third,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2611.txt,"(80, 2000, 120)","((100, 20), (120, 80))"
+b,a,second,third,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2613.txt,"(8, 15, -2)","((3, 5), -2)"
+b,a,second,third,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2613.txt,"(17, 70, -3)","((7, 10), -3)"
+b,a,second,third,first,product,difference,sum,"[0, 0]",f,❌,input/incoder/arithmetic/2613.txt,"(0, 0, 0)","((0, 0), 0)"
+b,a,second,third,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2613.txt,"(1, 0, 1)","((1, 0), 1)"
+b,a,second,third,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2613.txt,"(1, 0, -1)","((0, 1), -1)"
+b,a,second,third,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2613.txt,"(120, 2000, 80)","((100, 20), 80)"
+b,a,third,first,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/2705.txt,"(-2, 15, 8)","(3, 5, -2)"
+b,a,third,first,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/2705.txt,"(-3, 70, 17)","(7, 10, -3)"
+b,a,third,first,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/2705.txt,,
+b,a,third,first,second,sum,difference,product,"[1, 0]",p,✅,input/incoder/arithmetic/2705.txt,,
+b,a,third,first,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/2705.txt,"(-1, 0, 1)","(0, 1, -1)"
+b,a,third,first,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/2705.txt,"(80, 2000, 120)","(100, 20, 80)"
+b,a,third,first,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2707.txt,"(15, -2, 8)","(15, 15, 2)"
+b,a,third,first,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2707.txt,"(70, -3, 17)","(70, 70, 3)"
+b,a,third,first,second,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2707.txt,,
+b,a,third,first,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2707.txt,"(0, 1, 1)","(0, 0, -1)"
+b,a,third,first,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2707.txt,"(0, -1, 1)","(0, 0, 1)"
+b,a,third,first,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2707.txt,"(2000, 80, 120)","(2000, 2000, -80)"
+b,a,third,first,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/2711.txt,"(8, 15, -2)","(-2, 15, 25)"
+b,a,third,first,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/2711.txt,"(17, 70, -3)","(-3, 70, 100)"
+b,a,third,first,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/2711.txt,,
+b,a,third,first,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/2711.txt,"(1, 0, 1)","(1, 0, 0)"
+b,a,third,first,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/2711.txt,"(1, 0, -1)","(-1, 0, 1)"
+b,a,third,first,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/2711.txt,"(120, 2000, 80)","(80, 2000, 400)"
+b,a,third,first,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2715.txt,"(15, 8, -2)","(-2, 20, 8)"
+b,a,third,first,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2715.txt,"(70, 17, -3)","(-3, 80, 17)"
+b,a,third,first,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/2715.txt,,
+b,a,third,first,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2715.txt,"(0, 1, 1)","(1, 0, 1)"
+b,a,third,first,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2715.txt,"(0, 1, -1)","(-1, 1, 1)"
+b,a,third,first,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2715.txt,"(2000, 120, 80)","(80, 2020, 120)"
+b,a,third,first,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2719.txt,"(8, -2, 15)","(3, 5, -2)"
+b,a,third,first,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2719.txt,"(17, -3, 70)","(7, 10, -3)"
+b,a,third,first,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2719.txt,,
+b,a,third,first,second,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2719.txt,"(1, 1, 0)","(1, 0, 1)"
+b,a,third,first,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2719.txt,"(1, -1, 0)","(0, 1, -1)"
+b,a,third,first,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2719.txt,"(120, 80, 2000)","(100, 20, 80)"
+b,a,third,first,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2721.txt,"(-2, 8, 15)","(-2, 8, 8)"
+b,a,third,first,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2721.txt,"(-3, 17, 70)","(-3, 17, 17)"
+b,a,third,first,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/2721.txt,,
+b,a,third,first,second,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2721.txt,"(1, 1, 0)","(1, 1, 1)"
+b,a,third,first,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2721.txt,"(-1, 1, 0)","(-1, 1, 1)"
+b,a,third,first,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2721.txt,"(80, 120, 2000)","(80, 120, 120)"
+b,a,third,second,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/2759.txt,"(15, -2, 8)","(8, -2, 15)"
+b,a,third,second,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/2759.txt,"(70, -3, 17)","(17, -3, 70)"
+b,a,third,second,first,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/2759.txt,,
+b,a,third,second,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/2759.txt,"(0, 1, 1)","(1, 1, 0)"
+b,a,third,second,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/2759.txt,"(0, -1, 1)","(1, -1, 0)"
+b,a,third,second,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/2759.txt,"(2000, 80, 120)","(120, 80, 2000)"
+b,a,third,second,first,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2761.txt,"(-2, 15, 8)","(8, 9, 0)"
+b,a,third,second,first,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2761.txt,"(-3, 70, 17)","(17, 49, 0)"
+b,a,third,second,first,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2761.txt,,
+b,a,third,second,first,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2761.txt,"(1, 0, 1)","(1, 1, 0)"
+b,a,third,second,first,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2761.txt,"(-1, 0, 1)","(1, 0, 0)"
+b,a,third,second,first,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2761.txt,"(80, 2000, 120)","(120, 10000, 0)"
+b,a,third,second,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/2765.txt,"(15, 8, -2)","(-2, 15, 15)"
+b,a,third,second,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/2765.txt,"(70, 17, -3)","(-3, 70, 70)"
+b,a,third,second,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/2765.txt,,
+b,a,third,second,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/2765.txt,"(0, 1, 1)","(1, 0, 0)"
+b,a,third,second,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/2765.txt,"(0, 1, -1)","(-1, 0, 0)"
+b,a,third,second,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/2765.txt,"(2000, 120, 80)","(80, 2000, 2000)"
+b,a,third,second,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2769.txt,"(8, 15, -2)","(-2, 15, 15)"
+b,a,third,second,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2769.txt,"(17, 70, -3)","(-3, 70, 70)"
+b,a,third,second,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/2769.txt,,
+b,a,third,second,first,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2769.txt,"(1, 0, 1)","(1, 0, 0)"
+b,a,third,second,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2769.txt,"(1, 0, -1)","(-1, 0, 0)"
+b,a,third,second,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2769.txt,"(120, 2000, 80)","(80, 2000, 2000)"
+b,a,third,second,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/2773.txt,"(-2, 8, 15)","(3, 5, -2)"
+b,a,third,second,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/2773.txt,"(-3, 17, 70)","(7, 10, -3)"
+b,a,third,second,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/2773.txt,,
+b,a,third,second,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/2773.txt,"(1, 1, 0)","(1, 0, 1)"
+b,a,third,second,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/2773.txt,"(-1, 1, 0)","(0, 1, -1)"
+b,a,third,second,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/2773.txt,"(80, 120, 2000)","(100, 20, 80)"
+b,a,third,second,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/2775.txt,"(8, -2, 15)","(3, 5, -2)"
+b,a,third,second,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/2775.txt,"(17, -3, 70)","(7, 10, -3)"
+b,a,third,second,first,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/2775.txt,,
+b,a,third,second,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/2775.txt,"(1, 1, 0)","(1, 0, 1)"
+b,a,third,second,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/2775.txt,"(1, -1, 0)","(0, 1, -1)"
+b,a,third,second,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/2775.txt,"(120, 80, 2000)","(100, 20, 80)"
+b,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[3, 5]",e,💀,input/incoder/arithmetic/3785.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[7, 10]",e,💀,input/incoder/arithmetic/3785.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[0, 0]",e,💀,input/incoder/arithmetic/3785.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[1, 0]",e,💀,input/incoder/arithmetic/3785.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[0, 1]",e,💀,input/incoder/arithmetic/3785.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[100, 20]",e,💀,input/incoder/arithmetic/3785.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/3787.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/3787.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/3787.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/3787.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/3787.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/3787.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/3791.txt,"(-2, 8, 15)","(-2, 8, -16)"
+b,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/3791.txt,"(-3, 17, 70)","(-3, 17, -51)"
+b,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/3791.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/3791.txt,"(1, 1, 0)","(1, 1, 1)"
+b,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/3791.txt,"(-1, 1, 0)","(-1, 1, -1)"
+b,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/3791.txt,"(80, 120, 2000)","(80, 120, 9600)"
+b,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[3, 5]",t,⌛,input/incoder/arithmetic/3795.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[7, 10]",t,⌛,input/incoder/arithmetic/3795.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/3795.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/3795.txt,"(1, 0, 1)","(1, 0, 0)"
+b,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[0, 1]",t,⌛,input/incoder/arithmetic/3795.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[100, 20]",t,⌛,input/incoder/arithmetic/3795.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/3799.txt,"(15, 8, -2)","(15, 18, 12)"
+b,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/3799.txt,"(70, 17, -3)","(70, 77, 63)"
+b,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/3799.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/3799.txt,"(0, 1, 1)","(0, 1, -1)"
+b,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/3799.txt,"(0, 1, -1)","(0, 0, 0)"
+b,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/3799.txt,"(2000, 120, 80)","(2000, 2100, 1900)"
+b,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/3801.txt,"(15, -2, 8)","(15, 2, 17)"
+b,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/3801.txt,"(70, -3, 17)","(70, 3, 73)"
+b,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/3801.txt,,
+b,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/3801.txt,"(0, 1, 1)","(0, -1, -1)"
+b,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/3801.txt,"(0, -1, 1)","(0, 1, 1)"
+b,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/3801.txt,"(2000, 80, 120)","(2000, -80, 1920)"
+b,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/3839.txt,"(8, 15, -2)","(3, 5, 9)"
+b,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/3839.txt,"(17, 70, -3)","(7, 10, 49)"
+b,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/3839.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[1, 0]",p,✅,input/incoder/arithmetic/3839.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/3839.txt,"(1, 0, -1)","(0, 1, 0)"
+b,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/3839.txt,"(120, 2000, 80)","(100, 20, 10000)"
+b,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/3841.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/3841.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/3841.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/3841.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/3841.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/3841.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/3845.txt,"(-2, 15, 8)","(3, 9, 5)"
+b,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/3845.txt,"(-3, 70, 17)","(7, 49, 10)"
+b,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/3845.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/3845.txt,"(1, 0, 1)","(1, 1, 0)"
+b,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/3845.txt,"(-1, 0, 1)","(0, 0, 1)"
+b,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/3845.txt,"(80, 2000, 120)","(100, 10000, 20)"
+b,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[3, 5]",t,⌛,input/incoder/arithmetic/3849.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[7, 10]",t,⌛,input/incoder/arithmetic/3849.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/3849.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/3849.txt,"(1, 1, 0)","(1, 0, 0)"
+b,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[0, 1]",t,⌛,input/incoder/arithmetic/3849.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[100, 20]",t,⌛,input/incoder/arithmetic/3849.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/3853.txt,"(15, -2, 8)","(9, 14, -5)"
+b,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/3853.txt,"(70, -3, 17)","(49, 59, -10)"
+b,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/3853.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/3853.txt,"(0, 1, 1)","(1, 1, 0)"
+b,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/3853.txt,"(0, -1, 1)","(0, 1, -1)"
+b,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/3853.txt,"(2000, 80, 120)","(10000, 10020, -20)"
+b,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/3855.txt,"(15, 8, -2)","(15, 2, 5)"
+b,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/3855.txt,"(70, 17, -3)","(70, 3, 10)"
+b,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/3855.txt,,
+b,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/3855.txt,"(0, 1, 1)","(0, -1, 0)"
+b,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/3855.txt,"(0, 1, -1)","(0, 1, 1)"
+b,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/3855.txt,"(2000, 120, 80)","(2000, -80, 20)"
+b,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[3, 5]",e,💀,input/incoder/arithmetic/3947.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[7, 10]",e,💀,input/incoder/arithmetic/3947.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[0, 0]",e,💀,input/incoder/arithmetic/3947.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[1, 0]",e,💀,input/incoder/arithmetic/3947.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[0, 1]",e,💀,input/incoder/arithmetic/3947.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[100, 20]",e,💀,input/incoder/arithmetic/3947.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/3949.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/3949.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/3949.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/3949.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/3949.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/3949.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[3, 5]",e,💀,input/incoder/arithmetic/3953.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[7, 10]",e,💀,input/incoder/arithmetic/3953.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[0, 0]",e,💀,input/incoder/arithmetic/3953.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[1, 0]",e,💀,input/incoder/arithmetic/3953.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[0, 1]",e,💀,input/incoder/arithmetic/3953.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[100, 20]",e,💀,input/incoder/arithmetic/3953.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[3, 5]",t,⌛,input/incoder/arithmetic/3957.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[7, 10]",t,⌛,input/incoder/arithmetic/3957.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/3957.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/3957.txt,"(0, 1, 1)","(1, 0, 0)"
+b,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[0, 1]",t,⌛,input/incoder/arithmetic/3957.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[100, 20]",t,⌛,input/incoder/arithmetic/3957.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[3, 5]",e,💀,input/incoder/arithmetic/3961.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[7, 10]",e,💀,input/incoder/arithmetic/3961.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[0, 0]",e,💀,input/incoder/arithmetic/3961.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[1, 0]",e,💀,input/incoder/arithmetic/3961.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[0, 1]",e,💀,input/incoder/arithmetic/3961.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[100, 20]",e,💀,input/incoder/arithmetic/3961.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/3963.txt,"(-2, 15, 8)","(15, 2, 5)"
+b,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/3963.txt,"(-3, 70, 17)","(70, 3, 10)"
+b,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/3963.txt,,
+b,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/3963.txt,"(1, 0, 1)","(0, -1, 0)"
+b,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/3963.txt,"(-1, 0, 1)","(0, 1, 1)"
+b,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/3963.txt,"(80, 2000, 120)","(2000, -80, 20)"
+b,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/4055.txt,"(15, 8, -2)","(8, 2, 15)"
+b,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/4055.txt,"(70, 17, -3)","(17, 3, 70)"
+b,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/4055.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/4055.txt,"(0, 1, 1)","(1, -1, 0)"
+b,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/4055.txt,"(0, 1, -1)","(1, 1, 0)"
+b,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/4055.txt,"(2000, 120, 80)","(120, -80, 2000)"
+b,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/4057.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/4057.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/4057.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/4057.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/4057.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/4057.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/4061.txt,"(15, -2, 8)",None
+b,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/4061.txt,"(70, -3, 17)",None
+b,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[0, 0]",f,❌,input/incoder/arithmetic/4061.txt,"(0, 0, 0)",None
+b,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/4061.txt,"(0, 1, 1)",None
+b,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/4061.txt,"(0, -1, 1)",None
+b,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/4061.txt,"(2000, 80, 120)",None
+b,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4065.txt,"(8, -2, 15)","(-10, 3, -2)"
+b,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4065.txt,"(17, -3, 70)","(-30, 7, -3)"
+b,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4065.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4065.txt,"(1, 1, 0)","(0, 1, 1)"
+b,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4065.txt,"(1, -1, 0)","(-1, 0, -1)"
+b,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4065.txt,"(120, 80, 2000)","(1600, 100, 80)"
+b,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4069.txt,"(-2, 15, 8)","(9, 14, -5)"
+b,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4069.txt,"(-3, 70, 17)","(49, 59, -10)"
+b,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/4069.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4069.txt,"(1, 0, 1)","(1, 1, 0)"
+b,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4069.txt,"(-1, 0, 1)","(0, 1, -1)"
+b,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4069.txt,"(80, 2000, 120)","(10000, 10020, -20)"
+b,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[3, 5]",e,💀,input/incoder/arithmetic/4071.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[7, 10]",e,💀,input/incoder/arithmetic/4071.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[0, 0]",e,💀,input/incoder/arithmetic/4071.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[1, 0]",e,💀,input/incoder/arithmetic/4071.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[0, 1]",e,💀,input/incoder/arithmetic/4071.txt,,
+b,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[100, 20]",e,💀,input/incoder/arithmetic/4071.txt,,
+b,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/4163.txt,"(-2, 15, 8)",None
+b,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/4163.txt,"(-3, 70, 17)",None
+b,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[0, 0]",f,❌,input/incoder/arithmetic/4163.txt,"(0, 0, 0)",None
+b,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/4163.txt,"(1, 0, 1)",None
+b,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/4163.txt,"(-1, 0, 1)",None
+b,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/4163.txt,"(80, 2000, 120)",None
+b,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4165.txt,"(15, -2, 8)","(5, 3, 0)"
+b,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4165.txt,"(70, -3, 17)","(10, 7, 0)"
+b,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/4165.txt,,
+b,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4165.txt,"(0, 1, 1)","(0, 1, 0)"
+b,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4165.txt,"(0, -1, 1)","(1, 0, 0)"
+b,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4165.txt,"(2000, 80, 120)","(20, 100, 0)"
+b,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[3, 5]",e,💀,input/incoder/arithmetic/4169.txt,,
+b,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[7, 10]",e,💀,input/incoder/arithmetic/4169.txt,,
+b,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[0, 0]",e,💀,input/incoder/arithmetic/4169.txt,,
+b,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[1, 0]",e,💀,input/incoder/arithmetic/4169.txt,,
+b,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[0, 1]",e,💀,input/incoder/arithmetic/4169.txt,,
+b,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[100, 20]",e,💀,input/incoder/arithmetic/4169.txt,,
+b,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4173.txt,"(15, 8, -2)","(-2, 15, 8)"
+b,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4173.txt,"(70, 17, -3)","(-3, 70, 17)"
+b,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4173.txt,,
+b,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4173.txt,"(0, 1, 1)","(1, 0, 1)"
+b,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4173.txt,"(0, 1, -1)","(-1, 0, 1)"
+b,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4173.txt,"(2000, 120, 80)","(80, 2000, 120)"
+b,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4177.txt,"(8, -2, 15)",None
+b,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4177.txt,"(17, -3, 70)",None
+b,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[0, 0]",f,❌,input/incoder/arithmetic/4177.txt,"(0, 0, 0)",None
+b,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4177.txt,"(1, 1, 0)",None
+b,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4177.txt,"(1, -1, 0)",None
+b,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4177.txt,"(120, 80, 2000)",None
+b,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4179.txt,"(-2, 8, 15)","(11, 0, 1)"
+b,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4179.txt,"(-3, 17, 70)","(21, 0, 1)"
+b,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4179.txt,,
+b,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4179.txt,"(1, 1, 0)","(0, 0, 1)"
+b,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4179.txt,"(-1, 1, 0)","(1, 0, 1)"
+b,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4179.txt,"(80, 120, 2000)","(20, 0, 20)"
+b,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/4217.txt,"(15, -2, 8)","(8, -2, 15)"
+b,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/4217.txt,"(70, -3, 17)","(17, -3, 70)"
+b,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/4217.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/4217.txt,"(0, 1, 1)","(1, 1, 0)"
+b,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/4217.txt,"(0, -1, 1)","(1, -1, 0)"
+b,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/4217.txt,"(2000, 80, 120)","(120, 80, 2000)"
+b,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/4219.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/4219.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/4219.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/4219.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/4219.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/4219.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/4223.txt,"(15, 8, -2)",None
+b,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/4223.txt,"(70, 17, -3)",None
+b,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[0, 0]",f,❌,input/incoder/arithmetic/4223.txt,"(0, 0, 0)",None
+b,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/4223.txt,"(0, 1, 1)",None
+b,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/4223.txt,"(0, 1, -1)",None
+b,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/4223.txt,"(2000, 120, 80)",None
+b,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4227.txt,"(8, 15, -2)","(15, -2, -2)"
+b,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4227.txt,"(17, 70, -3)","(70, -3, -3)"
+b,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4227.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4227.txt,"(1, 0, 1)","(0, 1, 1)"
+b,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4227.txt,"(1, 0, -1)","(0, -1, -1)"
+b,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4227.txt,"(120, 2000, 80)","(2000, 80, 80)"
+b,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4231.txt,"(-2, 8, 15)","(15, 8, -5)"
+b,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4231.txt,"(-3, 17, 70)","(70, 17, -10)"
+b,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/4231.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4231.txt,"(1, 1, 0)","(0, 1, 0)"
+b,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4231.txt,"(-1, 1, 0)","(0, 1, -1)"
+b,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4231.txt,"(80, 120, 2000)","(2000, 120, -20)"
+b,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[3, 5]",e,💀,input/incoder/arithmetic/4233.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[7, 10]",e,💀,input/incoder/arithmetic/4233.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[0, 0]",e,💀,input/incoder/arithmetic/4233.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[1, 0]",e,💀,input/incoder/arithmetic/4233.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[0, 1]",e,💀,input/incoder/arithmetic/4233.txt,,
+b,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[100, 20]",e,💀,input/incoder/arithmetic/4233.txt,,
+fkrjf4ifji4ofj,a,first,second,third,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/4514.txt,"(8, -2, 15)","(8, 10, -16)"
+fkrjf4ifji4ofj,a,first,second,third,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/4514.txt,"(17, -3, 70)","(17, 20, -51)"
+fkrjf4ifji4ofj,a,first,second,third,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/4514.txt,,
+fkrjf4ifji4ofj,a,first,second,third,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/4514.txt,"(1, 1, 0)","(1, 0, 1)"
+fkrjf4ifji4ofj,a,first,second,third,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/4514.txt,"(1, -1, 0)","(1, 2, -1)"
+fkrjf4ifji4ofj,a,first,second,third,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/4514.txt,"(120, 80, 2000)","(120, 40, 9600)"
+fkrjf4ifji4ofj,a,first,second,third,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4516.txt,"(8, 15, -2)","(8, 15, -2, 15)"
+fkrjf4ifji4ofj,a,first,second,third,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4516.txt,"(17, 70, -3)","(17, 70, -3, 70)"
+fkrjf4ifji4ofj,a,first,second,third,sum,product,difference,"[0, 0]",f,❌,input/incoder/arithmetic/4516.txt,"(0, 0, 0)","(0, 0, 0, 0)"
+fkrjf4ifji4ofj,a,first,second,third,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4516.txt,"(1, 0, 1)","(1, 0, 1, 0)"
+fkrjf4ifji4ofj,a,first,second,third,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4516.txt,"(1, 0, -1)","(1, 0, -1, 0)"
+fkrjf4ifji4ofj,a,first,second,third,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4516.txt,"(120, 2000, 80)","(120, 2000, 80, 2000)"
+fkrjf4ifji4ofj,a,first,second,third,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/4520.txt,"(-2, 8, 15)","(-2, 5, -10)"
+fkrjf4ifji4ofj,a,first,second,third,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/4520.txt,"(-3, 17, 70)","(-3, 10, -30)"
+fkrjf4ifji4ofj,a,first,second,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/4520.txt,,
+fkrjf4ifji4ofj,a,first,second,third,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/4520.txt,"(1, 1, 0)","(1, 0, 0)"
+fkrjf4ifji4ofj,a,first,second,third,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/4520.txt,"(-1, 1, 0)","(-1, 1, -1)"
+fkrjf4ifji4ofj,a,first,second,third,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/4520.txt,"(80, 120, 2000)","(80, 20, 1600)"
+fkrjf4ifji4ofj,a,first,second,third,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4524.txt,"(-2, 15, 8)","(-2, 25, 8)"
+fkrjf4ifji4ofj,a,first,second,third,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4524.txt,"(-3, 70, 17)","(-3, 100, 17)"
+fkrjf4ifji4ofj,a,first,second,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4524.txt,,
+fkrjf4ifji4ofj,a,first,second,third,difference,product,sum,"[1, 0]",p,✅,input/incoder/arithmetic/4524.txt,,
+fkrjf4ifji4ofj,a,first,second,third,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4524.txt,"(-1, 0, 1)","(-1, 1, 1)"
+fkrjf4ifji4ofj,a,first,second,third,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4524.txt,"(80, 2000, 120)","(80, 400, 120)"
+fkrjf4ifji4ofj,a,first,second,third,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4528.txt,"(15, 8, -2)","(3, 5, -2)"
+fkrjf4ifji4ofj,a,first,second,third,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4528.txt,"(70, 17, -3)","(7, 10, -3)"
+fkrjf4ifji4ofj,a,first,second,third,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/4528.txt,,
+fkrjf4ifji4ofj,a,first,second,third,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4528.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,a,first,second,third,product,sum,difference,"[0, 1]",p,✅,input/incoder/arithmetic/4528.txt,,
+fkrjf4ifji4ofj,a,first,second,third,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4528.txt,"(2000, 120, 80)","(100, 20, 80)"
+fkrjf4ifji4ofj,a,first,second,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4530.txt,"(15, -2, 8)","(15, -6, 18)"
+fkrjf4ifji4ofj,a,first,second,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4530.txt,"(70, -3, 17)","(70, -21, 77)"
+fkrjf4ifji4ofj,a,first,second,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4530.txt,,
+fkrjf4ifji4ofj,a,first,second,third,product,difference,sum,"[1, 0]",p,✅,input/incoder/arithmetic/4530.txt,,
+fkrjf4ifji4ofj,a,first,second,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4530.txt,"(0, -1, 1)","(0, 0, 0)"
+fkrjf4ifji4ofj,a,first,second,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4530.txt,"(2000, 80, 120)","(2000, 8000, 2100)"
+fkrjf4ifji4ofj,a,first,third,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/4568.txt,"(8, 15, -2)","(8, 2, 15)"
+fkrjf4ifji4ofj,a,first,third,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/4568.txt,"(17, 70, -3)","(17, 3, 70)"
+fkrjf4ifji4ofj,a,first,third,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/4568.txt,,
+fkrjf4ifji4ofj,a,first,third,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/4568.txt,"(1, 0, 1)","(1, -1, 0)"
+fkrjf4ifji4ofj,a,first,third,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/4568.txt,"(1, 0, -1)","(1, 1, 0)"
+fkrjf4ifji4ofj,a,first,third,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/4568.txt,"(120, 2000, 80)","(120, -80, 2000)"
+fkrjf4ifji4ofj,a,first,third,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4570.txt,"(8, -2, 15)","(8, 15, 2)"
+fkrjf4ifji4ofj,a,first,third,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4570.txt,"(17, -3, 70)","(17, 70, 3)"
+fkrjf4ifji4ofj,a,first,third,second,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/4570.txt,,
+fkrjf4ifji4ofj,a,first,third,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4570.txt,"(1, 1, 0)","(1, 0, -1)"
+fkrjf4ifji4ofj,a,first,third,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4570.txt,"(1, -1, 0)","(1, 0, 1)"
+fkrjf4ifji4ofj,a,first,third,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4570.txt,"(120, 80, 2000)","(120, 2000, -80)"
+fkrjf4ifji4ofj,a,first,third,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/4574.txt,"(-2, 15, 8)","(2, 15, 15)"
+fkrjf4ifji4ofj,a,first,third,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/4574.txt,"(-3, 70, 17)","(3, 70, 70)"
+fkrjf4ifji4ofj,a,first,third,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/4574.txt,,
+fkrjf4ifji4ofj,a,first,third,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/4574.txt,"(1, 0, 1)","(-1, 0, 0)"
+fkrjf4ifji4ofj,a,first,third,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/4574.txt,"(-1, 0, 1)","(1, 0, 0)"
+fkrjf4ifji4ofj,a,first,third,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/4574.txt,"(80, 2000, 120)","(-80, 2000, 2000)"
+fkrjf4ifji4ofj,a,first,third,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4578.txt,"(-2, 8, 15)","(-10, 3, -2)"
+fkrjf4ifji4ofj,a,first,third,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4578.txt,"(-3, 17, 70)","(-30, 7, -3)"
+fkrjf4ifji4ofj,a,first,third,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4578.txt,,
+fkrjf4ifji4ofj,a,first,third,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4578.txt,"(1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,a,first,third,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4578.txt,"(-1, 1, 0)","(-1, 0, -1)"
+fkrjf4ifji4ofj,a,first,third,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4578.txt,"(80, 120, 2000)","(1600, 100, 80)"
+fkrjf4ifji4ofj,a,first,third,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4582.txt,"(15, -2, 8)","(15, 8, 2)"
+fkrjf4ifji4ofj,a,first,third,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4582.txt,"(70, -3, 17)","(70, 17, 3)"
+fkrjf4ifji4ofj,a,first,third,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/4582.txt,,
+fkrjf4ifji4ofj,a,first,third,second,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4582.txt,"(0, 1, 1)","(0, 1, -1)"
+fkrjf4ifji4ofj,a,first,third,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4582.txt,"(0, -1, 1)","(0, 1, 1)"
+fkrjf4ifji4ofj,a,first,third,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4582.txt,"(2000, 80, 120)","(2000, 120, -80)"
+fkrjf4ifji4ofj,a,first,third,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4584.txt,"(15, 8, -2)","(15, -2, 8)"
+fkrjf4ifji4ofj,a,first,third,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4584.txt,"(70, 17, -3)","(70, -3, 17)"
+fkrjf4ifji4ofj,a,first,third,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4584.txt,,
+fkrjf4ifji4ofj,a,first,third,second,product,difference,sum,"[1, 0]",p,✅,input/incoder/arithmetic/4584.txt,,
+fkrjf4ifji4ofj,a,first,third,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4584.txt,"(0, 1, -1)","(0, -1, 1)"
+fkrjf4ifji4ofj,a,first,third,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4584.txt,"(2000, 120, 80)","(2000, 80, 120)"
+fkrjf4ifji4ofj,a,second,first,third,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/4676.txt,"(-2, 8, 15)","(8, 2, 15)"
+fkrjf4ifji4ofj,a,second,first,third,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/4676.txt,"(-3, 17, 70)","(17, 3, 70)"
+fkrjf4ifji4ofj,a,second,first,third,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/4676.txt,,
+fkrjf4ifji4ofj,a,second,first,third,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/4676.txt,"(1, 1, 0)","(1, -1, 0)"
+fkrjf4ifji4ofj,a,second,first,third,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/4676.txt,"(-1, 1, 0)","(1, 1, 0)"
+fkrjf4ifji4ofj,a,second,first,third,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/4676.txt,"(80, 120, 2000)","(120, -80, 2000)"
+fkrjf4ifji4ofj,a,second,first,third,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4678.txt,"(15, 8, -2)","(3, 5, -2)"
+fkrjf4ifji4ofj,a,second,first,third,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4678.txt,"(70, 17, -3)","(7, 10, -3)"
+fkrjf4ifji4ofj,a,second,first,third,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/4678.txt,,
+fkrjf4ifji4ofj,a,second,first,third,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4678.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,a,second,first,third,sum,product,difference,"[0, 1]",p,✅,input/incoder/arithmetic/4678.txt,,
+fkrjf4ifji4ofj,a,second,first,third,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4678.txt,"(2000, 120, 80)","(100, 20, 80)"
+fkrjf4ifji4ofj,a,second,first,third,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/4682.txt,"(8, -2, 15)","(-2, 8, 15)"
+fkrjf4ifji4ofj,a,second,first,third,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/4682.txt,"(17, -3, 70)","(-3, 17, 70)"
+fkrjf4ifji4ofj,a,second,first,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/4682.txt,,
+fkrjf4ifji4ofj,a,second,first,third,difference,sum,product,"[1, 0]",p,✅,input/incoder/arithmetic/4682.txt,,
+fkrjf4ifji4ofj,a,second,first,third,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/4682.txt,"(1, -1, 0)","(-1, 1, 0)"
+fkrjf4ifji4ofj,a,second,first,third,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/4682.txt,"(120, 80, 2000)","(80, 120, 2000)"
+fkrjf4ifji4ofj,a,second,first,third,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4686.txt,"(15, -2, 8)","(-2, 15, 8)"
+fkrjf4ifji4ofj,a,second,first,third,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4686.txt,"(70, -3, 17)","(-3, 70, 17)"
+fkrjf4ifji4ofj,a,second,first,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4686.txt,,
+fkrjf4ifji4ofj,a,second,first,third,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4686.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,a,second,first,third,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4686.txt,"(0, -1, 1)","(-1, 0, 1)"
+fkrjf4ifji4ofj,a,second,first,third,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4686.txt,"(2000, 80, 120)","(80, 2000, 120)"
+fkrjf4ifji4ofj,a,second,first,third,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4690.txt,"(8, 15, -2)","(3, 8, 3, -2, 15)"
+fkrjf4ifji4ofj,a,second,first,third,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4690.txt,"(17, 70, -3)","(7, 17, 7, -3, 70)"
+fkrjf4ifji4ofj,a,second,first,third,product,sum,difference,"[0, 0]",f,❌,input/incoder/arithmetic/4690.txt,"(0, 0, 0)","(0, 0, 0, 0, 0)"
+fkrjf4ifji4ofj,a,second,first,third,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4690.txt,"(1, 0, 1)","(1, 1, 1, 1, 0)"
+fkrjf4ifji4ofj,a,second,first,third,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4690.txt,"(1, 0, -1)","(0, 1, 0, -1, 0)"
+fkrjf4ifji4ofj,a,second,first,third,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4690.txt,"(120, 2000, 80)","(120, 100, 80, 100, 2000)"
+fkrjf4ifji4ofj,a,second,first,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4692.txt,"(-2, 15, 8)","(0, 3, 3)"
+fkrjf4ifji4ofj,a,second,first,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4692.txt,"(-3, 70, 17)","(0, 7, 7)"
+fkrjf4ifji4ofj,a,second,first,third,product,difference,sum,"[0, 0]",e,💀,input/incoder/arithmetic/4692.txt,,
+fkrjf4ifji4ofj,a,second,first,third,product,difference,sum,"[1, 0]",e,💀,input/incoder/arithmetic/4692.txt,,
+fkrjf4ifji4ofj,a,second,first,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4692.txt,"(-1, 0, 1)","(0, 0, 0)"
+fkrjf4ifji4ofj,a,second,first,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4692.txt,"(80, 2000, 120)","(5, 0, 5)"
+fkrjf4ifji4ofj,a,second,third,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/4784.txt,"(15, 8, -2)","(8, 2, 15)"
+fkrjf4ifji4ofj,a,second,third,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/4784.txt,"(70, 17, -3)","(17, 3, 70)"
+fkrjf4ifji4ofj,a,second,third,first,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/4784.txt,,
+fkrjf4ifji4ofj,a,second,third,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/4784.txt,"(0, 1, 1)","(1, -1, 0)"
+fkrjf4ifji4ofj,a,second,third,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/4784.txt,"(0, 1, -1)","(1, 1, 0)"
+fkrjf4ifji4ofj,a,second,third,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/4784.txt,"(2000, 120, 80)","(120, -80, 2000)"
+fkrjf4ifji4ofj,a,second,third,first,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/4786.txt,,
+fkrjf4ifji4ofj,a,second,third,first,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/4786.txt,,
+fkrjf4ifji4ofj,a,second,third,first,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/4786.txt,,
+fkrjf4ifji4ofj,a,second,third,first,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/4786.txt,,
+fkrjf4ifji4ofj,a,second,third,first,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/4786.txt,,
+fkrjf4ifji4ofj,a,second,third,first,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/4786.txt,,
+fkrjf4ifji4ofj,a,second,third,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/4790.txt,"(15, -2, 8)","(15, 8, 3)"
+fkrjf4ifji4ofj,a,second,third,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/4790.txt,"(70, -3, 17)","(70, 17, 7)"
+fkrjf4ifji4ofj,a,second,third,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/4790.txt,,
+fkrjf4ifji4ofj,a,second,third,first,difference,sum,product,"[1, 0]",p,✅,input/incoder/arithmetic/4790.txt,,
+fkrjf4ifji4ofj,a,second,third,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/4790.txt,"(0, -1, 1)","(0, 1, 0)"
+fkrjf4ifji4ofj,a,second,third,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/4790.txt,"(2000, 80, 120)","(2000, 120, 100)"
+fkrjf4ifji4ofj,a,second,third,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4794.txt,"(8, -2, 15)","(-2, 5, -10, 3)"
+fkrjf4ifji4ofj,a,second,third,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4794.txt,"(17, -3, 70)","(-3, 10, -30, 7)"
+fkrjf4ifji4ofj,a,second,third,first,difference,product,sum,"[0, 0]",f,❌,input/incoder/arithmetic/4794.txt,"(0, 0, 0)","(0, 0, 0, 0)"
+fkrjf4ifji4ofj,a,second,third,first,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4794.txt,"(1, 1, 0)","(1, 0, 0, 1)"
+fkrjf4ifji4ofj,a,second,third,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4794.txt,"(1, -1, 0)","(-1, 1, -1, 0)"
+fkrjf4ifji4ofj,a,second,third,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4794.txt,"(120, 80, 2000)","(80, 20, 1600, 100)"
+fkrjf4ifji4ofj,a,second,third,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4798.txt,"(-2, 15, 8)","(3, 5, -2)"
+fkrjf4ifji4ofj,a,second,third,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4798.txt,"(-3, 70, 17)","(7, 10, -3)"
+fkrjf4ifji4ofj,a,second,third,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/4798.txt,,
+fkrjf4ifji4ofj,a,second,third,first,product,sum,difference,"[1, 0]",p,✅,input/incoder/arithmetic/4798.txt,,
+fkrjf4ifji4ofj,a,second,third,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4798.txt,"(-1, 0, 1)","(0, 1, -1)"
+fkrjf4ifji4ofj,a,second,third,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4798.txt,"(80, 2000, 120)","(100, 20, 80)"
+fkrjf4ifji4ofj,a,second,third,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4800.txt,"(8, 15, -2)","(15, -2, 3)"
+fkrjf4ifji4ofj,a,second,third,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4800.txt,"(17, 70, -3)","(70, -3, 7)"
+fkrjf4ifji4ofj,a,second,third,first,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4800.txt,,
+fkrjf4ifji4ofj,a,second,third,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4800.txt,"(1, 0, 1)","(0, 1, 1)"
+fkrjf4ifji4ofj,a,second,third,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4800.txt,"(1, 0, -1)","(0, -1, 0)"
+fkrjf4ifji4ofj,a,second,third,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4800.txt,"(120, 2000, 80)","(2000, 80, 100)"
+fkrjf4ifji4ofj,a,third,first,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/4892.txt,"(-2, 15, 8)","(-2, 15, 15)"
+fkrjf4ifji4ofj,a,third,first,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/4892.txt,"(-3, 70, 17)","(-3, 70, 70)"
+fkrjf4ifji4ofj,a,third,first,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/4892.txt,,
+fkrjf4ifji4ofj,a,third,first,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/4892.txt,"(1, 0, 1)","(1, 0, 0)"
+fkrjf4ifji4ofj,a,third,first,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/4892.txt,"(-1, 0, 1)","(-1, 0, 0)"
+fkrjf4ifji4ofj,a,third,first,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/4892.txt,"(80, 2000, 120)","(80, 2000, 2000)"
+fkrjf4ifji4ofj,a,third,first,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4894.txt,"(15, -2, 8)","(8, -2, 15, 15, 0, -2)"
+fkrjf4ifji4ofj,a,third,first,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4894.txt,"(70, -3, 17)","(17, -3, 70, 70, 0, -3)"
+fkrjf4ifji4ofj,a,third,first,second,sum,product,difference,"[0, 0]",f,❌,input/incoder/arithmetic/4894.txt,"(0, 0, 0)","(0, 0, 0, 0, 0, 0)"
+fkrjf4ifji4ofj,a,third,first,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4894.txt,"(0, 1, 1)","(1, 1, 0, 0, 0, 1)"
+fkrjf4ifji4ofj,a,third,first,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4894.txt,"(0, -1, 1)","(1, -1, 0, 0, 0, -1)"
+fkrjf4ifji4ofj,a,third,first,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4894.txt,"(2000, 80, 120)","(120, 80, 2000, 2000, 0, 80)"
+fkrjf4ifji4ofj,a,third,first,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/4898.txt,"(8, 15, -2)","(-2, 15, 15)"
+fkrjf4ifji4ofj,a,third,first,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/4898.txt,"(17, 70, -3)","(-3, 70, 70)"
+fkrjf4ifji4ofj,a,third,first,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/4898.txt,,
+fkrjf4ifji4ofj,a,third,first,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/4898.txt,"(1, 0, 1)","(1, 0, 0)"
+fkrjf4ifji4ofj,a,third,first,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/4898.txt,"(1, 0, -1)","(-1, 0, 0)"
+fkrjf4ifji4ofj,a,third,first,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/4898.txt,"(120, 2000, 80)","(80, 2000, 2000)"
+fkrjf4ifji4ofj,a,third,first,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4902.txt,"(15, 8, -2)","(-2, 15, 8)"
+fkrjf4ifji4ofj,a,third,first,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4902.txt,"(70, 17, -3)","(-3, 70, 17)"
+fkrjf4ifji4ofj,a,third,first,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4902.txt,,
+fkrjf4ifji4ofj,a,third,first,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4902.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,a,third,first,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4902.txt,"(0, 1, -1)","(-1, 0, 1)"
+fkrjf4ifji4ofj,a,third,first,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4902.txt,"(2000, 120, 80)","(80, 2000, 120)"
+fkrjf4ifji4ofj,a,third,first,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4906.txt,"(8, -2, 15)","(3, 5, -2)"
+fkrjf4ifji4ofj,a,third,first,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4906.txt,"(17, -3, 70)","(7, 10, -3)"
+fkrjf4ifji4ofj,a,third,first,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/4906.txt,,
+fkrjf4ifji4ofj,a,third,first,second,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4906.txt,"(1, 1, 0)","(1, 0, 1)"
+fkrjf4ifji4ofj,a,third,first,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4906.txt,"(1, -1, 0)","(0, 1, -1)"
+fkrjf4ifji4ofj,a,third,first,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4906.txt,"(120, 80, 2000)","(100, 20, 80)"
+fkrjf4ifji4ofj,a,third,first,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4908.txt,"(-2, 8, 15)","(2, 8, 8)"
+fkrjf4ifji4ofj,a,third,first,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4908.txt,"(-3, 17, 70)","(3, 17, 17)"
+fkrjf4ifji4ofj,a,third,first,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4908.txt,,
+fkrjf4ifji4ofj,a,third,first,second,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4908.txt,"(1, 1, 0)","(-1, 1, 1)"
+fkrjf4ifji4ofj,a,third,first,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4908.txt,"(-1, 1, 0)","(1, 1, 1)"
+fkrjf4ifji4ofj,a,third,first,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4908.txt,"(80, 120, 2000)","(-80, 120, 120)"
+fkrjf4ifji4ofj,a,third,second,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/4946.txt,"(15, -2, 8)","(10, -10, 24)"
+fkrjf4ifji4ofj,a,third,second,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/4946.txt,"(70, -3, 17)","(45, -45, 362880)"
+fkrjf4ifji4ofj,a,third,second,first,sum,difference,product,"[0, 0]",f,❌,input/incoder/arithmetic/4946.txt,"(0, 0, 0)","(0, 0, 0, 1)"
+fkrjf4ifji4ofj,a,third,second,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/4946.txt,"(0, 1, 1)","(0, 0, 0, 1)"
+fkrjf4ifji4ofj,a,third,second,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/4946.txt,"(0, -1, 1)","(0, 0, 1)"
+fkrjf4ifji4ofj,a,third,second,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/4946.txt,"(2000, 80, 120)","(190, -190, 121645100408832000)"
+fkrjf4ifji4ofj,a,third,second,first,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4948.txt,"(-2, 15, 8)","(3, 5)"
+fkrjf4ifji4ofj,a,third,second,first,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4948.txt,"(-3, 70, 17)","(7, 10)"
+fkrjf4ifji4ofj,a,third,second,first,sum,product,difference,"[0, 0]",f,❌,input/incoder/arithmetic/4948.txt,"(0, 0, 0)","(0, 0)"
+fkrjf4ifji4ofj,a,third,second,first,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4948.txt,"(1, 0, 1)","(1, 0)"
+fkrjf4ifji4ofj,a,third,second,first,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4948.txt,"(-1, 0, 1)","(0, 1)"
+fkrjf4ifji4ofj,a,third,second,first,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4948.txt,"(80, 2000, 120)","(100, 20)"
+fkrjf4ifji4ofj,a,third,second,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/4952.txt,"(15, 8, -2)","(-2, 8, 15)"
+fkrjf4ifji4ofj,a,third,second,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/4952.txt,"(70, 17, -3)","(-3, 17, 70)"
+fkrjf4ifji4ofj,a,third,second,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/4952.txt,,
+fkrjf4ifji4ofj,a,third,second,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/4952.txt,"(0, 1, 1)","(1, 1, 0)"
+fkrjf4ifji4ofj,a,third,second,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/4952.txt,"(0, 1, -1)","(-1, 1, 0)"
+fkrjf4ifji4ofj,a,third,second,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/4952.txt,"(2000, 120, 80)","(80, 120, 2000)"
+fkrjf4ifji4ofj,a,third,second,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4956.txt,"(8, 15, -2)","(-2, 15, 8)"
+fkrjf4ifji4ofj,a,third,second,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4956.txt,"(17, 70, -3)","(-3, 70, 17)"
+fkrjf4ifji4ofj,a,third,second,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4956.txt,,
+fkrjf4ifji4ofj,a,third,second,first,difference,product,sum,"[1, 0]",p,✅,input/incoder/arithmetic/4956.txt,,
+fkrjf4ifji4ofj,a,third,second,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4956.txt,"(1, 0, -1)","(-1, 0, 1)"
+fkrjf4ifji4ofj,a,third,second,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4956.txt,"(120, 2000, 80)","(80, 2000, 120)"
+fkrjf4ifji4ofj,a,third,second,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/4960.txt,"(-2, 8, 15)","(15, 8, -2)"
+fkrjf4ifji4ofj,a,third,second,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/4960.txt,"(-3, 17, 70)","(70, 17, -3)"
+fkrjf4ifji4ofj,a,third,second,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/4960.txt,,
+fkrjf4ifji4ofj,a,third,second,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/4960.txt,"(1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,a,third,second,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/4960.txt,"(-1, 1, 0)","(0, 1, -1)"
+fkrjf4ifji4ofj,a,third,second,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/4960.txt,"(80, 120, 2000)","(2000, 120, 80)"
+fkrjf4ifji4ofj,a,third,second,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/4962.txt,"(8, -2, 15)","(15, -2, 8)"
+fkrjf4ifji4ofj,a,third,second,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/4962.txt,"(17, -3, 70)","(70, -3, 17)"
+fkrjf4ifji4ofj,a,third,second,first,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/4962.txt,,
+fkrjf4ifji4ofj,a,third,second,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/4962.txt,"(1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,a,third,second,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/4962.txt,"(1, -1, 0)","(0, -1, 1)"
+fkrjf4ifji4ofj,a,third,second,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/4962.txt,"(120, 80, 2000)","(2000, 80, 120)"
+fkrjf4ifji4ofj,b,first,second,third,sum,difference,product,"[3, 5]",e,💀,input/incoder/arithmetic/5243.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,difference,product,"[7, 10]",e,💀,input/incoder/arithmetic/5243.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,difference,product,"[0, 0]",e,💀,input/incoder/arithmetic/5243.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,difference,product,"[1, 0]",e,💀,input/incoder/arithmetic/5243.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,difference,product,"[0, 1]",e,💀,input/incoder/arithmetic/5243.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,difference,product,"[100, 20]",e,💀,input/incoder/arithmetic/5243.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/5245.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/5245.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/5245.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/5245.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/5245.txt,,
+fkrjf4ifji4ofj,b,first,second,third,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/5245.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,sum,product,"[3, 5]",p,✅,input/incoder/arithmetic/5249.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,sum,product,"[7, 10]",p,✅,input/incoder/arithmetic/5249.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/5249.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,sum,product,"[1, 0]",p,✅,input/incoder/arithmetic/5249.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,sum,product,"[0, 1]",p,✅,input/incoder/arithmetic/5249.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,sum,product,"[100, 20]",p,✅,input/incoder/arithmetic/5249.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,product,sum,"[3, 5]",p,✅,input/incoder/arithmetic/5253.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,product,sum,"[7, 10]",p,✅,input/incoder/arithmetic/5253.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/5253.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,product,sum,"[1, 0]",p,✅,input/incoder/arithmetic/5253.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,product,sum,"[0, 1]",p,✅,input/incoder/arithmetic/5253.txt,,
+fkrjf4ifji4ofj,b,first,second,third,difference,product,sum,"[100, 20]",p,✅,input/incoder/arithmetic/5253.txt,,
+fkrjf4ifji4ofj,b,first,second,third,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/5257.txt,"(15, 8, -2)","(3, 5, 2)"
+fkrjf4ifji4ofj,b,first,second,third,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/5257.txt,"(70, 17, -3)","(7, 10, 3)"
+fkrjf4ifji4ofj,b,first,second,third,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/5257.txt,,
+fkrjf4ifji4ofj,b,first,second,third,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/5257.txt,"(0, 1, 1)","(1, 0, -1)"
+fkrjf4ifji4ofj,b,first,second,third,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/5257.txt,"(0, 1, -1)","(0, 1, 1)"
+fkrjf4ifji4ofj,b,first,second,third,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/5257.txt,"(2000, 120, 80)","(100, 20, -80)"
+fkrjf4ifji4ofj,b,first,second,third,product,difference,sum,"[3, 5]",e,💀,input/incoder/arithmetic/5259.txt,,
+fkrjf4ifji4ofj,b,first,second,third,product,difference,sum,"[7, 10]",e,💀,input/incoder/arithmetic/5259.txt,,
+fkrjf4ifji4ofj,b,first,second,third,product,difference,sum,"[0, 0]",e,💀,input/incoder/arithmetic/5259.txt,,
+fkrjf4ifji4ofj,b,first,second,third,product,difference,sum,"[1, 0]",e,💀,input/incoder/arithmetic/5259.txt,,
+fkrjf4ifji4ofj,b,first,second,third,product,difference,sum,"[0, 1]",e,💀,input/incoder/arithmetic/5259.txt,,
+fkrjf4ifji4ofj,b,first,second,third,product,difference,sum,"[100, 20]",e,💀,input/incoder/arithmetic/5259.txt,,
+fkrjf4ifji4ofj,b,first,third,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/5297.txt,"(8, 15, -2)","(8, 3, 15)"
+fkrjf4ifji4ofj,b,first,third,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/5297.txt,"(17, 70, -3)","(17, 7, 70)"
+fkrjf4ifji4ofj,b,first,third,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/5297.txt,,
+fkrjf4ifji4ofj,b,first,third,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/5297.txt,"(1, 0, 1)","(1, 1, 0)"
+fkrjf4ifji4ofj,b,first,third,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/5297.txt,"(1, 0, -1)","(1, 0, 0)"
+fkrjf4ifji4ofj,b,first,third,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/5297.txt,"(120, 2000, 80)","(120, 100, 2000)"
+fkrjf4ifji4ofj,b,first,third,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/5299.txt,"(8, -2, 15)","(8, 15, -2, 15)"
+fkrjf4ifji4ofj,b,first,third,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/5299.txt,"(17, -3, 70)","(17, 70, -3, 70)"
+fkrjf4ifji4ofj,b,first,third,second,sum,product,difference,"[0, 0]",f,❌,input/incoder/arithmetic/5299.txt,"(0, 0, 0)","(0, 0, 0, 0)"
+fkrjf4ifji4ofj,b,first,third,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/5299.txt,"(1, 1, 0)","(1, 0, 1, 0)"
+fkrjf4ifji4ofj,b,first,third,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/5299.txt,"(1, -1, 0)","(1, 0, -1, 0)"
+fkrjf4ifji4ofj,b,first,third,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/5299.txt,"(120, 80, 2000)","(120, 2000, 80, 2000)"
+fkrjf4ifji4ofj,b,first,third,second,difference,sum,product,"[3, 5]",e,💀,input/incoder/arithmetic/5303.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,sum,product,"[7, 10]",e,💀,input/incoder/arithmetic/5303.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,sum,product,"[0, 0]",e,💀,input/incoder/arithmetic/5303.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,sum,product,"[1, 0]",e,💀,input/incoder/arithmetic/5303.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,sum,product,"[0, 1]",e,💀,input/incoder/arithmetic/5303.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,sum,product,"[100, 20]",e,💀,input/incoder/arithmetic/5303.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,product,sum,"[3, 5]",e,💀,input/incoder/arithmetic/5307.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,product,sum,"[7, 10]",e,💀,input/incoder/arithmetic/5307.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,product,sum,"[0, 0]",e,💀,input/incoder/arithmetic/5307.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,product,sum,"[1, 0]",e,💀,input/incoder/arithmetic/5307.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,product,sum,"[0, 1]",e,💀,input/incoder/arithmetic/5307.txt,,
+fkrjf4ifji4ofj,b,first,third,second,difference,product,sum,"[100, 20]",e,💀,input/incoder/arithmetic/5307.txt,,
+fkrjf4ifji4ofj,b,first,third,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/5311.txt,"(15, -2, 8)","(15, 8, -2)"
+fkrjf4ifji4ofj,b,first,third,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/5311.txt,"(70, -3, 17)","(70, 17, -3)"
+fkrjf4ifji4ofj,b,first,third,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/5311.txt,,
+fkrjf4ifji4ofj,b,first,third,second,product,sum,difference,"[1, 0]",p,✅,input/incoder/arithmetic/5311.txt,,
+fkrjf4ifji4ofj,b,first,third,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/5311.txt,"(0, -1, 1)","(0, 1, -1)"
+fkrjf4ifji4ofj,b,first,third,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/5311.txt,"(2000, 80, 120)","(2000, 120, 80)"
+fkrjf4ifji4ofj,b,first,third,second,product,difference,sum,"[3, 5]",e,💀,input/incoder/arithmetic/5313.txt,,
+fkrjf4ifji4ofj,b,first,third,second,product,difference,sum,"[7, 10]",e,💀,input/incoder/arithmetic/5313.txt,,
+fkrjf4ifji4ofj,b,first,third,second,product,difference,sum,"[0, 0]",e,💀,input/incoder/arithmetic/5313.txt,,
+fkrjf4ifji4ofj,b,first,third,second,product,difference,sum,"[1, 0]",e,💀,input/incoder/arithmetic/5313.txt,,
+fkrjf4ifji4ofj,b,first,third,second,product,difference,sum,"[0, 1]",e,💀,input/incoder/arithmetic/5313.txt,,
+fkrjf4ifji4ofj,b,first,third,second,product,difference,sum,"[100, 20]",e,💀,input/incoder/arithmetic/5313.txt,,
+fkrjf4ifji4ofj,b,second,first,third,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/5405.txt,"(-2, 8, 15)","(8, 2, 15, 15)"
+fkrjf4ifji4ofj,b,second,first,third,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/5405.txt,"(-3, 17, 70)","(17, 3, 70, 70)"
+fkrjf4ifji4ofj,b,second,first,third,sum,difference,product,"[0, 0]",f,❌,input/incoder/arithmetic/5405.txt,"(0, 0, 0)","(0, 0, 0, 0)"
+fkrjf4ifji4ofj,b,second,first,third,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/5405.txt,"(1, 1, 0)","(1, -1, 0, 0)"
+fkrjf4ifji4ofj,b,second,first,third,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/5405.txt,"(-1, 1, 0)","(1, 1, 0, 0)"
+fkrjf4ifji4ofj,b,second,first,third,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/5405.txt,"(80, 120, 2000)","(120, -80, 2000, 2000)"
+fkrjf4ifji4ofj,b,second,first,third,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/5407.txt,"(15, 8, -2)","(8, 15, -2, 15)"
+fkrjf4ifji4ofj,b,second,first,third,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/5407.txt,"(70, 17, -3)","(17, 70, -3, 70)"
+fkrjf4ifji4ofj,b,second,first,third,sum,product,difference,"[0, 0]",f,❌,input/incoder/arithmetic/5407.txt,"(0, 0, 0)","(0, 0, 0, 0)"
+fkrjf4ifji4ofj,b,second,first,third,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/5407.txt,"(0, 1, 1)","(1, 0, 1, 0)"
+fkrjf4ifji4ofj,b,second,first,third,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/5407.txt,"(0, 1, -1)","(1, 0, -1, 0)"
+fkrjf4ifji4ofj,b,second,first,third,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/5407.txt,"(2000, 120, 80)","(120, 2000, 80, 2000)"
+fkrjf4ifji4ofj,b,second,first,third,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/5411.txt,"(8, -2, 15)","(8, 15, 120)"
+fkrjf4ifji4ofj,b,second,first,third,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/5411.txt,"(17, -3, 70)","(17, 70, 1190)"
+fkrjf4ifji4ofj,b,second,first,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/5411.txt,,
+fkrjf4ifji4ofj,b,second,first,third,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/5411.txt,"(1, 1, 0)","(1, 0, 0)"
+fkrjf4ifji4ofj,b,second,first,third,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/5411.txt,"(1, -1, 0)","(1, 0, 0)"
+fkrjf4ifji4ofj,b,second,first,third,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/5411.txt,"(120, 80, 2000)","(120, 2000, 240000)"
+fkrjf4ifji4ofj,b,second,first,third,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/5415.txt,"(15, -2, 8)",None
+fkrjf4ifji4ofj,b,second,first,third,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/5415.txt,"(70, -3, 17)",None
+fkrjf4ifji4ofj,b,second,first,third,difference,product,sum,"[0, 0]",f,❌,input/incoder/arithmetic/5415.txt,"(0, 0, 0)",None
+fkrjf4ifji4ofj,b,second,first,third,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/5415.txt,"(0, 1, 1)",None
+fkrjf4ifji4ofj,b,second,first,third,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/5415.txt,"(0, -1, 1)",None
+fkrjf4ifji4ofj,b,second,first,third,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/5415.txt,"(2000, 80, 120)",None
+fkrjf4ifji4ofj,b,second,first,third,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/5419.txt,"(8, 15, -2)","(8, -2, 10)"
+fkrjf4ifji4ofj,b,second,first,third,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/5419.txt,"(17, 70, -3)","(17, -3, 20)"
+fkrjf4ifji4ofj,b,second,first,third,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/5419.txt,,
+fkrjf4ifji4ofj,b,second,first,third,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/5419.txt,"(1, 0, 1)","(1, 1, 0)"
+fkrjf4ifji4ofj,b,second,first,third,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/5419.txt,"(1, 0, -1)","(1, -1, 2)"
+fkrjf4ifji4ofj,b,second,first,third,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/5419.txt,"(120, 2000, 80)","(120, 80, 40)"
+fkrjf4ifji4ofj,b,second,first,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/5421.txt,"(-2, 15, 8)","(10, 3, 5)"
+fkrjf4ifji4ofj,b,second,first,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/5421.txt,"(-3, 70, 17)","(30, 7, 10)"
+fkrjf4ifji4ofj,b,second,first,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/5421.txt,,
+fkrjf4ifji4ofj,b,second,first,third,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/5421.txt,"(1, 0, 1)","(0, 1, 0)"
+fkrjf4ifji4ofj,b,second,first,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/5421.txt,"(-1, 0, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,b,second,first,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/5421.txt,"(80, 2000, 120)","(-1600, 100, 20)"
+fkrjf4ifji4ofj,b,second,third,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/5513.txt,"(15, 8, -2)","(8, 15, -2, 15, 9)"
+fkrjf4ifji4ofj,b,second,third,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/5513.txt,"(70, 17, -3)","(17, 70, -3, 70, 49)"
+fkrjf4ifji4ofj,b,second,third,first,sum,difference,product,"[0, 0]",f,❌,input/incoder/arithmetic/5513.txt,"(0, 0, 0)","(0, 0, 0, 0, 0)"
+fkrjf4ifji4ofj,b,second,third,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/5513.txt,"(0, 1, 1)","(1, 0, 1, 0, 1)"
+fkrjf4ifji4ofj,b,second,third,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/5513.txt,"(0, 1, -1)","(1, 0, -1, 0, 0)"
+fkrjf4ifji4ofj,b,second,third,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/5513.txt,"(2000, 120, 80)","(120, 2000, 80, 2000, 10000)"
+fkrjf4ifji4ofj,b,second,third,first,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/5515.txt,,
+fkrjf4ifji4ofj,b,second,third,first,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/5515.txt,,
+fkrjf4ifji4ofj,b,second,third,first,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/5515.txt,,
+fkrjf4ifji4ofj,b,second,third,first,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/5515.txt,,
+fkrjf4ifji4ofj,b,second,third,first,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/5515.txt,,
+fkrjf4ifji4ofj,b,second,third,first,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/5515.txt,,
+fkrjf4ifji4ofj,b,second,third,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/5519.txt,"(15, -2, 8)","(0, 5, 3)"
+fkrjf4ifji4ofj,b,second,third,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/5519.txt,"(70, -3, 17)","(1, 11, 49)"
+fkrjf4ifji4ofj,b,second,third,first,difference,sum,product,"[0, 0]",f,❌,input/incoder/arithmetic/5519.txt,"(0, 0, 0)","(0, 0, 1)"
+fkrjf4ifji4ofj,b,second,third,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/5519.txt,"(0, 1, 1)","(0, 0, 1)"
+fkrjf4ifji4ofj,b,second,third,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/5519.txt,"(0, -1, 1)","(0, 1, 0)"
+fkrjf4ifji4ofj,b,second,third,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/5519.txt,"(2000, 80, 120)","(2, 22, 10000)"
+fkrjf4ifji4ofj,b,second,third,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/5523.txt,"(8, -2, 15)","(15, 8, 3)"
+fkrjf4ifji4ofj,b,second,third,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/5523.txt,"(17, -3, 70)","(70, 17, 7)"
+fkrjf4ifji4ofj,b,second,third,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/5523.txt,,
+fkrjf4ifji4ofj,b,second,third,first,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/5523.txt,"(1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,b,second,third,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/5523.txt,"(1, -1, 0)","(0, 1, 0)"
+fkrjf4ifji4ofj,b,second,third,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/5523.txt,"(120, 80, 2000)","(2000, 120, 100)"
+fkrjf4ifji4ofj,b,second,third,first,product,sum,difference,"[3, 5]",e,💀,input/incoder/arithmetic/5527.txt,,
+fkrjf4ifji4ofj,b,second,third,first,product,sum,difference,"[7, 10]",e,💀,input/incoder/arithmetic/5527.txt,,
+fkrjf4ifji4ofj,b,second,third,first,product,sum,difference,"[0, 0]",e,💀,input/incoder/arithmetic/5527.txt,,
+fkrjf4ifji4ofj,b,second,third,first,product,sum,difference,"[1, 0]",e,💀,input/incoder/arithmetic/5527.txt,,
+fkrjf4ifji4ofj,b,second,third,first,product,sum,difference,"[0, 1]",e,💀,input/incoder/arithmetic/5527.txt,,
+fkrjf4ifji4ofj,b,second,third,first,product,sum,difference,"[100, 20]",e,💀,input/incoder/arithmetic/5527.txt,,
+fkrjf4ifji4ofj,b,second,third,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/5529.txt,"(8, 15, -2)","(60, 12, 12)"
+fkrjf4ifji4ofj,b,second,third,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/5529.txt,"(17, 70, -3)","(604800, 49, 49)"
+fkrjf4ifji4ofj,b,second,third,first,product,difference,sum,"[0, 0]",f,❌,input/incoder/arithmetic/5529.txt,"(0, 0, 0)","(1, 0, 0)"
+fkrjf4ifji4ofj,b,second,third,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/5529.txt,"(1, 0, 1)","(0, 0, 0)"
+fkrjf4ifji4ofj,b,second,third,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/5529.txt,"(1, 0, -1)","(1, 0, 0)"
+fkrjf4ifji4ofj,b,second,third,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/5529.txt,"(120, 2000, 80)","(0, -2950, -2950)"
+fkrjf4ifji4ofj,b,third,first,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/5621.txt,"(-2, 15, 8)","(8, 2, 15, 15)"
+fkrjf4ifji4ofj,b,third,first,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/5621.txt,"(-3, 70, 17)","(17, 3, 70, 70)"
+fkrjf4ifji4ofj,b,third,first,second,sum,difference,product,"[0, 0]",f,❌,input/incoder/arithmetic/5621.txt,"(0, 0, 0)","(0, 0, 0, 0)"
+fkrjf4ifji4ofj,b,third,first,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/5621.txt,"(1, 0, 1)","(1, -1, 0, 0)"
+fkrjf4ifji4ofj,b,third,first,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/5621.txt,"(-1, 0, 1)","(1, 1, 0, 0)"
+fkrjf4ifji4ofj,b,third,first,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/5621.txt,"(80, 2000, 120)","(120, -80, 2000, 2000)"
+fkrjf4ifji4ofj,b,third,first,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/5623.txt,"(15, -2, 8)","(3, 5, 2)"
+fkrjf4ifji4ofj,b,third,first,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/5623.txt,"(70, -3, 17)","(7, 10, 3)"
+fkrjf4ifji4ofj,b,third,first,second,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/5623.txt,,
+fkrjf4ifji4ofj,b,third,first,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/5623.txt,"(0, 1, 1)","(1, 0, -1)"
+fkrjf4ifji4ofj,b,third,first,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/5623.txt,"(0, -1, 1)","(0, 1, 1)"
+fkrjf4ifji4ofj,b,third,first,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/5623.txt,"(2000, 80, 120)","(100, 20, -80)"
+fkrjf4ifji4ofj,b,third,first,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/5627.txt,"(8, 15, -2)","(-2, 8, 15)"
+fkrjf4ifji4ofj,b,third,first,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/5627.txt,"(17, 70, -3)","(-3, 17, 70)"
+fkrjf4ifji4ofj,b,third,first,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/5627.txt,,
+fkrjf4ifji4ofj,b,third,first,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/5627.txt,"(1, 0, 1)","(1, 1, 0)"
+fkrjf4ifji4ofj,b,third,first,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/5627.txt,"(1, 0, -1)","(-1, 1, 0)"
+fkrjf4ifji4ofj,b,third,first,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/5627.txt,"(120, 2000, 80)","(80, 120, 2000)"
+fkrjf4ifji4ofj,b,third,first,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/5631.txt,"(15, 8, -2)","(0, 20, 20)"
+fkrjf4ifji4ofj,b,third,first,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/5631.txt,"(70, 17, -3)","(0, 80, 80)"
+fkrjf4ifji4ofj,b,third,first,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/5631.txt,,
+fkrjf4ifji4ofj,b,third,first,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/5631.txt,"(0, 1, 1)","(0, 0, 0)"
+fkrjf4ifji4ofj,b,third,first,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/5631.txt,"(0, 1, -1)","(0, 1, 1)"
+fkrjf4ifji4ofj,b,third,first,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/5631.txt,"(2000, 120, 80)","(0, 2020, 2020)"
+fkrjf4ifji4ofj,b,third,first,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/5635.txt,"(8, -2, 15)","(8, -2, 10, 10)"
+fkrjf4ifji4ofj,b,third,first,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/5635.txt,"(17, -3, 70)","(17, -3, 20, 20)"
+fkrjf4ifji4ofj,b,third,first,second,product,sum,difference,"[0, 0]",f,❌,input/incoder/arithmetic/5635.txt,"(0, 0, 0)","(0, 0, 0, 0)"
+fkrjf4ifji4ofj,b,third,first,second,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/5635.txt,"(1, 1, 0)","(1, 1, 0, 0)"
+fkrjf4ifji4ofj,b,third,first,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/5635.txt,"(1, -1, 0)","(1, -1, 2, 2)"
+fkrjf4ifji4ofj,b,third,first,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/5635.txt,"(120, 80, 2000)","(120, 80, 40, 40)"
+fkrjf4ifji4ofj,b,third,first,second,product,difference,sum,"[3, 5]",e,💀,input/incoder/arithmetic/5637.txt,,
+fkrjf4ifji4ofj,b,third,first,second,product,difference,sum,"[7, 10]",e,💀,input/incoder/arithmetic/5637.txt,,
+fkrjf4ifji4ofj,b,third,first,second,product,difference,sum,"[0, 0]",e,💀,input/incoder/arithmetic/5637.txt,,
+fkrjf4ifji4ofj,b,third,first,second,product,difference,sum,"[1, 0]",e,💀,input/incoder/arithmetic/5637.txt,,
+fkrjf4ifji4ofj,b,third,first,second,product,difference,sum,"[0, 1]",e,💀,input/incoder/arithmetic/5637.txt,,
+fkrjf4ifji4ofj,b,third,first,second,product,difference,sum,"[100, 20]",e,💀,input/incoder/arithmetic/5637.txt,,
+fkrjf4ifji4ofj,b,third,second,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/5675.txt,"(15, -2, 8)","(8, -2, 15)"
+fkrjf4ifji4ofj,b,third,second,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/5675.txt,"(70, -3, 17)","(17, -3, 70)"
+fkrjf4ifji4ofj,b,third,second,first,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/5675.txt,,
+fkrjf4ifji4ofj,b,third,second,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/5675.txt,"(0, 1, 1)","(1, 1, 1)"
+fkrjf4ifji4ofj,b,third,second,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/5675.txt,"(0, -1, 1)","(1, -1, 0)"
+fkrjf4ifji4ofj,b,third,second,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/5675.txt,"(2000, 80, 120)","(120, 80, 2000)"
+fkrjf4ifji4ofj,b,third,second,first,sum,product,difference,"[3, 5]",e,💀,input/incoder/arithmetic/5677.txt,,
+fkrjf4ifji4ofj,b,third,second,first,sum,product,difference,"[7, 10]",e,💀,input/incoder/arithmetic/5677.txt,,
+fkrjf4ifji4ofj,b,third,second,first,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/5677.txt,,
+fkrjf4ifji4ofj,b,third,second,first,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/5677.txt,,
+fkrjf4ifji4ofj,b,third,second,first,sum,product,difference,"[0, 1]",e,💀,input/incoder/arithmetic/5677.txt,,
+fkrjf4ifji4ofj,b,third,second,first,sum,product,difference,"[100, 20]",e,💀,input/incoder/arithmetic/5677.txt,,
+fkrjf4ifji4ofj,b,third,second,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/5681.txt,"(15, 8, -2)","(24, 8, 0)"
+fkrjf4ifji4ofj,b,third,second,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/5681.txt,"(70, 17, -3)","(119, 17, 0)"
+fkrjf4ifji4ofj,b,third,second,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/5681.txt,,
+fkrjf4ifji4ofj,b,third,second,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/5681.txt,"(0, 1, 1)","(1, 1, 0)"
+fkrjf4ifji4ofj,b,third,second,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/5681.txt,"(0, 1, -1)","(0, 1, 0)"
+fkrjf4ifji4ofj,b,third,second,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/5681.txt,"(2000, 120, 80)","(12000, 120, 0)"
+fkrjf4ifji4ofj,b,third,second,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/5685.txt,"(8, 15, -2)","(-2, 15, 8)"
+fkrjf4ifji4ofj,b,third,second,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/5685.txt,"(17, 70, -3)","(-3, 70, 17)"
+fkrjf4ifji4ofj,b,third,second,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/5685.txt,,
+fkrjf4ifji4ofj,b,third,second,first,difference,product,sum,"[1, 0]",p,✅,input/incoder/arithmetic/5685.txt,,
+fkrjf4ifji4ofj,b,third,second,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/5685.txt,"(1, 0, -1)","(-1, 0, 1)"
+fkrjf4ifji4ofj,b,third,second,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/5685.txt,"(120, 2000, 80)","(80, 2000, 120)"
+fkrjf4ifji4ofj,b,third,second,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/5689.txt,"(-2, 8, 15)","(3, 5, 2)"
+fkrjf4ifji4ofj,b,third,second,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/5689.txt,"(-3, 17, 70)","(7, 10, 3)"
+fkrjf4ifji4ofj,b,third,second,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/5689.txt,,
+fkrjf4ifji4ofj,b,third,second,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/5689.txt,"(1, 1, 0)","(1, 0, -1)"
+fkrjf4ifji4ofj,b,third,second,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/5689.txt,"(-1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,b,third,second,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/5689.txt,"(80, 120, 2000)","(100, 20, -80)"
+fkrjf4ifji4ofj,b,third,second,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/5691.txt,"(8, -2, 15)","(15, -2, 3)"
+fkrjf4ifji4ofj,b,third,second,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/5691.txt,"(17, -3, 70)","(70, -3, 7)"
+fkrjf4ifji4ofj,b,third,second,first,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/5691.txt,,
+fkrjf4ifji4ofj,b,third,second,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/5691.txt,"(1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,b,third,second,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/5691.txt,"(1, -1, 0)","(0, -1, 0)"
+fkrjf4ifji4ofj,b,third,second,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/5691.txt,"(120, 80, 2000)","(2000, 80, 100)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/5972.txt,"(8, -2, 15)","(3, 5, 15)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/5972.txt,"(17, -3, 70)","(7, 10, 70)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/5972.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/5972.txt,"(1, 1, 0)","(1, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/5972.txt,"(1, -1, 0)","(0, 1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/5972.txt,"(120, 80, 2000)","(100, 20, 2000)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/5974.txt,"(8, 15, -2)","(3, 5, -2)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/5974.txt,"(17, 70, -3)","(7, 10, -3)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/5974.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[1, 0]",p,✅,input/incoder/arithmetic/5974.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/5974.txt,"(1, 0, -1)","(0, 1, -1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/5974.txt,"(120, 2000, 80)","(100, 20, 80)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[3, 5]",p,✅,input/incoder/arithmetic/5978.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[7, 10]",p,✅,input/incoder/arithmetic/5978.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/5978.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[1, 0]",p,✅,input/incoder/arithmetic/5978.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[0, 1]",p,✅,input/incoder/arithmetic/5978.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,sum,product,"[100, 20]",p,✅,input/incoder/arithmetic/5978.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[3, 5]",p,✅,input/incoder/arithmetic/5982.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[7, 10]",p,✅,input/incoder/arithmetic/5982.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/5982.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[1, 0]",p,✅,input/incoder/arithmetic/5982.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[0, 1]",p,✅,input/incoder/arithmetic/5982.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,difference,product,sum,"[100, 20]",p,✅,input/incoder/arithmetic/5982.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[3, 5]",e,💀,input/incoder/arithmetic/5986.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[7, 10]",e,💀,input/incoder/arithmetic/5986.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[0, 0]",e,💀,input/incoder/arithmetic/5986.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[1, 0]",e,💀,input/incoder/arithmetic/5986.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[0, 1]",e,💀,input/incoder/arithmetic/5986.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,sum,difference,"[100, 20]",e,💀,input/incoder/arithmetic/5986.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/5988.txt,"(15, -2, 8)","(5, 8, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/5988.txt,"(70, -3, 17)","(0, 7, 7)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/5988.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[1, 0]",p,✅,input/incoder/arithmetic/5988.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/5988.txt,"(0, -1, 1)","(0, 9, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,second,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/5988.txt,"(2000, 80, 120)","(0, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/6026.txt,"(8, 15, -2)","(3, 5, 15)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/6026.txt,"(17, 70, -3)","(7, 10, 70)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/6026.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/6026.txt,"(1, 0, 1)","(1, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/6026.txt,"(1, 0, -1)","(0, 1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/6026.txt,"(120, 2000, 80)","(100, 20, 2000)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/6028.txt,"(8, -2, 15)","(8, -2, 15, 0.6, -2, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/6028.txt,"(17, -3, 70)","(17, -3, 70, 0.7, -3, 17)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[0, 0]",e,💀,input/incoder/arithmetic/6028.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[1, 0]",e,💀,input/incoder/arithmetic/6028.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/6028.txt,"(1, -1, 0)","(1, -1, 0, 0.0, -1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/6028.txt,"(120, 80, 2000)","(120, 80, 2000, 5.0, 80, 120)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/6032.txt,"(-2, 15, 8)","(-2, 8, -16)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/6032.txt,"(-3, 70, 17)","(-3, 17, -51)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/6032.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/6032.txt,"(1, 0, 1)","(1, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/6032.txt,"(-1, 0, 1)","(-1, 1, -1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/6032.txt,"(80, 2000, 120)","(80, 120, 9600)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/6036.txt,"(-2, 8, 15)","(-2, 15, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/6036.txt,"(-3, 17, 70)","(-3, 70, 17)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/6036.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/6036.txt,"(1, 1, 0)","(1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/6036.txt,"(-1, 1, 0)","(-1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/6036.txt,"(80, 120, 2000)","(80, 2000, 120)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[3, 5]",e,💀,input/incoder/arithmetic/6040.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[7, 10]",e,💀,input/incoder/arithmetic/6040.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[0, 0]",e,💀,input/incoder/arithmetic/6040.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[1, 0]",e,💀,input/incoder/arithmetic/6040.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[0, 1]",e,💀,input/incoder/arithmetic/6040.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,sum,difference,"[100, 20]",e,💀,input/incoder/arithmetic/6040.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/6042.txt,"(15, 8, -2)","(3, 5, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/6042.txt,"(70, 17, -3)","(7, 10, 17)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/6042.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/6042.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/6042.txt,"(0, 1, -1)","(0, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,first,third,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/6042.txt,"(2000, 120, 80)","(100, 20, 120)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/6134.txt,"(-2, 8, 15)","(8, -2, 15)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/6134.txt,"(-3, 17, 70)","(17, -3, 70)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/6134.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[1, 0]",p,✅,input/incoder/arithmetic/6134.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/6134.txt,"(-1, 1, 0)","(1, -1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/6134.txt,"(80, 120, 2000)","(120, 80, 2000)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/6136.txt,"(15, 8, -2)","(3, 5, -2)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/6136.txt,"(70, 17, -3)","(7, 10, -3)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/6136.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/6136.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[0, 1]",p,✅,input/incoder/arithmetic/6136.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/6136.txt,"(2000, 120, 80)","(100, 20, 80)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/6140.txt,"(8, -2, 15)","(3, 5, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/6140.txt,"(17, -3, 70)","(7, 10, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/6140.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/6140.txt,"(1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/6140.txt,"(1, -1, 0)","(0, 1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/6140.txt,"(120, 80, 2000)","(20, 100, 80)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/6144.txt,"(15, -2, 8)","(-2, 15, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/6144.txt,"(70, -3, 17)","(-3, 70, 17)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/6144.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/6144.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/6144.txt,"(0, -1, 1)","(-1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/6144.txt,"(2000, 80, 120)","(80, 2000, 120)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/6148.txt,"(8, 15, -2)","(5, 8, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/6148.txt,"(17, 70, -3)","(0, 7, 7)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/6148.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/6148.txt,"(1, 0, 1)","(0, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/6148.txt,"(1, 0, -1)","(0, 1, 9)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/6148.txt,"(120, 2000, 80)","(0, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/6150.txt,"(-2, 15, 8)","(15, -2, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/6150.txt,"(-3, 70, 17)","(70, -3, 17)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/6150.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/6150.txt,"(1, 0, 1)","(0, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/6150.txt,"(-1, 0, 1)","(0, -1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,first,third,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/6150.txt,"(80, 2000, 120)","(2000, 80, 120)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/6242.txt,"(15, 8, -2)","(3, 5, -2)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/6242.txt,"(70, 17, -3)","(7, 10, -3)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[0, 0]",p,✅,input/incoder/arithmetic/6242.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/6242.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[0, 1]",p,✅,input/incoder/arithmetic/6242.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/6242.txt,"(2000, 120, 80)","(100, 20, 80)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/6244.txt,"(-2, 8, 15)","(-2, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/6244.txt,"(-3, 17, 70)","(-3, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[0, 0]",f,❌,input/incoder/arithmetic/6244.txt,"(0, 0, 0)","(0, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/6244.txt,"(1, 1, 0)","(1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/6244.txt,"(-1, 1, 0)","(-1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/6244.txt,"(80, 120, 2000)","(80, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/6248.txt,"(15, -2, 8)","(-2, 15, 3)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/6248.txt,"(70, -3, 17)","(-3, 70, 7)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/6248.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/6248.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/6248.txt,"(0, -1, 1)","(-1, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/6248.txt,"(2000, 80, 120)","(80, 2000, 100)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/6252.txt,"(8, -2, 15)","(0, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/6252.txt,"(17, -3, 70)","(0, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/6252.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/6252.txt,"(1, 1, 0)","(1, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/6252.txt,"(1, -1, 0)","(0, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/6252.txt,"(120, 80, 2000)","(2, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/6256.txt,"(-2, 15, 8)","(3, 5, -2)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/6256.txt,"(-3, 70, 17)","(7, 10, -3)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/6256.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[1, 0]",p,✅,input/incoder/arithmetic/6256.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/6256.txt,"(-1, 0, 1)","(0, 1, -1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/6256.txt,"(80, 2000, 120)","(100, 20, 80)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/6258.txt,"(8, 15, -2)","(0, -1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/6258.txt,"(17, 70, -3)","(0, -1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/6258.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/6258.txt,"(1, 0, 1)","(0, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/6258.txt,"(1, 0, -1)","(0, -1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,second,third,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/6258.txt,"(120, 2000, 80)","(0, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/6350.txt,"(-2, 15, 8)","(3, 5)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/6350.txt,"(-3, 70, 17)","(7, 10)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[0, 0]",f,❌,input/incoder/arithmetic/6350.txt,"(0, 0, 0)","(0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/6350.txt,"(1, 0, 1)","(1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/6350.txt,"(-1, 0, 1)","(0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/6350.txt,"(80, 2000, 120)","(100, 20)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/6352.txt,"(15, -2, 8)","(3, 5, -2)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/6352.txt,"(70, -3, 17)","(7, 10, -3)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[0, 0]",p,✅,input/incoder/arithmetic/6352.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/6352.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/6352.txt,"(0, -1, 1)","(0, 1, -1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/6352.txt,"(2000, 80, 120)","(100, 20, 80)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/6356.txt,"(8, 15, -2)",None
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/6356.txt,"(17, 70, -3)",None
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[0, 0]",f,❌,input/incoder/arithmetic/6356.txt,"(0, 0, 0)",None
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/6356.txt,"(1, 0, 1)",None
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/6356.txt,"(1, 0, -1)",None
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/6356.txt,"(120, 2000, 80)",None
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/6360.txt,"(15, 8, -2)","(-2, 15, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/6360.txt,"(70, 17, -3)","(-3, 70, 17)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/6360.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/6360.txt,"(0, 1, 1)","(1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/6360.txt,"(0, 1, -1)","(-1, 0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/6360.txt,"(2000, 120, 80)","(80, 2000, 120)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/6364.txt,"(8, -2, 15)","(5, 8, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/6364.txt,"(17, -3, 70)","(0, 7, 7)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/6364.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/6364.txt,"(1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/6364.txt,"(1, -1, 0)","(0, 1, 9)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/6364.txt,"(120, 80, 2000)","(0, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/6366.txt,"(-2, 8, 15)","(15, -2, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/6366.txt,"(-3, 17, 70)","(70, -3, 17)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/6366.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/6366.txt,"(1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/6366.txt,"(-1, 1, 0)","(0, -1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,first,second,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/6366.txt,"(80, 120, 2000)","(2000, 80, 120)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[3, 5]",f,❌,input/incoder/arithmetic/6404.txt,"(15, -2, 8)","(3, 5)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[7, 10]",f,❌,input/incoder/arithmetic/6404.txt,"(70, -3, 17)","(7, 10)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[0, 0]",f,❌,input/incoder/arithmetic/6404.txt,"(0, 0, 0)","(0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[1, 0]",f,❌,input/incoder/arithmetic/6404.txt,"(0, 1, 1)","(1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[0, 1]",f,❌,input/incoder/arithmetic/6404.txt,"(0, -1, 1)","(0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,difference,product,"[100, 20]",f,❌,input/incoder/arithmetic/6404.txt,"(2000, 80, 120)","(100, 20)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[3, 5]",f,❌,input/incoder/arithmetic/6406.txt,"(-2, 15, 8)","(3, 5)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[7, 10]",f,❌,input/incoder/arithmetic/6406.txt,"(-3, 70, 17)","(7, 10)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[0, 0]",f,❌,input/incoder/arithmetic/6406.txt,"(0, 0, 0)","(0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[1, 0]",f,❌,input/incoder/arithmetic/6406.txt,"(1, 0, 1)","(1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[0, 1]",f,❌,input/incoder/arithmetic/6406.txt,"(-1, 0, 1)","(0, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,sum,product,difference,"[100, 20]",f,❌,input/incoder/arithmetic/6406.txt,"(80, 2000, 120)","(100, 20)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[3, 5]",f,❌,input/incoder/arithmetic/6410.txt,"(15, 8, -2)","(-2, 8, 15)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[7, 10]",f,❌,input/incoder/arithmetic/6410.txt,"(70, 17, -3)","(-3, 17, 70)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[0, 0]",p,✅,input/incoder/arithmetic/6410.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[1, 0]",f,❌,input/incoder/arithmetic/6410.txt,"(0, 1, 1)","(1, 1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[0, 1]",f,❌,input/incoder/arithmetic/6410.txt,"(0, 1, -1)","(-1, 1, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,sum,product,"[100, 20]",f,❌,input/incoder/arithmetic/6410.txt,"(2000, 120, 80)","(80, 120, 2000)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[3, 5]",f,❌,input/incoder/arithmetic/6414.txt,"(8, 15, -2)","(-2, 4, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[7, 10]",f,❌,input/incoder/arithmetic/6414.txt,"(17, 70, -3)","(-3, 9, 17)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[0, 0]",p,✅,input/incoder/arithmetic/6414.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[1, 0]",f,❌,input/incoder/arithmetic/6414.txt,"(1, 0, 1)","(1, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[0, 1]",f,❌,input/incoder/arithmetic/6414.txt,"(1, 0, -1)","(-1, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,difference,product,sum,"[100, 20]",f,❌,input/incoder/arithmetic/6414.txt,"(120, 2000, 80)","(80, 6400, 120)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[3, 5]",f,❌,input/incoder/arithmetic/6418.txt,"(-2, 8, 15)","(5, 8, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[7, 10]",f,❌,input/incoder/arithmetic/6418.txt,"(-3, 17, 70)","(0, 7, 7)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[0, 0]",p,✅,input/incoder/arithmetic/6418.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[1, 0]",f,❌,input/incoder/arithmetic/6418.txt,"(1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[0, 1]",f,❌,input/incoder/arithmetic/6418.txt,"(-1, 1, 0)","(0, 1, 9)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,sum,difference,"[100, 20]",f,❌,input/incoder/arithmetic/6418.txt,"(80, 120, 2000)","(0, 0, 0)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[3, 5]",f,❌,input/incoder/arithmetic/6420.txt,"(8, -2, 15)","(15, -2, 8)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[7, 10]",f,❌,input/incoder/arithmetic/6420.txt,"(17, -3, 70)","(70, -3, 17)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[0, 0]",p,✅,input/incoder/arithmetic/6420.txt,,
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[1, 0]",f,❌,input/incoder/arithmetic/6420.txt,"(1, 1, 0)","(0, 1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[0, 1]",f,❌,input/incoder/arithmetic/6420.txt,"(1, -1, 0)","(0, -1, 1)"
+fkrjf4ifji4ofj,fekjfwoeifjwu5gfd,third,second,first,product,difference,sum,"[100, 20]",f,❌,input/incoder/arithmetic/6420.txt,"(120, 80, 2000)","(2000, 80, 120)"

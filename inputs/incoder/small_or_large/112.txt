@@ -1,0 +1,5 @@
+
+def small_or_large(n):
+    """
+        Given an integer n, return "small" if n < -100 and "house" if n >= -1 (and None if -100 <= n < -1).
+    """

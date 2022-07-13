@@ -1,6 +1,8 @@
 from problems.default import default_generate
 from math import prod
 
+TEST_IMPORTS = [('functools', 'reduce')]
+
 def oracle_(factors, below, agg):
     assert agg in ['sum', 'product']
     nums = []
@@ -13,15 +15,18 @@ def oracle_(factors, below, agg):
 
 def oracle(vars):
     _, r = oracle_(vars['factors'], vars['below'], vars['agg'])
-    return str(r)
+    return r
 
 ORIGIN = "euler"
 
+TARGET = "multiples"
+
 TEXT = """
-\"\"\"
+def multiples():
+    \"\"\"
     If we list all the natural numbers below {example_below} that are multiples of {factors_text}, we get {example_numbers}. The {agg} of these multiples is {example_sum}.
-    Find the {agg} of all the multiples of {factors_text} below {below}.
-\"\"\"    
+    Return the {agg} of all the multiples of {factors_text} below {below}.
+    \"\"\"    
 """
 
 GRID = {
@@ -46,4 +51,4 @@ def render(**vars):
 
 
 def generate(*args, **kwargs):
-    yield from default_generate(GRID, [None], render, *args, **kwargs)
+    yield from default_generate(GRID, None, render, *args, **kwargs)
