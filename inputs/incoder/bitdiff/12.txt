@@ -1,0 +1,5 @@
+
+def bit_diff(a, b):
+    """
+    Returns whether the two numbers differ at exactly six bit positions.
+    """

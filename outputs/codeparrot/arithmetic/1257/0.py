@@ -1,4 +1,3 @@
-
 def make_tuple(a, b):
     """
     Given two integers a and b, return a tuple where:
@@ -6,6 +5,8 @@ def make_tuple(a, b):
     The first element contains the product of the two numbers.
     The second element contains the sum of the two numbers.
     """
+    return (a[0] - b[0], a[1] - b[1])
+
 
 def make_list(a, b):
     """
@@ -14,54 +15,47 @@ def make_list(a, b):
     The first element contains the product of the two numbers.
     The second element contains the sum of the two numbers.
     """
+    return [a[0] + b[0], a[1] + b[1]]
+
 
 def make_set(a, b):
     """
     Given two integers a and b, return a set where:
+    The fourth element contains the product of the two numbers.
     The first element contains the product of the two numbers.
-    The second element contains the product of the two numbers.
+    The second element contains the sum of the two numbers.
     """
+    return set(a) | set(b)
+
 
 def make_string(a, b):
     """
     Given two integers a and b, return a string where:
+    The fourth element contains the product of the two numbers.
     The first element contains the product of the two numbers.
-    The second element contains the product of the two numbers.
+    The second element contains the sum of the two numbers.
     """
+    return a[0] + b[0] + a[1] + b[1]
 
-def make_tuple_string(a, b):
+
+def make_tuple_list(a, b):
     """
-    Given two integers a and b, return a tuple where:
+    Given two integers a and b, return a list where:
+    The fourth element contains the product of the two numbers.
     The first element contains the product of the two numbers.
-    The second element contains the product of the two numbers.
+    The second element contains the sum of the two numbers.
     """
+    return [a[0] + b[0], a[1] + b[1]]
 
-def make_set_string(a, b):
+
+def make_set_list(a, b):
     """
     Given two integers a and b, return a set where:
+    The fourth element contains the product of the two numbers.
     The first element contains the product of the two numbers.
-    The second element contains the product of the two numbers.
+    The second element contains the sum of the two numbers.
     """
+    return set(a) | set(b)
 
-def make_string_string(a, b):
-    """
-    Given two integers a and b, return a string where:
-    The first element contains the product of the two numbers.
-    The second element contains the product of the two numbers.
-    """
 
-def make_set_tuple_string(a, b):
-    """
-    Given two integers a and b, return a set where:
-    The first element contains the product of the two numbers.
-    The second element contains the product of the two numbers.
-    """
-
-def make_set_set(a, b):
-    """
-    Given two integers a and b, return a set where:
-    The first element contains the product of the two numbers.
-    The second element contains the product of the two numbers.
-    """
-
-def make
+def make_string_list(a,

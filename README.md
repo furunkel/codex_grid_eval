@@ -4,7 +4,7 @@
 
 1. Install required Python packages:
     ```
-    pip install openai tree_sitter
+    pip install openai tree_sitter tqdm fire
     ```
 
 2. Install the Python TreeSitter module

@@ -1,4 +1,3 @@
-
 def allergies(score):
     """
     Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.
@@ -27,27 +26,5 @@ def allergies(score):
     ignore those components of the score.  For example, if the allergy
     score is 257, your program should only report the eggs (1) allergy.
     """
-
-def allergies_from_string(string):
-    """
-    Given a string, return a list of allergies.
-
-    >>> allergies_from_string('eggs')
-    ['eggs']
-    >>> allergies_from_string('peanuts')
-    ['peanuts']
-    >>> allergies_from_string('shellfish')
-    ['shellfish']
-    >>> allergies_from_string('strawberries')
-    ['strawberries']
-    >>> allergies_from_string('tomatoes')
-    ['tomatoes']
-    >>> allergies_from_string('chocolate')
-    ['chocolate']
-    >>> allergies_from_string('pollen')
-    ['pollen']
-    >>> allergies_from_string('cats')
-    ['cats']
-    >>> allergies_from_string('tomatoes')
-    ['tomatoes']
-   
+    if score < 257:
+        return [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,

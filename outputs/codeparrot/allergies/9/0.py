@@ -1,4 +1,3 @@
-
 def allergies(score):
     """
     Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.
@@ -27,13 +26,15 @@ def allergies(score):
     ignore those components of the score.  For example, if the allergy
     score is 257, your program should only report the eggs (1) allergy.
     """
+    # TODO: implement this
+    return [score] * len(score)
 
-def allergies_from_item(item):
+
+def get_score(person, item):
     """
-    Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.
+    Given a person's item, return the score of the item.
 
-    An allergy test produces a single numeric score which contains the
-    information about all the allergies the person has (that they were
+    The score of the item is the number of allergies the person has (that they were
     tested for).
 
     The list of items (and their value) that were tested are:
@@ -51,4 +52,4 @@ def allergies_from_item(item):
 
     Now, given just that score of 6, your program should return a list of all the allergens Destiny is allergic to.
 
-    Note:
+    Note: a given score may include allergens **not** listed above (i.

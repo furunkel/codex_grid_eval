@@ -1,4 +1,3 @@
-
 def allergies(score):
     """
     Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.
@@ -27,10 +26,36 @@ def allergies(score):
     ignore those components of the score.  For example, if the allergy
     score is 257, your program should only report the eggs (1) allergy.
     """
+    if score == 0:
+        return [1]
+    elif score == 1:
+        return [2]
+    elif score == 2:
+        return [4]
+    elif score == 4:
+        return [8]
+    elif score == 8:
+        return [16]
+    elif score == 16:
+        return [32]
+    else:
+        return [64]
 
-def allergies_from_string(string):
+
+def get_score(person, item):
     """
-    Given a string, return a list of all the allergies in the string.
+    Given a person's item, return the score of the person's item.
 
-    >>> allergies_from_string('Mr. Mrs. Mrs.')
-    ['Mr. Mrs.', 'Mrs. Mrs.', 'Mrs. Mrs. Mrs.', 'Mrs. Mrs. Mrs.', 'Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs. Mrs
+    The score of the item is the number of allergens that the person has.
+
+    The score of the item is the number of allergens that the person has.
+
+    The score of the item is the number of allergens that the person has.
+
+    The score of the item is the number of allergens that the person has.
+
+    The score of the item is the number of allergens that the person has.
+
+    The score of the item is the number of allergens that the person has.
+
+    The score of the item is the number of allergens that the

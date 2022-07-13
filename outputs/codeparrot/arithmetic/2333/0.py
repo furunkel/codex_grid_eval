@@ -1,4 +1,3 @@
-
 def make_tuple(b, a):
     """
     Given two integers b and a, return a tuple where:
@@ -6,56 +5,58 @@ def make_tuple(b, a):
     The second element contains the sum of the two numbers.
     The third element contains the product of the two numbers.
     """
+    return (a[0] - b[0], a[1] - b[1], a[2] - b[2])
 
-def make_list(b, a):
-    """
-    Given two integers b and a, return a list where:
-    The first element contains the difference of the two numbers (first - second).
-    The second element contains the sum of the two numbers.
-    The third element contains the product of the two numbers.
-    """
 
-def make_set(b, a):
+def make_list(l):
     """
-    Given two integers b and a, return a set where:
-    The first element contains the difference of the two numbers (first - second).
-    The second element contains the sum of the two numbers.
-    The third element contains the product of the two numbers.
+    Given a list l, return a list where each element is a list of integers.
     """
+    return [int(i) for i in l]
 
-def make_string(b, a):
-    """
-    Given two integers b and a, return a string where:
-    The first element contains the difference of the two numbers (first - second).
-    The second element contains the sum of the two numbers.
-    The third element contains the product of the two numbers.
-    """
 
-def make_tuple_string(b, a):
+def make_list_of_ints(l):
     """
-    Given two integers b and a, return a string where:
-    The first element contains the difference of the two numbers (first - second).
-    The second element contains the sum of the two numbers.
-    The third element contains the product of the two numbers.
+    Given a list l, return a list where each element is a list of integers.
     """
+    return [int(i) for i in l]
 
-def make_set_string(b, a):
-    """
-    Given two integers b and a, return a set where:
-    The first element contains the difference of the two numbers (first - second).
-    The second element contains the sum of the two numbers.
-    The third element contains the product of the two numbers.
-    """
 
-def make_string_set(b, a):
+def make_list_of_floats(l):
     """
-    Given two integers b and a, return a set where:
-    The first element contains the difference of the two numbers (first - second).
-    The second element contains the sum of the two numbers.
-    The third element contains the product of the two numbers.
+    Given a list l, return a list where each element is a list of floats.
     """
+    return [float(i) for i in l]
 
-def make_set_set(b, a):
+
+def make_list_of_ints_of_floats(l):
     """
-    Given two integers b and a, return a set where:
-    The first
+    Given a list l, return a list where each element is a list of integers of floats.
+    """
+    return [int(i) for i in l]
+
+
+def make_list_of_floats_of_ints(l):
+    """
+    Given a list l, return a list where each element is a list of integers of floats.
+    """
+    return [int(i) for i in l]
+
+
+def make_list_of_ints_of_ints_of_floats(l):
+    """
+    Given a list l, return a list where each element is a list of integers of floats of ints.
+    """
+    return [int(i) for i in l]
+
+
+def make_list_of_floats_of_ints_of_floats(l):
+    """
+    Given a list l, return a list where each element is a list of integers of floats of ints.
+    """
+    return [int(i) for i in l]
+
+
+def make_list_of_ints_of_ints_of_floats_of_ints(l):
+    """
+    Given a list l, return a list where each element is a list of integers of ints of floats

@@ -1,4 +1,3 @@
-
 def allergies(score):
     """
     Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.
@@ -9,43 +8,23 @@ def allergies(score):
 
     The list of items (and their value) that were tested are:
 
-    * peanuts (1)
-    * eggs (2)
-    * chocolate (4)
-    * shellfish (8)
-    * cats (16)
-    * pollen (32)
-    * tomatoes (64)
-    * strawberries (128)
+    * eggs (1)
+    * tomatoes (2)
+    * peanuts (4)
+    * pollen (8)
+    * strawberries (16)
+    * cats (32)
+    * chocolate (64)
+    * shellfish (128)
 
-    So if Fritz von Kitzhausdorf is allergic to chocolate and pollen, he gets a score of 36.
+    So if Fritz von Kitzhausdorf is allergic to chocolate and pollen, he gets a score of 72.
 
-    Now, given just that score of 36, your program should return a list of all the allergens Fritz von Kitzhausdorf is allergic to.
+    Now, given just that score of 72, your program should return a list of all the allergens Fritz von Kitzhausdorf is allergic to.
 
     Note: a given score may include allergens **not** listed above (i.e.
     allergens that score 256, 512, 1024, etc.).  Your program should
     ignore those components of the score.  For example, if the allergy
-    score is 257, your program should only report the peanuts (1) allergy.
+    score is 257, your program should only report the eggs (1) allergy.
     """
-
-def allergies_from_file(filename):
-    """
-    Given a file name, return a list of all the allergies in the file.
-
-    The list of items (and their value) that were tested are:
-
-    * peanuts (1)
-    * eggs (2)
-    * chocolate (4)
-    * shellfish (8)
-    * cats (16)
-    * pollen (32)
-    * tomatoes (64)
-    * strawberries (128)
-
-    So if Fritz von Kitzhausdorf is allergic to chocolate and pollen, he gets a score of 36.
-
-    Now, given just that score of 36, your program should return a list of all the allergens Fritz von Kitzhausdorf is allergic to.
-
-    Note: a given score may include allergens **not** listed above (i.e.
-    allergens
+    if score == 1:
+        return [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1

@@ -1,4 +1,3 @@
-
 def allergies(score):
     """
     Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.
@@ -9,44 +8,51 @@ def allergies(score):
 
     The list of items (and their value) that were tested are:
 
-    * eggs (1)
+    * peanuts (1)
     * tomatoes (2)
-    * peanuts (4)
-    * pollen (8)
-    * strawberries (16)
-    * cats (32)
-    * chocolate (64)
-    * shellfish (128)
+    * strawberries (4)
+    * eggs (8)
+    * pollen (16)
+    * chocolate (32)
+    * shellfish (64)
+    * cats (128)
 
-    So if Alice is allergic to peanuts and pollen, he gets a score of 12.
+    So if Alice is allergic to peanuts and pollen, he gets a score of 17.
 
-    Now, given just that score of 12, your program should return a list of all the allergens Alice is allergic to.
+    Now, given just that score of 17, your program should return a list of all the allergens Alice is allergic to.
 
     Note: a given score may include allergens **not** listed above (i.e.
     allergens that score 256, 512, 1024, etc.).  Your program should
     ignore those components of the score.  For example, if the allergy
-    score is 257, your program should only report the eggs (1) allergy.
+    score is 257, your program should only report the peanuts (1) allergy.
     """
-
-def allergies_from_string(string):
-    """
-    Given a string, return a list of all the allergies of that string.
-
-    The list of items (and their value) that were tested are:
-
-    * eggs (1)
-    * tomatoes (2)
-    * peanuts (4)
-    * pollen (8)
-    * strawberries (16)
-    * cats (32)
-    * chocolate (64)
-    * shellfish (128)
-
-    So if Alice is allergic to peanuts and pollen, he gets a score of 12.
-
-    Now, given just that score of 12, your program should return a list of all the allergens Alice is allergic to.
-
-    Note: a given score may include allergens **not** listed above (i.e.
-    allergens that score 256, 512, 1024, etc.).  Your program should
-    ignore those components of the score.  For example, if the allergy
+    if score == 257:
+        return [1, 257]
+    elif score == 512:
+        return [2, 512]
+    elif score == 1024:
+        return [4, 1024]
+    elif score == 2048:
+        return [8, 2048]
+    elif score == 4096:
+        return [16, 4096]
+    elif score == 8192:
+        return [32, 8192]
+    elif score == 16384:
+        return [64, 16384]
+    elif score == 32768:
+        return [128, 32768]
+    elif score == 65536:
+        return [256, 65536]
+    elif score == 131072:
+        return [512, 131072]
+    elif score == 262144:
+        return [1, 262144]
+    elif score == 524288:
+        return [2, 524288]
+    elif score == 1048576:
+        return [4, 1048576]
+    elif score == 2097152:
+        return [8, 1048576]
+    elif score == 4194304:
+        return [16,

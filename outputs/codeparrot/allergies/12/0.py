@@ -1,4 +1,3 @@
-
 def allergies(score):
     """
     Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.
@@ -27,25 +26,5 @@ def allergies(score):
     ignore those components of the score.  For example, if the allergy
     score is 257, your program should only report the eggs (1) allergy.
     """
-
-def get_score(person, item):
-    """
-    Given a person's item, return the score of the item.
-
-    The score is the number of items that the person has.  If the item is
-    not in the list of allergies, return 0.
-
-    The score is the number of allergies the person has.  If the item is
-    not in the list of allergies, return 0.
-
-    The score is the number of allergies the person has.  If the item is
-    not in the list of allergies, return 0.
-
-    The score is the number of allergies the person has.  If the item is
-    not in the list of allergies, return 0.
-
-    The score is the number of allergies the person has.  If the item is
-    not in the list of allergies, return 0.
-
-    The score is the number of allergies the person has.  If the item is
-    not in the
+    if score == 0:
+        return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0

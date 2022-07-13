@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 import subprocess
 import signal
+from typing import List
 
-from numpy import isin
 import openai
 from tqdm import tqdm
 import fire
@@ -132,10 +132,13 @@ class CodeParrot:
         print("loading complete")
 
         if self.cuda:
-            model = model.half().cuda()
+            model = model.cuda()
 
         self.model = model
         self.tokenizer = tokenizer
+
+        # from transformers import pipeline
+        # self.pipe = pipeline("text-generation", model="codeparrot/codeparrot", device=0)
 
     def generate(self, input: str, max_to_generate: int, temperature: float):
         import torch
@@ -157,7 +160,12 @@ class CodeParrot:
 
     def run(self, prompt):
         # FIXME: hardcoded for n == 1
-        return [self.generate(prompt, max_to_generate=self.max_tokens, temperature=self.temperature)]
+        return [self.generate(prompt.strip(), max_to_generate=self.max_tokens, temperature=self.temperature)]
+
+        # outputs = self.pipe(prompt)
+        # print(outputs)
+        # print(outputs[0]['generated_text'])
+        # return [outputs[0]['generated_text']]
         
 
 @dataclass
@@ -236,12 +244,12 @@ class InCoder:
 
 class Main:
 
-    FAKE_INPUT_FUNC = """
+    _FAKE_INPUT_FUNC = """
       def input(*args):
           return {input}
     """
 
-    FAKE_INPUT_FUNC_MANY = """
+    _FAKE_INPUT_FUNC_MANY = """
       input_idx = 0
       def input(*args):
           global input_idx
@@ -251,13 +259,13 @@ class Main:
           return current_input
     """
 
-    def patch_python(self, code, input):
+    def _patch_python(self, code, input):
         if isinstance(input, list):
-            return textwrap.dedent(self.FAKE_INPUT_FUNC_MANY.format(input=input)) + code
+            return textwrap.dedent(self._FAKE_INPUT_FUNC_MANY.format(input=input)) + code
         else:
-            return textwrap.dedent(self.FAKE_INPUT_FUNC.format(input=input)) + code
+            return textwrap.dedent(self._FAKE_INPUT_FUNC.format(input=input)) + code
 
-    def load_model(self, model_name, temperature, top_p, n, max_tokens):
+    def _load_model(self, model_name, temperature, top_p, n, max_tokens):
         if model_name == 'codex':
             return Codex(temperature=temperature or Codex.DEFAULT_TEMPERATURE, top_p=top_p, n=n, max_tokens=max_tokens)
         elif model_name == 'incoder':
@@ -272,7 +280,7 @@ class Main:
         gen = problem.generate_func
 
         model_name = model
-        model = self.load_model(model_name, temperature=temperature, top_p=top_p, n=n, max_tokens=max_tokens)
+        model = self._load_model(model_name, temperature=temperature, top_p=top_p, n=n, max_tokens=max_tokens)
 
         for text, _vars, index in tqdm(list(gen(lang=lang))):
         # for index, vals in enumerate(tqdm(list(itertools.product(*GRID.values())))):
@@ -296,7 +304,7 @@ class Main:
             print(len(outputs))
             save(problem_name, model_name, index, input, outputs, lang)
 
-    def test_imports_str(self, problem):
+    def _test_imports_str(self, problem):
         imports = []
 
         def invalid_import():
@@ -316,21 +324,21 @@ class Main:
                 
         return '\n'.join(imports) + '\n'
 
-    def strip_cell_tags(self, text):
+    def _strip_cell_tags(self, text):
         return re.sub(r"</?(?:cell|text)/?>", "", text)
 
-    def run_python(self, problem, f, vars, lang, model):
+    def _run_python(self, problem, f, vars, lang, model):
         if problem.has_target:
             text = f.read_text()
 
             if model == 'incoder':
-                text = self.strip_cell_tags(text)
+                text = self._strip_cell_tags(text)
 
             code = extract_first_func(text)
             if code is None:
                 raise ExecutionError("no function/method found in output")
 
-            code = self.test_imports_str(problem) + code
+            code = self._test_imports_str(problem) + code
             try:
                 exec_obj = compile(code, str(f), 'exec')
             except (IndentationError, SyntaxError) as e:
@@ -357,7 +365,7 @@ class Main:
             # target(*vars['input'])
             # return problem.run_func(target, vars)
         else:
-            code = self.patch_python(f.read_text(), vars['input'])
+            code = self._patch_python(f.read_text(), vars['input'])
             try:
                 output = subprocess.run(['python', '-c', code], check=True, capture_output=True, text=True)
             except subprocess.CalledProcessError as e: 
@@ -372,6 +380,20 @@ class Main:
 
     def _sigalarm_handler(self, signum, frame):
         raise TimeoutError("timeout reached")
+
+    def variant_counts(self, lang=''):
+        problems: List = [f.stem for f in Path('problems').glob('*.py')]
+        problems.remove('default')
+
+        total = 0
+
+        for problem in problems:
+            problem = Problem(problem)
+            gen = problem.generate_func
+            c = len(list(gen(with_inputs=False, lang=lang)))
+            total += c
+            print(f"{problem}:\t\t\t{c}")
+        print(f"Total:\t\t\t{total}")
 
     def test(self, problem_name, output_dir, lang='', model='codex'):
         problem = Problem(problem_name)
@@ -399,7 +421,7 @@ class Main:
             for f in files:
                 print(str(f))
                 try:
-                    actual = self.run_python(problem, f, vars, lang, model)
+                    actual = self._run_python(problem, f, vars, lang, model)
                     success = problem.is_output_equal(actual, expected)
 
                     if success:
