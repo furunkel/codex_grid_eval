@@ -1,18 +1,9 @@
 var,val,success_rate
 cond,not,0.6111111111111112
 length,3,0.7777777777777778
-input,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,0.8125
 length,6,0.8611111111111112
-input,aaaaaaaaaaaaaaaaaaaa  b c d e,0.875
-input,cccccccccccccccccccc,0.875
-input,b bbb bbbbbbb,0.875
-input,Jhingai wulu road Zone 3,0.875
-input,aaaaaa,0.9375
-input,b bbb bbbbbb,0.9375
-input,Please move back to stream,0.9375
 length,20,0.9722222222222222
 length,1,1.0
 cond,at least,1.0
-input,aaa,1.0
 cond,exactly,1.0
 cond,at most,1.0

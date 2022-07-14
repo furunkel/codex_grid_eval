@@ -38,8 +38,8 @@ def oracle_(input, digit, factor2, factor3):
         ans += (c == str(digit))
     return ans
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'digit', 'factor2', 'factor3')))
+def oracle(vars, input):
+    return oracle_(input=input, **dict((k, vars[k]) for k in ('digit', 'factor2', 'factor3')))
 
 def render(**vars):
     vars['example_output'] = oracle_(vars['example_input'], vars['digit'], vars['factor2'], vars['factor3'])

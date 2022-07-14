@@ -3,22 +3,15 @@ triple_class,upper-case letter,0.0
 triple_class,letter,0.047619047619047616
 triple_class,consonant (lower-case or upper-case),0.10714285714285714
 double_class,exclamation point,0.12244897959183673
-input,aaaAB1!1kf!kd3?f3fk?lk3,0.125
-input,???!!!!ABCdefg1234aaaee,0.125
 double_class,question mark,0.16326530612244897
 triple_class,lower-case letter,0.21428571428571427
 double_class,consonant (lower-case or upper-case),0.21428571428571427
-input,AAAaaaaaAAAA,0.225
-input,1A2B3C!,0.225
 double_class,lower-case letter,0.25
-input,A?,0.325
 triple_class,question mark,0.32653061224489793
 double_class,vowel (lower-case or upper-case),0.35714285714285715
 triple_class,exclamation point,0.3673469387755102
 double_class,letter,0.38095238095238093
 triple_class,vowel (lower-case or upper-case),0.39285714285714285
 double_class,number,0.40816326530612246
-input,?,0.45
 double_class,upper-case letter,0.4642857142857143
 triple_class,number,0.46938775510204084
-input,!!!!!,0.475

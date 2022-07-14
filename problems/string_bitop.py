@@ -46,8 +46,8 @@ def oracle_(input, op):
 
     return ''.join(exec_op(x, y) for x, y in zip(*input))
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'op')))
+def oracle(vars, input):
+    return oracle_(input=input, op=vars['op'])
 
 def render(**vars):
     vars['op_upper'] = vars['op'].upper()

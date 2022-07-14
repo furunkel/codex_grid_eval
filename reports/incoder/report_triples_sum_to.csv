@@ -1,1009 +1,145 @@
-sum_num,count,example_input,input,result,result_emojis,model_input,expected,actual
-0,2,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/0.txt,,
-0,2,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/0.txt,,
-0,2,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/0.txt,False,True
-0,2,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/0.txt,,
-0,2,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/0.txt,,
-0,2,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/0.txt,,
-0,2,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/0.txt,,
-0,2,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/1.txt,,
-0,2,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/1.txt,,
-0,2,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/1.txt,False,True
-0,2,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/1.txt,,
-0,2,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/1.txt,,
-0,2,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/1.txt,,
-0,2,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/1.txt,,
-0,2,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/2.txt,,
-0,2,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/2.txt,,
-0,2,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/2.txt,False,True
-0,2,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/2.txt,,
-0,2,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/2.txt,,
-0,2,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/2.txt,,
-0,2,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/2.txt,,
-0,2,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/3.txt,,
-0,2,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/3.txt,,
-0,2,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/3.txt,False,True
-0,2,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/3.txt,,
-0,2,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/3.txt,,
-0,2,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/3.txt,,
-0,2,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/3.txt,,
-0,3,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/4.txt,,
-0,3,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/4.txt,True,False
-0,3,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/4.txt,True,False
-0,3,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/4.txt,True,False
-0,3,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/4.txt,True,False
-0,3,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/4.txt,,
-0,3,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/4.txt,,
-0,3,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/5.txt,,
-0,3,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/5.txt,True,False
-0,3,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/5.txt,True,False
-0,3,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/5.txt,True,False
-0,3,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/5.txt,True,False
-0,3,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/5.txt,,
-0,3,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/5.txt,,
-0,3,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/6.txt,,
-0,3,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/6.txt,True,False
-0,3,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/6.txt,True,False
-0,3,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/6.txt,True,False
-0,3,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/6.txt,True,False
-0,3,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/6.txt,,
-0,3,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/6.txt,,
-0,3,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/7.txt,,
-0,3,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/7.txt,True,False
-0,3,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/7.txt,True,False
-0,3,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/7.txt,True,False
-0,3,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/7.txt,True,False
-0,3,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/7.txt,,
-0,3,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/7.txt,,
-0,4,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/8.txt,False,True
-0,4,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/8.txt,False,True
-0,4,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/8.txt,,
-0,4,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/8.txt,True,False
-0,4,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/8.txt,True,False
-0,4,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/8.txt,False,True
-0,4,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/8.txt,,
-0,4,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/9.txt,False,True
-0,4,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/9.txt,False,True
-0,4,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/9.txt,,
-0,4,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/9.txt,True,False
-0,4,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/9.txt,True,False
-0,4,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/9.txt,False,True
-0,4,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/9.txt,,
-0,4,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/10.txt,False,True
-0,4,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/10.txt,False,True
-0,4,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/10.txt,False,True
-0,4,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/10.txt,True,False
-0,4,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/10.txt,True,False
-0,4,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/10.txt,,
-0,4,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/10.txt,,
-0,4,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/11.txt,,
-0,4,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/11.txt,,
-0,4,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/11.txt,False,True
-0,4,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/11.txt,True,False
-0,4,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/11.txt,True,False
-0,4,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/11.txt,,
-0,4,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/11.txt,,
-0,5,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/12.txt,,
-0,5,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/12.txt,,
-0,5,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/12.txt,,
-0,5,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/12.txt,True,False
-0,5,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/12.txt,True,False
-0,5,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/12.txt,,
-0,5,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/12.txt,True,False
-0,5,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/13.txt,,
-0,5,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/13.txt,,
-0,5,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/13.txt,,
-0,5,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/13.txt,,
-0,5,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/13.txt,,
-0,5,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/13.txt,,
-0,5,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/13.txt,,
-0,5,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/14.txt,False,True
-0,5,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/14.txt,False,True
-0,5,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/14.txt,False,True
-0,5,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/14.txt,True,False
-0,5,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/14.txt,True,False
-0,5,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/14.txt,,
-0,5,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/14.txt,True,False
-0,5,[1],"[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/15.txt,,
-0,5,[1],"[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/15.txt,,
-0,5,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/15.txt,,
-0,5,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/15.txt,,
-0,5,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/15.txt,,
-0,5,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/15.txt,,
-0,5,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/15.txt,,
-0,8,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/16.txt,,
-0,8,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/16.txt,,
-0,8,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/16.txt,,
-0,8,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/16.txt,,
-0,8,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/16.txt,,
-0,8,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/16.txt,,
-0,8,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/16.txt,,
-0,8,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/17.txt,,
-0,8,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/17.txt,,
-0,8,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/17.txt,False,True
-0,8,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/17.txt,,
-0,8,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/17.txt,True,False
-0,8,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/17.txt,,
-0,8,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/17.txt,True,False
-0,8,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/18.txt,,
-0,8,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/18.txt,,
-0,8,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/18.txt,False,True
-0,8,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/18.txt,,
-0,8,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/18.txt,True,False
-0,8,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/18.txt,,
-0,8,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/18.txt,True,False
-0,8,[1],"[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/19.txt,,
-0,8,[1],"[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/19.txt,,
-0,8,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/19.txt,,
-0,8,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/19.txt,,
-0,8,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/19.txt,,
-0,8,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/19.txt,,
-0,8,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/19.txt,,
-0,10,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/20.txt,,
-0,10,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/20.txt,,
-0,10,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/20.txt,,
-0,10,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/20.txt,,
-0,10,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/20.txt,True,False
-0,10,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/20.txt,False,True
-0,10,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/20.txt,,
-0,10,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/21.txt,,
-0,10,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/21.txt,,
-0,10,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/21.txt,False,True
-0,10,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/21.txt,,
-0,10,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/21.txt,True,False
-0,10,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/21.txt,,
-0,10,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/21.txt,,
-0,10,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/22.txt,,
-0,10,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/22.txt,,
-0,10,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/22.txt,False,True
-0,10,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/22.txt,,
-0,10,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/22.txt,True,False
-0,10,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/22.txt,,
-0,10,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/22.txt,,
-0,10,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/23.txt,,
-0,10,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/23.txt,False,True
-0,10,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/23.txt,False,True
-0,10,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/23.txt,False,True
-0,10,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/23.txt,True,False
-0,10,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/23.txt,False,True
-0,10,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/23.txt,False,True
-1,2,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/24.txt,True,False
-1,2,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/24.txt,,
-1,2,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/24.txt,True,False
-1,2,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/24.txt,,
-1,2,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/24.txt,True,False
-1,2,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/24.txt,,
-1,2,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/24.txt,False,True
-1,2,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/25.txt,True,False
-1,2,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/25.txt,False,True
-1,2,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/25.txt,True,False
-1,2,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/25.txt,,
-1,2,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/25.txt,,
-1,2,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/25.txt,,
-1,2,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/25.txt,,
-1,2,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/26.txt,True,False
-1,2,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/26.txt,False,True
-1,2,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/26.txt,True,False
-1,2,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/26.txt,,
-1,2,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/26.txt,,
-1,2,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/26.txt,,
-1,2,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/26.txt,,
-1,2,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/27.txt,,
-1,2,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/27.txt,False,True
-1,2,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/27.txt,,
-1,2,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/27.txt,False,True
-1,2,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/27.txt,,
-1,2,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/27.txt,False,True
-1,2,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/27.txt,,
-1,3,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/28.txt,,
-1,3,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/28.txt,True,False
-1,3,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/28.txt,True,False
-1,3,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/28.txt,,
-1,3,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/28.txt,,
-1,3,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/28.txt,,
-1,3,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/28.txt,,
-1,3,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/29.txt,,
-1,3,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/29.txt,True,False
-1,3,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/29.txt,True,False
-1,3,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/29.txt,,
-1,3,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/29.txt,,
-1,3,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/29.txt,,
-1,3,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/29.txt,False,True
-1,3,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/30.txt,,
-1,3,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/30.txt,True,False
-1,3,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/30.txt,True,False
-1,3,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/30.txt,,
-1,3,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/30.txt,,
-1,3,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/30.txt,,
-1,3,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/30.txt,False,True
-1,3,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/31.txt,,
-1,3,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/31.txt,True,False
-1,3,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/31.txt,True,False
-1,3,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/31.txt,,
-1,3,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/31.txt,,
-1,3,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/31.txt,,
-1,3,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/31.txt,,
-1,4,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/32.txt,False,True
-1,4,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/32.txt,False,True
-1,4,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/32.txt,False,True
-1,4,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/32.txt,True,False
-1,4,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/32.txt,True,False
-1,4,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/32.txt,,
-1,4,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/32.txt,,
-1,4,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/33.txt,False,True
-1,4,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/33.txt,False,True
-1,4,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/33.txt,,
-1,4,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/33.txt,True,False
-1,4,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/33.txt,True,False
-1,4,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/33.txt,,
-1,4,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/33.txt,,
-1,4,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/34.txt,,
-1,4,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/34.txt,False,True
-1,4,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/34.txt,False,True
-1,4,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/34.txt,True,False
-1,4,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/34.txt,,
-1,4,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/34.txt,,
-1,4,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/34.txt,,
-1,4,[1],"[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/35.txt,False,True
-1,4,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/35.txt,False,True
-1,4,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/35.txt,False,True
-1,4,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/35.txt,True,False
-1,4,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/35.txt,True,False
-1,4,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/35.txt,,
-1,4,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/35.txt,,
-1,5,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/36.txt,,
-1,5,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/36.txt,,
-1,5,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/36.txt,,
-1,5,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/36.txt,True,False
-1,5,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/36.txt,True,False
-1,5,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/36.txt,,
-1,5,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/36.txt,,
-1,5,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/37.txt,,
-1,5,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/37.txt,,
-1,5,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/37.txt,,
-1,5,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/37.txt,,
-1,5,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/37.txt,,
-1,5,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/37.txt,,
-1,5,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/37.txt,,
-1,5,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/38.txt,,
-1,5,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/38.txt,,
-1,5,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/38.txt,,
-1,5,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/38.txt,True,False
-1,5,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/38.txt,True,False
-1,5,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/38.txt,,
-1,5,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/38.txt,False,True
-1,5,[1],"[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/39.txt,,
-1,5,[1],"[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/39.txt,,
-1,5,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/39.txt,,
-1,5,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/39.txt,,
-1,5,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/39.txt,,
-1,5,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/39.txt,,
-1,5,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/39.txt,,
-1,8,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/40.txt,,
-1,8,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/40.txt,,
-1,8,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/40.txt,,
-1,8,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/40.txt,,
-1,8,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/40.txt,True,False
-1,8,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/40.txt,,
-1,8,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/40.txt,True,False
-1,8,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/41.txt,,
-1,8,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/41.txt,,
-1,8,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/41.txt,,
-1,8,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/41.txt,,
-1,8,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/41.txt,True,False
-1,8,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/41.txt,,
-1,8,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/41.txt,,
-1,8,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/42.txt,,
-1,8,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/42.txt,,
-1,8,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/42.txt,,
-1,8,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/42.txt,,
-1,8,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/42.txt,True,False
-1,8,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/42.txt,,
-1,8,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/42.txt,,
-1,8,[1],"[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/43.txt,False,True
-1,8,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/43.txt,,
-1,8,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/43.txt,,
-1,8,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/43.txt,,
-1,8,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/43.txt,True,False
-1,8,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/43.txt,,
-1,8,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/43.txt,True,False
-1,10,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/44.txt,,
-1,10,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/44.txt,,
-1,10,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/44.txt,,
-1,10,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/44.txt,,
-1,10,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/44.txt,True,False
-1,10,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/44.txt,,
-1,10,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/44.txt,False,True
-1,10,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/45.txt,,
-1,10,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/45.txt,,
-1,10,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/45.txt,,
-1,10,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/45.txt,,
-1,10,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/45.txt,True,False
-1,10,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/45.txt,,
-1,10,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/45.txt,,
-1,10,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/46.txt,,
-1,10,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/46.txt,,
-1,10,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/46.txt,,
-1,10,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/46.txt,,
-1,10,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/46.txt,True,False
-1,10,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/46.txt,,
-1,10,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/46.txt,,
-1,10,[1],"[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/47.txt,False,True
-1,10,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/47.txt,,
-1,10,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/47.txt,,
-1,10,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/47.txt,,
-1,10,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/47.txt,True,False
-1,10,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/47.txt,,
-1,10,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/47.txt,False,True
-2,2,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/48.txt,,
-2,2,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/48.txt,,
-2,2,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/48.txt,True,False
-2,2,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/48.txt,,
-2,2,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/48.txt,,
-2,2,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/48.txt,,
-2,2,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/48.txt,True,False
-2,2,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/49.txt,,
-2,2,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/49.txt,,
-2,2,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/49.txt,True,False
-2,2,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/49.txt,,
-2,2,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/49.txt,,
-2,2,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/49.txt,,
-2,2,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/49.txt,True,False
-2,2,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/50.txt,,
-2,2,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/50.txt,,
-2,2,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/50.txt,True,False
-2,2,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/50.txt,,
-2,2,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/50.txt,,
-2,2,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/50.txt,,
-2,2,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/50.txt,True,False
-2,2,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/51.txt,,
-2,2,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/51.txt,,
-2,2,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/51.txt,True,False
-2,2,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/51.txt,,
-2,2,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/51.txt,,
-2,2,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/51.txt,,
-2,2,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/51.txt,True,False
-2,3,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/52.txt,,
-2,3,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/52.txt,True,False
-2,3,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/52.txt,True,False
-2,3,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/52.txt,,
-2,3,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/52.txt,True,False
-2,3,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/52.txt,,
-2,3,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/52.txt,,
-2,3,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/53.txt,,
-2,3,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/53.txt,True,False
-2,3,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/53.txt,True,False
-2,3,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/53.txt,,
-2,3,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/53.txt,True,False
-2,3,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/53.txt,,
-2,3,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/53.txt,,
-2,3,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/54.txt,,
-2,3,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/54.txt,True,False
-2,3,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/54.txt,True,False
-2,3,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/54.txt,,
-2,3,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/54.txt,True,False
-2,3,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/54.txt,False,True
-2,3,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/54.txt,,
-2,3,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/55.txt,,
-2,3,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/55.txt,,
-2,3,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/55.txt,True,False
-2,3,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/55.txt,,
-2,3,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/55.txt,,
-2,3,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/55.txt,,
-2,3,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/55.txt,,
-2,4,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/56.txt,,
-2,4,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/56.txt,False,True
-2,4,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/56.txt,,
-2,4,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/56.txt,True,False
-2,4,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/56.txt,,
-2,4,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/56.txt,,
-2,4,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/56.txt,,
-2,4,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/57.txt,,
-2,4,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/57.txt,False,True
-2,4,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/57.txt,,
-2,4,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/57.txt,True,False
-2,4,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/57.txt,,
-2,4,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/57.txt,,
-2,4,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/57.txt,,
-2,4,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/58.txt,,
-2,4,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/58.txt,,
-2,4,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/58.txt,,
-2,4,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/58.txt,True,False
-2,4,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/58.txt,True,False
-2,4,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/58.txt,,
-2,4,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/58.txt,,
-2,4,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/59.txt,,
-2,4,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/59.txt,False,True
-2,4,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/59.txt,False,True
-2,4,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/59.txt,True,False
-2,4,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/59.txt,True,False
-2,4,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/59.txt,,
-2,4,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/59.txt,,
-2,5,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/60.txt,False,True
-2,5,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/60.txt,False,True
-2,5,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/60.txt,False,True
-2,5,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/60.txt,True,False
-2,5,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/60.txt,True,False
-2,5,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/60.txt,,
-2,5,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/60.txt,,
-2,5,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/61.txt,,
-2,5,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/61.txt,,
-2,5,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/61.txt,,
-2,5,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/61.txt,,
-2,5,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/61.txt,,
-2,5,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/61.txt,,
-2,5,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/61.txt,,
-2,5,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/62.txt,,
-2,5,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/62.txt,,
-2,5,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/62.txt,,
-2,5,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/62.txt,True,False
-2,5,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/62.txt,True,False
-2,5,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/62.txt,,
-2,5,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/62.txt,,
-2,5,[1],"[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/63.txt,,
-2,5,[1],"[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/63.txt,,
-2,5,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/63.txt,,
-2,5,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/63.txt,,
-2,5,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/63.txt,,
-2,5,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/63.txt,,
-2,5,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/63.txt,,
-2,8,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/64.txt,False,True
-2,8,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/64.txt,False,True
-2,8,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/64.txt,False,True
-2,8,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/64.txt,False,True
-2,8,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/64.txt,,
-2,8,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/64.txt,False,True
-2,8,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/64.txt,,
-2,8,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/65.txt,,
-2,8,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/65.txt,,
-2,8,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/65.txt,,
-2,8,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/65.txt,,
-2,8,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/65.txt,True,False
-2,8,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/65.txt,,
-2,8,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/65.txt,True,False
-2,8,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/66.txt,,
-2,8,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/66.txt,,
-2,8,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/66.txt,,
-2,8,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/66.txt,,
-2,8,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/66.txt,True,False
-2,8,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/66.txt,,
-2,8,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/66.txt,,
-2,8,[1],"[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/67.txt,,
-2,8,[1],"[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/67.txt,,
-2,8,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/67.txt,,
-2,8,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/67.txt,,
-2,8,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/67.txt,,
-2,8,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/67.txt,,
-2,8,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/67.txt,,
-2,10,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/68.txt,False,True
-2,10,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/68.txt,,
-2,10,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/68.txt,,
-2,10,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/68.txt,False,True
-2,10,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/68.txt,,
-2,10,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/68.txt,,
-2,10,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/68.txt,,
-2,10,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/69.txt,,
-2,10,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/69.txt,False,True
-2,10,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/69.txt,,
-2,10,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/69.txt,,
-2,10,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/69.txt,,
-2,10,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/69.txt,,
-2,10,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/69.txt,True,False
-2,10,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/70.txt,,
-2,10,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/70.txt,,
-2,10,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/70.txt,,
-2,10,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/70.txt,,
-2,10,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/70.txt,True,False
-2,10,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/70.txt,,
-2,10,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/70.txt,True,False
-2,10,[1],"[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/71.txt,False,True
-2,10,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/71.txt,False,True
-2,10,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/71.txt,False,True
-2,10,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/71.txt,False,True
-2,10,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/71.txt,,
-2,10,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/71.txt,False,True
-2,10,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/71.txt,True,False
-3,2,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/72.txt,True,False
-3,2,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/72.txt,,
-3,2,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/72.txt,True,False
-3,2,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/72.txt,True,False
-3,2,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/72.txt,True,False
-3,2,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/72.txt,,
-3,2,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/72.txt,True,False
-3,2,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/73.txt,True,False
-3,2,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/73.txt,,
-3,2,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/73.txt,True,False
-3,2,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/73.txt,True,False
-3,2,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/73.txt,True,False
-3,2,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/73.txt,,
-3,2,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/73.txt,True,False
-3,2,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/74.txt,,
-3,2,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/74.txt,False,True
-3,2,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/74.txt,,
-3,2,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/74.txt,,
-3,2,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/74.txt,,
-3,2,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/74.txt,False,True
-3,2,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/74.txt,True,False
-3,2,[1],"[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/75.txt,True,False
-3,2,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/75.txt,,
-3,2,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/75.txt,True,False
-3,2,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/75.txt,True,False
-3,2,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/75.txt,True,False
-3,2,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/75.txt,,
-3,2,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/75.txt,True,False
-3,3,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/76.txt,,
-3,3,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/76.txt,,
-3,3,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/76.txt,,
-3,3,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/76.txt,,
-3,3,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/76.txt,True,False
-3,3,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/76.txt,,
-3,3,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/76.txt,True,False
-3,3,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/77.txt,False,True
-3,3,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/77.txt,False,True
-3,3,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/77.txt,False,True
-3,3,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/77.txt,False,True
-3,3,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/77.txt,,
-3,3,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/77.txt,False,True
-3,3,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/77.txt,True,False
-3,3,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/78.txt,False,True
-3,3,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/78.txt,False,True
-3,3,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/78.txt,False,True
-3,3,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/78.txt,False,True
-3,3,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/78.txt,,
-3,3,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/78.txt,False,True
-3,3,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/78.txt,,
-3,3,[1],"[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/79.txt,False,True
-3,3,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/79.txt,False,True
-3,3,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/79.txt,False,True
-3,3,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/79.txt,,
-3,3,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/79.txt,True,False
-3,3,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/79.txt,,
-3,3,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/79.txt,True,False
-3,4,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/80.txt,False,True
-3,4,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/80.txt,False,True
-3,4,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/80.txt,False,True
-3,4,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/80.txt,,
-3,4,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/80.txt,,
-3,4,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/80.txt,False,True
-3,4,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/80.txt,,
-3,4,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/81.txt,,
-3,4,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/81.txt,,
-3,4,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/81.txt,,
-3,4,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/81.txt,True,False
-3,4,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/81.txt,True,False
-3,4,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/81.txt,,
-3,4,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/81.txt,,
-3,4,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/82.txt,,
-3,4,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/82.txt,,
-3,4,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/82.txt,,
-3,4,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/82.txt,True,False
-3,4,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/82.txt,True,False
-3,4,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/82.txt,,
-3,4,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/82.txt,False,True
-3,4,[1],"[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/83.txt,False,None
-3,4,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/83.txt,False,None
-3,4,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/83.txt,False,None
-3,4,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/83.txt,True,None
-3,4,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/83.txt,True,None
-3,4,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/83.txt,False,None
-3,4,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/83.txt,False,None
-3,5,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/84.txt,,
-3,5,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/84.txt,,
-3,5,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/84.txt,,
-3,5,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/84.txt,,
-3,5,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/84.txt,,
-3,5,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/84.txt,,
-3,5,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/84.txt,,
-3,5,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/85.txt,,
-3,5,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/85.txt,,
-3,5,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/85.txt,,
-3,5,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/85.txt,,
-3,5,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/85.txt,,
-3,5,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/85.txt,,
-3,5,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/85.txt,,
-3,5,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/86.txt,,
-3,5,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/86.txt,,
-3,5,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/86.txt,,
-3,5,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/86.txt,True,False
-3,5,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/86.txt,True,False
-3,5,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/86.txt,,
-3,5,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/86.txt,,
-3,5,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/87.txt,,
-3,5,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/87.txt,,
-3,5,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/87.txt,,
-3,5,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/87.txt,,
-3,5,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/87.txt,True,False
-3,5,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/87.txt,,
-3,5,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/87.txt,,
-3,8,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/88.txt,False,None
-3,8,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/88.txt,False,None
-3,8,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/88.txt,False,None
-3,8,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/88.txt,False,None
-3,8,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/88.txt,True,None
-3,8,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/88.txt,False,None
-3,8,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/88.txt,True,None
-3,8,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/89.txt,,
-3,8,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/89.txt,,
-3,8,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/89.txt,,
-3,8,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/89.txt,,
-3,8,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/89.txt,True,False
-3,8,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/89.txt,,
-3,8,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/89.txt,True,False
-3,8,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/90.txt,,
-3,8,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/90.txt,,
-3,8,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/90.txt,,
-3,8,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/90.txt,,
-3,8,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/90.txt,True,False
-3,8,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/90.txt,,
-3,8,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/90.txt,,
-3,8,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/91.txt,,
-3,8,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/91.txt,,
-3,8,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/91.txt,,
-3,8,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/91.txt,,
-3,8,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/91.txt,True,False
-3,8,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/91.txt,,
-3,8,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/91.txt,,
-3,10,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/92.txt,,
-3,10,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/92.txt,,
-3,10,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/92.txt,,
-3,10,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/92.txt,,
-3,10,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/92.txt,True,False
-3,10,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/92.txt,,
-3,10,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/92.txt,True,False
-3,10,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/93.txt,,
-3,10,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/93.txt,,
-3,10,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/93.txt,,
-3,10,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/93.txt,,
-3,10,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/93.txt,True,False
-3,10,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/93.txt,,
-3,10,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/93.txt,True,False
-3,10,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/94.txt,,
-3,10,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/94.txt,,
-3,10,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/94.txt,,
-3,10,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/94.txt,,
-3,10,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/94.txt,True,False
-3,10,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/94.txt,,
-3,10,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/94.txt,True,False
-3,10,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/95.txt,,
-3,10,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/95.txt,,
-3,10,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/95.txt,,
-3,10,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/95.txt,,
-3,10,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/95.txt,True,False
-3,10,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/95.txt,,
-3,10,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/95.txt,True,False
-5,2,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/96.txt,True,False
-5,2,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/96.txt,True,False
-5,2,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/96.txt,True,False
-5,2,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/96.txt,,
-5,2,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/96.txt,True,False
-5,2,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/96.txt,,
-5,2,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/96.txt,,
-5,2,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/97.txt,,
-5,2,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/97.txt,,
-5,2,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/97.txt,,
-5,2,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/97.txt,,
-5,2,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/97.txt,,
-5,2,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/97.txt,False,True
-5,2,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/97.txt,,
-5,2,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/98.txt,True,False
-5,2,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/98.txt,True,False
-5,2,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/98.txt,True,False
-5,2,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/98.txt,,
-5,2,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/98.txt,True,False
-5,2,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/98.txt,,
-5,2,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/98.txt,,
-5,2,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/99.txt,,
-5,2,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/99.txt,,
-5,2,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/99.txt,,
-5,2,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/99.txt,,
-5,2,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/99.txt,,
-5,2,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/99.txt,False,True
-5,2,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/99.txt,False,True
-5,3,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/100.txt,,
-5,3,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/100.txt,True,False
-5,3,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/100.txt,True,False
-5,3,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/100.txt,,
-5,3,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/100.txt,True,False
-5,3,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/100.txt,,
-5,3,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/100.txt,True,False
-5,3,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/101.txt,False,True
-5,3,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/101.txt,,
-5,3,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/101.txt,,
-5,3,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/101.txt,False,True
-5,3,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/101.txt,,
-5,3,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/101.txt,False,True
-5,3,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/101.txt,True,False
-5,3,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/102.txt,False,True
-5,3,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/102.txt,,
-5,3,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/102.txt,,
-5,3,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/102.txt,False,True
-5,3,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/102.txt,,
-5,3,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/102.txt,False,True
-5,3,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/102.txt,,
-5,3,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/103.txt,,
-5,3,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/103.txt,True,False
-5,3,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/103.txt,True,False
-5,3,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/103.txt,,
-5,3,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/103.txt,,
-5,3,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/103.txt,False,True
-5,3,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/103.txt,True,False
-5,4,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/104.txt,,
-5,4,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/104.txt,False,True
-5,4,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/104.txt,True,False
-5,4,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/104.txt,True,False
-5,4,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/104.txt,True,False
-5,4,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/104.txt,False,True
-5,4,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/104.txt,True,False
-5,4,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/105.txt,,
-5,4,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/105.txt,False,True
-5,4,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/105.txt,,
-5,4,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/105.txt,,
-5,4,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/105.txt,,
-5,4,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/105.txt,False,True
-5,4,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/105.txt,,
-5,4,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/106.txt,,
-5,4,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/106.txt,,
-5,4,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/106.txt,,
-5,4,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/106.txt,,
-5,4,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/106.txt,,
-5,4,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/106.txt,,
-5,4,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/106.txt,,
-5,4,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/107.txt,,
-5,4,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/107.txt,False,True
-5,4,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/107.txt,True,False
-5,4,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/107.txt,True,False
-5,4,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/107.txt,True,False
-5,4,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/107.txt,False,True
-5,4,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/107.txt,True,False
-5,5,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/108.txt,,
-5,5,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/108.txt,,
-5,5,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/108.txt,,
-5,5,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/108.txt,,
-5,5,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/108.txt,,
-5,5,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/108.txt,,
-5,5,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/108.txt,,
-5,5,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/109.txt,False,True
-5,5,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/109.txt,False,True
-5,5,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/109.txt,False,True
-5,5,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/109.txt,,
-5,5,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/109.txt,,
-5,5,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/109.txt,False,True
-5,5,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/109.txt,,
-5,5,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/110.txt,,
-5,5,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/110.txt,,
-5,5,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/110.txt,,
-5,5,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/110.txt,,
-5,5,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/110.txt,True,False
-5,5,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/110.txt,,
-5,5,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/110.txt,True,False
-5,5,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/111.txt,,
-5,5,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/111.txt,,
-5,5,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/111.txt,,
-5,5,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/111.txt,True,False
-5,5,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/111.txt,True,False
-5,5,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/111.txt,,
-5,5,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/111.txt,True,False
-5,8,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/112.txt,False,True
-5,8,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/112.txt,False,True
-5,8,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/112.txt,False,True
-5,8,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/112.txt,False,True
-5,8,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/112.txt,,
-5,8,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/112.txt,False,True
-5,8,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/112.txt,,
-5,8,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/113.txt,,
-5,8,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/113.txt,False,True
-5,8,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/113.txt,False,True
-5,8,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/113.txt,False,True
-5,8,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/113.txt,,
-5,8,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/113.txt,False,True
-5,8,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/113.txt,False,True
-5,8,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/114.txt,,
-5,8,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/114.txt,False,True
-5,8,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/114.txt,False,True
-5,8,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/114.txt,False,True
-5,8,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/114.txt,,
-5,8,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/114.txt,False,True
-5,8,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/114.txt,False,True
-5,8,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/115.txt,,
-5,8,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/115.txt,,
-5,8,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/115.txt,,
-5,8,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/115.txt,,
-5,8,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/115.txt,True,False
-5,8,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/115.txt,,
-5,8,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/115.txt,,
-5,10,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/116.txt,,
-5,10,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/116.txt,,
-5,10,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/116.txt,,
-5,10,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/116.txt,False,True
-5,10,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/116.txt,True,False
-5,10,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/116.txt,,
-5,10,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/116.txt,True,False
-5,10,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/117.txt,,
-5,10,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/117.txt,,
-5,10,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/117.txt,,
-5,10,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/117.txt,False,True
-5,10,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/117.txt,True,False
-5,10,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/117.txt,,
-5,10,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/117.txt,True,False
-5,10,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/118.txt,,
-5,10,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/118.txt,,
-5,10,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/118.txt,,
-5,10,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/118.txt,,
-5,10,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/118.txt,,
-5,10,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/118.txt,,
-5,10,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/118.txt,,
-5,10,[1],"[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/119.txt,False,None
-5,10,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/119.txt,False,None
-5,10,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/119.txt,False,None
-5,10,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/119.txt,False,None
-5,10,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/119.txt,True,None
-5,10,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/119.txt,False,None
-5,10,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/119.txt,True,None
-100,2,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/120.txt,,
-100,2,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/120.txt,,
-100,2,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/120.txt,,
-100,2,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/120.txt,,
-100,2,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/120.txt,True,False
-100,2,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/120.txt,False,True
-100,2,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/120.txt,,
-100,2,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/121.txt,,
-100,2,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/121.txt,,
-100,2,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/121.txt,,
-100,2,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/121.txt,,
-100,2,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/121.txt,True,False
-100,2,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/121.txt,,
-100,2,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/121.txt,,
-100,2,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/122.txt,,
-100,2,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/122.txt,,
-100,2,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/122.txt,,
-100,2,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/122.txt,,
-100,2,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/122.txt,True,False
-100,2,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/122.txt,False,True
-100,2,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/122.txt,,
-100,2,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/123.txt,,
-100,2,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/123.txt,,
-100,2,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/123.txt,,
-100,2,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/123.txt,,
-100,2,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/123.txt,True,False
-100,2,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/123.txt,False,True
-100,2,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/123.txt,,
-100,3,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/124.txt,,
-100,3,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/124.txt,,
-100,3,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/124.txt,,
-100,3,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/124.txt,,
-100,3,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/124.txt,True,False
-100,3,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/124.txt,,
-100,3,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/124.txt,,
-100,3,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/125.txt,,
-100,3,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/125.txt,,
-100,3,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/125.txt,,
-100,3,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/125.txt,,
-100,3,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/125.txt,,
-100,3,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/125.txt,False,True
-100,3,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/125.txt,,
-100,3,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/126.txt,,
-100,3,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/126.txt,,
-100,3,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/126.txt,,
-100,3,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/126.txt,,
-100,3,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/126.txt,,
-100,3,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/126.txt,,
-100,3,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/126.txt,,
-100,3,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/127.txt,,
-100,3,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/127.txt,,
-100,3,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/127.txt,,
-100,3,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/127.txt,,
-100,3,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/127.txt,True,False
-100,3,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/127.txt,False,True
-100,3,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/127.txt,,
-100,4,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/128.txt,,
-100,4,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/128.txt,,
-100,4,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/128.txt,,
-100,4,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/128.txt,,
-100,4,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/128.txt,True,False
-100,4,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/128.txt,True,False
-100,4,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/128.txt,,
-100,4,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/129.txt,,
-100,4,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/129.txt,,
-100,4,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/129.txt,,
-100,4,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/129.txt,,
-100,4,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/129.txt,True,False
-100,4,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/129.txt,True,False
-100,4,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/129.txt,,
-100,4,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/130.txt,,
-100,4,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/130.txt,,
-100,4,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/130.txt,,
-100,4,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/130.txt,,
-100,4,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/130.txt,True,False
-100,4,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/130.txt,,
-100,4,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/130.txt,,
-100,4,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/131.txt,,
-100,4,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/131.txt,,
-100,4,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/131.txt,,
-100,4,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/131.txt,,
-100,4,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/131.txt,True,False
-100,4,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/131.txt,,
-100,4,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/131.txt,,
-100,5,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/132.txt,,
-100,5,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/132.txt,False,True
-100,5,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/132.txt,False,True
-100,5,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/132.txt,False,True
-100,5,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/132.txt,True,False
-100,5,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/132.txt,,
-100,5,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/132.txt,,
-100,5,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",e,💀,input/incoder/triples_sum_to/133.txt,,
-100,5,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",e,💀,input/incoder/triples_sum_to/133.txt,,
-100,5,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",e,💀,input/incoder/triples_sum_to/133.txt,,
-100,5,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",e,💀,input/incoder/triples_sum_to/133.txt,,
-100,5,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",e,💀,input/incoder/triples_sum_to/133.txt,,
-100,5,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",e,💀,input/incoder/triples_sum_to/133.txt,,
-100,5,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",e,💀,input/incoder/triples_sum_to/133.txt,,
-100,5,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/134.txt,,
-100,5,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/134.txt,,
-100,5,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/134.txt,,
-100,5,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/134.txt,,
-100,5,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/134.txt,True,False
-100,5,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/134.txt,True,False
-100,5,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/134.txt,,
-100,5,[1],"[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/135.txt,,
-100,5,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/135.txt,,
-100,5,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/135.txt,,
-100,5,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/135.txt,,
-100,5,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/135.txt,True,False
-100,5,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/135.txt,,
-100,5,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/135.txt,,
-100,8,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/136.txt,False,None
-100,8,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/136.txt,False,None
-100,8,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/136.txt,False,None
-100,8,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/136.txt,False,None
-100,8,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/136.txt,True,None
-100,8,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/136.txt,True,None
-100,8,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/136.txt,False,None
-100,8,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/137.txt,False,True
-100,8,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/137.txt,False,True
-100,8,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/137.txt,False,True
-100,8,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/137.txt,False,True
-100,8,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/137.txt,,
-100,8,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/137.txt,True,False
-100,8,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/137.txt,False,True
-100,8,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/138.txt,,
-100,8,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/138.txt,False,True
-100,8,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/138.txt,False,True
-100,8,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/138.txt,False,True
-100,8,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/138.txt,,
-100,8,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",p,✅,input/incoder/triples_sum_to/138.txt,,
-100,8,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/138.txt,False,True
-100,8,[1],"[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/139.txt,False,True
-100,8,[1],"[[2, 4, -5, 3, 9, 7]]",f,❌,input/incoder/triples_sum_to/139.txt,False,True
-100,8,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",f,❌,input/incoder/triples_sum_to/139.txt,False,True
-100,8,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",f,❌,input/incoder/triples_sum_to/139.txt,False,True
-100,8,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/139.txt,,
-100,8,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/139.txt,True,False
-100,8,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",f,❌,input/incoder/triples_sum_to/139.txt,False,True
-100,10,"[1, 3, 5, 0]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/140.txt,,
-100,10,"[1, 3, 5, 0]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/140.txt,,
-100,10,"[1, 3, 5, 0]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/140.txt,,
-100,10,"[1, 3, 5, 0]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/140.txt,,
-100,10,"[1, 3, 5, 0]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/140.txt,True,False
-100,10,"[1, 3, 5, 0]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/140.txt,False,True
-100,10,"[1, 3, 5, 0]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/140.txt,,
-100,10,"[1, 3, -2, 1, 5, 8]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/141.txt,,
-100,10,"[1, 3, -2, 1, 5, 8]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/141.txt,,
-100,10,"[1, 3, -2, 1, 5, 8]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/141.txt,,
-100,10,"[1, 3, -2, 1, 5, 8]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/141.txt,,
-100,10,"[1, 3, -2, 1, 5, 8]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/141.txt,True,False
-100,10,"[1, 3, -2, 1, 5, 8]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/141.txt,False,True
-100,10,"[1, 3, -2, 1, 5, 8]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/141.txt,,
-100,10,"[1, 2, -3, 7, 2, 7]","[[1, 3, 5, 0]]",p,✅,input/incoder/triples_sum_to/142.txt,,
-100,10,"[1, 2, -3, 7, 2, 7]","[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/142.txt,,
-100,10,"[1, 2, -3, 7, 2, 7]","[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/142.txt,,
-100,10,"[1, 2, -3, 7, 2, 7]","[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/142.txt,,
-100,10,"[1, 2, -3, 7, 2, 7]","[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",f,❌,input/incoder/triples_sum_to/142.txt,True,False
-100,10,"[1, 2, -3, 7, 2, 7]","[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/142.txt,False,True
-100,10,"[1, 2, -3, 7, 2, 7]","[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/142.txt,,
-100,10,[1],"[[1, 3, 5, 0]]",f,❌,input/incoder/triples_sum_to/143.txt,False,True
-100,10,[1],"[[2, 4, -5, 3, 9, 7]]",p,✅,input/incoder/triples_sum_to/143.txt,,
-100,10,[1],"[[-1, -2, 3, 4, 5, 7, 8]]",p,✅,input/incoder/triples_sum_to/143.txt,,
-100,10,[1],"[[-16, 1, 2, 3, 4, 5, 6, 8, 8]]",p,✅,input/incoder/triples_sum_to/143.txt,,
-100,10,[1],"[[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]]",p,✅,input/incoder/triples_sum_to/143.txt,,
-100,10,[1],"[[10, 10, 10, 10, 10, 10, 10, 10, 20, 30, 40]]",f,❌,input/incoder/triples_sum_to/143.txt,False,True
-100,10,[1],"[[-9, -8, -7, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2]]",p,✅,input/incoder/triples_sum_to/143.txt,,
+sum_num,count,example_input,result_emojis,result,model_input,failed_inputs,errors
+0,2,"[1, 3, 5, 0]",✅✅❌✅✅✅✅,ppfpppp,input/incoder/triples_sum_to/0.txt,"[[""False"", ""True""]]",[]
+0,2,"[1, 3, -2, 1, 5, 8]",✅✅❌✅✅✅✅,ppfpppp,input/incoder/triples_sum_to/1.txt,"[[""False"", ""True""]]",[]
+0,2,"[1, 2, -3, 7, 2, 7]",✅✅❌✅✅✅✅,ppfpppp,input/incoder/triples_sum_to/2.txt,"[[""False"", ""True""]]",[]
+0,2,[1],✅✅❌✅✅✅✅,ppfpppp,input/incoder/triples_sum_to/3.txt,"[[""False"", ""True""]]",[]
+0,3,"[1, 3, 5, 0]",✅❌❌❌❌✅✅,pffffpp,input/incoder/triples_sum_to/4.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+0,3,"[1, 3, -2, 1, 5, 8]",✅❌❌❌❌✅✅,pffffpp,input/incoder/triples_sum_to/5.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+0,3,"[1, 2, -3, 7, 2, 7]",✅❌❌❌❌✅✅,pffffpp,input/incoder/triples_sum_to/6.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+0,3,[1],✅❌❌❌❌✅✅,pffffpp,input/incoder/triples_sum_to/7.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+0,4,"[1, 3, 5, 0]",❌❌✅❌❌❌✅,ffpfffp,input/incoder/triples_sum_to/8.txt,"[[""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""True"", ""False""], [""False"", ""True""]]",[]
+0,4,"[1, 3, -2, 1, 5, 8]",❌❌✅❌❌❌✅,ffpfffp,input/incoder/triples_sum_to/9.txt,"[[""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""True"", ""False""], [""False"", ""True""]]",[]
+0,4,"[1, 2, -3, 7, 2, 7]",❌❌❌❌❌✅✅,fffffpp,input/incoder/triples_sum_to/10.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+0,4,[1],✅✅❌❌❌✅✅,ppfffpp,input/incoder/triples_sum_to/11.txt,"[[""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+0,5,"[1, 3, 5, 0]",✅✅✅❌❌✅❌,pppffpf,input/incoder/triples_sum_to/12.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+0,5,"[1, 3, -2, 1, 5, 8]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/13.txt,[],"[""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined""]"
+0,5,"[1, 2, -3, 7, 2, 7]",❌❌❌❌❌✅❌,fffffpf,input/incoder/triples_sum_to/14.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+0,5,[1],💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/15.txt,[],"[""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output""]"
+0,8,"[1, 3, 5, 0]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/16.txt,[],"[""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output""]"
+0,8,"[1, 3, -2, 1, 5, 8]",✅✅❌✅❌✅❌,ppfpfpf,input/incoder/triples_sum_to/17.txt,"[[""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+0,8,"[1, 2, -3, 7, 2, 7]",✅✅❌✅❌✅❌,ppfpfpf,input/incoder/triples_sum_to/18.txt,"[[""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+0,8,[1],💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/19.txt,[],"[""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output""]"
+0,10,"[1, 3, 5, 0]",✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/20.txt,"[[""True"", ""False""], [""False"", ""True""]]",[]
+0,10,"[1, 3, -2, 1, 5, 8]",✅✅❌✅❌✅✅,ppfpfpp,input/incoder/triples_sum_to/21.txt,"[[""False"", ""True""], [""True"", ""False""]]",[]
+0,10,"[1, 2, -3, 7, 2, 7]",✅✅❌✅❌✅✅,ppfpfpp,input/incoder/triples_sum_to/22.txt,"[[""False"", ""True""], [""True"", ""False""]]",[]
+0,10,[1],✅❌❌❌❌❌❌,pffffff,input/incoder/triples_sum_to/23.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""False"", ""True""], [""False"", ""True""]]",[]
+1,2,"[1, 3, 5, 0]",❌✅❌✅❌✅❌,fpfpfpf,input/incoder/triples_sum_to/24.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""False"", ""True""]]",[]
+1,2,"[1, 3, -2, 1, 5, 8]",❌❌❌✅✅✅✅,fffpppp,input/incoder/triples_sum_to/25.txt,"[[""True"", ""False""], [""False"", ""True""], [""True"", ""False""]]",[]
+1,2,"[1, 2, -3, 7, 2, 7]",❌❌❌✅✅✅✅,fffpppp,input/incoder/triples_sum_to/26.txt,"[[""True"", ""False""], [""False"", ""True""], [""True"", ""False""]]",[]
+1,2,[1],✅❌✅❌✅❌✅,pfpfpfp,input/incoder/triples_sum_to/27.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""]]",[]
+1,3,"[1, 3, 5, 0]",✅❌❌✅✅✅✅,pffpppp,input/incoder/triples_sum_to/28.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+1,3,"[1, 3, -2, 1, 5, 8]",✅❌❌✅✅✅❌,pffpppf,input/incoder/triples_sum_to/29.txt,"[[""True"", ""False""], [""True"", ""False""], [""False"", ""True""]]",[]
+1,3,"[1, 2, -3, 7, 2, 7]",✅❌❌✅✅✅❌,pffpppf,input/incoder/triples_sum_to/30.txt,"[[""True"", ""False""], [""True"", ""False""], [""False"", ""True""]]",[]
+1,3,[1],✅❌❌✅✅✅✅,pffpppp,input/incoder/triples_sum_to/31.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+1,4,"[1, 3, 5, 0]",❌❌❌❌❌✅✅,fffffpp,input/incoder/triples_sum_to/32.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+1,4,"[1, 3, -2, 1, 5, 8]",❌❌✅❌❌✅✅,ffpffpp,input/incoder/triples_sum_to/33.txt,"[[""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+1,4,"[1, 2, -3, 7, 2, 7]",✅❌❌❌✅✅✅,pfffppp,input/incoder/triples_sum_to/34.txt,"[[""False"", ""True""], [""False"", ""True""], [""True"", ""False""]]",[]
+1,4,[1],❌❌❌❌❌✅✅,fffffpp,input/incoder/triples_sum_to/35.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+1,5,"[1, 3, 5, 0]",✅✅✅❌❌✅✅,pppffpp,input/incoder/triples_sum_to/36.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+1,5,"[1, 3, -2, 1, 5, 8]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/37.txt,[],"[""name 'quintuples_sum_to_one_helper' is not defined"", ""name 'quintuples_sum_to_one_helper' is not defined"", ""name 'quintuples_sum_to_one_helper' is not defined"", ""name 'quintuples_sum_to_one_helper' is not defined"", ""name 'quintuples_sum_to_one_helper' is not defined"", ""name 'quintuples_sum_to_one_helper' is not defined"", ""name 'quintuples_sum_to_one_helper' is not defined""]"
+1,5,"[1, 2, -3, 7, 2, 7]",✅✅✅❌❌✅❌,pppffpf,input/incoder/triples_sum_to/38.txt,"[[""True"", ""False""], [""True"", ""False""], [""False"", ""True""]]",[]
+1,5,[1],💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/39.txt,[],"[""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined""]"
+1,8,"[1, 3, 5, 0]",✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/40.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+1,8,"[1, 3, -2, 1, 5, 8]",✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/41.txt,"[[""True"", ""False""]]",[]
+1,8,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/42.txt,"[[""True"", ""False""]]",[]
+1,8,[1],❌✅✅✅❌✅❌,fpppfpf,input/incoder/triples_sum_to/43.txt,"[[""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+1,10,"[1, 3, 5, 0]",✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/44.txt,"[[""True"", ""False""], [""False"", ""True""]]",[]
+1,10,"[1, 3, -2, 1, 5, 8]",✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/45.txt,"[[""True"", ""False""]]",[]
+1,10,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/46.txt,"[[""True"", ""False""]]",[]
+1,10,[1],❌✅✅✅❌✅❌,fpppfpf,input/incoder/triples_sum_to/47.txt,"[[""False"", ""True""], [""True"", ""False""], [""False"", ""True""]]",[]
+2,2,"[1, 3, 5, 0]",✅✅❌✅✅✅❌,ppfpppf,input/incoder/triples_sum_to/48.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+2,2,"[1, 3, -2, 1, 5, 8]",✅✅❌✅✅✅❌,ppfpppf,input/incoder/triples_sum_to/49.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+2,2,"[1, 2, -3, 7, 2, 7]",✅✅❌✅✅✅❌,ppfpppf,input/incoder/triples_sum_to/50.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+2,2,[1],✅✅❌✅✅✅❌,ppfpppf,input/incoder/triples_sum_to/51.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+2,3,"[1, 3, 5, 0]",✅❌❌✅❌✅✅,pffpfpp,input/incoder/triples_sum_to/52.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+2,3,"[1, 3, -2, 1, 5, 8]",✅❌❌✅❌✅✅,pffpfpp,input/incoder/triples_sum_to/53.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+2,3,"[1, 2, -3, 7, 2, 7]",✅❌❌✅❌❌✅,pffpffp,input/incoder/triples_sum_to/54.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""False"", ""True""]]",[]
+2,3,[1],✅✅❌✅✅✅✅,ppfpppp,input/incoder/triples_sum_to/55.txt,"[[""True"", ""False""]]",[]
+2,4,"[1, 3, 5, 0]",✅❌✅❌✅✅✅,pfpfppp,input/incoder/triples_sum_to/56.txt,"[[""False"", ""True""], [""True"", ""False""]]",[]
+2,4,"[1, 3, -2, 1, 5, 8]",✅❌✅❌✅✅✅,pfpfppp,input/incoder/triples_sum_to/57.txt,"[[""False"", ""True""], [""True"", ""False""]]",[]
+2,4,"[1, 2, -3, 7, 2, 7]",✅✅✅❌❌✅✅,pppffpp,input/incoder/triples_sum_to/58.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+2,4,[1],✅❌❌❌❌✅✅,pffffpp,input/incoder/triples_sum_to/59.txt,"[[""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+2,5,"[1, 3, 5, 0]",❌❌❌❌❌✅✅,fffffpp,input/incoder/triples_sum_to/60.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+2,5,"[1, 3, -2, 1, 5, 8]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/61.txt,[],"[""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined""]"
+2,5,"[1, 2, -3, 7, 2, 7]",✅✅✅❌❌✅✅,pppffpp,input/incoder/triples_sum_to/62.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+2,5,[1],💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/63.txt,[],"[""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined""]"
+2,8,"[1, 3, 5, 0]",❌❌❌❌✅❌✅,ffffpfp,input/incoder/triples_sum_to/64.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""]]",[]
+2,8,"[1, 3, -2, 1, 5, 8]",✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/65.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+2,8,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/66.txt,"[[""True"", ""False""]]",[]
+2,8,[1],💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/67.txt,[],"[""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output""]"
+2,10,"[1, 3, 5, 0]",❌✅✅❌✅✅✅,fppfppp,input/incoder/triples_sum_to/68.txt,"[[""False"", ""True""], [""False"", ""True""]]",[]
+2,10,"[1, 3, -2, 1, 5, 8]",✅❌✅✅✅✅❌,pfppppf,input/incoder/triples_sum_to/69.txt,"[[""False"", ""True""], [""True"", ""False""]]",[]
+2,10,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/70.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+2,10,[1],❌❌❌❌✅❌❌,ffffpff,input/incoder/triples_sum_to/71.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""]]",[]
+3,2,"[1, 3, 5, 0]",❌✅❌❌❌✅❌,fpfffpf,input/incoder/triples_sum_to/72.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+3,2,"[1, 3, -2, 1, 5, 8]",❌✅❌❌❌✅❌,fpfffpf,input/incoder/triples_sum_to/73.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+3,2,"[1, 2, -3, 7, 2, 7]",✅❌✅✅✅❌❌,pfpppff,input/incoder/triples_sum_to/74.txt,"[[""False"", ""True""], [""False"", ""True""], [""True"", ""False""]]",[]
+3,2,[1],❌✅❌❌❌✅❌,fpfffpf,input/incoder/triples_sum_to/75.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+3,3,"[1, 3, 5, 0]",✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/76.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+3,3,"[1, 3, -2, 1, 5, 8]",❌❌❌❌✅❌❌,ffffpff,input/incoder/triples_sum_to/77.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""]]",[]
+3,3,"[1, 2, -3, 7, 2, 7]",❌❌❌❌✅❌✅,ffffpfp,input/incoder/triples_sum_to/78.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""]]",[]
+3,3,[1],❌❌❌✅❌✅❌,fffpfpf,input/incoder/triples_sum_to/79.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+3,4,"[1, 3, 5, 0]",❌❌❌✅✅❌✅,fffppfp,input/incoder/triples_sum_to/80.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""]]",[]
+3,4,"[1, 3, -2, 1, 5, 8]",✅✅✅❌❌✅✅,pppffpp,input/incoder/triples_sum_to/81.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+3,4,"[1, 2, -3, 7, 2, 7]",✅✅✅❌❌✅❌,pppffpf,input/incoder/triples_sum_to/82.txt,"[[""True"", ""False""], [""True"", ""False""], [""False"", ""True""]]",[]
+3,4,[1],❌❌❌❌❌❌❌,fffffff,input/incoder/triples_sum_to/83.txt,"[[""False"", ""None""], [""False"", ""None""], [""False"", ""None""], [""True"", ""None""], [""True"", ""None""], [""False"", ""None""], [""False"", ""None""]]",[]
+3,5,"[1, 3, 5, 0]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/84.txt,[],"[""'int' object is not iterable"", ""'int' object is not iterable"", ""'int' object is not iterable"", ""'int' object is not iterable"", ""'int' object is not iterable"", ""'int' object is not iterable"", ""'int' object is not iterable""]"
+3,5,"[1, 3, -2, 1, 5, 8]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/85.txt,[],"[""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined"", ""name 'quintuples_sum' is not defined""]"
+3,5,"[1, 2, -3, 7, 2, 7]",✅✅✅❌❌✅✅,pppffpp,input/incoder/triples_sum_to/86.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+3,5,[1],✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/87.txt,"[[""True"", ""False""]]",[]
+3,8,"[1, 3, 5, 0]",❌❌❌❌❌❌❌,fffffff,input/incoder/triples_sum_to/88.txt,"[[""False"", ""None""], [""False"", ""None""], [""False"", ""None""], [""False"", ""None""], [""True"", ""None""], [""False"", ""None""], [""True"", ""None""]]",[]
+3,8,"[1, 3, -2, 1, 5, 8]",✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/89.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+3,8,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/90.txt,"[[""True"", ""False""]]",[]
+3,8,[1],✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/91.txt,"[[""True"", ""False""]]",[]
+3,10,"[1, 3, 5, 0]",✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/92.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+3,10,"[1, 3, -2, 1, 5, 8]",✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/93.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+3,10,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/94.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+3,10,[1],✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/95.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+5,2,"[1, 3, 5, 0]",❌❌❌✅❌✅✅,fffpfpp,input/incoder/triples_sum_to/96.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+5,2,"[1, 3, -2, 1, 5, 8]",✅✅✅✅✅❌✅,pppppfp,input/incoder/triples_sum_to/97.txt,"[[""False"", ""True""]]",[]
+5,2,"[1, 2, -3, 7, 2, 7]",❌❌❌✅❌✅✅,fffpfpp,input/incoder/triples_sum_to/98.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+5,2,[1],✅✅✅✅✅❌❌,pppppff,input/incoder/triples_sum_to/99.txt,"[[""False"", ""True""], [""False"", ""True""]]",[]
+5,3,"[1, 3, 5, 0]",✅❌❌✅❌✅❌,pffpfpf,input/incoder/triples_sum_to/100.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+5,3,"[1, 3, -2, 1, 5, 8]",❌✅✅❌✅❌❌,fppfpff,input/incoder/triples_sum_to/101.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""]]",[]
+5,3,"[1, 2, -3, 7, 2, 7]",❌✅✅❌✅❌✅,fppfpfp,input/incoder/triples_sum_to/102.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""]]",[]
+5,3,[1],✅❌❌✅✅❌❌,pffppff,input/incoder/triples_sum_to/103.txt,"[[""True"", ""False""], [""True"", ""False""], [""False"", ""True""], [""True"", ""False""]]",[]
+5,4,"[1, 3, 5, 0]",✅❌❌❌❌❌❌,pffffff,input/incoder/triples_sum_to/104.txt,"[[""False"", ""True""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""False"", ""True""], [""True"", ""False""]]",[]
+5,4,"[1, 3, -2, 1, 5, 8]",✅❌✅✅✅❌✅,pfpppfp,input/incoder/triples_sum_to/105.txt,"[[""False"", ""True""], [""False"", ""True""]]",[]
+5,4,"[1, 2, -3, 7, 2, 7]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/106.txt,[],"[""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output""]"
+5,4,[1],✅❌❌❌❌❌❌,pffffff,input/incoder/triples_sum_to/107.txt,"[[""False"", ""True""], [""True"", ""False""], [""True"", ""False""], [""True"", ""False""], [""False"", ""True""], [""True"", ""False""]]",[]
+5,5,"[1, 3, 5, 0]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/108.txt,[],"[""name 'quintuples_sum_to_' is not defined"", ""name 'quintuples_sum_to_' is not defined"", ""name 'quintuples_sum_to_' is not defined"", ""name 'quintuples_sum_to_' is not defined"", ""name 'quintuples_sum_to_' is not defined"", ""name 'quintuples_sum_to_' is not defined"", ""name 'quintuples_sum_to_' is not defined""]"
+5,5,"[1, 3, -2, 1, 5, 8]",❌❌❌✅✅❌✅,fffppfp,input/incoder/triples_sum_to/109.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""]]",[]
+5,5,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌✅❌,ppppfpf,input/incoder/triples_sum_to/110.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+5,5,[1],✅✅✅❌❌✅❌,pppffpf,input/incoder/triples_sum_to/111.txt,"[[""True"", ""False""], [""True"", ""False""], [""True"", ""False""]]",[]
+5,8,"[1, 3, 5, 0]",❌❌❌❌✅❌✅,ffffpfp,input/incoder/triples_sum_to/112.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""]]",[]
+5,8,"[1, 3, -2, 1, 5, 8]",✅❌❌❌✅❌❌,pfffpff,input/incoder/triples_sum_to/113.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""]]",[]
+5,8,"[1, 2, -3, 7, 2, 7]",✅❌❌❌✅❌❌,pfffpff,input/incoder/triples_sum_to/114.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""]]",[]
+5,8,[1],✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/115.txt,"[[""True"", ""False""]]",[]
+5,10,"[1, 3, 5, 0]",✅✅✅❌❌✅❌,pppffpf,input/incoder/triples_sum_to/116.txt,"[[""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+5,10,"[1, 3, -2, 1, 5, 8]",✅✅✅❌❌✅❌,pppffpf,input/incoder/triples_sum_to/117.txt,"[[""False"", ""True""], [""True"", ""False""], [""True"", ""False""]]",[]
+5,10,"[1, 2, -3, 7, 2, 7]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/118.txt,[],"[""'int' object is not iterable"", ""'int' object is not iterable"", ""'int' object is not iterable"", ""'int' object is not iterable"", ""'int' object is not iterable"", ""'int' object is not iterable"", ""'int' object is not iterable""]"
+5,10,[1],❌❌❌❌❌❌❌,fffffff,input/incoder/triples_sum_to/119.txt,"[[""False"", ""None""], [""False"", ""None""], [""False"", ""None""], [""False"", ""None""], [""True"", ""None""], [""False"", ""None""], [""True"", ""None""]]",[]
+100,2,"[1, 3, 5, 0]",✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/120.txt,"[[""True"", ""False""], [""False"", ""True""]]",[]
+100,2,"[1, 3, -2, 1, 5, 8]",✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/121.txt,"[[""True"", ""False""]]",[]
+100,2,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/122.txt,"[[""True"", ""False""], [""False"", ""True""]]",[]
+100,2,[1],✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/123.txt,"[[""True"", ""False""], [""False"", ""True""]]",[]
+100,3,"[1, 3, 5, 0]",✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/124.txt,"[[""True"", ""False""]]",[]
+100,3,"[1, 3, -2, 1, 5, 8]",✅✅✅✅✅❌✅,pppppfp,input/incoder/triples_sum_to/125.txt,"[[""False"", ""True""]]",[]
+100,3,"[1, 2, -3, 7, 2, 7]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/126.txt,[],"[""name 'triples_sum_to_hundred_helper' is not defined"", ""name 'triples_sum_to_hundred_helper' is not defined"", ""name 'triples_sum_to_hundred_helper' is not defined"", ""name 'triples_sum_to_hundred_helper' is not defined"", ""name 'triples_sum_to_hundred_helper' is not defined"", ""name 'triples_sum_to_hundred_helper' is not defined"", ""name 'triples_sum_to_hundred_helper' is not defined""]"
+100,3,[1],✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/127.txt,"[[""True"", ""False""], [""False"", ""True""]]",[]
+100,4,"[1, 3, 5, 0]",✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/128.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+100,4,"[1, 3, -2, 1, 5, 8]",✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/129.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+100,4,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/130.txt,"[[""True"", ""False""]]",[]
+100,4,[1],✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/131.txt,"[[""True"", ""False""]]",[]
+100,5,"[1, 3, 5, 0]",✅❌❌❌❌✅✅,pffffpp,input/incoder/triples_sum_to/132.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""]]",[]
+100,5,"[1, 3, -2, 1, 5, 8]",💀💀💀💀💀💀💀,eeeeeee,input/incoder/triples_sum_to/133.txt,[],"[""name 'quintuples_sum_to_hundred_helper' is not defined"", ""name 'quintuples_sum_to_hundred_helper' is not defined"", ""name 'quintuples_sum_to_hundred_helper' is not defined"", ""name 'quintuples_sum_to_hundred_helper' is not defined"", ""name 'quintuples_sum_to_hundred_helper' is not defined"", ""name 'quintuples_sum_to_hundred_helper' is not defined"", ""name 'quintuples_sum_to_hundred_helper' is not defined""]"
+100,5,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/134.txt,"[[""True"", ""False""], [""True"", ""False""]]",[]
+100,5,[1],✅✅✅✅❌✅✅,ppppfpp,input/incoder/triples_sum_to/135.txt,"[[""True"", ""False""]]",[]
+100,8,"[1, 3, 5, 0]",❌❌❌❌❌❌❌,fffffff,input/incoder/triples_sum_to/136.txt,"[[""False"", ""None""], [""False"", ""None""], [""False"", ""None""], [""False"", ""None""], [""True"", ""None""], [""True"", ""None""], [""False"", ""None""]]",[]
+100,8,"[1, 3, -2, 1, 5, 8]",❌❌❌❌✅❌❌,ffffpff,input/incoder/triples_sum_to/137.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""False"", ""True""]]",[]
+100,8,"[1, 2, -3, 7, 2, 7]",✅❌❌❌✅✅❌,pfffppf,input/incoder/triples_sum_to/138.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""]]",[]
+100,8,[1],❌❌❌❌✅❌❌,ffffpff,input/incoder/triples_sum_to/139.txt,"[[""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""False"", ""True""], [""True"", ""False""], [""False"", ""True""]]",[]
+100,10,"[1, 3, 5, 0]",✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/140.txt,"[[""True"", ""False""], [""False"", ""True""]]",[]
+100,10,"[1, 3, -2, 1, 5, 8]",✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/141.txt,"[[""True"", ""False""], [""False"", ""True""]]",[]
+100,10,"[1, 2, -3, 7, 2, 7]",✅✅✅✅❌❌✅,ppppffp,input/incoder/triples_sum_to/142.txt,"[[""True"", ""False""], [""False"", ""True""]]",[]
+100,10,[1],❌✅✅✅✅❌✅,fppppfp,input/incoder/triples_sum_to/143.txt,"[[""False"", ""True""], [""False"", ""True""]]",[]

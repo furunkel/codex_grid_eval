@@ -52,8 +52,8 @@ def oracle_(input, inclusive, delim):
 
     return DELIM_MAP[delim].join([str(x) for x in range(n)])
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'inclusive', 'delim')))
+def oracle(vars, input):
+    return oracle_(input=input, **dict((k, vars[k]) for k in ('inclusive', 'delim')))
 
 def render(**vars):
     vars['inclusive_str'] = 'inclusive' if vars['inclusive'] else 'exclusive'

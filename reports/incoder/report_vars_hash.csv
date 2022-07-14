@@ -1,9 +1,6 @@
 var,val,success_rate
 hash_type,blake2b,0.25
 hash_type,blake2s,0.2916666666666667
-input,Hello world,0.37037037037037035
-input,A B C,0.37037037037037035
-input,password,0.37037037037037035
 hash_type,sha384,0.375
 example_input,Hallo welt,0.3888888888888889
 transform,dash,0.44907407407407407
@@ -20,4 +17,3 @@ hash_type,md5,0.7361111111111112
 hash_type,sha224,0.7361111111111112
 example_input,md5,0.75
 hash_type,sha256,0.7638888888888888
-input,,0.9629629629629629

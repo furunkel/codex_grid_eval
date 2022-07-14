@@ -1,8 +1,6 @@
 var,val,success_rate
 order,shortest_first,0.6666666666666666
 op,suffixes,0.6666666666666666
-input,asdfgh,0.75
-input,WWW,0.75
 example_input,abc,0.8333333333333334
 example_input,xyz,0.8333333333333334
 example_input,suffix,0.8333333333333334
@@ -11,4 +9,3 @@ example_input,reverse the result!!!,0.8333333333333334
 example_input,12345678,0.8333333333333334
 op,prefixes,1.0
 order,longest_first,1.0
-input,,1.0

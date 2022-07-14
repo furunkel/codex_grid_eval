@@ -71,8 +71,8 @@ def oracle_(input, double_class, triple_class):
             result += c
     return result
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'double_class', 'triple_class')))
+def oracle(vars, input):
+    return oracle_(input=input, **dict((k, vars[k]) for k in ('double_class', 'triple_class')))
 
 def render(**vars):
     return TEXT.format(**vars)

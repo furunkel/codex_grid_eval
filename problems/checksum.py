@@ -35,8 +35,8 @@ def oracle_(input, mod, offset_char):
     sm += OFFSET_CHAR_TABLE[offset_char]
     return chr(sm)
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'mod', 'offset_char')))
+def oracle(vars, input):
+    return oracle_(input=input, **dict((k, vars[k]) for k in ('mod', 'offset_char')))
 
 def render(**vars):
     return TEXT.format(**vars)

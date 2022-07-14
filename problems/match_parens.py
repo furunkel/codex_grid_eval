@@ -84,8 +84,8 @@ def oracle_(input, open):
     s2 = input[1] + input[0]
     return 'Yes' if check(s1) or check(s2) else 'No'
 
-def oracle(vars):
-    return oracle_(vars['input'][0], vars['open'])
+def oracle(vars, input):
+    return oracle_(input[0], vars['open'])
 
 def render(**vars):
     vars['name'] = NAMES[vars['open']]

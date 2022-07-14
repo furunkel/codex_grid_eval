@@ -1,55 +1,19 @@
-offset_char,mod,input,result,result_emojis,model_input
-the space character,64,123,p,✅,input/codex/checksum/0.txt
-the space character,64,abc,p,✅,input/codex/checksum/0.txt
-the space character,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/0.txt
-the space character,128,123,p,✅,input/codex/checksum/1.txt
-the space character,128,abc,p,✅,input/codex/checksum/1.txt
-the space character,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/1.txt
-the space character,256,123,p,✅,input/codex/checksum/2.txt
-the space character,256,abc,p,✅,input/codex/checksum/2.txt
-the space character,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/2.txt
-the newline character,64,123,p,✅,input/codex/checksum/3.txt
-the newline character,64,abc,p,✅,input/codex/checksum/3.txt
-the newline character,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/3.txt
-the newline character,128,123,p,✅,input/codex/checksum/4.txt
-the newline character,128,abc,p,✅,input/codex/checksum/4.txt
-the newline character,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/4.txt
-the newline character,256,123,p,✅,input/codex/checksum/5.txt
-the newline character,256,abc,p,✅,input/codex/checksum/5.txt
-the newline character,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/5.txt
-uppercase X,64,123,p,✅,input/codex/checksum/6.txt
-uppercase X,64,abc,p,✅,input/codex/checksum/6.txt
-uppercase X,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/6.txt
-uppercase X,128,123,p,✅,input/codex/checksum/7.txt
-uppercase X,128,abc,p,✅,input/codex/checksum/7.txt
-uppercase X,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/7.txt
-uppercase X,256,123,p,✅,input/codex/checksum/8.txt
-uppercase X,256,abc,p,✅,input/codex/checksum/8.txt
-uppercase X,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/8.txt
-lowercase u,64,123,p,✅,input/codex/checksum/9.txt
-lowercase u,64,abc,p,✅,input/codex/checksum/9.txt
-lowercase u,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/9.txt
-lowercase u,128,123,p,✅,input/codex/checksum/10.txt
-lowercase u,128,abc,p,✅,input/codex/checksum/10.txt
-lowercase u,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/10.txt
-lowercase u,256,123,p,✅,input/codex/checksum/11.txt
-lowercase u,256,abc,p,✅,input/codex/checksum/11.txt
-lowercase u,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/11.txt
-an exclamation mark,64,123,p,✅,input/codex/checksum/12.txt
-an exclamation mark,64,abc,p,✅,input/codex/checksum/12.txt
-an exclamation mark,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/12.txt
-an exclamation mark,128,123,p,✅,input/codex/checksum/13.txt
-an exclamation mark,128,abc,p,✅,input/codex/checksum/13.txt
-an exclamation mark,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/13.txt
-an exclamation mark,256,123,p,✅,input/codex/checksum/14.txt
-an exclamation mark,256,abc,p,✅,input/codex/checksum/14.txt
-an exclamation mark,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/14.txt
-a question mark,64,123,p,✅,input/codex/checksum/15.txt
-a question mark,64,abc,p,✅,input/codex/checksum/15.txt
-a question mark,64,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/15.txt
-a question mark,128,123,p,✅,input/codex/checksum/16.txt
-a question mark,128,abc,p,✅,input/codex/checksum/16.txt
-a question mark,128,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/16.txt
-a question mark,256,123,p,✅,input/codex/checksum/17.txt
-a question mark,256,abc,p,✅,input/codex/checksum/17.txt
-a question mark,256,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",p,✅,input/codex/checksum/17.txt
+offset_char,mod,result_emojis,result,model_input,failed_inputs,errors
+the space character,64,✅✅✅,ppp,input/codex/checksum/0.txt,[],[]
+the space character,128,✅✅✅,ppp,input/codex/checksum/1.txt,[],[]
+the space character,256,✅✅✅,ppp,input/codex/checksum/2.txt,[],[]
+the newline character,64,✅✅✅,ppp,input/codex/checksum/3.txt,[],[]
+the newline character,128,✅✅✅,ppp,input/codex/checksum/4.txt,[],[]
+the newline character,256,✅✅✅,ppp,input/codex/checksum/5.txt,[],[]
+uppercase X,64,✅✅✅,ppp,input/codex/checksum/6.txt,[],[]
+uppercase X,128,✅✅✅,ppp,input/codex/checksum/7.txt,[],[]
+uppercase X,256,✅✅✅,ppp,input/codex/checksum/8.txt,[],[]
+lowercase u,64,✅✅✅,ppp,input/codex/checksum/9.txt,[],[]
+lowercase u,128,✅✅✅,ppp,input/codex/checksum/10.txt,[],[]
+lowercase u,256,✅✅✅,ppp,input/codex/checksum/11.txt,[],[]
+an exclamation mark,64,✅✅✅,ppp,input/codex/checksum/12.txt,[],[]
+an exclamation mark,128,✅✅✅,ppp,input/codex/checksum/13.txt,[],[]
+an exclamation mark,256,✅✅✅,ppp,input/codex/checksum/14.txt,[],[]
+a question mark,64,✅✅✅,ppp,input/codex/checksum/15.txt,[],[]
+a question mark,128,✅✅✅,ppp,input/codex/checksum/16.txt,[],[]
+a question mark,256,✅✅✅,ppp,input/codex/checksum/17.txt,[],[]

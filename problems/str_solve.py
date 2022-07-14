@@ -101,8 +101,8 @@ def oracle_(input, case_cond, reverse_cond):
     return s
 
 
-def oracle(vars):
-    return oracle_(vars['input'], vars['case_cond'], vars['reverse_cond'])
+def oracle(vars, input):
+    return oracle_(input, vars['case_cond'], vars['reverse_cond'])
 
 def render(**vars):
     for i, e in enumerate(EXAMPLES):

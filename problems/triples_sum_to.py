@@ -95,8 +95,8 @@ def oracle_(input, count, sum_num):
 
     return False
 
-def oracle(vars):
-    return oracle_(vars['input'][0], vars['count'], vars['sum_num'])
+def oracle(vars, input):
+    return oracle_(input[0], vars['count'], vars['sum_num'])
 
 def render(**vars):
     vars['sum_text'] = SUM_TO_TEXT[vars['sum_num']]

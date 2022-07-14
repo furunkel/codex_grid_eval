@@ -1,73 +1,25 @@
-op,example_input,order,input,result,result_emojis,model_input,expected,actual
-prefixes,abc,longest_first,,p,✅,input/incoder/suffix_prefix/0.txt,,
-prefixes,abc,longest_first,asdfgh,f,❌,input/incoder/suffix_prefix/0.txt,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']","['sdfgh', 'dfgh', 'fgh', 'gh', 'h', '']"
-prefixes,abc,longest_first,WWW,f,❌,input/incoder/suffix_prefix/0.txt,"['WWW', 'WW', 'W']","['WW', 'W', '']"
-prefixes,abc,shortest_first,,p,✅,input/incoder/suffix_prefix/1.txt,,
-prefixes,abc,shortest_first,asdfgh,e,💀,input/incoder/suffix_prefix/1.txt,,
-prefixes,abc,shortest_first,WWW,e,💀,input/incoder/suffix_prefix/1.txt,,
-prefixes,xyz,longest_first,,p,✅,input/incoder/suffix_prefix/2.txt,,
-prefixes,xyz,longest_first,asdfgh,e,💀,input/incoder/suffix_prefix/2.txt,,
-prefixes,xyz,longest_first,WWW,e,💀,input/incoder/suffix_prefix/2.txt,,
-prefixes,xyz,shortest_first,,p,✅,input/incoder/suffix_prefix/3.txt,,
-prefixes,xyz,shortest_first,asdfgh,e,💀,input/incoder/suffix_prefix/3.txt,,
-prefixes,xyz,shortest_first,WWW,e,💀,input/incoder/suffix_prefix/3.txt,,
-prefixes,suffix,longest_first,,p,✅,input/incoder/suffix_prefix/4.txt,,
-prefixes,suffix,longest_first,asdfgh,e,💀,input/incoder/suffix_prefix/4.txt,,
-prefixes,suffix,longest_first,WWW,e,💀,input/incoder/suffix_prefix/4.txt,,
-prefixes,suffix,shortest_first,,p,✅,input/incoder/suffix_prefix/5.txt,,
-prefixes,suffix,shortest_first,asdfgh,e,💀,input/incoder/suffix_prefix/5.txt,,
-prefixes,suffix,shortest_first,WWW,e,💀,input/incoder/suffix_prefix/5.txt,,
-prefixes,prefix,longest_first,,e,💀,input/incoder/suffix_prefix/6.txt,,
-prefixes,prefix,longest_first,asdfgh,e,💀,input/incoder/suffix_prefix/6.txt,,
-prefixes,prefix,longest_first,WWW,e,💀,input/incoder/suffix_prefix/6.txt,,
-prefixes,prefix,shortest_first,,e,💀,input/incoder/suffix_prefix/7.txt,,
-prefixes,prefix,shortest_first,asdfgh,e,💀,input/incoder/suffix_prefix/7.txt,,
-prefixes,prefix,shortest_first,WWW,e,💀,input/incoder/suffix_prefix/7.txt,,
-prefixes,reverse the result!!!,longest_first,,p,✅,input/incoder/suffix_prefix/8.txt,,
-prefixes,reverse the result!!!,longest_first,asdfgh,e,💀,input/incoder/suffix_prefix/8.txt,,
-prefixes,reverse the result!!!,longest_first,WWW,e,💀,input/incoder/suffix_prefix/8.txt,,
-prefixes,reverse the result!!!,shortest_first,,f,❌,input/incoder/suffix_prefix/9.txt,[],['']
-prefixes,reverse the result!!!,shortest_first,asdfgh,f,❌,input/incoder/suffix_prefix/9.txt,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']",['asdfgh']
-prefixes,reverse the result!!!,shortest_first,WWW,f,❌,input/incoder/suffix_prefix/9.txt,"['W', 'WW', 'WWW']",['WWW']
-prefixes,12345678,longest_first,,p,✅,input/incoder/suffix_prefix/10.txt,,
-prefixes,12345678,longest_first,asdfgh,e,💀,input/incoder/suffix_prefix/10.txt,,
-prefixes,12345678,longest_first,WWW,e,💀,input/incoder/suffix_prefix/10.txt,,
-prefixes,12345678,shortest_first,,f,❌,input/incoder/suffix_prefix/11.txt,[],['']
-prefixes,12345678,shortest_first,asdfgh,f,❌,input/incoder/suffix_prefix/11.txt,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']","['', 'a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']"
-prefixes,12345678,shortest_first,WWW,f,❌,input/incoder/suffix_prefix/11.txt,"['W', 'WW', 'WWW']","['', 'W', 'WW', 'WWW']"
-suffixes,abc,longest_first,,e,💀,input/incoder/suffix_prefix/12.txt,,
-suffixes,abc,longest_first,asdfgh,e,💀,input/incoder/suffix_prefix/12.txt,,
-suffixes,abc,longest_first,WWW,e,💀,input/incoder/suffix_prefix/12.txt,,
-suffixes,abc,shortest_first,,e,💀,input/incoder/suffix_prefix/13.txt,,
-suffixes,abc,shortest_first,asdfgh,e,💀,input/incoder/suffix_prefix/13.txt,,
-suffixes,abc,shortest_first,WWW,e,💀,input/incoder/suffix_prefix/13.txt,,
-suffixes,xyz,longest_first,,e,💀,input/incoder/suffix_prefix/14.txt,,
-suffixes,xyz,longest_first,asdfgh,e,💀,input/incoder/suffix_prefix/14.txt,,
-suffixes,xyz,longest_first,WWW,e,💀,input/incoder/suffix_prefix/14.txt,,
-suffixes,xyz,shortest_first,,e,💀,input/incoder/suffix_prefix/15.txt,,
-suffixes,xyz,shortest_first,asdfgh,e,💀,input/incoder/suffix_prefix/15.txt,,
-suffixes,xyz,shortest_first,WWW,e,💀,input/incoder/suffix_prefix/15.txt,,
-suffixes,suffix,longest_first,,e,💀,input/incoder/suffix_prefix/16.txt,,
-suffixes,suffix,longest_first,asdfgh,e,💀,input/incoder/suffix_prefix/16.txt,,
-suffixes,suffix,longest_first,WWW,e,💀,input/incoder/suffix_prefix/16.txt,,
-suffixes,suffix,shortest_first,,e,💀,input/incoder/suffix_prefix/17.txt,,
-suffixes,suffix,shortest_first,asdfgh,e,💀,input/incoder/suffix_prefix/17.txt,,
-suffixes,suffix,shortest_first,WWW,e,💀,input/incoder/suffix_prefix/17.txt,,
-suffixes,prefix,longest_first,,e,💀,input/incoder/suffix_prefix/18.txt,,
-suffixes,prefix,longest_first,asdfgh,e,💀,input/incoder/suffix_prefix/18.txt,,
-suffixes,prefix,longest_first,WWW,e,💀,input/incoder/suffix_prefix/18.txt,,
-suffixes,prefix,shortest_first,,p,✅,input/incoder/suffix_prefix/19.txt,,
-suffixes,prefix,shortest_first,asdfgh,f,❌,input/incoder/suffix_prefix/19.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']","['h', 'g', 'f', 'd', 's', 'a']"
-suffixes,prefix,shortest_first,WWW,f,❌,input/incoder/suffix_prefix/19.txt,"['W', 'WW', 'WWW']","['W', 'W', 'W']"
-suffixes,reverse the result!!!,longest_first,,f,❌,input/incoder/suffix_prefix/20.txt,[],['']
-suffixes,reverse the result!!!,longest_first,asdfgh,f,❌,input/incoder/suffix_prefix/20.txt,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']",['asdfgh']
-suffixes,reverse the result!!!,longest_first,WWW,f,❌,input/incoder/suffix_prefix/20.txt,"['WWW', 'WW', 'W']",['WWW']
-suffixes,reverse the result!!!,shortest_first,,e,💀,input/incoder/suffix_prefix/21.txt,,
-suffixes,reverse the result!!!,shortest_first,asdfgh,e,💀,input/incoder/suffix_prefix/21.txt,,
-suffixes,reverse the result!!!,shortest_first,WWW,e,💀,input/incoder/suffix_prefix/21.txt,,
-suffixes,12345678,longest_first,,p,✅,input/incoder/suffix_prefix/22.txt,,
-suffixes,12345678,longest_first,asdfgh,p,✅,input/incoder/suffix_prefix/22.txt,,
-suffixes,12345678,longest_first,WWW,p,✅,input/incoder/suffix_prefix/22.txt,,
-suffixes,12345678,shortest_first,,p,✅,input/incoder/suffix_prefix/23.txt,,
-suffixes,12345678,shortest_first,asdfgh,f,❌,input/incoder/suffix_prefix/23.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']","['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']"
-suffixes,12345678,shortest_first,WWW,f,❌,input/incoder/suffix_prefix/23.txt,"['W', 'WW', 'WWW']","['WWW', 'WW', 'W']"
+op,example_input,order,result_emojis,result,model_input,failed_inputs,errors
+prefixes,abc,longest_first,✅❌❌,pff,input/incoder/suffix_prefix/0.txt,"[[""['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']"", ""['sdfgh', 'dfgh', 'fgh', 'gh', 'h', '']""], [""['WWW', 'WW', 'W']"", ""['WW', 'W', '']""]]",[]
+prefixes,abc,shortest_first,✅💀💀,pee,input/incoder/suffix_prefix/1.txt,[],"[""maximum recursion depth exceeded while calling a Python object"", ""maximum recursion depth exceeded while calling a Python object""]"
+prefixes,xyz,longest_first,✅💀💀,pee,input/incoder/suffix_prefix/2.txt,[],"[""maximum recursion depth exceeded while calling a Python object"", ""maximum recursion depth exceeded while calling a Python object""]"
+prefixes,xyz,shortest_first,✅💀💀,pee,input/incoder/suffix_prefix/3.txt,[],"[""maximum recursion depth exceeded while calling a Python object"", ""maximum recursion depth exceeded while calling a Python object""]"
+prefixes,suffix,longest_first,✅💀💀,pee,input/incoder/suffix_prefix/4.txt,[],"[""maximum recursion depth exceeded while calling a Python object"", ""maximum recursion depth exceeded while calling a Python object""]"
+prefixes,suffix,shortest_first,✅💀💀,pee,input/incoder/suffix_prefix/5.txt,[],"[""'str' object has no attribute 'ascii_lowercase'"", ""'str' object has no attribute 'ascii_lowercase'""]"
+prefixes,prefix,longest_first,💀💀💀,eee,input/incoder/suffix_prefix/6.txt,[],"[""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output""]"
+prefixes,prefix,shortest_first,💀💀💀,eee,input/incoder/suffix_prefix/7.txt,[],"[""name 'itertools' is not defined"", ""name 'itertools' is not defined"", ""name 'itertools' is not defined""]"
+prefixes,reverse the result!!!,longest_first,✅💀💀,pee,input/incoder/suffix_prefix/8.txt,[],"[""slice indices must be integers or None or have an __index__ method"", ""slice indices must be integers or None or have an __index__ method""]"
+prefixes,reverse the result!!!,shortest_first,❌❌❌,fff,input/incoder/suffix_prefix/9.txt,"[[""[]"", ""['']""], [""['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']"", ""['asdfgh']""], [""['W', 'WW', 'WWW']"", ""['WWW']""]]",[]
+prefixes,12345678,longest_first,✅💀💀,pee,input/incoder/suffix_prefix/10.txt,[],"[""maximum recursion depth exceeded while calling a Python object"", ""maximum recursion depth exceeded while calling a Python object""]"
+prefixes,12345678,shortest_first,❌❌❌,fff,input/incoder/suffix_prefix/11.txt,"[[""[]"", ""['']""], [""['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']"", ""['', 'a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']""], [""['W', 'WW', 'WWW']"", ""['', 'W', 'WW', 'WWW']""]]",[]
+suffixes,abc,longest_first,💀💀💀,eee,input/incoder/suffix_prefix/12.txt,[],"[""name 'itertools' is not defined"", ""name 'itertools' is not defined"", ""name 'itertools' is not defined""]"
+suffixes,abc,shortest_first,💀💀💀,eee,input/incoder/suffix_prefix/13.txt,[],"[""name 'itertools' is not defined"", ""name 'itertools' is not defined"", ""name 'itertools' is not defined""]"
+suffixes,xyz,longest_first,💀💀💀,eee,input/incoder/suffix_prefix/14.txt,[],"[""name 'itertools' is not defined"", ""name 'itertools' is not defined"", ""name 'itertools' is not defined""]"
+suffixes,xyz,shortest_first,💀💀💀,eee,input/incoder/suffix_prefix/15.txt,[],"[""name 'itertools' is not defined"", ""name 'itertools' is not defined"", ""name 'itertools' is not defined""]"
+suffixes,suffix,longest_first,💀💀💀,eee,input/incoder/suffix_prefix/16.txt,[],"[""name 'suffixes_iter' is not defined"", ""name 'suffixes_iter' is not defined"", ""name 'suffixes_iter' is not defined""]"
+suffixes,suffix,shortest_first,💀💀💀,eee,input/incoder/suffix_prefix/17.txt,[],"[""maximum recursion depth exceeded while calling a Python object"", ""maximum recursion depth exceeded while calling a Python object"", ""maximum recursion depth exceeded while calling a Python object""]"
+suffixes,prefix,longest_first,💀💀💀,eee,input/incoder/suffix_prefix/18.txt,[],"[""maximum recursion depth exceeded while calling a Python object"", ""maximum recursion depth exceeded while calling a Python object"", ""maximum recursion depth exceeded while calling a Python object""]"
+suffixes,prefix,shortest_first,✅❌❌,pff,input/incoder/suffix_prefix/19.txt,"[[""['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']"", ""['h', 'g', 'f', 'd', 's', 'a']""], [""['W', 'WW', 'WWW']"", ""['W', 'W', 'W']""]]",[]
+suffixes,reverse the result!!!,longest_first,❌❌❌,fff,input/incoder/suffix_prefix/20.txt,"[[""[]"", ""['']""], [""['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']"", ""['asdfgh']""], [""['WWW', 'WW', 'W']"", ""['WWW']""]]",[]
+suffixes,reverse the result!!!,shortest_first,💀💀💀,eee,input/incoder/suffix_prefix/21.txt,[],"[""name 'itertools' is not defined"", ""name 'itertools' is not defined"", ""name 'itertools' is not defined""]"
+suffixes,12345678,longest_first,✅✅✅,ppp,input/incoder/suffix_prefix/22.txt,[],[]
+suffixes,12345678,shortest_first,✅❌❌,pff,input/incoder/suffix_prefix/23.txt,"[[""['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']"", ""['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']""], [""['W', 'WW', 'WWW']"", ""['WWW', 'WW', 'W']""]]",[]

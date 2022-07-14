@@ -1,25 +1,13 @@
-type,example_input,input,expected,actual,result,result_emojis,model_input
-string,"['a', 3.14, 5]","[[4, {}, [], 23.2, 9, 'adasd']]",['adasd'],"['4', '23.2', '9', 'adasd']",f,❌,input/codeparrot/filter_types/0.txt
-string,"['a', 3.14, 5]","[[3, 'c', 3, 3, 'a', 'b']]","['c', 'a', 'b']","['3', 'c', '3', '3', 'a', 'b']",f,❌,input/codeparrot/filter_types/0.txt
-string,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[4, {}, [], 23.2, 9, 'adasd']]",['adasd'],"['4', '23.2', '9', 'adasd']",f,❌,input/codeparrot/filter_types/1.txt
-string,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[3, 'c', 3, 3, 'a', 'b']]","['c', 'a', 'b']","['3', 'c', '3', '3', 'a', 'b']",f,❌,input/codeparrot/filter_types/1.txt
-integer,"['a', 3.14, 5]","[[4, {}, [], 23.2, 9, 'adasd']]","[4, 9]",[4],f,❌,input/codeparrot/filter_types/2.txt
-integer,"['a', 3.14, 5]","[[3, 'c', 3, 3, 'a', 'b']]",,,p,✅,input/codeparrot/filter_types/2.txt
-integer,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[4, {}, [], 23.2, 9, 'adasd']]","[4, 9]",[4],f,❌,input/codeparrot/filter_types/3.txt
-integer,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[3, 'c', 3, 3, 'a', 'b']]",,,p,✅,input/codeparrot/filter_types/3.txt
-float,"['a', 3.14, 5]","[[4, {}, [], 23.2, 9, 'adasd']]",,,e,💀,input/codeparrot/filter_types/4.txt
-float,"['a', 3.14, 5]","[[3, 'c', 3, 3, 'a', 'b']]",,,e,💀,input/codeparrot/filter_types/4.txt
-float,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[4, {}, [], 23.2, 9, 'adasd']]",,,e,💀,input/codeparrot/filter_types/5.txt
-float,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[3, 'c', 3, 3, 'a', 'b']]",,,e,💀,input/codeparrot/filter_types/5.txt
-dictionary,"['a', 3.14, 5]","[[4, {}, [], 23.2, 9, 'adasd']]",[{}],"[{'name': 4, 'value': 4, 'type': 'dictionarys'}, {'name': {}, 'value': {}, 'type': 'dictionarys'}, {'name': [], 'value': [], 'type': 'dictionarys'}, {'name': 23.2, 'value': 23.2, 'type': 'dictionarys'}, {'name': 9, 'value': 9, 'type': 'dictionarys'}, {'name': 'adasd', 'value': 'adasd', 'type': 'dictionarys'}]",f,❌,input/codeparrot/filter_types/6.txt
-dictionary,"['a', 3.14, 5]","[[3, 'c', 3, 3, 'a', 'b']]",[],"[{'name': 3, 'value': 3, 'type': 'dictionarys'}, {'name': 'c', 'value': 'c', 'type': 'dictionarys'}, {'name': 3, 'value': 3, 'type': 'dictionarys'}, {'name': 3, 'value': 3, 'type': 'dictionarys'}, {'name': 'a', 'value': 'a', 'type': 'dictionarys'}, {'name': 'b', 'value': 'b', 'type': 'dictionarys'}]",f,❌,input/codeparrot/filter_types/6.txt
-dictionary,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[4, {}, [], 23.2, 9, 'adasd']]",,,e,💀,input/codeparrot/filter_types/7.txt
-dictionary,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[3, 'c', 3, 3, 'a', 'b']]",,,e,💀,input/codeparrot/filter_types/7.txt
-list,"['a', 3.14, 5]","[[4, {}, [], 23.2, 9, 'adasd']]",[[]],"[4, 23.2, 9, 'adasd']",f,❌,input/codeparrot/filter_types/8.txt
-list,"['a', 3.14, 5]","[[3, 'c', 3, 3, 'a', 'b']]",[],"[3, 'c', 3, 3, 'a', 'b']",f,❌,input/codeparrot/filter_types/8.txt
-list,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[4, {}, [], 23.2, 9, 'adasd']]",[[]],"[4, 23.2, 9, 'adasd']",f,❌,input/codeparrot/filter_types/9.txt
-list,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[3, 'c', 3, 3, 'a', 'b']]",[],"[3, 'c', 3, 3, 'a', 'b']",f,❌,input/codeparrot/filter_types/9.txt
-tuple,"['a', 3.14, 5]","[[4, {}, [], 23.2, 9, 'adasd']]",,,e,💀,input/codeparrot/filter_types/10.txt
-tuple,"['a', 3.14, 5]","[[3, 'c', 3, 3, 'a', 'b']]",,,e,💀,input/codeparrot/filter_types/10.txt
-tuple,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[4, {}, [], 23.2, 9, 'adasd']]",,,e,💀,input/codeparrot/filter_types/11.txt
-tuple,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]","[[3, 'c', 3, 3, 'a', 'b']]",,,e,💀,input/codeparrot/filter_types/11.txt
+type,example_input,result_emojis,result,model_input,failed_inputs,errors
+string,"['a', 3.14, 5]",❌❌,ff,input/codeparrot/filter_types/0.txt,"[[""['adasd']"", ""['4', '23.2', '9', 'adasd']""], [""['c', 'a', 'b']"", ""['3', 'c', '3', '3', 'a', 'b']""]]",[]
+string,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]",❌❌,ff,input/codeparrot/filter_types/1.txt,"[[""['adasd']"", ""['4', '23.2', '9', 'adasd']""], [""['c', 'a', 'b']"", ""['3', 'c', '3', '3', 'a', 'b']""]]",[]
+integer,"['a', 3.14, 5]",❌✅,fp,input/codeparrot/filter_types/2.txt,"[[""[4, 9]"", ""[4]""]]",[]
+integer,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]",❌✅,fp,input/codeparrot/filter_types/3.txt,"[[""[4, 9]"", ""[4]""]]",[]
+float,"['a', 3.14, 5]",💀💀,ee,input/codeparrot/filter_types/4.txt,[],"[""float() argument must be a string or a number, not 'dict'"", ""could not convert string to float: 'c'""]"
+float,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]",💀💀,ee,input/codeparrot/filter_types/5.txt,[],"[""float() argument must be a string or a number, not 'dict'"", ""could not convert string to float: 'c'""]"
+dictionary,"['a', 3.14, 5]",❌❌,ff,input/codeparrot/filter_types/6.txt,"[[""[{}]"", ""[{'name': 4, 'value': 4, 'type': 'dictionarys'}, {'name': {}, 'value': {}, 'type': 'dictionarys'}, {'name': [], 'value': [], 'type': 'dictionarys'}, {'name': 23.2, 'value': 23.2, 'type': 'dictionarys'}, {'name': 9, 'value': 9, 'type': 'dictionarys'}, {'name': 'adasd', 'value': 'adasd', 'type': 'dictionarys'}]""], [""[]"", ""[{'name': 3, 'value': 3, 'type': 'dictionarys'}, {'name': 'c', 'value': 'c', 'type': 'dictionarys'}, {'name': 3, 'value': 3, 'type': 'dictionarys'}, {'name': 3, 'value': 3, 'type': 'dictionarys'}, {'name': 'a', 'value': 'a', 'type': 'dictionarys'}, {'name': 'b', 'value': 'b', 'type': 'dictionarys'}]""]]",[]
+dictionary,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]",💀💀,ee,input/codeparrot/filter_types/7.txt,[],"[""'int' object is not subscriptable"", ""'int' object is not subscriptable""]"
+list,"['a', 3.14, 5]",❌❌,ff,input/codeparrot/filter_types/8.txt,"[[""[[]]"", ""[4, 23.2, 9, 'adasd']""], [""[]"", ""[3, 'c', 3, 3, 'a', 'b']""]]",[]
+list,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]",❌❌,ff,input/codeparrot/filter_types/9.txt,"[[""[[]]"", ""[4, 23.2, 9, 'adasd']""], [""[]"", ""[3, 'c', 3, 3, 'a', 'b']""]]",[]
+tuple,"['a', 3.14, 5]",💀💀,ee,input/codeparrot/filter_types/10.txt,[],"[""'int' object is not iterable"", ""'int' object is not iterable""]"
+tuple,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]",💀💀,ee,input/codeparrot/filter_types/11.txt,[],"[""'int' object is not iterable"", ""'int' object is not iterable""]"

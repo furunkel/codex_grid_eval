@@ -1,29 +1,8 @@
-op,input,expected,actual,result,result_emojis,model_input
-xor,"['111000', '101010']",'010010','0',f,❌,input/incoder/string_bitop/0.txt
-xor,"['1', '1']",'0','1',f,❌,input/incoder/string_bitop/0.txt
-xor,"['0', '0']",'0','1',f,❌,input/incoder/string_bitop/0.txt
-xor,"['0101', '0000']",'0101','0',f,❌,input/incoder/string_bitop/0.txt
-and,"['111000', '101010']",'101000','1100010',f,❌,input/incoder/string_bitop/1.txt
-and,"['1', '1']",'1','10',f,❌,input/incoder/string_bitop/1.txt
-and,"['0', '0']",,,p,✅,input/incoder/string_bitop/1.txt
-and,"['0101', '0000']",'0000','101',f,❌,input/incoder/string_bitop/1.txt
-nand,"['111000', '101010']",'010111','101000',f,❌,input/incoder/string_bitop/2.txt
-nand,"['1', '1']",'0','1',f,❌,input/incoder/string_bitop/2.txt
-nand,"['0', '0']",'1','0',f,❌,input/incoder/string_bitop/2.txt
-nand,"['0101', '0000']",'1111','0',f,❌,input/incoder/string_bitop/2.txt
-or,"['111000', '101010']",'111010','1100010',f,❌,input/incoder/string_bitop/3.txt
-or,"['1', '1']",'1','10',f,❌,input/incoder/string_bitop/3.txt
-or,"['0', '0']",,,p,✅,input/incoder/string_bitop/3.txt
-or,"['0101', '0000']",'0101','101',f,❌,input/incoder/string_bitop/3.txt
-nor,"['111000', '101010']",'000101','10010',f,❌,input/incoder/string_bitop/4.txt
-nor,"['1', '1']",,,p,✅,input/incoder/string_bitop/4.txt
-nor,"['0', '0']",'1','0',f,❌,input/incoder/string_bitop/4.txt
-nor,"['0101', '0000']",'1010','101',f,❌,input/incoder/string_bitop/4.txt
-xnor,"['111000', '101010']",'101101','\x00\x01\x00\x00\x01\x00',f,❌,input/incoder/string_bitop/5.txt
-xnor,"['1', '1']",'1','\x00',f,❌,input/incoder/string_bitop/5.txt
-xnor,"['0', '0']",'1','\x00',f,❌,input/incoder/string_bitop/5.txt
-xnor,"['0101', '0000']",'1010','\x00\x01\x00\x01',f,❌,input/incoder/string_bitop/5.txt
-xand,"['111000', '101010']",'101101','10010',f,❌,input/incoder/string_bitop/6.txt
-xand,"['1', '1']",'1','0',f,❌,input/incoder/string_bitop/6.txt
-xand,"['0', '0']",'1','0',f,❌,input/incoder/string_bitop/6.txt
-xand,"['0101', '0000']",'1010','101',f,❌,input/incoder/string_bitop/6.txt
+op,result_emojis,result,model_input,failed_inputs,errors
+xor,❌❌❌❌,ffff,input/incoder/string_bitop/0.txt,"[[""'010010'"", ""'0'""], [""'0'"", ""'1'""], [""'0'"", ""'1'""], [""'0101'"", ""'0'""]]",[]
+and,❌❌✅❌,ffpf,input/incoder/string_bitop/1.txt,"[[""'101000'"", ""'1100010'""], [""'1'"", ""'10'""], [""'0000'"", ""'101'""]]",[]
+nand,❌❌❌❌,ffff,input/incoder/string_bitop/2.txt,"[[""'010111'"", ""'101000'""], [""'0'"", ""'1'""], [""'1'"", ""'0'""], [""'1111'"", ""'0'""]]",[]
+or,❌❌✅❌,ffpf,input/incoder/string_bitop/3.txt,"[[""'111010'"", ""'1100010'""], [""'1'"", ""'10'""], [""'0101'"", ""'101'""]]",[]
+nor,❌✅❌❌,fpff,input/incoder/string_bitop/4.txt,"[[""'000101'"", ""'10010'""], [""'1'"", ""'0'""], [""'1010'"", ""'101'""]]",[]
+xnor,❌❌❌❌,ffff,input/incoder/string_bitop/5.txt,"[[""'101101'"", ""'\\x00\\x01\\x00\\x00\\x01\\x00'""], [""'1'"", ""'\\x00'""], [""'1'"", ""'\\x00'""], [""'1010'"", ""'\\x00\\x01\\x00\\x01'""]]",[]
+xand,❌❌❌❌,ffff,input/incoder/string_bitop/6.txt,"[[""'101101'"", ""'10010'""], [""'1'"", ""'0'""], [""'1'"", ""'0'""], [""'1010'"", ""'101'""]]",[]

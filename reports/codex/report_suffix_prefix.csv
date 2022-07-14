@@ -1,73 +1,25 @@
-op,example_input,order,input,result,result_emojis,model_output,model_input,expected,actual
-prefixes,abc,longest_first,,p,✅,outputs/suffix_prefix/0/0.py,input/suffix_prefix/0.txt,,
-prefixes,abc,longest_first,asdfgh,p,✅,outputs/suffix_prefix/0/0.py,input/suffix_prefix/0.txt,,
-prefixes,abc,longest_first,WWW,p,✅,outputs/suffix_prefix/0/0.py,input/suffix_prefix/0.txt,,
-prefixes,abc,shortest_first,,p,✅,outputs/suffix_prefix/1/0.py,input/suffix_prefix/1.txt,,
-prefixes,abc,shortest_first,asdfgh,p,✅,outputs/suffix_prefix/1/0.py,input/suffix_prefix/1.txt,,
-prefixes,abc,shortest_first,WWW,p,✅,outputs/suffix_prefix/1/0.py,input/suffix_prefix/1.txt,,
-prefixes,xyz,longest_first,,p,✅,outputs/suffix_prefix/2/0.py,input/suffix_prefix/2.txt,,
-prefixes,xyz,longest_first,asdfgh,p,✅,outputs/suffix_prefix/2/0.py,input/suffix_prefix/2.txt,,
-prefixes,xyz,longest_first,WWW,p,✅,outputs/suffix_prefix/2/0.py,input/suffix_prefix/2.txt,,
-prefixes,xyz,shortest_first,,p,✅,outputs/suffix_prefix/3/0.py,input/suffix_prefix/3.txt,,
-prefixes,xyz,shortest_first,asdfgh,p,✅,outputs/suffix_prefix/3/0.py,input/suffix_prefix/3.txt,,
-prefixes,xyz,shortest_first,WWW,p,✅,outputs/suffix_prefix/3/0.py,input/suffix_prefix/3.txt,,
-prefixes,suffix,longest_first,,p,✅,outputs/suffix_prefix/4/0.py,input/suffix_prefix/4.txt,,
-prefixes,suffix,longest_first,asdfgh,p,✅,outputs/suffix_prefix/4/0.py,input/suffix_prefix/4.txt,,
-prefixes,suffix,longest_first,WWW,p,✅,outputs/suffix_prefix/4/0.py,input/suffix_prefix/4.txt,,
-prefixes,suffix,shortest_first,,p,✅,outputs/suffix_prefix/5/0.py,input/suffix_prefix/5.txt,,
-prefixes,suffix,shortest_first,asdfgh,p,✅,outputs/suffix_prefix/5/0.py,input/suffix_prefix/5.txt,,
-prefixes,suffix,shortest_first,WWW,p,✅,outputs/suffix_prefix/5/0.py,input/suffix_prefix/5.txt,,
-prefixes,prefix,longest_first,,p,✅,outputs/suffix_prefix/6/0.py,input/suffix_prefix/6.txt,,
-prefixes,prefix,longest_first,asdfgh,p,✅,outputs/suffix_prefix/6/0.py,input/suffix_prefix/6.txt,,
-prefixes,prefix,longest_first,WWW,p,✅,outputs/suffix_prefix/6/0.py,input/suffix_prefix/6.txt,,
-prefixes,prefix,shortest_first,,p,✅,outputs/suffix_prefix/7/0.py,input/suffix_prefix/7.txt,,
-prefixes,prefix,shortest_first,asdfgh,p,✅,outputs/suffix_prefix/7/0.py,input/suffix_prefix/7.txt,,
-prefixes,prefix,shortest_first,WWW,p,✅,outputs/suffix_prefix/7/0.py,input/suffix_prefix/7.txt,,
-prefixes,reverse the result!!!,longest_first,,p,✅,outputs/suffix_prefix/8/0.py,input/suffix_prefix/8.txt,,
-prefixes,reverse the result!!!,longest_first,asdfgh,p,✅,outputs/suffix_prefix/8/0.py,input/suffix_prefix/8.txt,,
-prefixes,reverse the result!!!,longest_first,WWW,p,✅,outputs/suffix_prefix/8/0.py,input/suffix_prefix/8.txt,,
-prefixes,reverse the result!!!,shortest_first,,p,✅,outputs/suffix_prefix/9/0.py,input/suffix_prefix/9.txt,,
-prefixes,reverse the result!!!,shortest_first,asdfgh,p,✅,outputs/suffix_prefix/9/0.py,input/suffix_prefix/9.txt,,
-prefixes,reverse the result!!!,shortest_first,WWW,p,✅,outputs/suffix_prefix/9/0.py,input/suffix_prefix/9.txt,,
-prefixes,12345678,longest_first,,p,✅,outputs/suffix_prefix/10/0.py,input/suffix_prefix/10.txt,,
-prefixes,12345678,longest_first,asdfgh,p,✅,outputs/suffix_prefix/10/0.py,input/suffix_prefix/10.txt,,
-prefixes,12345678,longest_first,WWW,p,✅,outputs/suffix_prefix/10/0.py,input/suffix_prefix/10.txt,,
-prefixes,12345678,shortest_first,,p,✅,outputs/suffix_prefix/11/0.py,input/suffix_prefix/11.txt,,
-prefixes,12345678,shortest_first,asdfgh,p,✅,outputs/suffix_prefix/11/0.py,input/suffix_prefix/11.txt,,
-prefixes,12345678,shortest_first,WWW,p,✅,outputs/suffix_prefix/11/0.py,input/suffix_prefix/11.txt,,
-suffixes,abc,longest_first,,p,✅,outputs/suffix_prefix/12/0.py,input/suffix_prefix/12.txt,,
-suffixes,abc,longest_first,asdfgh,p,✅,outputs/suffix_prefix/12/0.py,input/suffix_prefix/12.txt,,
-suffixes,abc,longest_first,WWW,p,✅,outputs/suffix_prefix/12/0.py,input/suffix_prefix/12.txt,,
-suffixes,abc,shortest_first,,p,✅,outputs/suffix_prefix/13/0.py,input/suffix_prefix/13.txt,,
-suffixes,abc,shortest_first,asdfgh,f,❌,outputs/suffix_prefix/13/0.py,input/suffix_prefix/13.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']","['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']"
-suffixes,abc,shortest_first,WWW,f,❌,outputs/suffix_prefix/13/0.py,input/suffix_prefix/13.txt,"['W', 'WW', 'WWW']","['WWW', 'WW', 'W']"
-suffixes,xyz,longest_first,,p,✅,outputs/suffix_prefix/14/0.py,input/suffix_prefix/14.txt,,
-suffixes,xyz,longest_first,asdfgh,p,✅,outputs/suffix_prefix/14/0.py,input/suffix_prefix/14.txt,,
-suffixes,xyz,longest_first,WWW,p,✅,outputs/suffix_prefix/14/0.py,input/suffix_prefix/14.txt,,
-suffixes,xyz,shortest_first,,p,✅,outputs/suffix_prefix/15/0.py,input/suffix_prefix/15.txt,,
-suffixes,xyz,shortest_first,asdfgh,f,❌,outputs/suffix_prefix/15/0.py,input/suffix_prefix/15.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']","['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']"
-suffixes,xyz,shortest_first,WWW,f,❌,outputs/suffix_prefix/15/0.py,input/suffix_prefix/15.txt,"['W', 'WW', 'WWW']","['WWW', 'WW', 'W']"
-suffixes,suffix,longest_first,,p,✅,outputs/suffix_prefix/16/0.py,input/suffix_prefix/16.txt,,
-suffixes,suffix,longest_first,asdfgh,p,✅,outputs/suffix_prefix/16/0.py,input/suffix_prefix/16.txt,,
-suffixes,suffix,longest_first,WWW,p,✅,outputs/suffix_prefix/16/0.py,input/suffix_prefix/16.txt,,
-suffixes,suffix,shortest_first,,p,✅,outputs/suffix_prefix/17/0.py,input/suffix_prefix/17.txt,,
-suffixes,suffix,shortest_first,asdfgh,f,❌,outputs/suffix_prefix/17/0.py,input/suffix_prefix/17.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']","['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']"
-suffixes,suffix,shortest_first,WWW,f,❌,outputs/suffix_prefix/17/0.py,input/suffix_prefix/17.txt,"['W', 'WW', 'WWW']","['WWW', 'WW', 'W']"
-suffixes,prefix,longest_first,,p,✅,outputs/suffix_prefix/18/0.py,input/suffix_prefix/18.txt,,
-suffixes,prefix,longest_first,asdfgh,p,✅,outputs/suffix_prefix/18/0.py,input/suffix_prefix/18.txt,,
-suffixes,prefix,longest_first,WWW,p,✅,outputs/suffix_prefix/18/0.py,input/suffix_prefix/18.txt,,
-suffixes,prefix,shortest_first,,p,✅,outputs/suffix_prefix/19/0.py,input/suffix_prefix/19.txt,,
-suffixes,prefix,shortest_first,asdfgh,f,❌,outputs/suffix_prefix/19/0.py,input/suffix_prefix/19.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']","['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']"
-suffixes,prefix,shortest_first,WWW,f,❌,outputs/suffix_prefix/19/0.py,input/suffix_prefix/19.txt,"['W', 'WW', 'WWW']","['WWW', 'WW', 'W']"
-suffixes,reverse the result!!!,longest_first,,p,✅,outputs/suffix_prefix/20/0.py,input/suffix_prefix/20.txt,,
-suffixes,reverse the result!!!,longest_first,asdfgh,p,✅,outputs/suffix_prefix/20/0.py,input/suffix_prefix/20.txt,,
-suffixes,reverse the result!!!,longest_first,WWW,p,✅,outputs/suffix_prefix/20/0.py,input/suffix_prefix/20.txt,,
-suffixes,reverse the result!!!,shortest_first,,p,✅,outputs/suffix_prefix/21/0.py,input/suffix_prefix/21.txt,,
-suffixes,reverse the result!!!,shortest_first,asdfgh,f,❌,outputs/suffix_prefix/21/0.py,input/suffix_prefix/21.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']","['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']"
-suffixes,reverse the result!!!,shortest_first,WWW,f,❌,outputs/suffix_prefix/21/0.py,input/suffix_prefix/21.txt,"['W', 'WW', 'WWW']","['WWW', 'WW', 'W']"
-suffixes,12345678,longest_first,,p,✅,outputs/suffix_prefix/22/0.py,input/suffix_prefix/22.txt,,
-suffixes,12345678,longest_first,asdfgh,p,✅,outputs/suffix_prefix/22/0.py,input/suffix_prefix/22.txt,,
-suffixes,12345678,longest_first,WWW,p,✅,outputs/suffix_prefix/22/0.py,input/suffix_prefix/22.txt,,
-suffixes,12345678,shortest_first,,p,✅,outputs/suffix_prefix/23/0.py,input/suffix_prefix/23.txt,,
-suffixes,12345678,shortest_first,asdfgh,f,❌,outputs/suffix_prefix/23/0.py,input/suffix_prefix/23.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']","['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']"
-suffixes,12345678,shortest_first,WWW,f,❌,outputs/suffix_prefix/23/0.py,input/suffix_prefix/23.txt,"['W', 'WW', 'WWW']","['WWW', 'WW', 'W']"
+op,example_input,order,result_emojis,result,model_input,failed_inputs,errors
+prefixes,abc,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/0.txt,[],[]
+prefixes,abc,shortest_first,✅✅✅,ppp,input/codex/suffix_prefix/1.txt,[],[]
+prefixes,xyz,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/2.txt,[],[]
+prefixes,xyz,shortest_first,✅✅✅,ppp,input/codex/suffix_prefix/3.txt,[],[]
+prefixes,suffix,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/4.txt,[],[]
+prefixes,suffix,shortest_first,✅✅✅,ppp,input/codex/suffix_prefix/5.txt,[],[]
+prefixes,prefix,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/6.txt,[],[]
+prefixes,prefix,shortest_first,✅✅✅,ppp,input/codex/suffix_prefix/7.txt,[],[]
+prefixes,reverse the result!!!,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/8.txt,[],[]
+prefixes,reverse the result!!!,shortest_first,✅✅✅,ppp,input/codex/suffix_prefix/9.txt,[],[]
+prefixes,12345678,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/10.txt,[],[]
+prefixes,12345678,shortest_first,✅✅✅,ppp,input/codex/suffix_prefix/11.txt,[],[]
+suffixes,abc,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/12.txt,[],[]
+suffixes,abc,shortest_first,✅❌❌,pff,input/codex/suffix_prefix/13.txt,"[[""['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']"", ""['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']""], [""['W', 'WW', 'WWW']"", ""['WWW', 'WW', 'W']""]]",[]
+suffixes,xyz,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/14.txt,[],[]
+suffixes,xyz,shortest_first,✅❌❌,pff,input/codex/suffix_prefix/15.txt,"[[""['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']"", ""['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']""], [""['W', 'WW', 'WWW']"", ""['WWW', 'WW', 'W']""]]",[]
+suffixes,suffix,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/16.txt,[],[]
+suffixes,suffix,shortest_first,✅❌❌,pff,input/codex/suffix_prefix/17.txt,"[[""['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']"", ""['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']""], [""['W', 'WW', 'WWW']"", ""['WWW', 'WW', 'W']""]]",[]
+suffixes,prefix,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/18.txt,[],[]
+suffixes,prefix,shortest_first,✅❌❌,pff,input/codex/suffix_prefix/19.txt,"[[""['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']"", ""['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']""], [""['W', 'WW', 'WWW']"", ""['WWW', 'WW', 'W']""]]",[]
+suffixes,reverse the result!!!,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/20.txt,[],[]
+suffixes,reverse the result!!!,shortest_first,✅❌❌,pff,input/codex/suffix_prefix/21.txt,"[[""['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']"", ""['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']""], [""['W', 'WW', 'WWW']"", ""['WWW', 'WW', 'W']""]]",[]
+suffixes,12345678,longest_first,✅✅✅,ppp,input/codex/suffix_prefix/22.txt,[],[]
+suffixes,12345678,shortest_first,✅❌❌,pff,input/codex/suffix_prefix/23.txt,"[[""['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']"", ""['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']""], [""['W', 'WW', 'WWW']"", ""['WWW', 'WW', 'W']""]]",[]

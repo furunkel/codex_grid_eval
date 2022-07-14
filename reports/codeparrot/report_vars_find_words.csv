@@ -1,18 +1,9 @@
 var,val,success_rate
 cond,not,0.027777777777777776
-input,aaaaaaaaaaaaaaaaaaaa  b c d e,0.0625
-input,Jhingai wulu road Zone 3,0.0625
 length,3,0.1111111111111111
-input,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,0.125
-input,b bbb bbbbbb,0.125
 cond,at least,0.1388888888888889
-input,b bbb bbbbbbb,0.1875
-input,Please move back to stream,0.1875
 cond,at most,0.19444444444444445
 length,6,0.19444444444444445
 length,1,0.2222222222222222
 length,20,0.3333333333333333
-input,aaa,0.375
-input,aaaaaa,0.375
-input,cccccccccccccccccccc,0.4375
 cond,exactly,0.5

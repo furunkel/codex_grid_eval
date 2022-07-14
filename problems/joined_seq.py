@@ -58,8 +58,8 @@ def oracle_(input, pos_ret, neg_ret, sep, case):
     else:
         return neg_ret
 
-def oracle(vars):
-    return oracle_(vars['input'], vars['pos_ret'], vars['neg_ret'], vars['sep'], vars['case'])
+def oracle(vars, input):
+    return oracle_(input, vars['pos_ret'], vars['neg_ret'], vars['sep'], vars['case'])
 
 def render(**vars):
     return TEXT.format(**vars)

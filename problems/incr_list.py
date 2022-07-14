@@ -36,8 +36,8 @@ def oracle_(input, op, step):
             result.append(i - step)
     return result
 
-def oracle(vars):
-    return oracle_(vars['input'][0], vars['op'], vars['step'])
+def oracle(vars, input):
+    return oracle_(input[0], vars['op'], vars['step'])
 
 def render(**vars):
     vars['example_output'] = oracle_(vars['example_input'], vars['op'], vars['step'])

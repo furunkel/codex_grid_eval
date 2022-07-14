@@ -76,8 +76,8 @@ def oracle_(input, factor1, factor2, factor3, factor1_result, factor2_result, fa
         result = str(input)
     return result
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'factor1', 'factor2', 'factor3', 'factor1_result', 'factor2_result', 'factor3_result')))
+def oracle(vars, input):
+    return oracle_(input=input, **dict((k, vars[k]) for k in ('factor1', 'factor2', 'factor3', 'factor1_result', 'factor2_result', 'factor3_result')))
 
 def render(**vars):
     vars['factor3_example'] = find_example_factor3(vars['factor1'], vars['factor2'], vars['factor3'])

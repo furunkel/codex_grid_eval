@@ -48,8 +48,8 @@ def oracle_(input, op):
 
     return result
 
-def oracle(vars):
-    return oracle_(input=vars['input'][0], op=vars['op'])
+def oracle(vars, input):
+    return oracle_(input=input[0], op=vars['op'])
 
 def render(**vars):
     vars['rolling_objective'] = ROLLING_OBJECTIVE[vars['op']]

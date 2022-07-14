@@ -1,26 +1,10 @@
 var,val,success_rate
 case_cond,letter,0.0
 reverse_cond,no letters,0.0
-input,AsDf,0.0
-input,As?Df,0.0
-input,As??Df,0.0
-input,1234,0.0
-input,#a@C,0.0
-input,#a?C,0.0
-input,6@2,0.0
-input,#$a^D,0.0
-input,#?a^D,0.0
-input,#?a^?D,0.0
-input,#ccc,0.0
-input,#c?c,0.0
-input,#c??c,0.0
 reverse_cond,letters,0.0
 reverse_cond,exactly one question mark,0.0
 reverse_cond,more than one question mark,0.0
 reverse_cond,one or more question marks,0.0
 case_cond,vowel,0.0
 case_cond,consonant,0.03125
-input,1?234,0.05555555555555555
-input,a1?234,0.05555555555555555
-input,a1?2?34,0.05555555555555555
 reverse_cond,no question marks,0.0625

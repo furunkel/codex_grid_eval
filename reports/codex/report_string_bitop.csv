@@ -1,29 +1,8 @@
-op,input,result,result_emojis,model_output,model_input,expected,actual
-xor,"['111000', '101010']",p,✅,outputs/string_bitop/0/0.py,input/string_bitop/0.txt,,
-xor,"['1', '1']",p,✅,outputs/string_bitop/0/0.py,input/string_bitop/0.txt,,
-xor,"['0', '0']",p,✅,outputs/string_bitop/0/0.py,input/string_bitop/0.txt,,
-xor,"['0101', '0000']",p,✅,outputs/string_bitop/0/0.py,input/string_bitop/0.txt,,
-and,"['111000', '101010']",p,✅,outputs/string_bitop/1/0.py,input/string_bitop/1.txt,,
-and,"['1', '1']",p,✅,outputs/string_bitop/1/0.py,input/string_bitop/1.txt,,
-and,"['0', '0']",p,✅,outputs/string_bitop/1/0.py,input/string_bitop/1.txt,,
-and,"['0101', '0000']",p,✅,outputs/string_bitop/1/0.py,input/string_bitop/1.txt,,
-nand,"['111000', '101010']",f,❌,outputs/string_bitop/2/0.py,input/string_bitop/2.txt,'010111','000101'
-nand,"['1', '1']",p,✅,outputs/string_bitop/2/0.py,input/string_bitop/2.txt,,
-nand,"['0', '0']",p,✅,outputs/string_bitop/2/0.py,input/string_bitop/2.txt,,
-nand,"['0101', '0000']",f,❌,outputs/string_bitop/2/0.py,input/string_bitop/2.txt,'1111','1010'
-or,"['111000', '101010']",p,✅,outputs/string_bitop/3/0.py,input/string_bitop/3.txt,,
-or,"['1', '1']",p,✅,outputs/string_bitop/3/0.py,input/string_bitop/3.txt,,
-or,"['0', '0']",p,✅,outputs/string_bitop/3/0.py,input/string_bitop/3.txt,,
-or,"['0101', '0000']",p,✅,outputs/string_bitop/3/0.py,input/string_bitop/3.txt,,
-nor,"['111000', '101010']",p,✅,outputs/string_bitop/4/0.py,input/string_bitop/4.txt,,
-nor,"['1', '1']",p,✅,outputs/string_bitop/4/0.py,input/string_bitop/4.txt,,
-nor,"['0', '0']",p,✅,outputs/string_bitop/4/0.py,input/string_bitop/4.txt,,
-nor,"['0101', '0000']",p,✅,outputs/string_bitop/4/0.py,input/string_bitop/4.txt,,
-xnor,"['111000', '101010']",e,💀,outputs/string_bitop/5/0.py,input/string_bitop/5.txt,,
-xnor,"['1', '1']",e,💀,outputs/string_bitop/5/0.py,input/string_bitop/5.txt,,
-xnor,"['0', '0']",e,💀,outputs/string_bitop/5/0.py,input/string_bitop/5.txt,,
-xnor,"['0101', '0000']",e,💀,outputs/string_bitop/5/0.py,input/string_bitop/5.txt,,
-xand,"['111000', '101010']",f,❌,outputs/string_bitop/6/0.py,input/string_bitop/6.txt,'101101','010010'
-xand,"['1', '1']",f,❌,outputs/string_bitop/6/0.py,input/string_bitop/6.txt,'1','0'
-xand,"['0', '0']",f,❌,outputs/string_bitop/6/0.py,input/string_bitop/6.txt,'1','0'
-xand,"['0101', '0000']",f,❌,outputs/string_bitop/6/0.py,input/string_bitop/6.txt,'1010','0101'
+op,result_emojis,result,model_input,failed_inputs,errors
+xor,✅✅✅✅,pppp,input/codex/string_bitop/0.txt,[],[]
+and,✅✅✅✅,pppp,input/codex/string_bitop/1.txt,[],[]
+nand,❌✅✅❌,fppf,input/codex/string_bitop/2.txt,"[[""'010111'"", ""'000101'""], [""'1111'"", ""'1010'""]]",[]
+or,✅✅✅✅,pppp,input/codex/string_bitop/3.txt,[],[]
+nor,✅✅✅✅,pppp,input/codex/string_bitop/4.txt,[],[]
+xnor,💀💀💀💀,eeee,input/codex/string_bitop/5.txt,[],"[""name 'string_xor' is not defined"", ""name 'string_xor' is not defined"", ""name 'string_xor' is not defined"", ""name 'string_xor' is not defined""]"
+xand,❌❌❌❌,ffff,input/codex/string_bitop/6.txt,"[[""'101101'"", ""'010010'""], [""'1'"", ""'0'""], [""'1'"", ""'0'""], [""'1010'"", ""'0101'""]]",[]

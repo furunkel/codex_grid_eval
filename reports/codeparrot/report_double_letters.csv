@@ -1,281 +1,41 @@
-double_class,triple_class,input,expected,actual,result,result_emojis,model_input
-letter,number,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAABB111!111kkff!kkdd333?ff333ffkk?llkk333','aaaAB1!1kf!kd3?f3fk?lk3',f,❌,input/codeparrot/double_letters/1.txt
-letter,number,???!!!!ABCdefg1234aaaee,'???!!!!AABBCCddeeffgg111222333444aaaaaaeeee','???!!!!ABCdefg1234aaaee',f,❌,input/codeparrot/double_letters/1.txt
-letter,number,A?,'AA?','A?',f,❌,input/codeparrot/double_letters/1.txt
-letter,number,?,,,p,✅,input/codeparrot/double_letters/1.txt
-letter,number,!!!!!,,,p,✅,input/codeparrot/double_letters/1.txt
-letter,number,AAAaaaaaAAAA,'AAAAAAaaaaaaaaaaAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/1.txt
-letter,number,1A2B3C!,'111AA222BB333CC!','1A2B3C!',f,❌,input/codeparrot/double_letters/1.txt
-letter,exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAABB1!!!1kkff!!!kkdd3?ff3ffkk?llkk3','aaaAB1!1kf!kd3?f3fk?lk3',f,❌,input/codeparrot/double_letters/4.txt
-letter,exclamation point,???!!!!ABCdefg1234aaaee,'???!!!!!!!!!!!!AABBCCddeeffgg1234aaaaaaeeee','???!!!!ABCdefg1234aaaee',f,❌,input/codeparrot/double_letters/4.txt
-letter,exclamation point,A?,'AA?','A?',f,❌,input/codeparrot/double_letters/4.txt
-letter,exclamation point,?,,,p,✅,input/codeparrot/double_letters/4.txt
-letter,exclamation point,!!!!!,'!!!!!!!!!!!!!!!','!!!!!',f,❌,input/codeparrot/double_letters/4.txt
-letter,exclamation point,AAAaaaaaAAAA,'AAAAAAaaaaaaaaaaAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/4.txt
-letter,exclamation point,1A2B3C!,'1AA2BB3CC!!!','1A2B3C!',f,❌,input/codeparrot/double_letters/4.txt
-letter,question mark,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAABB1!1kkff!kkdd3???ff3ffkk???llkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/5.txt
-letter,question mark,???!!!!ABCdefg1234aaaee,'?????????!!!!AABBCCddeeffgg1234aaaaaaeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/5.txt
-letter,question mark,A?,'AA???','A',f,❌,input/codeparrot/double_letters/5.txt
-letter,question mark,?,'???','',f,❌,input/codeparrot/double_letters/5.txt
-letter,question mark,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/5.txt
-letter,question mark,AAAaaaaaAAAA,'AAAAAAaaaaaaaaaaAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/5.txt
-letter,question mark,1A2B3C!,'1AA2BB3CC!','ABC',f,❌,input/codeparrot/double_letters/5.txt
-number,letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAAABBB11!11kkkfff!kkkddd33?fff33fffkkk?lllkkk33','aaaAB1!1kf!kd3?f3fk?lk3',f,❌,input/codeparrot/double_letters/8.txt
-number,letter,???!!!!ABCdefg1234aaaee,'???!!!!AAABBBCCCdddeeefffggg11223344aaaaaaaaaeeeeee','???!!!!ABCdefg1234aaaee',f,❌,input/codeparrot/double_letters/8.txt
-number,letter,A?,'AAA?','A?',f,❌,input/codeparrot/double_letters/8.txt
-number,letter,?,,,p,✅,input/codeparrot/double_letters/8.txt
-number,letter,!!!!!,,,p,✅,input/codeparrot/double_letters/8.txt
-number,letter,AAAaaaaaAAAA,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/8.txt
-number,letter,1A2B3C!,'11AAA22BBB33CCC!','1A2B3C!',f,❌,input/codeparrot/double_letters/8.txt
-number,upper-case letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAAABBB11!11kf!kd33?f33fk?lk33','AB',f,❌,input/codeparrot/double_letters/10.txt
-number,upper-case letter,???!!!!ABCdefg1234aaaee,'???!!!!AAABBBCCCdefg11223344aaaee','ABC',f,❌,input/codeparrot/double_letters/10.txt
-number,upper-case letter,A?,'AAA?','A',f,❌,input/codeparrot/double_letters/10.txt
-number,upper-case letter,?,'?','',f,❌,input/codeparrot/double_letters/10.txt
-number,upper-case letter,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/10.txt
-number,upper-case letter,AAAaaaaaAAAA,'AAAAAAAAAaaaaaAAAAAAAAAAAA','AAAAAAA',f,❌,input/codeparrot/double_letters/10.txt
-number,upper-case letter,1A2B3C!,'11AAA22BBB33CCC!','ABC',f,❌,input/codeparrot/double_letters/10.txt
-number,lower-case letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAB11!11kkkfff!kkkddd33?fff33fffkkk?lllkkk33','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/11.txt
-number,lower-case letter,???!!!!ABCdefg1234aaaee,'???!!!!ABCdddeeefffggg11223344aaaaaaaaaeeeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/11.txt
-number,lower-case letter,A?,'A?','A',f,❌,input/codeparrot/double_letters/11.txt
-number,lower-case letter,?,'?','',f,❌,input/codeparrot/double_letters/11.txt
-number,lower-case letter,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/11.txt
-number,lower-case letter,AAAaaaaaAAAA,'AAAaaaaaaaaaaaaaaaAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/11.txt
-number,lower-case letter,1A2B3C!,'11A22B33C!','ABC',f,❌,input/codeparrot/double_letters/11.txt
-number,exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAB11!!!11kf!!!kd33?f33fk?lk33','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/12.txt
-number,exclamation point,???!!!!ABCdefg1234aaaee,'???!!!!!!!!!!!!ABCdefg11223344aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/12.txt
-number,exclamation point,A?,'A?','A',f,❌,input/codeparrot/double_letters/12.txt
-number,exclamation point,?,'?','',f,❌,input/codeparrot/double_letters/12.txt
-number,exclamation point,!!!!!,'!!!!!!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/12.txt
-number,exclamation point,AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/12.txt
-number,exclamation point,1A2B3C!,'11A22B33C!!!','ABC',f,❌,input/codeparrot/double_letters/12.txt
-number,question mark,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAB11!11kf!kd33???f33fk???lk33','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/13.txt
-number,question mark,???!!!!ABCdefg1234aaaee,'?????????!!!!ABCdefg11223344aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/13.txt
-number,question mark,A?,'A???','A',f,❌,input/codeparrot/double_letters/13.txt
-number,question mark,?,'???','',f,❌,input/codeparrot/double_letters/13.txt
-number,question mark,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/13.txt
-number,question mark,AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/13.txt
-number,question mark,1A2B3C!,'11A22B33C!','ABC',f,❌,input/codeparrot/double_letters/13.txt
-number,vowel (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAAAB11!11kf!kd33?f33fk?lk33','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/14.txt
-number,vowel (lower-case or upper-case),???!!!!ABCdefg1234aaaee,'???!!!!AAABCdeeefg11223344aaaaaaaaaeeeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/14.txt
-number,vowel (lower-case or upper-case),A?,'AAA?','A',f,❌,input/codeparrot/double_letters/14.txt
-number,vowel (lower-case or upper-case),?,'?','',f,❌,input/codeparrot/double_letters/14.txt
-number,vowel (lower-case or upper-case),!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/14.txt
-number,vowel (lower-case or upper-case),AAAaaaaaAAAA,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/14.txt
-number,vowel (lower-case or upper-case),1A2B3C!,'11AAA22B33C!','ABC',f,❌,input/codeparrot/double_letters/14.txt
-number,consonant (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,'aaaABBB11!11kkkfff!kkkddd33?fff33fffkkk?lllkkk33','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/15.txt
-number,consonant (lower-case or upper-case),???!!!!ABCdefg1234aaaee,'???!!!!ABBBCCCdddefffggg11223344aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/15.txt
-number,consonant (lower-case or upper-case),A?,'A?','A',f,❌,input/codeparrot/double_letters/15.txt
-number,consonant (lower-case or upper-case),?,'?','',f,❌,input/codeparrot/double_letters/15.txt
-number,consonant (lower-case or upper-case),!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/15.txt
-number,consonant (lower-case or upper-case),AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/15.txt
-number,consonant (lower-case or upper-case),1A2B3C!,'11A22BBB33CCC!','ABC',f,❌,input/codeparrot/double_letters/15.txt
-upper-case letter,number,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAABB111!111kf!kd333?f333fk?lk333','AB',f,❌,input/codeparrot/double_letters/17.txt
-upper-case letter,number,???!!!!ABCdefg1234aaaee,'???!!!!AABBCCdefg111222333444aaaee','ABC',f,❌,input/codeparrot/double_letters/17.txt
-upper-case letter,number,A?,'AA?','A',f,❌,input/codeparrot/double_letters/17.txt
-upper-case letter,number,?,'?','',f,❌,input/codeparrot/double_letters/17.txt
-upper-case letter,number,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/17.txt
-upper-case letter,number,AAAaaaaaAAAA,'AAAAAAaaaaaAAAAAAAA','AAAAAAA',f,❌,input/codeparrot/double_letters/17.txt
-upper-case letter,number,1A2B3C!,'111AA222BB333CC!','ABC',f,❌,input/codeparrot/double_letters/17.txt
-upper-case letter,lower-case letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAABB1!1kkkfff!kkkddd3?fff3fffkkk?lllkkk3','AB',f,❌,input/codeparrot/double_letters/19.txt
-upper-case letter,lower-case letter,???!!!!ABCdefg1234aaaee,'???!!!!AABBCCdddeeefffggg1234aaaaaaaaaeeeeee','ABC',f,❌,input/codeparrot/double_letters/19.txt
-upper-case letter,lower-case letter,A?,'AA?','A',f,❌,input/codeparrot/double_letters/19.txt
-upper-case letter,lower-case letter,?,'?','',f,❌,input/codeparrot/double_letters/19.txt
-upper-case letter,lower-case letter,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/19.txt
-upper-case letter,lower-case letter,AAAaaaaaAAAA,'AAAAAAaaaaaaaaaaaaaaaAAAAAAAA','AAAAAAA',f,❌,input/codeparrot/double_letters/19.txt
-upper-case letter,lower-case letter,1A2B3C!,'1AA2BB3CC!','ABC',f,❌,input/codeparrot/double_letters/19.txt
-upper-case letter,exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAABB1!!!1kf!!!kd3?f3fk?lk3','AB',f,❌,input/codeparrot/double_letters/20.txt
-upper-case letter,exclamation point,???!!!!ABCdefg1234aaaee,'???!!!!!!!!!!!!AABBCCdefg1234aaaee','ABC',f,❌,input/codeparrot/double_letters/20.txt
-upper-case letter,exclamation point,A?,'AA?','A',f,❌,input/codeparrot/double_letters/20.txt
-upper-case letter,exclamation point,?,'?','',f,❌,input/codeparrot/double_letters/20.txt
-upper-case letter,exclamation point,!!!!!,'!!!!!!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/20.txt
-upper-case letter,exclamation point,AAAaaaaaAAAA,'AAAAAAaaaaaAAAAAAAA','AAAAAAA',f,❌,input/codeparrot/double_letters/20.txt
-upper-case letter,exclamation point,1A2B3C!,'1AA2BB3CC!!!','ABC',f,❌,input/codeparrot/double_letters/20.txt
-upper-case letter,question mark,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAABB1!1kf!kd3???f3fk???lk3','AB',f,❌,input/codeparrot/double_letters/21.txt
-upper-case letter,question mark,???!!!!ABCdefg1234aaaee,'?????????!!!!AABBCCdefg1234aaaee','ABC',f,❌,input/codeparrot/double_letters/21.txt
-upper-case letter,question mark,A?,'AA???','A',f,❌,input/codeparrot/double_letters/21.txt
-upper-case letter,question mark,?,'???','',f,❌,input/codeparrot/double_letters/21.txt
-upper-case letter,question mark,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/21.txt
-upper-case letter,question mark,AAAaaaaaAAAA,'AAAAAAaaaaaAAAAAAAA','AAAAAAA',f,❌,input/codeparrot/double_letters/21.txt
-upper-case letter,question mark,1A2B3C!,'1AA2BB3CC!','ABC',f,❌,input/codeparrot/double_letters/21.txt
-lower-case letter,number,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAB111!111kkff!kkdd333?ff333ffkk?llkk333','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/25.txt
-lower-case letter,number,???!!!!ABCdefg1234aaaee,'???!!!!ABCddeeffgg111222333444aaaaaaeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/25.txt
-lower-case letter,number,A?,'A?','A',f,❌,input/codeparrot/double_letters/25.txt
-lower-case letter,number,?,'?','',f,❌,input/codeparrot/double_letters/25.txt
-lower-case letter,number,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/25.txt
-lower-case letter,number,AAAaaaaaAAAA,'AAAaaaaaaaaaaAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/25.txt
-lower-case letter,number,1A2B3C!,'111A222B333C!','ABC',f,❌,input/codeparrot/double_letters/25.txt
-lower-case letter,upper-case letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAAABBB1!1kkff!kkdd3?ff3ffkk?llkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/26.txt
-lower-case letter,upper-case letter,???!!!!ABCdefg1234aaaee,'???!!!!AAABBBCCCddeeffgg1234aaaaaaeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/26.txt
-lower-case letter,upper-case letter,A?,'AAA?','A',f,❌,input/codeparrot/double_letters/26.txt
-lower-case letter,upper-case letter,?,'?','',f,❌,input/codeparrot/double_letters/26.txt
-lower-case letter,upper-case letter,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/26.txt
-lower-case letter,upper-case letter,AAAaaaaaAAAA,'AAAAAAAAAaaaaaaaaaaAAAAAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/26.txt
-lower-case letter,upper-case letter,1A2B3C!,'1AAA2BBB3CCC!','ABC',f,❌,input/codeparrot/double_letters/26.txt
-lower-case letter,exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAB1!!!1kkff!!!kkdd3?ff3ffkk?llkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/28.txt
-lower-case letter,exclamation point,???!!!!ABCdefg1234aaaee,'???!!!!!!!!!!!!ABCddeeffgg1234aaaaaaeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/28.txt
-lower-case letter,exclamation point,A?,'A?','A',f,❌,input/codeparrot/double_letters/28.txt
-lower-case letter,exclamation point,?,'?','',f,❌,input/codeparrot/double_letters/28.txt
-lower-case letter,exclamation point,!!!!!,'!!!!!!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/28.txt
-lower-case letter,exclamation point,AAAaaaaaAAAA,'AAAaaaaaaaaaaAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/28.txt
-lower-case letter,exclamation point,1A2B3C!,'1A2B3C!!!','ABC',f,❌,input/codeparrot/double_letters/28.txt
-lower-case letter,question mark,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAB1!1kkff!kkdd3???ff3ffkk???llkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/29.txt
-lower-case letter,question mark,???!!!!ABCdefg1234aaaee,'?????????!!!!ABCddeeffgg1234aaaaaaeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/29.txt
-lower-case letter,question mark,A?,'A???','A',f,❌,input/codeparrot/double_letters/29.txt
-lower-case letter,question mark,?,'???','',f,❌,input/codeparrot/double_letters/29.txt
-lower-case letter,question mark,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/29.txt
-lower-case letter,question mark,AAAaaaaaAAAA,'AAAaaaaaaaaaaAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/29.txt
-lower-case letter,question mark,1A2B3C!,'1A2B3C!','ABC',f,❌,input/codeparrot/double_letters/29.txt
-exclamation point,letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAAABBB1!!1kkkfff!!kkkddd3?fff3fffkkk?lllkkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/32.txt
-exclamation point,letter,???!!!!ABCdefg1234aaaee,'???!!!!!!!!AAABBBCCCdddeeefffggg1234aaaaaaaaaeeeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/32.txt
-exclamation point,letter,A?,'AAA?','A',f,❌,input/codeparrot/double_letters/32.txt
-exclamation point,letter,?,'?','',f,❌,input/codeparrot/double_letters/32.txt
-exclamation point,letter,!!!!!,'!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/32.txt
-exclamation point,letter,AAAaaaaaAAAA,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/32.txt
-exclamation point,letter,1A2B3C!,'1AAA2BBB3CCC!!','ABC',f,❌,input/codeparrot/double_letters/32.txt
-exclamation point,number,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAB111!!111kf!!kd333?f333fk?lk333','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/33.txt
-exclamation point,number,???!!!!ABCdefg1234aaaee,'???!!!!!!!!ABCdefg111222333444aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/33.txt
-exclamation point,number,A?,'A?','A',f,❌,input/codeparrot/double_letters/33.txt
-exclamation point,number,?,'?','',f,❌,input/codeparrot/double_letters/33.txt
-exclamation point,number,!!!!!,'!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/33.txt
-exclamation point,number,AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/33.txt
-exclamation point,number,1A2B3C!,'111A222B333C!!','ABC',f,❌,input/codeparrot/double_letters/33.txt
-exclamation point,upper-case letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAAABBB1!!1kf!!kd3?f3fk?lk3','AB',f,❌,input/codeparrot/double_letters/34.txt
-exclamation point,upper-case letter,???!!!!ABCdefg1234aaaee,'???!!!!!!!!AAABBBCCCdefg1234aaaee','ABC',f,❌,input/codeparrot/double_letters/34.txt
-exclamation point,upper-case letter,A?,'AAA?','A',f,❌,input/codeparrot/double_letters/34.txt
-exclamation point,upper-case letter,?,'?','',f,❌,input/codeparrot/double_letters/34.txt
-exclamation point,upper-case letter,!!!!!,'!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/34.txt
-exclamation point,upper-case letter,AAAaaaaaAAAA,'AAAAAAAAAaaaaaAAAAAAAAAAAA','AAAAAAA',f,❌,input/codeparrot/double_letters/34.txt
-exclamation point,upper-case letter,1A2B3C!,'1AAA2BBB3CCC!!','ABC',f,❌,input/codeparrot/double_letters/34.txt
-exclamation point,lower-case letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAB1!!1kkkfff!!kkkddd3?fff3fffkkk?lllkkk3','aaakfkdffklk',f,❌,input/codeparrot/double_letters/35.txt
-exclamation point,lower-case letter,???!!!!ABCdefg1234aaaee,'???!!!!!!!!ABCdddeeefffggg1234aaaaaaaaaeeeeee','defgaaaee',f,❌,input/codeparrot/double_letters/35.txt
-exclamation point,lower-case letter,A?,'A?','',f,❌,input/codeparrot/double_letters/35.txt
-exclamation point,lower-case letter,?,'?','',f,❌,input/codeparrot/double_letters/35.txt
-exclamation point,lower-case letter,!!!!!,'!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/35.txt
-exclamation point,lower-case letter,AAAaaaaaAAAA,'AAAaaaaaaaaaaaaaaaAAAA','aaaaa',f,❌,input/codeparrot/double_letters/35.txt
-exclamation point,lower-case letter,1A2B3C!,'1A2B3C!!','',f,❌,input/codeparrot/double_letters/35.txt
-exclamation point,question mark,aaaAB1!1kf!kd3?f3fk?lk3,,,e,💀,input/codeparrot/double_letters/37.txt
-exclamation point,question mark,???!!!!ABCdefg1234aaaee,,,e,💀,input/codeparrot/double_letters/37.txt
-exclamation point,question mark,A?,,,e,💀,input/codeparrot/double_letters/37.txt
-exclamation point,question mark,?,,,e,💀,input/codeparrot/double_letters/37.txt
-exclamation point,question mark,!!!!!,,,e,💀,input/codeparrot/double_letters/37.txt
-exclamation point,question mark,AAAaaaaaAAAA,,,e,💀,input/codeparrot/double_letters/37.txt
-exclamation point,question mark,1A2B3C!,,,e,💀,input/codeparrot/double_letters/37.txt
-exclamation point,vowel (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAAAB1!!1kf!!kd3?f3fk?lk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/38.txt
-exclamation point,vowel (lower-case or upper-case),???!!!!ABCdefg1234aaaee,'???!!!!!!!!AAABCdeeefg1234aaaaaaaaaeeeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/38.txt
-exclamation point,vowel (lower-case or upper-case),A?,'AAA?','A',f,❌,input/codeparrot/double_letters/38.txt
-exclamation point,vowel (lower-case or upper-case),?,'?','',f,❌,input/codeparrot/double_letters/38.txt
-exclamation point,vowel (lower-case or upper-case),!!!!!,'!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/38.txt
-exclamation point,vowel (lower-case or upper-case),AAAaaaaaAAAA,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/38.txt
-exclamation point,vowel (lower-case or upper-case),1A2B3C!,'1AAA2B3C!!','ABC',f,❌,input/codeparrot/double_letters/38.txt
-exclamation point,consonant (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,'aaaABBB1!!1kkkfff!!kkkddd3?fff3fffkkk?lllkkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/39.txt
-exclamation point,consonant (lower-case or upper-case),???!!!!ABCdefg1234aaaee,'???!!!!!!!!ABBBCCCdddefffggg1234aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/39.txt
-exclamation point,consonant (lower-case or upper-case),A?,'A?','A',f,❌,input/codeparrot/double_letters/39.txt
-exclamation point,consonant (lower-case or upper-case),?,'?','',f,❌,input/codeparrot/double_letters/39.txt
-exclamation point,consonant (lower-case or upper-case),!!!!!,'!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/39.txt
-exclamation point,consonant (lower-case or upper-case),AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/39.txt
-exclamation point,consonant (lower-case or upper-case),1A2B3C!,'1A2BBB3CCC!!','ABC',f,❌,input/codeparrot/double_letters/39.txt
-question mark,letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAAABBB1!1kkkfff!kkkddd3??fff3fffkkk??lllkkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/40.txt
-question mark,letter,???!!!!ABCdefg1234aaaee,'??????!!!!AAABBBCCCdddeeefffggg1234aaaaaaaaaeeeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/40.txt
-question mark,letter,A?,'AAA??','A',f,❌,input/codeparrot/double_letters/40.txt
-question mark,letter,?,'??','',f,❌,input/codeparrot/double_letters/40.txt
-question mark,letter,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/40.txt
-question mark,letter,AAAaaaaaAAAA,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/40.txt
-question mark,letter,1A2B3C!,'1AAA2BBB3CCC!','ABC',f,❌,input/codeparrot/double_letters/40.txt
-question mark,number,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAB111!111kf!kd333??f333fk??lk333','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/41.txt
-question mark,number,???!!!!ABCdefg1234aaaee,'??????!!!!ABCdefg111222333444aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/41.txt
-question mark,number,A?,'A??','A',f,❌,input/codeparrot/double_letters/41.txt
-question mark,number,?,'??','',f,❌,input/codeparrot/double_letters/41.txt
-question mark,number,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/41.txt
-question mark,number,AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/41.txt
-question mark,number,1A2B3C!,'111A222B333C!','ABC',f,❌,input/codeparrot/double_letters/41.txt
-question mark,upper-case letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAAABBB1!1kf!kd3??f3fk??lk3','AB',f,❌,input/codeparrot/double_letters/42.txt
-question mark,upper-case letter,???!!!!ABCdefg1234aaaee,'??????!!!!AAABBBCCCdefg1234aaaee','ABC',f,❌,input/codeparrot/double_letters/42.txt
-question mark,upper-case letter,A?,'AAA??','A',f,❌,input/codeparrot/double_letters/42.txt
-question mark,upper-case letter,?,'??','',f,❌,input/codeparrot/double_letters/42.txt
-question mark,upper-case letter,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/42.txt
-question mark,upper-case letter,AAAaaaaaAAAA,'AAAAAAAAAaaaaaAAAAAAAAAAAA','AAAAAAA',f,❌,input/codeparrot/double_letters/42.txt
-question mark,upper-case letter,1A2B3C!,'1AAA2BBB3CCC!','ABC',f,❌,input/codeparrot/double_letters/42.txt
-question mark,lower-case letter,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAB1!1kkkfff!kkkddd3??fff3fffkkk??lllkkk3','aaakfkdffklk',f,❌,input/codeparrot/double_letters/43.txt
-question mark,lower-case letter,???!!!!ABCdefg1234aaaee,'??????!!!!ABCdddeeefffggg1234aaaaaaaaaeeeeee','defgaaaee',f,❌,input/codeparrot/double_letters/43.txt
-question mark,lower-case letter,A?,'A??','',f,❌,input/codeparrot/double_letters/43.txt
-question mark,lower-case letter,?,'??','',f,❌,input/codeparrot/double_letters/43.txt
-question mark,lower-case letter,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/43.txt
-question mark,lower-case letter,AAAaaaaaAAAA,'AAAaaaaaaaaaaaaaaaAAAA','aaaaa',f,❌,input/codeparrot/double_letters/43.txt
-question mark,lower-case letter,1A2B3C!,'1A2B3C!','',f,❌,input/codeparrot/double_letters/43.txt
-question mark,exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,'aaaAB1!!!1kf!!!kd3??f3fk??lk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/44.txt
-question mark,exclamation point,???!!!!ABCdefg1234aaaee,'??????!!!!!!!!!!!!ABCdefg1234aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/44.txt
-question mark,exclamation point,A?,'A??','A',f,❌,input/codeparrot/double_letters/44.txt
-question mark,exclamation point,?,'??','',f,❌,input/codeparrot/double_letters/44.txt
-question mark,exclamation point,!!!!!,'!!!!!!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/44.txt
-question mark,exclamation point,AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/44.txt
-question mark,exclamation point,1A2B3C!,'1A2B3C!!!','ABC',f,❌,input/codeparrot/double_letters/44.txt
-question mark,vowel (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAAAB1!1kf!kd3??f3fk??lk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/46.txt
-question mark,vowel (lower-case or upper-case),???!!!!ABCdefg1234aaaee,'??????!!!!AAABCdeeefg1234aaaaaaaaaeeeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/46.txt
-question mark,vowel (lower-case or upper-case),A?,'AAA??','A',f,❌,input/codeparrot/double_letters/46.txt
-question mark,vowel (lower-case or upper-case),?,'??','',f,❌,input/codeparrot/double_letters/46.txt
-question mark,vowel (lower-case or upper-case),!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/46.txt
-question mark,vowel (lower-case or upper-case),AAAaaaaaAAAA,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/46.txt
-question mark,vowel (lower-case or upper-case),1A2B3C!,'1AAA2B3C!','ABC',f,❌,input/codeparrot/double_letters/46.txt
-question mark,consonant (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,'aaaABBB1!1kkkfff!kkkddd3??fff3fffkkk??lllkkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/47.txt
-question mark,consonant (lower-case or upper-case),???!!!!ABCdefg1234aaaee,'??????!!!!ABBBCCCdddefffggg1234aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/47.txt
-question mark,consonant (lower-case or upper-case),A?,'A??','A',f,❌,input/codeparrot/double_letters/47.txt
-question mark,consonant (lower-case or upper-case),?,'??','',f,❌,input/codeparrot/double_letters/47.txt
-question mark,consonant (lower-case or upper-case),!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/47.txt
-question mark,consonant (lower-case or upper-case),AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/47.txt
-question mark,consonant (lower-case or upper-case),1A2B3C!,'1A2BBB3CCC!','ABC',f,❌,input/codeparrot/double_letters/47.txt
-vowel (lower-case or upper-case),number,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAAB111!111kf!kd333?f333fk?lk333','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/49.txt
-vowel (lower-case or upper-case),number,???!!!!ABCdefg1234aaaee,'???!!!!AABCdeefg111222333444aaaaaaeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/49.txt
-vowel (lower-case or upper-case),number,A?,'AA?','A',f,❌,input/codeparrot/double_letters/49.txt
-vowel (lower-case or upper-case),number,?,'?','',f,❌,input/codeparrot/double_letters/49.txt
-vowel (lower-case or upper-case),number,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/49.txt
-vowel (lower-case or upper-case),number,AAAaaaaaAAAA,'AAAAAAaaaaaaaaaaAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/49.txt
-vowel (lower-case or upper-case),number,1A2B3C!,'111AA222B333C!','ABC',f,❌,input/codeparrot/double_letters/49.txt
-vowel (lower-case or upper-case),exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAAB1!!!1kf!!!kd3?f3fk?lk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/52.txt
-vowel (lower-case or upper-case),exclamation point,???!!!!ABCdefg1234aaaee,'???!!!!!!!!!!!!AABCdeefg1234aaaaaaeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/52.txt
-vowel (lower-case or upper-case),exclamation point,A?,'AA?','A',f,❌,input/codeparrot/double_letters/52.txt
-vowel (lower-case or upper-case),exclamation point,?,'?','',f,❌,input/codeparrot/double_letters/52.txt
-vowel (lower-case or upper-case),exclamation point,!!!!!,'!!!!!!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/52.txt
-vowel (lower-case or upper-case),exclamation point,AAAaaaaaAAAA,'AAAAAAaaaaaaaaaaAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/52.txt
-vowel (lower-case or upper-case),exclamation point,1A2B3C!,'1AA2B3C!!!','ABC',f,❌,input/codeparrot/double_letters/52.txt
-vowel (lower-case or upper-case),question mark,aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAAB1!1kf!kd3???f3fk???lk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/53.txt
-vowel (lower-case or upper-case),question mark,???!!!!ABCdefg1234aaaee,'?????????!!!!AABCdeefg1234aaaaaaeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/53.txt
-vowel (lower-case or upper-case),question mark,A?,'AA???','A',f,❌,input/codeparrot/double_letters/53.txt
-vowel (lower-case or upper-case),question mark,?,'???','',f,❌,input/codeparrot/double_letters/53.txt
-vowel (lower-case or upper-case),question mark,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/53.txt
-vowel (lower-case or upper-case),question mark,AAAaaaaaAAAA,'AAAAAAaaaaaaaaaaAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/53.txt
-vowel (lower-case or upper-case),question mark,1A2B3C!,'1AA2B3C!','ABC',f,❌,input/codeparrot/double_letters/53.txt
-vowel (lower-case or upper-case),consonant (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaAABBB1!1kkkfff!kkkddd3?fff3fffkkk?lllkkk3','AB',f,❌,input/codeparrot/double_letters/55.txt
-vowel (lower-case or upper-case),consonant (lower-case or upper-case),???!!!!ABCdefg1234aaaee,'???!!!!AABBBCCCdddeefffggg1234aaaaaaeeee','ABC',f,❌,input/codeparrot/double_letters/55.txt
-vowel (lower-case or upper-case),consonant (lower-case or upper-case),A?,'AA?','A',f,❌,input/codeparrot/double_letters/55.txt
-vowel (lower-case or upper-case),consonant (lower-case or upper-case),?,'?','',f,❌,input/codeparrot/double_letters/55.txt
-vowel (lower-case or upper-case),consonant (lower-case or upper-case),!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/55.txt
-vowel (lower-case or upper-case),consonant (lower-case or upper-case),AAAaaaaaAAAA,'AAAAAAaaaaaaaaaaAAAAAAAA','AAAAAAA',f,❌,input/codeparrot/double_letters/55.txt
-vowel (lower-case or upper-case),consonant (lower-case or upper-case),1A2B3C!,'1AA2BBB3CCC!','ABC',f,❌,input/codeparrot/double_letters/55.txt
-consonant (lower-case or upper-case),number,aaaAB1!1kf!kd3?f3fk?lk3,'aaaABB111!111kkff!kkdd333?ff333ffkk?llkk333','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/57.txt
-consonant (lower-case or upper-case),number,???!!!!ABCdefg1234aaaee,'???!!!!ABBCCddeffgg111222333444aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/57.txt
-consonant (lower-case or upper-case),number,A?,'A?','A',f,❌,input/codeparrot/double_letters/57.txt
-consonant (lower-case or upper-case),number,?,'?','',f,❌,input/codeparrot/double_letters/57.txt
-consonant (lower-case or upper-case),number,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/57.txt
-consonant (lower-case or upper-case),number,AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/57.txt
-consonant (lower-case or upper-case),number,1A2B3C!,'111A222BB333CC!','ABC',f,❌,input/codeparrot/double_letters/57.txt
-consonant (lower-case or upper-case),exclamation point,aaaAB1!1kf!kd3?f3fk?lk3,'aaaABB1!!!1kkff!!!kkdd3?ff3ffkk?llkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/60.txt
-consonant (lower-case or upper-case),exclamation point,???!!!!ABCdefg1234aaaee,'???!!!!!!!!!!!!ABBCCddeffgg1234aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/60.txt
-consonant (lower-case or upper-case),exclamation point,A?,'A?','A',f,❌,input/codeparrot/double_letters/60.txt
-consonant (lower-case or upper-case),exclamation point,?,'?','',f,❌,input/codeparrot/double_letters/60.txt
-consonant (lower-case or upper-case),exclamation point,!!!!!,'!!!!!!!!!!!!!!!','',f,❌,input/codeparrot/double_letters/60.txt
-consonant (lower-case or upper-case),exclamation point,AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/60.txt
-consonant (lower-case or upper-case),exclamation point,1A2B3C!,'1A2BB3CC!!!','ABC',f,❌,input/codeparrot/double_letters/60.txt
-consonant (lower-case or upper-case),question mark,aaaAB1!1kf!kd3?f3fk?lk3,'aaaABB1!1kkff!kkdd3???ff3ffkk???llkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/61.txt
-consonant (lower-case or upper-case),question mark,???!!!!ABCdefg1234aaaee,'?????????!!!!ABBCCddeffgg1234aaaee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/61.txt
-consonant (lower-case or upper-case),question mark,A?,'A???','A',f,❌,input/codeparrot/double_letters/61.txt
-consonant (lower-case or upper-case),question mark,?,'???','',f,❌,input/codeparrot/double_letters/61.txt
-consonant (lower-case or upper-case),question mark,!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/61.txt
-consonant (lower-case or upper-case),question mark,AAAaaaaaAAAA,,,p,✅,input/codeparrot/double_letters/61.txt
-consonant (lower-case or upper-case),question mark,1A2B3C!,'1A2BB3CC!','ABC',f,❌,input/codeparrot/double_letters/61.txt
-consonant (lower-case or upper-case),vowel (lower-case or upper-case),aaaAB1!1kf!kd3?f3fk?lk3,'aaaaaaaaaAAABB1!1kkff!kkdd3?ff3ffkk?llkk3','aaaABkfkdffklk',f,❌,input/codeparrot/double_letters/62.txt
-consonant (lower-case or upper-case),vowel (lower-case or upper-case),???!!!!ABCdefg1234aaaee,'???!!!!AAABBCCddeeeffgg1234aaaaaaaaaeeeeee','ABCdefgaaaee',f,❌,input/codeparrot/double_letters/62.txt
-consonant (lower-case or upper-case),vowel (lower-case or upper-case),A?,'AAA?','A',f,❌,input/codeparrot/double_letters/62.txt
-consonant (lower-case or upper-case),vowel (lower-case or upper-case),?,'?','',f,❌,input/codeparrot/double_letters/62.txt
-consonant (lower-case or upper-case),vowel (lower-case or upper-case),!!!!!,'!!!!!','',f,❌,input/codeparrot/double_letters/62.txt
-consonant (lower-case or upper-case),vowel (lower-case or upper-case),AAAaaaaaAAAA,'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA','AAAaaaaaAAAA',f,❌,input/codeparrot/double_letters/62.txt
-consonant (lower-case or upper-case),vowel (lower-case or upper-case),1A2B3C!,'1AAA2BB3CC!','ABC',f,❌,input/codeparrot/double_letters/62.txt
+double_class,triple_class,result_emojis,result,model_input,failed_inputs,errors
+letter,number,❌❌❌✅✅❌❌,fffppff,input/codeparrot/double_letters/1.txt,"[[""'aaaaaaAABB111!111kkff!kkdd333?ff333ffkk?llkk333'"", ""'aaaAB1!1kf!kd3?f3fk?lk3'""], [""'???!!!!AABBCCddeeffgg111222333444aaaaaaeeee'"", ""'???!!!!ABCdefg1234aaaee'""], [""'AA?'"", ""'A?'""], [""'AAAAAAaaaaaaaaaaAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'111AA222BB333CC!'"", ""'1A2B3C!'""]]",[]
+letter,exclamation point,❌❌❌✅❌❌❌,fffpfff,input/codeparrot/double_letters/4.txt,"[[""'aaaaaaAABB1!!!1kkff!!!kkdd3?ff3ffkk?llkk3'"", ""'aaaAB1!1kf!kd3?f3fk?lk3'""], [""'???!!!!!!!!!!!!AABBCCddeeffgg1234aaaaaaeeee'"", ""'???!!!!ABCdefg1234aaaee'""], [""'AA?'"", ""'A?'""], [""'!!!!!!!!!!!!!!!'"", ""'!!!!!'""], [""'AAAAAAaaaaaaaaaaAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'1AA2BB3CC!!!'"", ""'1A2B3C!'""]]",[]
+letter,question mark,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/5.txt,"[[""'aaaaaaAABB1!1kkff!kkdd3???ff3ffkk???llkk3'"", ""'aaaABkfkdffklk'""], [""'?????????!!!!AABBCCddeeffgg1234aaaaaaeeee'"", ""'ABCdefgaaaee'""], [""'AA???'"", ""'A'""], [""'???'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAaaaaaaaaaaAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'1AA2BB3CC!'"", ""'ABC'""]]",[]
+number,letter,❌❌❌✅✅❌❌,fffppff,input/codeparrot/double_letters/8.txt,"[[""'aaaaaaaaaAAABBB11!11kkkfff!kkkddd33?fff33fffkkk?lllkkk33'"", ""'aaaAB1!1kf!kd3?f3fk?lk3'""], [""'???!!!!AAABBBCCCdddeeefffggg11223344aaaaaaaaaeeeeee'"", ""'???!!!!ABCdefg1234aaaee'""], [""'AAA?'"", ""'A?'""], [""'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'11AAA22BBB33CCC!'"", ""'1A2B3C!'""]]",[]
+number,upper-case letter,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/10.txt,"[[""'aaaAAABBB11!11kf!kd33?f33fk?lk33'"", ""'AB'""], [""'???!!!!AAABBBCCCdefg11223344aaaee'"", ""'ABC'""], [""'AAA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAAAAaaaaaAAAAAAAAAAAA'"", ""'AAAAAAA'""], [""'11AAA22BBB33CCC!'"", ""'ABC'""]]",[]
+number,lower-case letter,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/11.txt,"[[""'aaaaaaaaaAB11!11kkkfff!kkkddd33?fff33fffkkk?lllkkk33'"", ""'aaaABkfkdffklk'""], [""'???!!!!ABCdddeeefffggg11223344aaaaaaaaaeeeeee'"", ""'ABCdefgaaaee'""], [""'A?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAaaaaaaaaaaaaaaaAAAA'"", ""'AAAaaaaaAAAA'""], [""'11A22B33C!'"", ""'ABC'""]]",[]
+number,exclamation point,❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/12.txt,"[[""'aaaAB11!!!11kf!!!kd33?f33fk?lk33'"", ""'aaaABkfkdffklk'""], [""'???!!!!!!!!!!!!ABCdefg11223344aaaee'"", ""'ABCdefgaaaee'""], [""'A?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!!!!!!!!!!!'"", ""''""], [""'11A22B33C!!!'"", ""'ABC'""]]",[]
+number,question mark,❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/13.txt,"[[""'aaaAB11!11kf!kd33???f33fk???lk33'"", ""'aaaABkfkdffklk'""], [""'?????????!!!!ABCdefg11223344aaaee'"", ""'ABCdefgaaaee'""], [""'A???'"", ""'A'""], [""'???'"", ""''""], [""'!!!!!'"", ""''""], [""'11A22B33C!'"", ""'ABC'""]]",[]
+number,vowel (lower-case or upper-case),❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/14.txt,"[[""'aaaaaaaaaAAAB11!11kf!kd33?f33fk?lk33'"", ""'aaaABkfkdffklk'""], [""'???!!!!AAABCdeeefg11223344aaaaaaaaaeeeeee'"", ""'ABCdefgaaaee'""], [""'AAA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'11AAA22B33C!'"", ""'ABC'""]]",[]
+number,consonant (lower-case or upper-case),❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/15.txt,"[[""'aaaABBB11!11kkkfff!kkkddd33?fff33fffkkk?lllkkk33'"", ""'aaaABkfkdffklk'""], [""'???!!!!ABBBCCCdddefffggg11223344aaaee'"", ""'ABCdefgaaaee'""], [""'A?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'11A22BBB33CCC!'"", ""'ABC'""]]",[]
+upper-case letter,number,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/17.txt,"[[""'aaaAABB111!111kf!kd333?f333fk?lk333'"", ""'AB'""], [""'???!!!!AABBCCdefg111222333444aaaee'"", ""'ABC'""], [""'AA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAaaaaaAAAAAAAA'"", ""'AAAAAAA'""], [""'111AA222BB333CC!'"", ""'ABC'""]]",[]
+upper-case letter,lower-case letter,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/19.txt,"[[""'aaaaaaaaaAABB1!1kkkfff!kkkddd3?fff3fffkkk?lllkkk3'"", ""'AB'""], [""'???!!!!AABBCCdddeeefffggg1234aaaaaaaaaeeeeee'"", ""'ABC'""], [""'AA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAaaaaaaaaaaaaaaaAAAAAAAA'"", ""'AAAAAAA'""], [""'1AA2BB3CC!'"", ""'ABC'""]]",[]
+upper-case letter,exclamation point,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/20.txt,"[[""'aaaAABB1!!!1kf!!!kd3?f3fk?lk3'"", ""'AB'""], [""'???!!!!!!!!!!!!AABBCCdefg1234aaaee'"", ""'ABC'""], [""'AA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!!!!!!!!!!!'"", ""''""], [""'AAAAAAaaaaaAAAAAAAA'"", ""'AAAAAAA'""], [""'1AA2BB3CC!!!'"", ""'ABC'""]]",[]
+upper-case letter,question mark,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/21.txt,"[[""'aaaAABB1!1kf!kd3???f3fk???lk3'"", ""'AB'""], [""'?????????!!!!AABBCCdefg1234aaaee'"", ""'ABC'""], [""'AA???'"", ""'A'""], [""'???'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAaaaaaAAAAAAAA'"", ""'AAAAAAA'""], [""'1AA2BB3CC!'"", ""'ABC'""]]",[]
+lower-case letter,number,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/25.txt,"[[""'aaaaaaAB111!111kkff!kkdd333?ff333ffkk?llkk333'"", ""'aaaABkfkdffklk'""], [""'???!!!!ABCddeeffgg111222333444aaaaaaeeee'"", ""'ABCdefgaaaee'""], [""'A?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAaaaaaaaaaaAAAA'"", ""'AAAaaaaaAAAA'""], [""'111A222B333C!'"", ""'ABC'""]]",[]
+lower-case letter,upper-case letter,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/26.txt,"[[""'aaaaaaAAABBB1!1kkff!kkdd3?ff3ffkk?llkk3'"", ""'aaaABkfkdffklk'""], [""'???!!!!AAABBBCCCddeeffgg1234aaaaaaeeee'"", ""'ABCdefgaaaee'""], [""'AAA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAAAAaaaaaaaaaaAAAAAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'1AAA2BBB3CCC!'"", ""'ABC'""]]",[]
+lower-case letter,exclamation point,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/28.txt,"[[""'aaaaaaAB1!!!1kkff!!!kkdd3?ff3ffkk?llkk3'"", ""'aaaABkfkdffklk'""], [""'???!!!!!!!!!!!!ABCddeeffgg1234aaaaaaeeee'"", ""'ABCdefgaaaee'""], [""'A?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!!!!!!!!!!!'"", ""''""], [""'AAAaaaaaaaaaaAAAA'"", ""'AAAaaaaaAAAA'""], [""'1A2B3C!!!'"", ""'ABC'""]]",[]
+lower-case letter,question mark,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/29.txt,"[[""'aaaaaaAB1!1kkff!kkdd3???ff3ffkk???llkk3'"", ""'aaaABkfkdffklk'""], [""'?????????!!!!ABCddeeffgg1234aaaaaaeeee'"", ""'ABCdefgaaaee'""], [""'A???'"", ""'A'""], [""'???'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAaaaaaaaaaaAAAA'"", ""'AAAaaaaaAAAA'""], [""'1A2B3C!'"", ""'ABC'""]]",[]
+exclamation point,letter,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/32.txt,"[[""'aaaaaaaaaAAABBB1!!1kkkfff!!kkkddd3?fff3fffkkk?lllkkk3'"", ""'aaaABkfkdffklk'""], [""'???!!!!!!!!AAABBBCCCdddeeefffggg1234aaaaaaaaaeeeeee'"", ""'ABCdefgaaaee'""], [""'AAA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!!!!!!'"", ""''""], [""'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'1AAA2BBB3CCC!!'"", ""'ABC'""]]",[]
+exclamation point,number,❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/33.txt,"[[""'aaaAB111!!111kf!!kd333?f333fk?lk333'"", ""'aaaABkfkdffklk'""], [""'???!!!!!!!!ABCdefg111222333444aaaee'"", ""'ABCdefgaaaee'""], [""'A?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!!!!!!'"", ""''""], [""'111A222B333C!!'"", ""'ABC'""]]",[]
+exclamation point,upper-case letter,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/34.txt,"[[""'aaaAAABBB1!!1kf!!kd3?f3fk?lk3'"", ""'AB'""], [""'???!!!!!!!!AAABBBCCCdefg1234aaaee'"", ""'ABC'""], [""'AAA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!!!!!!'"", ""''""], [""'AAAAAAAAAaaaaaAAAAAAAAAAAA'"", ""'AAAAAAA'""], [""'1AAA2BBB3CCC!!'"", ""'ABC'""]]",[]
+exclamation point,lower-case letter,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/35.txt,"[[""'aaaaaaaaaAB1!!1kkkfff!!kkkddd3?fff3fffkkk?lllkkk3'"", ""'aaakfkdffklk'""], [""'???!!!!!!!!ABCdddeeefffggg1234aaaaaaaaaeeeeee'"", ""'defgaaaee'""], [""'A?'"", ""''""], [""'?'"", ""''""], [""'!!!!!!!!!!'"", ""''""], [""'AAAaaaaaaaaaaaaaaaAAAA'"", ""'aaaaa'""], [""'1A2B3C!!'"", ""''""]]",[]
+exclamation point,question mark,💀💀💀💀💀💀💀,eeeeeee,input/codeparrot/double_letters/37.txt,[],"[""'str' object has no attribute 'punctuation'"", ""'str' object has no attribute 'punctuation'"", ""'str' object has no attribute 'punctuation'"", ""'str' object has no attribute 'punctuation'"", ""'str' object has no attribute 'punctuation'"", ""'str' object has no attribute 'punctuation'"", ""'str' object has no attribute 'punctuation'""]"
+exclamation point,vowel (lower-case or upper-case),❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/38.txt,"[[""'aaaaaaaaaAAAB1!!1kf!!kd3?f3fk?lk3'"", ""'aaaABkfkdffklk'""], [""'???!!!!!!!!AAABCdeeefg1234aaaaaaaaaeeeeee'"", ""'ABCdefgaaaee'""], [""'AAA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!!!!!!'"", ""''""], [""'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'1AAA2B3C!!'"", ""'ABC'""]]",[]
+exclamation point,consonant (lower-case or upper-case),❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/39.txt,"[[""'aaaABBB1!!1kkkfff!!kkkddd3?fff3fffkkk?lllkkk3'"", ""'aaaABkfkdffklk'""], [""'???!!!!!!!!ABBBCCCdddefffggg1234aaaee'"", ""'ABCdefgaaaee'""], [""'A?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!!!!!!'"", ""''""], [""'1A2BBB3CCC!!'"", ""'ABC'""]]",[]
+question mark,letter,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/40.txt,"[[""'aaaaaaaaaAAABBB1!1kkkfff!kkkddd3??fff3fffkkk??lllkkk3'"", ""'aaaABkfkdffklk'""], [""'??????!!!!AAABBBCCCdddeeefffggg1234aaaaaaaaaeeeeee'"", ""'ABCdefgaaaee'""], [""'AAA??'"", ""'A'""], [""'??'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'1AAA2BBB3CCC!'"", ""'ABC'""]]",[]
+question mark,number,❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/41.txt,"[[""'aaaAB111!111kf!kd333??f333fk??lk333'"", ""'aaaABkfkdffklk'""], [""'??????!!!!ABCdefg111222333444aaaee'"", ""'ABCdefgaaaee'""], [""'A??'"", ""'A'""], [""'??'"", ""''""], [""'!!!!!'"", ""''""], [""'111A222B333C!'"", ""'ABC'""]]",[]
+question mark,upper-case letter,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/42.txt,"[[""'aaaAAABBB1!1kf!kd3??f3fk??lk3'"", ""'AB'""], [""'??????!!!!AAABBBCCCdefg1234aaaee'"", ""'ABC'""], [""'AAA??'"", ""'A'""], [""'??'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAAAAaaaaaAAAAAAAAAAAA'"", ""'AAAAAAA'""], [""'1AAA2BBB3CCC!'"", ""'ABC'""]]",[]
+question mark,lower-case letter,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/43.txt,"[[""'aaaaaaaaaAB1!1kkkfff!kkkddd3??fff3fffkkk??lllkkk3'"", ""'aaakfkdffklk'""], [""'??????!!!!ABCdddeeefffggg1234aaaaaaaaaeeeeee'"", ""'defgaaaee'""], [""'A??'"", ""''""], [""'??'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAaaaaaaaaaaaaaaaAAAA'"", ""'aaaaa'""], [""'1A2B3C!'"", ""''""]]",[]
+question mark,exclamation point,❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/44.txt,"[[""'aaaAB1!!!1kf!!!kd3??f3fk??lk3'"", ""'aaaABkfkdffklk'""], [""'??????!!!!!!!!!!!!ABCdefg1234aaaee'"", ""'ABCdefgaaaee'""], [""'A??'"", ""'A'""], [""'??'"", ""''""], [""'!!!!!!!!!!!!!!!'"", ""''""], [""'1A2B3C!!!'"", ""'ABC'""]]",[]
+question mark,vowel (lower-case or upper-case),❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/46.txt,"[[""'aaaaaaaaaAAAB1!1kf!kd3??f3fk??lk3'"", ""'aaaABkfkdffklk'""], [""'??????!!!!AAABCdeeefg1234aaaaaaaaaeeeeee'"", ""'ABCdefgaaaee'""], [""'AAA??'"", ""'A'""], [""'??'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'1AAA2B3C!'"", ""'ABC'""]]",[]
+question mark,consonant (lower-case or upper-case),❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/47.txt,"[[""'aaaABBB1!1kkkfff!kkkddd3??fff3fffkkk??lllkkk3'"", ""'aaaABkfkdffklk'""], [""'??????!!!!ABBBCCCdddefffggg1234aaaee'"", ""'ABCdefgaaaee'""], [""'A??'"", ""'A'""], [""'??'"", ""''""], [""'!!!!!'"", ""''""], [""'1A2BBB3CCC!'"", ""'ABC'""]]",[]
+vowel (lower-case or upper-case),number,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/49.txt,"[[""'aaaaaaAAB111!111kf!kd333?f333fk?lk333'"", ""'aaaABkfkdffklk'""], [""'???!!!!AABCdeefg111222333444aaaaaaeeee'"", ""'ABCdefgaaaee'""], [""'AA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAaaaaaaaaaaAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'111AA222B333C!'"", ""'ABC'""]]",[]
+vowel (lower-case or upper-case),exclamation point,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/52.txt,"[[""'aaaaaaAAB1!!!1kf!!!kd3?f3fk?lk3'"", ""'aaaABkfkdffklk'""], [""'???!!!!!!!!!!!!AABCdeefg1234aaaaaaeeee'"", ""'ABCdefgaaaee'""], [""'AA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!!!!!!!!!!!'"", ""''""], [""'AAAAAAaaaaaaaaaaAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'1AA2B3C!!!'"", ""'ABC'""]]",[]
+vowel (lower-case or upper-case),question mark,❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/53.txt,"[[""'aaaaaaAAB1!1kf!kd3???f3fk???lk3'"", ""'aaaABkfkdffklk'""], [""'?????????!!!!AABCdeefg1234aaaaaaeeee'"", ""'ABCdefgaaaee'""], [""'AA???'"", ""'A'""], [""'???'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAaaaaaaaaaaAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'1AA2B3C!'"", ""'ABC'""]]",[]
+vowel (lower-case or upper-case),consonant (lower-case or upper-case),❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/55.txt,"[[""'aaaaaaAABBB1!1kkkfff!kkkddd3?fff3fffkkk?lllkkk3'"", ""'AB'""], [""'???!!!!AABBBCCCdddeefffggg1234aaaaaaeeee'"", ""'ABC'""], [""'AA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAaaaaaaaaaaAAAAAAAA'"", ""'AAAAAAA'""], [""'1AA2BBB3CCC!'"", ""'ABC'""]]",[]
+consonant (lower-case or upper-case),number,❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/57.txt,"[[""'aaaABB111!111kkff!kkdd333?ff333ffkk?llkk333'"", ""'aaaABkfkdffklk'""], [""'???!!!!ABBCCddeffgg111222333444aaaee'"", ""'ABCdefgaaaee'""], [""'A?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'111A222BB333CC!'"", ""'ABC'""]]",[]
+consonant (lower-case or upper-case),exclamation point,❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/60.txt,"[[""'aaaABB1!!!1kkff!!!kkdd3?ff3ffkk?llkk3'"", ""'aaaABkfkdffklk'""], [""'???!!!!!!!!!!!!ABBCCddeffgg1234aaaee'"", ""'ABCdefgaaaee'""], [""'A?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!!!!!!!!!!!'"", ""''""], [""'1A2BB3CC!!!'"", ""'ABC'""]]",[]
+consonant (lower-case or upper-case),question mark,❌❌❌❌❌✅❌,fffffpf,input/codeparrot/double_letters/61.txt,"[[""'aaaABB1!1kkff!kkdd3???ff3ffkk???llkk3'"", ""'aaaABkfkdffklk'""], [""'?????????!!!!ABBCCddeffgg1234aaaee'"", ""'ABCdefgaaaee'""], [""'A???'"", ""'A'""], [""'???'"", ""''""], [""'!!!!!'"", ""''""], [""'1A2BB3CC!'"", ""'ABC'""]]",[]
+consonant (lower-case or upper-case),vowel (lower-case or upper-case),❌❌❌❌❌❌❌,fffffff,input/codeparrot/double_letters/62.txt,"[[""'aaaaaaaaaAAABB1!1kkff!kkdd3?ff3ffkk?llkk3'"", ""'aaaABkfkdffklk'""], [""'???!!!!AAABBCCddeeeffgg1234aaaaaaaaaeeeeee'"", ""'ABCdefgaaaee'""], [""'AAA?'"", ""'A'""], [""'?'"", ""''""], [""'!!!!!'"", ""''""], [""'AAAAAAAAAaaaaaaaaaaaaaaaAAAAAAAAAAAA'"", ""'AAAaaaaaAAAA'""], [""'1AAA2BB3CC!'"", ""'ABC'""]]",[]

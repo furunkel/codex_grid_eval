@@ -1,49 +1,5 @@
-open,input,expected,actual,result,result_emojis,model_input
-(,"[['()(', ')']]",'Yes','No',f,❌,input/incoder/match_parens/0.txt
-(,"[[')', ')']]",,,p,✅,input/incoder/match_parens/0.txt
-(,"[['(()(())', '())())']]",,,p,✅,input/incoder/match_parens/0.txt
-(,"[[')())', '(()()(']]",'Yes','No',f,❌,input/incoder/match_parens/0.txt
-(,"[['(())))', '(()())((']]",'Yes','No',f,❌,input/incoder/match_parens/0.txt
-(,"[['()', '())']]",,,p,✅,input/incoder/match_parens/0.txt
-(,"[['(()(', '()))()']]",'Yes','No',f,❌,input/incoder/match_parens/0.txt
-(,"[['((((', '((())']]",,,p,✅,input/incoder/match_parens/0.txt
-(,"[[')(()', '(()(']]",,,p,✅,input/incoder/match_parens/0.txt
-(,"[[')(', ')(']]",,,p,✅,input/incoder/match_parens/0.txt
-(,"[['(', ')']]",,,p,✅,input/incoder/match_parens/0.txt
-(,"[[')', '(']]",'Yes','No',f,❌,input/incoder/match_parens/0.txt
-{,"[['{}{', '}']]",'Yes','No',f,❌,input/incoder/match_parens/1.txt
-{,"[['}', '}']]",,,p,✅,input/incoder/match_parens/1.txt
-{,"[['{{}{{}}', '{}}{}}']]",'No','Yes',f,❌,input/incoder/match_parens/1.txt
-{,"[['}{}}', '{{}{}{']]",,,p,✅,input/incoder/match_parens/1.txt
-{,"[['{{}}}}', '{{}{}}{{']]",,,p,✅,input/incoder/match_parens/1.txt
-{,"[['{}', '{}}']]",'No','Yes',f,❌,input/incoder/match_parens/1.txt
-{,"[['{{}{', '{}}}{}']]",,,p,✅,input/incoder/match_parens/1.txt
-{,"[['{{{{', '{{{}}']]",'No','Yes',f,❌,input/incoder/match_parens/1.txt
-{,"[['}{{}', '{{}{']]",'No','Yes',f,❌,input/incoder/match_parens/1.txt
-{,"[['}{', '}{']]",'No','Yes',f,❌,input/incoder/match_parens/1.txt
-{,"[['{', '}']]",,,p,✅,input/incoder/match_parens/1.txt
-{,"[['}', '{']]",'Yes','No',f,❌,input/incoder/match_parens/1.txt
-[,"[['[][', ']']]",'Yes','No',f,❌,input/incoder/match_parens/2.txt
-[,"[[']', ']']]",,,p,✅,input/incoder/match_parens/2.txt
-[,"[['[[][[]]', '[]][]]']]",'No',True,f,❌,input/incoder/match_parens/2.txt
-[,"[['][]]', '[[][][']]",'Yes',True,f,❌,input/incoder/match_parens/2.txt
-[,"[['[[]]]]', '[[][]][[']]",'Yes',True,f,❌,input/incoder/match_parens/2.txt
-[,"[['[]', '[]]']]",'No',True,f,❌,input/incoder/match_parens/2.txt
-[,"[['[[][', '[]]][]']]",'Yes',True,f,❌,input/incoder/match_parens/2.txt
-[,"[['[[[[', '[[[]]']]",'No',True,f,❌,input/incoder/match_parens/2.txt
-[,"[['][[]', '[[][']]",'No',True,f,❌,input/incoder/match_parens/2.txt
-[,"[['][', '][']]",'No',True,f,❌,input/incoder/match_parens/2.txt
-[,"[['[', ']']]",'Yes',True,f,❌,input/incoder/match_parens/2.txt
-[,"[[']', '[']]",'Yes','No',f,❌,input/incoder/match_parens/2.txt
-<,"[['<><', '>']]",'Yes','No',f,❌,input/incoder/match_parens/3.txt
-<,"[['>', '>']]",,,p,✅,input/incoder/match_parens/3.txt
-<,"[['<<><<>>', '<>><>>']]",,,p,✅,input/incoder/match_parens/3.txt
-<,"[['><>>', '<<><><']]",'Yes','No',f,❌,input/incoder/match_parens/3.txt
-<,"[['<<>>>>', '<<><>><<']]",'Yes','No',f,❌,input/incoder/match_parens/3.txt
-<,"[['<>', '<>>']]",,,p,✅,input/incoder/match_parens/3.txt
-<,"[['<<><', '<>>><>']]",'Yes','No',f,❌,input/incoder/match_parens/3.txt
-<,"[['<<<<', '<<<>>']]",,,p,✅,input/incoder/match_parens/3.txt
-<,"[['><<>', '<<><']]",,,p,✅,input/incoder/match_parens/3.txt
-<,"[['><', '><']]",,,p,✅,input/incoder/match_parens/3.txt
-<,"[['<', '>']]",,,p,✅,input/incoder/match_parens/3.txt
-<,"[['>', '<']]",'Yes','No',f,❌,input/incoder/match_parens/3.txt
+open,result_emojis,result,model_input,failed_inputs,errors
+(,❌✅✅❌❌✅❌✅✅✅✅❌,fppffpfppppf,input/incoder/match_parens/0.txt,"[[""'Yes'"", ""'No'""], [""'Yes'"", ""'No'""], [""'Yes'"", ""'No'""], [""'Yes'"", ""'No'""], [""'Yes'"", ""'No'""]]",[]
+{,❌✅❌✅✅❌✅❌❌❌✅❌,fpfppfpfffpf,input/incoder/match_parens/1.txt,"[[""'Yes'"", ""'No'""], [""'No'"", ""'Yes'""], [""'No'"", ""'Yes'""], [""'No'"", ""'Yes'""], [""'No'"", ""'Yes'""], [""'No'"", ""'Yes'""], [""'Yes'"", ""'No'""]]",[]
+[,❌✅❌❌❌❌❌❌❌❌❌❌,fpffffffffff,input/incoder/match_parens/2.txt,"[[""'Yes'"", ""'No'""], [""'No'"", ""True""], [""'Yes'"", ""True""], [""'Yes'"", ""True""], [""'No'"", ""True""], [""'Yes'"", ""True""], [""'No'"", ""True""], [""'No'"", ""True""], [""'No'"", ""True""], [""'Yes'"", ""True""], [""'Yes'"", ""'No'""]]",[]
+<,❌✅✅❌❌✅❌✅✅✅✅❌,fppffpfppppf,input/incoder/match_parens/3.txt,"[[""'Yes'"", ""'No'""], [""'Yes'"", ""'No'""], [""'Yes'"", ""'No'""], [""'Yes'"", ""'No'""], [""'Yes'"", ""'No'""]]",[]

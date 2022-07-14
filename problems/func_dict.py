@@ -54,8 +54,8 @@ def oracle_(length, func):
         dct[i] = FUNCS[func](i)
     return dct
 
-def oracle(vars):
-    return oracle_(vars['input'], vars['func'])
+def oracle(vars, input):
+    return oracle_(input, vars['func'])
 
 def render(**vars):
     example_dict = oracle_(vars['example_len'], vars['func'])

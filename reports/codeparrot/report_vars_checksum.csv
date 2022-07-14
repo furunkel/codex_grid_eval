@@ -1,9 +1,6 @@
 var,val,success_rate
 offset_char,the space character,0
 mod,64,0
-input,123,0
-input,abc,0
-input,"ffjeojf3rfh4hg4uihg438gh4hf,.,.,.rf43",0
 mod,128,0
 mod,256,0
 offset_char,the newline character,0

@@ -1,9 +1,4 @@
 var,val,success_rate
-input,2,0.0
-input,5,0.0
-input,9,0.0
-input,10,0.0
-input,100,0.0
 example_len,100,0.0
 func,-,0.0
 func,+,0.027777777777777776
@@ -16,4 +11,3 @@ example_len,8,0.06666666666666667
 example_len,1,0.13333333333333333
 func,*,0.1388888888888889
 func,**2,0.1388888888888889
-input,1,0.4

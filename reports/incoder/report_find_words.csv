@@ -1,145 +1,17 @@
-length,cond,input,expected,actual,result,result_emojis,model_input
-1,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,"['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']",['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],f,❌,input/incoder/find_words/0.txt
-1,at least,aaa,,,p,✅,input/incoder/find_words/0.txt
-1,at least,aaaaaa,,,p,✅,input/incoder/find_words/0.txt
-1,at least,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']",['aaaaaaaaaaaaaaaaaaaa'],f,❌,input/incoder/find_words/0.txt
-1,at least,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/0.txt
-1,at least,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']","['bbb', 'bbbbbb']",f,❌,input/incoder/find_words/0.txt
-1,at least,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']","['bbb', 'bbbbbbb']",f,❌,input/incoder/find_words/0.txt
-1,at least,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']","['Please', 'move', 'back', 'stream']",f,❌,input/incoder/find_words/0.txt
-1,at least,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']","['Jhingai', 'wulu', 'road', 'Zone']",f,❌,input/incoder/find_words/0.txt
-1,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/incoder/find_words/1.txt
-1,exactly,aaa,,,p,✅,input/incoder/find_words/1.txt
-1,exactly,aaaaaa,,,p,✅,input/incoder/find_words/1.txt
-1,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/incoder/find_words/1.txt
-1,exactly,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/1.txt
-1,exactly,b bbb bbbbbb,,,p,✅,input/incoder/find_words/1.txt
-1,exactly,b bbb bbbbbbb,,,p,✅,input/incoder/find_words/1.txt
-1,exactly,Please move back to stream,,,p,✅,input/incoder/find_words/1.txt
-1,exactly,Jhingai wulu road Zone 3,,,p,✅,input/incoder/find_words/1.txt
-1,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/incoder/find_words/2.txt
-1,at most,aaa,,,p,✅,input/incoder/find_words/2.txt
-1,at most,aaaaaa,,,p,✅,input/incoder/find_words/2.txt
-1,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/incoder/find_words/2.txt
-1,at most,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/2.txt
-1,at most,b bbb bbbbbb,,,p,✅,input/incoder/find_words/2.txt
-1,at most,b bbb bbbbbbb,,,p,✅,input/incoder/find_words/2.txt
-1,at most,Please move back to stream,,,p,✅,input/incoder/find_words/2.txt
-1,at most,Jhingai wulu road Zone 3,,,p,✅,input/incoder/find_words/2.txt
-1,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/incoder/find_words/3.txt
-1,not,aaa,,,p,✅,input/incoder/find_words/3.txt
-1,not,aaaaaa,,,p,✅,input/incoder/find_words/3.txt
-1,not,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/incoder/find_words/3.txt
-1,not,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/3.txt
-1,not,b bbb bbbbbb,,,p,✅,input/incoder/find_words/3.txt
-1,not,b bbb bbbbbbb,,,p,✅,input/incoder/find_words/3.txt
-1,not,Please move back to stream,,,p,✅,input/incoder/find_words/3.txt
-1,not,Jhingai wulu road Zone 3,,,p,✅,input/incoder/find_words/3.txt
-3,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/incoder/find_words/4.txt
-3,at least,aaa,,,p,✅,input/incoder/find_words/4.txt
-3,at least,aaaaaa,,,p,✅,input/incoder/find_words/4.txt
-3,at least,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/incoder/find_words/4.txt
-3,at least,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/4.txt
-3,at least,b bbb bbbbbb,,,p,✅,input/incoder/find_words/4.txt
-3,at least,b bbb bbbbbbb,,,p,✅,input/incoder/find_words/4.txt
-3,at least,Please move back to stream,,,p,✅,input/incoder/find_words/4.txt
-3,at least,Jhingai wulu road Zone 3,,,p,✅,input/incoder/find_words/4.txt
-3,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/incoder/find_words/5.txt
-3,exactly,aaa,,,p,✅,input/incoder/find_words/5.txt
-3,exactly,aaaaaa,,,p,✅,input/incoder/find_words/5.txt
-3,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/incoder/find_words/5.txt
-3,exactly,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/5.txt
-3,exactly,b bbb bbbbbb,,,p,✅,input/incoder/find_words/5.txt
-3,exactly,b bbb bbbbbbb,,,p,✅,input/incoder/find_words/5.txt
-3,exactly,Please move back to stream,,,p,✅,input/incoder/find_words/5.txt
-3,exactly,Jhingai wulu road Zone 3,,,p,✅,input/incoder/find_words/5.txt
-3,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],f,❌,input/incoder/find_words/6.txt
-3,at most,aaa,['aaa'],[],f,❌,input/incoder/find_words/6.txt
-3,at most,aaaaaa,[],['aaaaaa'],f,❌,input/incoder/find_words/6.txt
-3,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['b', 'c', 'd', 'e']",['aaaaaaaaaaaaaaaaaaaa'],f,❌,input/incoder/find_words/6.txt
-3,at most,cccccccccccccccccccc,[],['cccccccccccccccccccc'],f,❌,input/incoder/find_words/6.txt
-3,at most,b bbb bbbbbb,"['b', 'bbb']",['bbbbbb'],f,❌,input/incoder/find_words/6.txt
-3,at most,b bbb bbbbbbb,"['b', 'bbb']",['bbbbbbb'],f,❌,input/incoder/find_words/6.txt
-3,at most,Please move back to stream,['to'],"['Please', 'move', 'back', 'stream']",f,❌,input/incoder/find_words/6.txt
-3,at most,Jhingai wulu road Zone 3,['3'],"['Jhingai', 'wulu', 'road', 'Zone']",f,❌,input/incoder/find_words/6.txt
-3,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,"['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']",['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],f,❌,input/incoder/find_words/7.txt
-3,not,aaa,,,p,✅,input/incoder/find_words/7.txt
-3,not,aaaaaa,,,p,✅,input/incoder/find_words/7.txt
-3,not,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']",['aaaaaaaaaaaaaaaaaaaa'],f,❌,input/incoder/find_words/7.txt
-3,not,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/7.txt
-3,not,b bbb bbbbbb,"['b', 'bbbbbb']",['bbbbbb'],f,❌,input/incoder/find_words/7.txt
-3,not,b bbb bbbbbbb,"['b', 'bbbbbbb']",['bbbbbbb'],f,❌,input/incoder/find_words/7.txt
-3,not,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']","['Please', 'move', 'back', 'stream']",f,❌,input/incoder/find_words/7.txt
-3,not,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']","['Jhingai', 'wulu', 'road', 'Zone']",f,❌,input/incoder/find_words/7.txt
-6,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/incoder/find_words/8.txt
-6,at least,aaa,,,p,✅,input/incoder/find_words/8.txt
-6,at least,aaaaaa,,,p,✅,input/incoder/find_words/8.txt
-6,at least,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/incoder/find_words/8.txt
-6,at least,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/8.txt
-6,at least,b bbb bbbbbb,,,p,✅,input/incoder/find_words/8.txt
-6,at least,b bbb bbbbbbb,,,p,✅,input/incoder/find_words/8.txt
-6,at least,Please move back to stream,,,p,✅,input/incoder/find_words/8.txt
-6,at least,Jhingai wulu road Zone 3,,,p,✅,input/incoder/find_words/8.txt
-6,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/incoder/find_words/9.txt
-6,exactly,aaa,,,p,✅,input/incoder/find_words/9.txt
-6,exactly,aaaaaa,,,p,✅,input/incoder/find_words/9.txt
-6,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/incoder/find_words/9.txt
-6,exactly,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/9.txt
-6,exactly,b bbb bbbbbb,,,p,✅,input/incoder/find_words/9.txt
-6,exactly,b bbb bbbbbbb,,,p,✅,input/incoder/find_words/9.txt
-6,exactly,Please move back to stream,,,p,✅,input/incoder/find_words/9.txt
-6,exactly,Jhingai wulu road Zone 3,,,p,✅,input/incoder/find_words/9.txt
-6,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],f,❌,input/incoder/find_words/10.txt
-6,at most,aaa,['aaa'],[],f,❌,input/incoder/find_words/10.txt
-6,at most,aaaaaa,['aaaaaa'],[],f,❌,input/incoder/find_words/10.txt
-6,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['b', 'c', 'd', 'e']",['aaaaaaaaaaaaaaaaaaaa'],f,❌,input/incoder/find_words/10.txt
-6,at most,cccccccccccccccccccc,[],['cccccccccccccccccccc'],f,❌,input/incoder/find_words/10.txt
-6,at most,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']",[],f,❌,input/incoder/find_words/10.txt
-6,at most,b bbb bbbbbbb,"['b', 'bbb']",['bbbbbbb'],f,❌,input/incoder/find_words/10.txt
-6,at most,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']",[],f,❌,input/incoder/find_words/10.txt
-6,at most,Jhingai wulu road Zone 3,"['wulu', 'road', 'Zone', '3']",['Jhingai'],f,❌,input/incoder/find_words/10.txt
-6,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,"['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']",['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],f,❌,input/incoder/find_words/11.txt
-6,not,aaa,['aaa'],[],f,❌,input/incoder/find_words/11.txt
-6,not,aaaaaa,,,p,✅,input/incoder/find_words/11.txt
-6,not,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']",['aaaaaaaaaaaaaaaaaaaa'],f,❌,input/incoder/find_words/11.txt
-6,not,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/11.txt
-6,not,b bbb bbbbbb,"['b', 'bbb']",[],f,❌,input/incoder/find_words/11.txt
-6,not,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']",['bbbbbbb'],f,❌,input/incoder/find_words/11.txt
-6,not,Please move back to stream,"['move', 'back', 'to']",[],f,❌,input/incoder/find_words/11.txt
-6,not,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']",['Jhingai'],f,❌,input/incoder/find_words/11.txt
-20,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/incoder/find_words/12.txt
-20,at least,aaa,,,p,✅,input/incoder/find_words/12.txt
-20,at least,aaaaaa,,,p,✅,input/incoder/find_words/12.txt
-20,at least,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/incoder/find_words/12.txt
-20,at least,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/12.txt
-20,at least,b bbb bbbbbb,,,p,✅,input/incoder/find_words/12.txt
-20,at least,b bbb bbbbbbb,,,p,✅,input/incoder/find_words/12.txt
-20,at least,Please move back to stream,,,p,✅,input/incoder/find_words/12.txt
-20,at least,Jhingai wulu road Zone 3,,,p,✅,input/incoder/find_words/12.txt
-20,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/incoder/find_words/13.txt
-20,exactly,aaa,,,p,✅,input/incoder/find_words/13.txt
-20,exactly,aaaaaa,,,p,✅,input/incoder/find_words/13.txt
-20,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/incoder/find_words/13.txt
-20,exactly,cccccccccccccccccccc,,,p,✅,input/incoder/find_words/13.txt
-20,exactly,b bbb bbbbbb,,,p,✅,input/incoder/find_words/13.txt
-20,exactly,b bbb bbbbbbb,,,p,✅,input/incoder/find_words/13.txt
-20,exactly,Please move back to stream,,,p,✅,input/incoder/find_words/13.txt
-20,exactly,Jhingai wulu road Zone 3,,,p,✅,input/incoder/find_words/13.txt
-20,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],f,❌,input/incoder/find_words/14.txt
-20,at most,aaa,['aaa'],[],f,❌,input/incoder/find_words/14.txt
-20,at most,aaaaaa,['aaaaaa'],[],f,❌,input/incoder/find_words/14.txt
-20,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']",[],f,❌,input/incoder/find_words/14.txt
-20,at most,cccccccccccccccccccc,['cccccccccccccccccccc'],[],f,❌,input/incoder/find_words/14.txt
-20,at most,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']",[],f,❌,input/incoder/find_words/14.txt
-20,at most,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']",[],f,❌,input/incoder/find_words/14.txt
-20,at most,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']",[],f,❌,input/incoder/find_words/14.txt
-20,at most,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']",[],f,❌,input/incoder/find_words/14.txt
-20,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,"['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']","['a', '', '', '']",f,❌,input/incoder/find_words/15.txt
-20,not,aaa,['aaa'],"['aaa', '']",f,❌,input/incoder/find_words/15.txt
-20,not,aaaaaa,['aaaaaa'],"['aaaaaa', '']",f,❌,input/incoder/find_words/15.txt
-20,not,aaaaaaaaaaaaaaaaaaaa  b c d e,"['b', 'c', 'd', 'e']","['aaaaaaaaaaaaaaaaaaaa', '', 'b', '', 'c', '', 'd', '', 'e', '']",f,❌,input/incoder/find_words/15.txt
-20,not,cccccccccccccccccccc,[],"['cccccccccccccccccccc', '']",f,❌,input/incoder/find_words/15.txt
-20,not,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']","['b', '', 'bbb', '', 'bbbbbb', '']",f,❌,input/incoder/find_words/15.txt
-20,not,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']","['b', '', 'bbb', '', 'bbbbbbb', '']",f,❌,input/incoder/find_words/15.txt
-20,not,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']","['Please', '', 'move', '', 'back', '', 'to', '', 'stream', '']",f,❌,input/incoder/find_words/15.txt
-20,not,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']","['Jhingai', '', 'wulu', '', 'road', '', 'Zone', '', '3', '']",f,❌,input/incoder/find_words/15.txt
+length,cond,result_emojis,result,model_input,failed_inputs,errors
+1,at least,❌✅✅❌✅❌❌❌❌,fppfpffff,input/incoder/find_words/0.txt,"[[""['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']"", ""['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']""], [""['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']"", ""['aaaaaaaaaaaaaaaaaaaa']""], [""['b', 'bbb', 'bbbbbb']"", ""['bbb', 'bbbbbb']""], [""['b', 'bbb', 'bbbbbbb']"", ""['bbb', 'bbbbbbb']""], [""['Please', 'move', 'back', 'to', 'stream']"", ""['Please', 'move', 'back', 'stream']""], [""['Jhingai', 'wulu', 'road', 'Zone', '3']"", ""['Jhingai', 'wulu', 'road', 'Zone']""]]",[]
+1,exactly,✅✅✅✅✅✅✅✅✅,ppppppppp,input/incoder/find_words/1.txt,[],[]
+1,at most,✅✅✅✅✅✅✅✅✅,ppppppppp,input/incoder/find_words/2.txt,[],[]
+1,not,✅✅✅✅✅✅✅✅✅,ppppppppp,input/incoder/find_words/3.txt,[],[]
+3,at least,✅✅✅✅✅✅✅✅✅,ppppppppp,input/incoder/find_words/4.txt,[],[]
+3,exactly,✅✅✅✅✅✅✅✅✅,ppppppppp,input/incoder/find_words/5.txt,[],[]
+3,at most,❌❌❌❌❌❌❌❌❌,fffffffff,input/incoder/find_words/6.txt,"[[""['a']"", ""['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']""], [""['aaa']"", ""[]""], [""[]"", ""['aaaaaa']""], [""['b', 'c', 'd', 'e']"", ""['aaaaaaaaaaaaaaaaaaaa']""], [""[]"", ""['cccccccccccccccccccc']""], [""['b', 'bbb']"", ""['bbbbbb']""], [""['b', 'bbb']"", ""['bbbbbbb']""], [""['to']"", ""['Please', 'move', 'back', 'stream']""], [""['3']"", ""['Jhingai', 'wulu', 'road', 'Zone']""]]",[]
+3,not,❌✅✅❌✅❌❌❌❌,fppfpffff,input/incoder/find_words/7.txt,"[[""['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']"", ""['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']""], [""['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']"", ""['aaaaaaaaaaaaaaaaaaaa']""], [""['b', 'bbbbbb']"", ""['bbbbbb']""], [""['b', 'bbbbbbb']"", ""['bbbbbbb']""], [""['Please', 'move', 'back', 'to', 'stream']"", ""['Please', 'move', 'back', 'stream']""], [""['Jhingai', 'wulu', 'road', 'Zone', '3']"", ""['Jhingai', 'wulu', 'road', 'Zone']""]]",[]
+6,at least,✅✅✅✅✅✅✅✅✅,ppppppppp,input/incoder/find_words/8.txt,[],[]
+6,exactly,✅✅✅✅✅✅✅✅✅,ppppppppp,input/incoder/find_words/9.txt,[],[]
+6,at most,❌❌❌❌❌❌❌❌❌,fffffffff,input/incoder/find_words/10.txt,"[[""['a']"", ""['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']""], [""['aaa']"", ""[]""], [""['aaaaaa']"", ""[]""], [""['b', 'c', 'd', 'e']"", ""['aaaaaaaaaaaaaaaaaaaa']""], [""[]"", ""['cccccccccccccccccccc']""], [""['b', 'bbb', 'bbbbbb']"", ""[]""], [""['b', 'bbb']"", ""['bbbbbbb']""], [""['Please', 'move', 'back', 'to', 'stream']"", ""[]""], [""['wulu', 'road', 'Zone', '3']"", ""['Jhingai']""]]",[]
+6,not,❌❌✅❌✅❌❌❌❌,ffpfpffff,input/incoder/find_words/11.txt,"[[""['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']"", ""['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']""], [""['aaa']"", ""[]""], [""['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']"", ""['aaaaaaaaaaaaaaaaaaaa']""], [""['b', 'bbb']"", ""[]""], [""['b', 'bbb', 'bbbbbbb']"", ""['bbbbbbb']""], [""['move', 'back', 'to']"", ""[]""], [""['Jhingai', 'wulu', 'road', 'Zone', '3']"", ""['Jhingai']""]]",[]
+20,at least,✅✅✅✅✅✅✅✅✅,ppppppppp,input/incoder/find_words/12.txt,[],[]
+20,exactly,✅✅✅✅✅✅✅✅✅,ppppppppp,input/incoder/find_words/13.txt,[],[]
+20,at most,❌❌❌❌❌❌❌❌❌,fffffffff,input/incoder/find_words/14.txt,"[[""['a']"", ""['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']""], [""['aaa']"", ""[]""], [""['aaaaaa']"", ""[]""], [""['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']"", ""[]""], [""['cccccccccccccccccccc']"", ""[]""], [""['b', 'bbb', 'bbbbbb']"", ""[]""], [""['b', 'bbb', 'bbbbbbb']"", ""[]""], [""['Please', 'move', 'back', 'to', 'stream']"", ""[]""], [""['Jhingai', 'wulu', 'road', 'Zone', '3']"", ""[]""]]",[]
+20,not,❌❌❌❌❌❌❌❌❌,fffffffff,input/incoder/find_words/15.txt,"[[""['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']"", ""['a', '', '', '']""], [""['aaa']"", ""['aaa', '']""], [""['aaaaaa']"", ""['aaaaaa', '']""], [""['b', 'c', 'd', 'e']"", ""['aaaaaaaaaaaaaaaaaaaa', '', 'b', '', 'c', '', 'd', '', 'e', '']""], [""[]"", ""['cccccccccccccccccccc', '']""], [""['b', 'bbb', 'bbbbbb']"", ""['b', '', 'bbb', '', 'bbbbbb', '']""], [""['b', 'bbb', 'bbbbbbb']"", ""['b', '', 'bbb', '', 'bbbbbbb', '']""], [""['Please', 'move', 'back', 'to', 'stream']"", ""['Please', '', 'move', '', 'back', '', 'to', '', 'stream', '']""], [""['Jhingai', 'wulu', 'road', 'Zone', '3']"", ""['Jhingai', '', 'wulu', '', 'road', '', 'Zone', '', '3', '']""]]",[]

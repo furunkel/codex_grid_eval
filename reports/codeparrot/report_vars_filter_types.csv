@@ -1,11 +1,9 @@
 var,val,success_rate
 type,string,0.0
-input,"[[4, {}, [], 23.2, 9, 'adasd']]",0.0
 type,float,0.0
 type,dictionary,0.0
 type,list,0.0
 type,tuple,0.0
 example_input,"['a', 3.14, 5]",0.08333333333333333
 example_input,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]",0.08333333333333333
-input,"[[3, 'c', 3, 3, 'a', 'b']]",0.16666666666666666
 type,integer,0.5

@@ -1,49 +1,5 @@
-open,input,expected,actual,result,result_emojis,model_input
-(,"[['()(', ')']]",'Yes',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[[')', ')']]",'No',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[['(()(())', '())())']]",'No',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[[')())', '(()()(']]",'Yes',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[['(())))', '(()())((']]",'Yes',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[['()', '())']]",'No',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[['(()(', '()))()']]",'Yes',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[['((((', '((())']]",'No',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[[')(()', '(()(']]",'No',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[[')(', ')(']]",'No',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[['(', ')']]",'Yes',False,f,❌,input/codeparrot/match_parens/0.txt
-(,"[[')', '(']]",'Yes',False,f,❌,input/codeparrot/match_parens/0.txt
-{,"[['{}{', '}']]",'Yes',False,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['}', '}']]",'No',True,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['{{}{{}}', '{}}{}}']]",'No',False,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['}{}}', '{{}{}{']]",'Yes',False,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['{{}}}}', '{{}{}}{{']]",'Yes',False,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['{}', '{}}']]",'No',False,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['{{}{', '{}}}{}']]",'Yes',False,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['{{{{', '{{{}}']]",'No',False,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['}{{}', '{{}{']]",'No',False,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['}{', '}{']]",'No',False,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['{', '}']]",'Yes',False,f,❌,input/codeparrot/match_parens/1.txt
-{,"[['}', '{']]",'Yes',True,f,❌,input/codeparrot/match_parens/1.txt
-[,"[['[][', ']']]",'Yes',False,f,❌,input/codeparrot/match_parens/2.txt
-[,"[[']', ']']]",'No',True,f,❌,input/codeparrot/match_parens/2.txt
-[,"[['[[][[]]', '[]][]]']]",'No',False,f,❌,input/codeparrot/match_parens/2.txt
-[,"[['][]]', '[[][][']]",'Yes',False,f,❌,input/codeparrot/match_parens/2.txt
-[,"[['[[]]]]', '[[][]][[']]",'Yes',False,f,❌,input/codeparrot/match_parens/2.txt
-[,"[['[]', '[]]']]",'No',False,f,❌,input/codeparrot/match_parens/2.txt
-[,"[['[[][', '[]]][]']]",'Yes',False,f,❌,input/codeparrot/match_parens/2.txt
-[,"[['[[[[', '[[[]]']]",'No',False,f,❌,input/codeparrot/match_parens/2.txt
-[,"[['][[]', '[[][']]",'No',False,f,❌,input/codeparrot/match_parens/2.txt
-[,"[['][', '][']]",'No',True,f,❌,input/codeparrot/match_parens/2.txt
-[,"[['[', ']']]",'Yes',False,f,❌,input/codeparrot/match_parens/2.txt
-[,"[[']', '[']]",'Yes',False,f,❌,input/codeparrot/match_parens/2.txt
-<,"[['<><', '>']]",'Yes',False,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['>', '>']]",'No',True,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['<<><<>>', '<>><>>']]",'No',False,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['><>>', '<<><><']]",'Yes',False,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['<<>>>>', '<<><>><<']]",'Yes',False,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['<>', '<>>']]",'No',False,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['<<><', '<>>><>']]",'Yes',False,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['<<<<', '<<<>>']]",'No',False,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['><<>', '<<><']]",'No',False,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['><', '><']]",'No',True,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['<', '>']]",'Yes',False,f,❌,input/codeparrot/match_parens/3.txt
-<,"[['>', '<']]",'Yes',False,f,❌,input/codeparrot/match_parens/3.txt
+open,result_emojis,result,model_input,failed_inputs,errors
+(,❌❌❌❌❌❌❌❌❌❌❌❌,ffffffffffff,input/codeparrot/match_parens/0.txt,"[[""'Yes'"", ""False""], [""'No'"", ""False""], [""'No'"", ""False""], [""'Yes'"", ""False""], [""'Yes'"", ""False""], [""'No'"", ""False""], [""'Yes'"", ""False""], [""'No'"", ""False""], [""'No'"", ""False""], [""'No'"", ""False""], [""'Yes'"", ""False""], [""'Yes'"", ""False""]]",[]
+{,❌❌❌❌❌❌❌❌❌❌❌❌,ffffffffffff,input/codeparrot/match_parens/1.txt,"[[""'Yes'"", ""False""], [""'No'"", ""True""], [""'No'"", ""False""], [""'Yes'"", ""False""], [""'Yes'"", ""False""], [""'No'"", ""False""], [""'Yes'"", ""False""], [""'No'"", ""False""], [""'No'"", ""False""], [""'No'"", ""False""], [""'Yes'"", ""False""], [""'Yes'"", ""True""]]",[]
+[,❌❌❌❌❌❌❌❌❌❌❌❌,ffffffffffff,input/codeparrot/match_parens/2.txt,"[[""'Yes'"", ""False""], [""'No'"", ""True""], [""'No'"", ""False""], [""'Yes'"", ""False""], [""'Yes'"", ""False""], [""'No'"", ""False""], [""'Yes'"", ""False""], [""'No'"", ""False""], [""'No'"", ""False""], [""'No'"", ""True""], [""'Yes'"", ""False""], [""'Yes'"", ""False""]]",[]
+<,❌❌❌❌❌❌❌❌❌❌❌❌,ffffffffffff,input/codeparrot/match_parens/3.txt,"[[""'Yes'"", ""False""], [""'No'"", ""True""], [""'No'"", ""False""], [""'Yes'"", ""False""], [""'Yes'"", ""False""], [""'No'"", ""False""], [""'Yes'"", ""False""], [""'No'"", ""False""], [""'No'"", ""False""], [""'No'"", ""True""], [""'Yes'"", ""False""], [""'Yes'"", ""False""]]",[]

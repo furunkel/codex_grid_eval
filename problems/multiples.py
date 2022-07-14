@@ -13,7 +13,7 @@ def oracle_(factors, below, agg):
                 break
     return nums, sum(nums) if agg == 'sum' else prod(nums)
 
-def oracle(vars):
+def oracle(vars, input):
     _, r = oracle_(vars['factors'], vars['below'], vars['agg'])
     return r
 

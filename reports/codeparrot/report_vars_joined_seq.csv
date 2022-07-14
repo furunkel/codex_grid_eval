@@ -1,10 +1,5 @@
 var,val,success_rate
 sep,an underscore,0.0
-input,AAB_CBBC,0.0
-input,AAB__CBBC,0.0
-input,AAB______CBBC,0.0
-input,AAB?CBBC,0.0
-input,AAB+CBBC,0.0
 case,lowercase,0.0
 sep,two underscores,0.0
 sep,six underscores,0.0
@@ -12,15 +7,8 @@ sep,a plus,0.0
 sep,a question mark,0.0
 pos_ret,False,0.0
 neg_ret,True,0.0
-sep,a dash,0.020833333333333332
-input,aab_cbbbc,0.03571428571428571
-input,aab__cbbbc,0.03571428571428571
-input,aab______cbbbc,0.03571428571428571
-input,aab?cbbbc,0.03571428571428571
-input,aab+cbbbc,0.03571428571428571
-input,AAB-CBBC,0.03571428571428571
-pos_ret,True,0.047619047619047616
-neg_ret,False,0.047619047619047616
-case,uppercase,0.047619047619047616
-input,aab-cbbbc,0.07142857142857142
-sep,a minus,0.14583333333333334
+sep,a dash,0.017857142857142856
+pos_ret,True,0.04591836734693878
+neg_ret,False,0.04591836734693878
+case,uppercase,0.04591836734693878
+sep,a minus,0.14285714285714285

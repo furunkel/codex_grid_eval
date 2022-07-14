@@ -1,26 +1,10 @@
 var,val,success_rate
-input,#?a^?D,0.3333333333333333
-input,As??Df,0.3888888888888889
-input,#a@C,0.3888888888888889
-input,#a?C,0.3888888888888889
-input,#$a^D,0.3888888888888889
-input,#?a^D,0.3888888888888889
 case_cond,consonant,0.40625
 reverse_cond,letters,0.4166666666666667
 reverse_cond,one or more question marks,0.4375
-input,As?Df,0.4444444444444444
-input,AsDf,0.5
-input,a1?234,0.5
-input,a1?2?34,0.5
 reverse_cond,exactly one question mark,0.5208333333333334
 reverse_cond,no question marks,0.6041666666666666
 case_cond,vowel,0.6041666666666666
-input,#c?c,0.6111111111111112
-input,#c??c,0.6111111111111112
 case_cond,letter,0.6458333333333334
 reverse_cond,no letters,0.6666666666666666
 reverse_cond,more than one question mark,0.6666666666666666
-input,#ccc,0.7222222222222222
-input,1234,0.8888888888888888
-input,1?234,0.8888888888888888
-input,6@2,0.8888888888888888

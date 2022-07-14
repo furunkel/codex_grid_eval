@@ -1,865 +1,109 @@
-digit,factor2,factor3,example_input,input,result,result_emojis,model_input,expected,actual
-7,11,13,50,50,p,✅,input/incoder/fizzbuzz_count/0.txt,,
-7,11,13,50,78,f,❌,input/incoder/fizzbuzz_count/0.txt,2,1
-7,11,13,50,79,f,❌,input/incoder/fizzbuzz_count/0.txt,3,0
-7,11,13,50,100,f,❌,input/incoder/fizzbuzz_count/0.txt,3,0
-7,11,13,50,200,f,❌,input/incoder/fizzbuzz_count/0.txt,6,0
-7,11,13,50,4000,f,❌,input/incoder/fizzbuzz_count/0.txt,192,0
-7,11,13,50,10000,f,❌,input/incoder/fizzbuzz_count/0.txt,639,0
-7,11,13,50,100000,f,❌,input/incoder/fizzbuzz_count/0.txt,8026,0
-7,11,13,78,50,p,✅,input/incoder/fizzbuzz_count/1.txt,,
-7,11,13,78,78,f,❌,input/incoder/fizzbuzz_count/1.txt,2,1
-7,11,13,78,79,f,❌,input/incoder/fizzbuzz_count/1.txt,3,0
-7,11,13,78,100,f,❌,input/incoder/fizzbuzz_count/1.txt,3,0
-7,11,13,78,200,f,❌,input/incoder/fizzbuzz_count/1.txt,6,0
-7,11,13,78,4000,f,❌,input/incoder/fizzbuzz_count/1.txt,192,0
-7,11,13,78,10000,f,❌,input/incoder/fizzbuzz_count/1.txt,639,0
-7,11,13,78,100000,f,❌,input/incoder/fizzbuzz_count/1.txt,8026,0
-7,11,13,3298,50,p,✅,input/incoder/fizzbuzz_count/2.txt,,
-7,11,13,3298,78,f,❌,input/incoder/fizzbuzz_count/2.txt,2,1
-7,11,13,3298,79,f,❌,input/incoder/fizzbuzz_count/2.txt,3,0
-7,11,13,3298,100,f,❌,input/incoder/fizzbuzz_count/2.txt,3,0
-7,11,13,3298,200,f,❌,input/incoder/fizzbuzz_count/2.txt,6,0
-7,11,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/2.txt,192,0
-7,11,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/2.txt,639,0
-7,11,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/2.txt,8026,0
-7,11,3819,50,50,p,✅,input/incoder/fizzbuzz_count/6.txt,,
-7,11,3819,50,78,f,❌,input/incoder/fizzbuzz_count/6.txt,2,0
-7,11,3819,50,79,f,❌,input/incoder/fizzbuzz_count/6.txt,2,0
-7,11,3819,50,100,f,❌,input/incoder/fizzbuzz_count/6.txt,2,0
-7,11,3819,50,200,f,❌,input/incoder/fizzbuzz_count/6.txt,4,0
-7,11,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/6.txt,109,0
-7,11,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/6.txt,365,0
-7,11,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/6.txt,4558,0
-7,11,3819,78,50,p,✅,input/incoder/fizzbuzz_count/7.txt,,
-7,11,3819,78,78,f,❌,input/incoder/fizzbuzz_count/7.txt,2,0
-7,11,3819,78,79,f,❌,input/incoder/fizzbuzz_count/7.txt,2,0
-7,11,3819,78,100,f,❌,input/incoder/fizzbuzz_count/7.txt,2,0
-7,11,3819,78,200,f,❌,input/incoder/fizzbuzz_count/7.txt,4,0
-7,11,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/7.txt,109,0
-7,11,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/7.txt,365,0
-7,11,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/7.txt,4558,0
-7,11,3819,3298,50,p,✅,input/incoder/fizzbuzz_count/8.txt,,
-7,11,3819,3298,78,f,❌,input/incoder/fizzbuzz_count/8.txt,2,0
-7,11,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/8.txt,2,0
-7,11,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/8.txt,2,0
-7,11,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/8.txt,4,0
-7,11,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/8.txt,109,0
-7,11,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/8.txt,365,0
-7,11,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/8.txt,4558,0
-7,13,11,50,50,p,✅,input/incoder/fizzbuzz_count/12.txt,,
-7,13,11,50,78,f,❌,input/incoder/fizzbuzz_count/12.txt,2,1
-7,13,11,50,79,f,❌,input/incoder/fizzbuzz_count/12.txt,3,0
-7,13,11,50,100,f,❌,input/incoder/fizzbuzz_count/12.txt,3,0
-7,13,11,50,200,f,❌,input/incoder/fizzbuzz_count/12.txt,6,0
-7,13,11,50,4000,f,❌,input/incoder/fizzbuzz_count/12.txt,192,0
-7,13,11,50,10000,f,❌,input/incoder/fizzbuzz_count/12.txt,639,0
-7,13,11,50,100000,f,❌,input/incoder/fizzbuzz_count/12.txt,8026,0
-7,13,11,78,50,p,✅,input/incoder/fizzbuzz_count/13.txt,,
-7,13,11,78,78,f,❌,input/incoder/fizzbuzz_count/13.txt,2,1
-7,13,11,78,79,f,❌,input/incoder/fizzbuzz_count/13.txt,3,0
-7,13,11,78,100,f,❌,input/incoder/fizzbuzz_count/13.txt,3,0
-7,13,11,78,200,f,❌,input/incoder/fizzbuzz_count/13.txt,6,0
-7,13,11,78,4000,f,❌,input/incoder/fizzbuzz_count/13.txt,192,0
-7,13,11,78,10000,f,❌,input/incoder/fizzbuzz_count/13.txt,639,0
-7,13,11,78,100000,f,❌,input/incoder/fizzbuzz_count/13.txt,8026,0
-7,13,11,3298,50,p,✅,input/incoder/fizzbuzz_count/14.txt,,
-7,13,11,3298,78,f,❌,input/incoder/fizzbuzz_count/14.txt,2,1
-7,13,11,3298,79,f,❌,input/incoder/fizzbuzz_count/14.txt,3,0
-7,13,11,3298,100,f,❌,input/incoder/fizzbuzz_count/14.txt,3,0
-7,13,11,3298,200,f,❌,input/incoder/fizzbuzz_count/14.txt,6,0
-7,13,11,3298,4000,f,❌,input/incoder/fizzbuzz_count/14.txt,192,0
-7,13,11,3298,10000,f,❌,input/incoder/fizzbuzz_count/14.txt,639,0
-7,13,11,3298,100000,f,❌,input/incoder/fizzbuzz_count/14.txt,8026,0
-7,13,3819,50,50,p,✅,input/incoder/fizzbuzz_count/15.txt,,
-7,13,3819,50,78,f,❌,input/incoder/fizzbuzz_count/15.txt,0,1
-7,13,3819,50,79,f,❌,input/incoder/fizzbuzz_count/15.txt,1,0
-7,13,3819,50,100,f,❌,input/incoder/fizzbuzz_count/15.txt,1,0
-7,13,3819,50,200,f,❌,input/incoder/fizzbuzz_count/15.txt,2,0
-7,13,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/15.txt,93,0
-7,13,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/15.txt,308,0
-7,13,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/15.txt,3858,0
-7,13,3819,78,50,p,✅,input/incoder/fizzbuzz_count/16.txt,,
-7,13,3819,78,78,f,❌,input/incoder/fizzbuzz_count/16.txt,0,1
-7,13,3819,78,79,f,❌,input/incoder/fizzbuzz_count/16.txt,1,0
-7,13,3819,78,100,f,❌,input/incoder/fizzbuzz_count/16.txt,1,0
-7,13,3819,78,200,f,❌,input/incoder/fizzbuzz_count/16.txt,2,0
-7,13,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/16.txt,93,0
-7,13,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/16.txt,308,0
-7,13,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/16.txt,3858,0
-7,13,3819,3298,50,p,✅,input/incoder/fizzbuzz_count/17.txt,,
-7,13,3819,3298,78,f,❌,input/incoder/fizzbuzz_count/17.txt,0,1
-7,13,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/17.txt,1,0
-7,13,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/17.txt,1,0
-7,13,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/17.txt,2,0
-7,13,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/17.txt,93,0
-7,13,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/17.txt,308,0
-7,13,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/17.txt,3858,0
-7,7,13,50,50,p,✅,input/incoder/fizzbuzz_count/18.txt,,
-7,7,13,50,78,f,❌,input/incoder/fizzbuzz_count/18.txt,4,1
-7,7,13,50,79,f,❌,input/incoder/fizzbuzz_count/18.txt,5,0
-7,7,13,50,100,f,❌,input/incoder/fizzbuzz_count/18.txt,5,1
-7,7,13,50,200,f,❌,input/incoder/fizzbuzz_count/18.txt,8,1
-7,7,13,50,4000,f,❌,input/incoder/fizzbuzz_count/18.txt,254,0
-7,7,13,50,10000,f,❌,input/incoder/fizzbuzz_count/18.txt,837,1
-7,7,13,50,100000,f,❌,input/incoder/fizzbuzz_count/18.txt,10441,0
-7,7,13,78,50,f,❌,input/incoder/fizzbuzz_count/19.txt,1,0
-7,7,13,78,78,f,❌,input/incoder/fizzbuzz_count/19.txt,4,2
-7,7,13,78,79,f,❌,input/incoder/fizzbuzz_count/19.txt,5,1
-7,7,13,78,100,f,❌,input/incoder/fizzbuzz_count/19.txt,5,0
-7,7,13,78,200,f,❌,input/incoder/fizzbuzz_count/19.txt,8,0
-7,7,13,78,4000,f,❌,input/incoder/fizzbuzz_count/19.txt,254,0
-7,7,13,78,10000,f,❌,input/incoder/fizzbuzz_count/19.txt,837,0
-7,7,13,78,100000,f,❌,input/incoder/fizzbuzz_count/19.txt,10441,0
-7,7,13,3298,50,f,❌,input/incoder/fizzbuzz_count/20.txt,1,0
-7,7,13,3298,78,f,❌,input/incoder/fizzbuzz_count/20.txt,4,1
-7,7,13,3298,79,f,❌,input/incoder/fizzbuzz_count/20.txt,5,0
-7,7,13,3298,100,f,❌,input/incoder/fizzbuzz_count/20.txt,5,0
-7,7,13,3298,200,f,❌,input/incoder/fizzbuzz_count/20.txt,8,0
-7,7,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/20.txt,254,0
-7,7,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/20.txt,837,0
-7,7,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/20.txt,10441,0
-7,7,11,50,50,f,❌,input/incoder/fizzbuzz_count/21.txt,1,0
-7,7,11,50,78,f,❌,input/incoder/fizzbuzz_count/21.txt,4,1
-7,7,11,50,79,f,❌,input/incoder/fizzbuzz_count/21.txt,4,1
-7,7,11,50,100,f,❌,input/incoder/fizzbuzz_count/21.txt,4,0
-7,7,11,50,200,f,❌,input/incoder/fizzbuzz_count/21.txt,8,0
-7,7,11,50,4000,f,❌,input/incoder/fizzbuzz_count/21.txt,265,0
-7,7,11,50,10000,f,❌,input/incoder/fizzbuzz_count/21.txt,883,0
-7,7,11,50,100000,f,❌,input/incoder/fizzbuzz_count/21.txt,11031,0
-7,7,11,78,50,f,❌,input/incoder/fizzbuzz_count/22.txt,1,0
-7,7,11,78,78,f,❌,input/incoder/fizzbuzz_count/22.txt,4,1
-7,7,11,78,79,f,❌,input/incoder/fizzbuzz_count/22.txt,4,1
-7,7,11,78,100,f,❌,input/incoder/fizzbuzz_count/22.txt,4,0
-7,7,11,78,200,f,❌,input/incoder/fizzbuzz_count/22.txt,8,0
-7,7,11,78,4000,f,❌,input/incoder/fizzbuzz_count/22.txt,265,0
-7,7,11,78,10000,f,❌,input/incoder/fizzbuzz_count/22.txt,883,0
-7,7,11,78,100000,f,❌,input/incoder/fizzbuzz_count/22.txt,11031,0
-7,7,11,3298,50,f,❌,input/incoder/fizzbuzz_count/23.txt,1,22
-7,7,11,3298,78,f,❌,input/incoder/fizzbuzz_count/23.txt,4,20
-7,7,11,3298,79,f,❌,input/incoder/fizzbuzz_count/23.txt,4,22
-7,7,11,3298,100,f,❌,input/incoder/fizzbuzz_count/23.txt,4,30
-7,7,11,3298,200,f,❌,input/incoder/fizzbuzz_count/23.txt,8,51
-7,7,11,3298,4000,f,❌,input/incoder/fizzbuzz_count/23.txt,265,437
-7,7,11,3298,10000,f,❌,input/incoder/fizzbuzz_count/23.txt,883,1513
-7,7,11,3298,100000,f,❌,input/incoder/fizzbuzz_count/23.txt,11031,3567
-7,7,3819,50,50,p,✅,input/incoder/fizzbuzz_count/24.txt,,
-7,7,3819,50,78,f,❌,input/incoder/fizzbuzz_count/24.txt,4,0
-7,7,3819,50,79,f,❌,input/incoder/fizzbuzz_count/24.txt,4,0
-7,7,3819,50,100,f,❌,input/incoder/fizzbuzz_count/24.txt,4,1
-7,7,3819,50,200,f,❌,input/incoder/fizzbuzz_count/24.txt,6,1
-7,7,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/24.txt,173,0
-7,7,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/24.txt,574,1
-7,7,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/24.txt,7156,0
-7,7,3819,78,50,p,✅,input/incoder/fizzbuzz_count/25.txt,,
-7,7,3819,78,78,f,❌,input/incoder/fizzbuzz_count/25.txt,4,0
-7,7,3819,78,79,f,❌,input/incoder/fizzbuzz_count/25.txt,4,0
-7,7,3819,78,100,f,❌,input/incoder/fizzbuzz_count/25.txt,4,1
-7,7,3819,78,200,f,❌,input/incoder/fizzbuzz_count/25.txt,6,1
-7,7,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/25.txt,173,0
-7,7,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/25.txt,574,1
-7,7,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/25.txt,7156,0
-7,7,3819,3298,50,p,✅,input/incoder/fizzbuzz_count/26.txt,,
-7,7,3819,3298,78,f,❌,input/incoder/fizzbuzz_count/26.txt,4,0
-7,7,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/26.txt,4,0
-7,7,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/26.txt,4,1
-7,7,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/26.txt,6,1
-7,7,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/26.txt,173,0
-7,7,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/26.txt,574,1
-7,7,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/26.txt,7156,0
-7,1837,13,50,50,p,✅,input/incoder/fizzbuzz_count/27.txt,,
-7,1837,13,50,78,f,❌,input/incoder/fizzbuzz_count/27.txt,0,1
-7,1837,13,50,79,f,❌,input/incoder/fizzbuzz_count/27.txt,1,0
-7,1837,13,50,100,f,❌,input/incoder/fizzbuzz_count/27.txt,1,0
-7,1837,13,50,200,f,❌,input/incoder/fizzbuzz_count/27.txt,2,0
-7,1837,13,50,4000,f,❌,input/incoder/fizzbuzz_count/27.txt,95,0
-7,1837,13,50,10000,f,❌,input/incoder/fizzbuzz_count/27.txt,310,0
-7,1837,13,50,100000,f,❌,input/incoder/fizzbuzz_count/27.txt,3869,0
-7,1837,13,78,50,p,✅,input/incoder/fizzbuzz_count/28.txt,,
-7,1837,13,78,78,p,✅,input/incoder/fizzbuzz_count/28.txt,,
-7,1837,13,78,79,f,❌,input/incoder/fizzbuzz_count/28.txt,1,0
-7,1837,13,78,100,f,❌,input/incoder/fizzbuzz_count/28.txt,1,0
-7,1837,13,78,200,f,❌,input/incoder/fizzbuzz_count/28.txt,2,0
-7,1837,13,78,4000,f,❌,input/incoder/fizzbuzz_count/28.txt,95,0
-7,1837,13,78,10000,f,❌,input/incoder/fizzbuzz_count/28.txt,310,0
-7,1837,13,78,100000,f,❌,input/incoder/fizzbuzz_count/28.txt,3869,0
-7,1837,13,3298,50,p,✅,input/incoder/fizzbuzz_count/29.txt,,
-7,1837,13,3298,78,p,✅,input/incoder/fizzbuzz_count/29.txt,,
-7,1837,13,3298,79,f,❌,input/incoder/fizzbuzz_count/29.txt,1,0
-7,1837,13,3298,100,f,❌,input/incoder/fizzbuzz_count/29.txt,1,0
-7,1837,13,3298,200,f,❌,input/incoder/fizzbuzz_count/29.txt,2,0
-7,1837,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/29.txt,95,0
-7,1837,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/29.txt,310,0
-7,1837,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/29.txt,3869,0
-7,1837,3819,50,50,p,✅,input/incoder/fizzbuzz_count/33.txt,,
-7,1837,3819,50,78,p,✅,input/incoder/fizzbuzz_count/33.txt,,
-7,1837,3819,50,79,p,✅,input/incoder/fizzbuzz_count/33.txt,,
-7,1837,3819,50,100,p,✅,input/incoder/fizzbuzz_count/33.txt,,
-7,1837,3819,50,200,p,✅,input/incoder/fizzbuzz_count/33.txt,,
-7,1837,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/33.txt,2,0
-7,1837,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/33.txt,4,0
-7,1837,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/33.txt,39,0
-7,1837,3819,78,50,p,✅,input/incoder/fizzbuzz_count/34.txt,,
-7,1837,3819,78,78,p,✅,input/incoder/fizzbuzz_count/34.txt,,
-7,1837,3819,78,79,p,✅,input/incoder/fizzbuzz_count/34.txt,,
-7,1837,3819,78,100,p,✅,input/incoder/fizzbuzz_count/34.txt,,
-7,1837,3819,78,200,p,✅,input/incoder/fizzbuzz_count/34.txt,,
-7,1837,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/34.txt,2,0
-7,1837,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/34.txt,4,0
-7,1837,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/34.txt,39,0
-7,1837,3819,3298,50,p,✅,input/incoder/fizzbuzz_count/35.txt,,
-7,1837,3819,3298,78,p,✅,input/incoder/fizzbuzz_count/35.txt,,
-7,1837,3819,3298,79,p,✅,input/incoder/fizzbuzz_count/35.txt,,
-7,1837,3819,3298,100,p,✅,input/incoder/fizzbuzz_count/35.txt,,
-7,1837,3819,3298,200,p,✅,input/incoder/fizzbuzz_count/35.txt,,
-7,1837,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/35.txt,2,0
-7,1837,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/35.txt,4,0
-7,1837,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/35.txt,39,0
-4,11,13,50,50,f,❌,input/incoder/fizzbuzz_count/36.txt,2,0
-4,11,13,50,78,f,❌,input/incoder/fizzbuzz_count/36.txt,2,3
-4,11,13,50,79,f,❌,input/incoder/fizzbuzz_count/36.txt,2,0
-4,11,13,50,100,f,❌,input/incoder/fizzbuzz_count/36.txt,2,0
-4,11,13,50,200,f,❌,input/incoder/fizzbuzz_count/36.txt,5,0
-4,11,13,50,4000,f,❌,input/incoder/fizzbuzz_count/36.txt,190,0
-4,11,13,50,10000,f,❌,input/incoder/fizzbuzz_count/36.txt,639,0
-4,11,13,50,100000,f,❌,input/incoder/fizzbuzz_count/36.txt,8040,0
-4,11,13,78,50,f,❌,input/incoder/fizzbuzz_count/37.txt,2,0
-4,11,13,78,78,f,❌,input/incoder/fizzbuzz_count/37.txt,2,1
-4,11,13,78,79,f,❌,input/incoder/fizzbuzz_count/37.txt,2,0
-4,11,13,78,100,f,❌,input/incoder/fizzbuzz_count/37.txt,2,0
-4,11,13,78,200,f,❌,input/incoder/fizzbuzz_count/37.txt,5,0
-4,11,13,78,4000,f,❌,input/incoder/fizzbuzz_count/37.txt,190,0
-4,11,13,78,10000,f,❌,input/incoder/fizzbuzz_count/37.txt,639,0
-4,11,13,78,100000,f,❌,input/incoder/fizzbuzz_count/37.txt,8040,0
-4,11,13,3298,50,f,❌,input/incoder/fizzbuzz_count/38.txt,2,0
-4,11,13,3298,78,f,❌,input/incoder/fizzbuzz_count/38.txt,2,0
-4,11,13,3298,79,f,❌,input/incoder/fizzbuzz_count/38.txt,2,0
-4,11,13,3298,100,f,❌,input/incoder/fizzbuzz_count/38.txt,2,0
-4,11,13,3298,200,f,❌,input/incoder/fizzbuzz_count/38.txt,5,0
-4,11,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/38.txt,190,0
-4,11,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/38.txt,639,0
-4,11,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/38.txt,8040,0
-4,11,3819,50,50,f,❌,input/incoder/fizzbuzz_count/42.txt,2,0
-4,11,3819,50,78,f,❌,input/incoder/fizzbuzz_count/42.txt,2,0
-4,11,3819,50,79,f,❌,input/incoder/fizzbuzz_count/42.txt,2,0
-4,11,3819,50,100,f,❌,input/incoder/fizzbuzz_count/42.txt,2,0
-4,11,3819,50,200,f,❌,input/incoder/fizzbuzz_count/42.txt,4,0
-4,11,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/42.txt,108,0
-4,11,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/42.txt,364,0
-4,11,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/42.txt,4557,0
-4,11,3819,78,50,f,❌,input/incoder/fizzbuzz_count/43.txt,2,0
-4,11,3819,78,78,f,❌,input/incoder/fizzbuzz_count/43.txt,2,0
-4,11,3819,78,79,f,❌,input/incoder/fizzbuzz_count/43.txt,2,0
-4,11,3819,78,100,f,❌,input/incoder/fizzbuzz_count/43.txt,2,0
-4,11,3819,78,200,f,❌,input/incoder/fizzbuzz_count/43.txt,4,0
-4,11,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/43.txt,108,0
-4,11,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/43.txt,364,0
-4,11,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/43.txt,4557,0
-4,11,3819,3298,50,f,❌,input/incoder/fizzbuzz_count/44.txt,2,0
-4,11,3819,3298,78,f,❌,input/incoder/fizzbuzz_count/44.txt,2,0
-4,11,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/44.txt,2,0
-4,11,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/44.txt,2,0
-4,11,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/44.txt,4,0
-4,11,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/44.txt,108,0
-4,11,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/44.txt,364,0
-4,11,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/44.txt,4557,0
-4,13,11,50,50,f,❌,input/incoder/fizzbuzz_count/48.txt,2,0
-4,13,11,50,78,f,❌,input/incoder/fizzbuzz_count/48.txt,2,1
-4,13,11,50,79,f,❌,input/incoder/fizzbuzz_count/48.txt,2,0
-4,13,11,50,100,f,❌,input/incoder/fizzbuzz_count/48.txt,2,0
-4,13,11,50,200,f,❌,input/incoder/fizzbuzz_count/48.txt,5,0
-4,13,11,50,4000,f,❌,input/incoder/fizzbuzz_count/48.txt,190,0
-4,13,11,50,10000,f,❌,input/incoder/fizzbuzz_count/48.txt,639,0
-4,13,11,50,100000,f,❌,input/incoder/fizzbuzz_count/48.txt,8040,0
-4,13,11,78,50,f,❌,input/incoder/fizzbuzz_count/49.txt,2,0
-4,13,11,78,78,f,❌,input/incoder/fizzbuzz_count/49.txt,2,1
-4,13,11,78,79,f,❌,input/incoder/fizzbuzz_count/49.txt,2,0
-4,13,11,78,100,f,❌,input/incoder/fizzbuzz_count/49.txt,2,0
-4,13,11,78,200,f,❌,input/incoder/fizzbuzz_count/49.txt,5,0
-4,13,11,78,4000,f,❌,input/incoder/fizzbuzz_count/49.txt,190,0
-4,13,11,78,10000,f,❌,input/incoder/fizzbuzz_count/49.txt,639,0
-4,13,11,78,100000,f,❌,input/incoder/fizzbuzz_count/49.txt,8040,0
-4,13,11,3298,50,f,❌,input/incoder/fizzbuzz_count/50.txt,2,0
-4,13,11,3298,78,f,❌,input/incoder/fizzbuzz_count/50.txt,2,1
-4,13,11,3298,79,f,❌,input/incoder/fizzbuzz_count/50.txt,2,0
-4,13,11,3298,100,f,❌,input/incoder/fizzbuzz_count/50.txt,2,0
-4,13,11,3298,200,f,❌,input/incoder/fizzbuzz_count/50.txt,5,0
-4,13,11,3298,4000,f,❌,input/incoder/fizzbuzz_count/50.txt,190,0
-4,13,11,3298,10000,f,❌,input/incoder/fizzbuzz_count/50.txt,639,0
-4,13,11,3298,100000,f,❌,input/incoder/fizzbuzz_count/50.txt,8040,0
-4,13,3819,50,50,p,✅,input/incoder/fizzbuzz_count/51.txt,,
-4,13,3819,50,78,f,❌,input/incoder/fizzbuzz_count/51.txt,0,2
-4,13,3819,50,79,p,✅,input/incoder/fizzbuzz_count/51.txt,,
-4,13,3819,50,100,p,✅,input/incoder/fizzbuzz_count/51.txt,,
-4,13,3819,50,200,f,❌,input/incoder/fizzbuzz_count/51.txt,2,0
-4,13,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/51.txt,92,0
-4,13,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/51.txt,306,0
-4,13,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/51.txt,3857,0
-4,13,3819,78,50,f,❌,input/incoder/fizzbuzz_count/52.txt,0,3
-4,13,3819,78,78,f,❌,input/incoder/fizzbuzz_count/52.txt,0,6
-4,13,3819,78,79,f,❌,input/incoder/fizzbuzz_count/52.txt,0,6
-4,13,3819,78,100,f,❌,input/incoder/fizzbuzz_count/52.txt,0,7
-4,13,3819,78,200,f,❌,input/incoder/fizzbuzz_count/52.txt,2,15
-4,13,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/52.txt,92,308
-4,13,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/52.txt,306,771
-4,13,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/52.txt,3857,7716
-4,13,3819,3298,50,p,✅,input/incoder/fizzbuzz_count/53.txt,,
-4,13,3819,3298,78,p,✅,input/incoder/fizzbuzz_count/53.txt,,
-4,13,3819,3298,79,p,✅,input/incoder/fizzbuzz_count/53.txt,,
-4,13,3819,3298,100,p,✅,input/incoder/fizzbuzz_count/53.txt,,
-4,13,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/53.txt,2,0
-4,13,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/53.txt,92,0
-4,13,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/53.txt,306,0
-4,13,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/53.txt,3857,0
-4,7,13,50,50,f,❌,input/incoder/fizzbuzz_count/54.txt,3,0
-4,7,13,50,78,f,❌,input/incoder/fizzbuzz_count/54.txt,3,1
-4,7,13,50,79,f,❌,input/incoder/fizzbuzz_count/54.txt,3,0
-4,7,13,50,100,f,❌,input/incoder/fizzbuzz_count/54.txt,4,0
-4,7,13,50,200,f,❌,input/incoder/fizzbuzz_count/54.txt,9,0
-4,7,13,50,4000,f,❌,input/incoder/fizzbuzz_count/54.txt,252,0
-4,7,13,50,10000,f,❌,input/incoder/fizzbuzz_count/54.txt,837,0
-4,7,13,50,100000,f,❌,input/incoder/fizzbuzz_count/54.txt,10441,0
-4,7,13,78,50,f,❌,input/incoder/fizzbuzz_count/55.txt,3,0
-4,7,13,78,78,f,❌,input/incoder/fizzbuzz_count/55.txt,3,1
-4,7,13,78,79,f,❌,input/incoder/fizzbuzz_count/55.txt,3,0
-4,7,13,78,100,f,❌,input/incoder/fizzbuzz_count/55.txt,4,0
-4,7,13,78,200,f,❌,input/incoder/fizzbuzz_count/55.txt,9,0
-4,7,13,78,4000,f,❌,input/incoder/fizzbuzz_count/55.txt,252,0
-4,7,13,78,10000,f,❌,input/incoder/fizzbuzz_count/55.txt,837,0
-4,7,13,78,100000,f,❌,input/incoder/fizzbuzz_count/55.txt,10441,0
-4,7,13,3298,50,f,❌,input/incoder/fizzbuzz_count/56.txt,3,0
-4,7,13,3298,78,f,❌,input/incoder/fizzbuzz_count/56.txt,3,1
-4,7,13,3298,79,f,❌,input/incoder/fizzbuzz_count/56.txt,3,0
-4,7,13,3298,100,f,❌,input/incoder/fizzbuzz_count/56.txt,4,0
-4,7,13,3298,200,f,❌,input/incoder/fizzbuzz_count/56.txt,9,0
-4,7,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/56.txt,252,0
-4,7,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/56.txt,837,0
-4,7,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/56.txt,10441,0
-4,7,11,50,50,f,❌,input/incoder/fizzbuzz_count/57.txt,5,0
-4,7,11,50,78,f,❌,input/incoder/fizzbuzz_count/57.txt,5,1
-4,7,11,50,79,f,❌,input/incoder/fizzbuzz_count/57.txt,5,1
-4,7,11,50,100,f,❌,input/incoder/fizzbuzz_count/57.txt,6,0
-4,7,11,50,200,f,❌,input/incoder/fizzbuzz_count/57.txt,10,0
-4,7,11,50,4000,f,❌,input/incoder/fizzbuzz_count/57.txt,266,0
-4,7,11,50,10000,f,❌,input/incoder/fizzbuzz_count/57.txt,889,0
-4,7,11,50,100000,f,❌,input/incoder/fizzbuzz_count/57.txt,11038,0
-4,7,11,78,50,f,❌,input/incoder/fizzbuzz_count/58.txt,5,0
-4,7,11,78,78,f,❌,input/incoder/fizzbuzz_count/58.txt,5,1
-4,7,11,78,79,f,❌,input/incoder/fizzbuzz_count/58.txt,5,1
-4,7,11,78,100,f,❌,input/incoder/fizzbuzz_count/58.txt,6,0
-4,7,11,78,200,f,❌,input/incoder/fizzbuzz_count/58.txt,10,0
-4,7,11,78,4000,f,❌,input/incoder/fizzbuzz_count/58.txt,266,0
-4,7,11,78,10000,f,❌,input/incoder/fizzbuzz_count/58.txt,889,0
-4,7,11,78,100000,f,❌,input/incoder/fizzbuzz_count/58.txt,11038,0
-4,7,11,3298,50,f,❌,input/incoder/fizzbuzz_count/59.txt,5,0
-4,7,11,3298,78,f,❌,input/incoder/fizzbuzz_count/59.txt,5,1
-4,7,11,3298,79,f,❌,input/incoder/fizzbuzz_count/59.txt,5,1
-4,7,11,3298,100,f,❌,input/incoder/fizzbuzz_count/59.txt,6,0
-4,7,11,3298,200,f,❌,input/incoder/fizzbuzz_count/59.txt,10,0
-4,7,11,3298,4000,f,❌,input/incoder/fizzbuzz_count/59.txt,266,0
-4,7,11,3298,10000,f,❌,input/incoder/fizzbuzz_count/59.txt,889,0
-4,7,11,3298,100000,f,❌,input/incoder/fizzbuzz_count/59.txt,11038,0
-4,7,3819,50,50,f,❌,input/incoder/fizzbuzz_count/60.txt,3,0
-4,7,3819,50,78,f,❌,input/incoder/fizzbuzz_count/60.txt,3,1
-4,7,3819,50,79,f,❌,input/incoder/fizzbuzz_count/60.txt,3,1
-4,7,3819,50,100,f,❌,input/incoder/fizzbuzz_count/60.txt,4,0
-4,7,3819,50,200,f,❌,input/incoder/fizzbuzz_count/60.txt,7,0
-4,7,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/60.txt,173,0
-4,7,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/60.txt,574,0
-4,7,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/60.txt,7157,0
-4,7,3819,78,50,f,❌,input/incoder/fizzbuzz_count/61.txt,3,0
-4,7,3819,78,78,f,❌,input/incoder/fizzbuzz_count/61.txt,3,0
-4,7,3819,78,79,f,❌,input/incoder/fizzbuzz_count/61.txt,3,0
-4,7,3819,78,100,f,❌,input/incoder/fizzbuzz_count/61.txt,4,0
-4,7,3819,78,200,f,❌,input/incoder/fizzbuzz_count/61.txt,7,0
-4,7,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/61.txt,173,0
-4,7,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/61.txt,574,0
-4,7,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/61.txt,7157,0
-4,7,3819,3298,50,f,❌,input/incoder/fizzbuzz_count/62.txt,3,0
-4,7,3819,3298,78,f,❌,input/incoder/fizzbuzz_count/62.txt,3,0
-4,7,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/62.txt,3,0
-4,7,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/62.txt,4,0
-4,7,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/62.txt,7,0
-4,7,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/62.txt,173,0
-4,7,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/62.txt,574,0
-4,7,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/62.txt,7157,0
-4,1837,13,50,50,f,❌,input/incoder/fizzbuzz_count/63.txt,0,3
-4,1837,13,50,78,f,❌,input/incoder/fizzbuzz_count/63.txt,0,2
-4,1837,13,50,79,f,❌,input/incoder/fizzbuzz_count/63.txt,0,3
-4,1837,13,50,100,f,❌,input/incoder/fizzbuzz_count/63.txt,0,3
-4,1837,13,50,200,f,❌,input/incoder/fizzbuzz_count/63.txt,2,3
-4,1837,13,50,4000,f,❌,input/incoder/fizzbuzz_count/63.txt,93,3
-4,1837,13,50,10000,f,❌,input/incoder/fizzbuzz_count/63.txt,308,3
-4,1837,13,50,100000,f,❌,input/incoder/fizzbuzz_count/63.txt,3869,3
-4,1837,13,78,50,f,❌,input/incoder/fizzbuzz_count/64.txt,0,1
-4,1837,13,78,78,p,✅,input/incoder/fizzbuzz_count/64.txt,,
-4,1837,13,78,79,f,❌,input/incoder/fizzbuzz_count/64.txt,0,1
-4,1837,13,78,100,f,❌,input/incoder/fizzbuzz_count/64.txt,0,1
-4,1837,13,78,200,f,❌,input/incoder/fizzbuzz_count/64.txt,2,1
-4,1837,13,78,4000,f,❌,input/incoder/fizzbuzz_count/64.txt,93,1
-4,1837,13,78,10000,f,❌,input/incoder/fizzbuzz_count/64.txt,308,1
-4,1837,13,78,100000,f,❌,input/incoder/fizzbuzz_count/64.txt,3869,1
-4,1837,13,3298,50,p,✅,input/incoder/fizzbuzz_count/65.txt,,
-4,1837,13,3298,78,f,❌,input/incoder/fizzbuzz_count/65.txt,0,1
-4,1837,13,3298,79,p,✅,input/incoder/fizzbuzz_count/65.txt,,
-4,1837,13,3298,100,p,✅,input/incoder/fizzbuzz_count/65.txt,,
-4,1837,13,3298,200,f,❌,input/incoder/fizzbuzz_count/65.txt,2,0
-4,1837,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/65.txt,93,0
-4,1837,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/65.txt,308,0
-4,1837,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/65.txt,3869,0
-4,1837,3819,50,50,f,❌,input/incoder/fizzbuzz_count/69.txt,0,7
-4,1837,3819,50,78,f,❌,input/incoder/fizzbuzz_count/69.txt,0,7
-4,1837,3819,50,79,f,❌,input/incoder/fizzbuzz_count/69.txt,0,7
-4,1837,3819,50,100,f,❌,input/incoder/fizzbuzz_count/69.txt,0,7
-4,1837,3819,50,200,f,❌,input/incoder/fizzbuzz_count/69.txt,0,13
-4,1837,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/69.txt,1,25
-4,1837,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/69.txt,2,25
-4,1837,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/69.txt,40,49
-4,1837,3819,78,50,p,✅,input/incoder/fizzbuzz_count/70.txt,,
-4,1837,3819,78,78,p,✅,input/incoder/fizzbuzz_count/70.txt,,
-4,1837,3819,78,79,p,✅,input/incoder/fizzbuzz_count/70.txt,,
-4,1837,3819,78,100,p,✅,input/incoder/fizzbuzz_count/70.txt,,
-4,1837,3819,78,200,p,✅,input/incoder/fizzbuzz_count/70.txt,,
-4,1837,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/70.txt,1,0
-4,1837,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/70.txt,2,0
-4,1837,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/70.txt,40,0
-4,1837,3819,3298,50,p,✅,input/incoder/fizzbuzz_count/71.txt,,
-4,1837,3819,3298,78,p,✅,input/incoder/fizzbuzz_count/71.txt,,
-4,1837,3819,3298,79,p,✅,input/incoder/fizzbuzz_count/71.txt,,
-4,1837,3819,3298,100,p,✅,input/incoder/fizzbuzz_count/71.txt,,
-4,1837,3819,3298,200,p,✅,input/incoder/fizzbuzz_count/71.txt,,
-4,1837,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/71.txt,1,0
-4,1837,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/71.txt,2,0
-4,1837,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/71.txt,40,0
-3,11,13,50,50,f,❌,input/incoder/fizzbuzz_count/72.txt,4,0
-3,11,13,50,78,f,❌,input/incoder/fizzbuzz_count/72.txt,4,0
-3,11,13,50,79,f,❌,input/incoder/fizzbuzz_count/72.txt,4,0
-3,11,13,50,100,f,❌,input/incoder/fizzbuzz_count/72.txt,4,0
-3,11,13,50,200,f,❌,input/incoder/fizzbuzz_count/72.txt,7,0
-3,11,13,50,4000,f,❌,input/incoder/fizzbuzz_count/72.txt,358,0
-3,11,13,50,10000,f,❌,input/incoder/fizzbuzz_count/72.txt,651,0
-3,11,13,50,100000,f,❌,input/incoder/fizzbuzz_count/72.txt,8028,0
-3,11,13,78,50,f,❌,input/incoder/fizzbuzz_count/73.txt,4,0
-3,11,13,78,78,f,❌,input/incoder/fizzbuzz_count/73.txt,4,1
-3,11,13,78,79,f,❌,input/incoder/fizzbuzz_count/73.txt,4,0
-3,11,13,78,100,f,❌,input/incoder/fizzbuzz_count/73.txt,4,0
-3,11,13,78,200,f,❌,input/incoder/fizzbuzz_count/73.txt,7,0
-3,11,13,78,4000,f,❌,input/incoder/fizzbuzz_count/73.txt,358,0
-3,11,13,78,10000,f,❌,input/incoder/fizzbuzz_count/73.txt,651,0
-3,11,13,78,100000,f,❌,input/incoder/fizzbuzz_count/73.txt,8028,0
-3,11,13,3298,50,f,❌,input/incoder/fizzbuzz_count/74.txt,4,0
-3,11,13,3298,78,f,❌,input/incoder/fizzbuzz_count/74.txt,4,1
-3,11,13,3298,79,f,❌,input/incoder/fizzbuzz_count/74.txt,4,0
-3,11,13,3298,100,f,❌,input/incoder/fizzbuzz_count/74.txt,4,0
-3,11,13,3298,200,f,❌,input/incoder/fizzbuzz_count/74.txt,7,0
-3,11,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/74.txt,358,0
-3,11,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/74.txt,651,0
-3,11,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/74.txt,8028,0
-3,11,3819,50,50,f,❌,input/incoder/fizzbuzz_count/78.txt,2,0
-3,11,3819,50,78,f,❌,input/incoder/fizzbuzz_count/78.txt,2,0
-3,11,3819,50,79,f,❌,input/incoder/fizzbuzz_count/78.txt,2,0
-3,11,3819,50,100,f,❌,input/incoder/fizzbuzz_count/78.txt,2,0
-3,11,3819,50,200,f,❌,input/incoder/fizzbuzz_count/78.txt,4,0
-3,11,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/78.txt,202,0
-3,11,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/78.txt,366,0
-3,11,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/78.txt,4557,0
-3,11,3819,78,50,f,❌,input/incoder/fizzbuzz_count/79.txt,2,0
-3,11,3819,78,78,f,❌,input/incoder/fizzbuzz_count/79.txt,2,0
-3,11,3819,78,79,f,❌,input/incoder/fizzbuzz_count/79.txt,2,0
-3,11,3819,78,100,f,❌,input/incoder/fizzbuzz_count/79.txt,2,0
-3,11,3819,78,200,f,❌,input/incoder/fizzbuzz_count/79.txt,4,0
-3,11,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/79.txt,202,0
-3,11,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/79.txt,366,0
-3,11,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/79.txt,4557,0
-3,11,3819,3298,50,f,❌,input/incoder/fizzbuzz_count/80.txt,2,0
-3,11,3819,3298,78,f,❌,input/incoder/fizzbuzz_count/80.txt,2,0
-3,11,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/80.txt,2,0
-3,11,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/80.txt,2,0
-3,11,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/80.txt,4,0
-3,11,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/80.txt,202,0
-3,11,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/80.txt,366,0
-3,11,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/80.txt,4557,0
-3,13,11,50,50,f,❌,input/incoder/fizzbuzz_count/84.txt,4,0
-3,13,11,50,78,f,❌,input/incoder/fizzbuzz_count/84.txt,4,1
-3,13,11,50,79,f,❌,input/incoder/fizzbuzz_count/84.txt,4,0
-3,13,11,50,100,f,❌,input/incoder/fizzbuzz_count/84.txt,4,0
-3,13,11,50,200,f,❌,input/incoder/fizzbuzz_count/84.txt,7,0
-3,13,11,50,4000,f,❌,input/incoder/fizzbuzz_count/84.txt,358,0
-3,13,11,50,10000,f,❌,input/incoder/fizzbuzz_count/84.txt,651,0
-3,13,11,50,100000,f,❌,input/incoder/fizzbuzz_count/84.txt,8028,0
-3,13,11,78,50,f,❌,input/incoder/fizzbuzz_count/85.txt,4,0
-3,13,11,78,78,f,❌,input/incoder/fizzbuzz_count/85.txt,4,1
-3,13,11,78,79,f,❌,input/incoder/fizzbuzz_count/85.txt,4,0
-3,13,11,78,100,f,❌,input/incoder/fizzbuzz_count/85.txt,4,0
-3,13,11,78,200,f,❌,input/incoder/fizzbuzz_count/85.txt,7,0
-3,13,11,78,4000,f,❌,input/incoder/fizzbuzz_count/85.txt,358,0
-3,13,11,78,10000,f,❌,input/incoder/fizzbuzz_count/85.txt,651,0
-3,13,11,78,100000,f,❌,input/incoder/fizzbuzz_count/85.txt,8028,0
-3,13,11,3298,50,f,❌,input/incoder/fizzbuzz_count/86.txt,4,0
-3,13,11,3298,78,f,❌,input/incoder/fizzbuzz_count/86.txt,4,1
-3,13,11,3298,79,f,❌,input/incoder/fizzbuzz_count/86.txt,4,0
-3,13,11,3298,100,f,❌,input/incoder/fizzbuzz_count/86.txt,4,0
-3,13,11,3298,200,f,❌,input/incoder/fizzbuzz_count/86.txt,7,0
-3,13,11,3298,4000,f,❌,input/incoder/fizzbuzz_count/86.txt,358,0
-3,13,11,3298,10000,f,❌,input/incoder/fizzbuzz_count/86.txt,651,0
-3,13,11,3298,100000,f,❌,input/incoder/fizzbuzz_count/86.txt,8028,0
-3,13,3819,50,50,f,❌,input/incoder/fizzbuzz_count/87.txt,2,0
-3,13,3819,50,78,f,❌,input/incoder/fizzbuzz_count/87.txt,2,1
-3,13,3819,50,79,f,❌,input/incoder/fizzbuzz_count/87.txt,2,0
-3,13,3819,50,100,f,❌,input/incoder/fizzbuzz_count/87.txt,2,0
-3,13,3819,50,200,f,❌,input/incoder/fizzbuzz_count/87.txt,4,0
-3,13,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/87.txt,171,0
-3,13,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/87.txt,312,0
-3,13,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/87.txt,3861,0
-3,13,3819,78,50,f,❌,input/incoder/fizzbuzz_count/88.txt,2,0
-3,13,3819,78,78,f,❌,input/incoder/fizzbuzz_count/88.txt,2,1
-3,13,3819,78,79,f,❌,input/incoder/fizzbuzz_count/88.txt,2,0
-3,13,3819,78,100,f,❌,input/incoder/fizzbuzz_count/88.txt,2,0
-3,13,3819,78,200,f,❌,input/incoder/fizzbuzz_count/88.txt,4,0
-3,13,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/88.txt,171,0
-3,13,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/88.txt,312,0
-3,13,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/88.txt,3861,0
-3,13,3819,3298,50,f,❌,input/incoder/fizzbuzz_count/89.txt,2,0
-3,13,3819,3298,78,f,❌,input/incoder/fizzbuzz_count/89.txt,2,1
-3,13,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/89.txt,2,0
-3,13,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/89.txt,2,0
-3,13,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/89.txt,4,0
-3,13,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/89.txt,171,0
-3,13,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/89.txt,312,0
-3,13,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/89.txt,3861,0
-3,7,13,50,50,f,❌,input/incoder/fizzbuzz_count/90.txt,3,0
-3,7,13,50,78,f,❌,input/incoder/fizzbuzz_count/90.txt,4,2
-3,7,13,50,79,f,❌,input/incoder/fizzbuzz_count/90.txt,4,1
-3,7,13,50,100,f,❌,input/incoder/fizzbuzz_count/90.txt,4,0
-3,7,13,50,200,f,❌,input/incoder/fizzbuzz_count/90.txt,8,0
-3,7,13,50,4000,f,❌,input/incoder/fizzbuzz_count/90.txt,458,0
-3,7,13,50,10000,f,❌,input/incoder/fizzbuzz_count/90.txt,837,0
-3,7,13,50,100000,f,❌,input/incoder/fizzbuzz_count/90.txt,10442,0
-3,7,13,78,50,f,❌,input/incoder/fizzbuzz_count/91.txt,3,0
-3,7,13,78,78,f,❌,input/incoder/fizzbuzz_count/91.txt,4,2
-3,7,13,78,79,f,❌,input/incoder/fizzbuzz_count/91.txt,4,1
-3,7,13,78,100,f,❌,input/incoder/fizzbuzz_count/91.txt,4,0
-3,7,13,78,200,f,❌,input/incoder/fizzbuzz_count/91.txt,8,0
-3,7,13,78,4000,f,❌,input/incoder/fizzbuzz_count/91.txt,458,0
-3,7,13,78,10000,f,❌,input/incoder/fizzbuzz_count/91.txt,837,0
-3,7,13,78,100000,f,❌,input/incoder/fizzbuzz_count/91.txt,10442,0
-3,7,13,3298,50,f,❌,input/incoder/fizzbuzz_count/92.txt,3,0
-3,7,13,3298,78,f,❌,input/incoder/fizzbuzz_count/92.txt,4,2
-3,7,13,3298,79,f,❌,input/incoder/fizzbuzz_count/92.txt,4,1
-3,7,13,3298,100,f,❌,input/incoder/fizzbuzz_count/92.txt,4,0
-3,7,13,3298,200,f,❌,input/incoder/fizzbuzz_count/92.txt,8,0
-3,7,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/92.txt,458,0
-3,7,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/92.txt,837,0
-3,7,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/92.txt,10442,0
-3,7,11,50,50,f,❌,input/incoder/fizzbuzz_count/93.txt,3,0
-3,7,11,50,78,f,❌,input/incoder/fizzbuzz_count/93.txt,4,0
-3,7,11,50,79,f,❌,input/incoder/fizzbuzz_count/93.txt,4,0
-3,7,11,50,100,f,❌,input/incoder/fizzbuzz_count/93.txt,4,0
-3,7,11,50,200,f,❌,input/incoder/fizzbuzz_count/93.txt,8,0
-3,7,11,50,4000,f,❌,input/incoder/fizzbuzz_count/93.txt,483,0
-3,7,11,50,10000,f,❌,input/incoder/fizzbuzz_count/93.txt,874,0
-3,7,11,50,100000,f,❌,input/incoder/fizzbuzz_count/93.txt,11030,0
-3,7,11,78,50,f,❌,input/incoder/fizzbuzz_count/94.txt,3,0
-3,7,11,78,78,f,❌,input/incoder/fizzbuzz_count/94.txt,4,1
-3,7,11,78,79,f,❌,input/incoder/fizzbuzz_count/94.txt,4,1
-3,7,11,78,100,f,❌,input/incoder/fizzbuzz_count/94.txt,4,0
-3,7,11,78,200,f,❌,input/incoder/fizzbuzz_count/94.txt,8,0
-3,7,11,78,4000,f,❌,input/incoder/fizzbuzz_count/94.txt,483,0
-3,7,11,78,10000,f,❌,input/incoder/fizzbuzz_count/94.txt,874,0
-3,7,11,78,100000,f,❌,input/incoder/fizzbuzz_count/94.txt,11030,0
-3,7,11,3298,50,f,❌,input/incoder/fizzbuzz_count/95.txt,3,0
-3,7,11,3298,78,f,❌,input/incoder/fizzbuzz_count/95.txt,4,1
-3,7,11,3298,79,f,❌,input/incoder/fizzbuzz_count/95.txt,4,1
-3,7,11,3298,100,f,❌,input/incoder/fizzbuzz_count/95.txt,4,0
-3,7,11,3298,200,f,❌,input/incoder/fizzbuzz_count/95.txt,8,0
-3,7,11,3298,4000,f,❌,input/incoder/fizzbuzz_count/95.txt,483,0
-3,7,11,3298,10000,f,❌,input/incoder/fizzbuzz_count/95.txt,874,0
-3,7,11,3298,100000,f,❌,input/incoder/fizzbuzz_count/95.txt,11030,0
-3,7,3819,50,50,f,❌,input/incoder/fizzbuzz_count/96.txt,1,0
-3,7,3819,50,78,f,❌,input/incoder/fizzbuzz_count/96.txt,2,1
-3,7,3819,50,79,f,❌,input/incoder/fizzbuzz_count/96.txt,2,1
-3,7,3819,50,100,f,❌,input/incoder/fizzbuzz_count/96.txt,2,0
-3,7,3819,50,200,f,❌,input/incoder/fizzbuzz_count/96.txt,4,0
-3,7,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/96.txt,314,0
-3,7,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/96.txt,572,0
-3,7,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/96.txt,7151,0
-3,7,3819,78,50,p,✅,input/incoder/fizzbuzz_count/97.txt,,
-3,7,3819,78,78,f,❌,input/incoder/fizzbuzz_count/97.txt,2,0
-3,7,3819,78,79,f,❌,input/incoder/fizzbuzz_count/97.txt,2,0
-3,7,3819,78,100,f,❌,input/incoder/fizzbuzz_count/97.txt,2,1
-3,7,3819,78,200,f,❌,input/incoder/fizzbuzz_count/97.txt,4,1
-3,7,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/97.txt,314,0
-3,7,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/97.txt,572,1
-3,7,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/97.txt,7151,0
-3,7,3819,3298,50,p,✅,input/incoder/fizzbuzz_count/98.txt,,
-3,7,3819,3298,78,f,❌,input/incoder/fizzbuzz_count/98.txt,2,0
-3,7,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/98.txt,2,0
-3,7,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/98.txt,2,1
-3,7,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/98.txt,4,1
-3,7,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/98.txt,314,0
-3,7,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/98.txt,572,1
-3,7,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/98.txt,7151,0
-3,1837,13,50,50,f,❌,input/incoder/fizzbuzz_count/99.txt,2,0
-3,1837,13,50,78,f,❌,input/incoder/fizzbuzz_count/99.txt,2,1
-3,1837,13,50,79,f,❌,input/incoder/fizzbuzz_count/99.txt,2,0
-3,1837,13,50,100,f,❌,input/incoder/fizzbuzz_count/99.txt,2,0
-3,1837,13,50,200,f,❌,input/incoder/fizzbuzz_count/99.txt,4,0
-3,1837,13,50,4000,f,❌,input/incoder/fizzbuzz_count/99.txt,172,0
-3,1837,13,50,10000,f,❌,input/incoder/fizzbuzz_count/99.txt,313,0
-3,1837,13,50,100000,f,❌,input/incoder/fizzbuzz_count/99.txt,3874,0
-3,1837,13,78,50,f,❌,input/incoder/fizzbuzz_count/100.txt,2,0
-3,1837,13,78,78,t,⌛,input/incoder/fizzbuzz_count/100.txt,,
-3,1837,13,78,79,f,❌,input/incoder/fizzbuzz_count/100.txt,2,0
-3,1837,13,78,100,f,❌,input/incoder/fizzbuzz_count/100.txt,2,0
-3,1837,13,78,200,f,❌,input/incoder/fizzbuzz_count/100.txt,4,0
-3,1837,13,78,4000,f,❌,input/incoder/fizzbuzz_count/100.txt,172,0
-3,1837,13,78,10000,f,❌,input/incoder/fizzbuzz_count/100.txt,313,0
-3,1837,13,78,100000,f,❌,input/incoder/fizzbuzz_count/100.txt,3874,0
-3,1837,13,3298,50,f,❌,input/incoder/fizzbuzz_count/101.txt,2,0
-3,1837,13,3298,78,f,❌,input/incoder/fizzbuzz_count/101.txt,2,1
-3,1837,13,3298,79,f,❌,input/incoder/fizzbuzz_count/101.txt,2,0
-3,1837,13,3298,100,f,❌,input/incoder/fizzbuzz_count/101.txt,2,0
-3,1837,13,3298,200,f,❌,input/incoder/fizzbuzz_count/101.txt,4,0
-3,1837,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/101.txt,172,0
-3,1837,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/101.txt,313,0
-3,1837,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/101.txt,3874,0
-3,1837,3819,50,50,p,✅,input/incoder/fizzbuzz_count/105.txt,,
-3,1837,3819,50,78,p,✅,input/incoder/fizzbuzz_count/105.txt,,
-3,1837,3819,50,79,p,✅,input/incoder/fizzbuzz_count/105.txt,,
-3,1837,3819,50,100,p,✅,input/incoder/fizzbuzz_count/105.txt,,
-3,1837,3819,50,200,p,✅,input/incoder/fizzbuzz_count/105.txt,,
-3,1837,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/105.txt,3,0
-3,1837,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/105.txt,5,0
-3,1837,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/105.txt,39,0
-3,1837,3819,78,50,p,✅,input/incoder/fizzbuzz_count/106.txt,,
-3,1837,3819,78,78,p,✅,input/incoder/fizzbuzz_count/106.txt,,
-3,1837,3819,78,79,p,✅,input/incoder/fizzbuzz_count/106.txt,,
-3,1837,3819,78,100,p,✅,input/incoder/fizzbuzz_count/106.txt,,
-3,1837,3819,78,200,p,✅,input/incoder/fizzbuzz_count/106.txt,,
-3,1837,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/106.txt,3,0
-3,1837,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/106.txt,5,0
-3,1837,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/106.txt,39,0
-3,1837,3819,3298,50,p,✅,input/incoder/fizzbuzz_count/107.txt,,
-3,1837,3819,3298,78,p,✅,input/incoder/fizzbuzz_count/107.txt,,
-3,1837,3819,3298,79,p,✅,input/incoder/fizzbuzz_count/107.txt,,
-3,1837,3819,3298,100,p,✅,input/incoder/fizzbuzz_count/107.txt,,
-3,1837,3819,3298,200,p,✅,input/incoder/fizzbuzz_count/107.txt,,
-3,1837,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/107.txt,3,0
-3,1837,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/107.txt,5,0
-3,1837,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/107.txt,39,0
-1,11,13,50,50,f,❌,input/incoder/fizzbuzz_count/108.txt,3,0
-1,11,13,50,78,f,❌,input/incoder/fizzbuzz_count/108.txt,3,0
-1,11,13,50,79,f,❌,input/incoder/fizzbuzz_count/108.txt,3,0
-1,11,13,50,100,f,❌,input/incoder/fizzbuzz_count/108.txt,4,0
-1,11,13,50,200,f,❌,input/incoder/fizzbuzz_count/108.txt,23,0
-1,11,13,50,4000,f,❌,input/incoder/fizzbuzz_count/108.txt,354,0
-1,11,13,50,10000,f,❌,input/incoder/fizzbuzz_count/108.txt,642,0
-1,11,13,50,100000,f,❌,input/incoder/fizzbuzz_count/108.txt,8053,0
-1,11,13,78,50,f,❌,input/incoder/fizzbuzz_count/109.txt,3,0
-1,11,13,78,78,f,❌,input/incoder/fizzbuzz_count/109.txt,3,1
-1,11,13,78,79,f,❌,input/incoder/fizzbuzz_count/109.txt,3,0
-1,11,13,78,100,f,❌,input/incoder/fizzbuzz_count/109.txt,4,0
-1,11,13,78,200,f,❌,input/incoder/fizzbuzz_count/109.txt,23,0
-1,11,13,78,4000,f,❌,input/incoder/fizzbuzz_count/109.txt,354,0
-1,11,13,78,10000,f,❌,input/incoder/fizzbuzz_count/109.txt,642,0
-1,11,13,78,100000,f,❌,input/incoder/fizzbuzz_count/109.txt,8053,0
-1,11,13,3298,50,f,❌,input/incoder/fizzbuzz_count/110.txt,3,0
-1,11,13,3298,78,f,❌,input/incoder/fizzbuzz_count/110.txt,3,0
-1,11,13,3298,79,f,❌,input/incoder/fizzbuzz_count/110.txt,3,0
-1,11,13,3298,100,f,❌,input/incoder/fizzbuzz_count/110.txt,4,0
-1,11,13,3298,200,f,❌,input/incoder/fizzbuzz_count/110.txt,23,0
-1,11,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/110.txt,354,0
-1,11,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/110.txt,642,0
-1,11,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/110.txt,8053,0
-1,11,3819,50,50,f,❌,input/incoder/fizzbuzz_count/114.txt,2,0
-1,11,3819,50,78,f,❌,input/incoder/fizzbuzz_count/114.txt,2,0
-1,11,3819,50,79,f,❌,input/incoder/fizzbuzz_count/114.txt,2,0
-1,11,3819,50,100,f,❌,input/incoder/fizzbuzz_count/114.txt,2,0
-1,11,3819,50,200,f,❌,input/incoder/fizzbuzz_count/114.txt,13,0
-1,11,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/114.txt,202,0
-1,11,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/114.txt,365,0
-1,11,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/114.txt,4558,0
-1,11,3819,78,50,f,❌,input/incoder/fizzbuzz_count/115.txt,2,0
-1,11,3819,78,78,f,❌,input/incoder/fizzbuzz_count/115.txt,2,0
-1,11,3819,78,79,f,❌,input/incoder/fizzbuzz_count/115.txt,2,0
-1,11,3819,78,100,f,❌,input/incoder/fizzbuzz_count/115.txt,2,0
-1,11,3819,78,200,f,❌,input/incoder/fizzbuzz_count/115.txt,13,0
-1,11,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/115.txt,202,0
-1,11,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/115.txt,365,0
-1,11,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/115.txt,4558,0
-1,11,3819,3298,50,f,❌,input/incoder/fizzbuzz_count/116.txt,2,0
-1,11,3819,3298,78,f,❌,input/incoder/fizzbuzz_count/116.txt,2,0
-1,11,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/116.txt,2,0
-1,11,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/116.txt,2,0
-1,11,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/116.txt,13,0
-1,11,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/116.txt,202,0
-1,11,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/116.txt,365,0
-1,11,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/116.txt,4558,0
-1,13,11,50,50,f,❌,input/incoder/fizzbuzz_count/120.txt,3,0
-1,13,11,50,78,f,❌,input/incoder/fizzbuzz_count/120.txt,3,1
-1,13,11,50,79,f,❌,input/incoder/fizzbuzz_count/120.txt,3,0
-1,13,11,50,100,f,❌,input/incoder/fizzbuzz_count/120.txt,4,0
-1,13,11,50,200,f,❌,input/incoder/fizzbuzz_count/120.txt,23,0
-1,13,11,50,4000,f,❌,input/incoder/fizzbuzz_count/120.txt,354,0
-1,13,11,50,10000,f,❌,input/incoder/fizzbuzz_count/120.txt,642,0
-1,13,11,50,100000,f,❌,input/incoder/fizzbuzz_count/120.txt,8053,0
-1,13,11,78,50,f,❌,input/incoder/fizzbuzz_count/121.txt,3,0
-1,13,11,78,78,f,❌,input/incoder/fizzbuzz_count/121.txt,3,1
-1,13,11,78,79,f,❌,input/incoder/fizzbuzz_count/121.txt,3,0
-1,13,11,78,100,f,❌,input/incoder/fizzbuzz_count/121.txt,4,0
-1,13,11,78,200,f,❌,input/incoder/fizzbuzz_count/121.txt,23,0
-1,13,11,78,4000,f,❌,input/incoder/fizzbuzz_count/121.txt,354,0
-1,13,11,78,10000,f,❌,input/incoder/fizzbuzz_count/121.txt,642,0
-1,13,11,78,100000,f,❌,input/incoder/fizzbuzz_count/121.txt,8053,0
-1,13,11,3298,50,f,❌,input/incoder/fizzbuzz_count/122.txt,3,0
-1,13,11,3298,78,f,❌,input/incoder/fizzbuzz_count/122.txt,3,1
-1,13,11,3298,79,f,❌,input/incoder/fizzbuzz_count/122.txt,3,0
-1,13,11,3298,100,f,❌,input/incoder/fizzbuzz_count/122.txt,4,0
-1,13,11,3298,200,f,❌,input/incoder/fizzbuzz_count/122.txt,23,0
-1,13,11,3298,4000,f,❌,input/incoder/fizzbuzz_count/122.txt,354,0
-1,13,11,3298,10000,f,❌,input/incoder/fizzbuzz_count/122.txt,642,0
-1,13,11,3298,100000,f,❌,input/incoder/fizzbuzz_count/122.txt,8053,0
-1,13,3819,50,50,f,❌,input/incoder/fizzbuzz_count/123.txt,1,0
-1,13,3819,50,78,p,✅,input/incoder/fizzbuzz_count/123.txt,,
-1,13,3819,50,79,f,❌,input/incoder/fizzbuzz_count/123.txt,1,0
-1,13,3819,50,100,f,❌,input/incoder/fizzbuzz_count/123.txt,2,0
-1,13,3819,50,200,f,❌,input/incoder/fizzbuzz_count/123.txt,11,0
-1,13,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/123.txt,172,0
-1,13,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/123.txt,308,0
-1,13,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/123.txt,3859,0
-1,13,3819,78,50,f,❌,input/incoder/fizzbuzz_count/124.txt,1,0
-1,13,3819,78,78,p,✅,input/incoder/fizzbuzz_count/124.txt,,
-1,13,3819,78,79,f,❌,input/incoder/fizzbuzz_count/124.txt,1,0
-1,13,3819,78,100,f,❌,input/incoder/fizzbuzz_count/124.txt,2,0
-1,13,3819,78,200,f,❌,input/incoder/fizzbuzz_count/124.txt,11,0
-1,13,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/124.txt,172,0
-1,13,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/124.txt,308,0
-1,13,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/124.txt,3859,0
-1,13,3819,3298,50,f,❌,input/incoder/fizzbuzz_count/125.txt,1,0
-1,13,3819,3298,78,p,✅,input/incoder/fizzbuzz_count/125.txt,,
-1,13,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/125.txt,1,0
-1,13,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/125.txt,2,0
-1,13,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/125.txt,11,0
-1,13,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/125.txt,172,0
-1,13,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/125.txt,308,0
-1,13,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/125.txt,3859,0
-1,7,13,50,50,f,❌,input/incoder/fizzbuzz_count/126.txt,3,0
-1,7,13,50,78,f,❌,input/incoder/fizzbuzz_count/126.txt,3,2
-1,7,13,50,79,f,❌,input/incoder/fizzbuzz_count/126.txt,3,1
-1,7,13,50,100,f,❌,input/incoder/fizzbuzz_count/126.txt,4,0
-1,7,13,50,200,f,❌,input/incoder/fizzbuzz_count/126.txt,29,0
-1,7,13,50,4000,f,❌,input/incoder/fizzbuzz_count/126.txt,461,0
-1,7,13,50,10000,f,❌,input/incoder/fizzbuzz_count/126.txt,835,0
-1,7,13,50,100000,f,❌,input/incoder/fizzbuzz_count/126.txt,10440,0
-1,7,13,78,50,f,❌,input/incoder/fizzbuzz_count/127.txt,3,0
-1,7,13,78,78,f,❌,input/incoder/fizzbuzz_count/127.txt,3,2
-1,7,13,78,79,f,❌,input/incoder/fizzbuzz_count/127.txt,3,1
-1,7,13,78,100,f,❌,input/incoder/fizzbuzz_count/127.txt,4,0
-1,7,13,78,200,f,❌,input/incoder/fizzbuzz_count/127.txt,29,0
-1,7,13,78,4000,f,❌,input/incoder/fizzbuzz_count/127.txt,461,0
-1,7,13,78,10000,f,❌,input/incoder/fizzbuzz_count/127.txt,835,0
-1,7,13,78,100000,f,❌,input/incoder/fizzbuzz_count/127.txt,10440,0
-1,7,13,3298,50,f,❌,input/incoder/fizzbuzz_count/128.txt,3,0
-1,7,13,3298,78,f,❌,input/incoder/fizzbuzz_count/128.txt,3,2
-1,7,13,3298,79,f,❌,input/incoder/fizzbuzz_count/128.txt,3,1
-1,7,13,3298,100,f,❌,input/incoder/fizzbuzz_count/128.txt,4,0
-1,7,13,3298,200,f,❌,input/incoder/fizzbuzz_count/128.txt,29,0
-1,7,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/128.txt,461,0
-1,7,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/128.txt,835,0
-1,7,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/128.txt,10440,0
-1,7,11,50,50,f,❌,input/incoder/fizzbuzz_count/129.txt,4,0
-1,7,11,50,78,f,❌,input/incoder/fizzbuzz_count/129.txt,4,1
-1,7,11,50,79,f,❌,input/incoder/fizzbuzz_count/129.txt,4,1
-1,7,11,50,100,f,❌,input/incoder/fizzbuzz_count/129.txt,5,0
-1,7,11,50,200,f,❌,input/incoder/fizzbuzz_count/129.txt,32,0
-1,7,11,50,4000,f,❌,input/incoder/fizzbuzz_count/129.txt,488,0
-1,7,11,50,10000,f,❌,input/incoder/fizzbuzz_count/129.txt,888,0
-1,7,11,50,100000,f,❌,input/incoder/fizzbuzz_count/129.txt,11046,0
-1,7,11,78,50,f,❌,input/incoder/fizzbuzz_count/130.txt,4,0
-1,7,11,78,78,f,❌,input/incoder/fizzbuzz_count/130.txt,4,1
-1,7,11,78,79,f,❌,input/incoder/fizzbuzz_count/130.txt,4,1
-1,7,11,78,100,f,❌,input/incoder/fizzbuzz_count/130.txt,5,0
-1,7,11,78,200,f,❌,input/incoder/fizzbuzz_count/130.txt,32,0
-1,7,11,78,4000,f,❌,input/incoder/fizzbuzz_count/130.txt,488,0
-1,7,11,78,10000,f,❌,input/incoder/fizzbuzz_count/130.txt,888,0
-1,7,11,78,100000,f,❌,input/incoder/fizzbuzz_count/130.txt,11046,0
-1,7,11,3298,50,f,❌,input/incoder/fizzbuzz_count/131.txt,4,0
-1,7,11,3298,78,f,❌,input/incoder/fizzbuzz_count/131.txt,4,1
-1,7,11,3298,79,f,❌,input/incoder/fizzbuzz_count/131.txt,4,1
-1,7,11,3298,100,f,❌,input/incoder/fizzbuzz_count/131.txt,5,0
-1,7,11,3298,200,f,❌,input/incoder/fizzbuzz_count/131.txt,32,0
-1,7,11,3298,4000,f,❌,input/incoder/fizzbuzz_count/131.txt,488,0
-1,7,11,3298,10000,f,❌,input/incoder/fizzbuzz_count/131.txt,888,0
-1,7,11,3298,100000,f,❌,input/incoder/fizzbuzz_count/131.txt,11046,0
-1,7,3819,50,50,f,❌,input/incoder/fizzbuzz_count/132.txt,2,7
-1,7,3819,50,78,f,❌,input/incoder/fizzbuzz_count/132.txt,2,11
-1,7,3819,50,79,f,❌,input/incoder/fizzbuzz_count/132.txt,2,11
-1,7,3819,50,100,f,❌,input/incoder/fizzbuzz_count/132.txt,3,14
-1,7,3819,50,200,f,❌,input/incoder/fizzbuzz_count/132.txt,20,28
-1,7,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/132.txt,316,572
-1,7,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/132.txt,573,1430
-1,7,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/132.txt,7157,14311
-1,7,3819,78,50,f,❌,input/incoder/fizzbuzz_count/133.txt,2,7
-1,7,3819,78,78,f,❌,input/incoder/fizzbuzz_count/133.txt,2,11
-1,7,3819,78,79,f,❌,input/incoder/fizzbuzz_count/133.txt,2,11
-1,7,3819,78,100,f,❌,input/incoder/fizzbuzz_count/133.txt,3,14
-1,7,3819,78,200,f,❌,input/incoder/fizzbuzz_count/133.txt,20,28
-1,7,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/133.txt,316,572
-1,7,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/133.txt,573,1430
-1,7,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/133.txt,7157,14311
-1,7,3819,3298,50,f,❌,input/incoder/fizzbuzz_count/134.txt,2,0
-1,7,3819,3298,78,f,❌,input/incoder/fizzbuzz_count/134.txt,2,0
-1,7,3819,3298,79,f,❌,input/incoder/fizzbuzz_count/134.txt,2,0
-1,7,3819,3298,100,f,❌,input/incoder/fizzbuzz_count/134.txt,3,0
-1,7,3819,3298,200,f,❌,input/incoder/fizzbuzz_count/134.txt,20,0
-1,7,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/134.txt,316,0
-1,7,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/134.txt,573,0
-1,7,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/134.txt,7157,0
-1,1837,13,50,50,p,✅,input/incoder/fizzbuzz_count/135.txt,,
-1,1837,13,50,78,f,❌,input/incoder/fizzbuzz_count/135.txt,1,2
-1,1837,13,50,79,p,✅,input/incoder/fizzbuzz_count/135.txt,,
-1,1837,13,50,100,f,❌,input/incoder/fizzbuzz_count/135.txt,2,1
-1,1837,13,50,200,f,❌,input/incoder/fizzbuzz_count/135.txt,11,1
-1,1837,13,50,4000,f,❌,input/incoder/fizzbuzz_count/135.txt,172,1
-1,1837,13,50,10000,f,❌,input/incoder/fizzbuzz_count/135.txt,311,1
-1,1837,13,50,100000,f,❌,input/incoder/fizzbuzz_count/135.txt,3872,1
-1,1837,13,78,50,e,💀,input/incoder/fizzbuzz_count/136.txt,,
-1,1837,13,78,78,e,💀,input/incoder/fizzbuzz_count/136.txt,,
-1,1837,13,78,79,e,💀,input/incoder/fizzbuzz_count/136.txt,,
-1,1837,13,78,100,e,💀,input/incoder/fizzbuzz_count/136.txt,,
-1,1837,13,78,200,e,💀,input/incoder/fizzbuzz_count/136.txt,,
-1,1837,13,78,4000,e,💀,input/incoder/fizzbuzz_count/136.txt,,
-1,1837,13,78,10000,e,💀,input/incoder/fizzbuzz_count/136.txt,,
-1,1837,13,78,100000,e,💀,input/incoder/fizzbuzz_count/136.txt,,
-1,1837,13,3298,50,f,❌,input/incoder/fizzbuzz_count/137.txt,1,0
-1,1837,13,3298,78,p,✅,input/incoder/fizzbuzz_count/137.txt,,
-1,1837,13,3298,79,f,❌,input/incoder/fizzbuzz_count/137.txt,1,0
-1,1837,13,3298,100,f,❌,input/incoder/fizzbuzz_count/137.txt,2,0
-1,1837,13,3298,200,f,❌,input/incoder/fizzbuzz_count/137.txt,11,0
-1,1837,13,3298,4000,f,❌,input/incoder/fizzbuzz_count/137.txt,172,1
-1,1837,13,3298,10000,f,❌,input/incoder/fizzbuzz_count/137.txt,311,1
-1,1837,13,3298,100000,f,❌,input/incoder/fizzbuzz_count/137.txt,3872,2
-1,1837,3819,50,50,p,✅,input/incoder/fizzbuzz_count/141.txt,,
-1,1837,3819,50,78,p,✅,input/incoder/fizzbuzz_count/141.txt,,
-1,1837,3819,50,79,p,✅,input/incoder/fizzbuzz_count/141.txt,,
-1,1837,3819,50,100,p,✅,input/incoder/fizzbuzz_count/141.txt,,
-1,1837,3819,50,200,p,✅,input/incoder/fizzbuzz_count/141.txt,,
-1,1837,3819,50,4000,f,❌,input/incoder/fizzbuzz_count/141.txt,2,0
-1,1837,3819,50,10000,f,❌,input/incoder/fizzbuzz_count/141.txt,5,0
-1,1837,3819,50,100000,f,❌,input/incoder/fizzbuzz_count/141.txt,43,0
-1,1837,3819,78,50,p,✅,input/incoder/fizzbuzz_count/142.txt,,
-1,1837,3819,78,78,p,✅,input/incoder/fizzbuzz_count/142.txt,,
-1,1837,3819,78,79,p,✅,input/incoder/fizzbuzz_count/142.txt,,
-1,1837,3819,78,100,p,✅,input/incoder/fizzbuzz_count/142.txt,,
-1,1837,3819,78,200,p,✅,input/incoder/fizzbuzz_count/142.txt,,
-1,1837,3819,78,4000,f,❌,input/incoder/fizzbuzz_count/142.txt,2,0
-1,1837,3819,78,10000,f,❌,input/incoder/fizzbuzz_count/142.txt,5,0
-1,1837,3819,78,100000,f,❌,input/incoder/fizzbuzz_count/142.txt,43,0
-1,1837,3819,3298,50,p,✅,input/incoder/fizzbuzz_count/143.txt,,
-1,1837,3819,3298,78,p,✅,input/incoder/fizzbuzz_count/143.txt,,
-1,1837,3819,3298,79,p,✅,input/incoder/fizzbuzz_count/143.txt,,
-1,1837,3819,3298,100,p,✅,input/incoder/fizzbuzz_count/143.txt,,
-1,1837,3819,3298,200,p,✅,input/incoder/fizzbuzz_count/143.txt,,
-1,1837,3819,3298,4000,f,❌,input/incoder/fizzbuzz_count/143.txt,2,0
-1,1837,3819,3298,10000,f,❌,input/incoder/fizzbuzz_count/143.txt,5,0
-1,1837,3819,3298,100000,f,❌,input/incoder/fizzbuzz_count/143.txt,43,0
+digit,factor2,factor3,example_input,result_emojis,result,model_input,failed_inputs,errors
+7,11,13,50,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/0.txt,"[[""2"", ""1""], [""3"", ""0""], [""3"", ""0""], [""6"", ""0""], [""192"", ""0""], [""639"", ""0""], [""8026"", ""0""]]",[]
+7,11,13,78,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/1.txt,"[[""2"", ""1""], [""3"", ""0""], [""3"", ""0""], [""6"", ""0""], [""192"", ""0""], [""639"", ""0""], [""8026"", ""0""]]",[]
+7,11,13,3298,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/2.txt,"[[""2"", ""1""], [""3"", ""0""], [""3"", ""0""], [""6"", ""0""], [""192"", ""0""], [""639"", ""0""], [""8026"", ""0""]]",[]
+7,11,3819,50,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/6.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""109"", ""0""], [""365"", ""0""], [""4558"", ""0""]]",[]
+7,11,3819,78,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/7.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""109"", ""0""], [""365"", ""0""], [""4558"", ""0""]]",[]
+7,11,3819,3298,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/8.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""109"", ""0""], [""365"", ""0""], [""4558"", ""0""]]",[]
+7,13,11,50,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/12.txt,"[[""2"", ""1""], [""3"", ""0""], [""3"", ""0""], [""6"", ""0""], [""192"", ""0""], [""639"", ""0""], [""8026"", ""0""]]",[]
+7,13,11,78,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/13.txt,"[[""2"", ""1""], [""3"", ""0""], [""3"", ""0""], [""6"", ""0""], [""192"", ""0""], [""639"", ""0""], [""8026"", ""0""]]",[]
+7,13,11,3298,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/14.txt,"[[""2"", ""1""], [""3"", ""0""], [""3"", ""0""], [""6"", ""0""], [""192"", ""0""], [""639"", ""0""], [""8026"", ""0""]]",[]
+7,13,3819,50,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/15.txt,"[[""0"", ""1""], [""1"", ""0""], [""1"", ""0""], [""2"", ""0""], [""93"", ""0""], [""308"", ""0""], [""3858"", ""0""]]",[]
+7,13,3819,78,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/16.txt,"[[""0"", ""1""], [""1"", ""0""], [""1"", ""0""], [""2"", ""0""], [""93"", ""0""], [""308"", ""0""], [""3858"", ""0""]]",[]
+7,13,3819,3298,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/17.txt,"[[""0"", ""1""], [""1"", ""0""], [""1"", ""0""], [""2"", ""0""], [""93"", ""0""], [""308"", ""0""], [""3858"", ""0""]]",[]
+7,7,13,50,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/18.txt,"[[""4"", ""1""], [""5"", ""0""], [""5"", ""1""], [""8"", ""1""], [""254"", ""0""], [""837"", ""1""], [""10441"", ""0""]]",[]
+7,7,13,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/19.txt,"[[""1"", ""0""], [""4"", ""2""], [""5"", ""1""], [""5"", ""0""], [""8"", ""0""], [""254"", ""0""], [""837"", ""0""], [""10441"", ""0""]]",[]
+7,7,13,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/20.txt,"[[""1"", ""0""], [""4"", ""1""], [""5"", ""0""], [""5"", ""0""], [""8"", ""0""], [""254"", ""0""], [""837"", ""0""], [""10441"", ""0""]]",[]
+7,7,11,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/21.txt,"[[""1"", ""0""], [""4"", ""1""], [""4"", ""1""], [""4"", ""0""], [""8"", ""0""], [""265"", ""0""], [""883"", ""0""], [""11031"", ""0""]]",[]
+7,7,11,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/22.txt,"[[""1"", ""0""], [""4"", ""1""], [""4"", ""1""], [""4"", ""0""], [""8"", ""0""], [""265"", ""0""], [""883"", ""0""], [""11031"", ""0""]]",[]
+7,7,11,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/23.txt,"[[""1"", ""22""], [""4"", ""20""], [""4"", ""22""], [""4"", ""30""], [""8"", ""51""], [""265"", ""437""], [""883"", ""1513""], [""11031"", ""3567""]]",[]
+7,7,3819,50,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/24.txt,"[[""4"", ""0""], [""4"", ""0""], [""4"", ""1""], [""6"", ""1""], [""173"", ""0""], [""574"", ""1""], [""7156"", ""0""]]",[]
+7,7,3819,78,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/25.txt,"[[""4"", ""0""], [""4"", ""0""], [""4"", ""1""], [""6"", ""1""], [""173"", ""0""], [""574"", ""1""], [""7156"", ""0""]]",[]
+7,7,3819,3298,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/26.txt,"[[""4"", ""0""], [""4"", ""0""], [""4"", ""1""], [""6"", ""1""], [""173"", ""0""], [""574"", ""1""], [""7156"", ""0""]]",[]
+7,1837,13,50,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/27.txt,"[[""0"", ""1""], [""1"", ""0""], [""1"", ""0""], [""2"", ""0""], [""95"", ""0""], [""310"", ""0""], [""3869"", ""0""]]",[]
+7,1837,13,78,✅✅❌❌❌❌❌❌,ppffffff,input/incoder/fizzbuzz_count/28.txt,"[[""1"", ""0""], [""1"", ""0""], [""2"", ""0""], [""95"", ""0""], [""310"", ""0""], [""3869"", ""0""]]",[]
+7,1837,13,3298,✅✅❌❌❌❌❌❌,ppffffff,input/incoder/fizzbuzz_count/29.txt,"[[""1"", ""0""], [""1"", ""0""], [""2"", ""0""], [""95"", ""0""], [""310"", ""0""], [""3869"", ""0""]]",[]
+7,1837,3819,50,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/33.txt,"[[""2"", ""0""], [""4"", ""0""], [""39"", ""0""]]",[]
+7,1837,3819,78,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/34.txt,"[[""2"", ""0""], [""4"", ""0""], [""39"", ""0""]]",[]
+7,1837,3819,3298,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/35.txt,"[[""2"", ""0""], [""4"", ""0""], [""39"", ""0""]]",[]
+4,11,13,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/36.txt,"[[""2"", ""0""], [""2"", ""3""], [""2"", ""0""], [""2"", ""0""], [""5"", ""0""], [""190"", ""0""], [""639"", ""0""], [""8040"", ""0""]]",[]
+4,11,13,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/37.txt,"[[""2"", ""0""], [""2"", ""1""], [""2"", ""0""], [""2"", ""0""], [""5"", ""0""], [""190"", ""0""], [""639"", ""0""], [""8040"", ""0""]]",[]
+4,11,13,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/38.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""5"", ""0""], [""190"", ""0""], [""639"", ""0""], [""8040"", ""0""]]",[]
+4,11,3819,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/42.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""108"", ""0""], [""364"", ""0""], [""4557"", ""0""]]",[]
+4,11,3819,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/43.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""108"", ""0""], [""364"", ""0""], [""4557"", ""0""]]",[]
+4,11,3819,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/44.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""108"", ""0""], [""364"", ""0""], [""4557"", ""0""]]",[]
+4,13,11,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/48.txt,"[[""2"", ""0""], [""2"", ""1""], [""2"", ""0""], [""2"", ""0""], [""5"", ""0""], [""190"", ""0""], [""639"", ""0""], [""8040"", ""0""]]",[]
+4,13,11,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/49.txt,"[[""2"", ""0""], [""2"", ""1""], [""2"", ""0""], [""2"", ""0""], [""5"", ""0""], [""190"", ""0""], [""639"", ""0""], [""8040"", ""0""]]",[]
+4,13,11,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/50.txt,"[[""2"", ""0""], [""2"", ""1""], [""2"", ""0""], [""2"", ""0""], [""5"", ""0""], [""190"", ""0""], [""639"", ""0""], [""8040"", ""0""]]",[]
+4,13,3819,50,✅❌✅✅❌❌❌❌,pfppffff,input/incoder/fizzbuzz_count/51.txt,"[[""0"", ""2""], [""2"", ""0""], [""92"", ""0""], [""306"", ""0""], [""3857"", ""0""]]",[]
+4,13,3819,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/52.txt,"[[""0"", ""3""], [""0"", ""6""], [""0"", ""6""], [""0"", ""7""], [""2"", ""15""], [""92"", ""308""], [""306"", ""771""], [""3857"", ""7716""]]",[]
+4,13,3819,3298,✅✅✅✅❌❌❌❌,ppppffff,input/incoder/fizzbuzz_count/53.txt,"[[""2"", ""0""], [""92"", ""0""], [""306"", ""0""], [""3857"", ""0""]]",[]
+4,7,13,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/54.txt,"[[""3"", ""0""], [""3"", ""1""], [""3"", ""0""], [""4"", ""0""], [""9"", ""0""], [""252"", ""0""], [""837"", ""0""], [""10441"", ""0""]]",[]
+4,7,13,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/55.txt,"[[""3"", ""0""], [""3"", ""1""], [""3"", ""0""], [""4"", ""0""], [""9"", ""0""], [""252"", ""0""], [""837"", ""0""], [""10441"", ""0""]]",[]
+4,7,13,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/56.txt,"[[""3"", ""0""], [""3"", ""1""], [""3"", ""0""], [""4"", ""0""], [""9"", ""0""], [""252"", ""0""], [""837"", ""0""], [""10441"", ""0""]]",[]
+4,7,11,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/57.txt,"[[""5"", ""0""], [""5"", ""1""], [""5"", ""1""], [""6"", ""0""], [""10"", ""0""], [""266"", ""0""], [""889"", ""0""], [""11038"", ""0""]]",[]
+4,7,11,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/58.txt,"[[""5"", ""0""], [""5"", ""1""], [""5"", ""1""], [""6"", ""0""], [""10"", ""0""], [""266"", ""0""], [""889"", ""0""], [""11038"", ""0""]]",[]
+4,7,11,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/59.txt,"[[""5"", ""0""], [""5"", ""1""], [""5"", ""1""], [""6"", ""0""], [""10"", ""0""], [""266"", ""0""], [""889"", ""0""], [""11038"", ""0""]]",[]
+4,7,3819,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/60.txt,"[[""3"", ""0""], [""3"", ""1""], [""3"", ""1""], [""4"", ""0""], [""7"", ""0""], [""173"", ""0""], [""574"", ""0""], [""7157"", ""0""]]",[]
+4,7,3819,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/61.txt,"[[""3"", ""0""], [""3"", ""0""], [""3"", ""0""], [""4"", ""0""], [""7"", ""0""], [""173"", ""0""], [""574"", ""0""], [""7157"", ""0""]]",[]
+4,7,3819,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/62.txt,"[[""3"", ""0""], [""3"", ""0""], [""3"", ""0""], [""4"", ""0""], [""7"", ""0""], [""173"", ""0""], [""574"", ""0""], [""7157"", ""0""]]",[]
+4,1837,13,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/63.txt,"[[""0"", ""3""], [""0"", ""2""], [""0"", ""3""], [""0"", ""3""], [""2"", ""3""], [""93"", ""3""], [""308"", ""3""], [""3869"", ""3""]]",[]
+4,1837,13,78,❌✅❌❌❌❌❌❌,fpffffff,input/incoder/fizzbuzz_count/64.txt,"[[""0"", ""1""], [""0"", ""1""], [""0"", ""1""], [""2"", ""1""], [""93"", ""1""], [""308"", ""1""], [""3869"", ""1""]]",[]
+4,1837,13,3298,✅❌✅✅❌❌❌❌,pfppffff,input/incoder/fizzbuzz_count/65.txt,"[[""0"", ""1""], [""2"", ""0""], [""93"", ""0""], [""308"", ""0""], [""3869"", ""0""]]",[]
+4,1837,3819,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/69.txt,"[[""0"", ""7""], [""0"", ""7""], [""0"", ""7""], [""0"", ""7""], [""0"", ""13""], [""1"", ""25""], [""2"", ""25""], [""40"", ""49""]]",[]
+4,1837,3819,78,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/70.txt,"[[""1"", ""0""], [""2"", ""0""], [""40"", ""0""]]",[]
+4,1837,3819,3298,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/71.txt,"[[""1"", ""0""], [""2"", ""0""], [""40"", ""0""]]",[]
+3,11,13,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/72.txt,"[[""4"", ""0""], [""4"", ""0""], [""4"", ""0""], [""4"", ""0""], [""7"", ""0""], [""358"", ""0""], [""651"", ""0""], [""8028"", ""0""]]",[]
+3,11,13,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/73.txt,"[[""4"", ""0""], [""4"", ""1""], [""4"", ""0""], [""4"", ""0""], [""7"", ""0""], [""358"", ""0""], [""651"", ""0""], [""8028"", ""0""]]",[]
+3,11,13,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/74.txt,"[[""4"", ""0""], [""4"", ""1""], [""4"", ""0""], [""4"", ""0""], [""7"", ""0""], [""358"", ""0""], [""651"", ""0""], [""8028"", ""0""]]",[]
+3,11,3819,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/78.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""202"", ""0""], [""366"", ""0""], [""4557"", ""0""]]",[]
+3,11,3819,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/79.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""202"", ""0""], [""366"", ""0""], [""4557"", ""0""]]",[]
+3,11,3819,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/80.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""202"", ""0""], [""366"", ""0""], [""4557"", ""0""]]",[]
+3,13,11,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/84.txt,"[[""4"", ""0""], [""4"", ""1""], [""4"", ""0""], [""4"", ""0""], [""7"", ""0""], [""358"", ""0""], [""651"", ""0""], [""8028"", ""0""]]",[]
+3,13,11,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/85.txt,"[[""4"", ""0""], [""4"", ""1""], [""4"", ""0""], [""4"", ""0""], [""7"", ""0""], [""358"", ""0""], [""651"", ""0""], [""8028"", ""0""]]",[]
+3,13,11,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/86.txt,"[[""4"", ""0""], [""4"", ""1""], [""4"", ""0""], [""4"", ""0""], [""7"", ""0""], [""358"", ""0""], [""651"", ""0""], [""8028"", ""0""]]",[]
+3,13,3819,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/87.txt,"[[""2"", ""0""], [""2"", ""1""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""171"", ""0""], [""312"", ""0""], [""3861"", ""0""]]",[]
+3,13,3819,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/88.txt,"[[""2"", ""0""], [""2"", ""1""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""171"", ""0""], [""312"", ""0""], [""3861"", ""0""]]",[]
+3,13,3819,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/89.txt,"[[""2"", ""0""], [""2"", ""1""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""171"", ""0""], [""312"", ""0""], [""3861"", ""0""]]",[]
+3,7,13,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/90.txt,"[[""3"", ""0""], [""4"", ""2""], [""4"", ""1""], [""4"", ""0""], [""8"", ""0""], [""458"", ""0""], [""837"", ""0""], [""10442"", ""0""]]",[]
+3,7,13,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/91.txt,"[[""3"", ""0""], [""4"", ""2""], [""4"", ""1""], [""4"", ""0""], [""8"", ""0""], [""458"", ""0""], [""837"", ""0""], [""10442"", ""0""]]",[]
+3,7,13,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/92.txt,"[[""3"", ""0""], [""4"", ""2""], [""4"", ""1""], [""4"", ""0""], [""8"", ""0""], [""458"", ""0""], [""837"", ""0""], [""10442"", ""0""]]",[]
+3,7,11,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/93.txt,"[[""3"", ""0""], [""4"", ""0""], [""4"", ""0""], [""4"", ""0""], [""8"", ""0""], [""483"", ""0""], [""874"", ""0""], [""11030"", ""0""]]",[]
+3,7,11,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/94.txt,"[[""3"", ""0""], [""4"", ""1""], [""4"", ""1""], [""4"", ""0""], [""8"", ""0""], [""483"", ""0""], [""874"", ""0""], [""11030"", ""0""]]",[]
+3,7,11,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/95.txt,"[[""3"", ""0""], [""4"", ""1""], [""4"", ""1""], [""4"", ""0""], [""8"", ""0""], [""483"", ""0""], [""874"", ""0""], [""11030"", ""0""]]",[]
+3,7,3819,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/96.txt,"[[""1"", ""0""], [""2"", ""1""], [""2"", ""1""], [""2"", ""0""], [""4"", ""0""], [""314"", ""0""], [""572"", ""0""], [""7151"", ""0""]]",[]
+3,7,3819,78,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/97.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""1""], [""4"", ""1""], [""314"", ""0""], [""572"", ""1""], [""7151"", ""0""]]",[]
+3,7,3819,3298,✅❌❌❌❌❌❌❌,pfffffff,input/incoder/fizzbuzz_count/98.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""1""], [""4"", ""1""], [""314"", ""0""], [""572"", ""1""], [""7151"", ""0""]]",[]
+3,1837,13,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/99.txt,"[[""2"", ""0""], [""2"", ""1""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""172"", ""0""], [""313"", ""0""], [""3874"", ""0""]]",[]
+3,1837,13,78,❌⌛❌❌❌❌❌❌,ftffffff,input/incoder/fizzbuzz_count/100.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""172"", ""0""], [""313"", ""0""], [""3874"", ""0""]]",[]
+3,1837,13,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/101.txt,"[[""2"", ""0""], [""2"", ""1""], [""2"", ""0""], [""2"", ""0""], [""4"", ""0""], [""172"", ""0""], [""313"", ""0""], [""3874"", ""0""]]",[]
+3,1837,3819,50,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/105.txt,"[[""3"", ""0""], [""5"", ""0""], [""39"", ""0""]]",[]
+3,1837,3819,78,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/106.txt,"[[""3"", ""0""], [""5"", ""0""], [""39"", ""0""]]",[]
+3,1837,3819,3298,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/107.txt,"[[""3"", ""0""], [""5"", ""0""], [""39"", ""0""]]",[]
+1,11,13,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/108.txt,"[[""3"", ""0""], [""3"", ""0""], [""3"", ""0""], [""4"", ""0""], [""23"", ""0""], [""354"", ""0""], [""642"", ""0""], [""8053"", ""0""]]",[]
+1,11,13,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/109.txt,"[[""3"", ""0""], [""3"", ""1""], [""3"", ""0""], [""4"", ""0""], [""23"", ""0""], [""354"", ""0""], [""642"", ""0""], [""8053"", ""0""]]",[]
+1,11,13,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/110.txt,"[[""3"", ""0""], [""3"", ""0""], [""3"", ""0""], [""4"", ""0""], [""23"", ""0""], [""354"", ""0""], [""642"", ""0""], [""8053"", ""0""]]",[]
+1,11,3819,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/114.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""13"", ""0""], [""202"", ""0""], [""365"", ""0""], [""4558"", ""0""]]",[]
+1,11,3819,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/115.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""13"", ""0""], [""202"", ""0""], [""365"", ""0""], [""4558"", ""0""]]",[]
+1,11,3819,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/116.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""13"", ""0""], [""202"", ""0""], [""365"", ""0""], [""4558"", ""0""]]",[]
+1,13,11,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/120.txt,"[[""3"", ""0""], [""3"", ""1""], [""3"", ""0""], [""4"", ""0""], [""23"", ""0""], [""354"", ""0""], [""642"", ""0""], [""8053"", ""0""]]",[]
+1,13,11,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/121.txt,"[[""3"", ""0""], [""3"", ""1""], [""3"", ""0""], [""4"", ""0""], [""23"", ""0""], [""354"", ""0""], [""642"", ""0""], [""8053"", ""0""]]",[]
+1,13,11,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/122.txt,"[[""3"", ""0""], [""3"", ""1""], [""3"", ""0""], [""4"", ""0""], [""23"", ""0""], [""354"", ""0""], [""642"", ""0""], [""8053"", ""0""]]",[]
+1,13,3819,50,❌✅❌❌❌❌❌❌,fpffffff,input/incoder/fizzbuzz_count/123.txt,"[[""1"", ""0""], [""1"", ""0""], [""2"", ""0""], [""11"", ""0""], [""172"", ""0""], [""308"", ""0""], [""3859"", ""0""]]",[]
+1,13,3819,78,❌✅❌❌❌❌❌❌,fpffffff,input/incoder/fizzbuzz_count/124.txt,"[[""1"", ""0""], [""1"", ""0""], [""2"", ""0""], [""11"", ""0""], [""172"", ""0""], [""308"", ""0""], [""3859"", ""0""]]",[]
+1,13,3819,3298,❌✅❌❌❌❌❌❌,fpffffff,input/incoder/fizzbuzz_count/125.txt,"[[""1"", ""0""], [""1"", ""0""], [""2"", ""0""], [""11"", ""0""], [""172"", ""0""], [""308"", ""0""], [""3859"", ""0""]]",[]
+1,7,13,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/126.txt,"[[""3"", ""0""], [""3"", ""2""], [""3"", ""1""], [""4"", ""0""], [""29"", ""0""], [""461"", ""0""], [""835"", ""0""], [""10440"", ""0""]]",[]
+1,7,13,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/127.txt,"[[""3"", ""0""], [""3"", ""2""], [""3"", ""1""], [""4"", ""0""], [""29"", ""0""], [""461"", ""0""], [""835"", ""0""], [""10440"", ""0""]]",[]
+1,7,13,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/128.txt,"[[""3"", ""0""], [""3"", ""2""], [""3"", ""1""], [""4"", ""0""], [""29"", ""0""], [""461"", ""0""], [""835"", ""0""], [""10440"", ""0""]]",[]
+1,7,11,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/129.txt,"[[""4"", ""0""], [""4"", ""1""], [""4"", ""1""], [""5"", ""0""], [""32"", ""0""], [""488"", ""0""], [""888"", ""0""], [""11046"", ""0""]]",[]
+1,7,11,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/130.txt,"[[""4"", ""0""], [""4"", ""1""], [""4"", ""1""], [""5"", ""0""], [""32"", ""0""], [""488"", ""0""], [""888"", ""0""], [""11046"", ""0""]]",[]
+1,7,11,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/131.txt,"[[""4"", ""0""], [""4"", ""1""], [""4"", ""1""], [""5"", ""0""], [""32"", ""0""], [""488"", ""0""], [""888"", ""0""], [""11046"", ""0""]]",[]
+1,7,3819,50,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/132.txt,"[[""2"", ""7""], [""2"", ""11""], [""2"", ""11""], [""3"", ""14""], [""20"", ""28""], [""316"", ""572""], [""573"", ""1430""], [""7157"", ""14311""]]",[]
+1,7,3819,78,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/133.txt,"[[""2"", ""7""], [""2"", ""11""], [""2"", ""11""], [""3"", ""14""], [""20"", ""28""], [""316"", ""572""], [""573"", ""1430""], [""7157"", ""14311""]]",[]
+1,7,3819,3298,❌❌❌❌❌❌❌❌,ffffffff,input/incoder/fizzbuzz_count/134.txt,"[[""2"", ""0""], [""2"", ""0""], [""2"", ""0""], [""3"", ""0""], [""20"", ""0""], [""316"", ""0""], [""573"", ""0""], [""7157"", ""0""]]",[]
+1,1837,13,50,✅❌✅❌❌❌❌❌,pfpfffff,input/incoder/fizzbuzz_count/135.txt,"[[""1"", ""2""], [""2"", ""1""], [""11"", ""1""], [""172"", ""1""], [""311"", ""1""], [""3872"", ""1""]]",[]
+1,1837,13,78,💀💀💀💀💀💀💀💀,eeeeeeee,input/incoder/fizzbuzz_count/136.txt,[],"[""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output"", ""no function/method found in output""]"
+1,1837,13,3298,❌✅❌❌❌❌❌❌,fpffffff,input/incoder/fizzbuzz_count/137.txt,"[[""1"", ""0""], [""1"", ""0""], [""2"", ""0""], [""11"", ""0""], [""172"", ""1""], [""311"", ""1""], [""3872"", ""2""]]",[]
+1,1837,3819,50,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/141.txt,"[[""2"", ""0""], [""5"", ""0""], [""43"", ""0""]]",[]
+1,1837,3819,78,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/142.txt,"[[""2"", ""0""], [""5"", ""0""], [""43"", ""0""]]",[]
+1,1837,3819,3298,✅✅✅✅✅❌❌❌,pppppfff,input/incoder/fizzbuzz_count/143.txt,"[[""2"", ""0""], [""5"", ""0""], [""43"", ""0""]]",[]

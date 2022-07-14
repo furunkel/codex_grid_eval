@@ -52,8 +52,8 @@ def oracle_(input, factor1, factor2):
         result = input
     return result
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'factor1', 'factor2')))
+def oracle(vars, input):
+    return oracle_(input=input, **dict((k, vars[k]) for k in ('factor1', 'factor2')))
 
 def render(**vars):
     return TEXT.format(**vars)

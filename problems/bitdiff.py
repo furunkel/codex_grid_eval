@@ -55,8 +55,8 @@ def filter(vars):
 def oracle_(a, b, count):
     return bin(a ^ b).count('1') == count
 
-def oracle(vars):
-    return oracle_(*vars['input'], vars['count'])
+def oracle(vars, input):
+    return oracle_(*input, vars['count'])
 
 def render(**vars):
     if vars['word_count']:

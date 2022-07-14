@@ -37,8 +37,8 @@ def oracle_(input, small_limit, large_limit, small_ret, large_ret, default_ret):
     if input >= large_limit: return large_ret
     return default_ret
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'small_limit', 'large_limit', 'small_ret', 'large_ret', 'default_ret')))
+def oracle(vars, input):
+    return oracle_(input=input, **dict((k, vars[k]) for k in ('small_limit', 'large_limit', 'small_ret', 'large_ret', 'default_ret')))
 
 def render(**vars):
     return TEXT.format(**vars)

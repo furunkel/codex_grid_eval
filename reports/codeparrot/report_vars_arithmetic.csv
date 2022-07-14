@@ -7,12 +7,6 @@ line_order3,third,0
 op1,sum,0
 op2,difference,0
 op3,product,0
-input,"[3, 5]",0
-input,"[7, 10]",0
-input,"[0, 0]",0
-input,"[1, 0]",0
-input,"[0, 1]",0
-input,"[100, 20]",0
 op2,product,0
 op3,difference,0
 op1,difference,0

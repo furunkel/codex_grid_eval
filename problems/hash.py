@@ -57,8 +57,8 @@ def oracle_(input, hash_type):
     f.update(input.encode('ascii'))
     return f.hexdigest()
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'hash_type')))
+def oracle(vars, input):
+    return oracle_(input=input, hash_type=vars['hash_type'])
 
 def render(lang, **vars):
     t = vars['transform']

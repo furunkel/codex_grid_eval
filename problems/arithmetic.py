@@ -57,8 +57,8 @@ def oracle_(input, line_order1, line_order2, line_order3, op1, op2, op3):
         
     return (run_op(first_op), run_op(second_op), run_op(third_op))
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'line_order1', 'line_order2', 'line_order3', 'op1', 'op2', 'op3')))
+def oracle(vars, input):
+    return oracle_(input=input, **dict((k, vars[k]) for k in ('line_order1', 'line_order2', 'line_order3', 'op1', 'op2', 'op3')))
 
 def render(**vars):
     for i in range(1, 4):

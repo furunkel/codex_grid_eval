@@ -15,18 +15,25 @@ def default_generate(GRID, inputs, render, lang, with_inputs=False, filter_func=
         if not text:
             continue
 
-        if not with_inputs or inputs is None:
-            value = (text, vars, index)
-            if value in history: continue
-            history.append(value)
-            yield value
-        else:
+        # if not with_inputs or inputs is None:
+
+        value = (text, vars, index)
+        if with_inputs:
             inputs_ = inputs
             if callable(inputs_):
                 inputs_ = inputs_(vars)
+            value = (*value, inputs_)
 
-            for input in inputs_:
-                value = (text, {**vars, 'input': input}, index)
-                if value in history: continue
-                history.append(value)
-                yield value
+        if value in history: continue
+        history.append(value)
+        yield value
+        # else:
+        #     inputs_ = inputs
+        #     if callable(inputs_):
+        #         inputs_ = inputs_(vars)
+
+        #     for input in inputs_:
+        #         value = (text, {**vars, 'input': input}, index)
+        #         if value in history: continue
+        #         history.append(value)
+        #         yield value

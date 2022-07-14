@@ -1,8 +1,6 @@
 var,val,success_rate
 type,string,1.0
 example_input,"['a', 3.14, 5]",1.0
-input,"[[4, {}, [], 23.2, 9, 'adasd']]",1.0
-input,"[[3, 'c', 3, 3, 'a', 'b']]",1.0
 example_input,"[1, 2, 3, 3.6, 'abc', {}, [], (1,)]",1.0
 type,integer,1.0
 type,float,1.0

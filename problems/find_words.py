@@ -40,8 +40,8 @@ def oracle_(input, length, condition):
 
     return result
 
-def oracle(vars):
-    return oracle_(vars['input'], vars['length'], vars['cond'])
+def oracle(vars, input):
+    return oracle_(input, vars['length'], vars['cond'])
 
 def render(**vars):
     return TEXT.format(**vars)

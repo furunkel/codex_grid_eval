@@ -65,8 +65,8 @@ GRID = {
 def oracle_(input, type):
     return [x for x in input if isinstance(x, PYTHON_TYPE[type])]
 
-def oracle(vars):
-    return oracle_(input=vars['input'][0], type=vars['type'])
+def oracle(vars, input):
+    return oracle_(input=input[0], type=vars['type'])
 
 def render(lang, **vars):
     vars['decl_type'] = DECL_TYPE[vars['type']]

@@ -70,8 +70,8 @@ def oracle_(all_allergens, score):
 
     return allergens
 
-def oracle(vars):
-    return oracle_(vars['all_allergens'], vars['input'])
+def oracle(vars, input):
+    return oracle_(vars['all_allergens'], input)
 
 def render(**vars):
 

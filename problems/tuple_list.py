@@ -52,8 +52,8 @@ def oracle_(input, ret_index, cmp, cmp_index):
     res = cmp_func(input, key = itemgetter(INDEX_MAP[cmp_index]))[INDEX_MAP[ret_index]]
     return (res) 
 
-def oracle(vars):
-    return oracle_(vars['input'][0], vars['ret_index'], vars['cmp'], vars['cmp_index'])
+def oracle(vars, input):
+    return oracle_(input[0], vars['ret_index'], vars['cmp'], vars['cmp_index'])
 
 def render(**vars):
     return TEXT.format(**vars)

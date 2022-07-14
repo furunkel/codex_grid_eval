@@ -8,6 +8,7 @@ from tqdm import tqdm
 import fire
 from tree_sitter import Language, Parser
 
+import json
 import pandas as pd
 
 import time
@@ -327,7 +328,7 @@ class Main:
     def _strip_cell_tags(self, text):
         return re.sub(r"</?(?:cell|text)/?>", "", text)
 
-    def _run_python(self, problem, f, vars, lang, model):
+    def _run_python(self, problem, f, vars, input, lang, model):
         if problem.has_target:
             text = f.read_text()
 
@@ -347,13 +348,10 @@ class Main:
             module = ModuleType(str(f).replace('/', '.'))
             exec(exec_obj, module.__dict__)
             target = getattr(module, problem.get_target_name(vars, lang))
-            if not 'input' in vars:
+            if input is None:
                 input = []
-            else:
-                input = vars['input']
-                if not isinstance(input, list): input = [input]
-
-            print('input', input)
+            elif not isinstance(input, list):
+                input = [input]
 
             try:
                 signal.alarm(10)
@@ -381,6 +379,39 @@ class Main:
     def _sigalarm_handler(self, signum, frame):
         raise TimeoutError("timeout reached")
 
+    def generate_compare_reports(self, lang=''):
+        import pandas as pd
+
+        problems: List = [f.stem for f in Path('problems').glob('*.py')]
+        problems.remove('default')
+
+        models = ['codex', 'incoder', 'codeparrot']
+
+        def col_renamings(model):
+            return {'result': f'{model}_result', 'result_emojis': f'{model}_result_emojis', 'actual': f'{model}_actual' }
+
+        for problem in problems:
+
+            print([(Path('reports') / m / f"report_{problem}.csv") for m in models])
+
+            dfs = [pd.read_csv(Path('reports') / m / f"report_{problem}.csv") for m in models]
+            codex_df, *other_dfs = dfs
+            assert all(df.shape[0] == codex_df.shape[0] for df in other_dfs)
+
+            codex_df.rename(columns=col_renamings('codex'), inplace=True)
+
+            print(list(df.columns for df in other_dfs))
+            other_dfs = [
+                    df[['result', 'result_emojis', 'errors', 'failed_inputs']].rename(columns=col_renamings(model))
+                    for model, df in zip(models[1:], other_dfs)
+            ]
+
+            cat_df = pd.concat([codex_df, *other_dfs], axis=1)
+            out_dir = Path('reports') / 'all'
+            out_dir.mkdir(exist_ok=True, parents=True)
+            cat_df.to_csv(out_dir / f"report_{problem}.csv", index=False)
+            
+
     def variant_counts(self, lang=''):
         problems: List = [f.stem for f in Path('problems').glob('*.py')]
         problems.remove('default')
@@ -405,62 +436,70 @@ class Main:
 
         report_rows = []
 
-        for text_, vars, index in gen(with_inputs=True, lang=lang):
+        for text_, vars, index, inputs in gen(with_inputs=True, lang=lang):
             print(vars, end='', flush=True)
             report_row = vars.copy()
 
             print((Path(output_dir) / model / lang / problem_name / str(index)))
-            files = (Path(output_dir) / model / lang / problem_name / str(index)).glob("*.py")
+            files = list((Path(output_dir) / model / lang / problem_name / str(index)).glob("*.py"))
             input_path = Path('input') / model / lang / problem_name / f"{index}.txt"
-            outputs = []
-            expected = oracle(vars)
+
+            if inputs is None: inputs = [None]
 
             result_str = ''
             result_emojis = ''
 
+            failed_inputs = []
+            errors = []
+
+            assert len(files) <= 1
+
             for f in files:
                 print(str(f))
-                try:
-                    actual = self._run_python(problem, f, vars, lang, model)
-                    success = problem.is_output_equal(actual, expected)
-
-                    if success:
-                        print(EMOJI_PASS, end='')
-                        result_str += 'p'
-                        result_emojis += EMOJI_PASS
-                    else:
-                        print(EMOJI_FAIL, end='')
-                        print("ACTUAL:", repr(actual))
-                        print("EXPECTED:", repr(expected))
-                        print()
-                        result_str += 'f'
-                        result_emojis += EMOJI_FAIL
-                        report_row['expected'] = repr(expected)
-                        report_row['actual'] = repr(actual)
-
-                    outputs.append(actual)
-
-                except ExecutionError as e:
-                    success = False
-                    result_str += 'e'
-                    result_emojis += EMOJI_SYNTAX_ERROR
-                    print(EMOJI_SYNTAX_ERROR, end='')
-                    print(e)
-                except TimeoutError as e:
-                    success = False
-                    result_str += 't'
-                    result_emojis += EMOJI_TIMEOUT
-                    print(EMOJI_TIMEOUT, end='')
-                    print(e)
+                for input in inputs:
+                    expected = oracle(vars, input)
+                    try:
+                        actual = self._run_python(problem, f, vars, input, lang, model)
+                        success = problem.is_output_equal(actual, expected)
 
 
-                for k, v in vars.items():
-                    successes.setdefault((k, str(v)), []).append(success)
+                        if success:
+                            print(EMOJI_PASS, end='')
+                            result_str += 'p'
+                            result_emojis += EMOJI_PASS
+                        else:
+                            print(EMOJI_FAIL, end='')
+                            print("ACTUAL:", repr(actual))
+                            print("EXPECTED:", repr(expected))
+                            print()
+                            result_str += 'f'
+                            result_emojis += EMOJI_FAIL
 
-            report_row['result'] = result_str
+                            failed_inputs.append((repr(expected), repr(actual)))
+
+                    except ExecutionError as e:
+                        success = False
+                        result_str += 'e'
+                        result_emojis += EMOJI_SYNTAX_ERROR
+                        errors.append(str(e))
+                        print(EMOJI_SYNTAX_ERROR, end='')
+                        print(e)
+                    except TimeoutError as e:
+                        success = False
+                        result_str += 't'
+                        result_emojis += EMOJI_TIMEOUT
+                        print(EMOJI_TIMEOUT, end='')
+                        print(e)
+
+                    for k, v in vars.items():
+                        successes.setdefault((k, str(v)), []).append(success)
+
             report_row['result_emojis'] = result_emojis
+            report_row['result'] = result_str
             # report_row['model_output'] = str(f)
             report_row['model_input'] = str(input_path)
+            report_row['failed_inputs'] = json.dumps(failed_inputs)
+            report_row['errors'] = json.dumps(errors)
 
             print()
 

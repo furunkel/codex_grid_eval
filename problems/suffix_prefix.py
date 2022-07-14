@@ -45,8 +45,8 @@ def oracle_(input, op, order):
 
     return result
 
-def oracle(vars):
-    return oracle_(**dict((k, vars[k]) for k in ('input', 'op', 'order')))
+def oracle(vars, input):
+    return oracle_(input=input, **dict((k, vars[k]) for k in ('op', 'order')))
 
 def render(**vars):
     vars['order_str'] = ORDER_STR[vars['order']]

@@ -1,649 +1,163 @@
-hash_type,transform,example_input,input,result,result_emojis,model_input,expected,actual
-md5,none,,Hello world,p,✅,input/incoder/hash/0.txt,,
-md5,none,,A B C,p,✅,input/incoder/hash/0.txt,,
-md5,none,,password,p,✅,input/incoder/hash/0.txt,,
-md5,none,,,p,✅,input/incoder/hash/0.txt,,
-md5,none,Hello world,Hello world,p,✅,input/incoder/hash/1.txt,,
-md5,none,Hello world,A B C,p,✅,input/incoder/hash/1.txt,,
-md5,none,Hello world,password,p,✅,input/incoder/hash/1.txt,,
-md5,none,Hello world,,p,✅,input/incoder/hash/1.txt,,
-md5,none,Hallo welt,Hello world,p,✅,input/incoder/hash/2.txt,,
-md5,none,Hallo welt,A B C,p,✅,input/incoder/hash/2.txt,,
-md5,none,Hallo welt,password,p,✅,input/incoder/hash/2.txt,,
-md5,none,Hallo welt,,p,✅,input/incoder/hash/2.txt,,
-md5,none,0,Hello world,p,✅,input/incoder/hash/3.txt,,
-md5,none,0,A B C,p,✅,input/incoder/hash/3.txt,,
-md5,none,0,password,p,✅,input/incoder/hash/3.txt,,
-md5,none,0,,p,✅,input/incoder/hash/3.txt,,
-md5,none,sha1,Hello world,p,✅,input/incoder/hash/4.txt,,
-md5,none,sha1,A B C,p,✅,input/incoder/hash/4.txt,,
-md5,none,sha1,password,p,✅,input/incoder/hash/4.txt,,
-md5,none,sha1,,p,✅,input/incoder/hash/4.txt,,
-md5,none,md5,Hello world,p,✅,input/incoder/hash/5.txt,,
-md5,none,md5,A B C,p,✅,input/incoder/hash/5.txt,,
-md5,none,md5,password,p,✅,input/incoder/hash/5.txt,,
-md5,none,md5,,p,✅,input/incoder/hash/5.txt,,
-md5,uppercase,,Hello world,p,✅,input/incoder/hash/6.txt,,
-md5,uppercase,,A B C,p,✅,input/incoder/hash/6.txt,,
-md5,uppercase,,password,p,✅,input/incoder/hash/6.txt,,
-md5,uppercase,,,f,❌,input/incoder/hash/6.txt,None,'d41d8cd98f00b204e9800998ecf8427e'
-md5,uppercase,Hello world,Hello world,p,✅,input/incoder/hash/7.txt,,
-md5,uppercase,Hello world,A B C,p,✅,input/incoder/hash/7.txt,,
-md5,uppercase,Hello world,password,p,✅,input/incoder/hash/7.txt,,
-md5,uppercase,Hello world,,p,✅,input/incoder/hash/7.txt,,
-md5,uppercase,Hallo welt,Hello world,p,✅,input/incoder/hash/8.txt,,
-md5,uppercase,Hallo welt,A B C,p,✅,input/incoder/hash/8.txt,,
-md5,uppercase,Hallo welt,password,p,✅,input/incoder/hash/8.txt,,
-md5,uppercase,Hallo welt,,p,✅,input/incoder/hash/8.txt,,
-md5,uppercase,0,Hello world,e,💀,input/incoder/hash/9.txt,,
-md5,uppercase,0,A B C,e,💀,input/incoder/hash/9.txt,,
-md5,uppercase,0,password,e,💀,input/incoder/hash/9.txt,,
-md5,uppercase,0,,p,✅,input/incoder/hash/9.txt,,
-md5,uppercase,sha1,Hello world,p,✅,input/incoder/hash/10.txt,,
-md5,uppercase,sha1,A B C,p,✅,input/incoder/hash/10.txt,,
-md5,uppercase,sha1,password,p,✅,input/incoder/hash/10.txt,,
-md5,uppercase,sha1,,p,✅,input/incoder/hash/10.txt,,
-md5,uppercase,md5,Hello world,p,✅,input/incoder/hash/11.txt,,
-md5,uppercase,md5,A B C,p,✅,input/incoder/hash/11.txt,,
-md5,uppercase,md5,password,p,✅,input/incoder/hash/11.txt,,
-md5,uppercase,md5,,p,✅,input/incoder/hash/11.txt,,
-md5,dash,,Hello world,p,✅,input/incoder/hash/12.txt,,
-md5,dash,,A B C,p,✅,input/incoder/hash/12.txt,,
-md5,dash,,password,p,✅,input/incoder/hash/12.txt,,
-md5,dash,,,p,✅,input/incoder/hash/12.txt,,
-md5,dash,Hello world,Hello world,e,💀,input/incoder/hash/13.txt,,
-md5,dash,Hello world,A B C,e,💀,input/incoder/hash/13.txt,,
-md5,dash,Hello world,password,e,💀,input/incoder/hash/13.txt,,
-md5,dash,Hello world,,p,✅,input/incoder/hash/13.txt,,
-md5,dash,Hallo welt,Hello world,e,💀,input/incoder/hash/14.txt,,
-md5,dash,Hallo welt,A B C,e,💀,input/incoder/hash/14.txt,,
-md5,dash,Hallo welt,password,e,💀,input/incoder/hash/14.txt,,
-md5,dash,Hallo welt,,p,✅,input/incoder/hash/14.txt,,
-md5,dash,0,Hello world,f,❌,input/incoder/hash/15.txt,'3e25960a79dbc69b674cd4ec67a72c62','3e259'
-md5,dash,0,A B C,f,❌,input/incoder/hash/15.txt,'0ef78513b0cb8cef12743f5aeb35f888','0ef78'
-md5,dash,0,password,f,❌,input/incoder/hash/15.txt,'5f4dcc3b5aa765d61d8327deb882cf99','5f4dc'
-md5,dash,0,,p,✅,input/incoder/hash/15.txt,,
-md5,dash,sha1,Hello world,e,💀,input/incoder/hash/16.txt,,
-md5,dash,sha1,A B C,e,💀,input/incoder/hash/16.txt,,
-md5,dash,sha1,password,e,💀,input/incoder/hash/16.txt,,
-md5,dash,sha1,,p,✅,input/incoder/hash/16.txt,,
-md5,dash,md5,Hello world,e,💀,input/incoder/hash/17.txt,,
-md5,dash,md5,A B C,e,💀,input/incoder/hash/17.txt,,
-md5,dash,md5,password,e,💀,input/incoder/hash/17.txt,,
-md5,dash,md5,,p,✅,input/incoder/hash/17.txt,,
-sha1,none,,Hello world,e,💀,input/incoder/hash/18.txt,,
-sha1,none,,A B C,e,💀,input/incoder/hash/18.txt,,
-sha1,none,,password,e,💀,input/incoder/hash/18.txt,,
-sha1,none,,,p,✅,input/incoder/hash/18.txt,,
-sha1,none,Hello world,Hello world,e,💀,input/incoder/hash/19.txt,,
-sha1,none,Hello world,A B C,e,💀,input/incoder/hash/19.txt,,
-sha1,none,Hello world,password,e,💀,input/incoder/hash/19.txt,,
-sha1,none,Hello world,,p,✅,input/incoder/hash/19.txt,,
-sha1,none,Hallo welt,Hello world,p,✅,input/incoder/hash/20.txt,,
-sha1,none,Hallo welt,A B C,p,✅,input/incoder/hash/20.txt,,
-sha1,none,Hallo welt,password,p,✅,input/incoder/hash/20.txt,,
-sha1,none,Hallo welt,,p,✅,input/incoder/hash/20.txt,,
-sha1,none,0,Hello world,e,💀,input/incoder/hash/21.txt,,
-sha1,none,0,A B C,e,💀,input/incoder/hash/21.txt,,
-sha1,none,0,password,e,💀,input/incoder/hash/21.txt,,
-sha1,none,0,,p,✅,input/incoder/hash/21.txt,,
-sha1,none,sha1,Hello world,e,💀,input/incoder/hash/22.txt,,
-sha1,none,sha1,A B C,e,💀,input/incoder/hash/22.txt,,
-sha1,none,sha1,password,e,💀,input/incoder/hash/22.txt,,
-sha1,none,sha1,,p,✅,input/incoder/hash/22.txt,,
-sha1,none,md5,Hello world,p,✅,input/incoder/hash/23.txt,,
-sha1,none,md5,A B C,p,✅,input/incoder/hash/23.txt,,
-sha1,none,md5,password,p,✅,input/incoder/hash/23.txt,,
-sha1,none,md5,,p,✅,input/incoder/hash/23.txt,,
-sha1,uppercase,,Hello world,p,✅,input/incoder/hash/24.txt,,
-sha1,uppercase,,A B C,p,✅,input/incoder/hash/24.txt,,
-sha1,uppercase,,password,p,✅,input/incoder/hash/24.txt,,
-sha1,uppercase,,,p,✅,input/incoder/hash/24.txt,,
-sha1,uppercase,Hello world,Hello world,p,✅,input/incoder/hash/25.txt,,
-sha1,uppercase,Hello world,A B C,p,✅,input/incoder/hash/25.txt,,
-sha1,uppercase,Hello world,password,p,✅,input/incoder/hash/25.txt,,
-sha1,uppercase,Hello world,,p,✅,input/incoder/hash/25.txt,,
-sha1,uppercase,Hallo welt,Hello world,e,💀,input/incoder/hash/26.txt,,
-sha1,uppercase,Hallo welt,A B C,e,💀,input/incoder/hash/26.txt,,
-sha1,uppercase,Hallo welt,password,e,💀,input/incoder/hash/26.txt,,
-sha1,uppercase,Hallo welt,,p,✅,input/incoder/hash/26.txt,,
-sha1,uppercase,0,Hello world,p,✅,input/incoder/hash/27.txt,,
-sha1,uppercase,0,A B C,p,✅,input/incoder/hash/27.txt,,
-sha1,uppercase,0,password,p,✅,input/incoder/hash/27.txt,,
-sha1,uppercase,0,,p,✅,input/incoder/hash/27.txt,,
-sha1,uppercase,sha1,Hello world,e,💀,input/incoder/hash/28.txt,,
-sha1,uppercase,sha1,A B C,e,💀,input/incoder/hash/28.txt,,
-sha1,uppercase,sha1,password,e,💀,input/incoder/hash/28.txt,,
-sha1,uppercase,sha1,,p,✅,input/incoder/hash/28.txt,,
-sha1,uppercase,md5,Hello world,p,✅,input/incoder/hash/29.txt,,
-sha1,uppercase,md5,A B C,p,✅,input/incoder/hash/29.txt,,
-sha1,uppercase,md5,password,p,✅,input/incoder/hash/29.txt,,
-sha1,uppercase,md5,,p,✅,input/incoder/hash/29.txt,,
-sha1,dash,,Hello world,e,💀,input/incoder/hash/30.txt,,
-sha1,dash,,A B C,e,💀,input/incoder/hash/30.txt,,
-sha1,dash,,password,e,💀,input/incoder/hash/30.txt,,
-sha1,dash,,,e,💀,input/incoder/hash/30.txt,,
-sha1,dash,Hello world,Hello world,e,💀,input/incoder/hash/31.txt,,
-sha1,dash,Hello world,A B C,e,💀,input/incoder/hash/31.txt,,
-sha1,dash,Hello world,password,e,💀,input/incoder/hash/31.txt,,
-sha1,dash,Hello world,,p,✅,input/incoder/hash/31.txt,,
-sha1,dash,Hallo welt,Hello world,e,💀,input/incoder/hash/32.txt,,
-sha1,dash,Hallo welt,A B C,e,💀,input/incoder/hash/32.txt,,
-sha1,dash,Hallo welt,password,e,💀,input/incoder/hash/32.txt,,
-sha1,dash,Hallo welt,,p,✅,input/incoder/hash/32.txt,,
-sha1,dash,0,Hello world,e,💀,input/incoder/hash/33.txt,,
-sha1,dash,0,A B C,e,💀,input/incoder/hash/33.txt,,
-sha1,dash,0,password,e,💀,input/incoder/hash/33.txt,,
-sha1,dash,0,,p,✅,input/incoder/hash/33.txt,,
-sha1,dash,sha1,Hello world,e,💀,input/incoder/hash/34.txt,,
-sha1,dash,sha1,A B C,e,💀,input/incoder/hash/34.txt,,
-sha1,dash,sha1,password,e,💀,input/incoder/hash/34.txt,,
-sha1,dash,sha1,,p,✅,input/incoder/hash/34.txt,,
-sha1,dash,md5,Hello world,e,💀,input/incoder/hash/35.txt,,
-sha1,dash,md5,A B C,e,💀,input/incoder/hash/35.txt,,
-sha1,dash,md5,password,e,💀,input/incoder/hash/35.txt,,
-sha1,dash,md5,,p,✅,input/incoder/hash/35.txt,,
-sha224,none,,Hello world,p,✅,input/incoder/hash/36.txt,,
-sha224,none,,A B C,p,✅,input/incoder/hash/36.txt,,
-sha224,none,,password,p,✅,input/incoder/hash/36.txt,,
-sha224,none,,,f,❌,input/incoder/hash/36.txt,None,'d14a028c2a3a2bc9476102bb288234c415a2b01f828ea62ac5b3e42f'
-sha224,none,Hello world,Hello world,p,✅,input/incoder/hash/37.txt,,
-sha224,none,Hello world,A B C,p,✅,input/incoder/hash/37.txt,,
-sha224,none,Hello world,password,p,✅,input/incoder/hash/37.txt,,
-sha224,none,Hello world,,p,✅,input/incoder/hash/37.txt,,
-sha224,none,Hallo welt,Hello world,e,💀,input/incoder/hash/38.txt,,
-sha224,none,Hallo welt,A B C,e,💀,input/incoder/hash/38.txt,,
-sha224,none,Hallo welt,password,e,💀,input/incoder/hash/38.txt,,
-sha224,none,Hallo welt,,p,✅,input/incoder/hash/38.txt,,
-sha224,none,0,Hello world,p,✅,input/incoder/hash/39.txt,,
-sha224,none,0,A B C,p,✅,input/incoder/hash/39.txt,,
-sha224,none,0,password,p,✅,input/incoder/hash/39.txt,,
-sha224,none,0,,p,✅,input/incoder/hash/39.txt,,
-sha224,none,sha1,Hello world,e,💀,input/incoder/hash/40.txt,,
-sha224,none,sha1,A B C,e,💀,input/incoder/hash/40.txt,,
-sha224,none,sha1,password,e,💀,input/incoder/hash/40.txt,,
-sha224,none,sha1,,p,✅,input/incoder/hash/40.txt,,
-sha224,none,md5,Hello world,p,✅,input/incoder/hash/41.txt,,
-sha224,none,md5,A B C,p,✅,input/incoder/hash/41.txt,,
-sha224,none,md5,password,p,✅,input/incoder/hash/41.txt,,
-sha224,none,md5,,p,✅,input/incoder/hash/41.txt,,
-sha224,uppercase,,Hello world,p,✅,input/incoder/hash/42.txt,,
-sha224,uppercase,,A B C,p,✅,input/incoder/hash/42.txt,,
-sha224,uppercase,,password,p,✅,input/incoder/hash/42.txt,,
-sha224,uppercase,,,p,✅,input/incoder/hash/42.txt,,
-sha224,uppercase,Hello world,Hello world,p,✅,input/incoder/hash/43.txt,,
-sha224,uppercase,Hello world,A B C,p,✅,input/incoder/hash/43.txt,,
-sha224,uppercase,Hello world,password,p,✅,input/incoder/hash/43.txt,,
-sha224,uppercase,Hello world,,p,✅,input/incoder/hash/43.txt,,
-sha224,uppercase,Hallo welt,Hello world,e,💀,input/incoder/hash/44.txt,,
-sha224,uppercase,Hallo welt,A B C,e,💀,input/incoder/hash/44.txt,,
-sha224,uppercase,Hallo welt,password,e,💀,input/incoder/hash/44.txt,,
-sha224,uppercase,Hallo welt,,p,✅,input/incoder/hash/44.txt,,
-sha224,uppercase,0,Hello world,e,💀,input/incoder/hash/45.txt,,
-sha224,uppercase,0,A B C,e,💀,input/incoder/hash/45.txt,,
-sha224,uppercase,0,password,e,💀,input/incoder/hash/45.txt,,
-sha224,uppercase,0,,p,✅,input/incoder/hash/45.txt,,
-sha224,uppercase,sha1,Hello world,p,✅,input/incoder/hash/46.txt,,
-sha224,uppercase,sha1,A B C,p,✅,input/incoder/hash/46.txt,,
-sha224,uppercase,sha1,password,p,✅,input/incoder/hash/46.txt,,
-sha224,uppercase,sha1,,p,✅,input/incoder/hash/46.txt,,
-sha224,uppercase,md5,Hello world,p,✅,input/incoder/hash/47.txt,,
-sha224,uppercase,md5,A B C,p,✅,input/incoder/hash/47.txt,,
-sha224,uppercase,md5,password,p,✅,input/incoder/hash/47.txt,,
-sha224,uppercase,md5,,p,✅,input/incoder/hash/47.txt,,
-sha224,dash,,Hello world,p,✅,input/incoder/hash/48.txt,,
-sha224,dash,,A B C,p,✅,input/incoder/hash/48.txt,,
-sha224,dash,,password,p,✅,input/incoder/hash/48.txt,,
-sha224,dash,,,p,✅,input/incoder/hash/48.txt,,
-sha224,dash,Hello world,Hello world,e,💀,input/incoder/hash/49.txt,,
-sha224,dash,Hello world,A B C,e,💀,input/incoder/hash/49.txt,,
-sha224,dash,Hello world,password,e,💀,input/incoder/hash/49.txt,,
-sha224,dash,Hello world,,p,✅,input/incoder/hash/49.txt,,
-sha224,dash,Hallo welt,Hello world,e,💀,input/incoder/hash/50.txt,,
-sha224,dash,Hallo welt,A B C,e,💀,input/incoder/hash/50.txt,,
-sha224,dash,Hallo welt,password,e,💀,input/incoder/hash/50.txt,,
-sha224,dash,Hallo welt,,p,✅,input/incoder/hash/50.txt,,
-sha224,dash,0,Hello world,p,✅,input/incoder/hash/51.txt,,
-sha224,dash,0,A B C,p,✅,input/incoder/hash/51.txt,,
-sha224,dash,0,password,p,✅,input/incoder/hash/51.txt,,
-sha224,dash,0,,p,✅,input/incoder/hash/51.txt,,
-sha224,dash,sha1,Hello world,p,✅,input/incoder/hash/52.txt,,
-sha224,dash,sha1,A B C,p,✅,input/incoder/hash/52.txt,,
-sha224,dash,sha1,password,p,✅,input/incoder/hash/52.txt,,
-sha224,dash,sha1,,p,✅,input/incoder/hash/52.txt,,
-sha224,dash,md5,Hello world,p,✅,input/incoder/hash/53.txt,,
-sha224,dash,md5,A B C,p,✅,input/incoder/hash/53.txt,,
-sha224,dash,md5,password,p,✅,input/incoder/hash/53.txt,,
-sha224,dash,md5,,p,✅,input/incoder/hash/53.txt,,
-sha256,none,,Hello world,e,💀,input/incoder/hash/54.txt,,
-sha256,none,,A B C,e,💀,input/incoder/hash/54.txt,,
-sha256,none,,password,e,💀,input/incoder/hash/54.txt,,
-sha256,none,,,p,✅,input/incoder/hash/54.txt,,
-sha256,none,Hello world,Hello world,e,💀,input/incoder/hash/55.txt,,
-sha256,none,Hello world,A B C,e,💀,input/incoder/hash/55.txt,,
-sha256,none,Hello world,password,e,💀,input/incoder/hash/55.txt,,
-sha256,none,Hello world,,p,✅,input/incoder/hash/55.txt,,
-sha256,none,Hallo welt,Hello world,e,💀,input/incoder/hash/56.txt,,
-sha256,none,Hallo welt,A B C,e,💀,input/incoder/hash/56.txt,,
-sha256,none,Hallo welt,password,e,💀,input/incoder/hash/56.txt,,
-sha256,none,Hallo welt,,p,✅,input/incoder/hash/56.txt,,
-sha256,none,0,Hello world,e,💀,input/incoder/hash/57.txt,,
-sha256,none,0,A B C,e,💀,input/incoder/hash/57.txt,,
-sha256,none,0,password,e,💀,input/incoder/hash/57.txt,,
-sha256,none,0,,p,✅,input/incoder/hash/57.txt,,
-sha256,none,sha1,Hello world,p,✅,input/incoder/hash/58.txt,,
-sha256,none,sha1,A B C,p,✅,input/incoder/hash/58.txt,,
-sha256,none,sha1,password,p,✅,input/incoder/hash/58.txt,,
-sha256,none,sha1,,p,✅,input/incoder/hash/58.txt,,
-sha256,none,md5,Hello world,p,✅,input/incoder/hash/59.txt,,
-sha256,none,md5,A B C,p,✅,input/incoder/hash/59.txt,,
-sha256,none,md5,password,p,✅,input/incoder/hash/59.txt,,
-sha256,none,md5,,p,✅,input/incoder/hash/59.txt,,
-sha256,uppercase,,Hello world,p,✅,input/incoder/hash/60.txt,,
-sha256,uppercase,,A B C,p,✅,input/incoder/hash/60.txt,,
-sha256,uppercase,,password,p,✅,input/incoder/hash/60.txt,,
-sha256,uppercase,,,f,❌,input/incoder/hash/60.txt,None,'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
-sha256,uppercase,Hello world,Hello world,p,✅,input/incoder/hash/61.txt,,
-sha256,uppercase,Hello world,A B C,p,✅,input/incoder/hash/61.txt,,
-sha256,uppercase,Hello world,password,p,✅,input/incoder/hash/61.txt,,
-sha256,uppercase,Hello world,,f,❌,input/incoder/hash/61.txt,None,'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
-sha256,uppercase,Hallo welt,Hello world,p,✅,input/incoder/hash/62.txt,,
-sha256,uppercase,Hallo welt,A B C,p,✅,input/incoder/hash/62.txt,,
-sha256,uppercase,Hallo welt,password,p,✅,input/incoder/hash/62.txt,,
-sha256,uppercase,Hallo welt,,p,✅,input/incoder/hash/62.txt,,
-sha256,uppercase,0,Hello world,e,💀,input/incoder/hash/63.txt,,
-sha256,uppercase,0,A B C,e,💀,input/incoder/hash/63.txt,,
-sha256,uppercase,0,password,e,💀,input/incoder/hash/63.txt,,
-sha256,uppercase,0,,p,✅,input/incoder/hash/63.txt,,
-sha256,uppercase,sha1,Hello world,p,✅,input/incoder/hash/64.txt,,
-sha256,uppercase,sha1,A B C,p,✅,input/incoder/hash/64.txt,,
-sha256,uppercase,sha1,password,p,✅,input/incoder/hash/64.txt,,
-sha256,uppercase,sha1,,p,✅,input/incoder/hash/64.txt,,
-sha256,uppercase,md5,Hello world,p,✅,input/incoder/hash/65.txt,,
-sha256,uppercase,md5,A B C,p,✅,input/incoder/hash/65.txt,,
-sha256,uppercase,md5,password,p,✅,input/incoder/hash/65.txt,,
-sha256,uppercase,md5,,p,✅,input/incoder/hash/65.txt,,
-sha256,dash,,Hello world,p,✅,input/incoder/hash/66.txt,,
-sha256,dash,,A B C,p,✅,input/incoder/hash/66.txt,,
-sha256,dash,,password,p,✅,input/incoder/hash/66.txt,,
-sha256,dash,,,p,✅,input/incoder/hash/66.txt,,
-sha256,dash,Hello world,Hello world,p,✅,input/incoder/hash/67.txt,,
-sha256,dash,Hello world,A B C,p,✅,input/incoder/hash/67.txt,,
-sha256,dash,Hello world,password,p,✅,input/incoder/hash/67.txt,,
-sha256,dash,Hello world,,p,✅,input/incoder/hash/67.txt,,
-sha256,dash,Hallo welt,Hello world,p,✅,input/incoder/hash/68.txt,,
-sha256,dash,Hallo welt,A B C,p,✅,input/incoder/hash/68.txt,,
-sha256,dash,Hallo welt,password,p,✅,input/incoder/hash/68.txt,,
-sha256,dash,Hallo welt,,p,✅,input/incoder/hash/68.txt,,
-sha256,dash,0,Hello world,p,✅,input/incoder/hash/69.txt,,
-sha256,dash,0,A B C,p,✅,input/incoder/hash/69.txt,,
-sha256,dash,0,password,p,✅,input/incoder/hash/69.txt,,
-sha256,dash,0,,p,✅,input/incoder/hash/69.txt,,
-sha256,dash,sha1,Hello world,p,✅,input/incoder/hash/70.txt,,
-sha256,dash,sha1,A B C,p,✅,input/incoder/hash/70.txt,,
-sha256,dash,sha1,password,p,✅,input/incoder/hash/70.txt,,
-sha256,dash,sha1,,p,✅,input/incoder/hash/70.txt,,
-sha256,dash,md5,Hello world,p,✅,input/incoder/hash/71.txt,,
-sha256,dash,md5,A B C,p,✅,input/incoder/hash/71.txt,,
-sha256,dash,md5,password,p,✅,input/incoder/hash/71.txt,,
-sha256,dash,md5,,p,✅,input/incoder/hash/71.txt,,
-sha384,none,,Hello world,e,💀,input/incoder/hash/72.txt,,
-sha384,none,,A B C,e,💀,input/incoder/hash/72.txt,,
-sha384,none,,password,e,💀,input/incoder/hash/72.txt,,
-sha384,none,,,p,✅,input/incoder/hash/72.txt,,
-sha384,none,Hello world,Hello world,e,💀,input/incoder/hash/73.txt,,
-sha384,none,Hello world,A B C,e,💀,input/incoder/hash/73.txt,,
-sha384,none,Hello world,password,e,💀,input/incoder/hash/73.txt,,
-sha384,none,Hello world,,p,✅,input/incoder/hash/73.txt,,
-sha384,none,Hallo welt,Hello world,e,💀,input/incoder/hash/74.txt,,
-sha384,none,Hallo welt,A B C,e,💀,input/incoder/hash/74.txt,,
-sha384,none,Hallo welt,password,e,💀,input/incoder/hash/74.txt,,
-sha384,none,Hallo welt,,p,✅,input/incoder/hash/74.txt,,
-sha384,none,0,Hello world,e,💀,input/incoder/hash/75.txt,,
-sha384,none,0,A B C,e,💀,input/incoder/hash/75.txt,,
-sha384,none,0,password,e,💀,input/incoder/hash/75.txt,,
-sha384,none,0,,p,✅,input/incoder/hash/75.txt,,
-sha384,none,sha1,Hello world,p,✅,input/incoder/hash/76.txt,,
-sha384,none,sha1,A B C,p,✅,input/incoder/hash/76.txt,,
-sha384,none,sha1,password,p,✅,input/incoder/hash/76.txt,,
-sha384,none,sha1,,p,✅,input/incoder/hash/76.txt,,
-sha384,none,md5,Hello world,p,✅,input/incoder/hash/77.txt,,
-sha384,none,md5,A B C,p,✅,input/incoder/hash/77.txt,,
-sha384,none,md5,password,p,✅,input/incoder/hash/77.txt,,
-sha384,none,md5,,p,✅,input/incoder/hash/77.txt,,
-sha384,uppercase,,Hello world,e,💀,input/incoder/hash/78.txt,,
-sha384,uppercase,,A B C,e,💀,input/incoder/hash/78.txt,,
-sha384,uppercase,,password,e,💀,input/incoder/hash/78.txt,,
-sha384,uppercase,,,p,✅,input/incoder/hash/78.txt,,
-sha384,uppercase,Hello world,Hello world,e,💀,input/incoder/hash/79.txt,,
-sha384,uppercase,Hello world,A B C,e,💀,input/incoder/hash/79.txt,,
-sha384,uppercase,Hello world,password,e,💀,input/incoder/hash/79.txt,,
-sha384,uppercase,Hello world,,p,✅,input/incoder/hash/79.txt,,
-sha384,uppercase,Hallo welt,Hello world,e,💀,input/incoder/hash/80.txt,,
-sha384,uppercase,Hallo welt,A B C,e,💀,input/incoder/hash/80.txt,,
-sha384,uppercase,Hallo welt,password,e,💀,input/incoder/hash/80.txt,,
-sha384,uppercase,Hallo welt,,p,✅,input/incoder/hash/80.txt,,
-sha384,uppercase,0,Hello world,e,💀,input/incoder/hash/81.txt,,
-sha384,uppercase,0,A B C,e,💀,input/incoder/hash/81.txt,,
-sha384,uppercase,0,password,e,💀,input/incoder/hash/81.txt,,
-sha384,uppercase,0,,p,✅,input/incoder/hash/81.txt,,
-sha384,uppercase,sha1,Hello world,e,💀,input/incoder/hash/82.txt,,
-sha384,uppercase,sha1,A B C,e,💀,input/incoder/hash/82.txt,,
-sha384,uppercase,sha1,password,e,💀,input/incoder/hash/82.txt,,
-sha384,uppercase,sha1,,p,✅,input/incoder/hash/82.txt,,
-sha384,uppercase,md5,Hello world,p,✅,input/incoder/hash/83.txt,,
-sha384,uppercase,md5,A B C,p,✅,input/incoder/hash/83.txt,,
-sha384,uppercase,md5,password,p,✅,input/incoder/hash/83.txt,,
-sha384,uppercase,md5,,p,✅,input/incoder/hash/83.txt,,
-sha384,dash,,Hello world,f,❌,input/incoder/hash/84.txt,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1','ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'
-sha384,dash,,A B C,f,❌,input/incoder/hash/84.txt,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638','0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'
-sha384,dash,,password,f,❌,input/incoder/hash/84.txt,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7','9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'
-sha384,dash,,,p,✅,input/incoder/hash/84.txt,,
-sha384,dash,Hello world,Hello world,f,❌,input/incoder/hash/85.txt,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1','ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'
-sha384,dash,Hello world,A B C,f,❌,input/incoder/hash/85.txt,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638','0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'
-sha384,dash,Hello world,password,f,❌,input/incoder/hash/85.txt,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7','9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'
-sha384,dash,Hello world,,p,✅,input/incoder/hash/85.txt,,
-sha384,dash,Hallo welt,Hello world,f,❌,input/incoder/hash/86.txt,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1','ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'
-sha384,dash,Hallo welt,A B C,f,❌,input/incoder/hash/86.txt,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638','0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'
-sha384,dash,Hallo welt,password,f,❌,input/incoder/hash/86.txt,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7','9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'
-sha384,dash,Hallo welt,,p,✅,input/incoder/hash/86.txt,,
-sha384,dash,0,Hello world,f,❌,input/incoder/hash/87.txt,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1','ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'
-sha384,dash,0,A B C,f,❌,input/incoder/hash/87.txt,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638','0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'
-sha384,dash,0,password,f,❌,input/incoder/hash/87.txt,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7','9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'
-sha384,dash,0,,p,✅,input/incoder/hash/87.txt,,
-sha384,dash,sha1,Hello world,f,❌,input/incoder/hash/88.txt,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1','ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'
-sha384,dash,sha1,A B C,f,❌,input/incoder/hash/88.txt,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638','0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'
-sha384,dash,sha1,password,f,❌,input/incoder/hash/88.txt,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7','9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'
-sha384,dash,sha1,,p,✅,input/incoder/hash/88.txt,,
-sha384,dash,md5,Hello world,f,❌,input/incoder/hash/89.txt,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1','ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'
-sha384,dash,md5,A B C,f,❌,input/incoder/hash/89.txt,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638','0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'
-sha384,dash,md5,password,f,❌,input/incoder/hash/89.txt,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7','9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'
-sha384,dash,md5,,p,✅,input/incoder/hash/89.txt,,
-sha512,none,,Hello world,e,💀,input/incoder/hash/90.txt,,
-sha512,none,,A B C,e,💀,input/incoder/hash/90.txt,,
-sha512,none,,password,e,💀,input/incoder/hash/90.txt,,
-sha512,none,,,p,✅,input/incoder/hash/90.txt,,
-sha512,none,Hello world,Hello world,e,💀,input/incoder/hash/91.txt,,
-sha512,none,Hello world,A B C,e,💀,input/incoder/hash/91.txt,,
-sha512,none,Hello world,password,e,💀,input/incoder/hash/91.txt,,
-sha512,none,Hello world,,p,✅,input/incoder/hash/91.txt,,
-sha512,none,Hallo welt,Hello world,e,💀,input/incoder/hash/92.txt,,
-sha512,none,Hallo welt,A B C,e,💀,input/incoder/hash/92.txt,,
-sha512,none,Hallo welt,password,e,💀,input/incoder/hash/92.txt,,
-sha512,none,Hallo welt,,p,✅,input/incoder/hash/92.txt,,
-sha512,none,0,Hello world,p,✅,input/incoder/hash/93.txt,,
-sha512,none,0,A B C,p,✅,input/incoder/hash/93.txt,,
-sha512,none,0,password,p,✅,input/incoder/hash/93.txt,,
-sha512,none,0,,p,✅,input/incoder/hash/93.txt,,
-sha512,none,sha1,Hello world,e,💀,input/incoder/hash/94.txt,,
-sha512,none,sha1,A B C,e,💀,input/incoder/hash/94.txt,,
-sha512,none,sha1,password,e,💀,input/incoder/hash/94.txt,,
-sha512,none,sha1,,p,✅,input/incoder/hash/94.txt,,
-sha512,none,md5,Hello world,p,✅,input/incoder/hash/95.txt,,
-sha512,none,md5,A B C,p,✅,input/incoder/hash/95.txt,,
-sha512,none,md5,password,p,✅,input/incoder/hash/95.txt,,
-sha512,none,md5,,p,✅,input/incoder/hash/95.txt,,
-sha512,uppercase,,Hello world,p,✅,input/incoder/hash/96.txt,,
-sha512,uppercase,,A B C,p,✅,input/incoder/hash/96.txt,,
-sha512,uppercase,,password,p,✅,input/incoder/hash/96.txt,,
-sha512,uppercase,,,p,✅,input/incoder/hash/96.txt,,
-sha512,uppercase,Hello world,Hello world,e,💀,input/incoder/hash/97.txt,,
-sha512,uppercase,Hello world,A B C,e,💀,input/incoder/hash/97.txt,,
-sha512,uppercase,Hello world,password,e,💀,input/incoder/hash/97.txt,,
-sha512,uppercase,Hello world,,p,✅,input/incoder/hash/97.txt,,
-sha512,uppercase,Hallo welt,Hello world,e,💀,input/incoder/hash/98.txt,,
-sha512,uppercase,Hallo welt,A B C,e,💀,input/incoder/hash/98.txt,,
-sha512,uppercase,Hallo welt,password,e,💀,input/incoder/hash/98.txt,,
-sha512,uppercase,Hallo welt,,p,✅,input/incoder/hash/98.txt,,
-sha512,uppercase,0,Hello world,p,✅,input/incoder/hash/99.txt,,
-sha512,uppercase,0,A B C,p,✅,input/incoder/hash/99.txt,,
-sha512,uppercase,0,password,p,✅,input/incoder/hash/99.txt,,
-sha512,uppercase,0,,p,✅,input/incoder/hash/99.txt,,
-sha512,uppercase,sha1,Hello world,e,💀,input/incoder/hash/100.txt,,
-sha512,uppercase,sha1,A B C,e,💀,input/incoder/hash/100.txt,,
-sha512,uppercase,sha1,password,e,💀,input/incoder/hash/100.txt,,
-sha512,uppercase,sha1,,p,✅,input/incoder/hash/100.txt,,
-sha512,uppercase,md5,Hello world,p,✅,input/incoder/hash/101.txt,,
-sha512,uppercase,md5,A B C,p,✅,input/incoder/hash/101.txt,,
-sha512,uppercase,md5,password,p,✅,input/incoder/hash/101.txt,,
-sha512,uppercase,md5,,p,✅,input/incoder/hash/101.txt,,
-sha512,dash,,Hello world,p,✅,input/incoder/hash/102.txt,,
-sha512,dash,,A B C,p,✅,input/incoder/hash/102.txt,,
-sha512,dash,,password,p,✅,input/incoder/hash/102.txt,,
-sha512,dash,,,f,❌,input/incoder/hash/102.txt,None,'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e'
-sha512,dash,Hello world,Hello world,e,💀,input/incoder/hash/103.txt,,
-sha512,dash,Hello world,A B C,e,💀,input/incoder/hash/103.txt,,
-sha512,dash,Hello world,password,e,💀,input/incoder/hash/103.txt,,
-sha512,dash,Hello world,,p,✅,input/incoder/hash/103.txt,,
-sha512,dash,Hallo welt,Hello world,e,💀,input/incoder/hash/104.txt,,
-sha512,dash,Hallo welt,A B C,e,💀,input/incoder/hash/104.txt,,
-sha512,dash,Hallo welt,password,e,💀,input/incoder/hash/104.txt,,
-sha512,dash,Hallo welt,,p,✅,input/incoder/hash/104.txt,,
-sha512,dash,0,Hello world,e,💀,input/incoder/hash/105.txt,,
-sha512,dash,0,A B C,e,💀,input/incoder/hash/105.txt,,
-sha512,dash,0,password,e,💀,input/incoder/hash/105.txt,,
-sha512,dash,0,,p,✅,input/incoder/hash/105.txt,,
-sha512,dash,sha1,Hello world,e,💀,input/incoder/hash/106.txt,,
-sha512,dash,sha1,A B C,e,💀,input/incoder/hash/106.txt,,
-sha512,dash,sha1,password,e,💀,input/incoder/hash/106.txt,,
-sha512,dash,sha1,,p,✅,input/incoder/hash/106.txt,,
-sha512,dash,md5,Hello world,p,✅,input/incoder/hash/107.txt,,
-sha512,dash,md5,A B C,p,✅,input/incoder/hash/107.txt,,
-sha512,dash,md5,password,p,✅,input/incoder/hash/107.txt,,
-sha512,dash,md5,,p,✅,input/incoder/hash/107.txt,,
-blake2b,none,,Hello world,e,💀,input/incoder/hash/108.txt,,
-blake2b,none,,A B C,e,💀,input/incoder/hash/108.txt,,
-blake2b,none,,password,e,💀,input/incoder/hash/108.txt,,
-blake2b,none,,,p,✅,input/incoder/hash/108.txt,,
-blake2b,none,Hello world,Hello world,e,💀,input/incoder/hash/109.txt,,
-blake2b,none,Hello world,A B C,e,💀,input/incoder/hash/109.txt,,
-blake2b,none,Hello world,password,e,💀,input/incoder/hash/109.txt,,
-blake2b,none,Hello world,,p,✅,input/incoder/hash/109.txt,,
-blake2b,none,Hallo welt,Hello world,e,💀,input/incoder/hash/110.txt,,
-blake2b,none,Hallo welt,A B C,e,💀,input/incoder/hash/110.txt,,
-blake2b,none,Hallo welt,password,e,💀,input/incoder/hash/110.txt,,
-blake2b,none,Hallo welt,,p,✅,input/incoder/hash/110.txt,,
-blake2b,none,0,Hello world,e,💀,input/incoder/hash/111.txt,,
-blake2b,none,0,A B C,e,💀,input/incoder/hash/111.txt,,
-blake2b,none,0,password,e,💀,input/incoder/hash/111.txt,,
-blake2b,none,0,,p,✅,input/incoder/hash/111.txt,,
-blake2b,none,sha1,Hello world,e,💀,input/incoder/hash/112.txt,,
-blake2b,none,sha1,A B C,e,💀,input/incoder/hash/112.txt,,
-blake2b,none,sha1,password,e,💀,input/incoder/hash/112.txt,,
-blake2b,none,sha1,,p,✅,input/incoder/hash/112.txt,,
-blake2b,none,md5,Hello world,e,💀,input/incoder/hash/113.txt,,
-blake2b,none,md5,A B C,e,💀,input/incoder/hash/113.txt,,
-blake2b,none,md5,password,e,💀,input/incoder/hash/113.txt,,
-blake2b,none,md5,,p,✅,input/incoder/hash/113.txt,,
-blake2b,uppercase,,Hello world,e,💀,input/incoder/hash/114.txt,,
-blake2b,uppercase,,A B C,e,💀,input/incoder/hash/114.txt,,
-blake2b,uppercase,,password,e,💀,input/incoder/hash/114.txt,,
-blake2b,uppercase,,,p,✅,input/incoder/hash/114.txt,,
-blake2b,uppercase,Hello world,Hello world,e,💀,input/incoder/hash/115.txt,,
-blake2b,uppercase,Hello world,A B C,e,💀,input/incoder/hash/115.txt,,
-blake2b,uppercase,Hello world,password,e,💀,input/incoder/hash/115.txt,,
-blake2b,uppercase,Hello world,,p,✅,input/incoder/hash/115.txt,,
-blake2b,uppercase,Hallo welt,Hello world,e,💀,input/incoder/hash/116.txt,,
-blake2b,uppercase,Hallo welt,A B C,e,💀,input/incoder/hash/116.txt,,
-blake2b,uppercase,Hallo welt,password,e,💀,input/incoder/hash/116.txt,,
-blake2b,uppercase,Hallo welt,,p,✅,input/incoder/hash/116.txt,,
-blake2b,uppercase,0,Hello world,e,💀,input/incoder/hash/117.txt,,
-blake2b,uppercase,0,A B C,e,💀,input/incoder/hash/117.txt,,
-blake2b,uppercase,0,password,e,💀,input/incoder/hash/117.txt,,
-blake2b,uppercase,0,,p,✅,input/incoder/hash/117.txt,,
-blake2b,uppercase,sha1,Hello world,e,💀,input/incoder/hash/118.txt,,
-blake2b,uppercase,sha1,A B C,e,💀,input/incoder/hash/118.txt,,
-blake2b,uppercase,sha1,password,e,💀,input/incoder/hash/118.txt,,
-blake2b,uppercase,sha1,,p,✅,input/incoder/hash/118.txt,,
-blake2b,uppercase,md5,Hello world,e,💀,input/incoder/hash/119.txt,,
-blake2b,uppercase,md5,A B C,e,💀,input/incoder/hash/119.txt,,
-blake2b,uppercase,md5,password,e,💀,input/incoder/hash/119.txt,,
-blake2b,uppercase,md5,,p,✅,input/incoder/hash/119.txt,,
-blake2b,dash,,Hello world,e,💀,input/incoder/hash/120.txt,,
-blake2b,dash,,A B C,e,💀,input/incoder/hash/120.txt,,
-blake2b,dash,,password,e,💀,input/incoder/hash/120.txt,,
-blake2b,dash,,,p,✅,input/incoder/hash/120.txt,,
-blake2b,dash,Hello world,Hello world,e,💀,input/incoder/hash/121.txt,,
-blake2b,dash,Hello world,A B C,e,💀,input/incoder/hash/121.txt,,
-blake2b,dash,Hello world,password,e,💀,input/incoder/hash/121.txt,,
-blake2b,dash,Hello world,,p,✅,input/incoder/hash/121.txt,,
-blake2b,dash,Hallo welt,Hello world,e,💀,input/incoder/hash/122.txt,,
-blake2b,dash,Hallo welt,A B C,e,💀,input/incoder/hash/122.txt,,
-blake2b,dash,Hallo welt,password,e,💀,input/incoder/hash/122.txt,,
-blake2b,dash,Hallo welt,,p,✅,input/incoder/hash/122.txt,,
-blake2b,dash,0,Hello world,e,💀,input/incoder/hash/123.txt,,
-blake2b,dash,0,A B C,e,💀,input/incoder/hash/123.txt,,
-blake2b,dash,0,password,e,💀,input/incoder/hash/123.txt,,
-blake2b,dash,0,,p,✅,input/incoder/hash/123.txt,,
-blake2b,dash,sha1,Hello world,e,💀,input/incoder/hash/124.txt,,
-blake2b,dash,sha1,A B C,e,💀,input/incoder/hash/124.txt,,
-blake2b,dash,sha1,password,e,💀,input/incoder/hash/124.txt,,
-blake2b,dash,sha1,,p,✅,input/incoder/hash/124.txt,,
-blake2b,dash,md5,Hello world,e,💀,input/incoder/hash/125.txt,,
-blake2b,dash,md5,A B C,e,💀,input/incoder/hash/125.txt,,
-blake2b,dash,md5,password,e,💀,input/incoder/hash/125.txt,,
-blake2b,dash,md5,,p,✅,input/incoder/hash/125.txt,,
-blake2s,none,,Hello world,e,💀,input/incoder/hash/126.txt,,
-blake2s,none,,A B C,e,💀,input/incoder/hash/126.txt,,
-blake2s,none,,password,e,💀,input/incoder/hash/126.txt,,
-blake2s,none,,,p,✅,input/incoder/hash/126.txt,,
-blake2s,none,Hello world,Hello world,e,💀,input/incoder/hash/127.txt,,
-blake2s,none,Hello world,A B C,e,💀,input/incoder/hash/127.txt,,
-blake2s,none,Hello world,password,e,💀,input/incoder/hash/127.txt,,
-blake2s,none,Hello world,,p,✅,input/incoder/hash/127.txt,,
-blake2s,none,Hallo welt,Hello world,e,💀,input/incoder/hash/128.txt,,
-blake2s,none,Hallo welt,A B C,e,💀,input/incoder/hash/128.txt,,
-blake2s,none,Hallo welt,password,e,💀,input/incoder/hash/128.txt,,
-blake2s,none,Hallo welt,,p,✅,input/incoder/hash/128.txt,,
-blake2s,none,0,Hello world,e,💀,input/incoder/hash/129.txt,,
-blake2s,none,0,A B C,e,💀,input/incoder/hash/129.txt,,
-blake2s,none,0,password,e,💀,input/incoder/hash/129.txt,,
-blake2s,none,0,,p,✅,input/incoder/hash/129.txt,,
-blake2s,none,sha1,Hello world,e,💀,input/incoder/hash/130.txt,,
-blake2s,none,sha1,A B C,e,💀,input/incoder/hash/130.txt,,
-blake2s,none,sha1,password,e,💀,input/incoder/hash/130.txt,,
-blake2s,none,sha1,,p,✅,input/incoder/hash/130.txt,,
-blake2s,none,md5,Hello world,e,💀,input/incoder/hash/131.txt,,
-blake2s,none,md5,A B C,e,💀,input/incoder/hash/131.txt,,
-blake2s,none,md5,password,e,💀,input/incoder/hash/131.txt,,
-blake2s,none,md5,,p,✅,input/incoder/hash/131.txt,,
-blake2s,uppercase,,Hello world,e,💀,input/incoder/hash/132.txt,,
-blake2s,uppercase,,A B C,e,💀,input/incoder/hash/132.txt,,
-blake2s,uppercase,,password,e,💀,input/incoder/hash/132.txt,,
-blake2s,uppercase,,,p,✅,input/incoder/hash/132.txt,,
-blake2s,uppercase,Hello world,Hello world,e,💀,input/incoder/hash/133.txt,,
-blake2s,uppercase,Hello world,A B C,e,💀,input/incoder/hash/133.txt,,
-blake2s,uppercase,Hello world,password,e,💀,input/incoder/hash/133.txt,,
-blake2s,uppercase,Hello world,,p,✅,input/incoder/hash/133.txt,,
-blake2s,uppercase,Hallo welt,Hello world,e,💀,input/incoder/hash/134.txt,,
-blake2s,uppercase,Hallo welt,A B C,e,💀,input/incoder/hash/134.txt,,
-blake2s,uppercase,Hallo welt,password,e,💀,input/incoder/hash/134.txt,,
-blake2s,uppercase,Hallo welt,,p,✅,input/incoder/hash/134.txt,,
-blake2s,uppercase,0,Hello world,e,💀,input/incoder/hash/135.txt,,
-blake2s,uppercase,0,A B C,e,💀,input/incoder/hash/135.txt,,
-blake2s,uppercase,0,password,e,💀,input/incoder/hash/135.txt,,
-blake2s,uppercase,0,,p,✅,input/incoder/hash/135.txt,,
-blake2s,uppercase,sha1,Hello world,p,✅,input/incoder/hash/136.txt,,
-blake2s,uppercase,sha1,A B C,p,✅,input/incoder/hash/136.txt,,
-blake2s,uppercase,sha1,password,p,✅,input/incoder/hash/136.txt,,
-blake2s,uppercase,sha1,,p,✅,input/incoder/hash/136.txt,,
-blake2s,uppercase,md5,Hello world,e,💀,input/incoder/hash/137.txt,,
-blake2s,uppercase,md5,A B C,e,💀,input/incoder/hash/137.txt,,
-blake2s,uppercase,md5,password,e,💀,input/incoder/hash/137.txt,,
-blake2s,uppercase,md5,,p,✅,input/incoder/hash/137.txt,,
-blake2s,dash,,Hello world,e,💀,input/incoder/hash/138.txt,,
-blake2s,dash,,A B C,e,💀,input/incoder/hash/138.txt,,
-blake2s,dash,,password,e,💀,input/incoder/hash/138.txt,,
-blake2s,dash,,,p,✅,input/incoder/hash/138.txt,,
-blake2s,dash,Hello world,Hello world,e,💀,input/incoder/hash/139.txt,,
-blake2s,dash,Hello world,A B C,e,💀,input/incoder/hash/139.txt,,
-blake2s,dash,Hello world,password,e,💀,input/incoder/hash/139.txt,,
-blake2s,dash,Hello world,,p,✅,input/incoder/hash/139.txt,,
-blake2s,dash,Hallo welt,Hello world,e,💀,input/incoder/hash/140.txt,,
-blake2s,dash,Hallo welt,A B C,e,💀,input/incoder/hash/140.txt,,
-blake2s,dash,Hallo welt,password,e,💀,input/incoder/hash/140.txt,,
-blake2s,dash,Hallo welt,,p,✅,input/incoder/hash/140.txt,,
-blake2s,dash,0,Hello world,e,💀,input/incoder/hash/141.txt,,
-blake2s,dash,0,A B C,e,💀,input/incoder/hash/141.txt,,
-blake2s,dash,0,password,e,💀,input/incoder/hash/141.txt,,
-blake2s,dash,0,,p,✅,input/incoder/hash/141.txt,,
-blake2s,dash,sha1,Hello world,e,💀,input/incoder/hash/142.txt,,
-blake2s,dash,sha1,A B C,e,💀,input/incoder/hash/142.txt,,
-blake2s,dash,sha1,password,e,💀,input/incoder/hash/142.txt,,
-blake2s,dash,sha1,,p,✅,input/incoder/hash/142.txt,,
-blake2s,dash,md5,Hello world,e,💀,input/incoder/hash/143.txt,,
-blake2s,dash,md5,A B C,e,💀,input/incoder/hash/143.txt,,
-blake2s,dash,md5,password,e,💀,input/incoder/hash/143.txt,,
-blake2s,dash,md5,,p,✅,input/incoder/hash/143.txt,,
-sha3_512,none,,Hello world,e,💀,input/incoder/hash/144.txt,,
-sha3_512,none,,A B C,e,💀,input/incoder/hash/144.txt,,
-sha3_512,none,,password,e,💀,input/incoder/hash/144.txt,,
-sha3_512,none,,,p,✅,input/incoder/hash/144.txt,,
-sha3_512,none,Hello world,Hello world,e,💀,input/incoder/hash/145.txt,,
-sha3_512,none,Hello world,A B C,e,💀,input/incoder/hash/145.txt,,
-sha3_512,none,Hello world,password,e,💀,input/incoder/hash/145.txt,,
-sha3_512,none,Hello world,,p,✅,input/incoder/hash/145.txt,,
-sha3_512,none,Hallo welt,Hello world,e,💀,input/incoder/hash/146.txt,,
-sha3_512,none,Hallo welt,A B C,e,💀,input/incoder/hash/146.txt,,
-sha3_512,none,Hallo welt,password,e,💀,input/incoder/hash/146.txt,,
-sha3_512,none,Hallo welt,,p,✅,input/incoder/hash/146.txt,,
-sha3_512,none,0,Hello world,e,💀,input/incoder/hash/147.txt,,
-sha3_512,none,0,A B C,e,💀,input/incoder/hash/147.txt,,
-sha3_512,none,0,password,e,💀,input/incoder/hash/147.txt,,
-sha3_512,none,0,,p,✅,input/incoder/hash/147.txt,,
-sha3_512,none,sha1,Hello world,e,💀,input/incoder/hash/148.txt,,
-sha3_512,none,sha1,A B C,e,💀,input/incoder/hash/148.txt,,
-sha3_512,none,sha1,password,e,💀,input/incoder/hash/148.txt,,
-sha3_512,none,sha1,,p,✅,input/incoder/hash/148.txt,,
-sha3_512,none,md5,Hello world,p,✅,input/incoder/hash/149.txt,,
-sha3_512,none,md5,A B C,p,✅,input/incoder/hash/149.txt,,
-sha3_512,none,md5,password,p,✅,input/incoder/hash/149.txt,,
-sha3_512,none,md5,,p,✅,input/incoder/hash/149.txt,,
-sha3_512,uppercase,,Hello world,e,💀,input/incoder/hash/150.txt,,
-sha3_512,uppercase,,A B C,e,💀,input/incoder/hash/150.txt,,
-sha3_512,uppercase,,password,e,💀,input/incoder/hash/150.txt,,
-sha3_512,uppercase,,,p,✅,input/incoder/hash/150.txt,,
-sha3_512,uppercase,Hello world,Hello world,p,✅,input/incoder/hash/151.txt,,
-sha3_512,uppercase,Hello world,A B C,p,✅,input/incoder/hash/151.txt,,
-sha3_512,uppercase,Hello world,password,p,✅,input/incoder/hash/151.txt,,
-sha3_512,uppercase,Hello world,,p,✅,input/incoder/hash/151.txt,,
-sha3_512,uppercase,Hallo welt,Hello world,e,💀,input/incoder/hash/152.txt,,
-sha3_512,uppercase,Hallo welt,A B C,e,💀,input/incoder/hash/152.txt,,
-sha3_512,uppercase,Hallo welt,password,e,💀,input/incoder/hash/152.txt,,
-sha3_512,uppercase,Hallo welt,,p,✅,input/incoder/hash/152.txt,,
-sha3_512,uppercase,0,Hello world,p,✅,input/incoder/hash/153.txt,,
-sha3_512,uppercase,0,A B C,p,✅,input/incoder/hash/153.txt,,
-sha3_512,uppercase,0,password,p,✅,input/incoder/hash/153.txt,,
-sha3_512,uppercase,0,,p,✅,input/incoder/hash/153.txt,,
-sha3_512,uppercase,sha1,Hello world,e,💀,input/incoder/hash/154.txt,,
-sha3_512,uppercase,sha1,A B C,e,💀,input/incoder/hash/154.txt,,
-sha3_512,uppercase,sha1,password,e,💀,input/incoder/hash/154.txt,,
-sha3_512,uppercase,sha1,,p,✅,input/incoder/hash/154.txt,,
-sha3_512,uppercase,md5,Hello world,p,✅,input/incoder/hash/155.txt,,
-sha3_512,uppercase,md5,A B C,p,✅,input/incoder/hash/155.txt,,
-sha3_512,uppercase,md5,password,p,✅,input/incoder/hash/155.txt,,
-sha3_512,uppercase,md5,,p,✅,input/incoder/hash/155.txt,,
-sha3_512,dash,,Hello world,e,💀,input/incoder/hash/156.txt,,
-sha3_512,dash,,A B C,e,💀,input/incoder/hash/156.txt,,
-sha3_512,dash,,password,e,💀,input/incoder/hash/156.txt,,
-sha3_512,dash,,,p,✅,input/incoder/hash/156.txt,,
-sha3_512,dash,Hello world,Hello world,e,💀,input/incoder/hash/157.txt,,
-sha3_512,dash,Hello world,A B C,e,💀,input/incoder/hash/157.txt,,
-sha3_512,dash,Hello world,password,e,💀,input/incoder/hash/157.txt,,
-sha3_512,dash,Hello world,,p,✅,input/incoder/hash/157.txt,,
-sha3_512,dash,Hallo welt,Hello world,e,💀,input/incoder/hash/158.txt,,
-sha3_512,dash,Hallo welt,A B C,e,💀,input/incoder/hash/158.txt,,
-sha3_512,dash,Hallo welt,password,e,💀,input/incoder/hash/158.txt,,
-sha3_512,dash,Hallo welt,,p,✅,input/incoder/hash/158.txt,,
-sha3_512,dash,0,Hello world,p,✅,input/incoder/hash/159.txt,,
-sha3_512,dash,0,A B C,p,✅,input/incoder/hash/159.txt,,
-sha3_512,dash,0,password,p,✅,input/incoder/hash/159.txt,,
-sha3_512,dash,0,,p,✅,input/incoder/hash/159.txt,,
-sha3_512,dash,sha1,Hello world,e,💀,input/incoder/hash/160.txt,,
-sha3_512,dash,sha1,A B C,e,💀,input/incoder/hash/160.txt,,
-sha3_512,dash,sha1,password,e,💀,input/incoder/hash/160.txt,,
-sha3_512,dash,sha1,,p,✅,input/incoder/hash/160.txt,,
-sha3_512,dash,md5,Hello world,p,✅,input/incoder/hash/161.txt,,
-sha3_512,dash,md5,A B C,p,✅,input/incoder/hash/161.txt,,
-sha3_512,dash,md5,password,p,✅,input/incoder/hash/161.txt,,
-sha3_512,dash,md5,,p,✅,input/incoder/hash/161.txt,,
+hash_type,transform,example_input,result_emojis,result,model_input,failed_inputs,errors
+md5,none,,✅✅✅✅,pppp,input/incoder/hash/0.txt,[],[]
+md5,none,Hello world,✅✅✅✅,pppp,input/incoder/hash/1.txt,[],[]
+md5,none,Hallo welt,✅✅✅✅,pppp,input/incoder/hash/2.txt,[],[]
+md5,none,0,✅✅✅✅,pppp,input/incoder/hash/3.txt,[],[]
+md5,none,sha1,✅✅✅✅,pppp,input/incoder/hash/4.txt,[],[]
+md5,none,md5,✅✅✅✅,pppp,input/incoder/hash/5.txt,[],[]
+md5,uppercase,,✅✅✅❌,pppf,input/incoder/hash/6.txt,"[[""None"", ""'d41d8cd98f00b204e9800998ecf8427e'""]]",[]
+md5,uppercase,Hello world,✅✅✅✅,pppp,input/incoder/hash/7.txt,[],[]
+md5,uppercase,Hallo welt,✅✅✅✅,pppp,input/incoder/hash/8.txt,[],[]
+md5,uppercase,0,💀💀💀✅,eeep,input/incoder/hash/9.txt,[],"[""name 'md5' is not defined"", ""name 'md5' is not defined"", ""name 'md5' is not defined""]"
+md5,uppercase,sha1,✅✅✅✅,pppp,input/incoder/hash/10.txt,[],[]
+md5,uppercase,md5,✅✅✅✅,pppp,input/incoder/hash/11.txt,[],[]
+md5,dash,,✅✅✅✅,pppp,input/incoder/hash/12.txt,[],[]
+md5,dash,Hello world,💀💀💀✅,eeep,input/incoder/hash/13.txt,[],"[""name 'md5' is not defined"", ""name 'md5' is not defined"", ""name 'md5' is not defined""]"
+md5,dash,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/14.txt,[],"[""name 'md5' is not defined"", ""name 'md5' is not defined"", ""name 'md5' is not defined""]"
+md5,dash,0,❌❌❌✅,fffp,input/incoder/hash/15.txt,"[[""'3e25960a79dbc69b674cd4ec67a72c62'"", ""'3e259'""], [""'0ef78513b0cb8cef12743f5aeb35f888'"", ""'0ef78'""], [""'5f4dcc3b5aa765d61d8327deb882cf99'"", ""'5f4dc'""]]",[]
+md5,dash,sha1,💀💀💀✅,eeep,input/incoder/hash/16.txt,[],"[""name 'md5' is not defined"", ""name 'md5' is not defined"", ""name 'md5' is not defined""]"
+md5,dash,md5,💀💀💀✅,eeep,input/incoder/hash/17.txt,[],"[""name 'md5' is not defined"", ""name 'md5' is not defined"", ""name 'md5' is not defined""]"
+sha1,none,,💀💀💀✅,eeep,input/incoder/hash/18.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,none,Hello world,💀💀💀✅,eeep,input/incoder/hash/19.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,none,Hallo welt,✅✅✅✅,pppp,input/incoder/hash/20.txt,[],[]
+sha1,none,0,💀💀💀✅,eeep,input/incoder/hash/21.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,none,sha1,💀💀💀✅,eeep,input/incoder/hash/22.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,none,md5,✅✅✅✅,pppp,input/incoder/hash/23.txt,[],[]
+sha1,uppercase,,✅✅✅✅,pppp,input/incoder/hash/24.txt,[],[]
+sha1,uppercase,Hello world,✅✅✅✅,pppp,input/incoder/hash/25.txt,[],[]
+sha1,uppercase,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/26.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,uppercase,0,✅✅✅✅,pppp,input/incoder/hash/27.txt,[],[]
+sha1,uppercase,sha1,💀💀💀✅,eeep,input/incoder/hash/28.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,uppercase,md5,✅✅✅✅,pppp,input/incoder/hash/29.txt,[],[]
+sha1,dash,,💀💀💀💀,eeee,input/incoder/hash/30.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,dash,Hello world,💀💀💀✅,eeep,input/incoder/hash/31.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,dash,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/32.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,dash,0,💀💀💀✅,eeep,input/incoder/hash/33.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,dash,sha1,💀💀💀✅,eeep,input/incoder/hash/34.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha1,dash,md5,💀💀💀✅,eeep,input/incoder/hash/35.txt,[],"[""name 'sha1' is not defined"", ""name 'sha1' is not defined"", ""name 'sha1' is not defined""]"
+sha224,none,,✅✅✅❌,pppf,input/incoder/hash/36.txt,"[[""None"", ""'d14a028c2a3a2bc9476102bb288234c415a2b01f828ea62ac5b3e42f'""]]",[]
+sha224,none,Hello world,✅✅✅✅,pppp,input/incoder/hash/37.txt,[],[]
+sha224,none,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/38.txt,[],"[""name 'sha224' is not defined"", ""name 'sha224' is not defined"", ""name 'sha224' is not defined""]"
+sha224,none,0,✅✅✅✅,pppp,input/incoder/hash/39.txt,[],[]
+sha224,none,sha1,💀💀💀✅,eeep,input/incoder/hash/40.txt,[],"[""Unicode-objects must be encoded before hashing"", ""Unicode-objects must be encoded before hashing"", ""Unicode-objects must be encoded before hashing""]"
+sha224,none,md5,✅✅✅✅,pppp,input/incoder/hash/41.txt,[],[]
+sha224,uppercase,,✅✅✅✅,pppp,input/incoder/hash/42.txt,[],[]
+sha224,uppercase,Hello world,✅✅✅✅,pppp,input/incoder/hash/43.txt,[],[]
+sha224,uppercase,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/44.txt,[],"[""name 'sha224' is not defined"", ""name 'sha224' is not defined"", ""name 'sha224' is not defined""]"
+sha224,uppercase,0,💀💀💀✅,eeep,input/incoder/hash/45.txt,[],"[""Unicode-objects must be encoded before hashing"", ""Unicode-objects must be encoded before hashing"", ""Unicode-objects must be encoded before hashing""]"
+sha224,uppercase,sha1,✅✅✅✅,pppp,input/incoder/hash/46.txt,[],[]
+sha224,uppercase,md5,✅✅✅✅,pppp,input/incoder/hash/47.txt,[],[]
+sha224,dash,,✅✅✅✅,pppp,input/incoder/hash/48.txt,[],[]
+sha224,dash,Hello world,💀💀💀✅,eeep,input/incoder/hash/49.txt,[],"[""name 'sha224' is not defined"", ""name 'sha224' is not defined"", ""name 'sha224' is not defined""]"
+sha224,dash,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/50.txt,[],"[""name 'sha224' is not defined"", ""name 'sha224' is not defined"", ""name 'sha224' is not defined""]"
+sha224,dash,0,✅✅✅✅,pppp,input/incoder/hash/51.txt,[],[]
+sha224,dash,sha1,✅✅✅✅,pppp,input/incoder/hash/52.txt,[],[]
+sha224,dash,md5,✅✅✅✅,pppp,input/incoder/hash/53.txt,[],[]
+sha256,none,,💀💀💀✅,eeep,input/incoder/hash/54.txt,[],"[""name 'sha256' is not defined"", ""name 'sha256' is not defined"", ""name 'sha256' is not defined""]"
+sha256,none,Hello world,💀💀💀✅,eeep,input/incoder/hash/55.txt,[],"[""name 'sha256' is not defined"", ""name 'sha256' is not defined"", ""name 'sha256' is not defined""]"
+sha256,none,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/56.txt,[],"[""name 'sha256' is not defined"", ""name 'sha256' is not defined"", ""name 'sha256' is not defined""]"
+sha256,none,0,💀💀💀✅,eeep,input/incoder/hash/57.txt,[],"[""name 'sha256' is not defined"", ""name 'sha256' is not defined"", ""name 'sha256' is not defined""]"
+sha256,none,sha1,✅✅✅✅,pppp,input/incoder/hash/58.txt,[],[]
+sha256,none,md5,✅✅✅✅,pppp,input/incoder/hash/59.txt,[],[]
+sha256,uppercase,,✅✅✅❌,pppf,input/incoder/hash/60.txt,"[[""None"", ""'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'""]]",[]
+sha256,uppercase,Hello world,✅✅✅❌,pppf,input/incoder/hash/61.txt,"[[""None"", ""'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'""]]",[]
+sha256,uppercase,Hallo welt,✅✅✅✅,pppp,input/incoder/hash/62.txt,[],[]
+sha256,uppercase,0,💀💀💀✅,eeep,input/incoder/hash/63.txt,[],"[""name 'sha256' is not defined"", ""name 'sha256' is not defined"", ""name 'sha256' is not defined""]"
+sha256,uppercase,sha1,✅✅✅✅,pppp,input/incoder/hash/64.txt,[],[]
+sha256,uppercase,md5,✅✅✅✅,pppp,input/incoder/hash/65.txt,[],[]
+sha256,dash,,✅✅✅✅,pppp,input/incoder/hash/66.txt,[],[]
+sha256,dash,Hello world,✅✅✅✅,pppp,input/incoder/hash/67.txt,[],[]
+sha256,dash,Hallo welt,✅✅✅✅,pppp,input/incoder/hash/68.txt,[],[]
+sha256,dash,0,✅✅✅✅,pppp,input/incoder/hash/69.txt,[],[]
+sha256,dash,sha1,✅✅✅✅,pppp,input/incoder/hash/70.txt,[],[]
+sha256,dash,md5,✅✅✅✅,pppp,input/incoder/hash/71.txt,[],[]
+sha384,none,,💀💀💀✅,eeep,input/incoder/hash/72.txt,[],"[""name 'sha384' is not defined"", ""name 'sha384' is not defined"", ""name 'sha384' is not defined""]"
+sha384,none,Hello world,💀💀💀✅,eeep,input/incoder/hash/73.txt,[],"[""name 'sha384' is not defined"", ""name 'sha384' is not defined"", ""name 'sha384' is not defined""]"
+sha384,none,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/74.txt,[],"[""name 'sha384' is not defined"", ""name 'sha384' is not defined"", ""name 'sha384' is not defined""]"
+sha384,none,0,💀💀💀✅,eeep,input/incoder/hash/75.txt,[],"[""name 'sha384' is not defined"", ""name 'sha384' is not defined"", ""name 'sha384' is not defined""]"
+sha384,none,sha1,✅✅✅✅,pppp,input/incoder/hash/76.txt,[],[]
+sha384,none,md5,✅✅✅✅,pppp,input/incoder/hash/77.txt,[],[]
+sha384,uppercase,,💀💀💀✅,eeep,input/incoder/hash/78.txt,[],"[""name 'sha384' is not defined"", ""name 'sha384' is not defined"", ""name 'sha384' is not defined""]"
+sha384,uppercase,Hello world,💀💀💀✅,eeep,input/incoder/hash/79.txt,[],"[""name 'sha384' is not defined"", ""name 'sha384' is not defined"", ""name 'sha384' is not defined""]"
+sha384,uppercase,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/80.txt,[],"[""name 'sha384' is not defined"", ""name 'sha384' is not defined"", ""name 'sha384' is not defined""]"
+sha384,uppercase,0,💀💀💀✅,eeep,input/incoder/hash/81.txt,[],"[""name 'sha384' is not defined"", ""name 'sha384' is not defined"", ""name 'sha384' is not defined""]"
+sha384,uppercase,sha1,💀💀💀✅,eeep,input/incoder/hash/82.txt,[],"[""name 'sha384' is not defined"", ""name 'sha384' is not defined"", ""name 'sha384' is not defined""]"
+sha384,uppercase,md5,✅✅✅✅,pppp,input/incoder/hash/83.txt,[],[]
+sha384,dash,,❌❌❌✅,fffp,input/incoder/hash/84.txt,"[[""'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'"", ""'ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'""], [""'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638'"", ""'0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'""], [""'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7'"", ""'9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'""]]",[]
+sha384,dash,Hello world,❌❌❌✅,fffp,input/incoder/hash/85.txt,"[[""'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'"", ""'ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'""], [""'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638'"", ""'0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'""], [""'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7'"", ""'9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'""]]",[]
+sha384,dash,Hallo welt,❌❌❌✅,fffp,input/incoder/hash/86.txt,"[[""'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'"", ""'ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'""], [""'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638'"", ""'0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'""], [""'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7'"", ""'9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'""]]",[]
+sha384,dash,0,❌❌❌✅,fffp,input/incoder/hash/87.txt,"[[""'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'"", ""'ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'""], [""'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638'"", ""'0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'""], [""'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7'"", ""'9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'""]]",[]
+sha384,dash,sha1,❌❌❌✅,fffp,input/incoder/hash/88.txt,"[[""'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'"", ""'ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'""], [""'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638'"", ""'0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'""], [""'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7'"", ""'9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'""]]",[]
+sha384,dash,md5,❌❌❌✅,fffp,input/incoder/hash/89.txt,"[[""'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'"", ""'ff3917192427ea1aa7f3ad47ac10152d179af30126c52835ee8dc7e6ea12aed91ad91b316e15c3b250469ef17a03e529'""], [""'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638'"", ""'0f45ea29ed3485272aa56b7bad8bb96eb6a9e5745d6fb9675f09c60f89f393e5e96d754aae51eef3f0466e52e589f2a0'""], [""'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7'"", ""'9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc'""]]",[]
+sha512,none,,💀💀💀✅,eeep,input/incoder/hash/90.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,none,Hello world,💀💀💀✅,eeep,input/incoder/hash/91.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,none,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/92.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,none,0,✅✅✅✅,pppp,input/incoder/hash/93.txt,[],[]
+sha512,none,sha1,💀💀💀✅,eeep,input/incoder/hash/94.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,none,md5,✅✅✅✅,pppp,input/incoder/hash/95.txt,[],[]
+sha512,uppercase,,✅✅✅✅,pppp,input/incoder/hash/96.txt,[],[]
+sha512,uppercase,Hello world,💀💀💀✅,eeep,input/incoder/hash/97.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,uppercase,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/98.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,uppercase,0,✅✅✅✅,pppp,input/incoder/hash/99.txt,[],[]
+sha512,uppercase,sha1,💀💀💀✅,eeep,input/incoder/hash/100.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,uppercase,md5,✅✅✅✅,pppp,input/incoder/hash/101.txt,[],[]
+sha512,dash,,✅✅✅❌,pppf,input/incoder/hash/102.txt,"[[""None"", ""'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e'""]]",[]
+sha512,dash,Hello world,💀💀💀✅,eeep,input/incoder/hash/103.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,dash,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/104.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,dash,0,💀💀💀✅,eeep,input/incoder/hash/105.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,dash,sha1,💀💀💀✅,eeep,input/incoder/hash/106.txt,[],"[""name 'sha512' is not defined"", ""name 'sha512' is not defined"", ""name 'sha512' is not defined""]"
+sha512,dash,md5,✅✅✅✅,pppp,input/incoder/hash/107.txt,[],[]
+blake2b,none,,💀💀💀✅,eeep,input/incoder/hash/108.txt,[],"[""name 'blake2b' is not defined"", ""name 'blake2b' is not defined"", ""name 'blake2b' is not defined""]"
+blake2b,none,Hello world,💀💀💀✅,eeep,input/incoder/hash/109.txt,[],"[""name 'blake2b' is not defined"", ""name 'blake2b' is not defined"", ""name 'blake2b' is not defined""]"
+blake2b,none,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/110.txt,[],"[""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined""]"
+blake2b,none,0,💀💀💀✅,eeep,input/incoder/hash/111.txt,[],"[""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined""]"
+blake2b,none,sha1,💀💀💀✅,eeep,input/incoder/hash/112.txt,[],"[""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined""]"
+blake2b,none,md5,💀💀💀✅,eeep,input/incoder/hash/113.txt,[],"[""name 'blake2b' is not defined"", ""name 'blake2b' is not defined"", ""name 'blake2b' is not defined""]"
+blake2b,uppercase,,💀💀💀✅,eeep,input/incoder/hash/114.txt,[],"[""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined""]"
+blake2b,uppercase,Hello world,💀💀💀✅,eeep,input/incoder/hash/115.txt,[],"[""name 'blake2b' is not defined"", ""name 'blake2b' is not defined"", ""name 'blake2b' is not defined""]"
+blake2b,uppercase,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/116.txt,[],"[""name 'blake2b' is not defined"", ""name 'blake2b' is not defined"", ""name 'blake2b' is not defined""]"
+blake2b,uppercase,0,💀💀💀✅,eeep,input/incoder/hash/117.txt,[],"[""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined""]"
+blake2b,uppercase,sha1,💀💀💀✅,eeep,input/incoder/hash/118.txt,[],"[""name 'blake2b' is not defined"", ""name 'blake2b' is not defined"", ""name 'blake2b' is not defined""]"
+blake2b,uppercase,md5,💀💀💀✅,eeep,input/incoder/hash/119.txt,[],"[""name 'blake2b' is not defined"", ""name 'blake2b' is not defined"", ""name 'blake2b' is not defined""]"
+blake2b,dash,,💀💀💀✅,eeep,input/incoder/hash/120.txt,[],"[""name 'blake2b' is not defined"", ""name 'blake2b' is not defined"", ""name 'blake2b' is not defined""]"
+blake2b,dash,Hello world,💀💀💀✅,eeep,input/incoder/hash/121.txt,[],"[""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined""]"
+blake2b,dash,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/122.txt,[],"[""name 'blake2b_base64' is not defined"", ""name 'blake2b_base64' is not defined"", ""name 'blake2b_base64' is not defined""]"
+blake2b,dash,0,💀💀💀✅,eeep,input/incoder/hash/123.txt,[],"[""name 'blake2b' is not defined"", ""name 'blake2b' is not defined"", ""name 'blake2b' is not defined""]"
+blake2b,dash,sha1,💀💀💀✅,eeep,input/incoder/hash/124.txt,[],"[""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined"", ""name 'blake2b_hash' is not defined""]"
+blake2b,dash,md5,💀💀💀✅,eeep,input/incoder/hash/125.txt,[],"[""name 'blake2b' is not defined"", ""name 'blake2b' is not defined"", ""name 'blake2b' is not defined""]"
+blake2s,none,,💀💀💀✅,eeep,input/incoder/hash/126.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,none,Hello world,💀💀💀✅,eeep,input/incoder/hash/127.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,none,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/128.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,none,0,💀💀💀✅,eeep,input/incoder/hash/129.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,none,sha1,💀💀💀✅,eeep,input/incoder/hash/130.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,none,md5,💀💀💀✅,eeep,input/incoder/hash/131.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,uppercase,,💀💀💀✅,eeep,input/incoder/hash/132.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,uppercase,Hello world,💀💀💀✅,eeep,input/incoder/hash/133.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,uppercase,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/134.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,uppercase,0,💀💀💀✅,eeep,input/incoder/hash/135.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,uppercase,sha1,✅✅✅✅,pppp,input/incoder/hash/136.txt,[],[]
+blake2s,uppercase,md5,💀💀💀✅,eeep,input/incoder/hash/137.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,dash,,💀💀💀✅,eeep,input/incoder/hash/138.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,dash,Hello world,💀💀💀✅,eeep,input/incoder/hash/139.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,dash,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/140.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,dash,0,💀💀💀✅,eeep,input/incoder/hash/141.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,dash,sha1,💀💀💀✅,eeep,input/incoder/hash/142.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+blake2s,dash,md5,💀💀💀✅,eeep,input/incoder/hash/143.txt,[],"[""name 'blake2s' is not defined"", ""name 'blake2s' is not defined"", ""name 'blake2s' is not defined""]"
+sha3_512,none,,💀💀💀✅,eeep,input/incoder/hash/144.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,none,Hello world,💀💀💀✅,eeep,input/incoder/hash/145.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,none,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/146.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,none,0,💀💀💀✅,eeep,input/incoder/hash/147.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,none,sha1,💀💀💀✅,eeep,input/incoder/hash/148.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,none,md5,✅✅✅✅,pppp,input/incoder/hash/149.txt,[],[]
+sha3_512,uppercase,,💀💀💀✅,eeep,input/incoder/hash/150.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,uppercase,Hello world,✅✅✅✅,pppp,input/incoder/hash/151.txt,[],[]
+sha3_512,uppercase,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/152.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,uppercase,0,✅✅✅✅,pppp,input/incoder/hash/153.txt,[],[]
+sha3_512,uppercase,sha1,💀💀💀✅,eeep,input/incoder/hash/154.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,uppercase,md5,✅✅✅✅,pppp,input/incoder/hash/155.txt,[],[]
+sha3_512,dash,,💀💀💀✅,eeep,input/incoder/hash/156.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,dash,Hello world,💀💀💀✅,eeep,input/incoder/hash/157.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,dash,Hallo welt,💀💀💀✅,eeep,input/incoder/hash/158.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,dash,0,✅✅✅✅,pppp,input/incoder/hash/159.txt,[],[]
+sha3_512,dash,sha1,💀💀💀✅,eeep,input/incoder/hash/160.txt,[],"[""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined"", ""name 'sha3_512' is not defined""]"
+sha3_512,dash,md5,✅✅✅✅,pppp,input/incoder/hash/161.txt,[],[]
