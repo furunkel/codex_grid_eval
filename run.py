@@ -407,6 +407,10 @@ class Main:
             ]
 
             cat_df = pd.concat([codex_df, *other_dfs], axis=1)
+            cols = cat_df.columns
+            cols = [col for col in cols if 'emoji' in col] + [col for col in cols if 'emoji' not in col]
+            cat_df = cat_df[cols]
+
             out_dir = Path('reports') / 'all'
             out_dir.mkdir(exist_ok=True, parents=True)
             cat_df.to_csv(out_dir / f"report_{problem}.csv", index=False)
