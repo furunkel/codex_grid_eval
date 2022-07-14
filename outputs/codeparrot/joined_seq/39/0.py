@@ -1,35 +1,31 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns False if the input string contains sequences of lowercase letters joined with a dash and True otherwise.
     """
+    return text.replace('-', '').replace('.', '').replace('-', '')
 
-def split_sequence(text):
-    """
-    Split a string into a list of words.
-    """
-    return text.split()
 
-def split_sequence_with_dash(text):
+def get_text_list(text):
     """
-    Split a string into a list of words, separated by dashes.
+    Return a list of the words in the text.
     """
-    return text.split('-')
+    return [word.lower() for word in text.split()]
 
-def split_sequence_with_underscore(text):
-    """
-    Split a string into a list of words, separated by underscores.
-    """
-    return text.split('_')
 
-def split_sequence_with_underscore_and_dash(text):
+def get_text_list_from_file(file_name):
     """
-    Split a string into a list of words, separated by underscores, and then a dash.
+    Return a list of the words in the text file.
     """
-    return text.split('_') + text.split('_') + text.split('_')
+    with open(file_name, 'r') as f:
+        return [word.lower() for word in f.read().split()]
 
-def split_sequence_with_underscore_and_dash_and_underscore(text):
+
+def get_text_list_from_file_with_spaces(file_name):
     """
-    Split a string into a list of words, separated by underscores, and then a dash.
+    Return a list of the words in the text file with spaces removed.
     """
-    return text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') + text.split('_') +
+    with open(file_name, 'r') as f:
+        return [word.lower() for word in f.read().split()]
+
+
+def get_text_list_from_file_with_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and_spaces_and

@@ -1,69 +1,59 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[0]
 
-def g(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the greatest eleventh value.
-    """
 
-def h(lst):
+def f_list(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest hundred value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[1]
 
-def i(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest i.
-    """
 
-def j(lst):
+def f_tuple(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest j.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[0]
 
-def k(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest k.
-    """
 
-def l(lst):
+def f_list_tuple(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest l.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[1]
 
-def m(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest m.
-    """
 
-def n(lst):
+def f_tuple_list(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest n.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[1]
 
-def o(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest o.
-    """
 
-def p(lst):
+def f_tuple_tuple(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest p.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[1]
 
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest q.
-    """
 
-def r(lst):
+def f_tuple_list_tuple(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest r.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[1]
 
-def s(lst):
+
+def f_tuple_tuple_list(lst):
     """
-    Given a list of tuples, write a function that returns
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
+    """
+    return max(lst, key=lambda x: x[1])[1]
+
+
+def f_tuple_dict(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth

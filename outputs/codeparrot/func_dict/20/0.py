@@ -1,4 +1,3 @@
-
 def generate_dict(n):
     """
     With a given integral number n, write a program to generate a dictionary that contains (i, sqrt(i)) such that
@@ -10,15 +9,11 @@ def generate_dict(n):
     {1: 1.0, 2: 1.414, 3: 1.732}
 
     """
-#    n = int(n)
-    if n == 1:
-        return {1: 1.0}
-    elif n == 2:
-        return {1: 1.0, 2: 1.414, 3: 1.732}
-    elif n == 3:
-        return {1: 1.0, 2: 1.414, 3: 1.732}
-    else:
-        return {1: 1.0, 2: 1.414, 3: 1.732}
+    d = {}
+    for i in range(1, n + 1):
+        d[i] = (i - 1) * (i - 1) / (i - 1)
+    return d
+
 
 def generate_list(n):
     """
@@ -28,20 +23,33 @@ def generate_list(n):
     Suppose the following input is supplied to the function:
     3
     Then, the output should be:
-    [1, sqrt(i)]
+    [1, 1.0, 2, 1.414, 3]
 
     """
-#    n = int(n)
-    if n == 1:
-        return [1]
-    elif n == 2:
-        return [1.0, sqrt(i)]
-    elif n == 3:
-        return [1.0, sqrt(i)]
-    else:
-        return [1.0, sqrt(i)]
+    l = []
+    for i in range(1, n + 1):
+        l.append(i)
+    return l
 
-def generate_dict_list(n):
+
+def generate_dict_with_list(n):
+    """
+    With a given integral number n, write a program to generate a dictionary that contains (i, sqrt(i)) such that
+    i is a integral number between 1 and n (both included) and then the program should return the dictionary.
+    
+    Suppose the following input is supplied to the function:
+    3
+    Then, the output should be:
+    {1: 1.0, 2: 1.414, 3: 1.732}
+
+    """
+    d = {}
+    for i in range(1, n + 1):
+        d[i] = (i - 1) * (i - 1) / (i - 1)
+    return d
+
+
+def generate_list_with_dict(n):
     """
     With a given integral number n, write a program to generate a list that contains (i, sqrt(i)) such that
     i is a integral number between 1 and n (both included) and then the program should return the list.
@@ -49,13 +57,4 @@ def generate_dict_list(n):
     Suppose the following input is supplied to the function:
     3
     Then, the output should be:
-    [1, sqrt(i)]
-
-    """
-#    n = int(n)
-    if n == 1:
-        return [1]
-    elif n == 2:
-        return [1.0, sqrt(i)]
-    elif n == 3:
-        return [1.0, sqrt(i
+    {1: 1.

@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its SHA384 hash equivalent string.
@@ -6,34 +5,55 @@ def string_to_hash(text):
 
     >>> string_to_hash('sha1') == 'cabe55f9f3eacf745c21036be01612761f1f209fb413243d12c32f98adfe3dc22f7450608a51a63d7576f4788b992679'
     """
+    if not text:
+        return None
+    return hashlib.sha384(text.encode('utf-8')).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_int('sha1') == 'cabe55f9f3eacf745c21036be01612761f1f209fb413243d12c32f98adfe3dc22f7450608a51a63d7576f4788b992679'
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha384(f.read(block_size)).hexdigest()
 
-def string_to_bool(text):
+
+def get_file_hash_from_file(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_bool('sha1') == 'cabe55f9f3eacf745c21036be01612761f1f209fb413243d12c32f98adfe3dc22f7450608a51a63d7576f4788b992679'
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha384(f.read(block_size)).hexdigest()
 
-def string_to_datetime(text):
+
+def get_file_hash_from_url(url, block_size=2 ** 20):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_datetime('sha1') == 'cabe55f9f3eacf745c21036be01612761f1f209fb413243d12c32f98adfe3dc22f7450608a51a63d7576f4788b992679'
+    :param url: The url to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    return get_file_hash_from_file(url, block_size)
 
-def string_to_time(text):
+
+def get_file_hash_from_file_url(url, block_size=2 ** 20):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_time('sha1') == 'cabe55f9f3eacf745c21036be01612761f1f209fb41
+    :param url: The url to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
+    """
+    return get_file_hash_from_file(url, block_size)
+
+
+def get_file_hash_from_string(string

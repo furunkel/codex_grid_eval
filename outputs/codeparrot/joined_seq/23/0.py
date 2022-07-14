@@ -1,52 +1,31 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns True if the input string contains sequences of lowercase letters joined with a plus and False otherwise.
     """
+    return text.lower().replace(' ', '')
 
-def split_sequence(text):
-    """
-    Splits a string into a list of strings, each of which is a sequence of characters.
-    """
 
-def split_sequence_with_punctuation(text):
+def get_random_string(length):
     """
-    Splits a string into a list of strings, each of which is a sequence of characters.
+    Returns a random string of length length.
     """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def split_sequence_with_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of strings, each of which is a sequence of characters.
-    """
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation(text):
+def get_random_string_with_length(length):
     """
-    Splits a string into a list of strings, each of which is a sequence of characters.
+    Returns a random string of length length.
     """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of strings, each of which is a sequence of characters.
-    """
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation(text):
+def get_random_string_with_length_and_random_string(length, random_string):
     """
-    Splits a string into a list of strings, each of which is a sequence of characters.
+    Returns a random string of length length and random string of length length + random_string.
     """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length)) + random_string
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of strings, each of which is a sequence of characters.
-    """
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation(text):
+def get_random_string_with_length_and_random_string_with_random_string(length, random_string):
     """
-    Splits a string into a list of strings, each of which is a sequence of characters.
-    """
-
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of strings, each of which is a sequence of characters.
-    """
-
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation
+    Returns a random string of length length and random string of length length + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string + random_string +

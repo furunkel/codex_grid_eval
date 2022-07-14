@@ -1,74 +1,75 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest last value.
     """
+    return max(lst, key=lst.count)
+
 
 def g(lst):
     """
     Given a list of tuples, write a function that returns the smallest value of the tuple with the largest first value.
     """
+    return min(lst, key=lst.count)
+
 
 def h(lst):
     """
     Given a list of tuples, write a function that returns the largest value of the tuple with the smallest first value.
     """
+    return max(lst, key=lst.count)
+
 
 def i(lst):
     """
     Given a list of tuples, write a function that returns the smallest value of the tuple with the largest first value.
     """
+    return min(lst, key=lst.count)
+
 
 def j(lst):
     """
-    Given a list of tuples, write a function that returns the smallest value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the largest value of the tuple with the largest first value.
     """
+    return max(lst, key=lst.count)
+
 
 def k(lst):
     """
-    Given a list of tuples, write a function that returns the smallest value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the smallest value of the tuple with the smallest first value.
     """
+    return min(lst, key=lst.count)
+
 
 def l(lst):
     """
     Given a list of tuples, write a function that returns the largest value of the tuple with the largest first value.
     """
+    return max(lst, key=lst.count)
+
 
 def m(lst):
     """
     Given a list of tuples, write a function that returns the largest value of the tuple with the largest first value.
     """
+    return min(lst, key=lst.count)
+
 
 def n(lst):
     """
     Given a list of tuples, write a function that returns the largest value of the tuple with the largest first value.
     """
+    return max(lst, key=lst.count)
+
 
 def o(lst):
     """
     Given a list of tuples, write a function that returns the largest value of the tuple with the largest first value.
     """
+    return min(lst, key=lst.count)
+
 
 def p(lst):
     """
     Given a list of tuples, write a function that returns the largest value of the tuple with the largest first value.
     """
-
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the largest value of the tuple with the largest first value.
-    """
-
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the largest value of the tuple with the largest first value.
-    """
-
-def s(lst):
-    """
-    Given a list of tuples, write a function that returns the largest value of the tuple with the largest first value.
-    """
-
-def t(lst):
-    """
-    Given a list of tuples, write a function that returns
+    return max(lst, key

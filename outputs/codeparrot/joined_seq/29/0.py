@@ -1,51 +1,47 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns False if the input string contains sequences of lowercase letters joined with an underscore and True otherwise.
     """
+    return ''.join(c for c in text if c.islower())
 
-def split_sequence(text):
-    """
-    Splits a string into a list of words.
-    """
-    return [word.strip() for word in text.split()]
 
-def split_string(text):
+def get_unique_words(text):
     """
-    Splits a string into a list of words.
+    Return a list of unique words in the given text.
     """
-    return [word.strip() for word in text.split()]
+    return [word for word in text.split() if word not in STOPWORDS]
 
-def split_string_list(text):
-    """
-    Splits a string into a list of words.
-    """
-    return [word.strip() for word in text.split()]
 
-def split_string_list_with_punctuation(text):
+def get_unique_words_with_length(text):
     """
-    Splits a string into a list of words, punctuation and punctuation.
+    Return a list of unique words in the given text, where each word is a unique word.
     """
-    return [word.strip() for word in text.split() if word not in punctuation]
+    return [word for word in text.split() if len(word) > 1]
 
-def split_string_list_with_punctuation_and_punctuation(text):
-    """
-    Splits a string into a list of words, punctuation and punctuation and punctuation.
-    """
-    return [word.strip() for word in text.split() if word not in punctuation and word not in punctuation]
 
-def split_string_list_with_punctuation_and_punctuation_and_punctuation(text):
+def get_unique_words_with_punctuation(text):
     """
-    Splits a string into a list of words, punctuation and punctuation and punctuation.
+    Return a list of unique words in the given text, where each word is a unique word.
     """
-    return [word.strip() for word in text.split() if word not in punctuation and word not in punctuation and word not in punctuation]
+    return [word for word in text.split() if word not in PUNCTUATION_PUNCTUATION]
 
-def split_string_list_with_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation(text):
-    """
-    Splits a string into a list of words, punctuation and punctuation and punctuation and punctuation and punctuation.
-    """
-    return [word.strip() for word in text.split() if word not in punctuation and word not in punctuation and word not in punctuation and word not in punctuation and word not in punctuation]
 
-def split_string_list_with_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation(text):
+def get_unique_words_with_punctuation_and_spaces(text):
     """
-    Splits a string into a list of words, punctuation and punctuation and punctuation and punctuation and punctuation and punctuation and punctuation and punctuation and punctuation and
+    Return a list of unique words in the given text, where each word is a unique word.
+    """
+    return [word for word in text.split() if len(word) > 1]
+
+
+def get_unique_words_with_punctuation_and_spaces_and_punctuation(text):
+    """
+    Return a list of unique words in the given text, where each word is a unique word.
+    """
+    return [word for word in text.split() if len(word) > 1 and word not in PUNCTUATION_PUNCTUATION and word not in PUNCTUATION_PUNCTUATION_PUNCTUATION_PUNCTUATION_PUNCTUATION]
+
+
+def get_unique_words_with_punctuation_and_spaces_and_punctuation_and_punctuation(text):
+    """
+    Return a list of unique words in the given text, where each word is a unique word.
+    """
+    return [word for word in text.split() if len(word) > 1 and word not in PUNCTUATION_PUNCTUATION and word not in PUNCTUATION_PUNCTUATION_PUNCTUATION_PUNCTUATION_PUNCT

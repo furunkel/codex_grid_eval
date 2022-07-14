@@ -1,54 +1,33 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest twelfth value.
     """
-#    print(lst)
-    twelfth = 0
-    for i in range(len(lst)):
-        twelfth += lst[i][0]
-    return twelfth
+    return max(lst, key=lst.count)
 
-def fibonacci_twelfth(lst):
+
+def fibonacci_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest twelfth value.
     """
-#    print(lst)
-    twelfth = 0
-    for i in range(len(lst)):
-        twelfth += lst[i][1]
-    return twelfth
+    return min(lst, key=lst.count)
 
-def fibonacci_twelfth_twelfth(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest twelfth value.
-    """
-#    print(lst)
-    twelfth = 0
-    for i in range(len(lst)):
-        twelfth += lst[i][1]
-    return twelfth
 
-def fibonacci_twelfth_twelfth_twelfth(lst):
+def fibonacci_with_min_max_and_min(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest twelfth value.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest twelfth value and the smallest twelfth value.
     """
-#    print(lst)
-    twelfth = 0
-    for i in range(len(lst)):
-        twelfth += lst[i][1]
-    return twelfth
+    return min(lst, key=lst.count), max(lst, key=lst.count), min(lst, key=lst.count)
 
-def fibonacci_twelfth_twelfth_twelfth(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest twelfth value.
-    """
-#    print(lst)
-    twelfth = 0
-    for i in range(len(lst)):
-        twelfth += lst[i][1]
-    return twelfth
 
-def fibonacci_twelfth_twelfth_twelfth_twelfth(lst):
+def fibonacci_with_min_max_and_min_and_max(lst):
     """
-    Given a list of
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest twelfth value and the smallest twelfth value and the smallest twelfth value.
+    """
+    return min(lst, key=lst.count), max(lst, key=lst.count), min(lst, key=lst.count), max(lst, key=lst.count), min(lst, key=lst.count), max(lst, key=lst.count)
+
+
+def fibonacci_with_min_max_and_min_and_max_and_min(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest twelfth value and the smallest twelfth value and the smallest twelfth value and the smallest twelfth value.
+    """
+    return min(lst, key=lst.count), max(lst, key=lst.count), min(lst, key=lst.count), max(lst, key=lst.count), min(lst, key=lst.count), max(lst, key=lst.count), min(lst, key=lst.count), max(lst, key=lst.

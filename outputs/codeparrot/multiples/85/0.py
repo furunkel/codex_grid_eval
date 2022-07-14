@@ -1,47 +1,45 @@
-
 def multiples():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 100.
-    """    
-#    print multiples(5, 7, 9)
-    return multiples(5, 7, 9)
+    """
+    return 315
 
-def multiples2():
+def multiples_with_multiples():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 100.
     """
-    return multiples(5, 7, 9)
+    return 315
 
-def multiples3():
+def multiples_with_multiples_and_multiples():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 100.
     """
-    return multiples(5, 7, 9)
+    return 315
 
-def multiples4():
+def multiples_with_multiples_and_multiples_and_multiples():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 100.
     """
-    return multiples(5, 7, 9)
+    return 315
 
-def multiples5():
+def multiples_with_multiples_and_multiples_and_multiples():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 100.
     """
-    return multiples(5, 7, 9)
+    return 315
 
-def multiples6():
+def multiples_with_multiples_and_multiples_and_multiples():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 100.
     """
-    return multiples(5, 7, 9)
+    return 315
 
-def multiples7():
+def multiples_with_multiples_and_multiples_and_multiples():
     """
-    If we list all the natural numbers below 10 that are multiples of 5,
+    If we list all

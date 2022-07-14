@@ -1,59 +1,60 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count)
 
-def tuple_extract_last(lst):
+
+def tuple_extract_with_max(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count, reverse=True)
 
-def tuple_extract_first(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
-    """
 
-def tuple_extract_last_last(lst):
+def tuple_extract_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
     """
+    return min(lst, key=lst.count, reverse=True)
 
-def tuple_extract_first_last(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
-    """
 
-def tuple_extract_last_last(lst):
+def tuple_extract_with_sum(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the last value of the tuple with the sum of the values.
     """
+    return sum(lst, key=lst.count)
 
-def tuple_extract_first_last_last(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
-    """
 
-def tuple_extract_last_first_last(lst):
+def tuple_extract_with_count(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the last value of the tuple with the count of the values.
     """
+    return sum(lst, key=lst.count)
 
-def tuple_extract_first_last_last(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
-    """
 
-def tuple_extract_last_last_last(lst):
+def tuple_extract_with_sum_and_count(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the last value of the tuple with the sum and count of the values.
     """
+    return sum(lst, key=lst.count, reverse=True)
 
-def tuple_extract_first_last_last_last(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
-    """
 
-def tuple_extract_last_last_last(lst):
+def tuple_extract_with_min_and_max(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest and largest values.
+    """
+    return min(lst, key=lst.count, reverse=True)
+
+
+def tuple_extract_with_max_and_min(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest and smallest values.
+    """
+    return max(lst, key=lst.count, reverse=True)
+
+
+def tuple_extract_with_min_and_max_and_count(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest and largest values.
+   

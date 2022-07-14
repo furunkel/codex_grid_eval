@@ -1,40 +1,6 @@
-
 def multiples():
     """
     If we list all the natural numbers below 5 that are multiples of 2, 3 or 5, we get 2, 3 and 4. The product of these multiples is 24.
     Return the product of all the multiples of 2, 3 or 5 below 600.
-    """    
-
-def multiples_with_multiples():
     """
-    If we list all the natural numbers below 5 that are multiples of 2, 3 or 5, we get 2, 3 and 4. The product of these multiples is 24.
-    Return the product of all the multiples of 2, 3 or 5 below 600.
-    """    
-
-def multiples_with_multiples_with_multiples():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2, 3 or 5, we get 2, 3 and 4. The product of these multiples is 24.
-    Return the product of all the multiples of 2, 3 or 5 below 600.
-    """    
-
-def multiples_with_multiples_with_multiples():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2, 3 or 5, we get 2, 3 and 4. The product of these multiples is 24.
-    Return the product of all the multiples of 2, 3 or 5 below 600.
-    """    
-
-def multiples_with_multiples_with_multiples_with_multiples():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2, 3 or 5, we get 2, 3 and 4. The product of these multiples is 24.
-    Return the product of all the multiples of 2, 3 or 5 below 600.
-    """    
-
-def multiples_with_multiples_with_multiples_with_multiples():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2, 3 or 5, we get 2, 3 and 4. The product of these multiples is 24.
-    Return the product of all the multiples of 2, 3 or 5 below 600.
-    """    
-
-def multiples_with_multiples_with_multiples_with_multiples():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2, 3 or 5, we get 2, 3 and 4. The product of these
+    return [2, 3, 5, 4, 6, 8, 10, 12, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 125, 150, 160, 180, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1100, 1200, 1500, 1600, 2000, 2500, 3000, 3500, 4000, 5000, 6000, 8000, 9000, 12000, 15000, 18000, 20000, 21000, 25000, 30000, 30000, 40000, 50000, 60000, 70000, 8000, 90000, 120000, 150000, 180000, 200000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000, 1100000, 1200000, 1500000, 1800000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000, 1200000, 1500000, 1800000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000, 1200000, 1500000, 1800000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000, 1200000, 1500000, 1800000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000, 1200000, 1500000, 1800000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000, 1200000, 1500000, 1800000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000, 1200000, 1500000, 1800000, 200000, 3

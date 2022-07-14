@@ -1,47 +1,57 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns True if the input string contains sequences of lowercase letters joined with an underscore and False otherwise.
     """
+    return text.lower() in string.lowercase
 
-def split_sequence(text):
-    """
-    Splits a string into a list of words.
-    """
 
-def split_sequence_with_punctuation(text):
+def get_all_words(text):
     """
-    Splits a string into a list of words, punctuation and punctuation characters.
+    Return a list of all words in the given text.
     """
+    return [word for word in text.split() if word not in stopwords.words('english')]
 
-def split_sequence_with_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of words, punctuation and whitespace characters.
-    """
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation(text):
+def get_all_sentences(text):
     """
-    Splits a string into a list of words, punctuation and whitespace characters.
+    Return a list of all sentences in the given text.
     """
+    return [sentence for sentence in text.split() if sentence not in stopwords.words('english')]
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of words, punctuation and whitespace characters.
-    """
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation(text):
+def get_all_words_and_sentences(text):
     """
-    Splits a string into a list of words, punctuation and whitespace characters.
+    Return a list of all words and sentences in the given text.
     """
+    return [word for word in text.split() for sentence in get_all_sentences(text)]
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of words, punctuation and whitespace characters.
-    """
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation(text):
+def get_all_sentences_and_words(text):
     """
-    Splits a string into a list of words, punctuation and whitespace characters.
+    Return a list of all sentences and words in the given text.
     """
+    return [sentence for sentence in get_all_sentences(text)] + get_all_words(text)
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and
+
+def get_all_words_and_sentences_and_words(text):
+    """
+    Return a list of all words and sentences and words in the given text.
+    """
+    return [word for word in get_all_words_and_sentences(text)] + get_all_words_and_sentences(text) + get_all_sentences_and_words(text)
+
+
+def get_all_sentences_and_words_and_sentences(text):
+    """
+    Return a list of all sentences and words in the given text.
+    """
+    return [sentence for sentence in get_all_sentences_and_words_and_sentences(text)] + get_all_words_and_sentences(text)
+
+
+def get_all_words_and_sentences_and_words_and_sentences(text):
+    """
+    Return a list of all words and sentences and words in the given text.
+    """
+    return [word for word in get_all_words_and_sentences_and_words_and_sentences(text)] + get_all_words_and_sentences_and_words_and_sentences(text)
+
+
+def get_all_sentences

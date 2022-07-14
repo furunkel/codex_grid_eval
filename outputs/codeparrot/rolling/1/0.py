@@ -1,62 +1,56 @@
-
 def rolling_min(numbers: List[int]) -> List[int]:
     """ From a given list of integers, generate a list of rolling minimum element found until given moment
     in the sequence.
     >>> rolling_min([1, 2, 2, 2])
     [1, 1, 1, 1]
     """
-<|endoftext|># -*- coding: utf-8 -*-
-#
-# Copyright (C) Pootle contributors.
-#
-# This file is a part of the Pootle project. It is distributed under the GPL3
-# or later license. See the LICENSE file for a copy of the license and the
-# AUTHORS file for copyright and authorship information.
-
-from django.conf import settings
-from django.core.exceptions import ValidationError
-from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
-
-from pootle.core.mixins import CachedTreeItem
-from pootle.core.url_helpers import get_editor_filter
-from pootle.core.utils.timezone import make_aware
-from pootle_misc.checks import check_names
-from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
-from pootle_store.models import Unit
+    return [min(numbers)]
 
 
-class UnitManager(models.Manager):
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 2, 2])
+    [1, 1, 1, 1]
+    """
+    return [max(numbers)]
 
-    def get_queryset(self):
-        return Unit.objects.filter(store=self.model)
 
-    def get_by_path(self, path):
-        return self.get(pootle_path=path)
+def rolling_avg(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling average element found until given moment
+    in the sequence.
+    >>> rolling_avg([1, 2, 2, 2])
+    [1, 1, 1, 1]
+    """
+    return [sum(numbers)]
 
 
-@python_2_unicode_compatible
-class Unit(models.Model, CachedTreeItem):
+def rolling_std(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling standard deviation element found until given moment
+    in the sequence.
+    >>> rolling_std([1, 2, 2, 2])
+    [1, 1, 1, 1]
+    """
+    return [std(numbers)]
 
-    store = models.ForeignKey(
-        Store,
-        on_delete=models.CASCADE,
-        related_name='stores',
-        verbose_name=_("Store"),
-        related_query_name='stores',
-    )
-    parent = models.ForeignKey(
-        "pootle_store.Unit",
-        on_delete=models.CASCADE,
-        related_name="children",
-        verbose_name=_("Parent"),
-        related_query_name='children',
-    )
-    name = models.CharField(
-        max_length=255,
-        verbose_name=_("Name"),
-        help_text=_("The name of the unit, e.g. 'pootle.unit'."),
-    )
-    parent_path = models.CharField(
-        max_length=255,
-        verbose_name=_("Parent path
+
+def rolling_var(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling variance element found until given moment
+    in the sequence.
+    >>> rolling_var([1, 2, 2, 2])
+    [1, 1, 1, 1]
+    """
+    return [var(numbers)]
+
+
+def rolling_skewness(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling skewness element found until given moment
+    in the sequence.
+    >>> rolling_skewness([1, 2, 2, 2])
+    [1, 1, 1, 1]
+    """
+    return [skewness(numbers)]
+
+
+def rolling_kurtosis(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling

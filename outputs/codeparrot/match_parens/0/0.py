@@ -1,4 +1,3 @@
-
 def match_parentheses(lst):
     '''
     You are given a list of two strings, both strings consist of open
@@ -14,6 +13,12 @@ def match_parentheses(lst):
     match_parens(['()(', ')']) == 'Yes'
     match_parens([')', ')']) == 'No'
     '''
+    if len(lst) == 0:
+        return True
+    elif len(lst) == 1:
+        return lst[0]
+    else:
+        return False
 
 def match_parenthesis(lst):
     '''
@@ -30,6 +35,12 @@ def match_parenthesis(lst):
     match_parenthesis(['()(', ')']) == 'Yes'
     match_parenthesis([')', ')']) == 'No'
     '''
+    if len(lst) == 0:
+        return True
+    elif len(lst) == 1:
+        return lst[0]
+    else:
+        return False
 
 def match_parenthesis_no_parens(lst):
     '''
@@ -40,11 +51,4 @@ def match_parenthesis_no_parens(lst):
     A string S is considered to be good if and only if all parentheses in S
     are balanced. For example: the string '(())()' is good, while the string
     '())' is not.
-    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.
-
-    Examples:
-    match_parenthesis_no_parens(['()(', ')']) == 'Yes'
-    match_parenthesis_no_parens([')', ')']) == 'No'
-    '''
-
-def match_parenthesis_no_parens_no_parens
+    Return 'Yes' if there's a way to make a good

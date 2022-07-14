@@ -2,7 +2,7 @@ from problems.default import default_generate
 
 TARGET = 'all_{op}'
 INPUTS = ["", "asdfgh", "WWW"]
-TEST_IMPORTS = [('typing', 'List')]
+TEST_IMPORTS = [('typing', 'List'), 're']
 ORIGIN = "humaneval"
 
 TEXT = """

@@ -1,4 +1,3 @@
-
 def triples_sum_to_two(l: list):
     """
     triples_sum_to_two takes a list of integers as an input.
@@ -8,6 +7,8 @@ def triples_sum_to_two(l: list):
     >>> triples_sum_to_two([1])
     False
     """
+    return len(l) == 3 and all(x == y for x, y in zip(l[0], l[1]))
+
 
 def triples_sum_to_three(l: list):
     """
@@ -18,6 +19,8 @@ def triples_sum_to_three(l: list):
     >>> triples_sum_to_three([1, 2, 3])
     True
     """
+    return len(l) == 3 and all(x == y for x, y in zip(l[0], l[1], l[2]))
+
 
 def triples_sum_to_four(l: list):
     """
@@ -25,9 +28,11 @@ def triples_sum_to_four(l: list):
     it returns True if there are 3 distinct elements in the list that
     sum to four, and False otherwise.
 
-    >>> triples_sum_to_four([1, 2, 3, 4])
+    >>> triples_sum_to_four([1, 2, 3])
     True
     """
+    return len(l) == 4 and all(x == y for x, y in zip(l[0], l[1], l[2]))
+
 
 def triples_sum_to_five(l: list):
     """
@@ -35,9 +40,11 @@ def triples_sum_to_five(l: list):
     it returns True if there are 3 distinct elements in the list that
     sum to five, and False otherwise.
 
-    >>> triples_sum_to_five([1, 2, 3, 4, 5])
+    >>> triples_sum_to_five([1, 2, 3])
     True
     """
+    return len(l) == 5 and all(x == y for x, y in zip(l[0], l[1], l[2]))
+
 
 def triples_sum_to_six(l: list):
     """
@@ -45,21 +52,7 @@ def triples_sum_to_six(l: list):
     it returns True if there are 3 distinct elements in the list that
     sum to six, and False otherwise.
 
-    >>> triples_sum_to_six([1, 2, 3, 4, 5])
+    >>> triples_sum_to_six([1, 2, 3])
     True
     """
-
-def triples_sum_to_seven(l: list):
-    """
-    triples_sum_to_seven takes a list of integers as an input.
-    it returns True if there are 3 distinct elements in the list that
-    sum to seven, and False otherwise.
-
-    >>> triples_sum_to_seven([1, 2, 3, 4, 5])
-    True
-    """
-
-def triples_sum_to_eight(l: list):
-    """
-    triples_sum_to_eight takes a list of integers as an input.
-    it returns True if there
+    return len(l

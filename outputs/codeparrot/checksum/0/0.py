@@ -1,4 +1,3 @@
-
 def checksum(string):
     """
     Given a string, convert each character in the string into its integer ASCII value, sum them,
@@ -6,55 +5,58 @@ def checksum(string):
     into its corresponding character (the checksum character).
     The program must print "Check sum is X", where X is replaced by the correct checksum character.
     """
+    sum = 0
+    for c in string:
+        sum = sum * 256 + ord(c)
+    return sum % 64
+
 
 def main():
     """
-    Main function.
+    Main function
     """
-    # Create an array of strings
-    strings = []
-    for i in range(0, len(sys.argv)):
-        strings.append(sys.argv[i])
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Check sum of a given string')
+    parser.add_argument('-i', '--input', help='The input string to check sum of')
+    parser.add_argument('-o', '--output', help='The output string to check sum of')
+    parser.add_argument('-v', '--verbose', help='Verbose output', action='store_true')
+    args = parser.parse_args()
 
-    # Create a list of strings
-    strings_list = []
-    for i in range(0, len(strings)):
-        strings_list.append(strings[i])
+    # Check sum of
+    if args.input == None or args.output == None:
+        print "Error: No input string specified"
+        sys.exit(1)
 
-    # Create a list of strings
-    strings_list_2 = []
-    for i in range(0, len(strings_list)):
-        strings_list_2.append(strings_list[i])
+    # Check sum of
+    if args.input != None and args.output != None:
+        print "Error: Both input and output must be specified"
+        sys.exit(1)
 
-    # Create a list of strings
-    strings_list_3 = []
-    for i in range(0, len(strings_list_2)):
-        strings_list_3.append(strings_list_2[i])
+    # Check sum of
+    if args.input != None and args.output == None:
+        print "Error: Both input and output must be specified"
+        sys.exit(1)
 
-    # Create a list of strings
-    strings_list_4 = []
-    for i in range(0, len(strings_list_3)):
-        strings_list_4.append(strings_list_3[i])
+    # Check sum of
+    if args.input != None and args.output != None:
+        print "Error: Both input and output must be specified"
+        sys.exit(1)
 
-    # Create a list of strings
-    strings_list_5 = []
-    for i in range(0, len(strings_list_4)):
-        strings_list_5.append(strings_list_4[i])
+    # Check sum of
+    if args.input != None and args.output != None:
+        print "Error: Both input and output must be specified"
+        sys.exit(1)
 
-    # Create a list of strings
-    strings_list_6 = []
-    for i in range(0, len(strings_list_5)):
-        strings_list_6.append(strings_list_5[i])
+    # Check sum of
+    if args.input != None and args.output != None:
+        print "Error: Both input and output must be specified"
+        sys.exit(1)
 
-    # Create a list of strings
-    strings_list_7 = []
-    for i in range(0, len(strings_list_6)):
-        strings_list_7.append(strings_list_6[i])
+    # Check sum of
+    if args.input != None and args.output != None:
+        print "Error: Both input and output must be specified"
+        sys.exit(1)
 
-    # Create a list of strings
-    strings_list_8 = []
-    for i in range(0, len(strings_list_7)):
-        strings_list_8.append(strings_list_7[i])
-
-    # Create a list of strings
-    strings_list_
+    # Check sum of
+    if args.input != None and args.output != None:
+        print "Error:

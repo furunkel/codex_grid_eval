@@ -1,4 +1,3 @@
-
 def solve(s):
     """You are given a string s.
     if s[i] is a consonant, reverse its case from lower to upper or vise versa, 
@@ -11,38 +10,47 @@ def solve(s):
     solve("ab") = "Ba"
     solve("#a@C") = "c@a#"
     """
+    if not s:
+        return s
+    if s[0] == s[-1] == '"':
+        return s[1:-1]
+    else:
+        return s[1:] + s[0:-1]
 
-def main():
-    pass
+def solve_all(s):
+    """You are given a string s.
+    if s[i] is a consonant, reverse its case from lower to upper or vise versa, 
+    otherwise keep it as it is.
+    If the string contains no question marks, reverse the string.
+    The function should return the resulted string.
+    Examples
+    solve_all("1234") = "4321"
+    solve_all("1234?") = "1234?"
+    solve_all("ab") = "Ba"
+    solve_all("#a@C") = "c@a#"
+    """
+    if not s:
+        return s
+    if s[0] == s[-1] == '"':
+        return s[1:-1]
+    else:
+        return s[1:] + s[0:-1]
 
-if __name__ == "__main__":
-    main()
-<|endoftext|># -*- coding: utf-8 -*-
-#
-# Copyright (C) Pootle contributors.
-#
-# This file is a part of the Pootle project. It is distributed under the GPL3
-# or later license. See the LICENSE file for a copy of the license and the
-# AUTHORS file for copyright and authorship information.
-
-from django.conf import settings
-from django.core.urlresolvers import reverse
-from django.db import models
-from django.utils.functional import cached_property
-
-from pootle.core.delegate import revision
-from pootle.core.url_helpers import split_pootle_path
-from pootle.core.utils.timezone import datetime_min
-from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
-from pootle_store.models import Unit
-from pootle_store.util import absolute_real_path
-from pootle_store.util import relative_real_path
-from pootle_store.util import statsd
-from pootle_store.util.stats import (
-    get_total_words, get_translated_words, get_total_words_fuzzy,
-    get_total_words_fuzzy_nofuzzy, get_total_words_nofuzzy,
-    get_total_words_nofuzzy_nofuzzy, get_translated_words_nofuzzy,
-    get_translated_words_nofuzzy_nofuzzy, get_total_words_nofuzzy_nofuzzy,
-    get_total_words_nofuzzy_nofuzzy, get_total_words_nofuzzy_nofuzzy,
-    get_total_words_nofuzzy_nofuzzy_nofuzzy, get_total_words_nofuzzy_nofuzzy,
-    get
+def solve_all_no_question(s):
+    """You are given a string s.
+    if s[i] is a consonant, reverse its case from lower to upper or vise versa, 
+    otherwise keep it as it is.
+    If the string contains no question marks, reverse the string.
+    The function should return the resulted string.
+    Examples
+    solve_all_no_question("1234") = "4321"
+    solve_all_no_question("1234?") = "1234?"
+    solve_all_no_question("ab") = "Ba"
+    solve_all_no_question("#a@C") = "c@a#"
+    """
+    if not s:
+        return s
+    if s[0] == s[-1] == '"':
+        return s[1:-1]
+    else:
+       

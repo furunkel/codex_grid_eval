@@ -1,46 +1,57 @@
-
 def min_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest last value.
     """
-#    print(lst)
     return max(lst, key=lst.count)
 
-def min_max_by_key(lst):
+def max_min(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest last value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
     """
-#    print(lst)
-    return max(lst, key=lst.count, reverse=True)
+    return min(lst, key=lst.count)
 
-def min_max_by_value(lst):
+def min_max_min(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest last value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
     """
-#    print(lst)
-    return max(lst, key=lst.count, reverse=True, reverse_index=True)
+    return max(lst, key=lst.count)
 
-def min_max_by_key_by_value(lst):
+def max_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest last value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest first value.
     """
-#    print(lst)
-    return max(lst, key=lst.count, reverse=True, reverse_index=True, reverse_value=True)
+    return min(lst, key=lst.count)
 
-def min_max_by_key_by_value_by_key(lst):
+def min_max_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest last value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
     """
-#    print(lst)
-    return max(lst, key=lst.count, reverse=True, reverse_index=True, reverse_value=True, reverse_index_by_value=True)
+    return min(lst, key=lst.count)
 
-def min_max_by_key_by_value_by_key(lst):
+def max_min_max_min(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest last value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest first value.
     """
-#    print(lst)
-    return max(lst, key=lst.count, reverse=True, reverse_index=True, reverse_value=True, reverse_index_by_value=True, reverse_value_by_key=True)
+    return min(lst, key=lst.count)
 
-def min_max_by_key_by_value_by_key(lst):
+def min_max_min_max_min(lst):
     """
-    Given a list
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
+    """
+    return min(lst, key=lst.count)
+
+def max_min_max_max(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest first value.
+    """
+    return max(lst, key=lst.count)
+
+def min_max_min_max_max(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
+    """
+    return min(lst, key=lst.count)
+
+def max_min_max_min_max(lst):
+    """
+   

@@ -1,59 +1,57 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lambda x: x[1])[0]
+
 
 def tuple_extract_with_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lambda x: x[1])[1]
+
 
 def tuple_extract_with_min(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest twelfth value.
     """
+    return min(lst, key=lambda x: x[1])[0]
+
 
 def tuple_extract_with_sum(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
     """
+    return sum(lst, key=lambda x: x[1])[0]
 
-def tuple_extract_with_product(lst):
+
+def tuple_extract_with_avg(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
     """
+    return sum(lst, key=lambda x: x[1])[1] / len(lst)
 
-def tuple_extract_with_multiply(lst):
+
+def tuple_extract_with_std(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
     """
+    return math.sqrt(sum(lst, key=lambda x: x[1]))
 
-def tuple_extract_with_divide(lst):
+
+def tuple_extract_with_var(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
     """
+    return math.sqrt(sum(lst, key=lambda x: x[1]))
 
-def tuple_extract_with_remainder(lst):
+
+def tuple_extract_with_std_var(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
     """
+    return math.sqrt(sum(lst, key=lambda x: x[1])) / len(lst)
 
-def tuple_extract_with_power(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
-    """
 
-def tuple_extract_with_log(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
-    """
-
-def tuple_extract_with_sqrt(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
-    """
-
-def tuple_extract_with_log2(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the
+def tuple_extract_with_var_and

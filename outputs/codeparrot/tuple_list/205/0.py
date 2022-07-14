@@ -1,57 +1,68 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the smallest last value.
     """
+    return tuple(lst[-1])
+
 
 def tuple_concat(lst):
     """
     Given a list of tuples, write a function that returns the fourth value of the tuple with the largest first value.
     """
+    return tuple(lst[-2])
+
 
 def tuple_slice(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest first value.
     """
+    return tuple(lst[start:stop])
 
-def tuple_slice_combine(lst, start, stop):
+
+def tuple_slice_list(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest first value.
     """
+    return tuple(lst[start:stop])
 
-def tuple_slice_combine_with_last(lst, start, stop):
+
+def tuple_slice_dict(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest first value.
     """
+    return tuple(lst[start:stop])
 
-def tuple_slice_combine_with_first(lst, start, stop):
+
+def tuple_slice_array(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest first value.
     """
+    return tuple(lst[start:stop])
 
-def tuple_slice_combine_with_last(lst, start, stop):
+
+def tuple_slice_string(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest first value.
     """
+    return tuple(lst[start:stop])
 
-def tuple_slice_combine_with_first_last(lst, start, stop):
+
+def tuple_slice_number(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest first value.
     """
+    return tuple(lst[start:stop])
 
-def tuple_slice_combine_with_last_last(lst, start, stop):
+
+def tuple_slice_boolean(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest first value.
     """
+    return tuple(lst[start:stop])
 
-def tuple_slice_combine_with_first_last_last(lst, start, stop):
+
+def tuple_slice_string_list(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest first value.
     """
-
-def tuple_slice_combine_with_last_last_last(lst, start, stop):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest first value.
-    """
-
-def tuple
+   

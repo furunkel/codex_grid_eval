@@ -1,59 +1,61 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count)
 
-def fibonacci_2(lst):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest eleventh value.
-    """
 
-def fibonacci_3(lst):
+def fibonacci_with_max(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the largest eleventh value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count)
 
-def fibonacci_4(lst):
-    """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the largest eleventh value.
-    """
 
-def fibonacci_5(lst):
+def fibonacci_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the seventh value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the smallest eleventh value of the tuple with the smallest eleventh value.
     """
+    return min(lst, key=lst.count)
 
-def fibonacci_6(lst):
-    """
-    Given a list of tuples, write a function that returns the eighth value of the tuple with the largest eleventh value.
-    """
 
-def fibonacci_7(lst):
+def fibonacci_with_sum(lst):
     """
-    Given a list of tuples, write a function that returns the nineth value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the sum of the elements in the tuple.
     """
+    return sum(lst, key=lst.count)
 
-def fibonacci_8(lst):
-    """
-    Given a list of tuples, write a function that returns the tenth value of the tuple with the largest eleventh value.
-    """
 
-def fibonacci_9(lst):
+def fibonacci_with_product(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the product of the elements in the tuple.
     """
+    return product(*lst)
 
-def fibonacci_10(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest eleventh value.
-    """
 
-def fibonacci_11(lst):
+def fibonacci_with_sum_with_product(lst):
     """
-    Given a list of tuples, write a function that returns the eighth value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the sum of the elements in the tuple.
     """
+    return sum(lst, key=lst.count)
 
-def fibonacci_12(lst):
+
+def fibonacci_with_product_with_max(lst):
     """
-    Given a list of tuples, write a function that
+    Given a list of tuples, write a function that returns the largest eleventh value of the tuple with the largest eleventh value.
+    """
+    return max(lst, key=lst.count)
+
+
+def fibonacci_with_min_with_max(lst):
+    """
+    Given a list of tuples, write a function that returns the smallest eleventh value of the tuple with the smallest eleventh value.
+    """
+    return min(lst, key=lst.count)
+
+
+def fibonacci_with_sum_with_min_with_max(lst):
+    """
+    Given a list of tuples, write a function that returns the sum of the elements in the tuple.
+    """
+    return sum(lst, key=lst.count

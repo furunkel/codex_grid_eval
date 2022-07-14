@@ -1,62 +1,73 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "small" if n < 10 and "large" if n >= 15 (and neither if 10 <= n < 15).
     """
+    if n < 10:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "large"
 
-def is_prime(n):
-    """
-        Given an integer n, return True if n is prime.
-    """
 
-def is_quadratic(n):
+def small_or_large_or_small(n):
     """
-        Given an integer n, return True if n is quadratic.
+        Given an integer n, return "small" if n < 10 and "large" if n >= 15 (and neither if 10 <= n < 15).
     """
+    if n < 10:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "large"
 
-def is_quadratic_or_composite(n):
-    """
-        Given an integer n, return True if n is quadratic or composite.
-    """
 
-def is_quadratic_or_composite_or_prime(n):
+def small_or_large_or_small_or_large(n):
     """
-        Given an integer n, return True if n is quadratic or composite or prime.
+        Given an integer n, return "small" if n < 10 and "large" if n >= 15 (and neither if 10 <= n < 15).
     """
+    if n < 10:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "large"
 
-def is_quadratic_or_composite_or_composite_or_prime(n):
-    """
-        Given an integer n, return True if n is quadratic or composite or prime.
-    """
 
-def is_quadratic_or_composite_or_prime_or_composite(n):
+def small_or_large_or_small_or_large_or_small(n):
     """
-        Given an integer n, return True if n is quadratic or composite or prime.
+        Given an integer n, return "small" if n < 10 and "large" if n >= 15 (and neither if 10 <= n < 15).
     """
+    if n < 10:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "large"
 
-def is_quadratic_or_composite_or_prime_or_composite(n):
-    """
-        Given an integer n, return True if n is quadratic or composite or prime.
-    """
 
-def is_quadratic_or_composite_or_prime_or_composite(n):
+def small_or_large_or_small_or_large_or_small(n):
     """
-        Given an integer n, return True if n is quadratic or composite or prime.
+        Given an integer n, return "small" if n < 10 and "large" if n >= 15 (and neither if 10 <= n < 15).
     """
+    if n < 10:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "large"
 
-def is_quadratic_or_composite_or_prime_or_composite_or_prime(n):
-    """
-        Given an integer n, return True if n is quadratic or composite or prime.
-    """
 
-def is_quadratic_or_composite_or_prime_or_composite_or_prime(n):
+def small_or_large_or_small_or_large_or_small(n):
     """
-        Given an integer n, return True if n is quadratic or composite or prime.
+        Given an integer n, return "small" if n < 10 and "large" if n >= 15 (and neither if 10 <= n < 15).
     """
+    if n < 10:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "large"
 
-def is_quadratic_or_composite_or_prime_or_composite_or_prime(n):
-    """
-        Given an integer n, return True if n is quadratic or composite or prime.
-    """
 
-def is_quadratic_or_composite_or_prime_or_
+def small

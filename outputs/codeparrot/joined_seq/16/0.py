@@ -1,67 +1,74 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns True if the input string contains sequences of uppercase letters joined with two underscores and False otherwise.
     """
+    return text.upper() in string.ascii_lowercase
 
-def split_sequence(text):
-    """
-    Splits a string into a list of strings.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation(text):
+def get_unique_words(text):
     """
-    Splits a string into a list of strings, each of which has punctuation removed.
+    Return a list of unique words found in the text.
     """
-    return text.split(punctuation)
+    unique_words = []
+    for word in text.split():
+        if word not in unique_words:
+            unique_words.append(word)
+    return unique_words
 
-def split_sequence_with_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of strings, each of which has punctuation removed.
-    """
-    return text.split(punctuation)
 
-def split_sequence_with_punctuation_and_numbers(text):
+def get_unique_words_with_length(text, length):
     """
-    Splits a string into a list of strings, each of which has punctuation removed.
+    Return a list of unique words found in the text.
     """
-    return text.split(punctuation)
+    unique_words = []
+    for word in text.split():
+        if len(word) > length:
+            unique_words.append(word)
+    return unique_words
 
-def split_sequence_with_numbers(text):
-    """
-    Splits a string into a list of strings, each of which has numbers removed.
-    """
-    return text.split()
 
-def split_sequence_with_numbers_and_punctuation(text):
+def get_unique_words_with_punctuation(text, punctuation):
     """
-    Splits a string into a list of strings, each of which has numbers removed.
+    Return a list of unique words found in the text.
     """
-    return text.split()
+    unique_words = []
+    for word in text.split():
+        if punctuation in word:
+            unique_words.append(word)
+    return unique_words
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of strings, each of which has punctuation removed.
-    """
-    return text.split()
 
-def split_sequence_with_numbers_and_punctuation_and_numbers_and_punctuation(text):
+def get_unique_words_with_punctuation_and_length(text, punctuation, length):
     """
-    Splits a string into a list of strings, each of which has numbers removed.
+    Return a list of unique words found in the text.
     """
-    return text.split()
+    unique_words = []
+    for word in text.split():
+        if punctuation in word:
+            unique_words.append(word)
+    return unique_words
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation_and_numbers(text):
-    """
-    Splits a string into a list of strings, each of which has punctuation removed.
-    """
-    return text.split()
 
-def split_sequence_with_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation(text):
+def get_unique_words_with_punctuation_and_length_and_punctuation(text, punctuation, length, punctuation_length):
     """
-    Splits a string into a list of strings, each of which has numbers removed.
+    Return a list of unique words found in the text.
     """
-    return text.split()
+    unique_words = []
+    for word in text.split():
+        if punctuation in word:
+            unique_words.append(word)
+    return unique_words
 
-def split_sequence
+
+def get_unique_words_with_punctuation_and_length_and_punctuation_and_punctuation(text, punctuation, length, punctuation_length):
+    """
+    Return a list of unique words found in the text.
+    """
+    unique_words = []
+    for word in text.split():
+        if punctuation in word:
+            unique_words.append(word)
+    return unique_words
+
+
+def get_unique_words_with_punctuation_and_length_and_punctuation_and_punctuation

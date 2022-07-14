@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its SHA224 hash equivalent string.
@@ -6,61 +5,57 @@ def string_to_hash(text):
 
     >>> string_to_hash('Hello world') == 'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112'
     """
+    if not text:
+        return None
+    return hashlib.sha224(text.encode('utf-8')).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_int('Hello world') == 0
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha224(f.read(block_size)).hexdigest()
 
-def string_to_bool(text):
+
+def get_file_hash_from_file(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_bool('Hello world')
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha224(f.read(block_size)).hexdigest()
 
-def string_to_datetime(text):
+
+def get_file_hash_from_url(url, block_size=2 ** 20):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_datetime('Hello world')
+    :param url: The url to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    return get_file_hash_from_file(url, block_size)
 
-def string_to_time(text):
+
+def get_file_hash_from_file_url(url, block_size=2 ** 20):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_time('Hello world')
+    :param url: The url to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    return get_file_hash_from_file(url, block_size)
 
-def string_to_datetime_with_milliseconds(text):
+
+def get_file_hash_from_url_with_md5(url, block_size=2 ** 20):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_datetime_with_milliseconds('Hello world')
-    """
-
-def string_to_time_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time_with_milliseconds('Hello world')
-    """
-
-def string_to_time_with_milliseconds_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time_with_milliseconds_with_milliseconds('Hello world')
-    """
-
-def string_to_time_with_milliseconds_with_milliseconds_
+    Calculate the hash of a file

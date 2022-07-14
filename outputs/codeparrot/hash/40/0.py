@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha224 hash equivalent string.
@@ -6,51 +5,71 @@ def string_to_hash(text):
 
     >>> string_to_hash('sha1') == 'bedb87f662c96d4ae159dab7c55a49ea268f92099d198bdad0f72c35'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha224(text).hexdigest()
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int('sha1') == 'bedb87f662c96d4ae159dab7c55a49ea268f92099d198bdad0f72c35'
+def get_file_hash(filename, block_size=2 ** 20):
     """
+    Calculate the hash of a file.
 
-def int_to_string(i):
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
-    Given an integer 'i', return its string equivalent string.
-    If 'i' is an empty string, return None.
+    with open(filename, 'rb') as f:
+        return hashlib.sha224(f.read(block_size)).hexdigest()
 
-    >>> int_to_string(0) == '0'
-    """
 
-def string_to_bool(text):
+def get_file_size(filename):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the size of a file.
 
-    >>> string_to_bool('sha1') == 'bedb87f662c96d4ae159dab7c55a49ea268f92099d198bdad0f72c35'
+    :param filename: The filename to hash.
+    :return: The size of the file.
     """
+    return os.path.getsize(filename)
 
-def bool_to_string(b):
-    """
-    Given a boolean 'b', return its string equivalent string.
-    If 'b' is an empty string, return None.
 
-    >>> bool_to_string(True) == 'true'
+def get_file_hash_from_file(filename):
     """
+    Calculate the hash of a file.
 
-def string_to_list(text):
+    :param filename: The filename to hash.
+    :return: The hash of the file.
     """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
+    with open(filename, 'rb') as f:
+        return hashlib.sha224(f.read(BLOCK_SIZE)).hexdigest()
 
-    >>> string_to_list('sha1') == ['bedb87f662c96d4ae159dab7c55a49ea268f92099d198bdad0f72c35']
-    """
 
-def list_to_string(l):
+def get_file_size_from_file(filename):
     """
-    Given a list of strings 'l', return its string equivalent string.
-    If 'l' is an empty string, return None.
+    Calculate the size of a file.
 
-    >>> list_to_string([]) == ''
+    :param filename: The filename to hash.
+    :return: The size of the file.
     """
+    return os.path.getsize(filename)
+
+
+def get_file_hash_from_url(url):
+    """
+    Calculate the hash of a file.
+
+    :param url: The url to hash.
+    :return: The hash of the file.
+    """
+    return get_file_hash(url)
+
+
+def get_file_size_from_url(url):
+    """
+    Calculate the size of a file.
+
+    :param url: The url to hash.
+    :return: The size of the file.
+    """
+    return os.

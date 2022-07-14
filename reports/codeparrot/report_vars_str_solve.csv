@@ -1,26 +1,26 @@
 var,val,success_rate
-case_cond,letter,0
-reverse_cond,no letters,0
-input,AsDf,0
-input,As?Df,0
-input,As??Df,0
-input,1234,0
-input,1?234,0
-input,a1?234,0
-input,a1?2?34,0
-input,#a@C,0
-input,#a?C,0
-input,6@2,0
-input,#$a^D,0
-input,#?a^D,0
-input,#?a^?D,0
-input,#ccc,0
-input,#c?c,0
-input,#c??c,0
-reverse_cond,letters,0
-reverse_cond,exactly one question mark,0
-reverse_cond,more than one question mark,0
-reverse_cond,no question marks,0
-reverse_cond,one or more question marks,0
-case_cond,vowel,0
-case_cond,consonant,0
+input,a1?234,0.0
+input,a1?2?34,0.0
+input,#a@C,0.0
+input,#a?C,0.0
+input,#$a^D,0.0
+input,#?a^D,0.0
+input,#?a^?D,0.0
+reverse_cond,exactly one question mark,0.0
+reverse_cond,more than one question mark,0.0
+reverse_cond,no question marks,0.020833333333333332
+case_cond,consonant,0.020833333333333332
+case_cond,letter,0.052083333333333336
+input,As?Df,0.05555555555555555
+input,As??Df,0.05555555555555555
+input,#c?c,0.05555555555555555
+input,#c??c,0.05555555555555555
+input,AsDf,0.1111111111111111
+input,1?234,0.1111111111111111
+reverse_cond,no letters,0.125
+reverse_cond,letters,0.125
+case_cond,vowel,0.14583333333333334
+input,#ccc,0.16666666666666666
+reverse_cond,one or more question marks,0.16666666666666666
+input,1234,0.2777777777777778
+input,6@2,0.2777777777777778

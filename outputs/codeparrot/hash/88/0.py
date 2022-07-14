@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha-384 hash equivalent string.
@@ -6,44 +5,54 @@ def string_to_hash(text):
 
     >>> string_to_hash('sha1') == 'cabe55f9f3eacf745c21036be01612761f1f209fb413243d12c32f98adfe3dc22f7450608a51a63d7576f4788b992679'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha384(text).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename, block_size=2 ** 20, md5=None):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate a file hash for a file.
 
-    >>> string_to_int('sha1') == 'cabe55f9f3eacf745c21036be01612761f1f209fb413243d12c32f98adfe3dc22f7450608a51a63d7576f4788b992679'
+    :param filename: Path to the file.
+    :param block_size: Block size to use when hashing.
+    :param md5: If not None, the hash will be computed only for the given
+                  file.
     """
+    if md5 is None:
+        md5 = hashlib.md5()
 
-def int_to_string(i):
+    with open(filename, 'rb') as f:
+        for chunk in iter(lambda: f.read(block_size), b''):
+            md5.update(chunk)
+
+    return md5.hexdigest()
+
+
+def get_file_hash_or_block_size(filename, block_size=2 ** 20, md5=None):
     """
-    Given an integer 'i', return its string equivalent string.
-    If 'i' is an empty string, return None.
+    Calculate a file hash for a file.
 
-    >>> int_to_string(0) == '0'
-    True
+    :param filename: Path to the file.
+    :param block_size: Block size to use when hashing.
+    :param md5: If not None, the hash will be computed only for the given
+                  file.
     """
+    if md5 is None:
+        md5 = hashlib.md5()
 
-def string_to_bool(text):
+    with open(filename, 'rb') as f:
+        for chunk in iter(lambda: f.read(block_size), b''):
+            md5.update(chunk)
+
+    return md5.hexdigest()
+
+
+def get_file_hash_or_block_hash(filename, block_hash=None, md5=None):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate a file hash for a file.
 
-    >>> string_to_bool('sha1') == 'cabe55f9f3eacf745c21036be01612761f1f209fb413243d12c32f98adfe3dc22f7450608a51a63d7576f4788b992679'
-    """
-
-def bool_to_string(b):
-    """
-    Given a boolean 'b', return its string equivalent string.
-    If 'b' is an empty string, return None.
-
-    >>> bool_to_string(True) == 'true'
-    True
-    """
-
-def string_to_list(text):
-    """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_list('sha1') == ['cabe55f9f3eacf745c21036be01612761
+    :param filename: Path to the file.
+    :param block_hash: If not None, the hash will be computed only for the

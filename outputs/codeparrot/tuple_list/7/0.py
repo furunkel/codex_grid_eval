@@ -1,60 +1,57 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest first value.
     """
+    return max(lst, key=lst.count)[0]
 
-def tuple_join(lst):
+
+def tuple_extract_with_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest first value.
     """
+    return max(lst, key=lst.count)[0]
 
-def tuple_slice(lst, start, stop):
+
+def tuple_extract_with_min(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lst.count)[0]
 
-def tuple_slice_start(lst, start, stop):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
-    """
 
-def tuple_slice_stop(lst, start, stop):
+def tuple_extract_with_sum(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the sum of all values.
     """
+    return sum(lst, key=lst.count)[0]
 
-def tuple_slice_step(lst, start, stop):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
-    """
 
-def tuple_slice_step_start(lst, start, stop):
+def tuple_extract_with_count(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the count of all values.
     """
+    return sum(lst, key=lst.count)[0]
 
-def tuple_slice_step_stop(lst, start, stop):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest first value.
-    """
 
-def tuple_slice_reverse(lst, start, stop):
+def tuple_extract_with_sum_and_count(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the sum and count of all values.
     """
+    return sum(lst, key=lst.count)[0], sum(lst, key=lst.count)[0]
 
-def tuple_slice_reverse_start(lst, start, stop):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
-    """
 
-def tuple_slice_reverse_stop(lst, start, stop):
+def tuple_extract_with_count_and_sum(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the count and sum of all values.
     """
+    return sum(lst, key=lst.count)[0], sum(lst, key=lst.count)[0]
 
-def tuple_slice_reverse_step(lst, start, stop):
+
+def tuple_extract_with_count_and_sum_and_count(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the count and sum of all values.
     """
+    return sum(lst, key=lst.count)[0], sum(lst, key=lst.count)[0]
+
+
+def tuple_extract_with_sum_and_count_

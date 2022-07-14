@@ -1,42 +1,68 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return max(lst, key=lst.count)[1]
 
-def some_func_with_two_items(lst):
+
+def test_func():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return some_func(lst)
 
-def some_func_with_two_items_with_one_item(lst):
+
+def test_func_with_one_element():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return some_func(lst)
 
-def some_func_with_two_items_with_one_item_with_two_items(lst):
+
+def test_func_with_two_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return some_func(lst)
 
-def some_func_with_two_items_with_one_item_with_two_items_with_two_items(lst):
+
+def test_func_with_three_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return some_func(lst)
 
-def some_func_with_two_items_with_one_item_with_two_items_with_two_items_with_two_items(lst):
+
+def test_func_with_four_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return some_func(lst)
 
-def some_func_with_two_items_with_one_item_with_two_items_with_two_items_with_two_items_with_two_items(lst):
+
+def test_func_with_five_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return some_func(lst)
 
-def some_func_with_two_items_with_one_item_with_two_items_with_two_items_with_two_items_with_two_items(lst):
+
+def test_func_with_six_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return some_func(lst)
 
-def some_func_with_two_items_with_one_item_with_two_items_with_two_items_
+
+def test_func_with_seven_elements():
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
+    """
+    return some_func(lst)
+
+
+def test_func_with_eight_elements():
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
+    """
+    return some_func(

@@ -1,63 +1,45 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns True if the input string contains sequences of lowercase letters joined with two underscores and False otherwise.
     """
+    return ''.join([c for c in text if c.isalpha() or c.isdigit()])
 
-def split_sequence(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation(text):
+def get_words(text):
     """
-    Splits a string into a list of words, separated by punctuation.
+    Return a list of lowercase words found in the given text.
     """
-    return text.split(punctuation)
+    return [w for w in text.split() if w.isalpha()]
 
-def split_sequence_with_numbers(text):
-    """
-    Splits a string into a list of numbers.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation_and_numbers(text):
+def get_unique_words(text):
     """
-    Splits a string into a list of numbers, separated by punctuation, and numbers.
+    Return a list of unique words found in the given text.
     """
-    return text.split(punctuation) + [None]
+    return [w for w in text.split() if w.isalpha()]
 
-def split_sequence_with_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of numbers, separated by punctuation, and numbers.
-    """
-    return text.split(punctuation) + [None]
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation(text):
+def get_unique_words_with_counts(text):
     """
-    Splits a string into a list of numbers, separated by punctuation, and numbers.
+    Return a list of unique words found in the given text, with counts.
     """
-    return text.split(punctuation) + [None]
+    return [w for w in text.split() if w.isalpha()]
 
-def split_sequence_with_numbers_and_punctuation_and_numbers(text):
-    """
-    Splits a string into a list of numbers, separated by punctuation, and numbers.
-    """
-    return text.split(punctuation) + [None]
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation_and_numbers(text):
+def get_unique_words_with_counts_and_counts(text):
     """
-    Splits a string into a list of numbers, separated by punctuation, and numbers.
+    Return a list of unique words found in the given text, with counts and counts.
     """
-    return text.split(punctuation) + [None]
+    return [w for w in text.split() if w.isalpha()]
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of numbers, separated by punctuation, and numbers.
-    """
-    return text.split(punctuation) + [None]
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers(text):
+def get_unique_words_with_counts_and_counts_and_counts_and_counts(text):
     """
-    Split
+    Return a list of unique words found in the given text, with counts and counts and counts and counts and counts and counts and counts and counts and counts and counts.
+    """
+    return [w for w in text.split() if w.isalpha()]
+
+
+def get_unique_words_with_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts(text):
+    """
+    Return a list of unique words found in the given text, with counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and counts and

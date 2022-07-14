@@ -1,4 +1,3 @@
-
 def fizzbuzz(num):
     """
     Given a number, this function returns
@@ -7,13 +6,75 @@ def fizzbuzz(num):
         "FizzBuzz" for multiples of both seventeen and 23  (instead of the number),
         the number itself otherwise.
     """
-
-# This is the main function.
-def main():
-    """
-    This function returns a list of all the numbers that are divisible by
-    the number.
-    """
-    # The number of divisors is the number of times the number divides
-    # the number.
-    divisors = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601, 607, 613, 617, 619, 631, 633, 639, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691, 701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769,
+    if num == 1:
+        return "Fizz"
+    elif num == 2:
+        return "Buzz"
+    elif num == 3:
+        return "Fizz"
+    elif num == 4:
+        return "Fizz"
+    elif num == 5:
+        return "Buzz"
+    elif num == 6:
+        return "Fizz"
+    elif num == 7:
+        return "Fizz"
+    elif num == 8:
+        return "Fizz"
+    elif num == 9:
+        return "Fizz"
+    elif num == 10:
+        return "Fizz"
+    elif num == 11:
+        return "Fizz"
+    elif num == 12:
+        return "Fizz"
+    elif num == 13:
+        return "Fizz"
+    elif num == 14:
+        return "Fizz"
+    elif num == 15:
+        return "Fizz"
+    elif num == 16:
+        return "Fizz"
+    elif num == 17:
+        return "Fizz"
+    elif num == 18:
+        return "Fizz"
+    elif num == 19:
+        return "Fizz"
+    elif num == 20:
+        return "Fizz"
+    elif num == 21:
+        return "Fizz"
+    elif num == 22:
+        return "Fizz"
+    elif num == 23:
+        return "Fizz"
+    elif num == 24:
+        return "Fizz"
+    elif num == 25:
+        return "Fizz"
+    elif num == 26:
+        return "Fizz"
+    elif num == 27:
+        return "Fizz"
+    elif num == 28:
+        return "Fizz"
+    elif num == 29:
+        return "Fizz"
+    elif num == 30:
+        return "Fizz"
+    elif num == 31:
+        return "Fizz"
+    elif num == 32:
+        return "Fizz"
+    elif num == 33:
+        return "Fizz"
+    elif num == 34:
+        return "Fizz"
+    elif num == 35:
+        return "Fizz"
+    elif num == 36:
+        return

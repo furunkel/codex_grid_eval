@@ -1,84 +1,50 @@
-
 def find_char_long(text):
     """
     Finds all words which are not 3 characters long in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] not in string.ascii_letters]
+
 
 def find_char_short(text):
     """
     Finds all words which are not 3 characters short in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] not in string.ascii_letters]
 
-def find_char_simple(text):
-    """
-    Finds all words which are not 3 characters simple in a string.
-    """
 
-def find_char_complex(text):
+def find_char_mixed(text):
     """
-    Finds all words which are not 3 characters complex in a string.
+    Finds all words which are not 3 characters mixed in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] in string.ascii_letters and i not in string.ascii_letters]
 
-def find_char_compound(text):
-    """
-    Finds all words which are not 3 characters compound in a string.
-    """
 
-def find_char_const(text):
+def find_char_mixed_long(text):
     """
-    Finds all words which are not 3 characters const in a string.
+    Finds all words which are not 3 characters mixed in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] in string.ascii_letters and i not in string.ascii_letters and i not in string.ascii_letters]
 
-def find_char_volatile(text):
-    """
-    Finds all words which are not 3 characters volatile in a string.
-    """
 
-def find_char_void(text):
+def find_char_mixed_short(text):
     """
-    Finds all words which are not 3 characters void in a string.
+    Finds all words which are not 3 characters mixed in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] in string.ascii_letters and i not in string.ascii_letters and i not in string.ascii_letters]
 
-def find_char_volatile_char(text):
-    """
-    Finds all words which are not 3 characters volatile in a string.
-    """
 
-def find_char_volatile_short(text):
+def find_char_mixed_long_long(text):
     """
-    Finds all words which are not 3 characters volatile in a string.
+    Finds all words which are not 3 characters mixed in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] in string.ascii_letters and i not in string.ascii_letters and i not in string.ascii_letters and i not in string.ascii_letters]
 
-def find_char_volatile_int(text):
-    """
-    Finds all words which are not 3 characters volatile in a string.
-    """
 
-def find_char_volatile_long(text):
+def find_char_mixed_short_long(text):
     """
-    Finds all words which are not 3 characters volatile in a string.
+    Finds all words which are not 3 characters mixed in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] in string.ascii_letters and i not in string.ascii_letters and i not in string.ascii_letters and i not in string.ascii_letters]
 
-def find_char_volatile_float(text):
-    """
-    Finds all words which are not 3 characters volatile in a string.
-    """
 
-def find_char_volatile_double(text):
-    """
-    Finds all words which are not 3 characters volatile in a string.
-    """
-
-def find_char_volatile_longdouble(text):
-    """
-    Finds all words which are not 3 characters volatile in a string.
-    """
-
-def find_char_volatile_charptr(text):
-    """
-    Finds all words which are not 3 characters volatile in a string.
-    """
-
-def find_char_volatile_shortptr(text):
-    """
-    Finds all words which are
+def find_char_mixed_

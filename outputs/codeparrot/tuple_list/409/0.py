@@ -1,59 +1,71 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
     """
+    return tuple(lst[-1])
 
-def tuple_extract_with_max(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest eleventh value.
-    """
 
-def tuple_extract_with_min(lst):
+def tuple_extract_last(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
     """
+    return tuple(lst[-1])
 
-def tuple_extract_with_sum(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the sum of the values.
-    """
 
-def tuple_extract_with_product(lst):
+def tuple_extract_first(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the product of the values.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
     """
+    return tuple(lst[0])
 
-def tuple_extract_with_set(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the set of values.
-    """
 
-def tuple_extract_with_str(lst):
+def tuple_extract_last_last(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the string of the values.
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
     """
+    return tuple(lst[-1])
 
-def tuple_extract_with_tuple(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the tuple of the values.
-    """
 
-def tuple_extract_with_set_of_str(lst):
+def tuple_extract_first_last(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the set of values.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
     """
+    return tuple(lst[0])
 
-def tuple_extract_with_tuple_of_str(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the tuple of the values.
-    """
 
-def tuple_extract_with_set_of_tuple(lst):
+def tuple_extract_last_first(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the set of values.
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
     """
+    return tuple(lst[-1])
 
-def tuple_extract_with_set_of_set(lst):
+
+def tuple_extract_first_last_last(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the set of values.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
+    """
+    return tuple(lst[-1])
+
+
+def tuple_extract_last_last_first(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
+    """
+    return tuple(lst[-1])
+
+
+def tuple_extract_first_last_last(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
+    """
+    return tuple(lst[-1])
+
+
+def tuple_extract_last_last_first(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
+    """
+    return tuple(lst[-1])
+
+
+def tuple

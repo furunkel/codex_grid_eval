@@ -1,55 +1,41 @@
-
 def multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 13 or 17, we get  and 13. The product of these multiples is 13.
     Return the product of all the multiples of 13 or 17 below 600.
-    """    
-#    print(multiples())
-    product = []
-    for i in range(1,13):
-        product.append(multiples())
-    return product
+    """
+    return [x for x in range(1, 13) if x % 17 == 0]
 
-def multiples_with_one_digit():
+
+def multiples_with_multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 13 or 17, we get  and 13. The product of these multiples is 13.
     Return the product of all the multiples of 13 or 17 below 600.
     """
-    product = []
-    for i in range(1,13):
-        product.append(multiples_with_one_digit())
-    return product
+    return [x for x in range(1, 13) if x % 17 == 0 and x % 17 == 1]
 
-def multiples_with_two_digit():
+
+def multiples_with_multiples_and_multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 13 or 17, we get  and 13. The product of these multiples is 13.
     Return the product of all the multiples of 13 or 17 below 600.
     """
-    product = []
-    for i in range(1,13):
-        product.append(multiples_with_two_digit())
-    return product
+    return [x for x in range(1, 13) if x % 17 == 0 and x % 17 == 1 and x % 17 == 2]
 
-def multiples_with_three_digit():
+
+def multiples_with_multiples_and_multiples_and_multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 13 or 17, we get  and 13. The product of these multiples is 13.
     Return the product of all the multiples of 13 or 17 below 600.
     """
-    product = []
-    for i in range(1,13):
-        product.append(multiples_with_three_digit())
-    return product
+    return [x for x in range(1, 13) if x % 17 == 0 and x % 17 == 1 and x % 17 == 2 and x % 17 == 3]
 
-def multiples_with_four_digit():
+
+def multiples_with_multiples_and_multiples_and_multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 13 or 17, we get  and 13. The product of these multiples is 13.
     Return the product of all the multiples of 13 or 17 below 600.
     """
-    product = []
-    for i in range(1,13):
-        product.append(multiples_with_four_digit())
-    return product
+    return [x for x in range(1, 13) if x % 17 == 0 and x % 17 == 1 and x % 17 == 2 and x % 17 == 3 and x % 17 == 4]
 
-def multiples_with_five_digit():
-    """
-    If we list all the natural numbers below 15 that are multiples of 13 or
+
+def multiples_with_multiple

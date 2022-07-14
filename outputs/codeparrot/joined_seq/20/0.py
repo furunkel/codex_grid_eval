@@ -1,51 +1,45 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns True if the input string contains sequences of uppercase letters joined with a minus and False otherwise.
     """
+    return text.upper().replace(' ', '') == text
 
-def get_words(text):
-    """
-    Return a list of lowercase words in the given text.
-    """
-    return [word.lower() for word in text.split()]
 
-def get_sentences(text):
+def get_all_words(text):
     """
-    Return a list of sentences in the given text.
+    Return a list of all words in the given text.
     """
-    return [sentence.strip() for sentence in text.split('\n')]
+    return [word for word in text.split() if word not in STOPWORDS]
 
-def get_sentences_with_length(text, length):
-    """
-    Return a list of sentences in the given text, where each sentence is a list of words.
-    """
-    return [sentence.strip() for sentence in text.split('\n') if len(sentence) >= length]
 
-def get_sentences_with_length_and_sentences(text, length, sentences):
+def get_all_sentences(text):
     """
-    Return a list of sentences in the given text, where each sentence is a list of words.
+    Return a list of all sentences in the given text.
     """
-    return [sentence.strip() for sentence in sentences if len(sentence) >= length]
+    return [sentence for sentence in text.split() if sentence not in SENTENCES]
 
-def get_sentences_with_length_and_sentences_with_length(text, length, sentences):
-    """
-    Return a list of sentences in the given text, where each sentence is a list of words.
-    """
-    return [sentence.strip() for sentence in sentences if len(sentence) >= length]
 
-def get_sentences_with_length_and_sentences_with_length_and_sentences(text, length, sentences):
+def get_all_sentences_with_punctuation(text):
     """
-    Return a list of sentences in the given text, where each sentence is a list of words.
+    Return a list of all sentences in the given text, with punctuation removed.
     """
-    return [sentence.strip() for sentence in sentences if len(sentence) >= length]
+    return [sentence for sentence in text.split() if sentence not in PUNCTUATION_PUNCTUATION]
 
-def get_sentences_with_length_and_sentences_with_length_and_sentences_with_length_and_sentences(text, length, sentences):
-    """
-    Return a list of sentences in the given text, where each sentence is a list of words.
-    """
-    return [sentence.strip() for sentence in sentences if len(sentence) >= length]
 
-def get_sentences_with_length_and_sentences_with_length_and_sentences_with_length_and_sentences_with_length_and_sentences(text, length, sentences):
+def get_all_sentences_with_punctuation_and_punctuation_removed(text):
     """
-    Return
+    Return a list of all sentences in the given text, with punctuation removed.
+    """
+    return [sentence for sentence in text.split() if sentence not in PUNCTUATION_PUNCTUATION_AND_PUNCTUATION_PUNCTUATION]
+
+
+def get_all_sentences_with_punctuation_and_punctuation_removed_and_punctuation(text):
+    """
+    Return a list of all sentences in the given text, with punctuation removed and punctuation removed.
+    """
+    return [sentence for sentence in text.split() if sentence not in PUNCTUATION_PUNCTUATION_AND_PUNCTUATION_PUNCTUATION_PUNCTUATION]
+
+
+def get_all_sentences_with_punctuation_and_punctuation_removed_and_punctuation_and_punctuation(text):
+    """
+    Return a list of all sentences in the given text, with punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and

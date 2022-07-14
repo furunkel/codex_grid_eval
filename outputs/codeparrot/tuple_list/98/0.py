@@ -1,73 +1,45 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the smallest third value.
     """
+    return max(lst, key=lst.count)[1]
 
-def g(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest third value.
-    """
 
-def h(lst):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest fourth value.
-    """
+def main():
+    print(f([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
-def i(lst):
-    """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest fifth value.
-    """
 
-def j(lst):
-    """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest fifth value.
-    """
+if __name__ == '__main__':
+    main()
+<|endoftext|># Copyright (c) 2015, Frappe Technologies Pvt. Ltd. and Contributors
+# License: GNU General Public License v3. See license.txt
 
-def k(lst):
-    """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest fifth value.
-    """
+from __future__ import unicode_literals
+import frappe
+from frappe import _
+from frappe.utils import flt, cint, getdate, formatdate, get_link_to_form, \
+	comma_or, get_fullname
+from erpnext.accounts.report.financial_statements import (get_period_list, get_columns, get_data)
 
-def l(lst):
-    """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the largest sixth value.
-    """
+def execute(filters=None):
+	period_list = get_period_list(filters.from_fiscal_year, filters.to_fiscal_year,
+		filters.periodicity, filters.accumulated_values, filters.company)
 
-def m(lst):
-    """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the largest sixth value.
-    """
+	income = get_data(filters.company, "Income", "Credit", period_list, filters=filters)
 
-def n(lst):
-    """
-    Given a list of tuples, write a function that returns the n value of the tuple with the largest n value.
-    """
+	income_data = get_data(filters.company, "Income", "Credit", period_list, filters=filters)
 
-def o(lst):
-    """
-    Given a list of tuples, write a function that returns the o value of the tuple with the largest o value.
-    """
+	columns, expense_accounts, tax_accounts = get_columns(income_data, expense_accounts)
 
-def p(lst):
-    """
-    Given a list of tuples, write a function that returns the prime value of the tuple with the largest prime value.
-    """
+	net_profit_loss = get_net_profit_loss(income_data, expense_accounts)
 
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the quad value of the tuple with the largest quad value.
-    """
+	data = []
+	for d in expense_accounts:
+		row = [d.name, d.account, d.posting_date, d.supplier, d.supplier_name, d.bill_no, d.bill_date,
+			d.remarks, d.cost_center, d.project_name, d.company, d.sales_order, d.delivery_note, d.income_account,
+			d.cost_center, d.qty, d.base_rate, d.base_amount]
 
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the reciprocal value of the tuple with the largest reciprocal value.
-    """
+		if net_profit_loss:
+			row += [net_profit_loss]
 
-def s(lst):
-    """
-    Given a list of tuples, write a function that returns the square value of the tuple with the largest square value.
-    """
-
-def t(lst):
-    """
+		row += [

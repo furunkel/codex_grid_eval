@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its SHA256 hash equivalent string.
@@ -6,55 +5,57 @@ def string_to_hash(text):
 
     >>> string_to_hash('md5') == '3ebff31b62c0637c54d4ffa990d5c100ea359994b35f4b342ff49797542148cd'
     """
+    if not text:
+        return None
+    return hashlib.sha256(hashlib.sha256(text.encode('utf-8')).digest()).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_int('md5')
-    0
-    >>> string_to_int('md5')
-    1
-    >>> string_to_int('md5')
-    Traceback (most recent call last):
-    ValueError: the string 'md5' is not a valid MD5 hash
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha256(f.read(block_size)).hexdigest()
 
-def string_to_bool(text):
+
+def get_file_contents(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the contents of a file.
 
-    >>> string_to_bool('md5')
-    0
-    >>> string_to_bool('md5')
-    1
-    >>> string_to_bool('md5')
-    Traceback (most recent call last):
-    ValueError: the string 'md5' is not a valid MD5 hash
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The contents of the file.
     """
+    with open(filename, 'rb') as f:
+        return f.read(block_size)
 
-def string_to_datetime(text):
+
+def get_file_hash_from_file(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_datetime('md5')
-    datetime.datetime(2012, 1, 1, 0, 0)
-    >>> string_to_datetime('md5')
-    datetime.datetime(2012, 1, 1, 0, 0)
-    >>> string_to_datetime('md5')
-    Traceback (most recent call last):
-    ValueError: the string 'md5' is not a valid MD5 hash
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha256(f.read(block_size)).hexdigest()
 
-def string_to_time(text):
+
+def get_file_contents_as_string(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the contents of a file.
 
-    >>> string_to_time('md5')
-    datetime.datetime(2012, 1, 1, 0, 0)
-    >>> string_to_time('md5')
-    datetime.datetime(2012, 1, 1,
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The contents of the file.
+    """
+    with open(filename, 'rb') as f:
+        return f.read(block_size)
+
+
+def get_file_hash_from_file_contents(filename, block_size=2

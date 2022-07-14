@@ -1,44 +1,49 @@
-
 def multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 5, 7 or 9, we get 5, 7, 9, 10 and 14. The product of these multiples is 44100.
     Return the product of all the multiples of 5, 7 or 9 below 600.
-    """    
-#    print(multiples())
-    return(multiples())
+    """
+    return 5
 
-def multiples_with_one_digit():
+
+def multiples_with_multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 5, 7 or 9, we get 5, 7, 9, 10 and 14. The product of these multiples is 44100.
     Return the product of all the multiples of 5, 7 or 9 below 600.
     """
-    print(multiples_with_one_digit())
-    return(multiples_with_one_digit())
+    return 5
 
-def multiples_with_two_digit():
+
+def multiples_with_multiples_and_multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 5, 7 or 9, we get 5, 7, 9, 10 and 14. The product of these multiples is 44100.
     Return the product of all the multiples of 5, 7 or 9 below 600.
     """
-    print(multiples_with_two_digit())
-    return(multiples_with_two_digit())
+    return 5
 
-def multiples_with_three_digit():
+
+def multiples_with_multiples_and_multiples_and_multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 5, 7 or 9, we get 5, 7, 9, 10 and 14. The product of these multiples is 44100.
     Return the product of all the multiples of 5, 7 or 9 below 600.
     """
-    print(multiples_with_three_digit())
-    return(multiples_with_three_digit())
+    return 5
 
-def multiples_with_four_digit():
+
+def multiples_with_multiples_and_multiples_and_multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 5, 7 or 9, we get 5, 7, 9, 10 and 14. The product of these multiples is 44100.
     Return the product of all the multiples of 5, 7 or 9 below 600.
     """
-    print(multiples_with_four_digit())
-    return(multiples_with_four_digit())
+    return 5
 
-def multiples_with_five_digit():
+
+def multiples_with_multiples_and_multiples_and_multiples():
     """
-    If we list all the natural numbers below
+    If we list all the natural numbers below 15 that are multiples of 5, 7 or 9, we get 5, 7, 9, 10 and 14. The product of these multiples is 44100.
+    Return the product of all the multiples of 5, 7 or 9 below 600.
+    """
+    return 5
+
+
+def multiples_with_multiples

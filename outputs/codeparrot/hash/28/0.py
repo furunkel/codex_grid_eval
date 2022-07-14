@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its SHA1 hash equivalent string.
@@ -6,47 +5,59 @@ def string_to_hash(text):
 
     >>> string_to_hash('sha1') == '415ab40ae9b7cc4e66d6769cb2c08106e8293b48'
     """
+    if not text:
+        return None
+    return hashlib.sha1(text.encode('utf-8')).hexdigest()
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int('sha1') == '415ab40ae9b7cc4e66d6769cb2c08106e8293b48'
+def get_file_hash(filename, block_size=2 ** 20, md5=None):
     """
+    Calculate a file hash for a file.
 
-def string_to_bool(text):
+    :param filename: Path to file.
+    :param block_size: Block size to use when hashing.
+    :param md5: Optional MD5 hash to be used.
+    :returns: The hex digest of the file.
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    if not filename:
+        return None
+    if md5:
+        return hashlib.md5(filename.encode('utf-8')).hexdigest()
+    else:
+        with open(filename, 'rb') as f:
+            return hashlib.sha1(f.read()).hexdigest()
 
-    >>> string_to_bool('sha1') == '415ab40ae9b7cc4e66d6769cb2c08106e8293b48'
-    """
 
-def string_to_datetime(text):
+def get_file_contents(filename, block_size=2 ** 20, md5=None):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate a file contents for a file.
 
-    >>> string_to_datetime('sha1') == '415ab40ae9b7cc4e66d6769cb2c08106e8293b48'
+    :param filename: Path to file.
+    :param block_size: Block size to use when hashing.
+    :param md5: Optional MD5 hash to be used.
+    :returns: The hex digest of the file.
     """
+    if not filename:
+        return None
+    if md5:
+        return hashlib.md5(filename.encode('utf-8')).hexdigest()
+    else:
+        with open(filename, 'rb') as f:
+            return f.read()
 
-def string_to_time(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_time('sha1') == '415ab40ae9b7cc4e66d6769cb2c08106e8293b48'
+def get_file_lines(filename, block_size=2 ** 20, md5=None):
     """
+    Calculate a file lines for a file.
 
-def string_to_datetime_with_milliseconds(text):
+    :param filename: Path to file.
+    :param block_size: Block size to use when hashing.
+    :param md5: Optional MD5 hash to be used.
+    :returns: The hex digest of the file.
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_datetime_with_milliseconds('sha1') == '415ab40ae9b7cc4e66d6769cb2c08106e8293b48'
-    """
-
-def string_to_time_with_milliseconds(text):
-    """
-    Given a string 'text', return its
+    if not filename:
+        return None
+    if md5:
+        return hashlib.md5(filename.encode('utf-8')).hexdigest()
+    else:
+        with open(filename, 'rb') as f

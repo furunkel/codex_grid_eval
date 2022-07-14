@@ -1,66 +1,76 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha256 hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if text is None:
+        return None
+    if isinstance(text, str):
+        return hashlib.sha256(text.encode('utf-8')).hexdigest()
+    return None
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_bool(text):
+def get_file_hash(filename):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha256 hash equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    if isinstance(filename, str):
+        return hashlib.sha256(filename.encode('utf-8')).hexdigest()
+    return None
 
-def string_to_datetime(text):
-    """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_time(text):
+def get_file_size(filename):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its size equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    if isinstance(filename, str):
+        return os.path.getsize(filename)
+    return None
 
-def string_to_datetime_with_milliseconds(text):
-    """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_time_with_milliseconds(text):
+def get_file_md5(filename):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its md5 equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    if isinstance(filename, str):
+        return hashlib.md5(filename.encode('utf-8')).hexdigest()
+    return None
 
-def string_to_time_with_milliseconds_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_time_with_milliseconds_with_milliseconds(text):
+def get_file_size_and_md5(filename):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its size and md5 equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None, None
+    if isinstance(filename, str):
+        return os.path.getsize(filename), None
+    return None, None
 
-def string_to_time_with_milliseconds_with_milliseconds_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_time_with_milliseconds_with_milliseconds_with_milliseconds(text):
+def get_file_md5_and_size(filename):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its size and md5 equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None, None
+    if isinstance(filename, str):
+        return os.path.getsize(filename), None
+    return None, None
+
+
+def get_file_size_and_md5_and_size(filename):
+    """
+    Given a filename, return its size and md5 equivalent string.
+    If 'filename' is an empty string

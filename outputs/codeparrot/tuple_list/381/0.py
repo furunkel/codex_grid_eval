@@ -1,61 +1,52 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
     """
+    return max(lst, key=lst.count)[1]
 
-def some_func_with_one_arg(lst):
+
+def test_func():
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_two_args(lst):
+
+def test_func_with_args():
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_three_args(lst):
+
+def test_func_with_kwargs():
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_four_args(lst):
+
+def test_func_with_args_kwargs():
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_five_args(lst):
+
+def test_func_with_kwargs_kwargs():
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_six_args(lst):
+
+def test_func_with_args_kwargs_kwargs():
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_seven_args(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
-    """
 
-def some_func_with_eight_args(lst):
+def test_func_with_kwargs_args():
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
-    """
-
-def some_func_with_nine_args(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
-    """
-
-def some_func_with_ten_args(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
-    """
-
-def some_func_with_eleven_args(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest second value.
-    """
-
+    Given a list of tuples

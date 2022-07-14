@@ -1,57 +1,68 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return max(lst, key=lst.count)[1]
 
-def some_func_with_two_items(lst):
+
+def test_func():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return some_func(lst)
 
-def some_func_with_three_items(lst):
+
+def test_func_with_one_element():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return some_func(lst)
 
-def some_func_with_four_items(lst):
+
+def test_func_with_two_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return some_func(lst)
 
-def some_func_with_five_items(lst):
+
+def test_func_with_three_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return some_func(lst)
 
-def some_func_with_six_items(lst):
+
+def test_func_with_four_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return some_func(lst)
 
-def some_func_with_seven_items(lst):
+
+def test_func_with_five_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return some_func(lst)
 
-def some_func_with_eight_items(lst):
+
+def test_func_with_six_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return some_func(lst)
 
-def some_func_with_nine_items(lst):
+
+def test_func_with_seven_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return some_func(lst)
 
-def some_func_with_ten_items(lst):
+
+def test_func_with_eight_elements():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
-
-def some_func_with_eleven_items(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
-    """
-
-def some_func_with_twelve_
+    return some_func(

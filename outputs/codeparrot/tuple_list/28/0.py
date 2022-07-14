@@ -1,59 +1,50 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
     """
+    return max(lst, key=lst.count)[1]
 
-def fibonacci_with_one_element(lst):
+
+def fibonacci_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_with_two_elements(lst):
+
+def fibonacci_with_min_max_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_with_three_elements(lst):
+
+def fibonacci_with_min_max_with_min_max_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_with_four_elements(lst):
+
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_with_five_elements(lst):
+
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_with_six_elements(lst):
+
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_with_seven_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
-    """
 
-def fibonacci_with_eight_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
-    """
-
-def fibonacci_with_nine_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
-    """
-
-def fibonacci_with_ten_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
-    """
-
-def fibonacci_with_eleven_elements(lst):
-    """
-    Given a list
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):

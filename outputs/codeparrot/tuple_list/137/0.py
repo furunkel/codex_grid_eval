@@ -1,45 +1,64 @@
-
 def min_max(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the smallest last value.
     """
-#    return max(lst, key=lst.count)
     return max(lst, key=lst.count)[0]
 
-def min_max_by_key(lst):
+
+def min_max_by_key(lst, key):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the smallest last value.
     """
-#    return max(lst, key=lst.count)[0]
-    return max(lst, key=lst.count)[0][0]
+    return max(lst, key=lst.count)[0]
 
-def min_max_by_value(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the smallest last value.
-    """
-#    return max(lst, key=lst.count)[0][1]
-    return max(lst, key=lst.count)[0][1]
 
-def min_max_by_key_and_value(lst):
+def max_min(lst):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the smallest last value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
     """
-#    return max(lst, key=lst.count)[0][1][0]
-    return max(lst, key=lst.count)[0][1][0]
+    return min(lst, key=lst.count)[0]
 
-def min_max_by_key_and_value_and_key(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the smallest last value and the key.
-    """
-#    return max(lst, key=lst.count)[0][1][1]
-    return max(lst, key=lst.count)[0][1][1]
 
-def min_max_by_key_and_value_and_key_and_value(lst):
+def max_min_by_key(lst, key):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the smallest last value and the key and the value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest first value.
     """
-#    return max(lst, key=lst.count)[0][1][1][0]
-    return max(lst, key=lst.count)[0][1][1][0]
+    return min(lst, key=lst.count)[0]
 
-def min_max_by_key_and_value_and_key_and_value(lst):
-   
+
+def max_min_by_value(lst, value):
+    """
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
+    """
+    return min(lst, key=lst.count)[0]
+
+
+def min_max_by_value(lst, value):
+    """
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest first value.
+    """
+    return max(lst, key=lst.count)[0]
+
+
+def max_max_by_key(lst, key):
+    """
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
+    """
+    return max(lst, key=lst.count)[0]
+
+
+def max_max_by_value(lst, value):
+    """
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
+    """
+    return max(lst, key=lst.count)[0]
+
+
+def min_min_by_key(lst, key):
+    """
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest first value.
+    """
+    return min(lst, key=lst.count)[0]
+
+
+def min_min_by_value(lst,

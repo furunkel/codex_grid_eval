@@ -1,55 +1,59 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest first value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return max(lst, key=lst.count)[0]
+
 
 def fibonacci_with_max(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest first value.
     """
-    return max(lst, key=lst.count)
+    return max(lst, key=lst.count)[0]
+
 
 def fibonacci_with_min(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest first value.
     """
-    return min(lst, key=lst.count)
+    return min(lst, key=lst.count)[0]
 
-def fibonacci_with_sum(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest first value.
-    """
-    return sum(lst, key=lst.count)
 
-def fibonacci_with_product(lst):
+def fibonacci_with_average(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the average of the values.
     """
-    return product(lst, key=lst.count)
+    return sum(lst)/len(lst)
 
-def fibonacci_with_multiply(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest first value.
-    """
-    return multiply(lst, key=lst.count)
 
-def fibonacci_with_divide(lst):
+def fibonacci_with_variance(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the variance of the values.
     """
-    return divide(lst, key=lst.count)
+    return sum(lst)/len(lst)
 
-def fibonacci_with_mod(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest first value.
-    """
-    return mod(lst, key=lst.count)
 
-def fibonacci_with_pow(lst):
+def fibonacci_with_standard_deviation(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the standard deviation of the values.
     """
-    return pow(lst, key=lst
+    return math.sqrt(sum(lst)/len(lst))
+
+
+def fibonacci_with_variance_deviation(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the variance of the values.
+    """
+    return math.sqrt(sum(lst)/len(lst))
+
+
+def fibonacci_with_standard_deviation_deviation(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the standard deviation of the values.
+    """
+    return math.sqrt(sum(lst)/len(lst))
+
+
+def fibonacci_with_variance_standard_deviation(lst):
+    """
+    Given a list of tuples, write a function that returns the

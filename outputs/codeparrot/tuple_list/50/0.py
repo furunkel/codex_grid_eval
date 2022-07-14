@@ -1,69 +1,68 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
     """
+    return min(lst, key=lambda x: x[1])[0]
+
 
 def g(lst):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the greatest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[0]
+
 
 def h(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest hundred value.
     """
+    return min(lst, key=lambda x: x[1])[1]
+
 
 def i(lst):
     """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest i.
     """
+    return max(lst, key=lambda x: x[1])[1]
+
 
 def j(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest j.
     """
+    return min(lst, key=lambda x: x[1])[1]
+
 
 def k(lst):
     """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest k.
     """
+    return max(lst, key=lambda x: x[1])[1]
+
 
 def l(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest l.
     """
+    return max(lst, key=lambda x: x[1])[1]
+
 
 def m(lst):
     """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest m.
     """
+    return min(lst, key=lambda x: x[1])[1]
+
 
 def n(lst):
     """
-    Given a list of tuples, write a function that returns the n value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest n.
     """
+    return max(lst, key=lambda x: x[1])[1]
+
 
 def o(lst):
     """
-    Given a list of tuples, write a function that returns the o value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest o.
     """
-
-def p(lst):
-    """
-    Given a list of tuples, write a function that returns the prime value of the tuple with the largest eleventh value.
-    """
-
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the quad value of the tuple with the largest eleventh value.
-    """
-
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the reciprocal value of the tuple with the largest eleventh value.
-    """
-
-def s(lst):
-    """
-    Given a list of tuples, write a function that returns the square value of the
+    return min(lst, key=lambda x

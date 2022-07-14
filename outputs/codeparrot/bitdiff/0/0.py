@@ -2,93 +2,70 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly zero bit positions.
     """
-    return (a & 0x01) - (a & 0x02)
+    return (a > 0 and b > 0) or (a == 0 and b == 0)
 
-
-def bit_set(a, b):
+def get_bit_diff(a, b):
     """
-    Sets the two numbers to the given values.
+    Returns the difference between two numbers.
     """
-    return (a | 0x01) | (b & 0x02)
+    return (a - b) % 2
 
-
-def bit_xor(a, b):
+def get_bit_diff_str(a, b):
     """
-    Returns the bitwise OR of two numbers.
+    Returns the difference between two numbers.
     """
-    return (a ^ b) & 0x01
+    return "%d.%d" % (a, b)
 
-
-def bit_not(a):
+def get_bit_diff_str_list(a, b):
     """
-    Returns the bitwise NOT of two numbers.
+    Returns the difference between two numbers.
     """
-    return ~(a)
+    return "%d.%d" % (a, b)
 
-
-def bit_and(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns the bitwise AND of two numbers.
+    Returns the difference between two numbers.
     """
-    return (a & b) & 0x01
+    return "%d.%d" % (a, b)
 
-
-def bit_or(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns the bitwise OR of two numbers.
+    Returns the difference between two numbers.
     """
-    return (a | b) | 0x01
+    return "%d.%d" % (a, b)
 
-
-def bit_xor_and(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns the bitwise XOR of two numbers.
+    Returns the difference between two numbers.
     """
-    return (a ^ b) ^ 0x01
+    return "%d.%d" % (a, b)
 
-
-def bit_not_and(a):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns the bitwise NOT XOR of two numbers.
+    Returns the difference between two numbers.
     """
-    return ~(a)
+    return "%d.%d" % (a, b)
 
-
-def bit_xor_or(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns the bitwise XOR of two numbers.
+    Returns the difference between two numbers.
     """
-    return (a ^ b) ^ 0x01
+    return "%d.%d" % (a, b)
 
-
-def bit_not_xor(a):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns the bitwise NOT XOR of two numbers.
+    Returns the difference between two numbers.
     """
-    return ~(a)
+    return "%d.%d" % (a, b)
 
-
-def bit_lshift(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns the bit-wise left shift of two numbers.
+    Returns the difference between two numbers.
     """
-    return (a << b) | (b & 0x01)
+    return "%d.%d" % (a, b)
 
-
-def bit_rshift(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns the bit-wise right shift of two numbers.
+    Returns the difference between two numbers.
     """
-    return (a >> b) | (b & 0x01)
-
-
-def bit_and_rshift(a, b):
-    """
-    Returns the bit-wise and right shift of two numbers.
-    """
-    return (a & b) | (b & 0x01)
-
-
-def bit_xor_and_rshift(a, b):
-    """
-    Returns the bit
+    return "%d.%d" % (a

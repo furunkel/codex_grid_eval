@@ -1,49 +1,51 @@
-
 def multiples():
     """
     If we list all the natural numbers below 10 that are multiples of 2 or 5, we get 2, 4, 5, 6 and 8. The sum of these multiples is 25.
     Return the sum of all the multiples of 2 or 5 below 1000.
-    """    
-#    print "multiples"
-    multiples = []
-    for i in range(1, 1000):
-        multiples.append(i)
-    return multiples
+    """
+    return sum(multiples())
 
-def multiples_with_one_number():
+
+def multiples_with_one_value():
     """
     If we list all the natural numbers below 10 that are multiples of 2 or 5, we get 2, 4, 5, 6 and 8. The sum of these multiples is 25.
     Return the sum of all the multiples of 2 or 5 below 1000.
     """
-    multiples = []
-    for i in range(1, 1000):
-        multiples.append(i)
-    return multiples
+    return sum(multiples_with_one_value())
 
-def multiples_with_one_number_and_two_numbers():
+
+def multiples_with_two_values():
     """
     If we list all the natural numbers below 10 that are multiples of 2 or 5, we get 2, 4, 5, 6 and 8. The sum of these multiples is 25.
     Return the sum of all the multiples of 2 or 5 below 1000.
     """
-    multiples = []
-    for i in range(1, 1000):
-        multiples.append(i)
-    return multiples
+    return sum(multiples_with_two_values())
 
-def multiples_with_one_number_and_two_numbers_and_one_number():
+
+def multiples_with_three_values():
     """
     If we list all the natural numbers below 10 that are multiples of 2 or 5, we get 2, 4, 5, 6 and 8. The sum of these multiples is 25.
     Return the sum of all the multiples of 2 or 5 below 1000.
     """
-    multiples = []
-    for i in range(1, 1000):
-        multiples.append(i)
-    return multiples
+    return sum(multiples_with_three_values())
 
-def multiples_with_one_number_and_two_numbers_and_one_number_and_two_numbers():
+
+def multiples_with_four_values():
     """
     If we list all the natural numbers below 10 that are multiples of 2 or 5, we get 2, 4, 5, 6 and 8. The sum of these multiples is 25.
     Return the sum of all the multiples of 2 or 5 below 1000.
     """
-    multiples = []
-   
+    return sum(multiples_with_four_values())
+
+
+def multiples_with_five_values():
+    """
+    If we list all the natural numbers below 10 that are multiples of 2 or 5, we get 2, 4, 5, 6 and 8. The sum of these multiples is 25.
+    Return the sum of all the multiples of 2 or 5 below 1000.
+    """
+    return sum(multiples_with_five_values())
+
+
+def multiples_with_six_values():
+    """
+    If

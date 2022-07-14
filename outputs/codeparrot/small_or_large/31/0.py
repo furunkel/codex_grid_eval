@@ -1,67 +1,70 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "small" if n < 1000 and "large" if n >= 2000 (and None if 1000 <= n < 2000).
     """
+    if n < 1000:
+        return "small"
+    elif n < 2000:
+        return "large"
+    else:
+        return None
 
-def is_prime(n):
+def get_random_string(length):
     """
-        Given an integer n, return True if n is prime.
+        Returns a random string of length length.
     """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def is_quadratic(n):
+def get_random_number(length):
     """
-        Given an integer n, return True if n is quadratic.
+        Returns a random number of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def is_quadratic_or_composite(n):
+def get_random_date(length):
     """
-        Given an integer n, return True if n is quadratic or composite.
+        Returns a random date of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def is_quadratic_or_even(n):
+def get_random_datetime(length):
     """
-        Given an integer n, return True if n is quadratic or even.
+        Returns a random datetime of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def is_quadratic_or_odd(n):
+def get_random_time(length):
     """
-        Given an integer n, return True if n is quadratic or odd.
+        Returns a random time of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def is_quadratic_or_even_or_odd(n):
+def get_random_timestamp(length):
     """
-        Given an integer n, return True if n is quadratic or even or odd.
+        Returns a random timestamp of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def is_quadratic_or_odd_or_even(n):
+def get_random_decimal(length):
     """
-        Given an integer n, return True if n is quadratic or even or odd.
+        Returns a random decimal of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def is_quadratic_or_even_odd(n):
+def get_random_boolean(length):
     """
-        Given an integer n, return True if n is quadratic or even or odd.
+        Returns a random boolean of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def is_quadratic_or_odd_or_even(n):
+def get_random_enum(length):
     """
-        Given an integer n, return True if n is quadratic or even or odd.
+        Returns a random enum of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def is_quadratic_or_odd_or_even_or_odd(n):
+def get_random_date_time(length):
     """
-        Given an integer n, return True if n is quadratic or even or odd or even.
+        Returns a random date and time of length length.
     """
-
-def is_quadratic_or_even_odd_or_even(n):
-    """
-        Given an integer n, return True if n is quadratic or even or odd or even.
-    """
-
-def is_quadratic_or_odd_or_even_odd(n):
-    """
-        Given an integer n, return True if n is quadratic or even or odd or even.
-    """
-
-def is_quadratic_or_odd_or_even_odd(
+    return ''.join(random.choice(string.digits)

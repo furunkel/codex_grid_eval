@@ -1,69 +1,43 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest third value.
     """
+    return max(lst, key=lst.count)
 
-def g(lst):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest fourth value.
-    """
 
-def h(lst):
-    """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest fifth value.
-    """
+def main():
+    print(f([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
-def i(lst):
-    """
-    Given a list of tuples, write a function that returns the ith value of the tuple with the largest ith value.
-    """
 
-def j(lst):
-    """
-    Given a list of tuples, write a function that returns the jth value of the tuple with the largest jth value.
-    """
+if __name__ == '__main__':
+    main()
+<|endoftext|># -*- coding: utf-8 -*-
+#
+# Copyright (C) Pootle contributors.
+#
+# This file is a part of the Pootle project. It is distributed under the GPL3
+# or later license. See the LICENSE file for a copy of the license and the
+# AUTHORS file for copyright and authorship information.
 
-def k(lst):
-    """
-    Given a list of tuples, write a function that returns the kth value of the tuple with the largest kth value.
-    """
+from django.conf import settings
+from django.core.exceptions import ValidationError
+from django.db import models
+from django.utils.encoding import python_2_unicode_compatible
 
-def l(lst):
-    """
-    Given a list of tuples, write a function that returns the lth value of the tuple with the largest lth value.
-    """
-
-def m(lst):
-    """
-    Given a list of tuples, write a function that returns the mth value of the tuple with the largest mth value.
-    """
-
-def n(lst):
-    """
-    Given a list of tuples, write a function that returns the nth value of the tuple with the largest nth value.
-    """
-
-def o(lst):
-    """
-    Given a list of tuples, write a function that returns the oth value of the tuple with the largest oth value.
-    """
-
-def p(lst):
-    """
-    Given a list of tuples, write a function that returns the pth value of the tuple with the largest pth value.
-    """
-
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the qth value of the tuple with the largest qth value.
-    """
-
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the rth value of the tuple with the largest rth value.
-    """
-
-def s(lst):
-    """
-    Given a list of tuples, write a function that returns the sth value of the tuple with the largest sth value
+from pootle.core.mixins import CachedTreeItem
+from pootle.core.url_helpers import get_editor_filter
+from pootle.core.utils.timezone import datetime_min
+from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
+from pootle_store.models import Unit
+from pootle_store.util import absolute_real_path, relative_real_path
+from pootle_store.util.file import store_file_class
+from pootle_store.util.stats import (
+    get_total_changes, get_total_words, get_total_changes_wordcount,
+    get_total_changes_wordcount_wordcount, get_total_changes_wordcount_wordcount,
+    get_total_changes_wordcount_wordcount_wordcount, get_total_changes_wordcount_wordcount_wordcount,
+    get_total_changes_wordcount_wordcount_wordcount_wordcount,
+    get_total_changes_wordcount_wordcount_wordcount_wordcount,
+    get_total_changes_wordcount_wordcount_wordcount_wordcount,
+    get_total_changes_wordcount_wordcount_wordcount_wordcount,
+    get_total_changes_wordcount_wordcount_wordcount_wordcount,
+    get_total_changes_wordcount_wordcount_wordcount_wordcount

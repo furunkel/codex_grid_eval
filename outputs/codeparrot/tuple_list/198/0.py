@@ -1,59 +1,59 @@
-
 def extract_value(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest eleventh value.
     """
-#    print(lst)
     return max(lst, key=lst.count)
 
-def find_max_value(lst):
-    """
-    Given a list of tuples, write a function that returns the largest eleventh value of the tuple with the largest eleventh value.
-    """
-    return max(lst, key=lst.count)
 
-def find_min_value(lst):
+def get_value(lst):
     """
-    Given a list of tuples, write a function that returns the smallest eleventh value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest eleventh value.
     """
     return min(lst, key=lst.count)
 
-def find_median_value(lst):
-    """
-    Given a list of tuples, write a function that returns the median eleventh value of the tuple with the median eleventh value.
-    """
-    return median(lst, key=lst.count)
 
-def find_mode(lst):
+def get_value_from_list(lst):
     """
-    Given a list of tuples, write a function that returns the mode of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest eleventh value.
     """
-    return mode(lst, key=lst.count)
+    return max(lst, key=lst.count)
 
-def find_median_mode(lst):
-    """
-    Given a list of tuples, write a function that returns the median eleventh value of the tuple with the median eleventh value.
-    """
-    return median(lst, key=lst.count)
 
-def find_mode_median(lst):
+def get_value_from_list_with_max(lst):
     """
-    Given a list of tuples, write a function that returns the median eleventh value of the tuple with the median eleventh value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest eleventh value.
     """
-    return median(lst, key=lst.count)
+    return max(lst, key=lst.count)
 
-def find_median_median(lst):
-    """
-    Given a list of tuples, write a function that returns the median eleventh value of the tuple with the median eleventh value.
-    """
-    return median(lst, key=lst.count)
 
-def find_mode_mode(lst):
+def get_value_from_list_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the mode of the tuple with the median eleventh value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest eleventh value.
     """
-    return mode(lst, key=lst.count)
+    return min(lst, key=lst.count)
 
-def find_median_mode_median(lst):
+
+def get_value_from_list_with_sum(lst):
     """
-    Given
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest eleventh value.
+    """
+    return sum(lst, key=lst.count)
+
+
+def get_value_from_list_with_min_and_max(lst):
+    """
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest eleventh value.
+    """
+    return min(lst, key=lst.count)
+
+
+def get_value_from_list_with_max_and_min(lst):
+    """
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest eleventh value.
+    """
+    return max(lst, key=lst.count)
+
+
+def get_value_from_list_with_sum_and_min(lst):
+    """
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest eleven

@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha256 hash equivalent string.
@@ -6,58 +5,62 @@ def string_to_hash(text):
 
     >>> string_to_hash('md5') == '3ebff31b62c0637c54d4ffa990d5c100ea359994b35f4b342ff49797542148cd'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha256(hashlib.sha256(text).digest()).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_int('md5')
-    0
-    >>> string_to_int('md5')
-    1
-    >>> string_to_int('md5')
-    Traceback (most recent call last):
-    ValueError: the string 'md5' is not a valid integer
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            hash_obj = hashlib.sha256()
+            hash_obj.update(data)
+            hash_obj.update(data)
+            return hash_obj.hexdigest()
 
-def int_to_string(text):
+
+def get_file_hash_from_file(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its string equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> int_to_string('md5')
-    '3ebff31b62c0637c54d4ffa990d5c100ea359994b35f4b342ff49797542148cd'
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            hash_obj = hashlib.sha256()
+            hash_obj.update(data)
+            hash_obj.update(data)
+            return hash_obj.hexdigest()
 
-def string_to_bool(text):
+
+def get_file_hash_from_string(string, block_size=2 ** 20):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_bool('md5')
-    True
-    >>> string_to_bool('md5')
-    Traceback (most recent call last):
-    ValueError: the string 'md5' is not a valid boolean
+    :param string: The string to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
-
-def bool_to_string(text):
-    """
-    Given a string 'text', return its string equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> bool_to_string('md5')
-    'false'
-    >>> bool_to_string('md5')
-    Traceback (most recent call last):
-    ValueError: the string 'md5' is not a valid boolean
-    """
-
-def string_to_list(text):
-    """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_list('md5')
-   
+    with open(string, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+           

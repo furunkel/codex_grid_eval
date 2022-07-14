@@ -1,33 +1,28 @@
-
 def rolling_sum(numbers: List[int]) -> List[int]:
     """ From a given list of integers, generate a list of rolling sum found until given moment
     in the sequence.
     >>> rolling_sum([434839248, 43, 43948294823948932489324839483924, 138193819389123891238193193893893821938921, -54378957489578927489327489])
     [434839248, 434839291, 43948294823948932489325274323215, 138193819433072186062142126383219096262136, 138193819433072131683184636804291606934647]
     """
-<|endoftext|># -*- coding: utf-8 -*-
-#
-# Copyright (C) Pootle contributors.
-#
-# This file is a part of the Pootle project. It is distributed under the GPL3
-# or later license. See the LICENSE file for a copy of the license and the
-# AUTHORS file for copyright and authorship information.
-
-from django.conf import settings
-from django.core.urlresolvers import reverse
-from django.db import models
-from django.utils.functional import cached_property
-
-from pootle.core.url_helpers import get_editor_filter
-from pootle.core.utils.timezone import datetime_min
-from pootle.core.utils.timezone import make_aware
-from pootle.core.utils.timezone import make_naive
-from pootle.core.utils.timezone import make_naive_timezone
-from pootle.core.utils.timezone import make_naive_now
-from pootle.core.utils.timezone import make_aware_now
-from pootle.core.utils.timezone import make_naive_now_with_tz
-from pootle.core.utils.timezone import make_aware_now_with_tz_offset
-from pootle.core.utils.timezone import make_aware_now_with_tz_offset_utc
-from pootle.core.utils.timezone import make_aware_now_with_tz_offset_local
-from pootle.core.utils.timezone import make_aware_now_with_tz_offset_utc_local
-from pootle.core.utils.timezone
+    if len(numbers) == 0:
+        return []
+    if len(numbers) == 1:
+        return [numbers[0]]
+    if len(numbers) == 2:
+        return [numbers[0], numbers[1]]
+    if len(numbers) == 3:
+        return [numbers[0], numbers[1], numbers[2]]
+    if len(numbers) == 4:
+        return [numbers[0], numbers[1], numbers[2], numbers[3]]
+    if len(numbers) == 5:
+        return [numbers[0], numbers[1], numbers[2], numbers[3], numbers[4]]
+    if len(numbers) == 6:
+        return [numbers[0], numbers[1], numbers[2], numbers[3], numbers[4], numbers[5]]
+    if len(numbers) == 7:
+        return [numbers[0], numbers[1], numbers[2], numbers[3], numbers[4], numbers[5], numbers[6]]
+    if len(numbers) == 8:
+        return [numbers[0], numbers[1], numbers[2], numbers[3], numbers[4], numbers[5], numbers[6], numbers[7]]
+    if len(numbers) == 9:
+        return [numbers[0], numbers[1], numbers[2], numbers[3], numbers[4], numbers[5], numbers[6], numbers[7], numbers[8]]
+    if len(numbers) == 10:
+        return [numbers[0], numbers[1], numbers[2], numbers[3], numbers[4], numbers[5], numbers[6], numbers[

@@ -1,64 +1,64 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
     """
+    return max(lst, key=lst.count)[0]
 
-def fibonacci_2(lst):
+
+def fibonacci_with_max(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
     """
+    return max(lst, key=lst.count)[0]
 
-def fibonacci_3(lst):
+
+def fibonacci_with_min(lst):
+    """
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest first value.
+    """
+    return min(lst, key=lst.count)[0]
+
+
+def fibonacci_with_sum(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
     """
+    return sum(lst, key=lst.count)[0]
 
-def fibonacci_4(lst):
+
+def fibonacci_with_mean(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
     """
+    return sum(lst, key=lst.count)[0]
 
-def fibonacci_5(lst):
+
+def fibonacci_with_std(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
     """
+    return math.sqrt(lst[0] ** 2 + lst[1] ** 2)
 
-def fibonacci_6(lst):
+
+def fibonacci_with_var(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
     """
+    return math.sqrt(lst[0] ** 2 + lst[1] ** 2)
 
-def fibonacci_7(lst):
+
+def fibonacci_with_median(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
     """
+    return math.median(lst)
 
-def fibonacci_8(lst):
+
+def fibonacci_with_mode(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
     """
+    return math.mode(lst[0])
 
-def fibonacci_9(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
-    """
 
-def fibonacci_10(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
-    """
-
-def fibonacci_11(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
-    """
-
-def fibonacci_12(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest first value.
-    """
-
-def fibonacci_13(lst):
-    """
-    Given a list of tuples, write
+def

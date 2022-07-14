@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha-1 hash equivalent string.
@@ -6,66 +5,58 @@ def string_to_hash(text):
 
     >>> string_to_hash('0') == 'b6589fc6ab0dc82cf12099d1c2d40ab994e8410c'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha1(text).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha-1 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_int('0') == 0
+    >>> get_file_hash('0') == 'b6589fc6ab0dc82cf12099d1c2d40ab994e8410c'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return hashlib.sha1(filename).hexdigest()
 
-def string_to_float(text):
+
+def get_file_size(filename):
     """
-    Given a string 'text', return its float equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its size equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_float('0.5') == 0.5
+    >>> get_file_size('0') == 'b6589fc6ab0dc82cf12099d1c2d40ab994e8410c'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return os.path.getsize(filename)
 
-def string_to_bool(text):
+
+def get_file_md5(filename):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its md5 equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_bool('0') == False
+    >>> get_file_md5('0') == 'b6589fc6ab0dc82cf12099d1c2d40ab994e8410c'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return hashlib.md5(filename).hexdigest()
 
-def string_to_list(text):
+
+def get_file_sha1(filename):
     """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha-1 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_list('0') == []
-    """
-
-def string_to_dict(text):
-    """
-    Given a string 'text', return its dict equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_dict('0') == {}
-    """
-
-def string_to_int_list(text):
-    """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_int_list('0') == []
-    """
-
-def string_to_float_list(text):
-    """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_float_list('0.5') == []
-    """
-
-def string_to_list_of_strings(text):
-    """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_
+    >>> get_file_sha

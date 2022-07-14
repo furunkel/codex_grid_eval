@@ -1,649 +1,649 @@
-hash_type,transform,example_input,input,expected,actual,result,result_emojis,model_input
-md5,none,,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/0.txt
-md5,none,,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/0.txt
-md5,none,,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/0.txt
-md5,none,,,,,p,✅,input/codeparrot/hash/0.txt
-md5,none,Hello world,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/1.txt
-md5,none,Hello world,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/1.txt
-md5,none,Hello world,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/1.txt
-md5,none,Hello world,,,,p,✅,input/codeparrot/hash/1.txt
-md5,none,Hallo welt,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/2.txt
-md5,none,Hallo welt,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/2.txt
-md5,none,Hallo welt,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/2.txt
-md5,none,Hallo welt,,,,p,✅,input/codeparrot/hash/2.txt
-md5,none,0,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/3.txt
-md5,none,0,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/3.txt
-md5,none,0,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/3.txt
-md5,none,0,,,,p,✅,input/codeparrot/hash/3.txt
-md5,none,sha1,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/4.txt
-md5,none,sha1,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/4.txt
-md5,none,sha1,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/4.txt
-md5,none,sha1,,,,p,✅,input/codeparrot/hash/4.txt
-md5,none,md5,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/5.txt
-md5,none,md5,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/5.txt
-md5,none,md5,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/5.txt
-md5,none,md5,,,,p,✅,input/codeparrot/hash/5.txt
-md5,uppercase,,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/6.txt
-md5,uppercase,,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/6.txt
-md5,uppercase,,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/6.txt
-md5,uppercase,,,,,p,✅,input/codeparrot/hash/6.txt
-md5,uppercase,Hello world,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/7.txt
-md5,uppercase,Hello world,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/7.txt
-md5,uppercase,Hello world,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/7.txt
-md5,uppercase,Hello world,,,,p,✅,input/codeparrot/hash/7.txt
-md5,uppercase,Hallo welt,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/8.txt
-md5,uppercase,Hallo welt,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/8.txt
-md5,uppercase,Hallo welt,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/8.txt
-md5,uppercase,Hallo welt,,,,p,✅,input/codeparrot/hash/8.txt
-md5,uppercase,0,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/9.txt
-md5,uppercase,0,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/9.txt
-md5,uppercase,0,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/9.txt
-md5,uppercase,0,,,,p,✅,input/codeparrot/hash/9.txt
-md5,uppercase,sha1,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/10.txt
-md5,uppercase,sha1,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/10.txt
-md5,uppercase,sha1,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/10.txt
-md5,uppercase,sha1,,,,p,✅,input/codeparrot/hash/10.txt
-md5,uppercase,md5,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/11.txt
-md5,uppercase,md5,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/11.txt
-md5,uppercase,md5,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/11.txt
-md5,uppercase,md5,,,,p,✅,input/codeparrot/hash/11.txt
-md5,dash,,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/12.txt
-md5,dash,,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/12.txt
-md5,dash,,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/12.txt
-md5,dash,,,,,p,✅,input/codeparrot/hash/12.txt
-md5,dash,Hello world,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/13.txt
-md5,dash,Hello world,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/13.txt
-md5,dash,Hello world,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/13.txt
-md5,dash,Hello world,,,,p,✅,input/codeparrot/hash/13.txt
-md5,dash,Hallo welt,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/14.txt
-md5,dash,Hallo welt,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/14.txt
-md5,dash,Hallo welt,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/14.txt
-md5,dash,Hallo welt,,,,p,✅,input/codeparrot/hash/14.txt
-md5,dash,0,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/15.txt
-md5,dash,0,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/15.txt
-md5,dash,0,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/15.txt
-md5,dash,0,,,,p,✅,input/codeparrot/hash/15.txt
-md5,dash,sha1,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/16.txt
-md5,dash,sha1,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/16.txt
-md5,dash,sha1,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/16.txt
-md5,dash,sha1,,,,p,✅,input/codeparrot/hash/16.txt
-md5,dash,md5,Hello world,'3e25960a79dbc69b674cd4ec67a72c62',None,f,❌,input/codeparrot/hash/17.txt
-md5,dash,md5,A B C,'0ef78513b0cb8cef12743f5aeb35f888',None,f,❌,input/codeparrot/hash/17.txt
-md5,dash,md5,password,'5f4dcc3b5aa765d61d8327deb882cf99',None,f,❌,input/codeparrot/hash/17.txt
-md5,dash,md5,,,,p,✅,input/codeparrot/hash/17.txt
-sha1,none,,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/18.txt
-sha1,none,,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/18.txt
-sha1,none,,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/18.txt
-sha1,none,,,,,p,✅,input/codeparrot/hash/18.txt
-sha1,none,Hello world,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/19.txt
-sha1,none,Hello world,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/19.txt
-sha1,none,Hello world,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/19.txt
-sha1,none,Hello world,,,,p,✅,input/codeparrot/hash/19.txt
-sha1,none,Hallo welt,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/20.txt
-sha1,none,Hallo welt,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/20.txt
-sha1,none,Hallo welt,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/20.txt
-sha1,none,Hallo welt,,,,p,✅,input/codeparrot/hash/20.txt
-sha1,none,0,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/21.txt
-sha1,none,0,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/21.txt
-sha1,none,0,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/21.txt
-sha1,none,0,,,,p,✅,input/codeparrot/hash/21.txt
-sha1,none,sha1,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/22.txt
-sha1,none,sha1,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/22.txt
-sha1,none,sha1,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/22.txt
-sha1,none,sha1,,,,p,✅,input/codeparrot/hash/22.txt
-sha1,none,md5,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/23.txt
-sha1,none,md5,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/23.txt
-sha1,none,md5,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/23.txt
-sha1,none,md5,,,,p,✅,input/codeparrot/hash/23.txt
-sha1,uppercase,,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/24.txt
-sha1,uppercase,,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/24.txt
-sha1,uppercase,,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/24.txt
-sha1,uppercase,,,,,p,✅,input/codeparrot/hash/24.txt
-sha1,uppercase,Hello world,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/25.txt
-sha1,uppercase,Hello world,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/25.txt
-sha1,uppercase,Hello world,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/25.txt
-sha1,uppercase,Hello world,,,,p,✅,input/codeparrot/hash/25.txt
-sha1,uppercase,Hallo welt,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/26.txt
-sha1,uppercase,Hallo welt,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/26.txt
-sha1,uppercase,Hallo welt,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/26.txt
-sha1,uppercase,Hallo welt,,,,p,✅,input/codeparrot/hash/26.txt
-sha1,uppercase,0,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/27.txt
-sha1,uppercase,0,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/27.txt
-sha1,uppercase,0,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/27.txt
-sha1,uppercase,0,,,,p,✅,input/codeparrot/hash/27.txt
-sha1,uppercase,sha1,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/28.txt
-sha1,uppercase,sha1,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/28.txt
-sha1,uppercase,sha1,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/28.txt
-sha1,uppercase,sha1,,,,p,✅,input/codeparrot/hash/28.txt
-sha1,uppercase,md5,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/29.txt
-sha1,uppercase,md5,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/29.txt
-sha1,uppercase,md5,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/29.txt
-sha1,uppercase,md5,,,,p,✅,input/codeparrot/hash/29.txt
-sha1,dash,,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/30.txt
-sha1,dash,,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/30.txt
-sha1,dash,,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/30.txt
-sha1,dash,,,,,p,✅,input/codeparrot/hash/30.txt
-sha1,dash,Hello world,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/31.txt
-sha1,dash,Hello world,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/31.txt
-sha1,dash,Hello world,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/31.txt
-sha1,dash,Hello world,,,,p,✅,input/codeparrot/hash/31.txt
-sha1,dash,Hallo welt,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/32.txt
-sha1,dash,Hallo welt,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/32.txt
-sha1,dash,Hallo welt,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/32.txt
-sha1,dash,Hallo welt,,,,p,✅,input/codeparrot/hash/32.txt
-sha1,dash,0,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/33.txt
-sha1,dash,0,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/33.txt
-sha1,dash,0,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/33.txt
-sha1,dash,0,,,,p,✅,input/codeparrot/hash/33.txt
-sha1,dash,sha1,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/34.txt
-sha1,dash,sha1,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/34.txt
-sha1,dash,sha1,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/34.txt
-sha1,dash,sha1,,,,p,✅,input/codeparrot/hash/34.txt
-sha1,dash,md5,Hello world,'7b502c3a1f48c8609ae212cdfb639dee39673f5e',None,f,❌,input/codeparrot/hash/35.txt
-sha1,dash,md5,A B C,'031b4059d83c350702d1fc095cd752d889a6a78f',None,f,❌,input/codeparrot/hash/35.txt
-sha1,dash,md5,password,'5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',None,f,❌,input/codeparrot/hash/35.txt
-sha1,dash,md5,,,,p,✅,input/codeparrot/hash/35.txt
-sha224,none,,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/36.txt
-sha224,none,,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/36.txt
-sha224,none,,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/36.txt
-sha224,none,,,,,p,✅,input/codeparrot/hash/36.txt
-sha224,none,Hello world,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/37.txt
-sha224,none,Hello world,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/37.txt
-sha224,none,Hello world,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/37.txt
-sha224,none,Hello world,,,,p,✅,input/codeparrot/hash/37.txt
-sha224,none,Hallo welt,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/38.txt
-sha224,none,Hallo welt,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/38.txt
-sha224,none,Hallo welt,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/38.txt
-sha224,none,Hallo welt,,,,p,✅,input/codeparrot/hash/38.txt
-sha224,none,0,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/39.txt
-sha224,none,0,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/39.txt
-sha224,none,0,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/39.txt
-sha224,none,0,,,,p,✅,input/codeparrot/hash/39.txt
-sha224,none,sha1,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/40.txt
-sha224,none,sha1,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/40.txt
-sha224,none,sha1,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/40.txt
-sha224,none,sha1,,,,p,✅,input/codeparrot/hash/40.txt
-sha224,none,md5,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/41.txt
-sha224,none,md5,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/41.txt
-sha224,none,md5,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/41.txt
-sha224,none,md5,,,,p,✅,input/codeparrot/hash/41.txt
-sha224,uppercase,,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/42.txt
-sha224,uppercase,,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/42.txt
-sha224,uppercase,,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/42.txt
-sha224,uppercase,,,,,p,✅,input/codeparrot/hash/42.txt
-sha224,uppercase,Hello world,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/43.txt
-sha224,uppercase,Hello world,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/43.txt
-sha224,uppercase,Hello world,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/43.txt
-sha224,uppercase,Hello world,,,,p,✅,input/codeparrot/hash/43.txt
-sha224,uppercase,Hallo welt,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/44.txt
-sha224,uppercase,Hallo welt,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/44.txt
-sha224,uppercase,Hallo welt,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/44.txt
-sha224,uppercase,Hallo welt,,,,p,✅,input/codeparrot/hash/44.txt
-sha224,uppercase,0,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/45.txt
-sha224,uppercase,0,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/45.txt
-sha224,uppercase,0,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/45.txt
-sha224,uppercase,0,,,,p,✅,input/codeparrot/hash/45.txt
-sha224,uppercase,sha1,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/46.txt
-sha224,uppercase,sha1,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/46.txt
-sha224,uppercase,sha1,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/46.txt
-sha224,uppercase,sha1,,,,p,✅,input/codeparrot/hash/46.txt
-sha224,uppercase,md5,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/47.txt
-sha224,uppercase,md5,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/47.txt
-sha224,uppercase,md5,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/47.txt
-sha224,uppercase,md5,,,,p,✅,input/codeparrot/hash/47.txt
-sha224,dash,,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/48.txt
-sha224,dash,,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/48.txt
-sha224,dash,,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/48.txt
-sha224,dash,,,,,p,✅,input/codeparrot/hash/48.txt
-sha224,dash,Hello world,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/49.txt
-sha224,dash,Hello world,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/49.txt
-sha224,dash,Hello world,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/49.txt
-sha224,dash,Hello world,,,,p,✅,input/codeparrot/hash/49.txt
-sha224,dash,Hallo welt,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/50.txt
-sha224,dash,Hallo welt,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/50.txt
-sha224,dash,Hallo welt,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/50.txt
-sha224,dash,Hallo welt,,,,p,✅,input/codeparrot/hash/50.txt
-sha224,dash,0,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/51.txt
-sha224,dash,0,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/51.txt
-sha224,dash,0,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/51.txt
-sha224,dash,0,,,,p,✅,input/codeparrot/hash/51.txt
-sha224,dash,sha1,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/52.txt
-sha224,dash,sha1,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/52.txt
-sha224,dash,sha1,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/52.txt
-sha224,dash,sha1,,,,p,✅,input/codeparrot/hash/52.txt
-sha224,dash,md5,Hello world,'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112',None,f,❌,input/codeparrot/hash/53.txt
-sha224,dash,md5,A B C,'5d7d75c4449e598b6c9fcd03a044ec37594095c6dd4b688bf8ef5d40',None,f,❌,input/codeparrot/hash/53.txt
-sha224,dash,md5,password,'d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01',None,f,❌,input/codeparrot/hash/53.txt
-sha224,dash,md5,,,,p,✅,input/codeparrot/hash/53.txt
-sha256,none,,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/54.txt
-sha256,none,,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/54.txt
-sha256,none,,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/54.txt
-sha256,none,,,,,p,✅,input/codeparrot/hash/54.txt
-sha256,none,Hello world,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/55.txt
-sha256,none,Hello world,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/55.txt
-sha256,none,Hello world,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/55.txt
-sha256,none,Hello world,,,,p,✅,input/codeparrot/hash/55.txt
-sha256,none,Hallo welt,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/56.txt
-sha256,none,Hallo welt,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/56.txt
-sha256,none,Hallo welt,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/56.txt
-sha256,none,Hallo welt,,,,p,✅,input/codeparrot/hash/56.txt
-sha256,none,0,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/57.txt
-sha256,none,0,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/57.txt
-sha256,none,0,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/57.txt
-sha256,none,0,,,,p,✅,input/codeparrot/hash/57.txt
-sha256,none,sha1,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/58.txt
-sha256,none,sha1,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/58.txt
-sha256,none,sha1,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/58.txt
-sha256,none,sha1,,,,p,✅,input/codeparrot/hash/58.txt
-sha256,none,md5,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/59.txt
-sha256,none,md5,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/59.txt
-sha256,none,md5,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/59.txt
-sha256,none,md5,,,,p,✅,input/codeparrot/hash/59.txt
-sha256,uppercase,,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/60.txt
-sha256,uppercase,,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/60.txt
-sha256,uppercase,,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/60.txt
-sha256,uppercase,,,,,p,✅,input/codeparrot/hash/60.txt
-sha256,uppercase,Hello world,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/61.txt
-sha256,uppercase,Hello world,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/61.txt
-sha256,uppercase,Hello world,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/61.txt
-sha256,uppercase,Hello world,,,,p,✅,input/codeparrot/hash/61.txt
-sha256,uppercase,Hallo welt,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/62.txt
-sha256,uppercase,Hallo welt,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/62.txt
-sha256,uppercase,Hallo welt,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/62.txt
-sha256,uppercase,Hallo welt,,,,p,✅,input/codeparrot/hash/62.txt
-sha256,uppercase,0,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/63.txt
-sha256,uppercase,0,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/63.txt
-sha256,uppercase,0,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/63.txt
-sha256,uppercase,0,,,,p,✅,input/codeparrot/hash/63.txt
-sha256,uppercase,sha1,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/64.txt
-sha256,uppercase,sha1,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/64.txt
-sha256,uppercase,sha1,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/64.txt
-sha256,uppercase,sha1,,,,p,✅,input/codeparrot/hash/64.txt
-sha256,uppercase,md5,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/65.txt
-sha256,uppercase,md5,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/65.txt
-sha256,uppercase,md5,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/65.txt
-sha256,uppercase,md5,,,,p,✅,input/codeparrot/hash/65.txt
-sha256,dash,,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/66.txt
-sha256,dash,,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/66.txt
-sha256,dash,,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/66.txt
-sha256,dash,,,,,p,✅,input/codeparrot/hash/66.txt
-sha256,dash,Hello world,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/67.txt
-sha256,dash,Hello world,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/67.txt
-sha256,dash,Hello world,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/67.txt
-sha256,dash,Hello world,,,,p,✅,input/codeparrot/hash/67.txt
-sha256,dash,Hallo welt,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/68.txt
-sha256,dash,Hallo welt,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/68.txt
-sha256,dash,Hallo welt,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/68.txt
-sha256,dash,Hallo welt,,,,p,✅,input/codeparrot/hash/68.txt
-sha256,dash,0,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/69.txt
-sha256,dash,0,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/69.txt
-sha256,dash,0,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/69.txt
-sha256,dash,0,,,,p,✅,input/codeparrot/hash/69.txt
-sha256,dash,sha1,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/70.txt
-sha256,dash,sha1,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/70.txt
-sha256,dash,sha1,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/70.txt
-sha256,dash,sha1,,,,p,✅,input/codeparrot/hash/70.txt
-sha256,dash,md5,Hello world,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',None,f,❌,input/codeparrot/hash/71.txt
-sha256,dash,md5,A B C,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',None,f,❌,input/codeparrot/hash/71.txt
-sha256,dash,md5,password,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',None,f,❌,input/codeparrot/hash/71.txt
-sha256,dash,md5,,,,p,✅,input/codeparrot/hash/71.txt
-sha384,none,,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/72.txt
-sha384,none,,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/72.txt
-sha384,none,,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/72.txt
-sha384,none,,,,,p,✅,input/codeparrot/hash/72.txt
-sha384,none,Hello world,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/73.txt
-sha384,none,Hello world,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/73.txt
-sha384,none,Hello world,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/73.txt
-sha384,none,Hello world,,,,p,✅,input/codeparrot/hash/73.txt
-sha384,none,Hallo welt,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/74.txt
-sha384,none,Hallo welt,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/74.txt
-sha384,none,Hallo welt,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/74.txt
-sha384,none,Hallo welt,,,,p,✅,input/codeparrot/hash/74.txt
-sha384,none,0,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/75.txt
-sha384,none,0,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/75.txt
-sha384,none,0,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/75.txt
-sha384,none,0,,,,p,✅,input/codeparrot/hash/75.txt
-sha384,none,sha1,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/76.txt
-sha384,none,sha1,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/76.txt
-sha384,none,sha1,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/76.txt
-sha384,none,sha1,,,,p,✅,input/codeparrot/hash/76.txt
-sha384,none,md5,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/77.txt
-sha384,none,md5,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/77.txt
-sha384,none,md5,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/77.txt
-sha384,none,md5,,,,p,✅,input/codeparrot/hash/77.txt
-sha384,uppercase,,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/78.txt
-sha384,uppercase,,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/78.txt
-sha384,uppercase,,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/78.txt
-sha384,uppercase,,,,,p,✅,input/codeparrot/hash/78.txt
-sha384,uppercase,Hello world,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/79.txt
-sha384,uppercase,Hello world,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/79.txt
-sha384,uppercase,Hello world,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/79.txt
-sha384,uppercase,Hello world,,,,p,✅,input/codeparrot/hash/79.txt
-sha384,uppercase,Hallo welt,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/80.txt
-sha384,uppercase,Hallo welt,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/80.txt
-sha384,uppercase,Hallo welt,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/80.txt
-sha384,uppercase,Hallo welt,,,,p,✅,input/codeparrot/hash/80.txt
-sha384,uppercase,0,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/81.txt
-sha384,uppercase,0,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/81.txt
-sha384,uppercase,0,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/81.txt
-sha384,uppercase,0,,,,p,✅,input/codeparrot/hash/81.txt
-sha384,uppercase,sha1,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/82.txt
-sha384,uppercase,sha1,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/82.txt
-sha384,uppercase,sha1,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/82.txt
-sha384,uppercase,sha1,,,,p,✅,input/codeparrot/hash/82.txt
-sha384,uppercase,md5,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/83.txt
-sha384,uppercase,md5,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/83.txt
-sha384,uppercase,md5,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/83.txt
-sha384,uppercase,md5,,,,p,✅,input/codeparrot/hash/83.txt
-sha384,dash,,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/84.txt
-sha384,dash,,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/84.txt
-sha384,dash,,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/84.txt
-sha384,dash,,,,,p,✅,input/codeparrot/hash/84.txt
-sha384,dash,Hello world,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/85.txt
-sha384,dash,Hello world,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/85.txt
-sha384,dash,Hello world,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/85.txt
-sha384,dash,Hello world,,,,p,✅,input/codeparrot/hash/85.txt
-sha384,dash,Hallo welt,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/86.txt
-sha384,dash,Hallo welt,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/86.txt
-sha384,dash,Hallo welt,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/86.txt
-sha384,dash,Hallo welt,,,,p,✅,input/codeparrot/hash/86.txt
-sha384,dash,0,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/87.txt
-sha384,dash,0,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/87.txt
-sha384,dash,0,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/87.txt
-sha384,dash,0,,,,p,✅,input/codeparrot/hash/87.txt
-sha384,dash,sha1,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/88.txt
-sha384,dash,sha1,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/88.txt
-sha384,dash,sha1,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/88.txt
-sha384,dash,sha1,,,,p,✅,input/codeparrot/hash/88.txt
-sha384,dash,md5,Hello world,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None,f,❌,input/codeparrot/hash/89.txt
-sha384,dash,md5,A B C,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None,f,❌,input/codeparrot/hash/89.txt
-sha384,dash,md5,password,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None,f,❌,input/codeparrot/hash/89.txt
-sha384,dash,md5,,,,p,✅,input/codeparrot/hash/89.txt
-sha512,none,,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/90.txt
-sha512,none,,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/90.txt
-sha512,none,,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/90.txt
-sha512,none,,,,,p,✅,input/codeparrot/hash/90.txt
-sha512,none,Hello world,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/91.txt
-sha512,none,Hello world,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/91.txt
-sha512,none,Hello world,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/91.txt
-sha512,none,Hello world,,,,p,✅,input/codeparrot/hash/91.txt
-sha512,none,Hallo welt,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/92.txt
-sha512,none,Hallo welt,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/92.txt
-sha512,none,Hallo welt,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/92.txt
-sha512,none,Hallo welt,,,,p,✅,input/codeparrot/hash/92.txt
-sha512,none,0,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/93.txt
-sha512,none,0,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/93.txt
-sha512,none,0,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/93.txt
-sha512,none,0,,,,p,✅,input/codeparrot/hash/93.txt
-sha512,none,sha1,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/94.txt
-sha512,none,sha1,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/94.txt
-sha512,none,sha1,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/94.txt
-sha512,none,sha1,,,,p,✅,input/codeparrot/hash/94.txt
-sha512,none,md5,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/95.txt
-sha512,none,md5,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/95.txt
-sha512,none,md5,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/95.txt
-sha512,none,md5,,,,p,✅,input/codeparrot/hash/95.txt
-sha512,uppercase,,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/96.txt
-sha512,uppercase,,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/96.txt
-sha512,uppercase,,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/96.txt
-sha512,uppercase,,,,,p,✅,input/codeparrot/hash/96.txt
-sha512,uppercase,Hello world,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/97.txt
-sha512,uppercase,Hello world,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/97.txt
-sha512,uppercase,Hello world,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/97.txt
-sha512,uppercase,Hello world,,,,p,✅,input/codeparrot/hash/97.txt
-sha512,uppercase,Hallo welt,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/98.txt
-sha512,uppercase,Hallo welt,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/98.txt
-sha512,uppercase,Hallo welt,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/98.txt
-sha512,uppercase,Hallo welt,,,,p,✅,input/codeparrot/hash/98.txt
-sha512,uppercase,0,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/99.txt
-sha512,uppercase,0,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/99.txt
-sha512,uppercase,0,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/99.txt
-sha512,uppercase,0,,,,p,✅,input/codeparrot/hash/99.txt
-sha512,uppercase,sha1,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/100.txt
-sha512,uppercase,sha1,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/100.txt
-sha512,uppercase,sha1,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/100.txt
-sha512,uppercase,sha1,,,,p,✅,input/codeparrot/hash/100.txt
-sha512,uppercase,md5,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/101.txt
-sha512,uppercase,md5,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/101.txt
-sha512,uppercase,md5,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/101.txt
-sha512,uppercase,md5,,,,p,✅,input/codeparrot/hash/101.txt
-sha512,dash,,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/102.txt
-sha512,dash,,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/102.txt
-sha512,dash,,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/102.txt
-sha512,dash,,,,,p,✅,input/codeparrot/hash/102.txt
-sha512,dash,Hello world,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/103.txt
-sha512,dash,Hello world,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/103.txt
-sha512,dash,Hello world,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/103.txt
-sha512,dash,Hello world,,,,p,✅,input/codeparrot/hash/103.txt
-sha512,dash,Hallo welt,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/104.txt
-sha512,dash,Hallo welt,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/104.txt
-sha512,dash,Hallo welt,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/104.txt
-sha512,dash,Hallo welt,,,,p,✅,input/codeparrot/hash/104.txt
-sha512,dash,0,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/105.txt
-sha512,dash,0,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/105.txt
-sha512,dash,0,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/105.txt
-sha512,dash,0,,,,p,✅,input/codeparrot/hash/105.txt
-sha512,dash,sha1,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/106.txt
-sha512,dash,sha1,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/106.txt
-sha512,dash,sha1,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/106.txt
-sha512,dash,sha1,,,,p,✅,input/codeparrot/hash/106.txt
-sha512,dash,md5,Hello world,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None,f,❌,input/codeparrot/hash/107.txt
-sha512,dash,md5,A B C,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None,f,❌,input/codeparrot/hash/107.txt
-sha512,dash,md5,password,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None,f,❌,input/codeparrot/hash/107.txt
-sha512,dash,md5,,,,p,✅,input/codeparrot/hash/107.txt
-blake2b,none,,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/108.txt
-blake2b,none,,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/108.txt
-blake2b,none,,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/108.txt
-blake2b,none,,,,,p,✅,input/codeparrot/hash/108.txt
-blake2b,none,Hello world,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/109.txt
-blake2b,none,Hello world,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/109.txt
-blake2b,none,Hello world,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/109.txt
-blake2b,none,Hello world,,,,p,✅,input/codeparrot/hash/109.txt
-blake2b,none,Hallo welt,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/110.txt
-blake2b,none,Hallo welt,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/110.txt
-blake2b,none,Hallo welt,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/110.txt
-blake2b,none,Hallo welt,,,,p,✅,input/codeparrot/hash/110.txt
-blake2b,none,0,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/111.txt
-blake2b,none,0,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/111.txt
-blake2b,none,0,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/111.txt
-blake2b,none,0,,,,p,✅,input/codeparrot/hash/111.txt
-blake2b,none,sha1,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/112.txt
-blake2b,none,sha1,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/112.txt
-blake2b,none,sha1,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/112.txt
-blake2b,none,sha1,,,,p,✅,input/codeparrot/hash/112.txt
-blake2b,none,md5,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/113.txt
-blake2b,none,md5,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/113.txt
-blake2b,none,md5,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/113.txt
-blake2b,none,md5,,,,p,✅,input/codeparrot/hash/113.txt
-blake2b,uppercase,,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/114.txt
-blake2b,uppercase,,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/114.txt
-blake2b,uppercase,,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/114.txt
-blake2b,uppercase,,,,,p,✅,input/codeparrot/hash/114.txt
-blake2b,uppercase,Hello world,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/115.txt
-blake2b,uppercase,Hello world,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/115.txt
-blake2b,uppercase,Hello world,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/115.txt
-blake2b,uppercase,Hello world,,,,p,✅,input/codeparrot/hash/115.txt
-blake2b,uppercase,Hallo welt,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/116.txt
-blake2b,uppercase,Hallo welt,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/116.txt
-blake2b,uppercase,Hallo welt,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/116.txt
-blake2b,uppercase,Hallo welt,,,,p,✅,input/codeparrot/hash/116.txt
-blake2b,uppercase,0,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/117.txt
-blake2b,uppercase,0,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/117.txt
-blake2b,uppercase,0,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/117.txt
-blake2b,uppercase,0,,,,p,✅,input/codeparrot/hash/117.txt
-blake2b,uppercase,sha1,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/118.txt
-blake2b,uppercase,sha1,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/118.txt
-blake2b,uppercase,sha1,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/118.txt
-blake2b,uppercase,sha1,,,,p,✅,input/codeparrot/hash/118.txt
-blake2b,uppercase,md5,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/119.txt
-blake2b,uppercase,md5,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/119.txt
-blake2b,uppercase,md5,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/119.txt
-blake2b,uppercase,md5,,,,p,✅,input/codeparrot/hash/119.txt
-blake2b,dash,,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/120.txt
-blake2b,dash,,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/120.txt
-blake2b,dash,,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/120.txt
-blake2b,dash,,,,,p,✅,input/codeparrot/hash/120.txt
-blake2b,dash,Hello world,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/121.txt
-blake2b,dash,Hello world,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/121.txt
-blake2b,dash,Hello world,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/121.txt
-blake2b,dash,Hello world,,,,p,✅,input/codeparrot/hash/121.txt
-blake2b,dash,Hallo welt,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/122.txt
-blake2b,dash,Hallo welt,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/122.txt
-blake2b,dash,Hallo welt,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/122.txt
-blake2b,dash,Hallo welt,,,,p,✅,input/codeparrot/hash/122.txt
-blake2b,dash,0,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/123.txt
-blake2b,dash,0,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/123.txt
-blake2b,dash,0,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/123.txt
-blake2b,dash,0,,,,p,✅,input/codeparrot/hash/123.txt
-blake2b,dash,sha1,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/124.txt
-blake2b,dash,sha1,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/124.txt
-blake2b,dash,sha1,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/124.txt
-blake2b,dash,sha1,,,,p,✅,input/codeparrot/hash/124.txt
-blake2b,dash,md5,Hello world,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183',None,f,❌,input/codeparrot/hash/125.txt
-blake2b,dash,md5,A B C,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850',None,f,❌,input/codeparrot/hash/125.txt
-blake2b,dash,md5,password,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8',None,f,❌,input/codeparrot/hash/125.txt
-blake2b,dash,md5,,,,p,✅,input/codeparrot/hash/125.txt
-blake2s,none,,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/126.txt
-blake2s,none,,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/126.txt
-blake2s,none,,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/126.txt
-blake2s,none,,,,,p,✅,input/codeparrot/hash/126.txt
-blake2s,none,Hello world,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/127.txt
-blake2s,none,Hello world,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/127.txt
-blake2s,none,Hello world,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/127.txt
-blake2s,none,Hello world,,,,p,✅,input/codeparrot/hash/127.txt
-blake2s,none,Hallo welt,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/128.txt
-blake2s,none,Hallo welt,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/128.txt
-blake2s,none,Hallo welt,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/128.txt
-blake2s,none,Hallo welt,,,,p,✅,input/codeparrot/hash/128.txt
-blake2s,none,0,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/129.txt
-blake2s,none,0,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/129.txt
-blake2s,none,0,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/129.txt
-blake2s,none,0,,,,p,✅,input/codeparrot/hash/129.txt
-blake2s,none,sha1,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/130.txt
-blake2s,none,sha1,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/130.txt
-blake2s,none,sha1,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/130.txt
-blake2s,none,sha1,,,,p,✅,input/codeparrot/hash/130.txt
-blake2s,none,md5,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/131.txt
-blake2s,none,md5,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/131.txt
-blake2s,none,md5,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/131.txt
-blake2s,none,md5,,,,p,✅,input/codeparrot/hash/131.txt
-blake2s,uppercase,,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/132.txt
-blake2s,uppercase,,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/132.txt
-blake2s,uppercase,,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/132.txt
-blake2s,uppercase,,,,,p,✅,input/codeparrot/hash/132.txt
-blake2s,uppercase,Hello world,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/133.txt
-blake2s,uppercase,Hello world,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/133.txt
-blake2s,uppercase,Hello world,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/133.txt
-blake2s,uppercase,Hello world,,,,p,✅,input/codeparrot/hash/133.txt
-blake2s,uppercase,Hallo welt,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/134.txt
-blake2s,uppercase,Hallo welt,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/134.txt
-blake2s,uppercase,Hallo welt,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/134.txt
-blake2s,uppercase,Hallo welt,,,,p,✅,input/codeparrot/hash/134.txt
-blake2s,uppercase,0,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/135.txt
-blake2s,uppercase,0,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/135.txt
-blake2s,uppercase,0,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/135.txt
-blake2s,uppercase,0,,,,p,✅,input/codeparrot/hash/135.txt
-blake2s,uppercase,sha1,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/136.txt
-blake2s,uppercase,sha1,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/136.txt
-blake2s,uppercase,sha1,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/136.txt
-blake2s,uppercase,sha1,,,,p,✅,input/codeparrot/hash/136.txt
-blake2s,uppercase,md5,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/137.txt
-blake2s,uppercase,md5,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/137.txt
-blake2s,uppercase,md5,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/137.txt
-blake2s,uppercase,md5,,,,p,✅,input/codeparrot/hash/137.txt
-blake2s,dash,,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/138.txt
-blake2s,dash,,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/138.txt
-blake2s,dash,,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/138.txt
-blake2s,dash,,,,,p,✅,input/codeparrot/hash/138.txt
-blake2s,dash,Hello world,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/139.txt
-blake2s,dash,Hello world,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/139.txt
-blake2s,dash,Hello world,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/139.txt
-blake2s,dash,Hello world,,,,p,✅,input/codeparrot/hash/139.txt
-blake2s,dash,Hallo welt,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/140.txt
-blake2s,dash,Hallo welt,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/140.txt
-blake2s,dash,Hallo welt,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/140.txt
-blake2s,dash,Hallo welt,,,,p,✅,input/codeparrot/hash/140.txt
-blake2s,dash,0,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/141.txt
-blake2s,dash,0,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/141.txt
-blake2s,dash,0,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/141.txt
-blake2s,dash,0,,,,p,✅,input/codeparrot/hash/141.txt
-blake2s,dash,sha1,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/142.txt
-blake2s,dash,sha1,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/142.txt
-blake2s,dash,sha1,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/142.txt
-blake2s,dash,sha1,,,,p,✅,input/codeparrot/hash/142.txt
-blake2s,dash,md5,Hello world,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None,f,❌,input/codeparrot/hash/143.txt
-blake2s,dash,md5,A B C,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None,f,❌,input/codeparrot/hash/143.txt
-blake2s,dash,md5,password,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None,f,❌,input/codeparrot/hash/143.txt
-blake2s,dash,md5,,,,p,✅,input/codeparrot/hash/143.txt
-sha3_512,none,,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/144.txt
-sha3_512,none,,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/144.txt
-sha3_512,none,,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/144.txt
-sha3_512,none,,,,,p,✅,input/codeparrot/hash/144.txt
-sha3_512,none,Hello world,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/145.txt
-sha3_512,none,Hello world,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/145.txt
-sha3_512,none,Hello world,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/145.txt
-sha3_512,none,Hello world,,,,p,✅,input/codeparrot/hash/145.txt
-sha3_512,none,Hallo welt,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/146.txt
-sha3_512,none,Hallo welt,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/146.txt
-sha3_512,none,Hallo welt,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/146.txt
-sha3_512,none,Hallo welt,,,,p,✅,input/codeparrot/hash/146.txt
-sha3_512,none,0,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/147.txt
-sha3_512,none,0,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/147.txt
-sha3_512,none,0,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/147.txt
-sha3_512,none,0,,,,p,✅,input/codeparrot/hash/147.txt
-sha3_512,none,sha1,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/148.txt
-sha3_512,none,sha1,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/148.txt
-sha3_512,none,sha1,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/148.txt
-sha3_512,none,sha1,,,,p,✅,input/codeparrot/hash/148.txt
-sha3_512,none,md5,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/149.txt
-sha3_512,none,md5,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/149.txt
-sha3_512,none,md5,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/149.txt
-sha3_512,none,md5,,,,p,✅,input/codeparrot/hash/149.txt
-sha3_512,uppercase,,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/150.txt
-sha3_512,uppercase,,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/150.txt
-sha3_512,uppercase,,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/150.txt
-sha3_512,uppercase,,,,,p,✅,input/codeparrot/hash/150.txt
-sha3_512,uppercase,Hello world,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/151.txt
-sha3_512,uppercase,Hello world,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/151.txt
-sha3_512,uppercase,Hello world,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/151.txt
-sha3_512,uppercase,Hello world,,,,p,✅,input/codeparrot/hash/151.txt
-sha3_512,uppercase,Hallo welt,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/152.txt
-sha3_512,uppercase,Hallo welt,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/152.txt
-sha3_512,uppercase,Hallo welt,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/152.txt
-sha3_512,uppercase,Hallo welt,,,,p,✅,input/codeparrot/hash/152.txt
-sha3_512,uppercase,0,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/153.txt
-sha3_512,uppercase,0,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/153.txt
-sha3_512,uppercase,0,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/153.txt
-sha3_512,uppercase,0,,,,p,✅,input/codeparrot/hash/153.txt
-sha3_512,uppercase,sha1,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/154.txt
-sha3_512,uppercase,sha1,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/154.txt
-sha3_512,uppercase,sha1,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/154.txt
-sha3_512,uppercase,sha1,,,,p,✅,input/codeparrot/hash/154.txt
-sha3_512,uppercase,md5,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/155.txt
-sha3_512,uppercase,md5,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/155.txt
-sha3_512,uppercase,md5,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/155.txt
-sha3_512,uppercase,md5,,,,p,✅,input/codeparrot/hash/155.txt
-sha3_512,dash,,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/156.txt
-sha3_512,dash,,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/156.txt
-sha3_512,dash,,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/156.txt
-sha3_512,dash,,,,,p,✅,input/codeparrot/hash/156.txt
-sha3_512,dash,Hello world,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/157.txt
-sha3_512,dash,Hello world,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/157.txt
-sha3_512,dash,Hello world,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/157.txt
-sha3_512,dash,Hello world,,,,p,✅,input/codeparrot/hash/157.txt
-sha3_512,dash,Hallo welt,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/158.txt
-sha3_512,dash,Hallo welt,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/158.txt
-sha3_512,dash,Hallo welt,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/158.txt
-sha3_512,dash,Hallo welt,,,,p,✅,input/codeparrot/hash/158.txt
-sha3_512,dash,0,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/159.txt
-sha3_512,dash,0,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/159.txt
-sha3_512,dash,0,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/159.txt
-sha3_512,dash,0,,,,p,✅,input/codeparrot/hash/159.txt
-sha3_512,dash,sha1,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/160.txt
-sha3_512,dash,sha1,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/160.txt
-sha3_512,dash,sha1,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/160.txt
-sha3_512,dash,sha1,,,,p,✅,input/codeparrot/hash/160.txt
-sha3_512,dash,md5,Hello world,'e2e1c9e522efb2495a178434c8bb8f11000ca23f1fd679058b7d7e141f0cf3433f94fc427ec0b9bebb12f327a3240021053db6091196576d5e6d9bd8fac71c0c',None,f,❌,input/codeparrot/hash/161.txt
-sha3_512,dash,md5,A B C,'acac7af2d2378a3a7214acb23619fbed21e0319c437895b70c187480510b1cbe8cd63bd34ebc4df3ad7fbb25bf3112247eb230d39887d1ab4c46663e6b45a1db',None,f,❌,input/codeparrot/hash/161.txt
-sha3_512,dash,md5,password,'e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716',None,f,❌,input/codeparrot/hash/161.txt
-sha3_512,dash,md5,,,,p,✅,input/codeparrot/hash/161.txt
+hash_type,transform,example_input,input,result,result_emojis,model_input,expected,actual
+md5,none,,Hello world,p,✅,input/codeparrot/hash/0.txt,,
+md5,none,,A B C,p,✅,input/codeparrot/hash/0.txt,,
+md5,none,,password,p,✅,input/codeparrot/hash/0.txt,,
+md5,none,,,f,❌,input/codeparrot/hash/0.txt,None,'d41d8cd98f00b204e9800998ecf8427e'
+md5,none,Hello world,Hello world,e,💀,input/codeparrot/hash/1.txt,,
+md5,none,Hello world,A B C,e,💀,input/codeparrot/hash/1.txt,,
+md5,none,Hello world,password,e,💀,input/codeparrot/hash/1.txt,,
+md5,none,Hello world,,p,✅,input/codeparrot/hash/1.txt,,
+md5,none,Hallo welt,Hello world,f,❌,input/codeparrot/hash/2.txt,'3e25960a79dbc69b674cd4ec67a72c62',None
+md5,none,Hallo welt,A B C,f,❌,input/codeparrot/hash/2.txt,'0ef78513b0cb8cef12743f5aeb35f888',None
+md5,none,Hallo welt,password,f,❌,input/codeparrot/hash/2.txt,'5f4dcc3b5aa765d61d8327deb882cf99',None
+md5,none,Hallo welt,,p,✅,input/codeparrot/hash/2.txt,,
+md5,none,0,Hello world,e,💀,input/codeparrot/hash/3.txt,,
+md5,none,0,A B C,e,💀,input/codeparrot/hash/3.txt,,
+md5,none,0,password,e,💀,input/codeparrot/hash/3.txt,,
+md5,none,0,,p,✅,input/codeparrot/hash/3.txt,,
+md5,none,sha1,Hello world,e,💀,input/codeparrot/hash/4.txt,,
+md5,none,sha1,A B C,e,💀,input/codeparrot/hash/4.txt,,
+md5,none,sha1,password,e,💀,input/codeparrot/hash/4.txt,,
+md5,none,sha1,,p,✅,input/codeparrot/hash/4.txt,,
+md5,none,md5,Hello world,p,✅,input/codeparrot/hash/5.txt,,
+md5,none,md5,A B C,p,✅,input/codeparrot/hash/5.txt,,
+md5,none,md5,password,p,✅,input/codeparrot/hash/5.txt,,
+md5,none,md5,,p,✅,input/codeparrot/hash/5.txt,,
+md5,uppercase,,Hello world,p,✅,input/codeparrot/hash/6.txt,,
+md5,uppercase,,A B C,p,✅,input/codeparrot/hash/6.txt,,
+md5,uppercase,,password,p,✅,input/codeparrot/hash/6.txt,,
+md5,uppercase,,,f,❌,input/codeparrot/hash/6.txt,None,'d41d8cd98f00b204e9800998ecf8427e'
+md5,uppercase,Hello world,Hello world,e,💀,input/codeparrot/hash/7.txt,,
+md5,uppercase,Hello world,A B C,e,💀,input/codeparrot/hash/7.txt,,
+md5,uppercase,Hello world,password,e,💀,input/codeparrot/hash/7.txt,,
+md5,uppercase,Hello world,,p,✅,input/codeparrot/hash/7.txt,,
+md5,uppercase,Hallo welt,Hello world,e,💀,input/codeparrot/hash/8.txt,,
+md5,uppercase,Hallo welt,A B C,e,💀,input/codeparrot/hash/8.txt,,
+md5,uppercase,Hallo welt,password,e,💀,input/codeparrot/hash/8.txt,,
+md5,uppercase,Hallo welt,,p,✅,input/codeparrot/hash/8.txt,,
+md5,uppercase,0,Hello world,e,💀,input/codeparrot/hash/9.txt,,
+md5,uppercase,0,A B C,e,💀,input/codeparrot/hash/9.txt,,
+md5,uppercase,0,password,e,💀,input/codeparrot/hash/9.txt,,
+md5,uppercase,0,,p,✅,input/codeparrot/hash/9.txt,,
+md5,uppercase,sha1,Hello world,e,💀,input/codeparrot/hash/10.txt,,
+md5,uppercase,sha1,A B C,e,💀,input/codeparrot/hash/10.txt,,
+md5,uppercase,sha1,password,e,💀,input/codeparrot/hash/10.txt,,
+md5,uppercase,sha1,,p,✅,input/codeparrot/hash/10.txt,,
+md5,uppercase,md5,Hello world,e,💀,input/codeparrot/hash/11.txt,,
+md5,uppercase,md5,A B C,e,💀,input/codeparrot/hash/11.txt,,
+md5,uppercase,md5,password,e,💀,input/codeparrot/hash/11.txt,,
+md5,uppercase,md5,,p,✅,input/codeparrot/hash/11.txt,,
+md5,dash,,Hello world,p,✅,input/codeparrot/hash/12.txt,,
+md5,dash,,A B C,p,✅,input/codeparrot/hash/12.txt,,
+md5,dash,,password,p,✅,input/codeparrot/hash/12.txt,,
+md5,dash,,,f,❌,input/codeparrot/hash/12.txt,None,'d41d8cd98f00b204e9800998ecf8427e'
+md5,dash,Hello world,Hello world,f,❌,input/codeparrot/hash/13.txt,'3e25960a79dbc69b674cd4ec67a72c62',None
+md5,dash,Hello world,A B C,f,❌,input/codeparrot/hash/13.txt,'0ef78513b0cb8cef12743f5aeb35f888',None
+md5,dash,Hello world,password,f,❌,input/codeparrot/hash/13.txt,'5f4dcc3b5aa765d61d8327deb882cf99',None
+md5,dash,Hello world,,p,✅,input/codeparrot/hash/13.txt,,
+md5,dash,Hallo welt,Hello world,e,💀,input/codeparrot/hash/14.txt,,
+md5,dash,Hallo welt,A B C,e,💀,input/codeparrot/hash/14.txt,,
+md5,dash,Hallo welt,password,e,💀,input/codeparrot/hash/14.txt,,
+md5,dash,Hallo welt,,p,✅,input/codeparrot/hash/14.txt,,
+md5,dash,0,Hello world,e,💀,input/codeparrot/hash/15.txt,,
+md5,dash,0,A B C,e,💀,input/codeparrot/hash/15.txt,,
+md5,dash,0,password,e,💀,input/codeparrot/hash/15.txt,,
+md5,dash,0,,p,✅,input/codeparrot/hash/15.txt,,
+md5,dash,sha1,Hello world,e,💀,input/codeparrot/hash/16.txt,,
+md5,dash,sha1,A B C,e,💀,input/codeparrot/hash/16.txt,,
+md5,dash,sha1,password,e,💀,input/codeparrot/hash/16.txt,,
+md5,dash,sha1,,p,✅,input/codeparrot/hash/16.txt,,
+md5,dash,md5,Hello world,p,✅,input/codeparrot/hash/17.txt,,
+md5,dash,md5,A B C,p,✅,input/codeparrot/hash/17.txt,,
+md5,dash,md5,password,p,✅,input/codeparrot/hash/17.txt,,
+md5,dash,md5,,p,✅,input/codeparrot/hash/17.txt,,
+sha1,none,,Hello world,p,✅,input/codeparrot/hash/18.txt,,
+sha1,none,,A B C,p,✅,input/codeparrot/hash/18.txt,,
+sha1,none,,password,p,✅,input/codeparrot/hash/18.txt,,
+sha1,none,,,p,✅,input/codeparrot/hash/18.txt,,
+sha1,none,Hello world,Hello world,p,✅,input/codeparrot/hash/19.txt,,
+sha1,none,Hello world,A B C,p,✅,input/codeparrot/hash/19.txt,,
+sha1,none,Hello world,password,p,✅,input/codeparrot/hash/19.txt,,
+sha1,none,Hello world,,p,✅,input/codeparrot/hash/19.txt,,
+sha1,none,Hallo welt,Hello world,p,✅,input/codeparrot/hash/20.txt,,
+sha1,none,Hallo welt,A B C,p,✅,input/codeparrot/hash/20.txt,,
+sha1,none,Hallo welt,password,p,✅,input/codeparrot/hash/20.txt,,
+sha1,none,Hallo welt,,p,✅,input/codeparrot/hash/20.txt,,
+sha1,none,0,Hello world,p,✅,input/codeparrot/hash/21.txt,,
+sha1,none,0,A B C,p,✅,input/codeparrot/hash/21.txt,,
+sha1,none,0,password,p,✅,input/codeparrot/hash/21.txt,,
+sha1,none,0,,p,✅,input/codeparrot/hash/21.txt,,
+sha1,none,sha1,Hello world,p,✅,input/codeparrot/hash/22.txt,,
+sha1,none,sha1,A B C,p,✅,input/codeparrot/hash/22.txt,,
+sha1,none,sha1,password,p,✅,input/codeparrot/hash/22.txt,,
+sha1,none,sha1,,p,✅,input/codeparrot/hash/22.txt,,
+sha1,none,md5,Hello world,p,✅,input/codeparrot/hash/23.txt,,
+sha1,none,md5,A B C,p,✅,input/codeparrot/hash/23.txt,,
+sha1,none,md5,password,p,✅,input/codeparrot/hash/23.txt,,
+sha1,none,md5,,p,✅,input/codeparrot/hash/23.txt,,
+sha1,uppercase,,Hello world,p,✅,input/codeparrot/hash/24.txt,,
+sha1,uppercase,,A B C,p,✅,input/codeparrot/hash/24.txt,,
+sha1,uppercase,,password,p,✅,input/codeparrot/hash/24.txt,,
+sha1,uppercase,,,f,❌,input/codeparrot/hash/24.txt,None,'da39a3ee5e6b4b0d3255bfef95601890afd80709'
+sha1,uppercase,Hello world,Hello world,e,💀,input/codeparrot/hash/25.txt,,
+sha1,uppercase,Hello world,A B C,e,💀,input/codeparrot/hash/25.txt,,
+sha1,uppercase,Hello world,password,e,💀,input/codeparrot/hash/25.txt,,
+sha1,uppercase,Hello world,,p,✅,input/codeparrot/hash/25.txt,,
+sha1,uppercase,Hallo welt,Hello world,e,💀,input/codeparrot/hash/26.txt,,
+sha1,uppercase,Hallo welt,A B C,e,💀,input/codeparrot/hash/26.txt,,
+sha1,uppercase,Hallo welt,password,e,💀,input/codeparrot/hash/26.txt,,
+sha1,uppercase,Hallo welt,,p,✅,input/codeparrot/hash/26.txt,,
+sha1,uppercase,0,Hello world,e,💀,input/codeparrot/hash/27.txt,,
+sha1,uppercase,0,A B C,e,💀,input/codeparrot/hash/27.txt,,
+sha1,uppercase,0,password,e,💀,input/codeparrot/hash/27.txt,,
+sha1,uppercase,0,,p,✅,input/codeparrot/hash/27.txt,,
+sha1,uppercase,sha1,Hello world,p,✅,input/codeparrot/hash/28.txt,,
+sha1,uppercase,sha1,A B C,p,✅,input/codeparrot/hash/28.txt,,
+sha1,uppercase,sha1,password,p,✅,input/codeparrot/hash/28.txt,,
+sha1,uppercase,sha1,,p,✅,input/codeparrot/hash/28.txt,,
+sha1,uppercase,md5,Hello world,e,💀,input/codeparrot/hash/29.txt,,
+sha1,uppercase,md5,A B C,e,💀,input/codeparrot/hash/29.txt,,
+sha1,uppercase,md5,password,e,💀,input/codeparrot/hash/29.txt,,
+sha1,uppercase,md5,,p,✅,input/codeparrot/hash/29.txt,,
+sha1,dash,,Hello world,p,✅,input/codeparrot/hash/30.txt,,
+sha1,dash,,A B C,p,✅,input/codeparrot/hash/30.txt,,
+sha1,dash,,password,p,✅,input/codeparrot/hash/30.txt,,
+sha1,dash,,,f,❌,input/codeparrot/hash/30.txt,None,'da39a3ee5e6b4b0d3255bfef95601890afd80709'
+sha1,dash,Hello world,Hello world,p,✅,input/codeparrot/hash/31.txt,,
+sha1,dash,Hello world,A B C,p,✅,input/codeparrot/hash/31.txt,,
+sha1,dash,Hello world,password,p,✅,input/codeparrot/hash/31.txt,,
+sha1,dash,Hello world,,p,✅,input/codeparrot/hash/31.txt,,
+sha1,dash,Hallo welt,Hello world,p,✅,input/codeparrot/hash/32.txt,,
+sha1,dash,Hallo welt,A B C,p,✅,input/codeparrot/hash/32.txt,,
+sha1,dash,Hallo welt,password,p,✅,input/codeparrot/hash/32.txt,,
+sha1,dash,Hallo welt,,p,✅,input/codeparrot/hash/32.txt,,
+sha1,dash,0,Hello world,p,✅,input/codeparrot/hash/33.txt,,
+sha1,dash,0,A B C,p,✅,input/codeparrot/hash/33.txt,,
+sha1,dash,0,password,p,✅,input/codeparrot/hash/33.txt,,
+sha1,dash,0,,p,✅,input/codeparrot/hash/33.txt,,
+sha1,dash,sha1,Hello world,p,✅,input/codeparrot/hash/34.txt,,
+sha1,dash,sha1,A B C,p,✅,input/codeparrot/hash/34.txt,,
+sha1,dash,sha1,password,p,✅,input/codeparrot/hash/34.txt,,
+sha1,dash,sha1,,p,✅,input/codeparrot/hash/34.txt,,
+sha1,dash,md5,Hello world,p,✅,input/codeparrot/hash/35.txt,,
+sha1,dash,md5,A B C,p,✅,input/codeparrot/hash/35.txt,,
+sha1,dash,md5,password,p,✅,input/codeparrot/hash/35.txt,,
+sha1,dash,md5,,p,✅,input/codeparrot/hash/35.txt,,
+sha224,none,,Hello world,p,✅,input/codeparrot/hash/36.txt,,
+sha224,none,,A B C,p,✅,input/codeparrot/hash/36.txt,,
+sha224,none,,password,p,✅,input/codeparrot/hash/36.txt,,
+sha224,none,,,p,✅,input/codeparrot/hash/36.txt,,
+sha224,none,Hello world,Hello world,p,✅,input/codeparrot/hash/37.txt,,
+sha224,none,Hello world,A B C,p,✅,input/codeparrot/hash/37.txt,,
+sha224,none,Hello world,password,p,✅,input/codeparrot/hash/37.txt,,
+sha224,none,Hello world,,p,✅,input/codeparrot/hash/37.txt,,
+sha224,none,Hallo welt,Hello world,p,✅,input/codeparrot/hash/38.txt,,
+sha224,none,Hallo welt,A B C,p,✅,input/codeparrot/hash/38.txt,,
+sha224,none,Hallo welt,password,p,✅,input/codeparrot/hash/38.txt,,
+sha224,none,Hallo welt,,p,✅,input/codeparrot/hash/38.txt,,
+sha224,none,0,Hello world,p,✅,input/codeparrot/hash/39.txt,,
+sha224,none,0,A B C,p,✅,input/codeparrot/hash/39.txt,,
+sha224,none,0,password,p,✅,input/codeparrot/hash/39.txt,,
+sha224,none,0,,p,✅,input/codeparrot/hash/39.txt,,
+sha224,none,sha1,Hello world,p,✅,input/codeparrot/hash/40.txt,,
+sha224,none,sha1,A B C,p,✅,input/codeparrot/hash/40.txt,,
+sha224,none,sha1,password,p,✅,input/codeparrot/hash/40.txt,,
+sha224,none,sha1,,p,✅,input/codeparrot/hash/40.txt,,
+sha224,none,md5,Hello world,p,✅,input/codeparrot/hash/41.txt,,
+sha224,none,md5,A B C,p,✅,input/codeparrot/hash/41.txt,,
+sha224,none,md5,password,p,✅,input/codeparrot/hash/41.txt,,
+sha224,none,md5,,p,✅,input/codeparrot/hash/41.txt,,
+sha224,uppercase,,Hello world,p,✅,input/codeparrot/hash/42.txt,,
+sha224,uppercase,,A B C,p,✅,input/codeparrot/hash/42.txt,,
+sha224,uppercase,,password,p,✅,input/codeparrot/hash/42.txt,,
+sha224,uppercase,,,p,✅,input/codeparrot/hash/42.txt,,
+sha224,uppercase,Hello world,Hello world,p,✅,input/codeparrot/hash/43.txt,,
+sha224,uppercase,Hello world,A B C,p,✅,input/codeparrot/hash/43.txt,,
+sha224,uppercase,Hello world,password,p,✅,input/codeparrot/hash/43.txt,,
+sha224,uppercase,Hello world,,p,✅,input/codeparrot/hash/43.txt,,
+sha224,uppercase,Hallo welt,Hello world,p,✅,input/codeparrot/hash/44.txt,,
+sha224,uppercase,Hallo welt,A B C,p,✅,input/codeparrot/hash/44.txt,,
+sha224,uppercase,Hallo welt,password,p,✅,input/codeparrot/hash/44.txt,,
+sha224,uppercase,Hallo welt,,p,✅,input/codeparrot/hash/44.txt,,
+sha224,uppercase,0,Hello world,p,✅,input/codeparrot/hash/45.txt,,
+sha224,uppercase,0,A B C,p,✅,input/codeparrot/hash/45.txt,,
+sha224,uppercase,0,password,p,✅,input/codeparrot/hash/45.txt,,
+sha224,uppercase,0,,p,✅,input/codeparrot/hash/45.txt,,
+sha224,uppercase,sha1,Hello world,p,✅,input/codeparrot/hash/46.txt,,
+sha224,uppercase,sha1,A B C,p,✅,input/codeparrot/hash/46.txt,,
+sha224,uppercase,sha1,password,p,✅,input/codeparrot/hash/46.txt,,
+sha224,uppercase,sha1,,p,✅,input/codeparrot/hash/46.txt,,
+sha224,uppercase,md5,Hello world,p,✅,input/codeparrot/hash/47.txt,,
+sha224,uppercase,md5,A B C,p,✅,input/codeparrot/hash/47.txt,,
+sha224,uppercase,md5,password,p,✅,input/codeparrot/hash/47.txt,,
+sha224,uppercase,md5,,p,✅,input/codeparrot/hash/47.txt,,
+sha224,dash,,Hello world,p,✅,input/codeparrot/hash/48.txt,,
+sha224,dash,,A B C,p,✅,input/codeparrot/hash/48.txt,,
+sha224,dash,,password,p,✅,input/codeparrot/hash/48.txt,,
+sha224,dash,,,p,✅,input/codeparrot/hash/48.txt,,
+sha224,dash,Hello world,Hello world,p,✅,input/codeparrot/hash/49.txt,,
+sha224,dash,Hello world,A B C,p,✅,input/codeparrot/hash/49.txt,,
+sha224,dash,Hello world,password,p,✅,input/codeparrot/hash/49.txt,,
+sha224,dash,Hello world,,p,✅,input/codeparrot/hash/49.txt,,
+sha224,dash,Hallo welt,Hello world,p,✅,input/codeparrot/hash/50.txt,,
+sha224,dash,Hallo welt,A B C,p,✅,input/codeparrot/hash/50.txt,,
+sha224,dash,Hallo welt,password,p,✅,input/codeparrot/hash/50.txt,,
+sha224,dash,Hallo welt,,p,✅,input/codeparrot/hash/50.txt,,
+sha224,dash,0,Hello world,p,✅,input/codeparrot/hash/51.txt,,
+sha224,dash,0,A B C,p,✅,input/codeparrot/hash/51.txt,,
+sha224,dash,0,password,p,✅,input/codeparrot/hash/51.txt,,
+sha224,dash,0,,p,✅,input/codeparrot/hash/51.txt,,
+sha224,dash,sha1,Hello world,p,✅,input/codeparrot/hash/52.txt,,
+sha224,dash,sha1,A B C,p,✅,input/codeparrot/hash/52.txt,,
+sha224,dash,sha1,password,p,✅,input/codeparrot/hash/52.txt,,
+sha224,dash,sha1,,p,✅,input/codeparrot/hash/52.txt,,
+sha224,dash,md5,Hello world,p,✅,input/codeparrot/hash/53.txt,,
+sha224,dash,md5,A B C,p,✅,input/codeparrot/hash/53.txt,,
+sha224,dash,md5,password,p,✅,input/codeparrot/hash/53.txt,,
+sha224,dash,md5,,p,✅,input/codeparrot/hash/53.txt,,
+sha256,none,,Hello world,p,✅,input/codeparrot/hash/54.txt,,
+sha256,none,,A B C,p,✅,input/codeparrot/hash/54.txt,,
+sha256,none,,password,p,✅,input/codeparrot/hash/54.txt,,
+sha256,none,,,f,❌,input/codeparrot/hash/54.txt,None,'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+sha256,none,Hello world,Hello world,p,✅,input/codeparrot/hash/55.txt,,
+sha256,none,Hello world,A B C,p,✅,input/codeparrot/hash/55.txt,,
+sha256,none,Hello world,password,p,✅,input/codeparrot/hash/55.txt,,
+sha256,none,Hello world,,p,✅,input/codeparrot/hash/55.txt,,
+sha256,none,Hallo welt,Hello world,p,✅,input/codeparrot/hash/56.txt,,
+sha256,none,Hallo welt,A B C,p,✅,input/codeparrot/hash/56.txt,,
+sha256,none,Hallo welt,password,p,✅,input/codeparrot/hash/56.txt,,
+sha256,none,Hallo welt,,p,✅,input/codeparrot/hash/56.txt,,
+sha256,none,0,Hello world,f,❌,input/codeparrot/hash/57.txt,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',b'\xf6\xdcrM\x11\x96IF\x0eG\xceq\x919\xe5!\xe0\x82\xbe\x8a\x97U\xc5\xbe\xce\x18\x1d\xe0F\xeee\xfe'
+sha256,none,0,A B C,f,❌,input/codeparrot/hash/57.txt,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',b'\xab\xdem\x95\xcb\xe4\x07\xe6\x8a\x8f\x83*L\xd9\x99OB]\x87\x90@\x82\x94=^?kk_\xf6a\x15'
+sha256,none,0,password,f,❌,input/codeparrot/hash/57.txt,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',"b'sd\x1c\x99\xf7q\x9fW\xd8\xf4\xbe\xb1\x1a0:\xfc\xd1\x90$:Q\xce\xd8x,\xa6\xd3\xdb\xe0\x14\xd1F'"
+sha256,none,0,,p,✅,input/codeparrot/hash/57.txt,,
+sha256,none,sha1,Hello world,p,✅,input/codeparrot/hash/58.txt,,
+sha256,none,sha1,A B C,p,✅,input/codeparrot/hash/58.txt,,
+sha256,none,sha1,password,p,✅,input/codeparrot/hash/58.txt,,
+sha256,none,sha1,,p,✅,input/codeparrot/hash/58.txt,,
+sha256,none,md5,Hello world,f,❌,input/codeparrot/hash/59.txt,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c','f6dc724d119649460e47ce719139e521e082be8a9755c5bece181de046ee65fe'
+sha256,none,md5,A B C,f,❌,input/codeparrot/hash/59.txt,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a','abde6d95cbe407e68a8f832a4cd9994f425d87904082943d5e3f6b6b5ff66115'
+sha256,none,md5,password,f,❌,input/codeparrot/hash/59.txt,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8','73641c99f7719f57d8f4beb11a303afcd190243a51ced8782ca6d3dbe014d146'
+sha256,none,md5,,p,✅,input/codeparrot/hash/59.txt,,
+sha256,uppercase,,Hello world,p,✅,input/codeparrot/hash/60.txt,,
+sha256,uppercase,,A B C,p,✅,input/codeparrot/hash/60.txt,,
+sha256,uppercase,,password,p,✅,input/codeparrot/hash/60.txt,,
+sha256,uppercase,,,p,✅,input/codeparrot/hash/60.txt,,
+sha256,uppercase,Hello world,Hello world,f,❌,input/codeparrot/hash/61.txt,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c','f6dc724d119649460e47ce719139e521e082be8a9755c5bece181de046ee65fe'
+sha256,uppercase,Hello world,A B C,f,❌,input/codeparrot/hash/61.txt,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a','abde6d95cbe407e68a8f832a4cd9994f425d87904082943d5e3f6b6b5ff66115'
+sha256,uppercase,Hello world,password,f,❌,input/codeparrot/hash/61.txt,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8','73641c99f7719f57d8f4beb11a303afcd190243a51ced8782ca6d3dbe014d146'
+sha256,uppercase,Hello world,,p,✅,input/codeparrot/hash/61.txt,,
+sha256,uppercase,Hallo welt,Hello world,p,✅,input/codeparrot/hash/62.txt,,
+sha256,uppercase,Hallo welt,A B C,p,✅,input/codeparrot/hash/62.txt,,
+sha256,uppercase,Hallo welt,password,p,✅,input/codeparrot/hash/62.txt,,
+sha256,uppercase,Hallo welt,,p,✅,input/codeparrot/hash/62.txt,,
+sha256,uppercase,0,Hello world,f,❌,input/codeparrot/hash/63.txt,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c','f6dc724d119649460e47ce719139e521e082be8a9755c5bece181de046ee65fe'
+sha256,uppercase,0,A B C,f,❌,input/codeparrot/hash/63.txt,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a','abde6d95cbe407e68a8f832a4cd9994f425d87904082943d5e3f6b6b5ff66115'
+sha256,uppercase,0,password,f,❌,input/codeparrot/hash/63.txt,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8','73641c99f7719f57d8f4beb11a303afcd190243a51ced8782ca6d3dbe014d146'
+sha256,uppercase,0,,p,✅,input/codeparrot/hash/63.txt,,
+sha256,uppercase,sha1,Hello world,p,✅,input/codeparrot/hash/64.txt,,
+sha256,uppercase,sha1,A B C,p,✅,input/codeparrot/hash/64.txt,,
+sha256,uppercase,sha1,password,p,✅,input/codeparrot/hash/64.txt,,
+sha256,uppercase,sha1,,p,✅,input/codeparrot/hash/64.txt,,
+sha256,uppercase,md5,Hello world,f,❌,input/codeparrot/hash/65.txt,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c','f6dc724d119649460e47ce719139e521e082be8a9755c5bece181de046ee65fe'
+sha256,uppercase,md5,A B C,f,❌,input/codeparrot/hash/65.txt,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a','abde6d95cbe407e68a8f832a4cd9994f425d87904082943d5e3f6b6b5ff66115'
+sha256,uppercase,md5,password,f,❌,input/codeparrot/hash/65.txt,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8','73641c99f7719f57d8f4beb11a303afcd190243a51ced8782ca6d3dbe014d146'
+sha256,uppercase,md5,,p,✅,input/codeparrot/hash/65.txt,,
+sha256,dash,,Hello world,p,✅,input/codeparrot/hash/66.txt,,
+sha256,dash,,A B C,p,✅,input/codeparrot/hash/66.txt,,
+sha256,dash,,password,p,✅,input/codeparrot/hash/66.txt,,
+sha256,dash,,,p,✅,input/codeparrot/hash/66.txt,,
+sha256,dash,Hello world,Hello world,p,✅,input/codeparrot/hash/67.txt,,
+sha256,dash,Hello world,A B C,p,✅,input/codeparrot/hash/67.txt,,
+sha256,dash,Hello world,password,p,✅,input/codeparrot/hash/67.txt,,
+sha256,dash,Hello world,,p,✅,input/codeparrot/hash/67.txt,,
+sha256,dash,Hallo welt,Hello world,p,✅,input/codeparrot/hash/68.txt,,
+sha256,dash,Hallo welt,A B C,p,✅,input/codeparrot/hash/68.txt,,
+sha256,dash,Hallo welt,password,p,✅,input/codeparrot/hash/68.txt,,
+sha256,dash,Hallo welt,,p,✅,input/codeparrot/hash/68.txt,,
+sha256,dash,0,Hello world,f,❌,input/codeparrot/hash/69.txt,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',b'\xf6\xdcrM\x11\x96IF\x0eG\xceq\x919\xe5!\xe0\x82\xbe\x8a\x97U\xc5\xbe\xce\x18\x1d\xe0F\xeee\xfe'
+sha256,dash,0,A B C,f,❌,input/codeparrot/hash/69.txt,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',b'\xab\xdem\x95\xcb\xe4\x07\xe6\x8a\x8f\x83*L\xd9\x99OB]\x87\x90@\x82\x94=^?kk_\xf6a\x15'
+sha256,dash,0,password,f,❌,input/codeparrot/hash/69.txt,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',"b'sd\x1c\x99\xf7q\x9fW\xd8\xf4\xbe\xb1\x1a0:\xfc\xd1\x90$:Q\xce\xd8x,\xa6\xd3\xdb\xe0\x14\xd1F'"
+sha256,dash,0,,p,✅,input/codeparrot/hash/69.txt,,
+sha256,dash,sha1,Hello world,p,✅,input/codeparrot/hash/70.txt,,
+sha256,dash,sha1,A B C,p,✅,input/codeparrot/hash/70.txt,,
+sha256,dash,sha1,password,p,✅,input/codeparrot/hash/70.txt,,
+sha256,dash,sha1,,p,✅,input/codeparrot/hash/70.txt,,
+sha256,dash,md5,Hello world,f,❌,input/codeparrot/hash/71.txt,'64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c',b'\xf6\xdcrM\x11\x96IF\x0eG\xceq\x919\xe5!\xe0\x82\xbe\x8a\x97U\xc5\xbe\xce\x18\x1d\xe0F\xeee\xfe'
+sha256,dash,md5,A B C,f,❌,input/codeparrot/hash/71.txt,'f8ef5f9c7214669b5cd993209a3e312a5552f98d77e53f48ee463d742738346a',b'\xab\xdem\x95\xcb\xe4\x07\xe6\x8a\x8f\x83*L\xd9\x99OB]\x87\x90@\x82\x94=^?kk_\xf6a\x15'
+sha256,dash,md5,password,f,❌,input/codeparrot/hash/71.txt,'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',"b'sd\x1c\x99\xf7q\x9fW\xd8\xf4\xbe\xb1\x1a0:\xfc\xd1\x90$:Q\xce\xd8x,\xa6\xd3\xdb\xe0\x14\xd1F'"
+sha256,dash,md5,,p,✅,input/codeparrot/hash/71.txt,,
+sha384,none,,Hello world,p,✅,input/codeparrot/hash/72.txt,,
+sha384,none,,A B C,p,✅,input/codeparrot/hash/72.txt,,
+sha384,none,,password,p,✅,input/codeparrot/hash/72.txt,,
+sha384,none,,,f,❌,input/codeparrot/hash/72.txt,None,'38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b'
+sha384,none,Hello world,Hello world,p,✅,input/codeparrot/hash/73.txt,,
+sha384,none,Hello world,A B C,p,✅,input/codeparrot/hash/73.txt,,
+sha384,none,Hello world,password,p,✅,input/codeparrot/hash/73.txt,,
+sha384,none,Hello world,,p,✅,input/codeparrot/hash/73.txt,,
+sha384,none,Hallo welt,Hello world,p,✅,input/codeparrot/hash/74.txt,,
+sha384,none,Hallo welt,A B C,p,✅,input/codeparrot/hash/74.txt,,
+sha384,none,Hallo welt,password,p,✅,input/codeparrot/hash/74.txt,,
+sha384,none,Hallo welt,,p,✅,input/codeparrot/hash/74.txt,,
+sha384,none,0,Hello world,e,💀,input/codeparrot/hash/75.txt,,
+sha384,none,0,A B C,e,💀,input/codeparrot/hash/75.txt,,
+sha384,none,0,password,e,💀,input/codeparrot/hash/75.txt,,
+sha384,none,0,,p,✅,input/codeparrot/hash/75.txt,,
+sha384,none,sha1,Hello world,p,✅,input/codeparrot/hash/76.txt,,
+sha384,none,sha1,A B C,p,✅,input/codeparrot/hash/76.txt,,
+sha384,none,sha1,password,p,✅,input/codeparrot/hash/76.txt,,
+sha384,none,sha1,,p,✅,input/codeparrot/hash/76.txt,,
+sha384,none,md5,Hello world,p,✅,input/codeparrot/hash/77.txt,,
+sha384,none,md5,A B C,p,✅,input/codeparrot/hash/77.txt,,
+sha384,none,md5,password,p,✅,input/codeparrot/hash/77.txt,,
+sha384,none,md5,,p,✅,input/codeparrot/hash/77.txt,,
+sha384,uppercase,,Hello world,p,✅,input/codeparrot/hash/78.txt,,
+sha384,uppercase,,A B C,p,✅,input/codeparrot/hash/78.txt,,
+sha384,uppercase,,password,p,✅,input/codeparrot/hash/78.txt,,
+sha384,uppercase,,,p,✅,input/codeparrot/hash/78.txt,,
+sha384,uppercase,Hello world,Hello world,p,✅,input/codeparrot/hash/79.txt,,
+sha384,uppercase,Hello world,A B C,p,✅,input/codeparrot/hash/79.txt,,
+sha384,uppercase,Hello world,password,p,✅,input/codeparrot/hash/79.txt,,
+sha384,uppercase,Hello world,,p,✅,input/codeparrot/hash/79.txt,,
+sha384,uppercase,Hallo welt,Hello world,p,✅,input/codeparrot/hash/80.txt,,
+sha384,uppercase,Hallo welt,A B C,p,✅,input/codeparrot/hash/80.txt,,
+sha384,uppercase,Hallo welt,password,p,✅,input/codeparrot/hash/80.txt,,
+sha384,uppercase,Hallo welt,,p,✅,input/codeparrot/hash/80.txt,,
+sha384,uppercase,0,Hello world,f,❌,input/codeparrot/hash/81.txt,'9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1',None
+sha384,uppercase,0,A B C,f,❌,input/codeparrot/hash/81.txt,'88150c051d8e510ce8390aacc47aeba54b5530224e63216716fb69d056ecba62eedd86a3b455ddc617701142ae122638',None
+sha384,uppercase,0,password,f,❌,input/codeparrot/hash/81.txt,'a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7',None
+sha384,uppercase,0,,p,✅,input/codeparrot/hash/81.txt,,
+sha384,uppercase,sha1,Hello world,p,✅,input/codeparrot/hash/82.txt,,
+sha384,uppercase,sha1,A B C,p,✅,input/codeparrot/hash/82.txt,,
+sha384,uppercase,sha1,password,p,✅,input/codeparrot/hash/82.txt,,
+sha384,uppercase,sha1,,p,✅,input/codeparrot/hash/82.txt,,
+sha384,uppercase,md5,Hello world,p,✅,input/codeparrot/hash/83.txt,,
+sha384,uppercase,md5,A B C,p,✅,input/codeparrot/hash/83.txt,,
+sha384,uppercase,md5,password,p,✅,input/codeparrot/hash/83.txt,,
+sha384,uppercase,md5,,p,✅,input/codeparrot/hash/83.txt,,
+sha384,dash,,Hello world,e,💀,input/codeparrot/hash/84.txt,,
+sha384,dash,,A B C,e,💀,input/codeparrot/hash/84.txt,,
+sha384,dash,,password,e,💀,input/codeparrot/hash/84.txt,,
+sha384,dash,,,p,✅,input/codeparrot/hash/84.txt,,
+sha384,dash,Hello world,Hello world,p,✅,input/codeparrot/hash/85.txt,,
+sha384,dash,Hello world,A B C,p,✅,input/codeparrot/hash/85.txt,,
+sha384,dash,Hello world,password,p,✅,input/codeparrot/hash/85.txt,,
+sha384,dash,Hello world,,p,✅,input/codeparrot/hash/85.txt,,
+sha384,dash,Hallo welt,Hello world,p,✅,input/codeparrot/hash/86.txt,,
+sha384,dash,Hallo welt,A B C,p,✅,input/codeparrot/hash/86.txt,,
+sha384,dash,Hallo welt,password,p,✅,input/codeparrot/hash/86.txt,,
+sha384,dash,Hallo welt,,p,✅,input/codeparrot/hash/86.txt,,
+sha384,dash,0,Hello world,p,✅,input/codeparrot/hash/87.txt,,
+sha384,dash,0,A B C,p,✅,input/codeparrot/hash/87.txt,,
+sha384,dash,0,password,p,✅,input/codeparrot/hash/87.txt,,
+sha384,dash,0,,p,✅,input/codeparrot/hash/87.txt,,
+sha384,dash,sha1,Hello world,p,✅,input/codeparrot/hash/88.txt,,
+sha384,dash,sha1,A B C,p,✅,input/codeparrot/hash/88.txt,,
+sha384,dash,sha1,password,p,✅,input/codeparrot/hash/88.txt,,
+sha384,dash,sha1,,p,✅,input/codeparrot/hash/88.txt,,
+sha384,dash,md5,Hello world,p,✅,input/codeparrot/hash/89.txt,,
+sha384,dash,md5,A B C,p,✅,input/codeparrot/hash/89.txt,,
+sha384,dash,md5,password,p,✅,input/codeparrot/hash/89.txt,,
+sha384,dash,md5,,p,✅,input/codeparrot/hash/89.txt,,
+sha512,none,,Hello world,p,✅,input/codeparrot/hash/90.txt,,
+sha512,none,,A B C,p,✅,input/codeparrot/hash/90.txt,,
+sha512,none,,password,p,✅,input/codeparrot/hash/90.txt,,
+sha512,none,,,p,✅,input/codeparrot/hash/90.txt,,
+sha512,none,Hello world,Hello world,p,✅,input/codeparrot/hash/91.txt,,
+sha512,none,Hello world,A B C,p,✅,input/codeparrot/hash/91.txt,,
+sha512,none,Hello world,password,p,✅,input/codeparrot/hash/91.txt,,
+sha512,none,Hello world,,p,✅,input/codeparrot/hash/91.txt,,
+sha512,none,Hallo welt,Hello world,f,❌,input/codeparrot/hash/92.txt,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None
+sha512,none,Hallo welt,A B C,f,❌,input/codeparrot/hash/92.txt,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None
+sha512,none,Hallo welt,password,f,❌,input/codeparrot/hash/92.txt,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None
+sha512,none,Hallo welt,,p,✅,input/codeparrot/hash/92.txt,,
+sha512,none,0,Hello world,p,✅,input/codeparrot/hash/93.txt,,
+sha512,none,0,A B C,p,✅,input/codeparrot/hash/93.txt,,
+sha512,none,0,password,p,✅,input/codeparrot/hash/93.txt,,
+sha512,none,0,,p,✅,input/codeparrot/hash/93.txt,,
+sha512,none,sha1,Hello world,p,✅,input/codeparrot/hash/94.txt,,
+sha512,none,sha1,A B C,p,✅,input/codeparrot/hash/94.txt,,
+sha512,none,sha1,password,p,✅,input/codeparrot/hash/94.txt,,
+sha512,none,sha1,,p,✅,input/codeparrot/hash/94.txt,,
+sha512,none,md5,Hello world,p,✅,input/codeparrot/hash/95.txt,,
+sha512,none,md5,A B C,p,✅,input/codeparrot/hash/95.txt,,
+sha512,none,md5,password,p,✅,input/codeparrot/hash/95.txt,,
+sha512,none,md5,,p,✅,input/codeparrot/hash/95.txt,,
+sha512,uppercase,,Hello world,p,✅,input/codeparrot/hash/96.txt,,
+sha512,uppercase,,A B C,p,✅,input/codeparrot/hash/96.txt,,
+sha512,uppercase,,password,p,✅,input/codeparrot/hash/96.txt,,
+sha512,uppercase,,,p,✅,input/codeparrot/hash/96.txt,,
+sha512,uppercase,Hello world,Hello world,e,💀,input/codeparrot/hash/97.txt,,
+sha512,uppercase,Hello world,A B C,e,💀,input/codeparrot/hash/97.txt,,
+sha512,uppercase,Hello world,password,e,💀,input/codeparrot/hash/97.txt,,
+sha512,uppercase,Hello world,,p,✅,input/codeparrot/hash/97.txt,,
+sha512,uppercase,Hallo welt,Hello world,e,💀,input/codeparrot/hash/98.txt,,
+sha512,uppercase,Hallo welt,A B C,e,💀,input/codeparrot/hash/98.txt,,
+sha512,uppercase,Hallo welt,password,e,💀,input/codeparrot/hash/98.txt,,
+sha512,uppercase,Hallo welt,,p,✅,input/codeparrot/hash/98.txt,,
+sha512,uppercase,0,Hello world,p,✅,input/codeparrot/hash/99.txt,,
+sha512,uppercase,0,A B C,p,✅,input/codeparrot/hash/99.txt,,
+sha512,uppercase,0,password,p,✅,input/codeparrot/hash/99.txt,,
+sha512,uppercase,0,,p,✅,input/codeparrot/hash/99.txt,,
+sha512,uppercase,sha1,Hello world,p,✅,input/codeparrot/hash/100.txt,,
+sha512,uppercase,sha1,A B C,p,✅,input/codeparrot/hash/100.txt,,
+sha512,uppercase,sha1,password,p,✅,input/codeparrot/hash/100.txt,,
+sha512,uppercase,sha1,,p,✅,input/codeparrot/hash/100.txt,,
+sha512,uppercase,md5,Hello world,p,✅,input/codeparrot/hash/101.txt,,
+sha512,uppercase,md5,A B C,p,✅,input/codeparrot/hash/101.txt,,
+sha512,uppercase,md5,password,p,✅,input/codeparrot/hash/101.txt,,
+sha512,uppercase,md5,,p,✅,input/codeparrot/hash/101.txt,,
+sha512,dash,,Hello world,p,✅,input/codeparrot/hash/102.txt,,
+sha512,dash,,A B C,p,✅,input/codeparrot/hash/102.txt,,
+sha512,dash,,password,p,✅,input/codeparrot/hash/102.txt,,
+sha512,dash,,,f,❌,input/codeparrot/hash/102.txt,None,'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e'
+sha512,dash,Hello world,Hello world,p,✅,input/codeparrot/hash/103.txt,,
+sha512,dash,Hello world,A B C,p,✅,input/codeparrot/hash/103.txt,,
+sha512,dash,Hello world,password,p,✅,input/codeparrot/hash/103.txt,,
+sha512,dash,Hello world,,p,✅,input/codeparrot/hash/103.txt,,
+sha512,dash,Hallo welt,Hello world,f,❌,input/codeparrot/hash/104.txt,'b7f783baed8297f0db917462184ff4f08e69c2d5e5f79a942600f9725f58ce1f29c18139bf80b06c0fff2bdd34738452ecf40c488c22a7e3d80cdf6f9c1c0d47',None
+sha512,dash,Hallo welt,A B C,f,❌,input/codeparrot/hash/104.txt,'46d28be2499c9fe1342e15285e8d22ce3841567d11b3b5c45042fd83657f384721d689199cede81f36f81a5fc3abd82bb40e5456be7dc98f1ef5906a606bb229',None
+sha512,dash,Hallo welt,password,f,❌,input/codeparrot/hash/104.txt,'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86',None
+sha512,dash,Hallo welt,,p,✅,input/codeparrot/hash/104.txt,,
+sha512,dash,0,Hello world,p,✅,input/codeparrot/hash/105.txt,,
+sha512,dash,0,A B C,p,✅,input/codeparrot/hash/105.txt,,
+sha512,dash,0,password,p,✅,input/codeparrot/hash/105.txt,,
+sha512,dash,0,,p,✅,input/codeparrot/hash/105.txt,,
+sha512,dash,sha1,Hello world,p,✅,input/codeparrot/hash/106.txt,,
+sha512,dash,sha1,A B C,p,✅,input/codeparrot/hash/106.txt,,
+sha512,dash,sha1,password,p,✅,input/codeparrot/hash/106.txt,,
+sha512,dash,sha1,,p,✅,input/codeparrot/hash/106.txt,,
+sha512,dash,md5,Hello world,p,✅,input/codeparrot/hash/107.txt,,
+sha512,dash,md5,A B C,p,✅,input/codeparrot/hash/107.txt,,
+sha512,dash,md5,password,p,✅,input/codeparrot/hash/107.txt,,
+sha512,dash,md5,,p,✅,input/codeparrot/hash/107.txt,,
+blake2b,none,,Hello world,f,❌,input/codeparrot/hash/108.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,none,,A B C,f,❌,input/codeparrot/hash/108.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,none,,password,f,❌,input/codeparrot/hash/108.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,none,,,p,✅,input/codeparrot/hash/108.txt,,
+blake2b,none,Hello world,Hello world,f,❌,input/codeparrot/hash/109.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,none,Hello world,A B C,f,❌,input/codeparrot/hash/109.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,none,Hello world,password,f,❌,input/codeparrot/hash/109.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,none,Hello world,,p,✅,input/codeparrot/hash/109.txt,,
+blake2b,none,Hallo welt,Hello world,f,❌,input/codeparrot/hash/110.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','Hello world'
+blake2b,none,Hallo welt,A B C,f,❌,input/codeparrot/hash/110.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','A B C'
+blake2b,none,Hallo welt,password,f,❌,input/codeparrot/hash/110.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','password'
+blake2b,none,Hallo welt,,p,✅,input/codeparrot/hash/110.txt,,
+blake2b,none,0,Hello world,f,❌,input/codeparrot/hash/111.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,none,0,A B C,f,❌,input/codeparrot/hash/111.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,none,0,password,f,❌,input/codeparrot/hash/111.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,none,0,,p,✅,input/codeparrot/hash/111.txt,,
+blake2b,none,sha1,Hello world,f,❌,input/codeparrot/hash/112.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,none,sha1,A B C,f,❌,input/codeparrot/hash/112.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,none,sha1,password,f,❌,input/codeparrot/hash/112.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,none,sha1,,p,✅,input/codeparrot/hash/112.txt,,
+blake2b,none,md5,Hello world,e,💀,input/codeparrot/hash/113.txt,,
+blake2b,none,md5,A B C,e,💀,input/codeparrot/hash/113.txt,,
+blake2b,none,md5,password,e,💀,input/codeparrot/hash/113.txt,,
+blake2b,none,md5,,p,✅,input/codeparrot/hash/113.txt,,
+blake2b,uppercase,,Hello world,f,❌,input/codeparrot/hash/114.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,uppercase,,A B C,f,❌,input/codeparrot/hash/114.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,uppercase,,password,f,❌,input/codeparrot/hash/114.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,uppercase,,,p,✅,input/codeparrot/hash/114.txt,,
+blake2b,uppercase,Hello world,Hello world,f,❌,input/codeparrot/hash/115.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,uppercase,Hello world,A B C,f,❌,input/codeparrot/hash/115.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,uppercase,Hello world,password,f,❌,input/codeparrot/hash/115.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,uppercase,Hello world,,p,✅,input/codeparrot/hash/115.txt,,
+blake2b,uppercase,Hallo welt,Hello world,e,💀,input/codeparrot/hash/116.txt,,
+blake2b,uppercase,Hallo welt,A B C,e,💀,input/codeparrot/hash/116.txt,,
+blake2b,uppercase,Hallo welt,password,e,💀,input/codeparrot/hash/116.txt,,
+blake2b,uppercase,Hallo welt,,e,💀,input/codeparrot/hash/116.txt,,
+blake2b,uppercase,0,Hello world,f,❌,input/codeparrot/hash/117.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,uppercase,0,A B C,f,❌,input/codeparrot/hash/117.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,uppercase,0,password,f,❌,input/codeparrot/hash/117.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,uppercase,0,,p,✅,input/codeparrot/hash/117.txt,,
+blake2b,uppercase,sha1,Hello world,f,❌,input/codeparrot/hash/118.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,uppercase,sha1,A B C,f,❌,input/codeparrot/hash/118.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,uppercase,sha1,password,f,❌,input/codeparrot/hash/118.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,uppercase,sha1,,p,✅,input/codeparrot/hash/118.txt,,
+blake2b,uppercase,md5,Hello world,f,❌,input/codeparrot/hash/119.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,uppercase,md5,A B C,f,❌,input/codeparrot/hash/119.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,uppercase,md5,password,f,❌,input/codeparrot/hash/119.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,uppercase,md5,,p,✅,input/codeparrot/hash/119.txt,,
+blake2b,dash,,Hello world,f,❌,input/codeparrot/hash/120.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,dash,,A B C,f,❌,input/codeparrot/hash/120.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,dash,,password,f,❌,input/codeparrot/hash/120.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,dash,,,p,✅,input/codeparrot/hash/120.txt,,
+blake2b,dash,Hello world,Hello world,f,❌,input/codeparrot/hash/121.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,dash,Hello world,A B C,f,❌,input/codeparrot/hash/121.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,dash,Hello world,password,f,❌,input/codeparrot/hash/121.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,dash,Hello world,,p,✅,input/codeparrot/hash/121.txt,,
+blake2b,dash,Hallo welt,Hello world,f,❌,input/codeparrot/hash/122.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','Hello world'
+blake2b,dash,Hallo welt,A B C,f,❌,input/codeparrot/hash/122.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','A B C'
+blake2b,dash,Hallo welt,password,f,❌,input/codeparrot/hash/122.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','password'
+blake2b,dash,Hallo welt,,p,✅,input/codeparrot/hash/122.txt,,
+blake2b,dash,0,Hello world,f,❌,input/codeparrot/hash/123.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,dash,0,A B C,f,❌,input/codeparrot/hash/123.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,dash,0,password,f,❌,input/codeparrot/hash/123.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,dash,0,,p,✅,input/codeparrot/hash/123.txt,,
+blake2b,dash,sha1,Hello world,f,❌,input/codeparrot/hash/124.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2b,dash,sha1,A B C,f,❌,input/codeparrot/hash/124.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2b,dash,sha1,password,f,❌,input/codeparrot/hash/124.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2b,dash,sha1,,p,✅,input/codeparrot/hash/124.txt,,
+blake2b,dash,md5,Hello world,f,❌,input/codeparrot/hash/125.txt,'6ff843ba685842aa82031d3f53c48b66326df7639a63d128974c5c14f31a0f33343a8c65551134ed1ae0f2b0dd2bb495dc81039e3eeb0aa1bb0388bbeac29183','3e25960a79dbc69b674cd4ec67a72c62'
+blake2b,dash,md5,A B C,f,❌,input/codeparrot/hash/125.txt,'88996ebafa64d19e2c056aac9776c9e5b54e16b6621a300fd5a3d0891a8e4ff54522534fe1616e38972364eac9cc016b01e16a7b7eb0186ba92b344d995bc850','0ef78513b0cb8cef12743f5aeb35f888'
+blake2b,dash,md5,password,f,❌,input/codeparrot/hash/125.txt,'7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8','5f4dcc3b5aa765d61d8327deb882cf99'
+blake2b,dash,md5,,p,✅,input/codeparrot/hash/125.txt,,
+blake2s,none,,Hello world,f,❌,input/codeparrot/hash/126.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2s,none,,A B C,f,❌,input/codeparrot/hash/126.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2s,none,,password,f,❌,input/codeparrot/hash/126.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2s,none,,,p,✅,input/codeparrot/hash/126.txt,,
+blake2s,none,Hello world,Hello world,f,❌,input/codeparrot/hash/127.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f','Hello world'
+blake2s,none,Hello world,A B C,f,❌,input/codeparrot/hash/127.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c','A B C'
+blake2s,none,Hello world,password,f,❌,input/codeparrot/hash/127.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b','password'
+blake2s,none,Hello world,,p,✅,input/codeparrot/hash/127.txt,,
+blake2s,none,Hallo welt,Hello world,f,❌,input/codeparrot/hash/128.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None
+blake2s,none,Hallo welt,A B C,f,❌,input/codeparrot/hash/128.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None
+blake2s,none,Hallo welt,password,f,❌,input/codeparrot/hash/128.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None
+blake2s,none,Hallo welt,,p,✅,input/codeparrot/hash/128.txt,,
+blake2s,none,0,Hello world,e,💀,input/codeparrot/hash/129.txt,,
+blake2s,none,0,A B C,e,💀,input/codeparrot/hash/129.txt,,
+blake2s,none,0,password,e,💀,input/codeparrot/hash/129.txt,,
+blake2s,none,0,,e,💀,input/codeparrot/hash/129.txt,,
+blake2s,none,sha1,Hello world,e,💀,input/codeparrot/hash/130.txt,,
+blake2s,none,sha1,A B C,e,💀,input/codeparrot/hash/130.txt,,
+blake2s,none,sha1,password,e,💀,input/codeparrot/hash/130.txt,,
+blake2s,none,sha1,,p,✅,input/codeparrot/hash/130.txt,,
+blake2s,none,md5,Hello world,f,❌,input/codeparrot/hash/131.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2s,none,md5,A B C,f,❌,input/codeparrot/hash/131.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2s,none,md5,password,f,❌,input/codeparrot/hash/131.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2s,none,md5,,p,✅,input/codeparrot/hash/131.txt,,
+blake2s,uppercase,,Hello world,f,❌,input/codeparrot/hash/132.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2s,uppercase,,A B C,f,❌,input/codeparrot/hash/132.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2s,uppercase,,password,f,❌,input/codeparrot/hash/132.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2s,uppercase,,,f,❌,input/codeparrot/hash/132.txt,None,'da39a3ee5e6b4b0d3255bfef95601890afd80709'
+blake2s,uppercase,Hello world,Hello world,e,💀,input/codeparrot/hash/133.txt,,
+blake2s,uppercase,Hello world,A B C,e,💀,input/codeparrot/hash/133.txt,,
+blake2s,uppercase,Hello world,password,e,💀,input/codeparrot/hash/133.txt,,
+blake2s,uppercase,Hello world,,p,✅,input/codeparrot/hash/133.txt,,
+blake2s,uppercase,Hallo welt,Hello world,f,❌,input/codeparrot/hash/134.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f',None
+blake2s,uppercase,Hallo welt,A B C,f,❌,input/codeparrot/hash/134.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',None
+blake2s,uppercase,Hallo welt,password,f,❌,input/codeparrot/hash/134.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b',None
+blake2s,uppercase,Hallo welt,,p,✅,input/codeparrot/hash/134.txt,,
+blake2s,uppercase,0,Hello world,f,❌,input/codeparrot/hash/135.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f','Hello world'
+blake2s,uppercase,0,A B C,f,❌,input/codeparrot/hash/135.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c','A B C'
+blake2s,uppercase,0,password,f,❌,input/codeparrot/hash/135.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b','password'
+blake2s,uppercase,0,,p,✅,input/codeparrot/hash/135.txt,,
+blake2s,uppercase,sha1,Hello world,e,💀,input/codeparrot/hash/136.txt,,
+blake2s,uppercase,sha1,A B C,e,💀,input/codeparrot/hash/136.txt,,
+blake2s,uppercase,sha1,password,e,💀,input/codeparrot/hash/136.txt,,
+blake2s,uppercase,sha1,,p,✅,input/codeparrot/hash/136.txt,,
+blake2s,uppercase,md5,Hello world,e,💀,input/codeparrot/hash/137.txt,,
+blake2s,uppercase,md5,A B C,e,💀,input/codeparrot/hash/137.txt,,
+blake2s,uppercase,md5,password,e,💀,input/codeparrot/hash/137.txt,,
+blake2s,uppercase,md5,,p,✅,input/codeparrot/hash/137.txt,,
+blake2s,dash,,Hello world,e,💀,input/codeparrot/hash/138.txt,,
+blake2s,dash,,A B C,e,💀,input/codeparrot/hash/138.txt,,
+blake2s,dash,,password,e,💀,input/codeparrot/hash/138.txt,,
+blake2s,dash,,,p,✅,input/codeparrot/hash/138.txt,,
+blake2s,dash,Hello world,Hello world,f,❌,input/codeparrot/hash/139.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f','Hello world'
+blake2s,dash,Hello world,A B C,f,❌,input/codeparrot/hash/139.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c','A B C'
+blake2s,dash,Hello world,password,f,❌,input/codeparrot/hash/139.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b','password'
+blake2s,dash,Hello world,,p,✅,input/codeparrot/hash/139.txt,,
+blake2s,dash,Hallo welt,Hello world,f,❌,input/codeparrot/hash/140.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2s,dash,Hallo welt,A B C,f,❌,input/codeparrot/hash/140.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2s,dash,Hallo welt,password,f,❌,input/codeparrot/hash/140.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2s,dash,Hallo welt,,p,✅,input/codeparrot/hash/140.txt,,
+blake2s,dash,0,Hello world,f,❌,input/codeparrot/hash/141.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f','ello worl'
+blake2s,dash,0,A B C,f,❌,input/codeparrot/hash/141.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c',' B '
+blake2s,dash,0,password,f,❌,input/codeparrot/hash/141.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b','asswor'
+blake2s,dash,0,,p,✅,input/codeparrot/hash/141.txt,,
+blake2s,dash,sha1,Hello world,f,❌,input/codeparrot/hash/142.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f','7b502c3a1f48c8609ae212cdfb639dee39673f5e'
+blake2s,dash,sha1,A B C,f,❌,input/codeparrot/hash/142.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c','031b4059d83c350702d1fc095cd752d889a6a78f'
+blake2s,dash,sha1,password,f,❌,input/codeparrot/hash/142.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8'
+blake2s,dash,sha1,,p,✅,input/codeparrot/hash/142.txt,,
+blake2s,dash,md5,Hello world,f,❌,input/codeparrot/hash/143.txt,'619a15b0f4dd21ef4bd626a9146af64561caf1325b21bccf755e4d7fbc31a65f','3e25960a79dbc69b674cd4ec67a72c62'
+blake2s,dash,md5,A B C,f,❌,input/codeparrot/hash/143.txt,'5b1708ed07f3bdfefa734764c64ae8e2301db044aabec90faf222e6d5905109c','0ef78513b0cb8cef12743f5aeb35f888'
+blake2s,dash,md5,password,f,❌,input/codeparrot/hash/143.txt,'4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b','5f4dcc3b5aa765d61d8327deb882cf99'
+blake2s,dash,md5,,p,✅,input/codeparrot/hash/143.txt,,
+sha3_512,none,,Hello world,e,💀,input/codeparrot/hash/144.txt,,
+sha3_512,none,,A B C,e,💀,input/codeparrot/hash/144.txt,,
+sha3_512,none,,password,e,💀,input/codeparrot/hash/144.txt,,
+sha3_512,none,,,p,✅,input/codeparrot/hash/144.txt,,
+sha3_512,none,Hello world,Hello world,e,💀,input/codeparrot/hash/145.txt,,
+sha3_512,none,Hello world,A B C,e,💀,input/codeparrot/hash/145.txt,,
+sha3_512,none,Hello world,password,e,💀,input/codeparrot/hash/145.txt,,
+sha3_512,none,Hello world,,p,✅,input/codeparrot/hash/145.txt,,
+sha3_512,none,Hallo welt,Hello world,p,✅,input/codeparrot/hash/146.txt,,
+sha3_512,none,Hallo welt,A B C,p,✅,input/codeparrot/hash/146.txt,,
+sha3_512,none,Hallo welt,password,p,✅,input/codeparrot/hash/146.txt,,
+sha3_512,none,Hallo welt,,p,✅,input/codeparrot/hash/146.txt,,
+sha3_512,none,0,Hello world,e,💀,input/codeparrot/hash/147.txt,,
+sha3_512,none,0,A B C,e,💀,input/codeparrot/hash/147.txt,,
+sha3_512,none,0,password,e,💀,input/codeparrot/hash/147.txt,,
+sha3_512,none,0,,p,✅,input/codeparrot/hash/147.txt,,
+sha3_512,none,sha1,Hello world,e,💀,input/codeparrot/hash/148.txt,,
+sha3_512,none,sha1,A B C,e,💀,input/codeparrot/hash/148.txt,,
+sha3_512,none,sha1,password,e,💀,input/codeparrot/hash/148.txt,,
+sha3_512,none,sha1,,p,✅,input/codeparrot/hash/148.txt,,
+sha3_512,none,md5,Hello world,e,💀,input/codeparrot/hash/149.txt,,
+sha3_512,none,md5,A B C,e,💀,input/codeparrot/hash/149.txt,,
+sha3_512,none,md5,password,e,💀,input/codeparrot/hash/149.txt,,
+sha3_512,none,md5,,p,✅,input/codeparrot/hash/149.txt,,
+sha3_512,uppercase,,Hello world,p,✅,input/codeparrot/hash/150.txt,,
+sha3_512,uppercase,,A B C,p,✅,input/codeparrot/hash/150.txt,,
+sha3_512,uppercase,,password,p,✅,input/codeparrot/hash/150.txt,,
+sha3_512,uppercase,,,p,✅,input/codeparrot/hash/150.txt,,
+sha3_512,uppercase,Hello world,Hello world,e,💀,input/codeparrot/hash/151.txt,,
+sha3_512,uppercase,Hello world,A B C,e,💀,input/codeparrot/hash/151.txt,,
+sha3_512,uppercase,Hello world,password,e,💀,input/codeparrot/hash/151.txt,,
+sha3_512,uppercase,Hello world,,p,✅,input/codeparrot/hash/151.txt,,
+sha3_512,uppercase,Hallo welt,Hello world,e,💀,input/codeparrot/hash/152.txt,,
+sha3_512,uppercase,Hallo welt,A B C,e,💀,input/codeparrot/hash/152.txt,,
+sha3_512,uppercase,Hallo welt,password,e,💀,input/codeparrot/hash/152.txt,,
+sha3_512,uppercase,Hallo welt,,p,✅,input/codeparrot/hash/152.txt,,
+sha3_512,uppercase,0,Hello world,e,💀,input/codeparrot/hash/153.txt,,
+sha3_512,uppercase,0,A B C,e,💀,input/codeparrot/hash/153.txt,,
+sha3_512,uppercase,0,password,e,💀,input/codeparrot/hash/153.txt,,
+sha3_512,uppercase,0,,p,✅,input/codeparrot/hash/153.txt,,
+sha3_512,uppercase,sha1,Hello world,e,💀,input/codeparrot/hash/154.txt,,
+sha3_512,uppercase,sha1,A B C,e,💀,input/codeparrot/hash/154.txt,,
+sha3_512,uppercase,sha1,password,e,💀,input/codeparrot/hash/154.txt,,
+sha3_512,uppercase,sha1,,p,✅,input/codeparrot/hash/154.txt,,
+sha3_512,uppercase,md5,Hello world,e,💀,input/codeparrot/hash/155.txt,,
+sha3_512,uppercase,md5,A B C,e,💀,input/codeparrot/hash/155.txt,,
+sha3_512,uppercase,md5,password,e,💀,input/codeparrot/hash/155.txt,,
+sha3_512,uppercase,md5,,p,✅,input/codeparrot/hash/155.txt,,
+sha3_512,dash,,Hello world,e,💀,input/codeparrot/hash/156.txt,,
+sha3_512,dash,,A B C,e,💀,input/codeparrot/hash/156.txt,,
+sha3_512,dash,,password,e,💀,input/codeparrot/hash/156.txt,,
+sha3_512,dash,,,p,✅,input/codeparrot/hash/156.txt,,
+sha3_512,dash,Hello world,Hello world,e,💀,input/codeparrot/hash/157.txt,,
+sha3_512,dash,Hello world,A B C,e,💀,input/codeparrot/hash/157.txt,,
+sha3_512,dash,Hello world,password,e,💀,input/codeparrot/hash/157.txt,,
+sha3_512,dash,Hello world,,p,✅,input/codeparrot/hash/157.txt,,
+sha3_512,dash,Hallo welt,Hello world,e,💀,input/codeparrot/hash/158.txt,,
+sha3_512,dash,Hallo welt,A B C,e,💀,input/codeparrot/hash/158.txt,,
+sha3_512,dash,Hallo welt,password,e,💀,input/codeparrot/hash/158.txt,,
+sha3_512,dash,Hallo welt,,p,✅,input/codeparrot/hash/158.txt,,
+sha3_512,dash,0,Hello world,e,💀,input/codeparrot/hash/159.txt,,
+sha3_512,dash,0,A B C,e,💀,input/codeparrot/hash/159.txt,,
+sha3_512,dash,0,password,e,💀,input/codeparrot/hash/159.txt,,
+sha3_512,dash,0,,p,✅,input/codeparrot/hash/159.txt,,
+sha3_512,dash,sha1,Hello world,e,💀,input/codeparrot/hash/160.txt,,
+sha3_512,dash,sha1,A B C,e,💀,input/codeparrot/hash/160.txt,,
+sha3_512,dash,sha1,password,e,💀,input/codeparrot/hash/160.txt,,
+sha3_512,dash,sha1,,p,✅,input/codeparrot/hash/160.txt,,
+sha3_512,dash,md5,Hello world,e,💀,input/codeparrot/hash/161.txt,,
+sha3_512,dash,md5,A B C,e,💀,input/codeparrot/hash/161.txt,,
+sha3_512,dash,md5,password,e,💀,input/codeparrot/hash/161.txt,,
+sha3_512,dash,md5,,p,✅,input/codeparrot/hash/161.txt,,

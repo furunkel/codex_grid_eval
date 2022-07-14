@@ -1,4 +1,3 @@
-
 def fizzbuzz(num):
     """
     Given a number, this function returns
@@ -7,76 +6,48 @@ def fizzbuzz(num):
         "FizzBuzz" for multiples of both five and 23  (instead of the number),
         the number itself otherwise.
     """
+    return (num * fizzbuzz(i) for i in range(1, num + 1))
 
-#
-# Problem #2: Test the Euler's Tour on Numbers
-#
-def Euler():
-    """
-    Answers the Euler's t-th numbers (up to a certain limit)
-    """
-    t = 2
-    limit = 5
-    while t <= limit:
-        t = t + 1
-        limit = limit - 1
-    return t
 
-#
-# Problem #3: Test the Euler's Tour on Numbers for the Tour
-#
-def EulerTour():
+def fizzbuzz_2(num):
     """
-    Answers the Euler's t-th numbers (up to a certain limit)
+    Given a number, this function returns
+        "Fizz" for multiples of five (instead of the number),
+        "Buzz" for multiples of 23 (instead of the number),
+        "FizzBuzz" for multiples of both five and 23  (instead of the number),
+        the number itself otherwise.
     """
-    t = 2
-    limit = 5
-    while t <= limit:
-        t = t + 1
-        limit = limit - 1
-    return t
+    return (num * fizzbuzz(i) for i in range(1, num + 1))
 
-#
-# Problem #4: Test the Euler's Tour on Numbers for the Tour
-#
-def EulerTour2():
-    """
-    Answers the Euler's t-th numbers (up to a certain limit)
-    """
-    t = 2
-    limit = 5
-    while t <= limit:
-        t = t + 1
-        limit = limit - 1
-    return t
 
-#
-# Problem #5: Test the Euler's Tour on Numbers for the Tour
-#
-def EulerTour3():
+def fizzbuzz_3(num):
     """
-    Answers the Euler's t-th numbers (up to a certain limit)
+    Given a number, this function returns
+        "Fizz" for multiples of five (instead of the number),
+        "Buzz" for multiples of 23 (instead of the number),
+        "FizzBuzz" for multiples of both five and 23  (instead of the number),
+        the number itself otherwise.
     """
-    t = 2
-    limit = 5
-    while t <= limit:
-        t = t + 1
-        limit = limit - 1
-    return t
+    return (num * fizzbuzz(i) for i in range(1, num + 1))
 
-#
-# Problem #6: Test the Euler's Tour on Numbers for the Tour
-#
-def EulerTour4():
-    """
-    Answers the Euler's t-th numbers (up to a certain limit)
-    """
-    t = 2
-    limit = 5
-    while t <= limit:
-        t = t + 1
-        limit = limit - 1
-    return t
 
-#
-# Problem #7: Test the Euler's
+def fizzbuzz_4(num):
+    """
+    Given a number, this function returns
+        "Fizz" for multiples of five (instead of the number),
+        "Buzz" for multiples of 23 (instead of the number),
+        "FizzBuzz" for multiples of both five and 23  (instead of the number),
+        the number itself otherwise.
+    """
+    return (num * fizzbuzz(i) for i in range(1, num + 1))
+
+
+def fizzbuzz_5(num):
+    """
+    Given a number, this function returns
+        "Fizz" for multiples of five (instead of the number),
+        "Buzz" for multiples of 23 (instead of the number),
+        "FizzBuzz" for multiples of both five and 23  (instead of the number),
+        the number itself otherwise.
+    """
+    return (num

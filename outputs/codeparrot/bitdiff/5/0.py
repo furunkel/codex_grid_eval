@@ -5,60 +5,57 @@ def bit_diff(a, b):
     return (a[0] > b[0] and a[1] > b[1] and a[2] > b[2])
 
 
-def get_bit_diff(a, b):
+def get_all_bits(bits):
     """
-    Returns the difference between the two numbers.
+    Returns a list of all bits in the given list.
     """
-    return (a[0] - b[0], a[1] - b[1], a[2] - b[2])
+    return [bit for bit in bits if bit_diff(bit, bits)]
 
 
-def get_bit_diff_ratio(a, b):
+def get_bits_in_range(bits, start, end):
     """
-    Returns the difference between the two numbers.
+    Returns a list of all bits in the given range.
     """
-    return (a[0] - b[0]) / (a[1] - b[1])
+    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
 
 
-def get_bit_diff_ratio_ratio(a, b):
+def get_bits_in_range_inclusive(bits, start, end):
     """
-    Returns the difference between the two numbers.
+    Returns a list of all bits in the given range inclusive.
     """
-    return (a[0] - b[0]) / (a[1] - b[1])
+    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
 
 
-def get_bit_diff_ratio_ratio_ratio(a, b):
+def get_bits_in_range_exclusive(bits, start, end):
     """
-    Returns the difference between the two numbers.
+    Returns a list of all bits in the given range exclusive.
     """
-    return (a[0] - b[0]) / (a[1] - b[1])
+    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
 
 
-def get_bit_diff_ratio_ratio_ratio_ratio(a, b):
+def get_bits_in_range_inclusive_inclusive(bits, start, end):
     """
-    Returns the difference between the two numbers.
+    Returns a list of all bits in the given range inclusive.
     """
-    return (a[0] - b[0]) / (a[1] - b[1])
+    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
 
 
-def get_bit_diff_ratio_ratio_ratio_ratio(a, b):
+def get_bits_in_range_exclusive_inclusive(bits, start, end):
     """
-    Returns the difference between the two numbers.
+    Returns a list of all bits in the given range exclusive.
     """
-    return (a[0] - b[0]) / (a[1] - b[1])
+    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
 
 
-def get_bit_diff_ratio_ratio_ratio_ratio(a, b):
+def get_bits_in_range_inclusive_exclusive(bits, start, end):
     """
-    Returns the difference between the two numbers.
+    Returns a list of all bits in the given range inclusive.
     """
-    return (a[0] - b[0]) / (a[1] - b[1])
+    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
 
 
-def get_bit_diff_ratio_ratio_ratio_ratio(a, b):
+def get_bits_in_range_inclusive_inclusive(bits, start, end):
     """
-    Returns the difference between the two numbers.
+    Returns a list of all bits in the given range inclusive.
     """
-    return (a[0] - b[0]) / (a[1] - b[1])
-
-
-def get_bit_diff_ratio_
+    return [bit for bit in bits[start:end] if bit_diff(bit, bits

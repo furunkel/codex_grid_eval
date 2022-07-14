@@ -1,56 +1,59 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest twelfth value.
     """
-#    print(lst)
     return max(lst, key=lst.count)
 
-def fibonacci_2(lst):
+
+def fibonacci_with_max(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest twelfth value.
     """
-#    print(lst)
     return max(lst, key=lst.count)
 
-def fibonacci_3(lst):
+
+def fibonacci_with_min(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest twelfth value.
+    """
+    return min(lst, key=lst.count)
+
+
+def fibonacci_with_mean(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the mean twelfth value.
+    """
+    return mean(lst, key=lst.count)
+
+
+def fibonacci_with_std(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest twelfth value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return std(lst, key=lst.count)
 
-def fibonacci_4(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest twelfth value.
-    """
-#    print(lst)
-    return max(lst, key=lst.count)
 
-def fibonacci_5(lst):
+def fibonacci_with_median(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest twelfth value.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the median twelfth value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return median(lst, key=lst.count)
 
-def fibonacci_6(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest twelfth value.
-    """
-#    print(lst)
-    return max(lst, key=lst.count)
 
-def fibonacci_7(lst):
+def fibonacci_with_mode(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest twelfth value.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the mode of the tuple with the largest twelfth value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return mode(lst, key=lst.count)
 
-def fibonacci_8(lst):
+
+def fibonacci_with_mean_mode(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest twelfth value.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the mean twelfth value.
     """
-#    print(lst)
-    return max(lst, key
+    return mean_mode(lst, key=lst.count)
+
+
+def fibonacci_with_std_mode(lst):
+    """
+    Given a list of tuples, write a

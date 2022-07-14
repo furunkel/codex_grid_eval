@@ -1,4 +1,3 @@
-
 def fizzbuzz(num):
     """
     Given a number, this function returns
@@ -7,50 +6,70 @@ def fizzbuzz(num):
         "FizzBuzz" for multiples of both 4 and 17  (instead of the number),
         the number itself otherwise.
     """
+    if num == 0:
+        return "Fizz"
+    elif num == 1:
+        return "Buzz"
+    elif num == 2:
+        return "Fizz"
+    elif num == 3:
+        return "Fizz"
+    elif num == 4:
+        return "Buzz"
+    elif num == 17:
+        return "Fizz"
+    else:
+        return "Buzz"
 
-# This is a list of all the possible ways to use the above functions
-# in the file "FizzBuzz.txt", in alphabetical order.
 
-def fizzbuzz_list(num):
+def fizzbuzz_2(num):
     """
     Given a number, this function returns
-        [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        "Fizz" for multiples of 4 (instead of the number),
+        "Buzz" for multiples of 17 (instead of the number),
+        "FizzBuzz" for multiples of both 4 and 17  (instead of the number),
+        the number itself otherwise.
     """
+    if num == 0:
+        return "Fizz"
+    elif num == 1:
+        return "Buzz"
+    elif num == 2:
+        return "Fizz"
+    elif num == 3:
+        return "Fizz"
+    elif num == 4:
+        return "Buzz"
+    elif num == 17:
+        return "Fizz"
+    else:
+        return "Buzz"
 
-# This is a list of all the possible ways to use the above functions
-# in the file "FizzBuzz.txt", in alphabetical order.
 
-def fizzbuzz_list_all(num):
-    """
-    Given a number, this function returns
-        [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    """
-
-# This is a list of all the possible ways to use the above functions
-# in the file "FizzBuzz.txt", in alphabetical order.
-
-def fizzbuzz_list_all_with_prefix(num):
-    """
-    Given a number, this function returns
-        [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    """
-
-# This is a list of all the possible ways to use the above functions
-# in the file "FizzBuzz.txt", in alphabetical order.
-
-def fizzbuzz_list_all_with_suffix(num):
+def fizzbuzz_3(num):
     """
     Given a number, this function returns
-        [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        "Fizz" for multiples of 4 (instead of the number),
+        "Buzz" for multiples of 17 (instead of the number),
+        "FizzBuzz" for multiples of both 4 and 17  (instead of the number),
+        the number itself otherwise.
     """
+    if num == 0:
+        return "Fizz"
+    elif num == 1:
+        return "Buzz"
+    elif num == 2:
+        return "Fizz"
+    elif num == 3:
+        return "Fizz"
+    elif num == 4:
+        return "Buzz"
+    elif num == 17:
+        return "Fizz"
+    else:
+        return "Buzz"
 
-# This is a list of all the possible ways to use the above functions
-# in the file "FizzBuzz.txt", in alphabetical order.
 
-def fizzbuzz_list_all_with_prefix_and_suffix(num):
+def fizzbuzz_4(num):
     """
-    Given a number, this function returns
-        [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    """
-
-# This is a list of all the possible ways
+    Given a number, this function

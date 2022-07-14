@@ -1,59 +1,64 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest third value.
     """
+    return max(lst, key=lst.count)[1]
 
-def fibonacci_2(lst):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest fourth value.
-    """
 
-def fibonacci_3(lst):
+def fibonacci_with_max(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest fifth value.
+    Given a list of tuples, write a function that returns the largest value of the tuple with the largest value.
     """
+    return max(lst, key=lst.count)[0]
 
-def fibonacci_4(lst):
-    """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the largest sixth value.
-    """
 
-def fibonacci_5(lst):
+def fibonacci_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the seventh value of the tuple with the largest seventh value.
+    Given a list of tuples, write a function that returns the smallest value of the tuple with the smallest value.
     """
+    return min(lst, key=lst.count)[0]
 
-def fibonacci_6(lst):
-    """
-    Given a list of tuples, write a function that returns the eighth value of the tuple with the largest eighth value.
-    """
 
-def fibonacci_7(lst):
+def fibonacci_with_sum(lst):
     """
-    Given a list of tuples, write a function that returns the nineth value of the tuple with the largest nineth value.
+    Given a list of tuples, write a function that returns the sum of the values of the tuple with the largest value.
     """
+    return sum(lst, key=lst.count)[0]
 
-def fibonacci_8(lst):
-    """
-    Given a list of tuples, write a function that returns the tenth value of the tuple with the largest tenth value.
-    """
 
-def fibonacci_9(lst):
+def fibonacci_with_mean(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the mean of the tuple with the largest value.
     """
+    return sum(lst, key=lst.count)[0]
 
-def fibonacci_10(lst):
-    """
-    Given a list of tuples, write a function that returns the eighth value of the tuple with the largest eighth value.
-    """
 
-def fibonacci_11(lst):
+def fibonacci_with_std(lst):
     """
-    Given a list of tuples, write a function that returns the nineth value of the tuple with the largest nineth value.
+    Given a list of tuples, write a function that returns the standard deviation of the tuple with the largest value.
     """
+    return math.sqrt(sum(lst, key=lst.count)[0])
 
-def fibonacci_12(lst):
+
+def fibonacci_with_var(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value
+    Given a list of tuples, write a function that returns the variance of the tuple with the largest value.
+    """
+    return math.sqrt(sum(lst, key=lst.count)[0])
+
+
+def fibonacci_with_median(lst):
+    """
+    Given a list of tuples, write a function that returns the median of the tuple with the largest value.
+    """
+    return math.median(lst, key=lst.count)[0]
+
+
+def fibonacci_with_mode(lst):
+    """
+    Given a list of tuples, write a function that returns the mode of the tuple with the largest value.
+    """
+    return math.mode(lst, key=lst.count)[0]
+
+
+def

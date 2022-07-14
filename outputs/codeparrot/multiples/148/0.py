@@ -1,7 +1,44 @@
-
 def multiples():
     """
     If we list all the natural numbers below 15 that are multiples of 2 or 5, we get 2, 4, 5, 6, 8, 10, 12 and 14. The sum of these multiples is 61.
     Return the sum of all the multiples of 2 or 5 below 500.
-    """    
-#    if len(str(2)) == len(str(5)) and len(str(6)) == len(str(10)) and len(str(14)) == len(str(12)) and len(str(16)) == len(str(18)) and len(str(20)) == len(str(22)) and len(str(24)) == len(str(26)) and len(str(28)) == len(str(30)) and len(str(32)) == len(str(34)) and len(str(36)) == len(str(37)) and len(str(38)) == len(str(39)) and len(str(40)) == len(str(41)) and len(str(42)) == len(str(43)) and len(str(44)) == len(str(45)) and len(str(46)) == len(str(47)) and len(str(48)) == len(str(49)) and len(str(50)) == len(str(51)) and len(str(52)) == len(str(53)) and len(str(54)) == len(str(55)) and len(str(56)) == len(str(57)) and len(str(58)) == len(str(59)) and len(str(60)) == len(str(61)) and len(str(62)) == len(str(63)) and len(str(64)) == len(str(65)) and len(str(66)) == len(str(67)) and len(str(68)) == len(str(69)) and len(str(70)) == len(str(71)) and len(str(72)) == len(str(73)) and len(str(74)) == len(str(75)) and len(str(76)) == len(str(77)) and len(str(78)) == len(str(79)) and len(str(80)) == len(str(81)) and len(
+    """
+    return sum(multiples())
+
+
+def multiples_with_one_digit():
+    """
+    If we list all the natural numbers below 15 that are multiples of 2 or 5, we get 2, 4, 5, 6, 8, 10, 12 and 14. The sum of these multiples is 61.
+    Return the sum of all the multiples of 2 or 5 below 500.
+    """
+    return sum(multiples_with_one_digit())
+
+
+def multiples_with_two_digit():
+    """
+    If we list all the natural numbers below 15 that are multiples of 2 or 5, we get 2, 4, 5, 6, 8, 10, 12 and 14. The sum of these multiples is 61.
+    Return the sum of all the multiples of 2 or 5 below 500.
+    """
+    return sum(multiples_with_two_digit())
+
+
+def multiples_with_three_digit():
+    """
+    If we list all the natural numbers below 15 that are multiples of 2 or 5, we get 2, 4, 5, 6, 8, 10, 12 and 14. The sum of these multiples is 61.
+    Return the sum of all the multiples of 2 or 5 below 500.
+    """
+    return sum(multiples_with_three_digit())
+
+
+def multiples_with_four_digit():
+    """
+    If we list all the natural numbers below 15 that are multiples of 2 or 5, we get 2, 4, 5, 6, 8, 10, 12 and 14. The sum of these multiples is 61.
+    Return the sum of all the multiples of 2 or 5 below 500.
+    """
+    return sum(multiples_with_four_digit())
+
+
+def multiples_with_five_digit():
+    """
+    If we list all the natural numbers below 15 that are multiples of 2 or 5, we get 2, 4, 5, 6, 8, 10, 12 and 14. The sum of these multiples is 61.
+    Return the sum of all the multiples of 2

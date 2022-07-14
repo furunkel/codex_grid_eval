@@ -1,74 +1,59 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[0]
 
-def g(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest second value.
-    """
 
-def h(lst):
+def f_with_args(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest third value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1]
 
-def i(lst):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest fourth value.
-    """
 
-def j(lst):
+def f_with_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest fifth value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1][0]
 
-def k(lst):
-    """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the smallest sixth value.
-    """
 
-def l(lst):
+def f_with_args_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest sixth value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1][1]
 
-def m(lst):
-    """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the largest sixth value.
-    """
 
-def n(lst):
+def f_with_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the n value of the tuple with the largest n value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1][1][1]
 
-def o(lst):
-    """
-    Given a list of tuples, write a function that returns the o value of the tuple with the largest o value.
-    """
 
-def p(lst):
+def f_with_args_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the prime value of the tuple with the largest prime value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1][1][1]
 
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the quad value of the tuple with the largest quad value.
-    """
 
-def r(lst):
+def f_with_kwargs_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the reciprocal value of the tuple with the largest reciprocal value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1][1][1][1]
 
-def s(lst):
-    """
-    Given a list of tuples, write a function that returns the square value of the tuple with the largest square value.
-    """
 
-def t(lst):
+def f_with_args_kwargs_kwargs(lst):
     """
-    Given
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
+    """
+    return min(lst, key=lambda x: x[1])[1][1][1][1]
+
+
+def f_with_kwargs_kwargs_kwargs(lst):
+    """
+    Given a list of tuples, write a function that returns the

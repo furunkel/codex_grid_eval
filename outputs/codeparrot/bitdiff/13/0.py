@@ -16,65 +16,67 @@ def get_bit_diff_str(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%d %d" % (a, b)
+    return str(get_bit_diff(a, b))
 
 
 def get_bit_diff_str_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%d %d" % (a, b)
+    return [get_bit_diff(a, b)]
 
 
 def get_bit_diff_str_list_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%d %d" % (a, b)
+    return [get_bit_diff(a, b)]
 
 
 def get_bit_diff_str_list_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%d %d" % (a, b)
+    return [get_bit_diff(a, b)]
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%d %d" % (a, b)
+    return [get_bit_diff(a, b)]
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%d %d" % (a, b)
+    return [get_bit_diff(a, b)]
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%d %d" % (a, b)
+    return [get_bit_diff(a, b)]
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%d %d" % (a, b)
+    return [get_bit_diff(a, b)]
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%d %d" % (a, b)
+    return [get_bit_diff(a, b)]
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns the difference between the two numbers
+    Returns the difference between the two numbers.
+    """
+    return [get_bit_diff

@@ -1,68 +1,68 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns False if the input string contains sequences of uppercase letters joined with a question mark and True otherwise.
     """
+    return text.upper() in string.ascii_lowercase
 
-def split_sequence(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split()
 
-def split_string(text):
+def remove_punctuation(text):
     """
-    Splits a string into a list of words.
+    Remove punctuation from a string.
     """
-    return text.split()
+    return text.translate(string.maketrans("",""), string.punctuation)
 
-def split_string_with_punctuation(text):
-    """
-    Splits a string into a list of words, punctuation and punctuation characters.
-    """
-    return text.split()
 
-def split_string_with_numbers(text):
+def remove_non_ascii(text):
     """
-    Splits a string into a list of words, numbers and punctuation characters.
+    Remove non-ASCII characters from a string.
     """
-    return text.split()
+    return text.translate(string.maketrans("",""), string.ascii_lowercase)
 
-def split_string_with_punctuation_and_numbers(text):
-    """
-    Splits a string into a list of words, punctuation and punctuation characters.
-    """
-    return text.split()
 
-def split_string_with_numbers_and_punctuation(text):
+def remove_non_ascii_chars(text):
     """
-    Splits a string into a list of words, numbers and punctuation characters.
+    Remove non-ASCII characters from a string.
     """
-    return text.split()
+    return text.translate(string.maketrans("",""), string.ascii_uppercase)
 
-def split_string_with_punctuation_and_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of words, punctuation and punctuation characters.
-    """
-    return text.split()
 
-def split_string_with_punctuation_and_numbers_and_punctuation_and_numbers(text):
+def remove_non_ascii_chars_and_spaces(text):
     """
-    Splits a string into a list of words, punctuation and punctuation characters.
+    Remove non-ASCII characters and spaces from a string.
     """
-    return text.split()
+    return text.translate(string.maketrans("",""), string.ascii_lowercase)
 
-def split_string_with_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of words, punctuation and punctuation characters.
-    """
-    return text.split()
 
-def split_string_with_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers(text):
+def remove_non_ascii_chars_and_spaces_and_newlines(text):
     """
-    Splits a string into a list of words, punctuation and punctuation characters.
+    Remove non-ASCII characters and spaces from a string.
     """
-    return text.split()
+    return text.translate(string.maketrans("",""), string.ascii_uppercase)
 
-def split_string_with_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation(text):
-   
+
+def remove_non_ascii_chars_and_spaces_and_newlines_and_newlines(text):
+    """
+    Remove non-ASCII characters and spaces from a string.
+    """
+    return text.translate(string.maketrans("",""), string.ascii_lowercase)
+
+
+def remove_non_ascii_chars_and_spaces_and_newlines_and_newlines(text):
+    """
+    Remove non-ASCII characters and spaces from a string.
+    """
+    return text.translate(string.maketrans("",""), string.ascii_uppercase)
+
+
+def remove_non_ascii_chars_and_spaces_and_newlines_and_newlines(text):
+    """
+    Remove non-ASCII characters and spaces from a string.
+    """
+    return text.translate(string.maketrans("",""), string.ascii_lowercase)
+
+
+def remove_non_ascii_chars_and_spaces_and_newlines_and_newlines(text):
+    """
+    Remove non-ASCII characters and spaces from a string.
+    """
+    return text.translate(string

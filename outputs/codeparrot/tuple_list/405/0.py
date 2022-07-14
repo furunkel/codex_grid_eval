@@ -1,62 +1,57 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lst.count)
 
-def some_func_2(lst):
+
+def test_func(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lst.count)[-1]
 
-def some_func_3(lst):
+
+def test_func_with_no_args(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lst.count)[-1]
 
-def some_func_4(lst):
+
+def test_func_with_args(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lst.count)[-1]
 
-def some_func_5(lst):
+
+def test_func_with_args_with_no_args(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lst.count)[-1]
 
-def some_func_6(lst):
+
+def test_func_with_args_with_no_args_with_no_args(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lst.count)[-1]
 
-def some_func_7(lst):
+
+def test_func_with_args_with_args_with_no_args_with_no_args(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lst.count)[-1]
 
-def some_func_8(lst):
+
+def test_func_with_args_with_args_with_no_args_with_no_args(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lst.count)[-1]
 
-def some_func_9(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
-    """
 
-def some_func_10(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
-    """
-
-def some_func_11(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
-    """
-
-def some_func_12(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
-    """
-
-def some_func_13(lst):
+def test_func_with

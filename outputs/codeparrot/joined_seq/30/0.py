@@ -1,43 +1,29 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns False if the input string contains sequences of uppercase letters joined with two underscores and True otherwise.
     """
+    return text.replace(' ', '_')
 
-def get_words(text):
-    """
-    Return a list of lowercase words in the given text.
-    """
-    return [word.lower() for word in text.split()]
 
 def get_unique_words(text):
     """
-    Return a list of unique words in the given text.
+    Return a list of unique words found in the text.
     """
-    return [word for word in text.split() if word not in unique_words]
+    return [word for word in text.split() if word not in STOPWORDS]
 
-def get_unique_words_with_length(text):
-    """
-    Return a list of unique words in the given text, with the number of unique words in the given text.
-    """
-    return [word for word in text.split() if len(word) == len(unique_words)]
 
-def get_unique_words_with_length_and_unique_words(text):
+def get_unique_words_with_counts(text):
     """
-    Return a list of unique words in the given text, with the number of unique words in the given text and the number of unique words in the given text.
+    Return a list of unique words found in the text.
     """
-    return [word for word in text.split() if len(word) == len(unique_words) and unique_words.count(word) == 1]
+    return [word for word in text.split() if word not in STOPWORDS and word not in STOPWORDS_WITH_DUPLICATE]
 
-def get_unique_words_with_length_and_unique_words_with_unique_words(text):
-    """
-    Return a list of unique words in the given text, with the number of unique words in the given text and the number of unique words in the given text.
-    """
-    return [word for word in text.split() if len(word) == len(unique_words) and unique_words.count(word) == 1 and unique_words.count(word) == 0]
 
-def get_unique_words_with_length_and_unique_words_with_unique_words_with_unique_words(text):
+def get_unique_words_with_counts_and_counts(text):
     """
-    Return a list of unique words in the given text, with the number of unique words in the given text and the number of unique words in the given text.
+    Return a list of unique words found in the text.
     """
-    return [word for word in text.split() if len(word) == len(unique_words) and unique_words.count(word) == 1 and unique_words.count(word) == 0]
+    return [word for word in text.split() if word not in STOPWORDS and word not in STOPWORDS_WITH_DUPLICATE and word not in STOPWORDS_WITH_DUPLICATE_AND_DUPLICATE]
 
-def get_unique
+
+def get_unique_words_with_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_counts_and_

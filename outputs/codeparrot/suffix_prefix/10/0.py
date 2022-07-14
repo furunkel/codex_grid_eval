@@ -1,64 +1,48 @@
-
 def all_prefixes(string: str) -> List[str]:
     """ Return list of all prefixes from longest to shortest of the input string
     >>> all_prefixes('12345678')
     ['12345678', '1234567', '123456', '12345', '1234', '123', '12', '1']
     """
-#    print(string)
     prefixes = []
     for i in range(len(string) - 1):
-        if string[i] == ' ':
-            prefixes.append(string[i + 1:])
-        else:
-            prefixes.append(string[i:i + 2])
+        prefixes.append(string[i:i + 2])
     return prefixes
 
 
-def get_prefix_length(string: str) -> int:
-    """ Return the length of the longest prefix string
-    >>> get_prefix_length('12345678')
-    4
+def all_suffixes(string: str) -> List[str]:
+    """ Return list of all suffixes from longest to shortest of the input string
+    >>> all_suffixes('12345678')
+    ['12345678', '1234567', '123456', '12345', '1234', '123', '12', '1']
     """
-    prefixes = all_prefixes(string)
-    return len(prefixes)
+    suffixes = []
+    for i in range(len(string) - 1):
+        suffixes.append(string[i:i + 2])
+    return suffixes
 
 
-def get_prefix_length_from_string(string: str) -> int:
-    """ Return the length of the longest prefix string
-    >>> get_prefix_length_from_string('12345678')
-    4
+def all_suffixes_with_prefix(string: str, prefix: str) -> List[str]:
+    """ Return list of all suffixes from longest to shortest of the input string
+    >>> all_suffixes_with_prefix('12345678', prefix='12345678')
+    ['12345678', '12345678', '1234567', '12345', '1234', '123', '12', '1']
     """
-    prefixes = all_prefixes(string)
-    return len(prefixes)
+    suffixes = []
+    for i in range(len(string) - 1):
+        suffixes.append(string[i:i + 2])
+    return suffixes
 
 
-def get_prefix_length_from_list(string: str) -> int:
-    """ Return the length of the longest prefix string
-    >>> get_prefix_length_from_list('12345678')
-    4
+def all_suffixes_with_suffix(string: str, suffix: str) -> List[str]:
+    """ Return list of all suffixes from longest to shortest of the input string
+    >>> all_suffixes_with_suffix('12345678', suffix='12345678')
+    ['12345678', '12345678', '1234567', '12345', '1234', '123', '12', '1']
     """
-    prefixes = all_prefixes(string)
-    return len(prefixes)
+    suffixes = []
+    for i in range(len(string) - 1):
+        suffixes.append(string[i:i + 2])
+    return suffixes
 
 
-def get_prefix_length_from_list_from_string(string: str) -> int:
-    """ Return the length of the longest prefix string
-    >>> get_prefix_length_from_list_from_string('12345678')
-    4
-    """
-    prefixes = all_prefixes(string)
-    return len(prefixes)
-
-
-def get_prefix_length_from_list_from_string_from_list(string: str) -> int:
-    """ Return the length of the longest prefix string
-    >>> get_prefix_length_from_list_from_string_from_list('12345678')
-    4
-    """
-    prefixes = all_prefixes(string)
-    return len(prefixes)
-
-
-def get_prefix_length_from_list_from_string_from_list(string: str) -> int:
-    """ Return the length of the longest prefix string
-    >>> get_prefix_length_from_list_from_string
+def all_suffixes_with_prefix_and_suffix(string: str, prefix: str, suffix: str) -> List[str]:
+    """ Return list of all suffixes from longest to shortest of the input string
+    >>> all_suffixes_with_prefix_and_suffix('12345678', prefix='12345678', suffix='12345678')
+    ['12345678', '12345678', '1234567', '12345', '1234

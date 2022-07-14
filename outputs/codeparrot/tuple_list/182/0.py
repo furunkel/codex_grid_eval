@@ -1,70 +1,86 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the smallest twelfth value.
     """
+    return max(lst, key=lambda x: x[1])[1]
 
-def g(lst):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the greatest twelfth value.
-    """
 
-def h(lst):
+def main():
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest hwelfth value.
+    Main function.
     """
-
-def i(lst):
-    """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the smallest ith value.
-    """
-
-def j(lst):
-    """
-    Given a list of tuples, write a function that returns the seventh value of the tuple with the smallest jth value.
-    """
-
-def k(lst):
-    """
-    Given a list of tuples, write a function that returns the eighth value of the tuple with the smallest kth value.
-    """
-
-def l(lst):
-    """
-    Given a list of tuples, write a function that returns the eighth value of the tuple with the smallest lth value.
-    """
-
-def m(lst):
-    """
-    Given a list of tuples, write a function that returns the m value of the tuple with the smallest m value.
-    """
-
-def n(lst):
-    """
-    Given a list of tuples, write a function that returns the n value of the tuple with the smallest n value.
-    """
-
-def o(lst):
-    """
-    Given a list of tuples, write a function that returns the o value of the tuple with the smallest o value.
-    """
-
-def p(lst):
-    """
-    Given a list of tuples, write a function that returns the p value of the tuple with the smallest p value.
-    """
-
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the q value of the tuple with the smallest q value.
-    """
-
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the r value of the tuple with the smallest r value.
-    """
-
-def s(lst):
-    """
-    Given a list of tuples, write a function that returns the s value of the tuple with the smallest s value.
-   
+    # Create a list of tuples
+    lst = [
+        (1, 2),
+        (3, 4),
+        (5, 6),
+        (7, 8),
+        (9, 10),
+        (11, 12),
+        (13, 14),
+        (15, 16),
+        (17, 18),
+        (19, 20),
+        (21, 22),
+        (23, 24),
+        (25, 26),
+        (27, 28),
+        (29, 30),
+        (31, 32),
+        (32, 33),
+        (33, 34),
+        (35, 36),
+        (37, 38),
+        (38, 39),
+        (39, 40),
+        (40, 41),
+        (41, 42),
+        (43, 43),
+        (44, 45),
+        (45, 46),
+        (46, 47),
+        (47, 48),
+        (48, 49),
+        (50, 50),
+        (51, 52),
+        (53, 53),
+        (54, 54),
+        (55, 55),
+        (56, 56),
+        (57, 57),
+        (58, 58),
+        (59, 59),
+        (60, 60),
+        (61, 61),
+        (62, 62),
+        (63, 63),
+        (64, 64),
+        (65, 65),
+        (66, 66),
+        (67, 67),
+        (68, 68),
+        (69, 69),
+        (70, 70),
+        (71, 71),
+        (72, 72),
+        (73, 73),
+        (74, 74),
+        (75, 75),
+        (76, 76),
+        (77, 77),
+        (78, 78),
+        (79, 79),
+        (80, 80),
+        (81, 81),
+        (82, 82),
+        (83, 83),
+        (84, 84),
+        (85, 85),
+        (86, 86),
+        (87, 87),
+        (88, 88),
+        (89, 89),
+        (90, 90),
+        (91, 91),
+        (92, 92),
+        (93

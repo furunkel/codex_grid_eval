@@ -1,53 +1,67 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return tuple(lst[-1])
 
-def tuple_extract_with_last(lst):
+
+def tuple_concat(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)[-1]
+    return tuple(lst[-1]) + tuple(lst[-2])
 
-def tuple_extract_with_first(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
-    """
-#    print(lst)
-    return min(lst, key=lst.count)[0]
 
-def tuple_extract_with_last_and_first(lst):
+def tuple_slice(lst, start, stop):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value and the first value.
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)[-1], lst[0]
+    return tuple(lst[start:stop])
 
-def tuple_extract_with_first_and_last(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value and the first value.
-    """
-#    print(lst)
-    return min(lst, key=lst.count)[0], lst[0]
 
-def tuple_extract_with_first_and_last_and_first(lst):
+def tuple_slice_list(lst, start, stop):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value and the first value.
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value.
     """
-#    print(lst)
-    return min(lst, key=lst.count)[-1], lst[0]
+    return tuple(lst[start:stop])
 
-def tuple_extract_with_first_and_last_and_first(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value and the first value.
-    """
-#    print(lst)
-    return min(lst, key=lst.count)[-1], lst[0]
 
-def tuple_extract_with_first_and_last_and_first_and_last(lst):
+def tuple_slice_dict(lst, start, stop):
     """
-    Given
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value.
+    """
+    return dict(lst[start:stop])
+
+
+def tuple_slice_string(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value.
+    """
+    return tuple(lst[start:stop])
+
+
+def tuple_slice_number(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value.
+    """
+    return tuple(lst[start:stop])
+
+
+def tuple_slice_dict_list(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value.
+    """
+    return tuple(lst[start:stop])
+
+
+def tuple_slice_string_list(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value.
+    """
+    return tuple(lst[start:stop])
+
+
+def tuple_slice_number_list(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest second value.
+   

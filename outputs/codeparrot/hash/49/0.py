@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha-224 hash equivalent string.
@@ -6,56 +5,65 @@ def string_to_hash(text):
 
     >>> string_to_hash('Hello world') == 'ac230f15fcae7f77d8f76e99adf45864a1c6f800655da78dea956112'
     """
+    if not text:
+        return None
+    return hashlib.sha224(text.encode('utf-8')).hexdigest()
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int('Hello world') == 0
+def get_file_hash(filename):
     """
+    Return the sha-224 hash of the file.
+    """
+    with open(filename, 'rb') as f:
+        return hashlib.sha224(f.read()).hexdigest()
 
-def string_to_bool(text):
-    """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_bool('Hello world') == 'true'
+def get_file_contents(filename):
     """
+    Return the contents of the file.
+    """
+    with open(filename, 'rb') as f:
+        return f.read()
 
-def string_to_float(text):
-    """
-    Given a string 'text', return its float equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_float('Hello world') == 0.0
+def get_file_lines(filename):
     """
+    Return the lines of the file.
+    """
+    with open(filename, 'rb') as f:
+        return f.readlines()
 
-def string_to_int_list(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int_list('Hello world') == [0, 1, 2, 3]
+def get_file_hash_lines(filename):
     """
+    Return the lines of the file, as a list of strings.
+    """
+    with open(filename, 'rb') as f:
+        return [line.strip() for line in f.readlines()]
 
-def string_to_int_dict(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int_dict('Hello world') == {'a': 0, 'b': 1, 'c': 2, 'd': 3}
+def get_file_hash_lines(filename):
     """
+    Return the lines of the file, as a list of strings.
+    """
+    with open(filename, 'rb') as f:
+        return [line.strip() for line in f.readlines()]
 
-def string_to_int_set(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int_set('Hello world') == {'a': 0, 'b': 1, 'c': 2, 'd': 3}
+def get_file_lines_with_hashes(filename):
     """
+    Return the lines of the file, as a list of strings.
+    """
+    with open(filename, 'rb') as f:
+        return [line.strip() for line in f.readlines() if line.startswith('SHA-224')]
 
-def string_to_int_tuple(text):
+
+def get_file_lines_with_hashes_and_lines(filename):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string,
+    Return the lines of the file, as a list of strings.
+    """
+    with open(filename, 'rb') as f:
+        return [line.strip() for line in f.readlines() if line.startswith('SHA-224')]
+
+
+def get_file_hash_lines_with_

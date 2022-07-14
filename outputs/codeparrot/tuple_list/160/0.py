@@ -1,59 +1,50 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the smallest second value.
     """
+    return max(lst, key=lst.count)[1]
 
-def fibonacci_2(lst):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest third value.
-    """
 
-def fibonacci_3(lst):
+def fibonacci_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest fifth value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_4(lst):
-    """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the smallest sixth value.
-    """
 
-def fibonacci_5(lst):
+def fibonacci_with_min_max_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the seventh value of the tuple with the smallest seventh value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_6(lst):
-    """
-    Given a list of tuples, write a function that returns the eighth value of the tuple with the smallest eighth value.
-    """
 
-def fibonacci_7(lst):
+def fibonacci_with_min_max_with_min_max_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the nineth value of the tuple with the smallest nineth value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_8(lst):
-    """
-    Given a list of tuples, write a function that returns the tenth value of the tuple with the smallest tenth value.
-    """
 
-def fibonacci_9(lst):
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_10(lst):
-    """
-    Given a list of tuples, write a function that returns the eighth value of the tuple with the smallest eighth value.
-    """
 
-def fibonacci_11(lst):
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the nineth value of the tuple with the smallest nineth value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_12(lst):
+
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of
+    Given a list of tuples, write a function that returns the third value of the tuple with the smallest second value.
+    """
+    return min(lst, key=lst.count)[1]
+
+
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):

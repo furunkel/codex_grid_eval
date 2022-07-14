@@ -1,51 +1,46 @@
-
 def double_letters(string):
     """
     Given a string, return the string, doubling every question mark character, and tripling every lower-case letter.
     All other characters should be output a single time each.
     """
+    return ''.join(c for c in string if c.islower())
 
-def main():
+
+def get_random_string(length):
     """
-    Main function.
+    Returns a random string of the specified length.
     """
-    # Parse command line arguments
-    parser = argparse.ArgumentParser(description='A simple script to generate a random string.')
-    parser.add_argument('-n', '--num', type=int, default=1, help='The number of random characters to generate.')
-    parser.add_argument('-s', '--string', type=str, default='Hello World!', help='The string to generate.')
-    args = parser.parse_args()
+    return ''.join(random.choice(string.lowercase) for _ in range(length))
 
-    # Generate random string
-    random_string = random.choice(string.ascii_lowercase)
-    print(random_string)
 
-    # Generate random string with letters
-    random_string_letters = random.choice(string.ascii_lowercase)
-    print(random_string_letters)
+def get_random_string_with_length(length):
+    """
+    Returns a random string of the specified length.
+    """
+    return ''.join(random.choice(string.lowercase) for _ in range(length))
 
-    # Generate random string with letters
-    random_string_letters_letters = random.choice(string.ascii_lowercase)
-    print(random_string_letters_letters)
 
-    # Generate random string with letters and numbers
-    random_string_letters_numbers = random.choice(string.ascii_lowercase)
-    print(random_string_letters_numbers)
+def get_random_string_with_letters(length):
+    """
+    Returns a random string of the specified length.
+    """
+    return ''.join(random.choice(string.lowercase) for _ in range(length))
 
-    # Generate random string with letters and numbers
-    random_string_letters_letters_numbers = random.choice(string.ascii_lowercase)
-    print(random_string_letters_letters_numbers)
 
-    # Generate random string with letters and numbers
-    random_string_letters_letters_numbers_letters = random.choice(string.ascii_lowercase)
-    print(random_string_letters_letters_letters_numbers_letters)
+def get_random_string_with_letters_and_length(length):
+    """
+    Returns a random string of the specified length.
+    """
+    return ''.join(random.choice(string.lowercase) for _ in range(length))
 
-    # Generate random string with letters and numbers
-    random_string_letters_letters_numbers_letters_letters = random.choice(string.ascii_lowercase)
-    print(random_string_letters_letters_letters_letters_letters_letters)
 
-    # Generate random string with letters and numbers
-    random_string_letters_letters_letters_letters_letters = random.choice(string.ascii_lowercase)
-    print(random_string_letters_letters_letters_letters_letters_letters)
+def get_random_string_with_letters_and_length_and_letters(length, letters, length_and_letters):
+    """
+    Returns a random string of the specified length and letters.
+    """
+    return ''.join(random.choice(string.lowercase) for _ in range(length))
 
-    # Generate random string with letters and numbers
-    random_string_letters_letters_letters_letters_letters_
+
+def get_random_string_with_letters_and_length_and_letters_and_length(length, letters, length_and_letters, length_and_letters_and_length):
+    """
+    Returns a random string of the specified length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length and letters and length

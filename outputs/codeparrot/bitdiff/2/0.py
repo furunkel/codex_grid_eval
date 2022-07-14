@@ -2,52 +2,81 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly one bit position.
     """
-    return int(a[0] - b[0]) != int(a[1] - b[1])
+    return (a > b) - (a < b)
 
 
-def get_all_files(directory):
+def get_bit_diff(a, b):
     """
-    Returns all files in a directory.
+    Returns the difference between two numbers.
     """
-    return [os.path.join(directory, f) for f in os.listdir(directory)]
+    return (a - b)
 
 
-def get_all_files_in_directory(directory):
+def get_bit_diff_str(a, b):
     """
-    Returns all files in a directory.
+    Returns the difference between two numbers.
     """
-    return [os.path.join(directory, f) for f in os.listdir(directory)]
+    return str(get_bit_diff(a, b))
 
 
-def get_all_files_in_directory_with_extension(directory, extension):
+def get_bit_diff_str_list(a, b):
     """
-    Returns all files in a directory with a specific extension.
+    Returns the difference between two numbers.
     """
-    return [os.path.join(directory, f) for f in os.listdir(directory)
-            if f.endswith(extension)]
+    return [get_bit_diff(a, b)]
 
 
-def get_all_files_in_directory_with_extension_and_extension(directory, extension):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns all files in a directory with a specific extension and extension.
+    Returns the difference between two numbers.
     """
-    return [os.path.join(directory, f) for f in os.listdir(directory)
-            if f.endswith(extension) and f.startswith(extension)]
+    return [get_bit_diff(a, b)]
 
 
-def get_all_files_in_directory_with_extension_and_extension_and_extension_and_extension(directory, extension, extension_to_find):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns all files in a directory with a specific extension and extension.
+    Returns the difference between two numbers.
     """
-    return [os.path.join(directory, f) for f in os.listdir(directory)
-            if f.endswith(extension) and f.startswith(extension_to_find)]
+    return [get_bit_diff(a, b)]
 
 
-def get_all_files_in_directory_with_extension_and_extension_and_extension_and_extension_and_extension_and_extension(directory, extension, extension_to_find, extension_to_find_in_directory):
+def get_bit_diff_str_list_list_list(a, b):
     """
-    Returns all files in a directory with a specific extension and extension.
+    Returns the difference between two numbers.
     """
-    return [os.path.join(directory, f) for f in os.listdir(directory)
-            if f.endswith(extension) and f.startswith(extension_to_find_in_directory)]
+    return [get_bit_diff(a, b)]
 
 
+def get_bit_diff_str_list_list_list(a, b):
+    """
+    Returns the difference between two numbers.
+    """
+    return [get_bit_diff(a, b)]
+
+
+def get_bit_diff_str_list_list_list(a, b):
+    """
+    Returns the difference between two numbers.
+    """
+    return [get_bit_diff(a, b)]
+
+
+def get_bit_diff_str_list_list_list(a, b):
+    """
+    Returns the difference between two numbers.
+    """
+    return [get_bit_diff(a, b)]
+
+
+def get_bit_diff_str_list_list_list(a, b):
+    """
+    Returns the difference between two numbers.
+    """
+    return [get_bit_diff(a, b)]
+
+
+def get_bit_diff_str_list_list_list(a, b):
+    """
+    Returns the difference between two numbers.
+    """
+    return [get_bit_

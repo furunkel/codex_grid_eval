@@ -1,77 +1,64 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha224 hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if not text:
+        return None
+    return hashlib.sha224(text.encode('utf-8')).hexdigest()
 
-def hash_to_string(hash):
-    """
-    Given a string 'hash', return its string representation.
-    If 'hash' is an empty string, return None.
-    """
 
-def string_to_int(text):
+def get_file_hash(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its int representation.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
     """
+    md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        for chunk in iter(lambda: f.read(block_size), b''):
+            md5.update(chunk)
+    return md5.hexdigest()
 
-def int_to_string(int):
-    """
-    Given a string 'int', return its string representation.
-    If 'int' is an empty string, return None.
-    """
 
-def string_to_bool(text):
+def get_file_hash_from_hash(hash, block_size=2 ** 20):
     """
-    Given a string 'text', return its bool representation.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
     """
+    with open(hash, 'rb') as f:
+        return get_file_hash(f, block_size)
 
-def bool_to_string(bool):
-    """
-    Given a string 'bool', return its string representation.
-    If 'bool' is an empty string, return None.
-    """
 
-def string_to_list(text):
+def get_file_hash_from_file(file_path, block_size=2 ** 20):
     """
-    Given a string 'text', return its list representation.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
     """
+    with open(file_path, 'rb') as f:
+        return get_file_hash(f, block_size)
 
-def list_to_string(list):
-    """
-    Given a string 'list', return its string representation.
-    If 'list' is an empty string, return None.
-    """
 
-def string_to_dict(text):
+def get_file_hash_from_block(block_hash, block_size=2 ** 20):
     """
-    Given a string 'text', return its dict representation.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a block.
     """
+    with open(block_hash, 'rb') as f:
+        return get_file_hash(f, block_size)
 
-def dict_to_string(dict):
-    """
-    Given a string 'dict', return its string representation.
-    If 'dict' is an empty string, return None.
-    """
 
-def string_to_int(text):
+def get_file_hash_from_file_path(file_path, block_size=2 ** 20):
     """
-    Given a string 'text', return its int representation.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
     """
+    with open(file_path, 'rb') as f:
+        return get_file_hash(f, block_size)
 
-def int_to_string(int):
-    """
-    Given a string 'int', return its string representation.
-    If 'int' is an empty string, return None.
-    """
 
-def string_to_bool(text):
+def get_file_hash_from_block_path(block_path, block_size=2 ** 20):
     """
-    Given a string 'text', return its bool representation.
-    If 'text'
+    Calculate the hash of a block.
+    """
+    with open(block_path, 'rb') as f:
+        return get_file_hash(f, block_size)
+
+
+def get_file_hash_from_file_path_with_md5(file_path, block_size=2 ** 20):
+    """
+   

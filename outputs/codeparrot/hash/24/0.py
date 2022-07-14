@@ -1,68 +1,66 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its SHA1 hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if text is None:
+        return None
+    return hashlib.sha1(text.encode('utf-8')).hexdigest()
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_bool(text):
+def get_file_hash(filename):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Return the SHA1 hash of the file with the given filename.
     """
+    hash_md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        for chunk in iter(lambda: f.read(4096), b''):
+            hash_md5.update(chunk)
+    return hash_md5.hexdigest()
 
-def string_to_datetime(text):
-    """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_date(text):
+def get_file_hash_from_hash(hash_md5):
     """
-    Given a string 'text', return its date equivalent string.
-    If 'text' is an empty string, return None.
+    Return the SHA1 hash of the file with the given hash_md5.
     """
+    hash_md5 = hash_md5.hexdigest()
+    return hash_md5
 
-def string_to_time(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_datetime_with_milliseconds(text):
+def get_file_hash_from_file(filename):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Return the SHA1 hash of the file with the given filename.
     """
+    hash_md5 = get_file_hash(filename)
+    return hash_md5
 
-def string_to_time_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_time_with_milliseconds_with_milliseconds(text):
+def get_file_hash_from_hash_file(hash_md5):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Return the SHA1 hash of the file with the given hash_md5.
     """
+    hash_md5 = hash_md5.hexdigest()
+    return hash_md5
 
-def string_to_time_with_milliseconds_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_time_with_milliseconds_with_milliseconds(text):
+def get_file_hash_from_file_with_md5(filename):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Return the SHA1 hash of the file with the given hash_md5.
     """
+    hash_md5 = get_file_hash_from_hash(filename)
+    return hash_md5
 
-def string_to_time_with_milliseconds_with_milliseconds_with
+
+def get_file_hash_from_file_with_sha1(filename):
+    """
+    Return the SHA1 hash of the file with the given hash_md5.
+    """
+    hash_md5 = get_file_hash_from_hash_file(filename)
+    return hash_md5
+
+
+def get_file_hash_from_file_with_sha256(filename):
+    """
+    Return the SHA1 hash of the file with the given hash_md5.
+    """
+    hash_md5 = get_file_hash_from

@@ -1,44 +1,79 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "small" if n < -100 and "large" if n >= 2000 (and None if -100 <= n < 2000).
     """
+    if n < -100:
+        return None
+    elif n < 2000:
+        return "large"
+    else:
+        return "small"
 
-def small_or_large_or_small(n):
-    """
-        Given an integer n, return "small" if n < -100 and "large" if n >= 2000 (and None if -100 <= n < 2000).
-    """
 
-def small_or_large_or_small_or_large(n):
+def get_random_string(length):
     """
-        Given an integer n, return "small" if n < -100 and "large" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random string of length length.
     """
+    return "".join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def small_or_large_or_small_or_large_or_small(n):
-    """
-        Given an integer n, return "small" if n < -100 and "large" if n >= 2000 (and None if -100 <= n < 2000).
-    """
 
-def small_or_large_or_small_or_large_or_small(n):
+def get_random_int(length):
     """
-        Given an integer n, return "small" if n < -100 and "large" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random integer of length length.
     """
+    return random.randint(0, length)
 
-def small_or_large_or_small_or_large_or_small_or_large(n):
-    """
-        Given an integer n, return "small" if n < -100 and "large" if n >= 2000 (and None if -100 <= n < 2000).
-    """
 
-def small_or_large_or_small_or_large_or_small_or_large(n):
+def get_random_float(length):
     """
-        Given an integer n, return "small" if n < -100 and "large" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random float of length length.
     """
+    return random.uniform(0.0, 1.0)
 
-def small_or_large_or_small_or_large_or_small_or_large(n):
-    """
-        Given an integer n, return "small" if n < -100 and "large" if n >= 2000 (and None if -100 <= n < 2000).
-    """
 
-def small_or_large_or_small_or_large_or_small_or_large(n):
+def get_random_bool(length):
     """
-        Given an integer n, return "
+        Returns a random bool of length length.
+    """
+    return random.choice([True, False])
+
+
+def get_random_list(length):
+    """
+        Returns a random list of length length.
+    """
+    return [random.choice(string.ascii_lowercase) for _ in range(length)]
+
+
+def get_random_dict(length):
+    """
+        Returns a random dict of length length.
+    """
+    return {random.choice(string.ascii_lowercase): random.choice(string.ascii_lowercase) for _ in range(length)}
+
+
+def get_random_list_dict(length):
+    """
+        Returns a random dict of length length.
+    """
+    return {random.choice(string.ascii_lowercase): random.choice(string.ascii_lowercase) for _ in range(length)}
+
+
+def get_random_dict_dict(length):
+    """
+        Returns a random dict of length length.
+    """
+    return {random.choice(string.ascii_lowercase): random.choice(string.ascii_lowercase) for _ in range(length)}
+
+
+def get_random_list_list(length):
+    """
+        Returns a random list of length length.
+    """
+    return [random.choice(string.ascii_lowercase) for _ in range(length)]
+
+
+def get_random_dict_list_dict(length):
+    """
+        Returns a random dict of length length.
+    """

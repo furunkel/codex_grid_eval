@@ -1,74 +1,42 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
     """
+    return max(lst, key=lst.count)[0]
 
-def g(lst):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the greatest value.
-    """
 
-def h(lst):
-    """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest value.
-    """
+def main():
+    print(f([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
-def i(lst):
-    """
-    Given a list of tuples, write a function that returns the ith value of the tuple with the largest value.
-    """
 
-def j(lst):
-    """
-    Given a list of tuples, write a function that returns the jth value of the tuple with the largest value.
-    """
+if __name__ == '__main__':
+    main()
+<|endoftext|># -*- coding: utf-8 -*-
+#
+# Copyright (C) Pootle contributors.
+#
+# This file is a part of the Pootle project. It is distributed under the GPL3
+# or later license. See the LICENSE file for a copy of the license and the
+# AUTHORS file for copyright and authorship information.
 
-def k(lst):
-    """
-    Given a list of tuples, write a function that returns the kth value of the tuple with the largest value.
-    """
+from django.conf import settings
+from django.core.urlresolvers import reverse
+from django.db import models
+from django.utils.functional import cached_property
 
-def l(lst):
-    """
-    Given a list of tuples, write a function that returns the lth value of the tuple with the largest value.
-    """
-
-def m(lst):
-    """
-    Given a list of tuples, write a function that returns the mth value of the tuple with the largest value.
-    """
-
-def n(lst):
-    """
-    Given a list of tuples, write a function that returns the nth value of the tuple with the largest value.
-    """
-
-def o(lst):
-    """
-    Given a list of tuples, write a function that returns the oth value of the tuple with the largest value.
-    """
-
-def p(lst):
-    """
-    Given a list of tuples, write a function that returns the pth value of the tuple with the largest value.
-    """
-
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the qth value of the tuple with the largest value.
-    """
-
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the rth value of the tuple with the largest value.
-    """
-
-def s(lst):
-    """
-    Given a list of tuples, write a function that returns the sth value of the tuple with the largest value.
-    """
-
-def t(lst):
-    """
-    Given a list of tuples, write a function that returns
+from pootle.core.url_helpers import split_pootle_path
+from pootle.core.utils.timezone import datetime_min
+from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
+from pootle_store.models import Unit
+from pootle_store.util import absolute_real_path, relative_real_path
+from pootle_store.util.stats import (get_total_words, get_translated_words,
+                                   get_total_words_fuzzy)
+from pootle_store.util.templatetags import get_templates_for_templates
+from pootle_store.util.stats import get_total_words_fuzzy
+from pootle_store.util.templatetags.store_stats import (get_total_words_fuzzy,
+                                                         get_translated_words_fuzzy)
+from pootle_store.util.templatetags.store_stats import get_total_words_fuzzy_source
+from pootle_store.util.templatetags.store_stats import get_total_words_fuzzy_target
+from pootle_store.util.templatetags.store_stats import get_total_words_fuzzy_target_plural
+from pootle_store.util.templatetags.store_stats import get_total_words_fuzzy_source_plural
+from pootle_store.util.templatetags.store_stats import get_total_words_fuzzy_target

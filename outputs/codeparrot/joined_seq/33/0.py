@@ -1,57 +1,64 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns False if the input string contains sequences of lowercase letters joined with six underscores and True otherwise.
     """
+    return text.translate(None, string.punctuation).lower() in ['t', 'true', '1']
 
-def split_sequence(text):
-    """
-    Splits a string into a list of non-overlapping sequences of lowercase letters.
-    """
 
-def split_sequence_with_punctuation(text):
+def remove_punctuation(text):
     """
-    Splits a string into a list of non-overlapping sequences of lowercase letters.
+    Remove punctuation from a string.
     """
+    return text.translate(None, string.punctuation).lower()
 
-def split_sequence_with_numbers(text):
-    """
-    Splits a string into a list of non-overlapping sequences of lowercase letters.
-    """
 
-def split_sequence_with_punctuation_and_numbers(text):
+def remove_non_ascii(text):
     """
-    Splits a string into a list of non-overlapping sequences of lowercase letters and numbers.
+    Remove non-ASCII characters from a string.
     """
+    return text.translate(None, string.punctuation).encode('ascii', 'ignore')
 
-def split_sequence_with_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of non-overlapping sequences of lowercase letters and numbers.
-    """
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation(text):
+def remove_non_ascii_chars(text):
     """
-    Splits a string into a list of non-overlapping sequences of lowercase letters and numbers and punctuation.
+    Remove non-ASCII characters from a string.
     """
+    return text.translate(None, string.punctuation).encode('ascii', 'ignore').decode('ascii')
 
-def split_sequence_with_numbers_and_punctuation_and_numbers(text):
-    """
-    Splits a string into a list of non-overlapping sequences of lowercase letters and numbers and punctuation.
-    """
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation(text):
+def remove_non_ascii_chars_list(text):
     """
-    Splits a string into a list of non-overlapping sequences of lowercase letters and numbers and punctuation.
+    Remove non-ASCII characters from a string.
     """
+    return text.translate(None, string.punctuation).encode('ascii', 'ignore').decode('ascii')
 
-def split_sequence_with_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of non-overlapping sequences of lowercase letters and numbers and punctuation.
-    """
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation(text):
+def remove_non_ascii_chars_list_with_punctuation(text):
     """
-    Splits a string into a list of non-overlapping sequences of lowercase letters and numbers and punctuation.
+    Remove non-ASCII characters from a string.
     """
+    return text.translate(None, string.punctuation).encode('ascii', 'ignore').decode('ascii').split(',')
 
-def split_sequence_with_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation_
+
+def remove_non_ascii_chars_list_with_punctuation_and_whitespace(text):
+    """
+    Remove non-ASCII characters from a string.
+    """
+    return text.translate(None, string.punctuation).encode('ascii', 'ignore').decode('ascii').split(',')
+
+
+def remove_non_ascii_chars_list_with_punctuation_and_whitespace_and_punctuation(text):
+    """
+    Remove non-ASCII characters from a string.
+    """
+    return text.translate(None, string.punctuation).encode('ascii', 'ignore').decode('ascii').split(',')
+
+
+def remove_non_ascii_chars_list_with_punctuation_and_whitespace_and_punctuation_and_whitespace(text):
+    """
+    Remove non-ASCII characters from a string.
+    """
+    return text.translate(None, string.punctuation).encode('ascii', 'ignore').decode('ascii').split(',')
+
+
+def remove_non_ascii_chars_list_with_punctuation

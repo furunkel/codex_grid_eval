@@ -1,89 +1,73 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "small" if n < -100 and "large" if n >= 15 (and None if -100 <= n < 15).
     """
+    if n < -100:
+        return None
+    elif n < 15:
+        return "large"
+    else:
+        return "small"
 
-def is_prime(n):
-    """
-        Given an integer n, return True if n is prime, otherwise False.
-    """
-    if n < 2:
-        return False
-    if n == 2:
-        return True
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    return True
 
-def is_prime_factor(n):
+def get_random_string(length):
     """
-        Given an integer n, return True if n is prime factor, otherwise False.
+        Returns a random string of length length.
     """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    return True
+    return "".join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def is_prime_divides(n):
-    """
-        Given an integer n, return True if n is prime divides n.
-    """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    return True
 
-def is_prime_divisors(n):
+def get_random_number(length):
     """
-        Given an integer n, return True if n is prime divides n.
+        Returns a random number of length length.
     """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    return True
+    return random.randint(1, length)
 
-def is_prime_divisor_factor(n):
-    """
-        Given an integer n, return True if n is prime divides n.
-    """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    return True
 
-def is_prime_divisor_divides(n):
+def get_random_date(length):
     """
-        Given an integer n, return True if n is prime divides n.
+        Returns a random date of length length.
     """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if
+    return datetime.date(random.randint(1, length), random.randint(1, length))
+
+
+def get_random_datetime(length):
+    """
+        Returns a random datetime of length length.
+    """
+    return datetime.datetime(random.randint(1, length), random.randint(1, length))
+
+
+def get_random_time(length):
+    """
+        Returns a random time of length length.
+    """
+    return datetime.time(random.randint(1, length), random.randint(1, length))
+
+
+def get_random_date_time(length):
+    """
+        Returns a random date and time of length length.
+    """
+    return datetime.datetime(random.randint(1, length), random.randint(1, length), random.randint(1, length))
+
+
+def get_random_time_date(length):
+    """
+        Returns a random date and time of length length.
+    """
+    return datetime.date(random.randint(1, length), random.randint(1, length), random.randint(1, length))
+
+
+def get_random_datetime_time(length):
+    """
+        Returns a random datetime and time of length length.
+    """
+    return datetime.time(random.randint(1, length), random.randint(1, length), random.randint(1, length))
+
+
+def get_random_date_time_time(length):
+    """
+        Returns a random datetime and time of length length.
+    """
+    return datetime.time(random.randint(1, length),

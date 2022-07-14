@@ -1,59 +1,79 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its blake2b hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
+    return None
 
-def get_hash(text):
-    """
-    Given a string 'text', return its hash equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def get_hash_from_text(text):
+def get_file_hash(filename):
     """
-    Given a string 'text', return its hash equivalent string.
-    If 'text' is an empty string, return None.
-    """
-
-def get_hash_from_file(filename):
-    """
-    Given a file 'filename', return its hash equivalent string.
+    Given a filename, return its hash equivalent string.
     If 'filename' is an empty string, return None.
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        return hashlib.sha1(filename.encode('utf-8')).hexdigest()
+    return None
 
-def get_hash_from_string(string):
-    """
-    Given a string 'string', return its hash equivalent string.
-    If 'string' is an empty string, return None.
-    """
 
-def get_hash_from_file_with_hash(filename, hash):
+def get_file_path(filename):
     """
-    Given a file 'filename', return its hash equivalent string.
+    Given a filename, return its path equivalent string.
     If 'filename' is an empty string, return None.
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        return filename
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)
 
-def get_hash_from_file_with_hash_and_text(filename, hash, text):
+
+def get_file_name(filename):
     """
-    Given a file 'filename', return its hash equivalent string.
+    Given a filename, return its name equivalent string.
     If 'filename' is an empty string, return None.
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        return filename
+    return os.path.basename(filename)
 
-def get_hash_from_file_with_hash_and_text_and_hash(filename, hash, text, text_hash):
+
+def get_file_size(filename):
     """
-    Given a file 'filename', return its hash equivalent string.
+    Given a filename, return its size equivalent string.
     If 'filename' is an empty string, return None.
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        return os.path.getsize(filename)
+    return None
 
-def get_hash_from_file_with_hash_and_text_and_hash_and_text(filename, hash, text, text_hash):
+
+def get_file_date(filename):
     """
-    Given a file 'filename', return its hash equivalent string.
+    Given a filename, return its date equivalent string.
     If 'filename' is an empty string, return None.
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        return filename
+    return os.path.getctime(os.path.join(os.path.dirname(os.path.abspath(__file__)), filename))
 
-def get_hash_from_file_with_hash_and_text_and_hash_and_text_and_hash(filename, hash, text, text_hash, text_hash_and_text):
+
+def get_file_size_in_milliseconds(filename):
     """
-    Given a file 'filename', return its hash equivalent string.
-   
+    Given a filename, return its size equivalent string.
+    If 'filename' is an empty string, return None.
+    """
+    if not filename:
+       

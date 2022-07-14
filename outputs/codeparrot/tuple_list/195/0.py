@@ -1,59 +1,53 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lst.count)
 
-def some_func_with_one_arg(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
-    """
 
-def some_func_with_two_args(lst):
+def some_func_with_args(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lst.count, args=lst[1:])
 
-def some_func_with_three_args(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
-    """
 
-def some_func_with_four_args(lst):
+def some_func_with_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lst.count, kwargs=lst[1:])
 
-def some_func_with_five_args(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
-    """
 
-def some_func_with_six_args(lst):
+def some_func_with_args_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lst.count, args=lst[1:], kwargs=lst[1:])
 
-def some_func_with_seven_args(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
-    """
 
-def some_func_with_eight_args(lst):
+def some_func_with_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lst.count, kwargs=lst[1:], kwargs_kwargs=lst[1:])
 
-def some_func_with_nine_args(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
-    """
 
-def some_func_with_ten_args(lst):
+def some_func_with_args_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest eleventh value.
     """
+    return max(lst, key=lst.count, kwargs_kwargs=lst[1:], kwargs_kwargs_kwargs=lst[1:])
 
-def some_func_with_eleven_args(lst):
+
+def some_func_with_kwargs_args(lst):
     """
-    Given a list of tuples
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest eleventh value.
+    """
+    return max(lst, key=lst.count, args=lst[1:], kwargs_args=lst[1:])
+
+
+def some_func_with_args_kwargs_args(lst):
+    """
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest eleventh value.
+   

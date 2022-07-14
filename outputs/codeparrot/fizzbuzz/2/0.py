@@ -1,4 +1,3 @@
-
 def fizzbuzz(num):
     """
     Given a number, this function returns
@@ -7,8 +6,18 @@ def fizzbuzz(num):
         "FizzBuzz" for multiples of both 3 and 11  (instead of the number),
         the number itself otherwise.
     """
+    if num == 1:
+        return "Buzz"
+    if num == 2:
+        return "Fizz"
+    if num == 3:
+        return "Fizz"
+    if num == 11:
+        return "Fizz"
+    return "Buzz"
 
-def fizzbuzz_2(num):
+
+def fizzbuzz_number(num):
     """
     Given a number, this function returns
         "Fizz" for multiples of 3 (instead of the number),
@@ -16,8 +25,18 @@ def fizzbuzz_2(num):
         "FizzBuzz" for multiples of both 3 and 11  (instead of the number),
         the number itself otherwise.
     """
+    if num == 1:
+        return "Fizz"
+    if num == 2:
+        return "Fizz"
+    if num == 3:
+        return "Fizz"
+    if num == 11:
+        return "Fizz"
+    return "Buzz"
 
-def fizzbuzz_3(num):
+
+def fizzbuzz_number_with_prefix(num):
     """
     Given a number, this function returns
         "Fizz" for multiples of 3 (instead of the number),
@@ -25,8 +44,18 @@ def fizzbuzz_3(num):
         "FizzBuzz" for multiples of both 3 and 11  (instead of the number),
         the number itself otherwise.
     """
+    if num == 1:
+        return "Fizz"
+    if num == 2:
+        return "Fizz"
+    if num == 3:
+        return "Fizz"
+    if num == 11:
+        return "Fizz"
+    return "Buzz"
 
-def fizzbuzz_4(num):
+
+def fizzbuzz_number_with_suffix(num):
     """
     Given a number, this function returns
         "Fizz" for multiples of 3 (instead of the number),
@@ -34,23 +63,5 @@ def fizzbuzz_4(num):
         "FizzBuzz" for multiples of both 3 and 11  (instead of the number),
         the number itself otherwise.
     """
-
-def fizzbuzz_5(num):
-    """
-    Given a number, this function returns
-        "Fizz" for multiples of 3 (instead of the number),
-        "Buzz" for multiples of 11 (instead of the number),
-        "FizzBuzz" for multiples of both 3 and 11  (instead of the number),
-        the number itself otherwise.
-    """
-
-def fizzbuzz_6(num):
-    """
-    Given a number, this function returns
-        "Fizz" for multiples of 3 (instead of the number),
-        "Buzz" for multiples of 11 (instead of the number),
-        "FizzBuzz" for multiples of both 3 and 11  (instead of the number),
-        the number itself otherwise.
-    """
-
-def fizzbuzz_7(num
+    if num == 1:
+        return "F

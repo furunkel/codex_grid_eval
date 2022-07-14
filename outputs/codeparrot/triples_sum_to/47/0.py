@@ -1,4 +1,3 @@
-
 def decuples_sum_to_one(l: list):
     """
     decuples_sum_to_one takes a list of integers as an input.
@@ -8,6 +7,8 @@ def decuples_sum_to_one(l: list):
     >>> decuples_sum_to_one([1])
     False
     """
+    return sum(l) % 10 == 0
+
 
 def decuples_sum_to_two(l: list):
     """
@@ -18,6 +19,8 @@ def decuples_sum_to_two(l: list):
     >>> decuples_sum_to_two([1, 2, 3])
     True
     """
+    return sum(l) % 10 == 0 and sum(l) % 10 == 1
+
 
 def decuples_sum_to_three(l: list):
     """
@@ -28,6 +31,8 @@ def decuples_sum_to_three(l: list):
     >>> decuples_sum_to_three([1, 2, 3])
     True
     """
+    return sum(l) % 10 == 0 and sum(l) % 10 == 1
+
 
 def decuples_sum_to_four(l: list):
     """
@@ -38,6 +43,8 @@ def decuples_sum_to_four(l: list):
     >>> decuples_sum_to_four([1, 2, 3])
     True
     """
+    return sum(l) % 10 == 0 and sum(l) % 10 == 1
+
 
 def decuples_sum_to_five(l: list):
     """
@@ -48,16 +55,7 @@ def decuples_sum_to_five(l: list):
     >>> decuples_sum_to_five([1, 2, 3])
     True
     """
+    return sum(l) % 10 == 0 and sum(l) % 10 == 1
+
 
 def decuples_sum_to_six(l: list):
-    """
-    decuples_sum_to_six takes a list of integers as an input.
-    it returns True if there are 10 distinct elements in the list that
-    sum to six, and False otherwise.
-
-    >>> decuples_sum_to_six([1, 2, 3])
-    True
-    """
-
-def decuples_sum_to_seven(l: list):
-    """

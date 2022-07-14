@@ -1,4 +1,3 @@
-
 def make_tuple(b, a):
     """
     Given two integers b and a, return a tuple where:
@@ -6,6 +5,8 @@ def make_tuple(b, a):
     The second element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return (a[0] - b[0], a[1] - b[1])
+
 
 def make_list(b, a):
     """
@@ -14,6 +15,8 @@ def make_list(b, a):
     The second element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return [a[0] - b[0], a[1] - b[1]]
+
 
 def make_set(b, a):
     """
@@ -22,6 +25,8 @@ def make_set(b, a):
     The second element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return set(a)
+
 
 def make_string(b, a):
     """
@@ -30,6 +35,8 @@ def make_string(b, a):
     The second element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return str(a[0]) + str(a[1])
+
 
 def make_tuple_string(b, a):
     """
@@ -38,6 +45,8 @@ def make_tuple_string(b, a):
     The second element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return (a[0] - b[0], a[1] - b[1])
+
 
 def make_set_string(b, a):
     """
@@ -46,16 +55,7 @@ def make_set_string(b, a):
     The second element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return set(a)
 
-def make_string_set(b, a):
-    """
-    Given two integers b and a, return a set where:
-    The first element contains the product of the two numbers.
-    The second element contains the difference of the two numbers (first - second).
-    The first element contains the sum of the two numbers.
-    """
 
-def make_set_set(b, a):
-    """
-    Given two integers b and a, return a set where:
-    The first
+def make_string_string(b, a

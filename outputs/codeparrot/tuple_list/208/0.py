@@ -1,64 +1,61 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the smallest last value.
     """
+    return max(lst, key=lst.count)[0]
+
 
 def fibonacci_with_max(lst):
     """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the largest last value.
     """
+    return max(lst, key=lst.count)[-1]
+
 
 def fibonacci_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
     """
+    return min(lst, key=lst.count)[0]
+
 
 def fibonacci_with_sum(lst):
     """
-    Given a list of tuples, write a function that returns the sum of the values in the tuple.
+    Given a list of tuples, write a function that returns the third value of the tuple with the sum of the values.
     """
+    return sum(lst, key=lst.count)[0]
 
-def fibonacci_with_product(lst):
-    """
-    Given a list of tuples, write a function that returns the product of the values in the tuple.
-    """
 
-def fibonacci_with_multiply(lst):
+def fibonacci_with_mean(lst):
     """
-    Given a list of tuples, write a function that returns the product of the values in the tuple.
+    Given a list of tuples, write a function that returns the third value of the tuple with the mean of the values.
     """
+    return sum(lst, key=lst.count)[0]
 
-def fibonacci_with_divide(lst):
-    """
-    Given a list of tuples, write a function that returns the quotient of the values in the tuple.
-    """
 
-def fibonacci_with_remainder(lst):
+def fibonacci_with_median(lst):
     """
-    Given a list of tuples, write a function that returns the remainder of the values in the tuple.
+    Given a list of tuples, write a function that returns the third value of the tuple with the median of the values.
     """
+    return median(lst, key=lst.count)[0]
 
-def fibonacci_with_power(lst):
-    """
-    Given a list of tuples, write a function that returns the power of the values in the tuple.
-    """
 
-def fibonacci_with_mod(lst):
+def fibonacci_with_mode(lst):
     """
-    Given a list of tuples, write a function that returns the remainder of the values in the tuple.
+    Given a list of tuples, write a function that returns the third value of the tuple with the mode of the tuple.
     """
+    return mode(lst)
 
-def fibonacci_with_sqrt(lst):
-    """
-    Given a list of tuples, write a function that returns the square root of the values in the tuple.
-    """
 
-def fibonacci_with_tan(lst):
+def fibonacci_with_mean_mode(lst):
     """
-    Given a list of tuples, write a function that returns the tangent of the values in the tuple.
+    Given a list of tuples, write a function that returns the third value of the tuple with the mean of the values.
     """
+    return mean(lst, key=lst.count)[0]
 
-def fibonacci_with_tanh(lst):
+
+def fibonacci_with_mode_with_median_mode(lst):
     """
-    Given a list of tuples
+    Given a list of tuples, write a function that returns the third value of the tuple with the median of the values.
+    """
+    return median(lst, key=lst.count)[0

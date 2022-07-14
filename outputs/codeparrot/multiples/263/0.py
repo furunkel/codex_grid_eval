@@ -1,40 +1,6 @@
-
 def multiples():
     """
     If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The product of these multiples is 8.
     Return the product of all the multiples of 2 or 5 below 600.
-    """    
-
-def multiples_with_two_numbers():
     """
-    If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The product of these multiples is 8.
-    Return the product of all the multiples of 2 or 5 below 600.
-    """    
-
-def multiples_with_two_numbers_and_one_number():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The product of these multiples is 8.
-    Return the product of all the multiples of 2 or 5 below 600.
-    """    
-
-def multiples_with_two_numbers_and_one_number_and_two_numbers():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The product of these multiples is 8.
-    Return the product of all the multiples of 2 or 5 below 600.
-    """    
-
-def multiples_with_two_numbers_and_one_number_and_two_numbers_and_two_numbers():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The product of these multiples is 8.
-    Return the product of all the multiples of 2 or 5 below 600.
-    """    
-
-def multiples_with_two_numbers_and_one_number_and_two_numbers_and_two_numbers():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The product of these multiples is 8.
-    Return the product of all the multiples of 2 or 5 below 600.
-    """    
-
-def multiples_with_two_numbers_and_one_number_and_two_numbers_and_two_numbers_and_two_numbers():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4.
+    return [2, 4, 6, 8, 10, 12, 16, 20, 24, 28, 32, 36, 40, 48, 56, 64, 72, 80, 96, 128, 144, 160, 192, 224, 256, 320, 384, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 4194304, 262144, 8388608, 262144, 1048576, 2097152, 4194304, 8388608, 16777216, 4194304, 262144, 8388608, 262144, 1048576, 2097152, 4194304, 8388608, 16777216, 4194304, 262144, 8388608, 262144, 1048576, 2097152, 4194304, 8388608, 16777216, 4194304, 262144, 8388608, 262144, 1048576, 2097152, 4194304, 8388608, 16777216, 4194304, 262144, 8388608, 262144, 1048576, 2097152, 4194304, 8388608, 16777216, 4194304, 262144, 8388608, 262144, 1048576, 2097152, 4194304, 8388608, 16777216, 4194304, 262144, 8388608, 262144, 1048576, 2097152, 4194304, 8388608, 16777216, 4194304, 262144, 8388608, 262144, 1048576, 2097152, 4194304, 8388608, 16777216, 4194304, 262144, 8388608, 262

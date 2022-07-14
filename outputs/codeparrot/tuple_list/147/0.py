@@ -1,64 +1,61 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
     """
+    return max(lst, key=lst.count)[0]
 
-def some_func2(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the smallest second value.
-    """
 
-def some_func3(lst):
+def some_func_with_args(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest second value.
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest second value.
     """
+    return max(lst, key=lst.count)[1]
 
-def some_func4(lst):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest fourth value.
-    """
 
-def some_func5(lst):
+def some_func_with_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest fifth value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest third value.
     """
+    return max(lst, key=lst.count)[2]
 
-def some_func6(lst):
-    """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the smallest sixth value.
-    """
 
-def some_func7(lst):
+def some_func_with_args_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the seventh value of the tuple with the smallest seventh value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest third value.
     """
+    return max(lst, key=lst.count)[3]
 
-def some_func8(lst):
-    """
-    Given a list of tuples, write a function that returns the eighth value of the tuple with the smallest eighth value.
-    """
 
-def some_func9(lst):
+def some_func_with_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the nineth value of the tuple with the smallest nineth value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest third value.
     """
+    return max(lst, key=lst.count)[4]
 
-def some_func10(lst):
-    """
-    Given a list of tuples, write a function that returns the tenth value of the tuple with the smallest tenth value.
-    """
 
-def some_func11(lst):
+def some_func_with_args_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest third value.
     """
+    return max(lst, key=lst.count)[5]
 
-def some_func12(lst):
-    """
-    Given a list of tuples, write a function that returns the nineth value of the tuple with the smallest nineth value.
-    """
 
-def some_func13(lst):
+def some_func_with_args_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest third value.
+    """
+    return max(lst, key=lst.count)[6]
+
+
+def some_func_with_args_kwargs_kwargs(lst):
+    """
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest third value.
+    """
+    return max(lst, key=lst.count)[7]
+
+
+def some_func_with_kwargs_args(lst):
+    """
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest third value.
+    """
+    return max(lst, key=lst.count

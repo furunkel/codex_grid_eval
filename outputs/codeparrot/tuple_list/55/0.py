@@ -1,58 +1,61 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
-#    print "tuple_extract", lst
-    if len(lst) == 0:
-        return None
-    return tuple(lst[0])
+    return max(lst, key=lambda x: x[1])[0]
+
 
 def tuple_extract_with_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
-#    print "tuple_extract_with_max", lst
-    if len(lst) == 0:
-        return None
-    return tuple(lst[0])
+    return max(lst, key=lambda x: x[1])[1]
+
 
 def tuple_extract_with_min(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
     """
-#    print "tuple_extract_with_min", lst
-    if len(lst) == 0:
-        return None
-    return tuple(lst[0])
+    return min(lst, key=lambda x: x[1])[0]
+
 
 def tuple_extract_with_sum(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the sum of the eleventh values.
+    Given a list of tuples, write a function that returns the first value of the tuple with the sum of the values.
     """
-#    print "tuple_extract_with_sum", lst
-    if len(lst) == 0:
-        return None
-    return tuple(lst[0])
+    return sum(lst, key=lambda x: x[1])
 
-def tuple_extract_with_product(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the product of the eleventh values.
-    """
-#    print "tuple_extract_with_product", lst
-    if len(lst) == 0:
-        return None
-    return tuple(lst[0])
 
-def tuple_extract_with_sum_with_product(lst):
+def tuple_extract_with_avg(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the sum of the eleventh values.
+    Given a list of tuples, write a function that returns the first value of the tuple with the average of the values.
     """
-#    print "tuple_extract_with_sum_with_product", lst
-    if len(lst) == 0:
-        return None
-    return tuple(lst[0])
+    return sum(lst, key=lambda x: x[1]) / len(lst)
 
-def tuple_extract_with_min_with_max(lst):
+
+def tuple_extract_with_std(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the standard deviation of the values.
+    """
+    return math.sqrt(sum(lst))
+
+
+def tuple_extract_with_var(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the variance of the values.
+    """
+    return math.sqrt(sum(lst))
+
+
+def tuple_extract_with_median(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the median of the values.
+    """
+    return math.median(lst)
+
+
+def tuple_extract_with_min_max(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the minimum and maximum values.
+    """
+    return min(lst, key=lambda x: x[1]) if len(lst)

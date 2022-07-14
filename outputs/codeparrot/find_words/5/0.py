@@ -1,62 +1,47 @@
-
 def find_char_long(text):
     """
     Finds all words which are exactly 3 characters long in a string.
     """
-#    print "find_char_long"
-    if len(text) < 3:
-        return []
-    if len(text) == 3:
-        return [text[0], text[1], text[2]]
-    else:
-        return [text[0], text[1], text[2], text[3]]
+    return [i for i in range(0, len(text)) if text[i] == ' ' and i < len(text) - 1]
+
 
 def find_char_short(text):
     """
     Finds all words which are exactly 3 characters short in a string.
     """
-#    print "find_char_short"
-    if len(text) < 3:
-        return []
-    if len(text) == 3:
-        return [text[0], text[1], text[2]]
-    else:
-        return [text[0], text[1], text[2], text[3]]
+    return [i for i in range(0, len(text)) if text[i] == ' ' and i > 0]
 
-def find_char_long_short(text):
+
+def find_char_not_long(text):
     """
     Finds all words which are exactly 3 characters long in a string.
     """
-#    print "find_char_long_short"
-    if len(text) < 3:
-        return []
-    if len(text) == 3:
-        return [text[0], text[1], text[2]]
-    else:
-        return [text[0], text[1], text[2], text[3]]
+    return [i for i in range(0, len(text)) if text[i] != ' ' and i > 0]
 
-def find_char_short_long(text):
-    """
-    Finds all words which are exactly 3 characters long in a string.
-    """
-#    print "find_char_short_long"
-    if len(text) < 3:
-        return []
-    if len(text) == 3:
-        return [text[0], text[1], text[2]]
-    else:
-        return [text[0], text[1], text[2], text[3]]
 
-def find_char_long_long(text):
+def find_char_not_short(text):
     """
-    Finds all words which are exactly 3 characters long in a string.
+    Finds all words which are exactly 3 characters short in a string.
     """
-#    print "find_char_long_long"
-    if len(text) < 3:
-        return []
-    if len(text) == 3:
-        return [text[0], text[1], text[2]]
-    else:
-        return [text[0], text[1], text[2], text[3]]
+    return [i for i in range(0, len(text)) if text[i] != ' ' and i > 0]
 
-def find_char_short_short(
+
+def find_char_not_long_or_short(text):
+    """
+    Finds all words which are exactly 3 characters long or short in a string.
+    """
+    return [i for i in range(0, len(text)) if text[i] != ' ' and i > 0 and text[i - 1] != ' ' and i < len(text) - 1]
+
+
+def find_char_not_long_or_short_or_space(text):
+    """
+    Finds all words which are exactly 3 characters long or short in a string.
+    """
+    return [i for i in range(0, len(text)) if text[i] != ' ' and i > 0 and text[i - 1] != ' ' and i < len(text) - 1 and text[i + 1] != ' ' and i < len(text) - 1]
+
+
+def find_char_not_long_or_short_or_space_or_not_space(text):
+    """
+    Finds all words which are exactly 3 characters long or short in a string.
+    """
+    return [i for i in range(0, len(text)) if text[i] != ' ' and i > 0 and text[i - 1] != ' ' and i

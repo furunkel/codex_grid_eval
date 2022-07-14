@@ -1,69 +1,57 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return max(lst, key=lst.count)
 
-def g(lst):
+
+def f_list(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return max(lst, key=lst.count, reverse=True)
 
-def h(lst):
+
+def f_tuple(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return max(lst, key=lst.count, reverse=True)
 
-def i(lst):
+
+def f_list_tuple(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return max(lst, key=lst.count, reverse=True, reverse_index=True)
 
-def j(lst):
+
+def f_dict(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return max(lst, key=lst.count, reverse=True, reverse_index=True)
 
-def k(lst):
+
+def f_dict_tuple(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return max(lst, key=lst.count, reverse=True, reverse_index=True, reverse_reverse=True)
 
-def l(lst):
+
+def f_dict_list(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return max(lst, key=lst.count, reverse=True, reverse_index=True, reverse_reverse=True)
 
-def m(lst):
+
+def f_dict_tuple_list(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
+    return max(lst, key=lst.count, reverse=True, reverse_index=True, reverse_reverse=True, reverse_reverse_index=True)
 
-def n(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
-    """
 
-def o(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
-    """
-
-def p(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
-    """
-
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
-    """
-
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
-    """
-
-def s(lst):
-    """
-    Given a list of tuples, write a function
+def f_dict

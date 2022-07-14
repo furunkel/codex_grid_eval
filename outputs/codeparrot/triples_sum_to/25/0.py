@@ -1,4 +1,3 @@
-
 def doubles_sum_to_one(l: list):
     """
     doubles_sum_to_one takes a list of integers as an input.
@@ -8,6 +7,8 @@ def doubles_sum_to_one(l: list):
     >>> doubles_sum_to_one([1, 3, -2, 1, 5, 8])
     True
     """
+    return len(l) == 2 and l[0] == l[1]
+
 
 def doubles_sum_to_two(l: list):
     """
@@ -18,6 +19,8 @@ def doubles_sum_to_two(l: list):
     >>> doubles_sum_to_two([1, 3, -2, 1, 5, 8])
     True
     """
+    return len(l) == 2 and l[0] == l[1] and l[0] == l[2]
+
 
 def doubles_sum_to_three(l: list):
     """
@@ -28,6 +31,8 @@ def doubles_sum_to_three(l: list):
     >>> doubles_sum_to_three([1, 3, -2, 1, 5, 8])
     True
     """
+    return len(l) == 3 and l[0] == l[1] and l[0] == l[2]
+
 
 def doubles_sum_to_four(l: list):
     """
@@ -38,6 +43,8 @@ def doubles_sum_to_four(l: list):
     >>> doubles_sum_to_four([1, 3, -2, 1, 5, 8])
     True
     """
+    return len(l) == 4 and l[0] == l[1] and l[0] == l[2]
+
 
 def doubles_sum_to_five(l: list):
     """
@@ -45,14 +52,4 @@ def doubles_sum_to_five(l: list):
     it returns True if there are 5 distinct elements in the list that
     sum to five, and False otherwise.
 
-    >>> doubles_sum_to_five([1, 3, -2, 1, 5, 8])
-    True
-    """
-
-def doubles_sum_to_six(l: list):
-    """
-    doubles_sum_to_six takes a list of integers as an input.
-    it returns True if there are 6 distinct elements in the list that
-    sum to six, and False otherwise.
-
-    >>> doubles_sum_to_six([1, 3, -2, 1
+    >>> doubles_

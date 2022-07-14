@@ -1,34 +1,25 @@
-
 def incr_list(l: list):
     """Return list with elements incremented by 1.
     >>> incr_list([5, 3, 5, 2, 3, 3, 9, 0, 123])
     [6, 4, 6, 3, 4, 4, 10, 1, 124]
     """
+    return [x + 1 for x in l if x > 1]
 
-def incr_list_with_index(l: list):
+
+def incr_list_with_count(l: list):
     """Return list with elements incremented by 1.
-    >>> incr_list_with_index([5, 3, 5, 2, 3, 3, 9, 0, 123])
+    >>> incr_list_with_count([5, 3, 5, 2, 3, 3, 9, 0, 123])
     [6, 4, 6, 3, 4, 4, 10, 1, 124]
     """
+    return [x + 1 for x in l if x > 1]
 
-def incr_list_with_index_with_value(l: list):
+
+def incr_list_with_count_and_count(l: list):
     """Return list with elements incremented by 1.
-    >>> incr_list_with_index_with_value([5, 3, 5, 2, 3, 3, 9, 0, 123])
+    >>> incr_list_with_count_and_count([5, 3, 5, 2, 3, 3, 9, 0, 123])
     [6, 4, 6, 3, 4, 4, 10, 1, 124]
     """
+    return [x + 1 for x in l if x > 1 and x > 1 and x < 3]
 
-def incr_list_with_index_with_value_with_index(l: list):
-    """Return list with elements incremented by 1.
-    >>> incr_list_with_index_with_value_with_index([5, 3, 5, 2, 3, 3, 9, 0, 123])
-    [6, 4, 6, 3, 4, 4, 10, 1, 124]
-    """
 
-def incr_list_with_index_with_value_with_index_with_value(l: list):
-    """Return list with elements incremented by 1.
-    >>> incr_list_with_index_with_value_with_index_with_value([5, 3, 5, 2, 3, 3, 9, 0, 123])
-    [6, 4, 6, 3, 4, 4, 10, 1, 124]
-    """
-
-def incr_list_with_index_with_value_with_index_with_value_with_index(l: list):
-    """Return list with elements incremented by 1.
-    >>> incr_list_with_index_with_value_with_index_with_value_with_index([5, 3, 5, 2, 3, 3, 9
+def incr_list_with_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count_and_count

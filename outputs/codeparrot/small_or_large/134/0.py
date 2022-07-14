@@ -1,54 +1,73 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "small" if n < 2 and "house" if n >= 15 (and neither if 2 <= n < 15).
     """
+    if n < 2:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "small"
 
-def small_or_large_2(n):
+
+def small_or_large_to_small(n):
     """
         Given an integer n, return "small" if n < 2 and "house" if n >= 15 (and neither if 2 <= n < 15).
     """
+    if n < 2:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "small"
 
-def small_or_large_3(n):
+
+def small_or_large_to_large(n):
     """
         Given an integer n, return "small" if n < 2 and "house" if n >= 15 (and neither if 2 <= n < 15).
     """
+    if n < 2:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "small"
 
-def small_or_large_4(n):
+
+def small_or_large_to_large_to_small(n):
     """
         Given an integer n, return "small" if n < 2 and "house" if n >= 15 (and neither if 2 <= n < 15).
     """
+    if n < 2:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "small"
 
-def small_or_large_5(n):
+
+def small_or_large_to_large_to_small_to_large(n):
     """
         Given an integer n, return "small" if n < 2 and "house" if n >= 15 (and neither if 2 <= n < 15).
     """
+    if n < 2:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "small"
 
-def small_or_large_6(n):
+
+def small_or_large_to_large_to_small_to_large(n):
     """
         Given an integer n, return "small" if n < 2 and "house" if n >= 15 (and neither if 2 <= n < 15).
     """
+    if n < 2:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "small"
 
-def small_or_large_7(n):
-    """
-        Given an integer n, return "small" if n < 2 and "house" if n >= 15 (and neither if 2 <= n < 15).
-    """
 
-def small_or_large_8(n):
-    """
-        Given an integer n, return "small" if n < 2 and "house" if n >= 15 (and neither if 2 <= n < 15).
-    """
-
-def small_or_large_9(n):
-    """
-        Given an integer n, return "small" if n < 2 and "house" if n >= 15 (and neither if 2 <= n < 15).
-    """
-
-def small_or_large_10(n):
-    """
-        Given an integer n, return "small" if n < 2 and "house" if n >= 15 (and neither if 2 <= n < 15).
-    """
-
-def small_or_large_11(n):
-    """
-        Given an integer n, return "small"
+def small_or_large_to_large

@@ -1,71 +1,74 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha3-512 hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if not text:
+        return None
+    return hashlib.sha3(text.encode('utf-8')).hexdigest()
+
 
 def get_file_hash(filename):
     """
     Given a filename, return its sha3-512 hash equivalent string.
     If 'filename' is an empty string, return None.
     """
-    if filename is None:
+    if not filename:
         return None
-    else:
-        return hashlib.sha3_512(open(filename, 'rb').read()).hexdigest()
+    return hashlib.sha3(filename.encode('utf-8')).hexdigest()
 
-def get_file_contents(filename):
+
+def get_file_size(filename):
     """
-    Given a filename, return its contents as a string.
+    Given a filename, return its size equivalent string.
     If 'filename' is an empty string, return None.
     """
-    if filename is None:
+    if not filename:
         return None
-    else:
-        return open(filename, 'rb').read()
+    return os.path.getsize(filename)
 
-def get_file_lines(filename):
+
+def get_file_md5(filename):
     """
-    Given a filename, return its lines as a list of strings.
+    Given a filename, return its md5-512 hash equivalent string.
     If 'filename' is an empty string, return None.
     """
-    if filename is None:
+    if not filename:
         return None
-    else:
-        return open(filename, 'rb').readlines()
+    return hashlib.md5(filename.encode('utf-8')).hexdigest()
 
-def get_file_lines_with_hashes(filename):
+
+def get_file_size_in_mb(filename):
     """
-    Given a filename, return its lines as a list of strings.
+    Given a filename, return its size equivalent string.
     If 'filename' is an empty string, return None.
     """
-    if filename is None:
+    if not filename:
         return None
-    else:
-        return open(filename, 'rb').readlines()
+    return os.path.getsize(filename) / (1024 * 1024)
 
-def get_file_lines_with_hashes_and_lines(filename):
+
+def get_file_md5_from_hash(hash):
     """
-    Given a filename, return its lines as a list of strings.
+    Given a hash, return its md5-512 hash equivalent string.
+    If 'hash' is an empty string, return None.
+    """
+    if not hash:
+        return None
+    return hashlib.md5(hash.encode('utf-8')).hexdigest()
+
+
+def get_file_md5_from_file(filename):
+    """
+    Given a filename, return its md5-512 hash equivalent string.
     If 'filename' is an empty string, return None.
     """
-    if filename is None:
+    if not filename:
         return None
-    else:
-        return open(filename, 'rb').readlines()
+    return hashlib.md5(filename.encode('utf-8')).hexdigest()
 
-def get_file_lines_with_hashes_and_lines_and_hashes(filename):
-    """
-    Given a filename, return its lines as a list of strings.
-    If 'filename' is an empty string, return None.
-    """
-    if filename is None:
-        return None
-    else:
-        return open(filename, 'rb').readlines()
 
-def get_file_lines_with_hashes_and_lines_and_hashes_and_lines(filename):
+def get_file_size_in_mb_from_file(filename):
     """
-    Given a filename, return its lines as a list of strings.
-    If '
+    Given a filename, return its size equivalent string.
+    If 'filename'

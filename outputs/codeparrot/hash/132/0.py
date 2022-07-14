@@ -1,62 +1,72 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its BLAKE2S hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if text is None:
+        return None
+    if isinstance(text, str):
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
+    elif isinstance(text, unicode):
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
+    else:
+        raise TypeError('Expected string or unicode, got %r' % type(text))
 
-def get_hash(text):
-    """
-    Given a string 'text', return its hash equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def get_hash_from_text(text):
+def get_file_hash(filename):
     """
-    Given a string 'text', return its hash equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its hash.
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha1(f.read()).hexdigest()
 
-def get_hash_from_file(file):
-    """
-    Given a file 'file', return its hash equivalent string.
-    If 'file' is an empty string, return None.
-    """
 
-def get_hash_from_lines(lines):
+def get_file_contents(filename):
     """
-    Given a list of lines 'lines', return its hash equivalent string.
-    If 'lines' is an empty list, return None.
+    Given a filename, return its contents as a string.
     """
+    with open(filename, 'rb') as f:
+        return f.read()
 
-def get_hash_from_file_lines(file_lines):
-    """
-    Given a list of lines 'file_lines', return its hash equivalent string.
-    If 'file_lines' is an empty list, return None.
-    """
 
-def get_hash_from_lines_and_hashes(lines, hashes):
+def get_file_lines(filename):
     """
-    Given a list of lines 'lines', return its hash equivalent string.
-    If 'lines' is an empty list, return None.
+    Given a filename, return its lines as a list of strings.
     """
+    with open(filename, 'rb') as f:
+        return f.readlines()
 
-def get_hash_from_lines_and_hashes_and_lines(lines, hashes):
-    """
-    Given a list of lines 'lines', return its hash equivalent string.
-    If 'lines' is an empty list, return None.
-    """
 
-def get_hash_from_lines_and_hashes_and_lines_and_hashes(lines, hashes):
+def get_line_count(filename, lineno):
     """
-    Given a list of lines 'lines', return its hash equivalent string.
-    If 'lines' is an empty list, return None.
+    Given a filename, return its line count.
     """
+    with open(filename, 'rb') as f:
+        return len(f.readlines())
 
-def get_hash_from_lines_and_hashes_and_lines_and_hashes_and_lines(lines, hashes):
-    """
-    Given a list of lines 'lines', return its hash equivalent string.
-    If 'lines' is an empty list, return None.
-    """
 
-def get_hash_from_lines_and_hashes_and
+def get_line_count_for_file(filename, lineno):
+    """
+    Given a filename, return its line count for the given file.
+    """
+    with open(filename, 'rb') as f:
+        return len(f.readlines())
+
+
+def get_line_count_for_file_and_line(filename, lineno):
+    """
+    Given a filename, return its line count for the given file and line.
+    """
+    with open(filename, 'rb') as f:
+        return len(f.readlines())
+
+
+def get_line_count_for_file_and_full_path(filename, lineno):
+    """
+    Given a filename, return its line count for the given file and full path.
+    """
+    with open(filename, 'rb') as f:
+        return len(f.readlines())
+
+
+def get_line_count_for_file_and_full_path_and

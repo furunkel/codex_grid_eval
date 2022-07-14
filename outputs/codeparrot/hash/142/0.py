@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its blake2s hash equivalent string.
@@ -6,37 +5,58 @@ def string_to_hash(text):
 
     >>> string_to_hash('sha1') == 'cd9b4f43951c6e4547d4701e33d5bfda3ba8b2d1edbc4f96d08daab17f93632e'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha1(text).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename):
     """
-    Given a string 'text', return its blake2s int equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its hash.
 
-    >>> string_to_int('sha1') == 'cd9b4f43951c6e4547d4701e33d5bfda3ba8b2d1edbc4f96d08daab17f93632e'
+    >>> get_file_hash('sha1')
+    'c9b4f43951c6e4547d4701e33d5bfda3ba8b2d1edbc4f96d08daab17f93632e'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return hashlib.sha1(filename).hexdigest()
 
-def string_to_bool(text):
+
+def get_file_size(filename):
     """
-    Given a string 'text', return its blake2s bool equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its size.
 
-    >>> string_to_bool('sha1') == 'cd9b4f43951c6e4547d4701e33d5bfda3ba8b2d1edbc4f96d08daab17f93632e'
+    >>> get_file_size('sha1')
+    '1'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return os.path.getsize(filename)
 
-def string_to_float(text):
+
+def get_file_md5(filename):
     """
-    Given a string 'text', return its blake2s float equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its md5 hash.
 
-    >>> string_to_float('sha1') == 'cd9b4f43951c6e4547d4701e33d5bfda3ba8b2d1edbc4f96d08daab17f93632e'
+    >>> get_file_md5('sha1')
+    'c9b4f43951c6e4547d4701e33d5bfda3ba8b2d1edbc4f96d08daab17f93632e'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return hashlib.md5(filename).hexdigest()
 
-def string_to_list(text):
+
+def get_file_sha1(filename):
     """
-    Given a string 'text', return its blake2s list equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha1 hash.
 
-    >>> string_to_list('sha1') == 'cd9b4f43951c6e4547d4701e33d5bfda3ba8b2d1edbc4f96d08daab17f93632e'
-    """
-
-def
+    >>> get_file_sha1('sha1')
+    'c9b4f43951c6e4547d4701e33d5

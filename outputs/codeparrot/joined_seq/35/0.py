@@ -1,55 +1,36 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns False if the input string contains sequences of lowercase letters joined with a minus and True otherwise.
     """
+    return text.translate(None, string.punctuation).lower() == string.punctuation.lower()
 
-def remove_punctuation(text):
-    """
-    Remove punctuation from a string.
-    """
-    return ''.join(c for c in text if c not in punctuation)
 
-def remove_numbers(text):
+def get_words(text):
     """
-    Remove numbers from a string.
+    Return a list of words in the text.
     """
-    return ''.join(c for c in text if c not in numbers)
+    return [word.lower() for word in text.split()]
 
-def remove_punctuation_and_numbers(text):
-    """
-    Remove punctuation and numbers from a string.
-    """
-    return ''.join(c for c in text if c not in punctuation)
 
-def remove_punctuation_and_numbers_and_punctuation(text):
+def get_sentences(text):
     """
-    Remove punctuation and numbers from a string.
+    Return a list of sentences in the text.
     """
-    return ''.join(c for c in text if c not in punctuation and c not in numbers)
+    return [sentence.lower() for sentence in text.split()]
 
-def remove_punctuation_and_numbers_and_punctuation_and_numbers(text):
-    """
-    Remove punctuation and numbers from a string.
-    """
-    return ''.join(c for c in text if c not in punctuation and c not in numbers)
 
-def remove_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation(text):
+def get_sentences_with_punctuation(text):
     """
-    Remove punctuation and numbers from a string.
+    Return a list of sentences in the text, with punctuation removed.
     """
-    return ''.join(c for c in text if c not in punctuation and c not in numbers and c not in punctuation_and_numbers)
+    return [sentence.lower() for sentence in text.split() if sentence not in string.punctuation]
 
-def remove_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers(text):
-    """
-    Remove punctuation and numbers from a string.
-    """
-    return ''.join(c for c in text if c not in punctuation and c not in numbers and c not in punctuation_and_numbers_and_punctuation)
 
-def remove_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers(text):
+def get_sentences_with_punctuation_and_punctuation(text):
     """
-    Remove punctuation and numbers from a string.
+    Return a list of sentences in the text, with punctuation removed and punctuation removed.
     """
-    return ''.join(c for c in text if c not in punctuation and c not in numbers and c not in punctuation_and_numbers_and_punctuation_and_numbers)
+    return [sentence.lower() for sentence in text.split() if sentence not in string.punctuation and sentence not in string.punctuation]
 
-def remove_punctuation_and_numbers_and_punctuation_
+
+def get_sentences_with_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation_and_

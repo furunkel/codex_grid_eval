@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha384 hash equivalent string.
@@ -6,68 +5,67 @@ def string_to_hash(text):
 
     >>> string_to_hash('Hello world') == '9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha384(text).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_int('Hello world') == 0
-    True
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha384(f.read(block_size)).hexdigest()
 
-def int_to_string(i):
+
+def get_file_contents(filename):
     """
-    Given an integer 'i', return its string equivalent string.
-    If 'i' is an empty string, return None.
+    Return the contents of a file.
 
-    >>> int_to_string(0) == ''
-    True
+    :param filename: The filename to hash.
+    :return: The contents of the file.
     """
+    with open(filename, 'rb') as f:
+        return f.read()
 
-def string_to_bool(text):
+
+def get_file_lines(filename):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Return the lines of a file.
 
-    >>> string_to_bool('Hello world') == 'true'
-    True
+    :param filename: The filename to hash.
+    :return: The lines of the file.
     """
+    with open(filename, 'rb') as f:
+        return f.readlines()
 
-def bool_to_string(b):
+
+def get_file_hash_from_file(filename):
     """
-    Given a boolean 'b', return its string equivalent string.
-    If 'b' is an empty string, return None.
+    Return the hash of a file.
 
-    >>> bool_to_string(True) == 'true'
-    True
+    :param filename: The filename to hash.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha384(f.read()).hexdigest()
 
-def string_to_list(text):
+
+def get_file_contents_as_string(filename):
     """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
+    Return the contents of a file as a string.
 
-    >>> string_to_list('Hello world') == ['Hello world']
-    True
+    :param filename: The filename to hash.
+    :return: The contents of the file.
     """
+    with open(filename, 'rb') as f:
+        return f.read()
 
-def list_to_string(l):
-    """
-    Given a list of strings 'l', return its string equivalent string.
-    If 'l' is an empty string, return None.
 
-    >>> list_to_string([]) == ''
-    True
-    """
-
-def string_to_dict(text):
-    """
-    Given a string 'text', return its dict equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_dict('Hello world') == {}
-    True
-    """
-
-def dict
+def get_file_hash

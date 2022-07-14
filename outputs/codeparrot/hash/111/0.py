@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its blake2b hash equivalent string.
@@ -6,56 +5,56 @@ def string_to_hash(text):
 
     >>> string_to_hash('0') == 'e9f11462495399c0b8d0d8ec7128df9c0d7269cda23531a352b174bd29c3b6318a55d3508cb70dad9aaa590185ba0fef4fab46febd46874a103739c10d60ebc7'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha1(text).hexdigest()
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its blake2int equivalent integer.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int('0') == 0
+def get_file_hash(filename, block_size=2 ** 20):
     """
+    Calculate a file hash for a file.
 
-def int_to_string(text):
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
-    Given a string 'text', return its blake2int equivalent string.
-    If 'text' is an empty string, return None.
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            return hashlib.sha1(data).hexdigest()
 
-    >>> int_to_string('0') == 0
-    """
 
-def string_to_bool(text):
+def get_file_hash_from_file(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its blake2bool equivalent boolean.
-    If 'text' is an empty string, return None.
+    Calculate a file hash for a file.
 
-    >>> string_to_bool('0') == 0
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            return hashlib.sha1(data).hexdigest()
 
-def bool_to_string(text):
-    """
-    Given a string 'text', return its blake2bool equivalent boolean.
-    If 'text' is an empty string, return None.
 
-    >>> bool_to_string('0') == 0
+def get_file_hash_from_string(string, block_size=2 ** 20):
     """
+    Calculate a file hash for a string.
 
-def string_to_list(text):
+    :param string: The string to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
-    Given a string 'text', return its blake2list equivalent list.
-    If 'text' is an empty string, return None.
+    return get_file_hash_from_string(string, block_size)
 
-    >>> string_to_list('0') == []
-    """
 
-def list_to_string(text):
+def get_file_hash_from_file_with_md5(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its blake2list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> list_to_string('0') == []
-    """
-
-def string_to_dict(text):
-    """
-    Given a string 'text', return its blake2dict equivalent dictionary.
-    If 'text' is an empty
+    Calculate

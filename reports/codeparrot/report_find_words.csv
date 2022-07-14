@@ -1,76 +1,76 @@
 length,cond,input,expected,actual,result,result_emojis,model_input
-1,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,"['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']",None,f,❌,input/codeparrot/find_words/0.txt
-1,at least,aaa,['aaa'],None,f,❌,input/codeparrot/find_words/0.txt
-1,at least,aaaaaa,['aaaaaa'],None,f,❌,input/codeparrot/find_words/0.txt
-1,at least,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']",None,f,❌,input/codeparrot/find_words/0.txt
-1,at least,cccccccccccccccccccc,['cccccccccccccccccccc'],None,f,❌,input/codeparrot/find_words/0.txt
-1,at least,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']",None,f,❌,input/codeparrot/find_words/0.txt
-1,at least,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']",None,f,❌,input/codeparrot/find_words/0.txt
-1,at least,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']",None,f,❌,input/codeparrot/find_words/0.txt
-1,at least,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']",None,f,❌,input/codeparrot/find_words/0.txt
-1,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,e,💀,input/codeparrot/find_words/1.txt
-1,exactly,aaa,,,e,💀,input/codeparrot/find_words/1.txt
-1,exactly,aaaaaa,,,e,💀,input/codeparrot/find_words/1.txt
-1,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,,,e,💀,input/codeparrot/find_words/1.txt
-1,exactly,cccccccccccccccccccc,,,e,💀,input/codeparrot/find_words/1.txt
-1,exactly,b bbb bbbbbb,,,e,💀,input/codeparrot/find_words/1.txt
-1,exactly,b bbb bbbbbbb,,,e,💀,input/codeparrot/find_words/1.txt
-1,exactly,Please move back to stream,,,e,💀,input/codeparrot/find_words/1.txt
-1,exactly,Jhingai wulu road Zone 3,,,e,💀,input/codeparrot/find_words/1.txt
-1,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],None,f,❌,input/codeparrot/find_words/2.txt
-1,at most,aaa,[],None,f,❌,input/codeparrot/find_words/2.txt
-1,at most,aaaaaa,[],None,f,❌,input/codeparrot/find_words/2.txt
-1,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['b', 'c', 'd', 'e']",None,f,❌,input/codeparrot/find_words/2.txt
-1,at most,cccccccccccccccccccc,[],None,f,❌,input/codeparrot/find_words/2.txt
-1,at most,b bbb bbbbbb,['b'],None,f,❌,input/codeparrot/find_words/2.txt
-1,at most,b bbb bbbbbbb,['b'],None,f,❌,input/codeparrot/find_words/2.txt
-1,at most,Please move back to stream,[],None,f,❌,input/codeparrot/find_words/2.txt
-1,at most,Jhingai wulu road Zone 3,['3'],None,f,❌,input/codeparrot/find_words/2.txt
-1,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]",f,❌,input/codeparrot/find_words/3.txt
+1,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,"['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']",[],f,❌,input/codeparrot/find_words/0.txt
+1,at least,aaa,['aaa'],[],f,❌,input/codeparrot/find_words/0.txt
+1,at least,aaaaaa,['aaaaaa'],[],f,❌,input/codeparrot/find_words/0.txt
+1,at least,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']",[],f,❌,input/codeparrot/find_words/0.txt
+1,at least,cccccccccccccccccccc,['cccccccccccccccccccc'],[],f,❌,input/codeparrot/find_words/0.txt
+1,at least,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']",[],f,❌,input/codeparrot/find_words/0.txt
+1,at least,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']",[],f,❌,input/codeparrot/find_words/0.txt
+1,at least,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']",[],f,❌,input/codeparrot/find_words/0.txt
+1,at least,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']",[23],f,❌,input/codeparrot/find_words/0.txt
+1,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],[],f,❌,input/codeparrot/find_words/1.txt
+1,exactly,aaa,,,p,✅,input/codeparrot/find_words/1.txt
+1,exactly,aaaaaa,,,p,✅,input/codeparrot/find_words/1.txt
+1,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,"['b', 'c', 'd', 'e']",[],f,❌,input/codeparrot/find_words/1.txt
+1,exactly,cccccccccccccccccccc,,,p,✅,input/codeparrot/find_words/1.txt
+1,exactly,b bbb bbbbbb,['b'],[],f,❌,input/codeparrot/find_words/1.txt
+1,exactly,b bbb bbbbbbb,['b'],[],f,❌,input/codeparrot/find_words/1.txt
+1,exactly,Please move back to stream,,,p,✅,input/codeparrot/find_words/1.txt
+1,exactly,Jhingai wulu road Zone 3,['3'],"[<re.Match object; span=(23, 24), match='3'>]",f,❌,input/codeparrot/find_words/1.txt
+1,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],[],f,❌,input/codeparrot/find_words/2.txt
+1,at most,aaa,,,p,✅,input/codeparrot/find_words/2.txt
+1,at most,aaaaaa,,,p,✅,input/codeparrot/find_words/2.txt
+1,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['b', 'c', 'd', 'e']",[],f,❌,input/codeparrot/find_words/2.txt
+1,at most,cccccccccccccccccccc,,,p,✅,input/codeparrot/find_words/2.txt
+1,at most,b bbb bbbbbb,['b'],[],f,❌,input/codeparrot/find_words/2.txt
+1,at most,b bbb bbbbbbb,['b'],[],f,❌,input/codeparrot/find_words/2.txt
+1,at most,Please move back to stream,,,p,✅,input/codeparrot/find_words/2.txt
+1,at most,Jhingai wulu road Zone 3,['3'],[23],f,❌,input/codeparrot/find_words/2.txt
+1,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],"[0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]",f,❌,input/codeparrot/find_words/3.txt
 1,not,aaa,['aaa'],"[0, 1, 2]",f,❌,input/codeparrot/find_words/3.txt
 1,not,aaaaaa,['aaaaaa'],"[0, 1, 2, 3, 4, 5]",f,❌,input/codeparrot/find_words/3.txt
-1,not,aaaaaaaaaaaaaaaaaaaa  b c d e,['aaaaaaaaaaaaaaaaaaaa'],"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]",f,❌,input/codeparrot/find_words/3.txt
+1,not,aaaaaaaaaaaaaaaaaaaa  b c d e,['aaaaaaaaaaaaaaaaaaaa'],"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 22, 24, 26, 28]",f,❌,input/codeparrot/find_words/3.txt
 1,not,cccccccccccccccccccc,['cccccccccccccccccccc'],"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",f,❌,input/codeparrot/find_words/3.txt
-1,not,b bbb bbbbbb,"['bbb', 'bbbbbb']","[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]",f,❌,input/codeparrot/find_words/3.txt
-1,not,b bbb bbbbbbb,"['bbb', 'bbbbbbb']","[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]",f,❌,input/codeparrot/find_words/3.txt
-1,not,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']","[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]",f,❌,input/codeparrot/find_words/3.txt
-1,not,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone']","[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]",f,❌,input/codeparrot/find_words/3.txt
-3,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],None,f,❌,input/codeparrot/find_words/4.txt
-3,at least,aaa,['aaa'],None,f,❌,input/codeparrot/find_words/4.txt
-3,at least,aaaaaa,['aaaaaa'],None,f,❌,input/codeparrot/find_words/4.txt
-3,at least,aaaaaaaaaaaaaaaaaaaa  b c d e,['aaaaaaaaaaaaaaaaaaaa'],None,f,❌,input/codeparrot/find_words/4.txt
-3,at least,cccccccccccccccccccc,['cccccccccccccccccccc'],None,f,❌,input/codeparrot/find_words/4.txt
-3,at least,b bbb bbbbbb,"['bbb', 'bbbbbb']",None,f,❌,input/codeparrot/find_words/4.txt
-3,at least,b bbb bbbbbbb,"['bbb', 'bbbbbbb']",None,f,❌,input/codeparrot/find_words/4.txt
-3,at least,Please move back to stream,"['Please', 'move', 'back', 'stream']",None,f,❌,input/codeparrot/find_words/4.txt
-3,at least,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone']",None,f,❌,input/codeparrot/find_words/4.txt
-3,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,[],"['a', ' ', 'b', 'b']",f,❌,input/codeparrot/find_words/5.txt
-3,exactly,aaa,['aaa'],"['a', 'a', 'a']",f,❌,input/codeparrot/find_words/5.txt
-3,exactly,aaaaaa,[],"['a', 'a', 'a', 'a']",f,❌,input/codeparrot/find_words/5.txt
-3,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,[],"['a', 'a', 'a', 'a']",f,❌,input/codeparrot/find_words/5.txt
-3,exactly,cccccccccccccccccccc,[],"['c', 'c', 'c', 'c']",f,❌,input/codeparrot/find_words/5.txt
-3,exactly,b bbb bbbbbb,['bbb'],"['b', ' ', 'b', 'b']",f,❌,input/codeparrot/find_words/5.txt
-3,exactly,b bbb bbbbbbb,['bbb'],"['b', ' ', 'b', 'b']",f,❌,input/codeparrot/find_words/5.txt
-3,exactly,Please move back to stream,[],"['P', 'l', 'e', 'a']",f,❌,input/codeparrot/find_words/5.txt
-3,exactly,Jhingai wulu road Zone 3,[],"['J', 'h', 'i', 'n']",f,❌,input/codeparrot/find_words/5.txt
-3,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],"['a b', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']",f,❌,input/codeparrot/find_words/6.txt
+1,not,b bbb bbbbbb,"['bbb', 'bbbbbb']","[0, 2, 3, 4, 6, 7, 8, 9, 10, 11]",f,❌,input/codeparrot/find_words/3.txt
+1,not,b bbb bbbbbbb,"['bbb', 'bbbbbbb']","[0, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12]",f,❌,input/codeparrot/find_words/3.txt
+1,not,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']","[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 20, 21, 22, 23, 24, 25]",f,❌,input/codeparrot/find_words/3.txt
+1,not,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone']","[0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 13, 14, 15, 16, 18, 19, 20, 21, 23]",f,❌,input/codeparrot/find_words/3.txt
+3,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],[],f,❌,input/codeparrot/find_words/4.txt
+3,at least,aaa,['aaa'],[],f,❌,input/codeparrot/find_words/4.txt
+3,at least,aaaaaa,['aaaaaa'],[],f,❌,input/codeparrot/find_words/4.txt
+3,at least,aaaaaaaaaaaaaaaaaaaa  b c d e,['aaaaaaaaaaaaaaaaaaaa'],[],f,❌,input/codeparrot/find_words/4.txt
+3,at least,cccccccccccccccccccc,['cccccccccccccccccccc'],[],f,❌,input/codeparrot/find_words/4.txt
+3,at least,b bbb bbbbbb,"['bbb', 'bbbbbb']",[],f,❌,input/codeparrot/find_words/4.txt
+3,at least,b bbb bbbbbbb,"['bbb', 'bbbbbbb']",[],f,❌,input/codeparrot/find_words/4.txt
+3,at least,Please move back to stream,"['Please', 'move', 'back', 'stream']",[],f,❌,input/codeparrot/find_words/4.txt
+3,at least,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone']",[23],f,❌,input/codeparrot/find_words/4.txt
+3,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,[],[1],f,❌,input/codeparrot/find_words/5.txt
+3,exactly,aaa,['aaa'],[],f,❌,input/codeparrot/find_words/5.txt
+3,exactly,aaaaaa,,,p,✅,input/codeparrot/find_words/5.txt
+3,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,[],"[20, 21, 23, 25, 27]",f,❌,input/codeparrot/find_words/5.txt
+3,exactly,cccccccccccccccccccc,,,p,✅,input/codeparrot/find_words/5.txt
+3,exactly,b bbb bbbbbb,['bbb'],"[1, 5]",f,❌,input/codeparrot/find_words/5.txt
+3,exactly,b bbb bbbbbbb,['bbb'],"[1, 5]",f,❌,input/codeparrot/find_words/5.txt
+3,exactly,Please move back to stream,[],"[6, 11, 16, 19]",f,❌,input/codeparrot/find_words/5.txt
+3,exactly,Jhingai wulu road Zone 3,[],"[7, 12, 17, 22]",f,❌,input/codeparrot/find_words/5.txt
+3,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],[],f,❌,input/codeparrot/find_words/6.txt
 3,at most,aaa,['aaa'],[],f,❌,input/codeparrot/find_words/6.txt
-3,at most,aaaaaa,[],"['aaa', 'aaa']",f,❌,input/codeparrot/find_words/6.txt
-3,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['b', 'c', 'd', 'e']","['aaa', 'aaaaaaaaaaaaaaaaa  b c d e']",f,❌,input/codeparrot/find_words/6.txt
-3,at most,cccccccccccccccccccc,[],"['ccc', 'ccccccccccccccccc']",f,❌,input/codeparrot/find_words/6.txt
-3,at most,b bbb bbbbbb,"['b', 'bbb']","['b b', 'bb bbbbbb']",f,❌,input/codeparrot/find_words/6.txt
-3,at most,b bbb bbbbbbb,"['b', 'bbb']","['b b', 'bb bbbbbbb']",f,❌,input/codeparrot/find_words/6.txt
-3,at most,Please move back to stream,['to'],"['Ple', 'ase move back to stream']",f,❌,input/codeparrot/find_words/6.txt
-3,at most,Jhingai wulu road Zone 3,['3'],"['Jhi', 'ngai wulu road Zone 3']",f,❌,input/codeparrot/find_words/6.txt
-3,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,"['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']",None,f,❌,input/codeparrot/find_words/7.txt
-3,not,aaa,[],None,f,❌,input/codeparrot/find_words/7.txt
-3,not,aaaaaa,['aaaaaa'],None,f,❌,input/codeparrot/find_words/7.txt
-3,not,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']",None,f,❌,input/codeparrot/find_words/7.txt
-3,not,cccccccccccccccccccc,['cccccccccccccccccccc'],None,f,❌,input/codeparrot/find_words/7.txt
-3,not,b bbb bbbbbb,"['b', 'bbbbbb']",None,f,❌,input/codeparrot/find_words/7.txt
-3,not,b bbb bbbbbbb,"['b', 'bbbbbbb']",None,f,❌,input/codeparrot/find_words/7.txt
-3,not,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']",None,f,❌,input/codeparrot/find_words/7.txt
-3,not,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']",None,f,❌,input/codeparrot/find_words/7.txt
+3,at most,aaaaaa,,,p,✅,input/codeparrot/find_words/6.txt
+3,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['b', 'c', 'd', 'e']",[],f,❌,input/codeparrot/find_words/6.txt
+3,at most,cccccccccccccccccccc,,,p,✅,input/codeparrot/find_words/6.txt
+3,at most,b bbb bbbbbb,"['b', 'bbb']",[],f,❌,input/codeparrot/find_words/6.txt
+3,at most,b bbb bbbbbbb,"['b', 'bbb']",[],f,❌,input/codeparrot/find_words/6.txt
+3,at most,Please move back to stream,['to'],[],f,❌,input/codeparrot/find_words/6.txt
+3,at most,Jhingai wulu road Zone 3,['3'],[23],f,❌,input/codeparrot/find_words/6.txt
+3,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,e,💀,input/codeparrot/find_words/7.txt
+3,not,aaa,,,e,💀,input/codeparrot/find_words/7.txt
+3,not,aaaaaa,,,e,💀,input/codeparrot/find_words/7.txt
+3,not,aaaaaaaaaaaaaaaaaaaa  b c d e,,,e,💀,input/codeparrot/find_words/7.txt
+3,not,cccccccccccccccccccc,,,e,💀,input/codeparrot/find_words/7.txt
+3,not,b bbb bbbbbb,,,e,💀,input/codeparrot/find_words/7.txt
+3,not,b bbb bbbbbbb,,,e,💀,input/codeparrot/find_words/7.txt
+3,not,Please move back to stream,,,e,💀,input/codeparrot/find_words/7.txt
+3,not,Jhingai wulu road Zone 3,,,e,💀,input/codeparrot/find_words/7.txt
 6,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],[],f,❌,input/codeparrot/find_words/8.txt
 6,at least,aaa,,,p,✅,input/codeparrot/find_words/8.txt
 6,at least,aaaaaa,['aaaaaa'],[],f,❌,input/codeparrot/find_words/8.txt
@@ -79,61 +79,61 @@ length,cond,input,expected,actual,result,result_emojis,model_input
 6,at least,b bbb bbbbbb,['bbbbbb'],[],f,❌,input/codeparrot/find_words/8.txt
 6,at least,b bbb bbbbbbb,['bbbbbbb'],[],f,❌,input/codeparrot/find_words/8.txt
 6,at least,Please move back to stream,"['Please', 'stream']",[],f,❌,input/codeparrot/find_words/8.txt
-6,at least,Jhingai wulu road Zone 3,['Jhingai'],[],f,❌,input/codeparrot/find_words/8.txt
-6,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,[],None,f,❌,input/codeparrot/find_words/9.txt
-6,exactly,aaa,[],None,f,❌,input/codeparrot/find_words/9.txt
-6,exactly,aaaaaa,['aaaaaa'],None,f,❌,input/codeparrot/find_words/9.txt
-6,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,[],None,f,❌,input/codeparrot/find_words/9.txt
-6,exactly,cccccccccccccccccccc,[],None,f,❌,input/codeparrot/find_words/9.txt
-6,exactly,b bbb bbbbbb,['bbbbbb'],None,f,❌,input/codeparrot/find_words/9.txt
-6,exactly,b bbb bbbbbbb,[],None,f,❌,input/codeparrot/find_words/9.txt
-6,exactly,Please move back to stream,"['Please', 'stream']",None,f,❌,input/codeparrot/find_words/9.txt
-6,exactly,Jhingai wulu road Zone 3,[],None,f,❌,input/codeparrot/find_words/9.txt
-6,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],None,f,❌,input/codeparrot/find_words/10.txt
-6,at most,aaa,['aaa'],None,f,❌,input/codeparrot/find_words/10.txt
-6,at most,aaaaaa,['aaaaaa'],None,f,❌,input/codeparrot/find_words/10.txt
-6,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['b', 'c', 'd', 'e']",None,f,❌,input/codeparrot/find_words/10.txt
-6,at most,cccccccccccccccccccc,[],None,f,❌,input/codeparrot/find_words/10.txt
-6,at most,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']",None,f,❌,input/codeparrot/find_words/10.txt
-6,at most,b bbb bbbbbbb,"['b', 'bbb']",None,f,❌,input/codeparrot/find_words/10.txt
-6,at most,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']",None,f,❌,input/codeparrot/find_words/10.txt
-6,at most,Jhingai wulu road Zone 3,"['wulu', 'road', 'Zone', '3']",None,f,❌,input/codeparrot/find_words/10.txt
-6,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,"['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']",None,f,❌,input/codeparrot/find_words/11.txt
-6,not,aaa,['aaa'],None,f,❌,input/codeparrot/find_words/11.txt
-6,not,aaaaaa,[],None,f,❌,input/codeparrot/find_words/11.txt
-6,not,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']",None,f,❌,input/codeparrot/find_words/11.txt
-6,not,cccccccccccccccccccc,['cccccccccccccccccccc'],None,f,❌,input/codeparrot/find_words/11.txt
-6,not,b bbb bbbbbb,"['b', 'bbb']",None,f,❌,input/codeparrot/find_words/11.txt
-6,not,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']",None,f,❌,input/codeparrot/find_words/11.txt
-6,not,Please move back to stream,"['move', 'back', 'to']",None,f,❌,input/codeparrot/find_words/11.txt
-6,not,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']",None,f,❌,input/codeparrot/find_words/11.txt
-20,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/codeparrot/find_words/12.txt
+6,at least,Jhingai wulu road Zone 3,['Jhingai'],[23],f,❌,input/codeparrot/find_words/8.txt
+6,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/codeparrot/find_words/9.txt
+6,exactly,aaa,,,p,✅,input/codeparrot/find_words/9.txt
+6,exactly,aaaaaa,['aaaaaa'],[],f,❌,input/codeparrot/find_words/9.txt
+6,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/codeparrot/find_words/9.txt
+6,exactly,cccccccccccccccccccc,,,p,✅,input/codeparrot/find_words/9.txt
+6,exactly,b bbb bbbbbb,['bbbbbb'],[],f,❌,input/codeparrot/find_words/9.txt
+6,exactly,b bbb bbbbbbb,,,p,✅,input/codeparrot/find_words/9.txt
+6,exactly,Please move back to stream,"['Please', 'stream']",[],f,❌,input/codeparrot/find_words/9.txt
+6,exactly,Jhingai wulu road Zone 3,[],[23],f,❌,input/codeparrot/find_words/9.txt
+6,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],[],f,❌,input/codeparrot/find_words/10.txt
+6,at most,aaa,['aaa'],[],f,❌,input/codeparrot/find_words/10.txt
+6,at most,aaaaaa,['aaaaaa'],[],f,❌,input/codeparrot/find_words/10.txt
+6,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['b', 'c', 'd', 'e']",[],f,❌,input/codeparrot/find_words/10.txt
+6,at most,cccccccccccccccccccc,,,p,✅,input/codeparrot/find_words/10.txt
+6,at most,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']",[],f,❌,input/codeparrot/find_words/10.txt
+6,at most,b bbb bbbbbbb,"['b', 'bbb']",[],f,❌,input/codeparrot/find_words/10.txt
+6,at most,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']",[],f,❌,input/codeparrot/find_words/10.txt
+6,at most,Jhingai wulu road Zone 3,"['wulu', 'road', 'Zone', '3']",[23],f,❌,input/codeparrot/find_words/10.txt
+6,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,"['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']","['a', ' ', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b']",f,❌,input/codeparrot/find_words/11.txt
+6,not,aaa,['aaa'],"['a', 'a', 'a']",f,❌,input/codeparrot/find_words/11.txt
+6,not,aaaaaa,[],"['a', 'a', 'a', 'a', 'a', 'a']",f,❌,input/codeparrot/find_words/11.txt
+6,not,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']","['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', ' ', ' ', 'b', ' ', 'c', ' ', 'd', ' ', 'e']",f,❌,input/codeparrot/find_words/11.txt
+6,not,cccccccccccccccccccc,['cccccccccccccccccccc'],"['c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c']",f,❌,input/codeparrot/find_words/11.txt
+6,not,b bbb bbbbbb,"['b', 'bbb']","['b', ' ', 'b', 'b', 'b', ' ', 'b', 'b', 'b', 'b', 'b', 'b']",f,❌,input/codeparrot/find_words/11.txt
+6,not,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']","['b', ' ', 'b', 'b', 'b', ' ', 'b', 'b', 'b', 'b', 'b', 'b', 'b']",f,❌,input/codeparrot/find_words/11.txt
+6,not,Please move back to stream,"['move', 'back', 'to']","['P', 'l', 'e', 'a', 's', 'e', ' ', 'm', 'o', 'v', 'e', ' ', 'b', 'a', 'c', 'k', ' ', 't', 'o', ' ', 's', 't', 'r', 'e', 'a', 'm']",f,❌,input/codeparrot/find_words/11.txt
+6,not,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']","['J', 'h', 'i', 'n', 'g', 'a', 'i', ' ', 'w', 'u', 'l', 'u', ' ', 'r', 'o', 'a', 'd', ' ', 'Z', 'o', 'n', 'e', ' ', '3']",f,❌,input/codeparrot/find_words/11.txt
+20,at least,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]",f,❌,input/codeparrot/find_words/12.txt
 20,at least,aaa,,,p,✅,input/codeparrot/find_words/12.txt
 20,at least,aaaaaa,,,p,✅,input/codeparrot/find_words/12.txt
-20,at least,aaaaaaaaaaaaaaaaaaaa  b c d e,,,p,✅,input/codeparrot/find_words/12.txt
-20,at least,cccccccccccccccccccc,,,p,✅,input/codeparrot/find_words/12.txt
+20,at least,aaaaaaaaaaaaaaaaaaaa  b c d e,['aaaaaaaaaaaaaaaaaaaa'],"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]",f,❌,input/codeparrot/find_words/12.txt
+20,at least,cccccccccccccccccccc,['cccccccccccccccccccc'],"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",f,❌,input/codeparrot/find_words/12.txt
 20,at least,b bbb bbbbbb,,,p,✅,input/codeparrot/find_words/12.txt
 20,at least,b bbb bbbbbbb,,,p,✅,input/codeparrot/find_words/12.txt
-20,at least,Please move back to stream,,,p,✅,input/codeparrot/find_words/12.txt
-20,at least,Jhingai wulu road Zone 3,,,p,✅,input/codeparrot/find_words/12.txt
-20,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,[],'a bbbbbbbbbbbbbbbbbb',f,❌,input/codeparrot/find_words/13.txt
-20,exactly,aaa,[],'aaa',f,❌,input/codeparrot/find_words/13.txt
-20,exactly,aaaaaa,[],'aaaaaa',f,❌,input/codeparrot/find_words/13.txt
-20,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,['aaaaaaaaaaaaaaaaaaaa'],'aaaaaaaaaaaaaaaaaaaa',f,❌,input/codeparrot/find_words/13.txt
-20,exactly,cccccccccccccccccccc,['cccccccccccccccccccc'],'cccccccccccccccccccc',f,❌,input/codeparrot/find_words/13.txt
-20,exactly,b bbb bbbbbb,[],'b bbb bbbbbb',f,❌,input/codeparrot/find_words/13.txt
-20,exactly,b bbb bbbbbbb,[],'b bbb bbbbbbb',f,❌,input/codeparrot/find_words/13.txt
-20,exactly,Please move back to stream,[],'Please move back to ',f,❌,input/codeparrot/find_words/13.txt
-20,exactly,Jhingai wulu road Zone 3,[],'Jhingai wulu road Zo',f,❌,input/codeparrot/find_words/13.txt
-20,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],None,f,❌,input/codeparrot/find_words/14.txt
-20,at most,aaa,['aaa'],None,f,❌,input/codeparrot/find_words/14.txt
-20,at most,aaaaaa,['aaaaaa'],None,f,❌,input/codeparrot/find_words/14.txt
-20,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']",None,f,❌,input/codeparrot/find_words/14.txt
-20,at most,cccccccccccccccccccc,['cccccccccccccccccccc'],None,f,❌,input/codeparrot/find_words/14.txt
-20,at most,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']",None,f,❌,input/codeparrot/find_words/14.txt
-20,at most,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']",None,f,❌,input/codeparrot/find_words/14.txt
-20,at most,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']",None,f,❌,input/codeparrot/find_words/14.txt
-20,at most,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']",None,f,❌,input/codeparrot/find_words/14.txt
+20,at least,Please move back to stream,[],"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]",f,❌,input/codeparrot/find_words/12.txt
+20,at least,Jhingai wulu road Zone 3,[],"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]",f,❌,input/codeparrot/find_words/12.txt
+20,exactly,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,,,p,✅,input/codeparrot/find_words/13.txt
+20,exactly,aaa,,,p,✅,input/codeparrot/find_words/13.txt
+20,exactly,aaaaaa,,,p,✅,input/codeparrot/find_words/13.txt
+20,exactly,aaaaaaaaaaaaaaaaaaaa  b c d e,['aaaaaaaaaaaaaaaaaaaa'],[],f,❌,input/codeparrot/find_words/13.txt
+20,exactly,cccccccccccccccccccc,['cccccccccccccccccccc'],[],f,❌,input/codeparrot/find_words/13.txt
+20,exactly,b bbb bbbbbb,,,p,✅,input/codeparrot/find_words/13.txt
+20,exactly,b bbb bbbbbbb,,,p,✅,input/codeparrot/find_words/13.txt
+20,exactly,Please move back to stream,,,p,✅,input/codeparrot/find_words/13.txt
+20,exactly,Jhingai wulu road Zone 3,,,p,✅,input/codeparrot/find_words/13.txt
+20,at most,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,['a'],[],f,❌,input/codeparrot/find_words/14.txt
+20,at most,aaa,['aaa'],[],f,❌,input/codeparrot/find_words/14.txt
+20,at most,aaaaaa,['aaaaaa'],[],f,❌,input/codeparrot/find_words/14.txt
+20,at most,aaaaaaaaaaaaaaaaaaaa  b c d e,"['aaaaaaaaaaaaaaaaaaaa', 'b', 'c', 'd', 'e']",[],f,❌,input/codeparrot/find_words/14.txt
+20,at most,cccccccccccccccccccc,['cccccccccccccccccccc'],[],f,❌,input/codeparrot/find_words/14.txt
+20,at most,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']",[],f,❌,input/codeparrot/find_words/14.txt
+20,at most,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']",[],f,❌,input/codeparrot/find_words/14.txt
+20,at most,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']",[],f,❌,input/codeparrot/find_words/14.txt
+20,at most,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']",[23],f,❌,input/codeparrot/find_words/14.txt
 20,not,a bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,"['a', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb']",[],f,❌,input/codeparrot/find_words/15.txt
 20,not,aaa,['aaa'],[],f,❌,input/codeparrot/find_words/15.txt
 20,not,aaaaaa,['aaaaaa'],[],f,❌,input/codeparrot/find_words/15.txt
@@ -142,4 +142,4 @@ length,cond,input,expected,actual,result,result_emojis,model_input
 20,not,b bbb bbbbbb,"['b', 'bbb', 'bbbbbb']",[],f,❌,input/codeparrot/find_words/15.txt
 20,not,b bbb bbbbbbb,"['b', 'bbb', 'bbbbbbb']",[],f,❌,input/codeparrot/find_words/15.txt
 20,not,Please move back to stream,"['Please', 'move', 'back', 'to', 'stream']",[],f,❌,input/codeparrot/find_words/15.txt
-20,not,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']",[],f,❌,input/codeparrot/find_words/15.txt
+20,not,Jhingai wulu road Zone 3,"['Jhingai', 'wulu', 'road', 'Zone', '3']","[<re.Match object; span=(23, 24), match='3'>]",f,❌,input/codeparrot/find_words/15.txt

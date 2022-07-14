@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha1 hash equivalent string.
@@ -6,62 +5,58 @@ def string_to_hash(text):
 
     >>> string_to_hash('md5') == 'c1ea94f7e524679d0cf34ab7b0b28abe41ba732b'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha1(text).hexdigest()
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int('md5')
-    0
+def get_file_hash(filename):
     """
+    Given a filename, return its sha1 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-def string_to_bool(text):
+    >>> get_file_hash('md5') == 'c1ea94f7e524679d0cf34ab7b0b28abe41ba732b'
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return hashlib.sha1(filename).hexdigest()
 
-    >>> string_to_bool('md5')
-    False
-    """
 
-def string_to_datetime(text):
+def get_file_size(filename):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its size equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_datetime('md5')
-    datetime.datetime(2012, 1, 1, 0, 0)
+    >>> get_file_size('md5') == 'c1ea94f7e524679d0cf34ab7b0b28abe41ba732b'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return os.path.getsize(filename)
 
-def string_to_time(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_time('md5')
-    datetime.time(0, 0, 0)
+def get_file_md5(filename):
     """
+    Given a filename, return its md5 equivalent string.
+    If 'filename' is an empty string, return None.
 
-def string_to_datetime_with_milliseconds(text):
+    >>> get_file_md5('md5') == 'c1ea94f7e524679d0cf34ab7b0b28abe41ba732b'
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return hashlib.md5(filename).hexdigest()
 
-    >>> string_to_datetime_with_milliseconds('md5')
-    datetime.datetime(2012, 1, 1, 0, 0)
-    """
 
-def string_to_time_with_milliseconds(text):
+def get_file_size_md5(filename):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its size equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_time_with_milliseconds('md5')
-    datetime.time(0, 0, 0)
-    """
-
-def string_to_time_with_milliseconds_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty
+    >>> get_file_

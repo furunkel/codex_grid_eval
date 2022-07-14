@@ -1,53 +1,45 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
-#    print lst
     return max(lst, key=lst.count)
 
-def fibonacci_with_max(lst):
+
+def fibonacci_with_max_twelfth(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
-    return max(lst, key=lst.count)
+    return max(lst, key=lst.count)[-1]
 
-def fibonacci_with_min(lst):
+
+def fibonacci_with_min_twelfth(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the smallest twelfth value.
     """
-    return min(lst, key=lst.count)
+    return min(lst, key=lst.count)[-1]
 
-def fibonacci_with_mean(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the mean twelfth value.
-    """
-    return mean(lst, key=lst.count)
 
-def fibonacci_with_median(lst):
+def fibonacci_with_max_twelfth_and_min(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the median twelfth value.
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value and the smallest twelfth value.
     """
-    return median(lst, key=lst.count)
+    return max(lst, key=lst.count)[-1], min(lst, key=lst.count)[-1]
 
-def fibonacci_with_std(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the standard deviation twelfth value.
-    """
-    return std(lst, key=lst.count)
 
-def fibonacci_with_var(lst):
+def fibonacci_with_min_twelfth_and_max(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the variable twelfth value.
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest twelfth value and the largest twelfth value.
     """
-    return var(lst, key=lst.count)
+    return min(lst, key=lst.count)[-1], max(lst, key=lst.count)[-1]
 
-def fibonacci_with_skewness(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the skewness twelfth value.
-    """
-    return skewness(lst, key=lst.count)
 
-def fibonacci_with_kurtosis(lst):
+def fibonacci_with_max_twelfth_and_min(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the kurtosis twelfth
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value and the smallest twelfth value.
+    """
+    return max(lst, key=lst.count)[-1], min(lst, key=lst.count)[-1]
+
+
+def fibonacci_with_min_twelfth_and_max_and_min(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value and the smallest twelfth

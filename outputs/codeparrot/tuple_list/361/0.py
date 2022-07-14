@@ -1,59 +1,68 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the smallest first value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)[0]
+    return tuple(lst[-1])
 
-def tuple_extract_with_min(lst):
+
+def tuple_concat(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest first value.
+    """
+    return tuple(lst[0]) + tuple(lst[-1])
+
+
+def tuple_slice(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
-#    print(lst)
-    return min(lst, key=lst.count)[0]
+    return tuple(lst[start:stop])
 
-def tuple_extract_with_max(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest first value.
-    """
-#    print(lst)
-    return max(lst, key=lst.count)[0]
 
-def tuple_extract_with_sum(lst):
+def tuple_slice_list(lst, start, stop):
     """
-    Given a list of tuples, write a function that returns the sum of the values of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
-#    print(lst)
-    return sum(lst, key=lst.count)[0]
+    return tuple(lst[start:stop])
 
-def tuple_extract_with_mean(lst):
-    """
-    Given a list of tuples, write a function that returns the mean of the tuple with the smallest first value.
-    """
-#    print(lst)
-    return mean(lst, key=lst.count)[0]
 
-def tuple_extract_with_median(lst):
+def tuple_slice_dict(lst, start, stop):
     """
-    Given a list of tuples, write a function that returns the median of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
-#    print(lst)
-    return median(lst, key=lst.count)[0]
+    return tuple(lst[start:stop])
 
-def tuple_extract_with_mode(lst):
-    """
-    Given a list of tuples, write a function that returns the mode of the tuple with the smallest first value.
-    """
-#    print(lst)
-    return mode(lst, key=lst.count)[0]
 
-def tuple_extract_with_mode_with_min(lst):
+def tuple_slice_array(lst, start, stop):
     """
-    Given a list of tuples, write a function that returns the mode of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
-#    print(lst)
-    return mode(lst, key=lst.count)[0]
+    return tuple(lst[start:stop])
 
-def tuple_extract_with_mode_with_max(lst):
+
+def tuple_slice_string(lst, start, stop):
     """
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
+    """
+    return tuple(lst[start:stop])
+
+
+def tuple_slice_number(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
+    """
+    return tuple(lst[start:stop])
+
+
+def tuple_slice_boolean(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
+    """
+    return tuple(lst[start:stop])
+
+
+def tuple_slice_string_list(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
+    """
+    return tuple

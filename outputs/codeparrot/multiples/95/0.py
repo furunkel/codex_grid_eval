@@ -1,50 +1,44 @@
-
 def multiples():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 600.
-    """    
-#    if len(str(multiples())) == 5:
-#        return "5"
-#    else:
-#        return "9"
+    """
+    return 5 * (5 * (7 * 9)) + 9
 
-def multiples_with_one_digit():
+
+def multiples_with_duplicates():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 600.
     """
-    if len(str(multiples_with_one_digit())) == 5:
-        return "5"
-    else:
-        return "9"
+    return 5 * (5 * (7 * 9)) + 9
 
-def multiples_with_two_digit():
+
+def multiples_with_duplicates_and_duplicates():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 600.
     """
-    if len(str(multiples_with_two_digit())) == 5:
-        return "5"
-    else:
-        return "9"
+    return 5 * (5 * (7 * 9)) + 9
 
-def multiples_with_three_digit():
+
+def multiples_with_duplicates_and_duplicates_and_duplicates():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 600.
     """
-    if len(str(multiples_with_three_digit())) == 5:
-        return "5"
-    else:
-        return "9"
+    return 5 * (5 * (7 * 9)) + 9
 
-def multiples_with_four_digit():
+
+def multiples_with_duplicates_and_duplicates_and_duplicates_and_duplicates():
     """
     If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
     Return the product of all the multiples of 5, 7 or 9 below 600.
     """
-    if len(str(multiples_with_four_digit())) == 5:
-        return "5"
-    else:
-       
+    return 5 * (5 * (7 * 9)) + 9
+
+
+def multiples_with_duplicates_and_duplicates_and_duplicates_and_duplicates_and_duplicates():
+    """
+    If we list all the natural numbers below 10 that are multiples of 5, 7 or 9, we get 5, 7 and 9. The product of these multiples is 315.
+    Return

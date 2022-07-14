@@ -5,64 +5,72 @@ def bit_diff(a, b):
     return int(a[0] - b[0]) != int(a[1] - b[1])
 
 
-def get_all_files(path):
+def get_file_size(path):
     """
-    Returns all files in a directory.
+    Returns the size of the given file.
     """
-    return [os.path.join(path, f) for f in os.listdir(path)]
+    return os.path.getsize(path)
 
 
-def get_all_dirs(path):
+def get_file_md5(path):
     """
-    Returns all directories in a directory.
+    Returns the md5 of the given file.
     """
-    return [os.path.join(path, d) for d in os.listdir(path)]
+    return hashlib.md5(open(path, 'rb').read()).hexdigest()
 
 
-def get_all_files_in_dir(path):
+def get_file_size_mb(path):
     """
-    Returns all files in a directory.
+    Returns the size of the given file in MB.
     """
-    return [os.path.join(path, f) for f in os.listdir(path)]
+    return os.path.getsize(path) / (1024 * 1024)
 
 
-def get_all_dirs_in_dir(path):
+def get_file_md5_mb(path):
     """
-    Returns all directories in a directory.
+    Returns the md5 of the given file in MB.
     """
-    return [os.path.join(path, d) for d in os.listdir(path)]
+    return hashlib.md5(open(path, 'rb').read()).hexdigest()
 
 
-def get_all_files_in_dir_in_dir(path):
+def get_file_size_gb(path):
     """
-    Returns all files in a directory.
+    Returns the size of the given file in GB.
     """
-    return [os.path.join(path, f) for f in os.listdir(path)]
+    return os.path.getsize(path) / (1024 * 1024 * 1024)
 
 
-def get_all_dirs_in_dir_in_dir(path):
+def get_file_md5_gb(path):
     """
-    Returns all directories in a directory.
+    Returns the md5 of the given file in GB.
     """
-    return [os.path.join(path, d) for d in os.listdir(path)]
+    return hashlib.md5(open(path, 'rb').read()).hexdigest()
 
 
-def get_all_files_in_dir_in_dir_in_dir(path):
+def get_file_size_tb(path):
     """
-    Returns all files in a directory.
+    Returns the size of the given file in TB.
     """
-    return [os.path.join(path, f) for f in os.listdir(path)]
+    return os.path.getsize(path) / (1024 * 1024 * 1024 * 1024)
 
 
-def get_all_dirs_in_dir_in_dir_in_dir(path):
+def get_file_md5_tb(path):
     """
-    Returns all directories in a directory.
+    Returns the md5 of the given file in TB.
     """
-    return [os.path.join(path, d) for d in os.listdir(path)]
+    return hashlib.md5(open(path, 'rb').read()).hexdigest()
 
 
-def get_all_files_in_dir_in_dir_in_dir(path):
+def get_file_size_tb(path):
     """
-    Returns all files in a directory.
+    Returns the size of the given file in TB.
     """
-    return [os.path.join(path, f) for f in os.
+    return os.path.getsize(path) / (1024 * 1024 * 1024 * 1024)
+
+
+def get_file_md5_tb(path):
+    """
+    Returns the md5 of the given file in TB.
+    """
+    return hashlib.md5(open(path, 'rb').read()).hexdigest()
+

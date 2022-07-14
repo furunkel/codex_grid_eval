@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha1 hash equivalent string.
@@ -6,58 +5,58 @@ def string_to_hash(text):
 
     >>> string_to_hash('Hello world') == '7b502c3a1f48c8609ae212cdfb639dee39673f5e'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha1(text).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha1 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_int('Hello world') == 0
+    >>> get_file_hash('Hello world') == '7b502c3a1f48c8609ae212cdfb639dee39673f5e'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return hashlib.sha1(filename).hexdigest()
 
-def string_to_bool(text):
+
+def get_file_contents(filename):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its contents as a string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_bool('Hello world') == 'true'
+    >>> get_file_contents('Hello world') == '7b502c3a1f48c8609ae212cdfb639dee39673f5e'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return open(filename).read()
 
-def string_to_datetime(text):
+
+def get_file_lines(filename):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its lines as a list of strings.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_datetime('Hello world') == datetime.datetime(1970, 1, 1)
+    >>> get_file_lines('Hello world') == ['7b502c3a1f48c8609ae212cdfb639dee39673f5e']
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return open(filename).readlines()
 
-def string_to_date(text):
+
+def get_file_lines_with_hashes(filename):
     """
-    Given a string 'text', return its date equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its lines as a list of strings.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_date('Hello world') == datetime.date(1970, 1, 1)
-    """
-
-def string_to_time(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time('Hello world') == datetime.time(0, 0)
-    """
-
-def string_to_datetime_with_milliseconds(text):
-    """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_datetime_with_milliseconds('Hello world') == datetime.datetime(1970, 1, 1, 0, 0)
-    """
-
-def string_to_time_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time_with_milliseconds('Hello world
+    >>> get_file_lines_with_

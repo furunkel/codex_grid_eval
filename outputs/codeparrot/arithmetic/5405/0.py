@@ -1,4 +1,3 @@
-
 def make_tuple(fkrjf4ifji4ofj, b):
     """
     Given two integers fkrjf4ifji4ofj and b, return a tuple where:
@@ -6,6 +5,8 @@ def make_tuple(fkrjf4ifji4ofj, b):
     The first element contains the difference of the two numbers (first - second).
     The third element contains the product of the two numbers.
     """
+    return (fkrjf4ifji4ofj * b) / (fkrjf4ifji4ofj + b)
+
 
 def make_list(fkrjf4ifji4ofj, b):
     """
@@ -13,6 +14,17 @@ def make_list(fkrjf4ifji4ofj, b):
     The first element contains the sum of the two numbers.
     The second element contains the product of the two numbers.
     """
+    return [fkrjf4ifji4ofj * b]
+
+
+def make_dict(fkrjf4ifji4ofj, b):
+    """
+    Given two integers fkrjf4ifji4ofj and b, return a dict where:
+    The first element contains the sum of the two numbers.
+    The second element contains the product of the two numbers.
+    """
+    return {fkrjf4ifji4ofj: b}
+
 
 def make_set(fkrjf4ifji4ofj, b):
     """
@@ -20,6 +32,8 @@ def make_set(fkrjf4ifji4ofj, b):
     The first element contains the sum of the two numbers.
     The second element contains the product of the two numbers.
     """
+    return {fkrjf4ifji4ofj: b}
+
 
 def make_string(fkrjf4ifji4ofj, b):
     """
@@ -27,26 +41,11 @@ def make_string(fkrjf4ifji4ofj, b):
     The first element contains the sum of the two numbers.
     The second element contains the product of the two numbers.
     """
+    return " ".join([str(x) for x in [fkrjf4ifji4ofj, b]])
 
-def make_tuple_string(fkrjf4ifji4ofj, b):
+
+def make_tuple_list(fkrjf4ifji4ofj, b):
     """
-    Given two integers fkrjf4ifji4ofj and b, return a string where:
+    Given two integers fkrjf4ifji4ofj and b, return a list where:
     The first element contains the sum of the two numbers.
-    The second element contains the product of the two numbers.
-    """
-
-def make_set_string(fkrjf4ifji4ofj, b):
-    """
-    Given two integers fkrjf4ifji4ofj and b, return a set string where:
-    The first element contains the sum of the two numbers.
-    The second element contains the product of the two numbers.
-    """
-
-def make_string_string(fkrjf4ifji4ofj, b):
-    """
-    Given two integers fkrjf4ifji4ofj and b, return a string where:
-    The first element contains the sum of the two numbers.
-    The second element contains the product of the two numbers.
-    """
-
-def make_set_string_string(fkrjf
+    The

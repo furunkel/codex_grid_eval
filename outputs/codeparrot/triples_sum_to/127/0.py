@@ -1,4 +1,3 @@
-
 def triples_sum_to_hundred(l: list):
     """
     triples_sum_to_hundred takes a list of integers as an input.
@@ -8,47 +7,45 @@ def triples_sum_to_hundred(l: list):
     >>> triples_sum_to_hundred([1])
     False
     """
+    return len(l) == 3 and all(x == y for x, y in l)
 
-def triples_sum_to_hundred_2(l: list):
+
+def triples_sum_to_hundred_with_empty_list():
     """
-    triples_sum_to_hundred takes a list of integers as an input.
-    it returns True if there are 3 distinct elements in the list that
-    sum to hundred, and False otherwise.
+    triples_sum_to_hundred_with_empty_list returns True if there are 0
+    distinct elements in the list that sum to hundred, and False otherwise.
 
-    >>> triples_sum_to_hundred_2([1,2,3])
+    >>> triples_sum_to_hundred_with_empty_list([])
     True
     """
+    return len(l) == 0
 
-def triples_sum_to_hundred_3(l: list):
+
+def triples_sum_to_hundred_with_non_empty_list():
     """
-    triples_sum_to_hundred takes a list of integers as an input.
-    it returns True if there are 3 distinct elements in the list that
-    sum to hundred, and False otherwise.
+    triples_sum_to_hundred_with_non_empty_list returns True if there are 0
+    distinct elements in the list that sum to hundred, and False otherwise.
 
-    >>> triples_sum_to_hundred_3([1,2,3,4,5,6,7,8,9])
+    >>> triples_sum_to_hundred_with_non_empty_list([1])
     True
     """
+    return len(l) == 0
 
-def triples_sum_to_hundred_4(l: list):
+
+def triples_sum_to_hundred_with_non_empty_list_with_empty_elements():
     """
-    triples_sum_to_hundred takes a list of integers as an input.
-    it returns True if there are 3 distinct elements in the list that
-    sum to hundred, and False otherwise.
+    triples_sum_to_hundred_with_non_empty_list_with_empty_elements returns True if there are 0
+    distinct elements in the list that sum to hundred, and False otherwise.
 
-    >>> triples_sum_to_hundred_4([1,2,3,4,5,6,7,8,9])
+    >>> triples_sum_to_hundred_with_non_empty_list_with_empty_elements([1])
     True
     """
+    return len(l) == 0 and all(x == y for x, y in l)
 
-def triples_sum_to_hundred_5(l: list):
-    """
-    triples_sum_to_hundred takes a list of integers as an input.
-    it returns True if there are 3 distinct elements in the list that
-    sum to hundred, and False otherwise.
 
-    >>> triples_sum_to_hundred_5([1,2,3,4,5,6,7,8,9])
-    True
+def triples_sum_to_hundred_with_non_empty_list_with_empty_elements_with_empty_elements():
     """
+    triples_sum_to_hundred_with_non_empty_list_with_empty_elements_with_empty_elements returns True if there are 0
+    distinct elements in the list that sum to hundred, and False otherwise.
 
-def triples_sum_to_hundred_6(l: list):
-    """
-    triples_sum_to_hundred takes a list of integers as an input.
+    >>> triples_sum_to

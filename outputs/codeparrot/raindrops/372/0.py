@@ -1,4 +1,3 @@
-
 def raindrops(num):
     """
     Your task is to convert a number into a string that contains raindrop sounds corresponding to certain potential factors.
@@ -17,6 +16,17 @@ def raindrops(num):
     33 has both 11 and 3 as factors, but not 5, so the result would be "FizzPling".
     2 is not factored by 11, 3, or 5, so the result would be "2".
     """
+    if num == 1:
+        return "Fizz"
+    elif num == 2:
+        return "Pling"
+    elif num == 3:
+        return "Plong"
+    elif num == 5:
+        return "Plong"
+    else:
+        return "Plong"
+
 
 def raindrops_with_factors(num):
     """
@@ -33,10 +43,4 @@ def raindrops_with_factors(num):
 
     Examples:
     10 has 5 as a factor, but not 11 or 3, so the result would be "FizzPling".
-    33 has both 11 and 3 as factors, but not 5, so the result would be "FizzPlong".
-    2 is not factored by 11, 3, or 5, so the result would be "2".
-    """
-
-def raindrops_with_factors_and_factors(num):
-    """
-    Your task is
+    33 has both 11 and 3 as factors, but not 5, so the

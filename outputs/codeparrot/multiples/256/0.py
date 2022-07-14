@@ -1,44 +1,45 @@
-
 def multiples():
     """
     If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The sum of these multiples is 6.
     Return the sum of all the multiples of 2 or 5 below 197.
-    """    
-def multiples_2():
+    """
+    return sum(multiples())
+
+
+def multiples_with_one_digit():
     """
     If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The sum of these multiples is 6.
     Return the sum of all the multiples of 2 or 5 below 197.
-    """    
-def multiples_3():
+    """
+    return sum(multiples_with_one_digit())
+
+
+def multiples_with_one_digit_with_two_digit():
     """
     If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The sum of these multiples is 6.
     Return the sum of all the multiples of 2 or 5 below 197.
-    """    
-def multiples_4():
+    """
+    return sum(multiples_with_one_digit_with_two_digit())
+
+
+def multiples_with_two_digit_with_one_digit():
     """
     If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The sum of these multiples is 6.
     Return the sum of all the multiples of 2 or 5 below 197.
-    """    
-def multiples_5():
+    """
+    return sum(multiples_with_two_digit_with_one_digit())
+
+
+def multiples_with_two_digit_with_one_digit_with_two_digit():
     """
     If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The sum of these multiples is 6.
     Return the sum of all the multiples of 2 or 5 below 197.
-    """    
-def multiples_6():
+    """
+    return sum(multiples_with_two_digit_with_one_digit_with_two_digit())
+
+
+def multiples_with_two_digit_with_one_digit_with_two_digit():
     """
     If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The sum of these multiples is 6.
     Return the sum of all the multiples of 2 or 5 below 197.
-    """    
-def multiples_7():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The sum of these multiples is 6.
-    Return the sum of all the multiples of 2 or 5 below 197.
-    """    
-def multiples_8():
-    """
-    If we list all the natural numbers below 5 that are multiples of 2 or 5, we get 2 and 4. The sum of these multiples is 6.
-    Return the sum of all the multiples of 2 or 5 below 197.
-    """    
-def multiples_9():
-    """
    

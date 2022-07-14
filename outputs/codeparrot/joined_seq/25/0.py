@@ -1,58 +1,57 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns True if the input string contains sequences of lowercase letters joined with a dash and False otherwise.
     """
+    return text.translate(None, string.punctuation).replace('-', '')
 
-def split_sequence(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split()
 
-def split_sequence_with_dash(text):
+def get_words(text):
     """
-    Splits a string into a list of words, separated by a dash.
+    Return a list of lowercase words in the given text.
     """
-    return text.split(DASH)
+    return [word.lower() for word in text.split()]
 
-def split_sequence_with_underscore(text):
-    """
-    Splits a string into a list of words, separated by a underscore.
-    """
-    return text.split(UNDERSCORE)
 
-def split_sequence_with_underscore_and_dash(text):
+def get_sentences(text):
     """
-    Splits a string into a list of words, separated by a underscore, and a dash.
+    Return a list of sentences in the given text.
     """
-    return text.split(UNDERSCORE, 1)
+    return [sentence.strip() for sentence in text.split('\n')]
 
-def split_sequence_with_underscore_and_dash_and_underscore(text):
-    """
-    Splits a string into a list of words, separated by a underscore, and a dash.
-    """
-    return text.split(UNDERSCORE, 2)
 
-def split_sequence_with_underscore_and_dash_and_underscore_and_underscore(text):
+def get_sentences_with_length(text, length):
     """
-    Splits a string into a list of words, separated by a underscore, and a dash.
+    Return a list of sentences in the given text, where each sentence is a list of words.
     """
-    return text.split(UNDERSCORE, 3)
+    return [sentence.strip() for sentence in text.split('\n')[:length]]
 
-def split_sequence_with_underscore_and_dash_and_underscore_and_underscore_and_underscore(text):
-    """
-    Splits a string into a list of words, separated by a underscore, and a dash.
-    """
-    return text.split(UNDERSCORE, 4)
 
-def split_sequence_with_underscore_and_dash_and_underscore_and_underscore_and_underscore_and_underscore(text):
+def get_sentences_with_punctuation(text, punctuation):
     """
-    Splits a string into a list of words, separated by a underscore, and a dash.
+    Return a list of sentences in the given text, where each sentence is a list of words.
     """
-    return text.split(UNDERSCORE, 5)
+    return [sentence.strip() for sentence in text.split('\n')[:punctuation]]
 
-def split_sequence_with_underscore_and_dash_and_underscore_and_underscore_and_underscore_and_underscore(text):
+
+def get_sentences_with_punctuation_and_length(text, punctuation, length):
     """
-    Splits a string into a list of words, separated by a underscore, and a dash.
-   
+    Return a list of sentences in the given text, where each sentence is a list of words.
+    """
+    return [sentence.strip() for sentence in text.split('\n')[:punctuation]]
+
+
+def get_sentences_with_punctuation_and_length_and_punctuation(text, punctuation, length, punctuation_length):
+    """
+    Return a list of sentences in the given text, where each sentence is a list of words.
+    """
+    return [sentence.strip() for sentence in text.split('\n')[:punctuation]]
+
+
+def get_sentences_with_punctuation_and_length_and_punctuation_and_punctuation(text, punctuation, length, punctuation_length, punctuation_length_and_punctuation):
+    """
+    Return a list of sentences in the given text, where each sentence is a list of words.
+    """
+    return [sentence.strip() for sentence in text.split('\n')[:punctuation]]
+
+
+def get_sentences_with_punctuation_and_length_and_punctuation_and_punctuation_and_punctuation_and_punctuation(text, punctuation, length, punctuation_length_and_punctuation_and

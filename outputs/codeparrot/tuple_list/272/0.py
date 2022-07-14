@@ -1,64 +1,68 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count)
 
-def g(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
-    """
 
-def h(lst):
+def main():
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
+    Main function.
     """
-
-def i(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
-    """
-
-def j(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
-    """
-
-def k(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
-    """
-
-def l(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
-    """
-
-def m(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
-    """
-
-def n(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
-    """
-
-def o(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
-    """
-
-def p(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
-    """
-
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
-    """
-
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest
+    # Create a list of tuples
+    lst = [
+        (1, 2, 3),
+        (4, 5, 6),
+        (7, 8, 9),
+        (10, 11, 12),
+        (13, 14, 15),
+        (16, 17, 18),
+        (19, 20, 21),
+        (21, 22, 23),
+        (23, 24, 25),
+        (25, 26, 27),
+        (27, 28, 29),
+        (29, 30, 31),
+        (31, 32, 33),
+        (32, 34, 35),
+        (35, 36, 37),
+        (37, 38, 39),
+        (40, 41, 42),
+        (43, 44, 45),
+        (45, 46, 47),
+        (47, 48, 49),
+        (49, 50, 51),
+        (51, 52, 53),
+        (53, 54, 55),
+        (54, 56, 57),
+        (57, 58, 59),
+        (60, 61, 62),
+        (63, 64, 65),
+        (65, 66, 67),
+        (67, 68, 69),
+        (69, 70, 71),
+        (71, 72, 73),
+        (73, 74, 75),
+        (75, 76, 77),
+        (77, 78, 79),
+        (79, 80, 81),
+        (81, 82, 83),
+        (84, 84, 85),
+        (86, 86, 87),
+        (87, 88, 89),
+        (90, 91, 92),
+        (92, 93, 94),
+        (95, 95, 96),
+        (96, 97, 98),
+        (98, 99, 100),
+        (101, 102, 103),
+        (104, 105, 106),
+        (106, 107, 108),
+        (109, 109, 110),
+        (111, 111, 112),
+        (114, 115, 116),
+        (116, 117, 118),
+        (120, 121, 122),
+        (122, 123, 124),
+        (124, 125, 126),
+        (127, 128,

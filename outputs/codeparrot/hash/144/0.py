@@ -1,71 +1,74 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha3_512 hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if not text:
+        return None
+    return hashlib.sha3_512(text).hexdigest()
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_bool(text):
+def get_file_hash(filename):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha3_512 hash equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if not filename:
+        return None
+    return hashlib.sha3_512(filename).hexdigest()
 
-def string_to_datetime(text):
-    """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_date(text):
+def get_file_path(filename):
     """
-    Given a string 'text', return its date equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha3_512 hash equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if not filename:
+        return None
+    return os.path.join(settings.MEDIA_ROOT, filename)
 
-def string_to_time(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_datetime_with_milliseconds(text):
+def get_file_url(filename):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha3_512 hash equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if not filename:
+        return None
+    return os.path.join(settings.MEDIA_URL, filename)
 
-def string_to_time_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_date_with_milliseconds(text):
+def get_file_size(filename):
     """
-    Given a string 'text', return its date equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha3_512 hash equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if not filename:
+        return None
+    return os.path.getsize(get_file_path(filename))
 
-def string_to_time_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def string_to_date_with_milliseconds(text):
+def get_file_url_path(filename):
     """
-    Given a string 'text', return its date equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha3_512 hash equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if not filename:
+        return None
+    return os.path.join(settings.MEDIA_URL_PATH, filename)
 
-def string_to_time_with_milliseconds(text):
+
+def get_file_size_path(filename):
     """
-    Given a string 'text', return its time equivalent string.
-    If
+    Given a filename, return its sha3_512 hash equivalent string.
+    If 'filename' is an empty string, return None.
+    """
+    if not filename:
+        return None
+    return os.path.getsize(get_file_path(filename))
+
+
+def get_file_url_path_path(filename):
+    """
+    Given a filename, return its sha3_512 hash equivalent string.
+    If 'filename' is an empty string, return

@@ -1,53 +1,76 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha-1 hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if text is None:
+        return None
+    if isinstance(text, str):
+        return hashlib.sha1(text.encode('utf-8')).hexdigest()
+    return None
 
-def get_hash(text):
-    """
-    Given a string 'text', return its sha-1 hash equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def get_hash_from_file(path):
+def get_file_hash(filename):
     """
-    Given a path to a file, return its sha-1 hash equivalent string.
-    If 'path' is an empty string, return None.
+    Given a filename, return its sha-1 hash equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    if isinstance(filename, str):
+        return hashlib.sha1(filename.encode('utf-8')).hexdigest()
+    return None
 
-def get_hash_from_string(text):
-    """
-    Given a string 'text', return its sha-1 hash equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def get_hash_from_file_with_sha1(path, sha1):
+def get_file_size(filename):
     """
-    Given a path to a file, return its sha-1 hash equivalent string.
-    If 'path' is an empty string, return None.
+    Given a filename, return its size equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    if isinstance(filename, str):
+        return os.path.getsize(filename)
+    return None
 
-def get_hash_from_file_with_sha1_and_sha256(path, sha1, sha256):
-    """
-    Given a path to a file, return its sha-1 hash equivalent string.
-    If 'path' is an empty string, return None.
-    """
 
-def get_hash_from_file_with_sha256_and_sha1(path, sha1, sha256, sha1_hash):
+def get_file_md5(filename):
     """
-    Given a path to a file, return its sha-1 hash equivalent string.
-    If 'path' is an empty string, return None.
+    Given a filename, return its md5 equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    if isinstance(filename, str):
+        return hashlib.md5(filename.encode('utf-8')).hexdigest()
+    return None
 
-def get_hash_from_file_with_sha1_and_sha256_and_sha1_and_sha256(path, sha1, sha256, sha1_hash):
-    """
-    Given a path to a file, return its sha-1 hash equivalent string.
-    If 'path' is an empty string, return None.
-    """
 
-def get_hash_from_file_with_sha1_and_sha256_and_sha1_and_sha256_and_sha1(path, sha1, sha256, sha1_hash):
+def get_file_sha1(filename):
     """
-    Given a path to a file, return its sha-1 hash equivalent string.
-    If
+    Given a filename, return its sha-1 hash equivalent string.
+    If 'filename' is an empty string, return None.
+    """
+    if filename is None:
+        return None
+    if isinstance(filename, str):
+        return hashlib.sha1(filename.encode('utf-8')).hexdigest()
+    return None
+
+
+def get_file_size_and_md5(filename):
+    """
+    Given a filename, return its size and md5 equivalent string.
+    If 'filename' is an empty string, return None.
+    """
+    if filename is None:
+        return None, None
+    if isinstance(filename, str):
+        return os.path.getsize(filename), None
+    return None, None
+
+
+def get_file_md5_and_sha1(filename):
+    """
+    Given a filename, return its md5 and sha-1 hash equivalent string.
+    If 'filename' is an empty string

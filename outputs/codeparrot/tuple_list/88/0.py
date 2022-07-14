@@ -1,59 +1,50 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the smallest second value.
     """
+    return max(lst, key=lst.count)
 
-def fibonacci_with_one_element(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
-    """
 
-def fibonacci_with_two_elements(lst):
+def fibonacci_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)
 
-def fibonacci_with_three_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
-    """
 
-def fibonacci_with_four_elements(lst):
+def fibonacci_with_min_max_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count, reverse=True)
 
-def fibonacci_with_five_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
-    """
 
-def fibonacci_with_six_elements(lst):
+def fibonacci_with_min_max_with_min_min(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count, reverse=True, key_min=lst.count)
 
-def fibonacci_with_seven_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
-    """
 
-def fibonacci_with_eight_elements(lst):
+def fibonacci_with_min_max_with_min_min(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count, reverse=True, key_min=lst.count, key_max=lst.count)
 
-def fibonacci_with_nine_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
-    """
 
-def fibonacci_with_ten_elements(lst):
+def fibonacci_with_min_max_with_min_min(lst):
     """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count, reverse=True, key_min=lst.count, key_max=lst.count)
 
-def fibonacci_with_eleven_elements(lst):
+
+def fibonacci_with_min_max_with_min_min(lst):
     """
-    Given a list
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest second value.
+    """
+    return min(lst, key=lst.count, reverse=True, key_min=lst.count, key_max=lst.count)
+
+
+def fibonacci_with_min_max_with_

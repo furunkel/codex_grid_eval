@@ -1,4 +1,3 @@
-
 def checksum(string):
     """
     Given a string, convert each character in the string into its integer ASCII value, sum them,
@@ -6,46 +5,57 @@ def checksum(string):
     into its corresponding character (the checksum character).
     The program must print "Check sum is X", where X is replaced by the correct checksum character.
     """
+    sum = 0
+    for i in range(256):
+        sum = sum + int(ord(string[i]) + 256)
+    return sum % 256
 
 def main():
     """
-    Main function.
+    Main function
     """
-    # Create a list of all the characters in the file.
-    file_list = []
-    # Read the file and split it into lines.
-    for line in open(sys.argv[1]):
-        # Split the line into words.
-        words = line.split()
-        # If the word is not in the list, add it to the file list.
-        if words[0] not in file_list:
-            file_list.append(words[0])
-    # Sort the list of words by the length of the longest word.
-    file_list.sort()
-    # Print the result.
-    print(file_list)
+    if len(sys.argv) != 2:
+        print "Usage: %s <file.txt>" % sys.argv[0]
+        sys.exit(1)
+    file = open(sys.argv[1], 'r')
+    for line in file:
+        print line.strip()
+    file.close()
 
 if __name__ == '__main__':
     main()
-<|endoftext|># Copyright (c) 2013, Web Notes Technologies Pvt. Ltd. and Contributors
-# License: GNU General Public License v3. See license.txt
+<|endoftext|># -*- coding: utf-8 -*-
+#
+# Copyright (C) Pootle contributors.
+#
+# This file is a part of the Pootle project. It is distributed under the GPL3
+# or later license. See the LICENSE file for a copy of the license and the
+# AUTHORS file for copyright and authorship information.
 
-from __future__ import unicode_literals
-import frappe
-from frappe import _
-from frappe.utils import flt, cint, cstr, nowdate, getdate, formatdate
-from erpnext.accounts.report.financial_statements import (get_period_list, get_columns, get_data)
+from django.conf import settings
+from django.contrib.auth import get_user_model
+from django.core.exceptions import ValidationError
+from django.core.urlresolvers import reverse
+from django.db import models
+from django.utils.functional import cached_property
+from django.utils.translation import ugettext_lazy as _
 
-def execute(filters=None):
-	period_list = get_period_list(filters.from_fiscal_year, filters.to_fiscal_year,
-		filters.periodicity, filters.accumulated_values, filters.company)
+from pootle.core.mixins import CachedTreeItem
+from pootle.core.url_helpers import get_editor_filter
+from pootle.core.utils.timezone import datetime_min
+from pootle_misc.checks import check_names
+from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
+from pootle_store.models import Unit
 
-	income = get_data(filters.company, "Income", "Credit", period_list, filters=filters)
 
-	income_data = get_data(filters.company, "Income", "Credit", period_list, filters=filters)
+class UnitManager(models.Manager):
 
-	columns, expense_accounts, tax_accounts = get_columns(income_data, filters.company)
+    def get_queryset(self):
+        return super(UnitManager, self).get_queryset().select_related(
+            "store", "store__parent", "store__translation_project"
+        )
 
-	net_profit_loss = get_net_profit_loss(income_data, expense_accounts, tax_accounts)
 
-	
+class Unit(models.Model):
+    """
+    Stores information about a single unit of a store

@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha-384 hash equivalent string.
@@ -6,34 +5,44 @@ def string_to_hash(text):
 
     >>> string_to_hash('Hallo welt') == 'e2d4d570e508d98b24596f019b862b1c76fca9bfc79d62fa6111147c65b6bc8ae5662705693f2d7f1dc68e5c98c8e049'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        return hashlib.sha384(text.encode('utf-8')).hexdigest()
+    return None
 
-def get_hash(text):
-    """
-    Given a string 'text', return its sha-384 hash equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> get_hash('Hallo welt')
-    'e2d4d570e508d98b24596f019b862b1c76fca9bfc79d62fa6111147c65b6bc8ae5662705693f2d7f1dc68e5c98c8e049'
+def get_file_hash(filename):
     """
+    Given a filename, return its sha-384 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-def get_hash_from_file(file_path):
+    >>> get_file_hash('Hallo welt') == 'e2d4d570e508d98b24596f019b862b1c76fca9bfc79d62fa6111147c65b6bc8ae5662705693f2d7f1dc68e5c98c8e049'
     """
-    Given a file path, return its sha-384 hash equivalent string.
-    If 'file_path' is an empty string, return None.
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        return hashlib.sha384(filename.encode('utf-8')).hexdigest()
+    return None
 
-    >>> get_hash_from_file('Hallo welt')
-    'e2d4d570e508d98b24596f019b862b1c76fca9bfc79d62fa6111147c65b6bc8ae5662705693f2d7f1dc68e5c98c8e049'
-    """
 
-def get_hash_from_string(text):
+def get_file_path(filename):
     """
-    Given a string 'text', return its sha-384 hash equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha-384 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> get_hash_from_string('Hallo welt')
-    'e2d4d570e508d98b24596f019b862b1c76fca9bfc79d62fa6111147c65b6bc8ae5662705693f2d7f1dc68e5c98c8e049'
+    >>> get_file_path('Hallo welt') == 'e2d4d570e508d98b24596f019b862b1c76fca9bfc79d62fa6111147c65b6bc8ae5662705693f2d7f1dc68e5c98c8e049'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        return hashlib.sha384(filename.encode('utf-8')).hexdigest()
+    return None
 
-def get_hash_from_file(file_path):
+
+def get_file_size(filename):
     """
-    Given a file path
+    Given a filename, return its sha-384 hash equivalent string.
+    If 'filename' is an empty string, return None.
+
+    >>> get_file_size

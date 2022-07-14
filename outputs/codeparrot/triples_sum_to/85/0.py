@@ -1,4 +1,3 @@
-
 def quintuples_sum_to_three(l: list):
     """
     quintuples_sum_to_three takes a list of integers as an input.
@@ -8,6 +7,8 @@ def quintuples_sum_to_three(l: list):
     >>> quintuples_sum_to_three([1, 3, -2, 1, 5, 8])
     False
     """
+    return sum(l) % 2 == 0
+
 
 def quintuples_sum_to_two(l: list):
     """
@@ -16,8 +17,10 @@ def quintuples_sum_to_two(l: list):
     sum to two, and False otherwise.
 
     >>> quintuples_sum_to_two([1, 3, -2, 1, 5, 8])
-    True
+    False
     """
+    return sum(l) % 2 == 1
+
 
 def quintuples_sum_to_three_with_one_element(l: list):
     """
@@ -29,23 +32,22 @@ def quintuples_sum_to_three_with_one_element(l: list):
     >>> quintuples_sum_to_three_with_one_element([1, 3, -2, 1, 5, 8])
     True
     """
+    return sum(l) % 2 == 0 and sum(l) % 2 == 1
 
-def quintuples_sum_to_three_with_two_elements(l: list):
+
+def quintuples_sum_to_two_with_one_element(l: list):
     """
-    quintuples_sum_to_three_with_two_elements takes a list of integers as
-    an input.
+    quintuples_sum_to_two_with_one_element takes a list of integers as an
+    input.
     it returns True if there are 5 distinct elements in the list that
-    sum to three, and False otherwise.
+    sum to two, and False otherwise.
 
-    >>> quintuples_sum_to_three_with_two_elements([1, 3, -2, 1, 5, 8])
+    >>> quintuples_sum_to_two_with_one_element([1, 3, -2, 1, 5, 8])
     True
     """
+    return sum(l) % 2 == 1 and sum(l) % 2 == 0
 
-def quintuples_sum_to_three_with_three_elements(l: list):
+
+def quintuples_sum_to_three_with_one_element(l: list):
     """
-    quintuples_sum_to_three_with_three_elements takes a list of integers as
-    an input.
-    it returns True if there are 5 distinct elements in the list that
-    sum to three, and False otherwise.
-
-    >>> quintuples_sum_to_three_with_three_elements([1, 3, -2, 1
+    quintuples_sum_to_three_with_one_element takes a list

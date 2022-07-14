@@ -1,44 +1,70 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "mouse" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
     """
+    if n < -100:
+        return "mouse"
+    elif n < 2000:
+        return "small"
+    else:
+        return None
 
-def small_or_large_or_small(n):
+def get_random_string(length):
     """
-        Given an integer n, return "mouse" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random string of length length.
     """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def small_or_large_or_small_or_large(n):
+def get_random_int(length):
     """
-        Given an integer n, return "mouse" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random integer of length length.
     """
+    return random.randint(0, length)
 
-def small_or_large_or_small_or_large_or_small(n):
+def get_random_float(length):
     """
-        Given an integer n, return "mouse" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random float of length length.
     """
+    return random.uniform(0.0, 1.0)
 
-def small_or_large_or_small_or_large_or_small(n):
+def get_random_bool(length):
     """
-        Given an integer n, return "mouse" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random bool of length length.
     """
+    return random.choice([True, False])
 
-def small_or_large_or_small_or_large_or_small_or_large(n):
+def get_random_list(length):
     """
-        Given an integer n, return "mouse" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random list of length length.
     """
+    return [random.randint(0, length) for _ in range(length)]
 
-def small_or_large_or_small_or_large_or_small_or_large(n):
+def get_random_dict(length):
     """
-        Given an integer n, return "mouse" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random dict of length length.
     """
+    return {random.randint(0, length): random.randint(0, 100) for _ in range(length)}
 
-def small_or_large_or_small_or_large_or_small_or_large(n):
+def get_random_list_dict(length):
     """
-        Given an integer n, return "mouse" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random dict of length length.
     """
+    return {random.randint(0, length): random.randint(0, 100) for _ in range(length)}
 
-def small_or_large_or_small_or_large_or_small_or_large(n):
+def get_random_dict_dict(length):
     """
-        Given an integer n, return "
+        Returns a random dict of length length.
+    """
+    return {random.randint(0, length): random.randint(0, 100) for _ in range(length)}
+
+def get_random_list_dict_dict(length):
+    """
+        Returns a random dict of length length.
+    """
+    return {random.randint(0, length): random.randint(0, 100) for _ in range(length)}
+
+def get_random_dict_list(length):
+    """
+        Returns a random list of length length.
+    """
+    return [random.randint(0

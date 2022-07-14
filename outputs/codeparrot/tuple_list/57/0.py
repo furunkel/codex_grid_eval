@@ -1,59 +1,47 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count)
 
-def some_func_with_max(lst):
+
+def some_func_with_args(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count, reverse=True)
 
-def some_func_with_min(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
-    """
 
-def some_func_with_sum(lst):
+def some_func_with_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the sum of the values of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count, reverse=True, kwargs=True)
 
-def some_func_with_product(lst):
-    """
-    Given a list of tuples, write a function that returns the product of the values of the tuple with the largest eleventh value.
-    """
 
-def some_func_with_set(lst):
+def some_func_with_args_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the set of the values of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count, reverse=True, kwargs=True, kwargs_with_kwargs=True)
 
-def some_func_with_str(lst):
-    """
-    Given a list of tuples, write a function that returns the string representation of the tuple with the largest eleventh value.
-    """
 
-def some_func_with_tuple(lst):
+def some_func_with_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the tuple representation of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count, reverse=True, kwargs_with_kwargs=True, kwargs_with_kwargs_kwargs=True)
 
-def some_func_with_set_str(lst):
-    """
-    Given a list of tuples, write a function that returns the set representation of the tuple with the largest eleventh value.
-    """
 
-def some_func_with_tuple_str(lst):
+def some_func_with_args_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the tuple representation of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count, reverse=True, kwargs_with_kwargs=True, kwargs_with_kwargs_kwargs_kwargs=True)
 
-def some_func_with_set_set(lst):
-    """
-    Given a list of tuples, write a function that returns the set representation of the tuple with the largest eleventh value.
-    """
 
-def some_func_with_str_str(lst):
+def some_func_with_kwargs_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the string representation
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
+    """
+    return max(lst, key=lst.count, reverse=True, kwargs_with_kwargs=True, kwargs_with_kwargs_kwargs_kwargs=True, kwargs_with_kwargs_kwargs_kwargs_kwargs_kwargs_kwargs_kwargs_kwargs_kwargs_kwargs

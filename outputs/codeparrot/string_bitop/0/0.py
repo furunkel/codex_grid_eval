@@ -1,4 +1,3 @@
-
 from typing import List
 
 def string_xor(a: str, b: str) -> str:
@@ -7,6 +6,7 @@ def string_xor(a: str, b: str) -> str:
     >>> string_xor('010', '110')
     '100'
     """
+    return ''.join(chr(ord(x) ^ ord(y)) for (x, y) in zip(a, b))
 
 def string_or(a: str, b: str) -> str:
     """ Input are two strings a and b consisting only of 1s and 0s.
@@ -14,6 +14,7 @@ def string_or(a: str, b: str) -> str:
     >>> string_or('010', '110')
     '100'
     """
+    return ''.join(chr(ord(x) | ord(y)) for (x, y) in zip(a, b))
 
 def string_not(a: str, b: str) -> str:
     """ Input are two strings a and b consisting only of 1s and 0s.
@@ -21,33 +22,23 @@ def string_not(a: str, b: str) -> str:
     >>> string_not('010', '110')
     '100'
     """
+    return ''.join(chr(ord(x) & ord(y)) for (x, y) in zip(a, b))
 
-def string_not_or(a: str, b: str) -> str:
+def string_shift(a: str, b: str) -> str:
     """ Input are two strings a and b consisting only of 1s and 0s.
     Perform binary XOR on these inputs and return result also as a string.
-    >>> string_not_or('010', '110')
+    >>> string_shift('010', '110')
     '100'
     """
+    return ''.join(chr(ord(x) << 1) for (x, y) in zip(a, b))
 
-def string_xor_and(a: str, b: str) -> str:
+def string_lshift(a: str, b: str) -> str:
     """ Input are two strings a and b consisting only of 1s and 0s.
     Perform binary XOR on these inputs and return result also as a string.
-    >>> string_xor_and('010', '110')
+    >>> string_lshift('010', '110')
     '100'
     """
+    return ''.join(chr(ord(x) << 1) for (x, y) in zip(a, b))
 
-def string_not_xor_and(a: str, b: str) -> str:
-    """ Input are two strings a and b consisting only of 1s and 0s.
-    Perform binary XOR on these inputs and return result also as a string.
-    >>> string_not_xor_and('010', '110')
-    '100'
-    """
-
-def string_xor_or(a: str, b: str) -> str:
-    """ Input are two strings a and b consisting only of 1s and 0s.
-    Perform binary XOR on these inputs and return result also as a string.
-    >>> string_xor_or('010', '110')
-    '100'
-    """
-
-def string
+def string_rshift(a: str, b: str) -> str:
+   

@@ -1,4 +1,3 @@
-
 def solve(s):
     """You are given a string s.
     if s[i] is a letter, reverse its case from lower to upper or vise versa, 
@@ -11,9 +10,18 @@ def solve(s):
     solve("ab") = "AB"
     solve("#a@C") = "#A@c"
     """
+    if not s:
+        return s
+    if s[0] == s[-1]:
+        return s
+    else:
+        return s[1:] + s[0] + s[-1]
+
 
 def main():
-    pass
+    """The main function"""
+    print(solve("ab"))
+
 
 if __name__ == "__main__":
     main()
@@ -26,43 +34,20 @@ if __name__ == "__main__":
 # AUTHORS file for copyright and authorship information.
 
 from django.conf import settings
-from django.core.urlresolvers import reverse
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.functional import cached_property
+from django.utils.translation import ugettext_lazy as _
 
-from pootle.core.mixins import CachedTreeItem
-from pootle.core.url_helpers import get_editor_filter
+from pootle.core.delegate import revision
+from pootle.core.url_helpers import split_pootle_path
 from pootle.core.utils.timezone import datetime_min
 from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
 from pootle_store.models import Unit
-
-
-class UnitManager(models.Manager):
-    def get_queryset(self):
-        return super(UnitManager, self).get_queryset().filter(
-            translation__language__code__in=settings.LANGUAGES
-        )
-
-
-class Unit(models.Model):
-    """
-    Stores information about a single unit.
-    """
-
-    objects = UnitManager()
-
-    class Meta:
-        ordering = ["store__pootle_path"]
-        unique_together = ("store", "unitid_hash")
-
-    store = models.ForeignKey(
-        Store,
-        on_delete=models.CASCADE,
-        related_name="stores",
-        verbose_name=_("Store"),
-        related_query_name="stores",
-    )
-    parent = models.ForeignKey("pootle_store.Store", on_delete=models.CASCADE)
-    parent_path = models.TextField(
-        verbose_name=_("Parent"),
-        help_text=_("The path to
+from pootle_store.util import absolute_real_path, relative_real_path
+from pootle_store.util.file import store_file
+from pootle_store.util.stats import (
+    get_total_words, get_translated_words, get_total_words_word_count,
+    get_translated_word_count, get_total_words_word_count_word_count,
+    get_translated_word_count_word_frequency, get_total_words_word_frequency,
+    get_translated_word_count_word_frequency_word_count,

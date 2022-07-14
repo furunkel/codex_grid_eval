@@ -1,4 +1,3 @@
-
 from typing import List
 
 def string_xnor(a: str, b: str) -> str:
@@ -7,38 +6,38 @@ def string_xnor(a: str, b: str) -> str:
     >>> string_xnor('010', '110')
     '011'
     """
+    return ''.join(chr(ord(x) ^ ord(y)) for (x, y) in zip(a, b))
 
-def string_xnor_list(a: str, b: str) -> List[str]:
+def string_xnor(a: str, b: str) -> str:
     """ Input are two strings a and b consisting only of 1s and 0s.
-    Perform binary XNOR on these inputs and return result also as a list.
-    >>> string_xnor_list('010', '110')
-    ['010', '110']
+    Perform binary XNOR on these inputs and return result also as a string.
+    >>> string_xnor('010', '110')
+    '011'
     """
+    return ''.join(chr(ord(x) ^ ord(y)) for (x, y) in zip(a, b))
 
-def string_xnor_dict(a: str, b: str) -> Dict[str, str]:
+def string_xor(a: str, b: str) -> str:
     """ Input are two strings a and b consisting only of 1s and 0s.
-    Perform binary XNOR on these inputs and return result also as a dictionary.
-    >>> string_xnor_dict('010', '110')
-    {'010': '010', '110': '110'}
+    Perform binary XOR on these inputs and return result also as a string.
+    >>> string_xor('010', '110')
+    '011'
     """
+    return ''.join(chr(ord(x) ^ ord(y)) for (x, y) in zip(a, b))
 
-def string_xnor_set(a: str, b: str, value: str) -> None:
+def string_not(a: str, b: str) -> str:
     """ Input are two strings a and b consisting only of 1s and 0s.
-    Perform binary XNOR on these inputs and set the value of the specified
-    key to the specified value.
-    >>> string_xnor_set('010', '110', '110')
-    {'010': '010', '110': '110'}
+    Perform binary NOT on these inputs and return result also as a string.
+    >>> string_not('010', '110')
+    '011'
     """
+    return ''.join(chr(ord(x) ^ ord(y)) for (x, y) in zip(a, b))
 
-def string_xnor_dict_list(a: str, b: str) -> List[str]:
+def string_not_xnor(a: str, b: str) -> str:
     """ Input are two strings a and b consisting only of 1s and 0s.
-    Perform binary XNOR on these inputs and return result also as a list.
-    >>> string_xnor_dict_list('010', '110')
-    ['010', '110']
+    Perform binary NOT on these inputs and return result also as a string.
+    >>> string_not_xnor('010', '110')
+    '011'
     """
+    return ''.join(chr(ord(x) ^ ord(y)) for (x, y) in zip(a, b))
 
-def string_xnor_set_list(a: str, b: str, value: str) -> None:
-    """ Input are two strings a and b consisting only of 1s and 0s.
-    Perform binary XNOR on these inputs and set the value of the specified
-    key to the specified value.
-    >>> string_xnor_set_list('010', '
+def string_not_xor

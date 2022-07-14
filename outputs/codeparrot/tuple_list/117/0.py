@@ -1,64 +1,40 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lst.count)
 
-def some_func2(lst):
+
+def some_func_with_max_twelfth(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
     """
+    return max(lst, key=lst.count, reverse=True)
 
-def some_func3(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
-    """
 
-def some_func4(lst):
+def some_func_with_max_twelfth_and_min(lst):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value and the minimum value.
     """
+    return max(lst, key=lst.count, reverse=True, key_func=lambda x: x[1])
 
-def some_func5(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
-    """
 
-def some_func6(lst):
+def some_func_with_max_twelfth_and_max(lst):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value and the maximum value.
     """
+    return max(lst, key=lst.count, reverse=True, key_func=lambda x: x[1], reverse_func=lambda x: x[1])
 
-def some_func7(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
-    """
 
-def some_func8(lst):
+def some_func_with_max_twelfth_and_min_and_max(lst):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value and the minimum value.
     """
+    return max(lst, key=lst.count, reverse=True, key_func=lambda x: x[1], reverse_func=lambda x: x[1], reverse_func=lambda x: x[1])
 
-def some_func9(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
-    """
 
-def some_func10(lst):
+def some_func_with_max_twelfth_and_min_and_max_and_min(lst):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value and the minimum value.
     """
-
-def some_func11(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
-    """
-
-def some_func12(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
-    """
-
-def some_func13(lst):
-    """
-    Given a list of tuples, write a function
+    return max(lst, key=lst.count, reverse=True, key_func=lambda x: x[1], reverse_func=lambda x: x[1], reverse_func=lambda

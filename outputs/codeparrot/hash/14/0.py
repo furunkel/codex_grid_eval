@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its md-5 hash equivalent string.
@@ -6,61 +5,64 @@ def string_to_hash(text):
 
     >>> string_to_hash('Hallo welt') == '05b7f4cbafdb32436fe8928f41ed8f64'
     """
+    if not text:
+        return None
+    text = text.strip()
+    if text.startswith('md5:'):
+        text = text[5:]
+    return hashlib.md5(text).hexdigest()
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int('Hallo welt')
-    0
+def get_file_hash(filename, block_size=2 ** 20):
     """
+    Calculate the md5 hash for a file.
 
-def string_to_bool(text):
+    :param filename: File to hash.
+    :param block_size: Block size to use when reading.
+    :returns: MD5 hex digest string.
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            md5.update(data)
+    return md5.hexdigest()
 
-    >>> string_to_bool('Hallo welt')
-    False
-    """
 
-def string_to_datetime(text):
+def get_file_hash_from_file(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the md5 hash for a file.
 
-    >>> string_to_datetime('Hallo welt')
-    datetime.datetime(2013, 1, 1, 0, 0)
+    :param filename: File to hash.
+    :param block_size: Block size to use when reading.
+    :returns: MD5 hex digest string.
     """
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            md5.update(data)
+    return md5.hexdigest()
 
-def string_to_time(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_time('Hallo welt')
-    datetime.time(12, 0, 0)
+def get_file_hash_from_env(env):
     """
+    Calculate the md5 hash for a file based on the environment.
 
-def string_to_datetime_with_milliseconds(text):
+    :param env: Environment to hash.
+    :returns: MD5 hex digest string.
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    return get_file_hash(env.get('CONTENT_LENGTH'), block_size=2 ** 20)
 
-    >>> string_to_datetime_with_milliseconds('Hallo welt')
-    datetime.datetime(2013, 1, 1, 0, 0)
-    """
 
-def string_to_time_with_milliseconds(text):
+def get_env_file_hash(env):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the md5 hash for a file based on the environment.
 
-    >>> string_to_time_with_milliseconds('Hallo welt')
-    datetime.time(12, 0, 0)
+    :param env: Environment to hash.
+    :returns: MD5 hex digest string.
     """
-
-def string_to_datetime_with_milliseconds(text):
-    """
-    Given a string 'text', return its
+    return get_file_hash(env.get('CONTENT_LENGTH'), block_size=2 ** 20

@@ -1,4 +1,3 @@
-
 def match_brackets(lst):
     '''
     You are given a list of two strings, both strings consist of open
@@ -14,6 +13,14 @@ def match_brackets(lst):
     match_parens(['[][', ']']) == 'Yes'
     match_parens([']', ']']) == 'No'
     '''
+    if len(lst) == 0:
+        return False
+    if len(lst) == 1:
+        return True
+    if len(lst) == 2:
+        return lst[0] == lst[1]
+    return False
+
 
 def match_parenthesis(lst):
     '''
@@ -30,6 +37,14 @@ def match_parenthesis(lst):
     match_parenthesis(['[][', ']']) == 'Yes'
     match_parenthesis([']', ']']) == 'No'
     '''
+    if len(lst) == 0:
+        return False
+    if len(lst) == 1:
+        return True
+    if len(lst) == 2:
+        return lst[0] == lst[1]
+    return False
+
 
 def match_parenthesis_no_space(lst):
     '''
@@ -38,13 +53,4 @@ def match_parenthesis_no_space(lst):
     Your job is to check if it is possible to concatenate the two strings in
     some order, that the resulting string will be good.
     A string S is considered to be good if and only if all brackets in S
-    are balanced. For example: the string '[[]][]' is good, while the string
-    '[]]' is not.
-    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.
-
-    Examples:
-    match_parenthesis_no_space(['[][', ']']) == 'Yes'
-    match_parenthesis_no_space([']', ']']) == 'No'
-    '''
-
-def match_parenthesis_
+    are balanced. For example

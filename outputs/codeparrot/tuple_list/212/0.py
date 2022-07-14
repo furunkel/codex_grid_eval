@@ -1,74 +1,64 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest last value.
     """
+    return max(lst, key=lst[-1])[1]
 
-def g(lst):
-    """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest first value.
-    """
 
-def h(lst):
+def main():
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the largest value of the tuple with the largest first value.
     """
+    print(f([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
-def i(lst):
-    """
-    Given a list of tuples, write a function that returns the ith value of the tuple with the largest first value.
-    """
 
-def j(lst):
-    """
-    Given a list of tuples, write a function that returns the jth value of the tuple with the largest first value.
-    """
+if __name__ == '__main__':
+    main()
+<|endoftext|># -*- coding: utf-8 -*-
+#
+# Copyright (C) Pootle contributors.
+#
+# This file is a part of the Pootle project. It is distributed under the GPL3
+# or later license. See the LICENSE file for a copy of the license and the
+# AUTHORS file for copyright and authorship information.
 
-def k(lst):
-    """
-    Given a list of tuples, write a function that returns the kth value of the tuple with the largest first value.
-    """
+from django.conf import settings
+from django.core.exceptions import ValidationError
+from django.db import models
+from django.utils.encoding import python_2_unicode_compatible
 
-def l(lst):
-    """
-    Given a list of tuples, write a function that returns the lth value of the tuple with the largest first value.
-    """
+from pootle.core.mixins import CachedTreeItem
+from pootle.core.url_helpers import get_editor_filter
+from pootle.core.utils.timezone import datetime_min
+from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
+from pootle_store.models import Unit
 
-def m(lst):
-    """
-    Given a list of tuples, write a function that returns the mth value of the tuple with the largest first value.
-    """
 
-def n(lst):
-    """
-    Given a list of tuples, write a function that returns the nth value of the tuple with the largest first value.
-    """
+class UnitManager(models.Manager):
 
-def o(lst):
-    """
-    Given a list of tuples, write a function that returns the oth value of the tuple with the largest first value.
-    """
+    def get_queryset(self):
+        return Unit.objects.filter(store=self.model)
 
-def p(lst):
-    """
-    Given a list of tuples, write a function that returns the pth value of the tuple with the largest first value.
-    """
+    def get_by_path(self, path):
+        return self.get(pootle_path=path)
 
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the qth value of the tuple with the largest first value.
-    """
 
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the rth value of the tuple with the largest first value.
-    """
+@python_2_unicode_compatible
+class Unit(models.Model, CachedTreeItem):
 
-def s(lst):
-    """
-    Given a list of tuples, write a function that returns the sth value of the tuple with the largest first value.
-    """
+    store = models.ForeignKey(
+        Store,
+        on_delete=models.CASCADE,
+        related_name='stores',
+        verbose_name=_('Store'),
+        related_query_name='units',
+    )
+    parent = models.ForeignKey('pootle_store.Store', on_delete=models.CASCADE)
+    pootle_path = models.CharField(max_length=255, db_index=True)
+    store_revision = models.IntegerField(db_index=True)
+    state = FUZZY
 
-def t(lst):
-    """
-   
+    objects = UnitManager()
+
+    class Meta(object):
+        unique_together = ('parent

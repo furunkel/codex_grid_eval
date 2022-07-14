@@ -1,39 +1,61 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "mouse" if n < -100 and "small" if n >= -1 (and None if -100 <= n < -1).
     """
+    if n < -100:
+        return "mouse"
+    elif n < -1:
+        return "small"
+    else:
+        return None
 
 def small_or_large_or_small(n):
     """
         Given an integer n, return "mouse" if n < -100 and "small" if n >= -1 (and None if -100 <= n < -1).
     """
+    if n < -100:
+        return "mouse"
+    elif n < -1:
+        return "small"
+    else:
+        return None
 
-def small_or_large_or_small_or_equal(n):
+def small_or_large_or_small_or_large(n):
     """
         Given an integer n, return "mouse" if n < -100 and "small" if n >= -1 (and None if -100 <= n < -1).
     """
+    if n < -100:
+        return "mouse"
+    elif n < -1:
+        return "small"
+    else:
+        return None
 
-def small_or_large_or_small_or_equal_or_equal(n):
+def small_or_large_or_small_or_large_or_small(n):
     """
         Given an integer n, return "mouse" if n < -100 and "small" if n >= -1 (and None if -100 <= n < -1).
     """
+    if n < -100:
+        return "mouse"
+    elif n < -1:
+        return "small"
+    else:
+        return None
 
-def small_or_large_or_small_or_equal_or_equal_or_equal(n):
+def small_or_large_or_small_or_large_or_small(n):
     """
         Given an integer n, return "mouse" if n < -100 and "small" if n >= -1 (and None if -100 <= n < -1).
     """
+    if n < -100:
+        return "mouse"
+    elif n < -1:
+        return "small"
+    else:
+        return None
 
-def small_or_large_or_small_or_equal_or_equal_or_equal_or_equal_or_equal(n):
+def small_or_large_or_small_or_large_or_small(n):
     """
         Given an integer n, return "mouse" if n < -100 and "small" if n >= -1 (and None if -100 <= n < -1).
     """
-
-def small_or_large_or_small_or_equal_or_equal_or_equal_or_equal_or_equal(n):
-    """
-        Given an integer n, return "mouse" if n < -100 and "small" if n >= -1 (and None if -100 <= n < -1).
-    """
-
-def small_or_large_or_small_or_equal_or_equal_or_equal_or_equal_or_equal_or_equal(n):
-    """
-        Given an integer n, return "mouse" if n < -100 and "small" if n >= -1 (and None
+    if n < -100:
+        return "

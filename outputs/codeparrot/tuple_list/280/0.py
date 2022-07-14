@@ -1,58 +1,52 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest last value.
     """
-#    print lst
     return max(lst, key=lst.count)
 
-def fibonacci_with_max(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest value.
-    """
-#    print lst
-    return max(lst, key=lst.count)
 
-def fibonacci_with_min(lst):
+def fibonacci_with_max_value(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest last value.
     """
-#    print lst
-    return min(lst, key=lst.count)
+    return max(lst, key=lst.count)[-1]
 
-def fibonacci_with_sum(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the sum of the values.
-    """
-#    print lst
-    return sum(lst, key=lst.count)
 
-def fibonacci_with_mean(lst):
+def fibonacci_with_min_value(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the mean of the values.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
     """
-#    print lst
-    return mean(lst, key=lst.count)
+    return min(lst, key=lst.count)[0]
 
-def fibonacci_with_std(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the standard deviation of the values.
-    """
-#    print lst
-    return std(lst, key=lst.count)
 
-def fibonacci_with_var(lst):
+def fibonacci_with_max_value_with_min_value(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the variance of the values.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest first value.
     """
-#    print lst
-    return var(lst, key=lst.count)
+    return max(lst, key=lst.count)[-1]
 
-def fibonacci_with_skewness(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the skewness of the values.
-    """
-#    print lst
-    return skewness(lst, key=lst.count)
 
-def fibon
+def fibonacci_with_min_value_with_max_value(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
+    """
+    return min(lst, key=lst.count)[-1]
+
+
+def fibonacci_with_max_value_with_min_value_with_max_value(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest first value.
+    """
+    return max(lst, key=lst.count)[-1]
+
+
+def fibonacci_with_min_value_with_max_value_with_min_value(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
+    """
+    return min(lst, key=lst.count)[-1]
+
+
+def fibonacci_with_max_value_with_min_value_with_max_value(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple

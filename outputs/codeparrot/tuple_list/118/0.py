@@ -1,57 +1,61 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
     """
-#    print(lst)
     return max(lst, key=lst.count)
 
-def fibonacci_2(lst):
+
+def fibonacci_with_max(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
     """
     return max(lst, key=lst.count)
 
-def fibonacci_3(lst):
+
+def fibonacci_with_min(lst):
+    """
+    Given a list of tuples, write a function that returns the second value of the tuple with the smallest twelfth value.
+    """
+    return min(lst, key=lst.count)
+
+
+def fibonacci_with_mean(lst):
+    """
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
+    """
+    return sum(lst)/len(lst)
+
+
+def fibonacci_with_std(lst):
+    """
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
+    """
+    return math.sqrt(sum(lst)/len(lst))
+
+
+def fibonacci_with_median(lst):
+    """
+    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
+    """
+    return math.median(lst)
+
+
+def fibonacci_with_mode(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
     """
     return max(lst, key=lst.count)
 
-def fibonacci_4(lst):
+
+def fibonacci_with_mean_mode(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
     """
-    return max(lst, key=lst.count)
+    return math.mean(lst)/len(lst)
 
-def fibonacci_5(lst):
+
+def fibonacci_with_std_mode(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
     """
-    return max(lst, key=lst.count)
-
-def fibonacci_6(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
-    """
-    return max(lst, key=lst.count)
-
-def fibonacci_7(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
-    """
-    return max(lst, key=lst.count)
-
-def fibonacci_8(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
-    """
-    return max(lst, key=lst.count)
-
-def fibonacci_9(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest twelfth value.
-    """
-    return max(lst, key=lst.count)
-
-def f
+    return math.std(lst)/

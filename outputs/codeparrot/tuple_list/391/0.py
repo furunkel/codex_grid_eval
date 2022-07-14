@@ -1,58 +1,54 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest third value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return max(lst, key=lst.count)[0]
 
-def tuple_extract_with_max(lst):
+
+def tuple_concat(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest third value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)[-1]
+    return tuple(lst[0] for lst in lst[1:])
 
-def tuple_extract_with_min(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the smallest third value.
-    """
-#    print(lst)
-    return min(lst, key=lst.count)[-1]
 
-def tuple_extract_with_sum(lst):
+def tuple_slice(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest third value.
     """
-#    print(lst)
-    return sum(lst, key=lst.count)[-1]
+    return tuple(lst[i:i + stop] for i in range(start, stop))
 
-def tuple_extract_with_count(lst):
+
+def tuple_slice_list(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest third value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)[-1]
+    return tuple(lst[i:i + stop] for i in range(start, stop))
 
-def tuple_extract_with_sum_with_min(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the smallest third value.
-    """
-#    print(lst)
-    return min(lst, key=lst.count)[-1]
 
-def tuple_extract_with_count_with_min(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the smallest third value.
-    """
-#    print(lst)
-    return min(lst, key=lst.count)[-1]
-
-def tuple_extract_with_sum_with_max(lst):
+def tuple_slice_list_of_lists(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the largest third value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)[-1]
+    return tuple(lst[i:i + stop] for i in range(start, stop))
 
-def tuple_extract_with_count_
+
+def tuple_slice_list_of_lists_of_lists(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest third value.
+    """
+    return tuple(lst[i:i + stop] for i in range(start, stop))
+
+
+def tuple_slice_list_of_lists_of_lists_of_lists(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest third value.
+    """
+    return tuple(lst[i:i + stop] for i in range(start, stop))
+
+
+def tuple_slice_list_of_lists_of_lists_of_lists(lst, start, stop):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest third value.
+    """
+    return tuple(lst[i:i + stop] for i

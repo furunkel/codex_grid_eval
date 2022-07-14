@@ -1,4 +1,3 @@
-
 def quadruples_sum_to_one(l: list):
     """
     quadruples_sum_to_one takes a list of integers as an input.
@@ -8,6 +7,10 @@ def quadruples_sum_to_one(l: list):
     >>> quadruples_sum_to_one([1, 3, 5, 0])
     False
     """
+    if len(l) == 0:
+        return False
+    return sum(l) == len(set(l))
+
 
 def quadruples_sum_to_two(l: list):
     """
@@ -18,6 +21,10 @@ def quadruples_sum_to_two(l: list):
     >>> quadruples_sum_to_two([1, 3, 5, 0])
     True
     """
+    if len(l) == 0:
+        return False
+    return sum(l) == len(set(l))
+
 
 def quadruples_sum_to_three(l: list):
     """
@@ -28,6 +35,10 @@ def quadruples_sum_to_three(l: list):
     >>> quadruples_sum_to_three([1, 3, 5, 0])
     True
     """
+    if len(l) == 0:
+        return False
+    return sum(l) == len(set(l))
+
 
 def quadruples_sum_to_four(l: list):
     """
@@ -38,21 +49,13 @@ def quadruples_sum_to_four(l: list):
     >>> quadruples_sum_to_four([1, 3, 5, 0])
     True
     """
+    if len(l) == 0:
+        return False
+    return sum(l) == len(set(l))
+
 
 def quadruples_sum_to_five(l: list):
     """
     quadruples_sum_to_five takes a list of integers as an input.
     it returns True if there are 4 distinct elements in the list that
-    sum to five, and False otherwise.
-
-    >>> quadruples_sum_to_five([1, 3, 5, 0])
-    True
-    """
-
-def quadruples_sum_to_six(l: list):
-    """
-    quadruples_sum_to_six takes a list of integers as an input.
-    it returns True if there are 4 distinct elements in the list that
-    sum to six, and False otherwise.
-
-    >>> quadruples_sum_to
+    sum to five, and False otherwise

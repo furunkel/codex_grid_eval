@@ -1,64 +1,59 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
     """
+    return max(lst, key=lst.count)[0]
 
-def fibonacci_2(lst):
+
+def fibonacci_with_max(lst):
+    """
+    Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
+    """
+    return max(lst, key=lst.count)[0]
+
+
+def fibonacci_with_min(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
     """
+    return min(lst, key=lst.count)[0]
 
-def fibonacci_3(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
-    """
 
-def fibonacci_4(lst):
+def fibonacci_with_sum(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the sum of the values.
     """
+    return sum(lst, key=lst.count)[0]
 
-def fibonacci_5(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
-    """
 
-def fibonacci_6(lst):
+def fibonacci_with_mean(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the mean of the values.
     """
+    return sum(lst, key=lst.count)[0]
 
-def fibonacci_7(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
-    """
 
-def fibonacci_8(lst):
+def fibonacci_with_std(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the standard deviation of the values.
     """
+    return math.sqrt(sum(lst, key=lst.count)[0])
 
-def fibonacci_9(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
-    """
 
-def fibonacci_10(lst):
+def fibonacci_with_var(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the variance of the values.
     """
+    return math.sqrt(sum(lst, key=lst.count)[0] / len(lst))
 
-def fibonacci_11(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
-    """
 
-def fibonacci_12(lst):
+def fibonacci_with_median(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the median of the values.
     """
+    return math.median(lst, key=lst.count)[0]
 
-def fibonacci_13(lst):
+
+def fibonacci_with_min_max(lst):
     """
-    Given a list of tuples, write
+    Given a list of tuples, write a function that returns the third value of the tuple with the minimum and

@@ -1,4 +1,3 @@
-
 def solve(s):
     """You are given a string s.
     if s[i] is a letter, reverse its case from lower to upper or vise versa, 
@@ -11,10 +10,19 @@ def solve(s):
     solve("ab") = "AB"
     solve("#a@C") = "#A@c"
     """
+    if not s:
+        return s
+    if s[0] == s[-1] == '"':
+        return s[1:-1]
+    else:
+        return s
+
 
 def main():
     """The main function"""
-    print(solve("ab"))
+    s = solve("1234")
+    print(s)
+
 
 if __name__ == "__main__":
     main()
@@ -30,37 +38,18 @@ from django.conf import settings
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.functional import cached_property
+from django.utils.translation import ugettext_lazy as _
 
 from pootle.core.url_helpers import get_editor_filter
 from pootle.core.utils.timezone import datetime_min
-from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
+from pootle_store.constants import FUZZY, TRANSLATED
 from pootle_store.models import Unit
-
-
-class UnitManager(models.Manager):
-
-    def get_queryset(self):
-        return Unit.objects.filter(store=self.model)
-
-    def get_by_path(self, path):
-        return self.get(translation_project__language=path)
-
-
-class Unit(models.Model, base.TranslationUnit):
-    """A single unit in a store."""
-
-    store = models.ForeignKey(
-        Store,
-        related_name='stores',
-        on_delete=models.CASCADE,
-    )
-    parent = models.ForeignKey('pootle_store.Store', related_name='children', null=True)
-    translation_project = models.ForeignKey(
-        TranslationProject,
-        related_name='stores',
-        on_delete=models.CASCADE,
-    )
-    language = models.CharField(max_length=10, db_index=True)
-    project = models.ForeignKey(
-        Project,
-        related_name
+from pootle_store.util import absolute_real_path
+from pootle_store.util import TRANSLATED_STATUSES, TRANSLATED_FOLLOWERS
+from pootle_store.util import TRANSLATED_FOLLOWERS_NAMES
+from pootle_store.util import get_translation_project
+from pootle_store.util import TRANSLATED_LANGUAGES
+from pootle_store.util import get_translation_project_dir
+from pootle_store.util import get_translation_project_dir_path
+from pootle_store.util import get_translation_project_translation_project_dir
+from pootle_store.util import get_translation

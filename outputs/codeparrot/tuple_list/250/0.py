@@ -1,59 +1,59 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
     """
+    return max(lst, key=lst.count)[1]
 
-def fibonacci_2(lst):
+
+def fibonacci_with_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
     """
+    return max(lst, key=lst.count)[1]
 
-def fibonacci_3(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
-    """
 
-def fibonacci_4(lst):
+def fibonacci_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest third value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_5(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
-    """
 
-def fibonacci_6(lst):
+def fibonacci_with_avg(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the average of the values.
     """
+    return sum(lst)/len(lst)
 
-def fibonacci_7(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
-    """
 
-def fibonacci_8(lst):
+def fibonacci_with_std(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the standard deviation.
     """
+    return math.sqrt(sum(lst))/len(lst)
 
-def fibonacci_9(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
-    """
 
-def fibonacci_10(lst):
+def fibonacci_with_var(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the variance of the values.
     """
+    return math.sqrt(sum(lst))/len(lst)
 
-def fibonacci_11(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
-    """
 
-def fibonacci_12(lst):
+def fibonacci_with_skewness(lst):
     """
-    Given a list of tuples, write a function that returns the twelf
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the skewness.
+    """
+    return math.sqrt(sum(lst))/len(lst)
+
+
+def fibonacci_with_kurtosis(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the kurtosis.
+    """
+    return math.sqrt(sum(lst))/len(lst)
+
+
+def fibonacci_with_skewness_kurtosis(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the

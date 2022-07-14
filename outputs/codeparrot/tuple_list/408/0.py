@@ -1,57 +1,54 @@
-
 def extract_value(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return max(lst, key=lambda x: x[1])[0]
 
-def find_max_value(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the largest eleventh value.
-    """
-    return max(lst, key=lst.count)
 
-def find_min_value(lst):
+def get_value(lst):
     """
     Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
     """
-    return min(lst, key=lst.count)
+    return max(lst, key=lambda x: x[1])[1]
 
-def find_median_value(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the median eleventh value.
-    """
-    return median(lst, key=lst.count)
 
-def find_variance(lst):
+def get_value_from_list(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the variance of the tuple.
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
     """
-    return variance(lst, key=lst.count)
+    return max(lst, key=lambda x: x[1])[1]
 
-def find_variance_of_list(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the variance of the list.
-    """
-    return variance(lst, key=lst.count)
 
-def find_variance_of_list_of_lists(lst):
+def get_value_from_list_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the variance of the list.
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
     """
-    return variance(lst, key=lst.count)
+    return min(lst, key=lambda x: x[1])[1]
 
-def find_variance_of_list_of_lists_of_lists(lst):
-    """
-    Given a list of tuples, write a function that returns the last value of the tuple with the variance of the list.
-    """
-    return variance(lst, key=lst.count)
 
-def find_variance_of_list_of_lists_of_lists(lst):
+def get_value_from_list_with_min_max_with_min_min(lst):
     """
-    Given a list of tuples, write a function that returns the last value of the tuple with the variance of the list.
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
     """
-    return variance(lst, key=lst.count)
+    return min(lst, key=lambda x: x[1])[1]
 
-def find_variance_of_list
+
+def get_value_from_list_with_min_max_with_min_min(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
+    """
+    return min(lst, key=lambda x: x[1])[1]
+
+
+def get_value_from_list_with_min_max_with_min_min(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
+    """
+    return min(lst, key=lambda x: x[1])[1]
+
+
+def get_value_from_list_with_min_max_with_min_min(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the smallest eleventh value.
+    """
+    return min(lst

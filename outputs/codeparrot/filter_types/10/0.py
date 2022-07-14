@@ -1,36 +1,57 @@
-
 def filter_tuples(values: List[Any]) -> List[Tuple]:
     """ Filter given list of any python values only for tuples
     >>> filter_tuples(['a', 3.14, 5])
     []
     """
-<|endoftext|># -*- coding: utf-8 -*-
-#
-# Copyright (C) Pootle contributors.
-#
-# This file is a part of the Pootle project. It is distributed under the GPL3
-# or later license. See the LICENSE file for a copy of the license and the
-# AUTHORS file for copyright and authorship information.
+    return [tuple(value) for value in values if value]
 
-from django.conf import settings
-from django.core.exceptions import ValidationError
-from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
 
-from pootle.core.delegate import revision
-from pootle.core.url_helpers import split_pootle_path
-from pootle.core.utils.timezone import make_aware
-from pootle_misc.util import datetime_min
-from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
-from pootle_store.models import Unit
-from pootle_store.util import absolute_real_path, relative_real_path
-from pootle_store.util import relative_to_dir
-from pootle_store.util import statsd
-from pootle_store.util.stats import (
-    get_total_changes, get_total_words, get_total_changes_wordcount,
-    get_total_changes_wordcount_wordcount, get_total_changes_wordcount_wordcount,
-    get_total_changes_wordcount_wordcount_wordcount, get_total_changes_wordcount_wordcount_wordcount,
-    get_total_changes_wordcount_wordcount_wordcount, get_total_changes_wordcount_wordcount_wordcount,
-    get_total_changes_wordcount_wordcount_wordcount_wordcount, get_total_changes_wordcount_wordcount_wordcount_wordcount,
-    get_total_changes_wordcount_wordcount_wordcount_wordcount, get_total_changes_wordcount_wordcount_wordcount_wordcount,
-    get_total_changes_wordcount_wordcount_wordcount_wordcount, get_total_changes_wordcount_
+def filter_dicts(values: List[Any]) -> List[Dict]:
+    """ Filter given list of any python values only for dicts
+    >>> filter_dicts(['a', 3.14, 5])
+    {'a': 3.14, 'b': 5}
+    """
+    return [dict(value) for value in values if value]
+
+
+def filter_lists(values: List[Any]) -> List[List[Any]]:
+    """ Filter given list of any python values only for lists
+    >>> filter_lists(['a', 3.14, 5])
+    ['a', 3.14, 5]
+    """
+    return [list(value) for value in values if value]
+
+
+def filter_none(values: List[Any]) -> List[Any]:
+    """ Filter given list of any python values only for lists
+    >>> filter_none(['a', 3.14, 5])
+    []
+    """
+    return [value for value in values if value]
+
+
+def filter_none_or_str(values: List[Any]) -> List[Any]:
+    """ Filter given list of any python values only for lists
+    >>> filter_none_or_str(['a', 3.14, 5])
+    ['a', 3.14, 5]
+    """
+    return [value for value in values if value]
+
+
+def filter_none_or_list(values: List[Any]) -> List[Any]:
+    """ Filter given list of any python values only for lists
+    >>> filter_none_or_list(['a', 3.14, 5])
+    ['a', 3.14, 5]
+    """
+    return [value for value in values if value]
+
+
+def filter_none_or_dict(values: List[Any]) -> List[Any]:
+    """ Filter given list of any python values only for dicts
+    >>> filter_none_or_dict(['a', 3.14, 5])
+    {'a': 3.14, 'b': 5}
+    """
+    return [value for value in values if value]
+
+
+def filter_none_or_none(values: List[Any]) -> List[

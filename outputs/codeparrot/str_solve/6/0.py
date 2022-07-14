@@ -1,4 +1,3 @@
-
 def solve(s):
     """You are given a string s.
     if s[i] is a vowel, reverse its case from lower to upper or vise versa, 
@@ -11,40 +10,45 @@ def solve(s):
     solve("ab") = "Ab"
     solve("#a@C") = "#A@C"
     """
+    if not s:
+        return ""
+    if len(s) == 1:
+        return s[0]
+    if s[0] == s[-1]:
+        return s[1:]
+    return s
+
 
 def main():
-    pass
+    """The main function."""
+    print(solve("ab"))
+
 
 if __name__ == "__main__":
     main()
-<|endoftext|># Copyright (c) 2012 The Chromium Authors. All rights reserved.
-# Use of this source code is governed by a BSD-style license that can be
-# found in the LICENSE file.
+<|endoftext|># -*- coding: utf-8 -*-
+#
+# Copyright (C) Pootle contributors.
+#
+# This file is a part of the Pootle project. It is distributed under the GPL3
+# or later license. See the LICENSE file for a copy of the license and the
+# AUTHORS file for copyright and authorship information.
 
-"""Top-level presubmit script for Chromium.
+from django.conf import settings
+from django.contrib.auth import get_user_model
+from django.core.exceptions import ObjectDoesNotExist
+from django.db import models
+from django.utils.functional import cached_property
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
-for more details on the presubmit API built into gcl.
-"""
-
-import os
-import re
-import sys
-
-_EXCLUDED_PATHS = (
-    r"^breakpad[\\\/].*",
-    r"^native_client_sdk[\\\/]src[\\\/]build_tools[\\\/]make_rules.py",
-    r"^native_client_sdk[\\\/]src[\\\/]tools[\\\/].*.mk",
-    r"^net[\\\/]tools[\\\/]spdyshark[\\\/].*",
-    r"^skia[\\\/].*",
-    r"^v8[\\\/].*",
-    r".*MakeFile$",
-    r".+_autogen\.h$",
-    r"^remoting[\\\/].*",
-    r".+[\\\/]pnacl_shim\.c$",
-    r"^sandbox[\\\/]tools[\\\/]ppapi[\\\/].*",
-    r"^tools[\\\/]ppapi[\\\/]ppapi_ppapi_shim\.c$",
-    r"^tools[\\\/]ppapi[\\\/]ppapi_shim_shim\.c$",
-    r"^v8_stuff[\\\/].*",
-    r".+_autogen\.h$",
-    r"^v8_stuff[\\\/]ppapi[\\\/]ppapi_p
+from pootle.core.delegate import revision
+from pootle.core.url_helpers import split_pootle_path
+from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
+from pootle_store.models import Unit
+from pootle_store.util import absolute_real_path, relative_real_path
+from pootle_store.util import absolute_real_path_in_pootle_store
+from pootle_store.util import relative_real_path_in_pootle_store
+from pootle_store.util import relative_real_path_in_template_store
+from pootle_store.util import relative_real_path_in_template_store
+from pootle_store.util import relative_real_path_in_store
+from pootle_store.util import relative_real_path_in_user_store
+from pootle

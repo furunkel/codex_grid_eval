@@ -1,4 +1,3 @@
-
 def solve(s):
     """You are given a string s.
     if s[i] is a consonant, reverse its case from lower to upper or vise versa, 
@@ -11,39 +10,48 @@ def solve(s):
     solve("ab") = "aB"
     solve("#a@C") = "#a@c"
     """
+    if not s:
+        return s
+    if s[0] == s[-1] == '"':
+        return s[1:-1]
+    else:
+        return s
+
 
 def main():
-    pass
+    """The main function"""
+    s = solve("aBc")
+    print(s)
+
 
 if __name__ == "__main__":
     main()
-<|endoftext|># -*- coding: utf-8 -*-
-#
-# Copyright (C) Pootle contributors.
-#
-# This file is a part of the Pootle project. It is distributed under the GPL3
-# or later license. See the LICENSE file for a copy of the license and the
-# AUTHORS file for copyright and authorship information.
+<|endoftext|># Copyright (c) 2012 The Chromium Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
 
-from django.conf import settings
-from django.core.urlresolvers import reverse
-from django.db import models
-from django.utils.functional import cached_property
+"""Top-level presubmit script for Chromium.
 
-from pootle.core.url_helpers import get_editor_filter
-from pootle.core.utils.timezone import datetime_min
-from pootle_store.constants import FUZZY, TRANSLATED
-from pootle_store.models import Unit
-from pootle_store.util import absolute_real_path
-from pootle_store.util import TRANSLATED_STATUSES, TRANSLATED_FREQUENCIES
-from pootle_store.util import TRANSLATED_FREQUENCIES_MAP
-from pootle_store.util import TRANSLATED_LANGUAGES
-from pootle_store.util import TRANSLATED_FOLDERS
-from pootle_store.util import UNTRANSLATED
-from pootle_store.util import TRANSLATED_FOLDERS_MAP
-from pootle_store.util import UNTRANSLATED_LANGUAGES_MAP
-from pootle_store.util import UNTRANSLATED_FOLDERS_MAP
-from pootle_store.util import UNTRANSLATED_LANGUAGES_MAP
-from pootle_store.util import UNTRANSLATED_FOLDERS_MAP
-from pootle_store.util import UNTRANSLATED_FOLDERS_MAP
-from pootle
+See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+for more details on the presubmit API built into gcl.
+"""
+
+import os
+import re
+import sys
+
+_EXCLUDED_PATHS = (
+    r"^breakpad[\\\/].*",
+    r"^native_client_sdk[\\\/]src[\\\/]build_tools[\\\/]make_rules.py",
+    r"^native_client_sdk[\\\/]src[\\\/]build_tools[\\\/]make_simple.py",
+    r"^net[\\\/]tools[\\\/]spdyshark[\\\/].*",
+    r"^skia[\\\/].*",
+    r"^v8[\\\/].*",
+    r".*MakeFile$",
+    r".+_autogen\.h$",
+    r".+[\\\/]pnacl_shim\.c$",
+    r".+[\\\/]pnacl_shim_dev\.c$",
+    r".+[\\\/]pnacl_shim_dev\.h$",
+    r".+[\\\/]pnacl_shim_dev\.cc$",
+    r".+[\\\/]pnacl_shim_dev\.h$",
+    r

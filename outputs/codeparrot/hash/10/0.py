@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its MD5 hash equivalent string.
@@ -6,64 +5,69 @@ def string_to_hash(text):
 
     >>> string_to_hash('sha1') == '74a89174426b40307102e165374ab8ab'
     """
+    if not text:
+        return None
+    text = text.strip()
+    if len(text) == 0:
+        return None
+    return hashlib.md5(text).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its integer equivalent integer.
-    If 'text' is an empty string, return None.
+    Calculate the MD5 hash for a file.
 
-    >>> string_to_int('0') == 0
-    True
+    :param filename: Path to the file.
+    :param block_size: Block size to use when reading.
+    :returns: MD5 hash of file contents.
     """
+    md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            md5.update(data)
+    return md5.hexdigest()
 
-def string_to_float(text):
+
+def get_file_contents(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its float equivalent float.
-    If 'text' is an empty string, return None.
+    Calculate the MD5 hash for a file.
 
-    >>> string_to_float('0.5') == 0.5
-    True
+    :param filename: Path to the file.
+    :param block_size: Block size to use when reading.
+    :returns: MD5 hash of file contents.
     """
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            md5.update(data)
+    return md5.hexdigest()
 
-def string_to_bool(text):
+
+def compute_md5(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its boolean equivalent boolean.
-    If 'text' is an empty string, return None.
+    Compute MD5 hash for a file.
 
-    >>> string_to_bool('true') == True
-    True
+    :param filename: Path to the file.
+    :param block_size: Block size to use when reading.
+    :returns: MD5 hash of file contents.
     """
+    md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            md5.update(data)
+    return md5.hexdigest()
 
-def string_to_datetime(text):
+
+def get_hash_str(data):
     """
-    Given a string 'text', return its datetime equivalent datetime.
-    If 'text' is an empty string, return None.
+    Compute a MD5 hash for a string.
 
-    >>> string_to_datetime('2015-01-01T00:00:00') == datetime.datetime(2015, 1, 1, 0, 0)
-    True
-    """
-
-def string_to_date(text):
-    """
-    Given a string 'text', return its date equivalent datetime.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_date('2015-01-01') == datetime.date(2015, 1, 1)
-    True
-    """
-
-def string_to_time(text):
-    """
-    Given a string 'text', return its time equivalent datetime.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time('2015-01-01T00:00:00') == datetime.time(12, 0, 0)
-    True
-    """
-
-def string_to_datetime_with_timezone(text):
-    """
-    Given a string 'text', return its datetime equivalent datetime.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_datetime
+    :param data: String to compute the MD5 hash

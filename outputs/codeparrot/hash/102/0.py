@@ -1,77 +1,76 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha-512 hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if text is None:
+        return None
+    return hashlib.sha512(text.encode('utf-8')).hexdigest()
 
-def hash_to_string(hash):
-    """
-    Given a string 'hash', return its string representation.
-    If 'hash' is an empty string, return None.
-    """
 
-def string_to_int(text):
+def get_file_hash(filename):
     """
-    Given a string 'text', return its int representation.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha-512 hash equivalent string.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    return hashlib.sha512(filename.encode('utf-8')).hexdigest()
 
-def int_to_string(int):
-    """
-    Given a string 'int', return its string representation.
-    If 'int' is an empty string, return None.
-    """
 
-def string_to_bool(text):
+def get_file_contents(filename):
     """
-    Given a string 'text', return its bool representation.
-    If 'text' is an empty string, return None.
+    Given a filename, return its contents as a string.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    with open(filename, 'r') as f:
+        return f.read()
 
-def bool_to_string(bool):
-    """
-    Given a string 'bool', return its string representation.
-    If 'bool' is an empty string, return None.
-    """
 
-def string_to_list(text):
+def get_file_lines(filename):
     """
-    Given a string 'text', return its list representation.
-    If 'text' is an empty string, return None.
+    Given a filename, return its lines as a list of strings.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    with open(filename, 'r') as f:
+        return f.readlines()
 
-def list_to_string(list):
-    """
-    Given a string 'list', return its string representation.
-    If 'list' is an empty string, return None.
-    """
 
-def string_to_dict(text):
+def get_file_lines_with_hashes(filename):
     """
-    Given a string 'text', return its dict representation.
-    If 'text' is an empty string, return None.
+    Given a filename, return its lines as a list of strings.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    with open(filename, 'r') as f:
+        return f.readlines()
 
-def dict_to_string(dict):
-    """
-    Given a string 'dict', return its string representation.
-    If 'dict' is an empty string, return None.
-    """
 
-def string_to_int(text):
+def get_file_lines_with_hashes_and_lines(filename):
     """
-    Given a string 'text', return its int representation.
-    If 'text' is an empty string, return None.
+    Given a filename, return its lines as a list of strings.
+    If 'filename' is an empty string, return None.
     """
+    if filename is None:
+        return None
+    with open(filename, 'r') as f:
+        return f.readlines()
 
-def int_to_string(int):
-    """
-    Given a string 'int', return its string representation.
-    If 'int' is an empty string, return None.
-    """
 
-def string_to_bool(text):
+def get_file_lines_with_hashes_and_lines_with_hashes(filename):
     """
-    Given a string 'text', return its bool representation.
-    If 'text
+    Given a filename, return its lines as a list of strings.
+    If 'filename' is an empty string, return None.
+    """
+    if filename is None:
+        return None
+    with open(filename, 'r') as f:
+        return f.readlines()
+
+
+def get_file_lines_

@@ -1,51 +1,52 @@
-
 def extract_value(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
     """
-#    print(lst)
-    if len(lst) == 0:
-        return None
-    return max(lst, key=lambda x: x[1])[0]
+    return max(lst, key=lst.count)[1]
 
-def get_value(lst):
+
+def get_twelfth_value(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
     """
-    return max(lst, key=lambda x: x[1])[1]
+    return max(lst, key=lst.count)[0]
 
-def get_value_from_list(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
-    """
-    return max(lst, key=lambda x: x[1])[1]
 
-def get_value_from_list_with_max(lst):
+def get_twelfth_value_with_highest_value(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the highest value.
     """
-    return max(lst, key=lambda x: x[1])[1]
+    return max(lst, key=lst.count)[-1]
 
-def get_value_from_list_with_min(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest third value.
-    """
-    return min(lst, key=lambda x: x[1])[1]
 
-def get_value_from_list_with_mean(lst):
+def get_twelfth_value_with_lowest_value(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the lowest value.
     """
-    return mean(lst, key=lambda x: x[1])[1]
+    return min(lst, key=lst.count)[-1]
 
-def get_value_from_list_with_std(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
-    """
-    return std(lst, key=lambda x: x[1])[1]
 
-def get_value_from_list_with_median(lst):
+def get_twelfth_value_with_highest_value_with_lowest_value(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the highest value.
     """
-    return median(lst, key=lambda x:
+    return max(lst, key=lst.count)[-1]
+
+
+def get_twelfth_value_with_lowest_value_with_highest_value_with_lowest_value(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the lowest value.
+    """
+    return min(lst, key=lst.count)[-1]
+
+
+def get_twelfth_value_with_lowest_value_with_highest_value_with_lowest_value(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the lowest value.
+    """
+    return max(lst, key=lst.count)[-1]
+
+
+def get_twelfth_value_with_lowest_value_with_highest_value_with_lowest_value(lst):
+    """
+    Given a list of tuples, write a

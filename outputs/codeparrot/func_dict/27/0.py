@@ -1,4 +1,3 @@
-
 def generate_dict(n):
     """
     With a given integral number n, write a program to generate a dictionary that contains (i, i**2) such that
@@ -10,11 +9,11 @@ def generate_dict(n):
     {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 
     """
-#    n = int(n)
-    if n < 1:
-        return {}
-    else:
-        return generate_dict(n-1)
+    d = {}
+    for i in range(1, n + 1):
+        d[i] = i
+    return d
+
 
 def generate_list(n):
     """
@@ -27,11 +26,11 @@ def generate_list(n):
     [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
     """
-#    n = int(n)
-    if n < 1:
-        return []
-    else:
-        return generate_list(n-1)
+    l = []
+    for i in range(1, n + 1):
+        l.append(i)
+    return l
+
 
 def generate_dict_of_lists(n):
     """
@@ -44,11 +43,11 @@ def generate_dict_of_lists(n):
     {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 
     """
-#    n = int(n)
-    if n < 1:
-        return {}
-    else:
-        return generate_dict_of_lists(n-1)
+    d = {}
+    for i in range(1, n + 1):
+        d[i] = i
+    return d
+
 
 def generate_list_of_dicts(n):
     """
@@ -58,4 +57,8 @@ def generate_list_of_dicts(n):
     Suppose the following input is supplied to the function:
     5
     Then, the output should be:
-    {1: 1, 2: 4,
+    {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+    """
+    l = []
+    for

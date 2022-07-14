@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its SHA384 hash equivalent string.
@@ -6,64 +5,39 @@ def string_to_hash(text):
 
     >>> string_to_hash('Hello world') == '9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'
     """
+    if not text:
+        return None
+    return hashlib.sha384(text.encode('utf-8')).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its SHA384 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_int('Hello world') == 0
-    True
+    >>> get_file_hash('hello.txt') == '9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'
     """
+    if not filename:
+        return None
+    return hashlib.sha384(filename.encode('utf-8')).hexdigest()
 
-def int_to_string(i):
+
+def get_file_contents(filename):
     """
-    Given an integer 'i', return its string equivalent string.
-    If 'i' is an empty string, return None.
+    Given a filename, return its contents as a string.
+    If 'filename' is an empty string, return None.
 
-    >>> int_to_string(0) == ''
-    True
+    >>> get_file_contents('hello.txt') == '9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1d298ff360627e1'
     """
+    if not filename:
+        return None
+    with open(filename, 'r') as f:
+        return f.read()
 
-def string_to_bool(text):
+
+def get_file_lines(filename):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its lines as a list of strings.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_bool('Hello world') == 'true'
-    True
-    """
-
-def bool_to_string(b):
-    """
-    Given a string 'b', return its string equivalent string.
-    If 'b' is an empty string, return None.
-
-    >>> bool_to_string(True) == 'true'
-    True
-    """
-
-def string_to_int_list(text):
-    """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_int_list('Hello world') == []
-    True
-    """
-
-def int_to_string_list(i):
-    """
-    Given an integer 'i', return its list equivalent string.
-    If 'i' is an empty string, return None.
-
-    >>> int_to_string_list(0) == []
-    True
-    """
-
-def string_to_int_dict(text):
-    """
-    Given a string 'text', return its dict equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_int_dict('Hello world') ==
+    >>> get_file_lines('hello.txt') == ['9203b0c4439fd1e6ae5878866337b7c532acd6d9260150c80318e8ab8c27ce330189f8df94fb890df1

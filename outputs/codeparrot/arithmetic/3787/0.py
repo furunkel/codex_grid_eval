@@ -1,4 +1,3 @@
-
 def make_tuple(b, fekjfwoeifjwu5gfd):
     """
     Given two integers b and fekjfwoeifjwu5gfd, return a tuple where:
@@ -6,6 +5,8 @@ def make_tuple(b, fekjfwoeifjwu5gfd):
     The second element contains the product of the two numbers.
     The third element contains the difference of the two numbers (first - second).
     """
+    return (b + fekjfwoeifjwu5gfd) * 2
+
 
 def make_list(b, fekjfwoeifjwu5gfd):
     """
@@ -14,6 +15,8 @@ def make_list(b, fekjfwoeifjwu5gfd):
     The second element contains the product of the two numbers.
     The third element contains the difference of the two numbers (first - second).
     """
+    return [b + fekjfwoeifjwu5gfd] * 2
+
 
 def make_set(b, fekjfwoeifjwu5gfd):
     """
@@ -22,6 +25,8 @@ def make_set(b, fekjfwoeifjwu5gfd):
     The second element contains the product of the two numbers.
     The third element contains the difference of the two numbers (first - second).
     """
+    return set(b + fekjfwoeifjwu5gfd)
+
 
 def make_string(b, fekjfwoeifjwu5gfd):
     """
@@ -30,6 +35,8 @@ def make_string(b, fekjfwoeifjwu5gfd):
     The second element contains the product of the two numbers.
     The third element contains the difference of the two numbers (first - second).
     """
+    return b + fekjfwoeifjwu5gfd
+
 
 def make_tuple_string(b, fekjfwoeifjwu5gfd):
     """
@@ -38,9 +45,4 @@ def make_tuple_string(b, fekjfwoeifjwu5gfd):
     The second element contains the product of the two numbers.
     The third element contains the difference of the two numbers (first - second).
     """
-
-def make_set_string(b, fekjfwoeifjwu5gfd):
-    """
-    Given two integers b and fekjfwoeifjwu5gfd, return a set string where:
-    The first element contains the sum of the two numbers.
-    The second element contains the product of the two
+   

@@ -1,38 +1,56 @@
-
 def all_suffixes(string: str) -> List[str]:
     """ Return list of all prefixes from shortest to longest of the input string
     >>> all_suffixes('prefix')
     ['x', 'ix', 'fix', 'efix', 'refix', 'prefix']
     """
+    prefixes = []
+    for prefix in string.split():
+        prefixes.append(prefix)
+        if len(prefixes) > 1:
+            break
+    return prefixes
 
-def all_suffixes_with_prefix(string: str) -> List[str]:
-    """ Return list of all prefixes from shortest to longest of the input string
-    >>> all_suffixes_with_prefix('prefix')
-    ['x', 'ix', 'fix', 'efix', 'prefix']
-    """
 
-def all_suffixes_with_suffix(string: str) -> List[str]:
+def get_all_suffixes(string: str) -> List[str]:
     """ Return list of all suffixes from shortest to longest of the input string
-    >>> all_suffixes_with_suffix('suffix')
-    ['x', 'ix', 'fix', 'efix', 'prefix']
+    >>> get_all_suffixes('prefix')
+    ['x', 'ix', 'fix', 'efix', 'refix', 'prefix']
     """
+    suffixes = []
+    for suffix in string.split():
+        suffixes.append(suffix)
+        if len(suffixes) > 1:
+            break
+    return suffixes
 
-def all_suffixes_with_prefix_and_suffix(string: str, prefix: str, suffix: str) -> List[str]:
+
+def get_all_suffixes_with_prefix(string: str, prefix: str) -> List[str]:
     """ Return list of all suffixes from shortest to longest of the input string
-    >>> all_suffixes_with_prefix_and_suffix('prefix', prefix, suffix)
-    ['x', 'ix', 'fix', 'efix', 'prefix', 'suffix']
+    >>> get_all_suffixes_with_prefix('prefix', 'x')
+    ['x', 'ix', 'fix', 'efix', 'refix', 'prefix']
     """
+    suffixes = []
+    for suffix in string.split():
+        suffixes.append(suffix)
+        if len(suffixes) > 1:
+            break
+    return suffixes
 
-def all_suffixes_with_suffix_and_prefix(string: str, prefix: str, suffix: str) -> List[str]:
+
+def get_all_suffixes_with_suffix(string: str, suffix: str) -> List[str]:
     """ Return list of all suffixes from shortest to longest of the input string
-    >>> all_suffixes_with_suffix_and_prefix('suffix', prefix, suffix)
-    ['x', 'ix', 'fix', 'efix', 'prefix', 'suffix']
+    >>> get_all_suffixes_with_suffix('prefix', 'x')
+    ['x', 'ix', 'fix', 'efix', 'refix', 'prefix']
     """
+    suffixes = []
+    for suffix in string.split():
+        suffixes.append(suffix)
+        if len(suffixes) > 1:
+            break
+    return suffixes
 
-def all_suffixes_with_prefix_and_suffix_and_prefix(string: str, prefix: str, suffix: str, prefix_suffix: str) -> List[str]:
+
+def get_all_suffixes_with_prefix_and_suffix(string: str, prefix: str, suffix: str) -> List[str]:
     """ Return list of all suffixes from shortest to longest of the input string
-    >>> all_suffixes_with_prefix_and_suffix_and_prefix('prefix', prefix, suffix, prefix_suffix)
-    ['x', 'ix', 'fix', 'efix', 'prefix', 'suffix', 'prefix_suffix']
-    """
-
-def all_suffixes_with_suffix_and_prefix_and_suffix(string: str, prefix: str, suffix:
+    >>> get_all_suffixes_with_prefix_and_suffix('prefix', 'x', 'ix')
+    ['x', 'ix', 'fix', 'efix', 'refix', '

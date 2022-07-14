@@ -1,90 +1,80 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "small" if n < -100 and "large" if n >= 15 (and neither if -100 <= n < 15).
     """
+    if n < -100:
+        return "small"
+    elif n < 15:
+        return "large"
+    else:
+        return "small"
 
-def is_prime(n):
+
+def get_random_string(length):
     """
-        Given an integer n, return True if n is prime, False otherwise.
+        Returns a random string of length length.
     """
-    if n < 2:
-        return False
-    if n == 2:
-        return True
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    if n % 7 == 0:
-        return False
-    if n % 11 == 0:
-        return False
-    if n % 13 == 0:
-        return False
-    if n % 17 == 0:
-        return False
-    if n % 19 == 0:
-        return False
-    if n % 20 == 0:
-        return False
-    if n % 21 == 0:
-        return False
-    if n % 23 == 0:
-        return False
-    if n % 25 == 0:
-        return False
-    if n % 26 == 0:
-        return False
-    if n % 27 == 0:
-        return False
-    if n % 28 == 0:
-        return False
-    if n % 29 == 0:
-        return False
-    if n % 30 == 0:
-        return False
-    if n % 31 == 0:
-        return False
-    if n % 32 == 0:
-        return False
-    if n % 33 == 0:
-        return False
-    if n % 34 == 0:
-        return False
-    if n % 35 == 0:
-        return False
-    if n % 36 == 0:
-        return False
-    if n % 37 == 0:
-        return False
-    if n % 38 == 0:
-        return False
-    if n % 39 == 0:
-        return False
-    if n % 40 == 0:
-        return False
-    if n % 41 == 0:
-        return False
-    if n % 42 == 0:
-        return False
-    if n % 43 == 0:
-        return False
-    if n % 44 == 0:
-        return False
-    if n % 45 == 0:
-        return False
-    if n % 46 == 0:
-        return False
-    if n % 47 == 0:
-        return False
-    if n % 48 == 0:
-        return False
-    if n % 49 == 0:
-        return False
-    if n % 50 == 0:
-        return False
-    if n % 51 == 0:
-        return
+    return "".join(random.choice(string.ascii_lowercase) for _ in range(length))
+
+
+def get_random_number(length):
+    """
+        Returns a random number of length length.
+    """
+    return random.randint(1, length)
+
+
+def get_random_date(length):
+    """
+        Returns a random date of length length.
+    """
+    return datetime.date(random.randint(1, length), random.randint(1, length))
+
+
+def get_random_datetime(length):
+    """
+        Returns a random datetime of length length.
+    """
+    return datetime.datetime(random.randint(1, length), random.randint(1, length))
+
+
+def get_random_date_range(length):
+    """
+        Returns a random date range of length length.
+    """
+    return range(random.randint(1, length), random.randint(1, length))
+
+
+def get_random_time(length):
+    """
+        Returns a random time of length length.
+    """
+    return datetime.time(random.randint(1, length), random.randint(1, length))
+
+
+def get_random_datetime_range(length):
+    """
+        Returns a random datetime range of length length.
+    """
+    return range(random.randint(1, length), random.randint(1, length))
+
+
+def get_random_time_range(length):
+    """
+        Returns a random time range of length length.
+    """
+    return range(random.randint(1, length), random.randint(1, length))
+
+
+def get_random_date_range(length):
+    """
+        Returns a random date range of length length.
+    """
+    return range(random.randint(1, length), random.randint(1, length))
+
+
+def get_random_time_range(length):
+    """
+        Returns a random time range of length length.
+    """
+   

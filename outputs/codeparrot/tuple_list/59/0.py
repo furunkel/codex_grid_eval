@@ -1,46 +1,64 @@
-
 def min_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
-#    return max(lst, key=lst.count)
     return max(lst, key=lst.count)[0]
 
-def min_max_by_key(lst):
+
+def max_min(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
+    """
+    return min(lst, key=lst.count)[0]
+
+
+def min_max_min(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
+    """
+    return min(lst, key=lst.count)[0]
+
+
+def min_max_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
-#    return max(lst, key=lst.count)[0]
-    return max(lst, key=lst.count)[0][0]
+    return max(lst, key=lst.count)[0]
 
-def min_max_by_value(lst):
+
+def max_min_max_min(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
+    """
+    return min(lst, key=lst.count)[0]
+
+
+def min_max_min_max(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
+    """
+    return min(lst, key=lst.count)[0]
+
+
+def max_min_max_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
-#    return max(lst, key=lst.count)[0][1]
-    return max(lst, key=lst.count)[0][1]
+    return max(lst, key=lst.count)[0]
 
-def min_max_by_key_by_value(lst):
+
+def min_max_min_max_min(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest eleventh value.
+    """
+    return min(lst, key=lst.count)[0]
+
+
+def max_min_max_max_min(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
     """
-#    return max(lst, key=lst.count)[0][0][1]
-    return max(lst, key=lst.count)[0][0][1]
+    return max(lst, key=lst.count)[0]
 
-def min_max_by_key_by_value(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
-    """
-#    return max(lst, key=lst.count)[0][1][0]
-    return max(lst, key=lst.count)[0][1][0]
 
-def min_max_by_value_by_key(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest eleventh value.
-    """
-#    return max(lst, key=lst.count)[0][1][1]
-    return max(lst, key=lst.count)[0][1][1]
-
-def min_max_by_key_by_value(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the
+def min_max_min_

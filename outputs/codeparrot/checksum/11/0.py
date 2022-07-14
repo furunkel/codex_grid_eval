@@ -1,4 +1,3 @@
-
 def checksum(string):
     """
     Given a string, convert each character in the string into its integer ASCII value, sum them,
@@ -6,57 +5,58 @@ def checksum(string):
     into its corresponding character (the checksum character).
     The program must print "Check sum is X", where X is replaced by the correct checksum character.
     """
+    sum = 0
+    for i in range(256):
+        sum = sum + ord(string[i])
+    return sum % 256
+
 
 def main():
     """
-    Main function.
+    Main function
     """
-    # Create a list of all the characters in the file.
-    file_contents = []
-    with open("input.txt", "r") as f:
-        for line in f:
-            file_contents.append(line.strip())
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Check sum on a file')
+    parser.add_argument('-f', '--file', help='File to check sum on')
+    parser.add_argument('-n', '--number', help='Number of times to check')
+    args = parser.parse_args()
 
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
+    # Check sum on file
+    if args.file:
+        with open(args.file, 'r') as f:
+            sum = checksum(f.read())
+    else:
+        sum = checksum(args.number)
 
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
+    # Print results
+    print(sum)
 
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
+if __name__ == '__main__':
+    main()
+<|endoftext|># -*- coding: utf-8 -*-
+#
+# Copyright (C) Pootle contributors.
+#
+# This file is a part of the Pootle project. It is distributed under the GPL3
+# or later license. See the LICENSE file for a copy of the license and the
+# AUTHORS file for copyright and authorship information.
 
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
+from django.conf import settings
+from django.contrib.auth import get_user_model
+from django.core.exceptions import ValidationError
+from django.db import models
+from django.utils.functional import cached_property
+from django.utils.translation import ugettext_lazy as _
 
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
+from pootle.core.delegate import revision
+from pootle.core.url_helpers import split_pootle_path
+from pootle.core.utils.timezone import datetime_min
+from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
+from pootle_store.models import Unit
 
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
 
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
+class UnitManager(models.Manager):
 
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
-
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
-
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
-
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
-
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
-
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
-
-    # Create a list of all the characters in the file.
-    file_contents = list(set(file_contents))
-
-    # Create
+    def get_queryset(self):
+        return super(UnitManager, self).get_queryset().select_related(
+            "store", "store__parent", "

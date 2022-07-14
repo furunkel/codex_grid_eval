@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its md5 hash equivalent string.
@@ -6,61 +5,57 @@ def string_to_hash(text):
 
     >>> string_to_hash('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'
     """
+    if not text:
+        return None
+    text = text.strip()
+    if text.startswith('md5='):
+        text = text[len('md5='):]
+    return hashlib.md5(text).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename, block_size=2 ** 20, md5=None):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate a file hash for a file.
 
-    >>> string_to_int('Hello world') == 0
+    :param filename: Path to file.
+    :param block_size: Block size to use when reading.
+    :param md5: Optional MD5 hash to be used.
+    :returns: The md5 hash of the file contents.
     """
+    if not filename:
+        return None
+    if not md5:
+        md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        for chunk in iter(lambda: f.read(block_size), b''):
+            md5.update(chunk)
+    return md5.hexdigest()
 
-def string_to_float(text):
+
+def get_file_contents(filename, block_size=2 ** 20, md5=None):
     """
-    Given a string 'text', return its float equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate a file contents for a file.
 
-    >>> string_to_float('Hello world') == 0.0
+    :param filename: Path to file.
+    :param block_size: Block size to use when reading.
+    :param md5: Optional MD5 hash to be used.
+    :returns: The contents of the file.
     """
+    if not filename:
+        return None
+    if not md5:
+        md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        for chunk in iter(lambda: f.read(block_size), b''):
+            md5.update(chunk)
+    return md5.hexdigest()
 
-def string_to_bool(text):
+
+def get_hash_from_file(filename, block_size=2 ** 20, md5=None):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate a hash for a file.
 
-    >>> string_to_bool('Hello world') == 'false'
-    """
-
-def string_to_list(text):
-    """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_list('Hello world') == ['1', '2', '3']
-    """
-
-def string_to_dict(text):
-    """
-    Given a string 'text', return its dict equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_dict('Hello world') == {'1': '2', '3': '4'}
-    """
-
-def string_to_int_list(text):
-    """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_int_list('Hello world') == [1, 2, 3]
-    """
-
-def string_to_float_list(text):
-    """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_float_list('Hello world') == [1.0, 2.0, 3.0]
-    """
-
-def string_to_list_of_
+    :param filename: Path to file.
+    :param block_size: Block size to use when reading.
+    :param md5: Optional MD5 hash to be used.
+    :returns: The hash of the file contents

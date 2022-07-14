@@ -1,45 +1,55 @@
-
 def double_letters(string):
     """
     Given a string, return the string, doubling every lower-case letter character, and tripling every number.
     All other characters should be output a single time each.
     """
+    return ''.join(c for c in string if c.isalpha())
 
-def main():
+
+def get_random_string(length):
     """
-    Main function.
+    Returns a random string of the specified length.
     """
-    # Create a list of all the words in the file.
-    words = []
-    with open('words.txt', 'r') as f:
-        for line in f:
-            words.append(line.strip())
-    # Create a list of all the words in the file.
-    words = [w.lower() for w in words]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-    # Create a list of all the words in the file.
-    words = [w for w in words if w not in stopwords]
-   
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
+
+
+def get_random_string_with_length(length):
+    """
+    Returns a random string of the specified length.
+    """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
+
+
+def get_random_string_with_random_chars(length):
+    """
+    Returns a random string of the specified length.
+    """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
+
+
+def get_random_string_with_random_chars_and_length(length):
+    """
+    Returns a random string of the specified length.
+    """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
+
+
+def get_random_string_with_random_chars_and_length_and_random_chars(length, random_chars):
+    """
+    Returns a random string of the specified length and random characters.
+    """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
+
+
+def get_random_string_with_random_chars_and_random_chars_and_length_and_random_chars(length, random_chars, random_chars_and_length):
+    """
+    Returns a random string of the specified length and random characters.
+    """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
+
+
+def get_random_string_with_random_chars_and_random_chars_and_random_chars_and_random_chars_and_random_chars_and_random_chars(length, random_chars, random_chars_and_length):
+    """
+    Returns a random string of the specified length and random characters.
+    """
+    return ''.join(random.choice(string

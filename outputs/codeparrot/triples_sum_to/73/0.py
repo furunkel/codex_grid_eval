@@ -1,4 +1,3 @@
-
 def doubles_sum_to_three(l: list):
     """
     doubles_sum_to_three takes a list of integers as an input.
@@ -8,6 +7,8 @@ def doubles_sum_to_three(l: list):
     >>> doubles_sum_to_three([1, 3, -2, 1, 5, 8])
     True
     """
+    return len(l) == 2 and sum(l) == 3
+
 
 def doubles_sum_to_two(l: list):
     """
@@ -18,38 +19,34 @@ def doubles_sum_to_two(l: list):
     >>> doubles_sum_to_two([1, 3, -2, 1, 5, 8])
     True
     """
+    return len(l) == 2 and sum(l) == 2
 
-def doubles_sum_to_three_with_one_element(l: list):
+
+def doubles_sum_to_three_and_four(l: list):
     """
-    doubles_sum_to_three_with_one_element takes a list of integers as an
-    input.
+    doubles_sum_to_three_and_four takes a list of integers as an input.
     it returns True if there are 2 distinct elements in the list that
-    sum to three, and False otherwise.
+    sum to three and four, and False otherwise.
 
-    >>> doubles_sum_to_three_with_one_element([1, 3, -2, 1, 5, 8])
+    >>> doubles_sum_to_three_and_four([1, 3, -2, 1, 5, 8])
     True
     """
+    return len(l) == 3 and sum(l) == 3 and sum(l) == 4
 
-def doubles_sum_to_three_with_two_elements(l: list):
+
+def doubles_sum_to_two_and_three(l: list):
     """
-    doubles_sum_to_three_with_two_elements takes a list of integers as an
-    input.
+    doubles_sum_to_two_and_three takes a list of integers as an input.
     it returns True if there are 2 distinct elements in the list that
-    sum to three, and False otherwise.
+    sum to two and three, and False otherwise.
 
-    >>> doubles_sum_to_three_with_two_elements([1, 3, -2, 1, 5, 8])
+    >>> doubles_sum_to_two_and_three([1, 3, -2, 1, 5, 8])
     True
     """
+    return len(l) == 2 and sum(l) == 2 and sum(l) == 3 and sum(l) == 4
 
-def doubles_sum_to_three_with_three_elements(l: list):
+
+def doubles_sum_to_two_and_four_and_five(l: list):
     """
-    doubles_sum_to_three_with_three_elements takes a list of integers as an
-    input.
-    it returns True if there are 2 distinct elements in the list that
-    sum to three, and False otherwise.
-
-    >>> doubles_sum_to_three_with_three_elements([1, 3, -2, 1, 5, 8])
-    True
-    """
-
-def doubles_sum_to_three_with_four_elements(l: list
+    doubles_sum_to_two_and_four_and_five takes a list of integers as an input.
+    it returns True if

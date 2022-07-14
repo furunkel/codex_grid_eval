@@ -1,46 +1,59 @@
-
 def min_max(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return max(lst, key=lst.count)[1]
 
-def min_max_by_key(lst):
+
+def min_max_by_key(lst, key):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
     """
-#    print(lst)
-    return max(lst, key=lst.count, reverse=True)
+    return max(lst, key=lst.count)[1]
 
-def min_max_by_value(lst):
+
+def max_min_by_key(lst, key):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
     """
-#    print(lst)
-    return max(lst, key=lst.count, reverse=True, key_func=lambda x: x[1])
+    return min(lst, key=lst.count)[1]
 
-def min_max_by_key_func(lst):
+
+def max_min_by_value(lst, value):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
     """
-#    print(lst)
-    return max(lst, key=lst.count, reverse=True, key_func=lambda x: x[1], reverse_func=lambda x: x[0])
+    return min(lst, key=lst.count)[1]
 
-def min_max_by_value_func(lst):
+
+def min_max_by_value(lst, value):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
     """
-#    print(lst)
-    return max(lst, key=lst.count, reverse=True, key_func=lambda x: x[1], reverse_func=lambda x: x[0], reverse_func_args=[1])
+    return max(lst, key=lst.count)[1]
 
-def min_max_by_key_func_args(lst):
+
+def max_min_by_key_and_value(lst, key, value):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
     """
-#    print(lst)
-    return max(lst, key=lst.count, reverse=True, key_func=lambda x: x[1], reverse_func_args=[1])
+    return min(lst, key=lst.count)[1]
 
-def min_max_by_key_func_args_by_value(lst):
+
+def min_max_by_key_and_value(lst, key, value):
     """
-    Given a list of tuples, write a function that returns
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
+    """
+    return max(lst, key=lst.count)[1]
+
+
+def max_min_by_key_and_value(lst, key, value):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
+    """
+    return min(lst, key=lst.count)[1]
+
+
+def min_max_by_key_and_value(lst, key, value):
+    """
+    Given a list of tuples,

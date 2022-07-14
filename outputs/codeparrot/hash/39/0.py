@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha224 hash equivalent string.
@@ -6,58 +5,54 @@ def string_to_hash(text):
 
     >>> string_to_hash('0') == 'dfd5f9139a820075df69d7895015360b76d0360f3d4b77a845689614'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha224(text).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha224 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_int('0') == 0
+    >>> get_file_hash('0') == 'dfd5f9139a820075df69d7895015360b76d0360f3d4b77a845689614'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return hashlib.sha224(filename).hexdigest()
 
-def string_to_bool(text):
+
+def get_file_size(filename):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its size equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_bool('0') == False
+    >>> get_file_size('0') == 'dfd5f9139a820075df69d7895015360b76d0360f3d4b77a845689614'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return os.path.getsize(filename)
 
-def string_to_datetime(text):
+
+def get_file_md5(filename):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its md5 equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_datetime('0') == datetime.datetime(1970, 1, 1)
+    >>> get_file_md5('0') == 'dfd5f9139a820075df69d7895015360b76d0360f3d4b77a845689614'
     """
+    if not filename:
+        return None
+    if isinstance(filename, str):
+        filename = filename.encode('utf-8')
+    return hashlib.md5(filename).hexdigest()
 
-def string_to_date(text):
+
+def get_file_sha1(filename):
     """
-    Given a string 'text', return its date equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_date('0') == datetime.date(1970, 1, 1)
-    """
-
-def string_to_time(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time('0') == datetime.time(0, 0)
-    """
-
-def string_to_datetime_with_milliseconds(text):
-    """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_datetime_with_milliseconds('0') == datetime.datetime(1970, 1, 1, 0, 0)
-    """
-
-def string_to_time_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time_with_milliseconds('0

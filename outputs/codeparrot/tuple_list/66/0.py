@@ -1,47 +1,61 @@
-
 def extract_value(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return max(lst, key=lst.count)[0]
 
-def find_max_value(lst):
-    """
-    Given a list of tuples, write a function that returns the largest value of the tuple with the largest value.
-    """
-    return max(lst, key=lst.count)
 
-def find_min_value(lst):
+def get_value(lst):
     """
-    Given a list of tuples, write a function that returns the smallest value of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
-    return min(lst, key=lst.count)
+    return max(lst, key=lst.count)[-1]
 
-def find_median_value(lst):
-    """
-    Given a list of tuples, write a function that returns the median value of the tuple with the median value.
-    """
-    return median(lst, key=lst.count)
 
-def find_variance(lst):
+def get_value_from_list(lst):
     """
-    Given a list of tuples, write a function that returns the variance of the tuple with the variance.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
-    return variance(lst, key=lst.count)
+    return max(lst, key=lst.count)[-2]
 
-def find_variance_of_list(lst):
-    """
-    Given a list of tuples, write a function that returns the variance of the tuple with the variance of the list.
-    """
-    return variance(lst, key=lst.count)
 
-def find_variance_of_list_of_lists(lst):
+def get_value_from_list_with_max(lst):
     """
-    Given a list of tuples, write a function that returns the variance of the list of lists.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
-    return variance(lst, key=lst.count)
+    return max(lst, key=lst.count)[-1]
 
-def find_variance_of_list_of_lists_of_lists(lst):
+
+def get_value_from_list_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the variance of the list of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of lists of
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
+    """
+    return min(lst, key=lst.count)[-1]
+
+
+def get_value_from_list_with_mean(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
+    """
+    return mean(lst, key=lst.count)[-1]
+
+
+def get_value_from_list_with_std(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
+    """
+    return std(lst, key=lst.count)[-1]
+
+
+def get_value_from_list_with_var(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
+    """
+    return var(lst, key=lst.count)[-1]
+
+
+def get_value_from_list_with_std_var(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
+    """
+    return std_var(lst, key=lst.count)[-1

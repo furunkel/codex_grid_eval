@@ -1,74 +1,73 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest third value.
     """
+    return max(lst, key=lst.count)[1]
+
 
 def g(lst):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the smallest third value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the greatest value.
     """
+    return min(lst, key=lst.count)[0]
+
 
 def h(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest third value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest second value.
     """
+    return max(lst, key=lst.count)[1]
+
 
 def i(lst):
     """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest fourth value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the greatest value.
     """
+    return min(lst, key=lst.count)[0]
+
 
 def j(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest fifth value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the greatest value.
     """
+    return max(lst, key=lst.count)[0]
+
 
 def k(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest fifth value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the greatest value.
     """
+    return max(lst, key=lst.count)[0]
+
 
 def l(lst):
     """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the smallest sixth value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the least value.
     """
+    return min(lst, key=lst.count)[1]
+
 
 def m(lst):
     """
-    Given a list of tuples, write a function that returns the sixth value of the tuple with the smallest sixth value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the greatest value.
     """
+    return max(lst, key=lst.count)[0]
+
 
 def n(lst):
     """
-    Given a list of tuples, write a function that returns the n value of the tuple with the smallest n value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the greatest value.
     """
+    return min(lst, key=lst.count)[1]
+
 
 def o(lst):
     """
-    Given a list of tuples, write a function that returns the o value of the tuple with the smallest o value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the greatest value.
     """
+    return max(lst, key=lst.count)[0]
+
 
 def p(lst):
     """
-    Given a list of tuples, write a function that returns the prime value of the tuple with the smallest prime value.
-    """
-
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the quad value of the tuple with the smallest quad value.
-    """
-
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the reciprocal value of the tuple with the smallest reciprocal value.
-    """
-
-def s(lst):
-    """
-    Given a list of tuples, write a function that returns the square value of the tuple with the smallest square value.
-    """
-
-def t(lst):
-    """
-    Given
+    Given a list of tuples, write a

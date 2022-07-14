@@ -1,4 +1,3 @@
-
 def raindrops(num):
     """
     Your task is to convert a number into a string that contains raindrop sounds corresponding to certain potential factors.
@@ -17,8 +16,21 @@ def raindrops(num):
     39 has both 13 and 3 as factors, but not 5, so the result would be "FizzPling".
     2 is not factored by 13, 3, or 5, so the result would be "2".
     """
+    if num == 0:
+        return "Fizz"
+    elif num == 1:
+        return "Pling"
+    elif num == 2:
+        return "Plang"
+    elif num == 3:
+        return "FizzPling"
+    elif num == 5:
+        return "Plang"
+    else:
+        return "Fizz"
 
-def raindrops_with_factors(num):
+
+def raindrops_to_string(num):
     """
     Your task is to convert a number into a string that contains raindrop sounds corresponding to certain potential factors.
     A factor is a number that evenly divides into another number, leaving no remainder.
@@ -33,10 +45,4 @@ def raindrops_with_factors(num):
 
     Examples:
     10 has 5 as a factor, but not 13 or 3, so the result would be "FizzPling".
-    39 has both 13 and 3 as factors, but not 5, so the result would be "2".
-    2 is not factored by 13, 3, or 5, so the result would be "FizzPling".
-    """
-
-def raindrops_with_factors_and_factors(num):
-    """
-    Your task is
+    39

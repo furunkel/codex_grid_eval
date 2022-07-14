@@ -1,55 +1,59 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[0]
+
 
 def tuple_extract_with_max(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[1]
+
 
 def tuple_extract_with_min(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest eleventh value.
     """
+    return min(lst, key=lambda x: x[1])[0]
 
-def tuple_extract_with_sum(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the sum of the eleventh values.
-    """
 
-def tuple_extract_with_mean(lst):
+def tuple_extract_with_average(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the mean of the eleventh values.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the average eleventh value.
     """
+    return sum(lst)/len(lst)
 
-def tuple_extract_with_median(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the median of the eleventh values.
-    """
 
-def tuple_extract_with_min_max(lst):
+def tuple_extract_with_variance(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the variance eleventh value.
+    """
+    return sum(lst)/len(lst)
+
+
+def tuple_extract_with_variance_with_min(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest eleventh value.
     """
+    return min(lst, key=lambda x: x[1])[1]
 
-def tuple_extract_with_max_min(lst):
+
+def tuple_extract_with_variance_with_max(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lambda x: x[1])[1]
 
-def tuple_extract_with_min_max_max(lst):
+
+def tuple_extract_with_variance_with_min(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest eleventh value.
     """
+    return min(lst, key=lambda x: x[1])[1]
 
-def tuple_extract_with_median_min(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the median of the eleventh values.
-    """
 
-def tuple_extract_with_median_max(lst):
+def tuple_extract_with_variance_with_max(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the median of the eleventh values.
-    """
+    Given a list of

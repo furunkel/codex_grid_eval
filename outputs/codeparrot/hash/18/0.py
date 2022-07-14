@@ -1,70 +1,73 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha1 hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if not text:
+        return None
+    return hashlib.sha1(text.encode('utf-8')).hexdigest()
 
-def hash_to_string(hash):
+
+def get_file_hash(filename):
     """
-    Given a string 'hash', return its string representation.
+    Given a filename, return its sha1 hash equivalent string.
+    If 'filename' is an empty string, return None.
+    """
+    if not filename:
+        return None
+    return hashlib.sha1(filename.encode('utf-8')).hexdigest()
+
+
+def get_file_path(filename):
+    """
+    Given a filename, return its path equivalent string.
+    If 'filename' is an empty string, return None.
+    """
+    if not filename:
+        return None
+    return os.path.join(get_file_dir(filename), filename)
+
+
+def get_file_name(filename):
+    """
+    Given a filename, return its name equivalent string.
+    If 'filename' is an empty string, return None.
+    """
+    if not filename:
+        return None
+    return os.path.join(get_file_dir(filename), filename)
+
+
+def get_file_path_from_hash(hash):
+    """
+    Given a hash, return its path equivalent string.
     If 'hash' is an empty string, return None.
     """
+    if not hash:
+        return None
+    return os.path.join(get_file_dir(hash), hash)
 
-def string_to_hash_or_none(text):
-    """
-    Given a string 'text', return its sha1 hash equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def hash_to_string_or_none(hash):
+def get_file_path_from_name(name):
     """
-    Given a string 'hash', return its string representation.
-    If 'hash' is an empty string, return None.
+    Given a name, return its path equivalent string.
+    If 'name' is an empty string, return None.
     """
+    if not name:
+        return None
+    return os.path.join(get_file_dir(name), name)
 
-def string_to_hash_or_none(text):
-    """
-    Given a string 'text', return its sha1 hash equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def hash_to_string_or_none(hash):
+def get_file_path_from_hash_name(hash_name):
     """
-    Given a string 'hash', return its string representation.
-    If 'hash' is an empty string, return None.
+    Given a hash name, return its path equivalent string.
+    If 'hash_name' is an empty string, return None.
     """
+    if not hash_name:
+        return None
+    return os.path.join(get_file_dir(hash_name), hash_name)
 
-def string_to_hash_or_none(text):
-    """
-    Given a string 'text', return its sha1 hash equivalent string.
-    If 'text' is an empty string, return None.
-    """
 
-def hash_to_string_or_none(hash):
+def get_file_path_from_name_and_hash(name, hash_name):
     """
-    Given a string 'hash', return its string representation.
-    If 'hash' is an empty string, return None.
-    """
-
-def string_to_hash_or_none(text):
-    """
-    Given a string 'text', return its sha1 hash equivalent string.
-    If 'text' is an empty string, return None.
-    """
-
-def hash_to_string_or_none(hash):
-    """
-    Given a string 'hash', return its string representation.
-    If 'hash' is an empty string, return None.
-    """
-
-def string_to_hash_or_none(text):
-    """
-    Given a string 'text', return its sha1 hash equivalent string.
-    If 'text' is an empty string, return None.
-    """
-
-def hash_to_string_or_none(hash):
-    """
-    Given
+    Given a name and

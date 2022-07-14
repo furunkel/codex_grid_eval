@@ -1,51 +1,25 @@
-
 def string_sequence(n: int) -> str:
     """ Return a string containing space-delimited numbers starting from 0 upto n inclusive.
     >>> string_sequence(1)
     '0 1'
     """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(n))
 
-def string_reverse(s: str) -> str:
-    """ Return a string with the reverse of the given string.
-    >>> string_reverse('abc')
-    'abc'
+
+def random_string(length: int) -> str:
+    """ Return a random string of length length.
+    >>> random_string(10)
+    'a'
     """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def string_slice(start: int, end: int) -> str:
-    """ Return a string containing a slice of the given string.
-    >>> string_slice(1, 3)
-    '1 2 3'
+
+def random_string_with_symbols(length: int) -> str:
+    """ Return a random string of length length with symbols.
+    >>> random_string_with_symbols(10)
+    'a'
     """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def string_slice_with_spaces(start: int, end: int) -> str:
-    """ Return a string containing a slice of the given string.
-    >>> string_slice_with_spaces(1, 3)
-    '1 2 3'
-    """
 
-def string_slice_with_tabs(start: int, end: int) -> str:
-    """ Return a string containing a slice of the given string.
-    >>> string_slice_with_tabs(1, 3)
-    '1 2 3'
-    """
-
-def string_slice_with_tabs_and_spaces(start: int, end: int) -> str:
-    """ Return a string containing a slice of the given string.
-    >>> string_slice_with_tabs_and_spaces(1, 3)
-    '1 2 3'
-    """
-
-def string_slice_with_tabs_and_spaces_and_tabs(start: int, end: int) -> str:
-    """ Return a string containing a slice of the given string.
-    >>> string_slice_with_tabs_and_spaces_and_tabs(1, 3)
-    '1 2 3'
-    """
-
-def string_slice_with_tabs_and_spaces_and_tabs_and_spaces(start: int, end: int) -> str:
-    """ Return a string containing a slice of the given string.
-    >>> string_slice_with_tabs_and_spaces_and_tabs_and_tabs(1, 3)
-    '1 2 3'
-    """
-
-def string_slice_with_tabs_and_spaces_and_tabs_and_spaces_and_tabs(start: int, end: int) -> str:
-    """ Return a string
+def random_string_with_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_and_symbols_

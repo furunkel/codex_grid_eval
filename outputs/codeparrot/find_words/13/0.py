@@ -1,72 +1,52 @@
-
 def find_char_long(text):
     """
     Finds all words which are exactly 20 characters long in a string.
     """
-#    print "find_char_long: text = %s" % text
-    if len(text) > 20:
-        return text[:20]
-    else:
-        return text
+    return [i for i in range(0, len(text)) if text[i] == ' ' and len(text[i + 1]) == 20]
+
 
 def find_char_short(text):
     """
     Finds all words which are exactly 20 characters short in a string.
     """
-#    print "find_char_short: text = %s" % text
-    if len(text) > 20:
-        return text[:20]
-    else:
-        return text
+    return [i for i in range(0, len(text)) if text[i] == ' ' and len(text[i + 1]) == 20]
 
-def find_char_long_short(text):
+
+def find_char_space(text):
     """
     Finds all words which are exactly 20 characters long in a string.
     """
-#    print "find_char_long_short: text = %s" % text
-    if len(text) > 20:
-        return text[:20]
-    else:
-        return text
+    return [i for i in range(0, len(text)) if text[i] == ' ' and len(text[i + 1]) == 20]
 
-def find_char_short_long(text):
-    """
-    Finds all words which are exactly 20 characters short in a string.
-    """
-#    print "find_char_short_long: text = %s" % text
-    if len(text) > 20:
-        return text[:20]
-    else:
-        return text
 
-def find_char_long_long(text):
+def find_char_not_space(text):
     """
     Finds all words which are exactly 20 characters long in a string.
     """
-#    print "find_char_long_long: text = %s" % text
-    if len(text) > 20:
-        return text[:20]
-    else:
-        return text
+    return [i for i in range(0, len(text)) if text[i] != ' ' and len(text[i + 1]) != 20]
 
-def find_char_short_short(text):
-    """
-    Finds all words which are exactly 20 characters short in a string.
-    """
-#    print "find_char_short_short: text = %s" % text
-    if len(text) > 20:
-        return text[:20]
-    else:
-        return text
 
-def find_char_long_short_long(text):
+def find_char_not_space_or_tab(text):
     """
     Finds all words which are exactly 20 characters long in a string.
     """
-#    print "find_char_long_short_long: text = %s" % text
-    if len(text) > 20:
-        return text[:20]
-    else:
-        return text
+    return [i for i in range(0, len(text)) if text[i] != ' ' and len(text[i + 1]) != 20]
 
-def find_char_short_long_long(
+
+def find_char_not_space_or_tab_or_space(text):
+    """
+    Finds all words which are exactly 20 characters long in a string.
+    """
+    return [i for i in range(0, len(text)) if text[i] != ' ' and len(text[i + 1]) != 20]
+
+
+def find_char_not_space_or_tab_or_space_or_tab(text):
+    """
+    Finds all words which are exactly 20 characters long in a string.
+    """
+    return [i for i in range(0, len(text)) if text[i] != ' ' and len(text[i + 1]) != 20]
+
+
+def find_char_not_space_or_tab_or_space_or_tab_or_space(text):
+    """
+    Finds all

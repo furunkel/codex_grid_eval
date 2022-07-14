@@ -1,41 +1,61 @@
-
 def extract_value(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return max(lst, key=lst.count)[1]
+
 
 def get_value(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
     """
-    return max(lst, key=lst.count)[-1]
+    return max(lst, key=lst.count)[0]
 
-def get_value_with_index(lst, index):
+
+def get_value_from_list(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
     """
-    return max(lst, key=lst.count)[-index]
+    return max(lst, key=lst.count)[1]
 
-def get_value_with_index_and_value(lst, index, value):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value and the value.
-    """
-    return max(lst, key=lst.count)[-index-1] + value
 
-def get_value_with_index_and_value_and_index(lst, index, value, index_and_value):
+def get_value_from_list_with_max(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value and the value.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
     """
-    return max(lst, key=lst.count)[-index-1] + value + index_and_value
+    return max(lst, key=lst.count)[0]
 
-def get_value_with_index_and_value_and_index_and_value(lst, index, value, index_and_value, index_and_value_and_index):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value and the value.
-    """
-    return max(lst, key=lst.count)[-index-1] + value + index_and_value + index_and_value_and_index
 
-def get_value_with_index_and_value_and_index_and_value_and_index(lst, index, value, index_and_value, index_and_value_and_index):
+def get_value_from_list_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest second value.
+    """
+    return min(lst, key=lst.count)[0]
+
+
+def get_value_from_list_with_average(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
+    """
+    return sum(lst)/len(lst)
+
+
+def get_value_from_list_with_median(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
+    """
+    return max(lst)/len(lst)
+
+
+def get_value_from_list_with_variance(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
+    """
+    return sum(lst)/len(lst)
+
+
+def get_value_from_list_with_variance_with_min(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest second value.
+    """
+    return min(lst)/len

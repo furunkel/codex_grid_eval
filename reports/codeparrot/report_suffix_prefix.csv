@@ -1,73 +1,73 @@
-op,example_input,order,input,expected,actual,result,result_emojis,model_input
-prefixes,abc,longest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/0.txt
-prefixes,abc,longest_first,asdfgh,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']",None,f,❌,input/codeparrot/suffix_prefix/0.txt
-prefixes,abc,longest_first,WWW,"['WWW', 'WW', 'W']",None,f,❌,input/codeparrot/suffix_prefix/0.txt
-prefixes,abc,shortest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/1.txt
-prefixes,abc,shortest_first,asdfgh,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']",None,f,❌,input/codeparrot/suffix_prefix/1.txt
-prefixes,abc,shortest_first,WWW,"['W', 'WW', 'WWW']",None,f,❌,input/codeparrot/suffix_prefix/1.txt
-prefixes,xyz,longest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/2.txt
-prefixes,xyz,longest_first,asdfgh,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']",None,f,❌,input/codeparrot/suffix_prefix/2.txt
-prefixes,xyz,longest_first,WWW,"['WWW', 'WW', 'W']",None,f,❌,input/codeparrot/suffix_prefix/2.txt
-prefixes,xyz,shortest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/3.txt
-prefixes,xyz,shortest_first,asdfgh,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']",None,f,❌,input/codeparrot/suffix_prefix/3.txt
-prefixes,xyz,shortest_first,WWW,"['W', 'WW', 'WWW']",None,f,❌,input/codeparrot/suffix_prefix/3.txt
-prefixes,suffix,longest_first,,,,p,✅,input/codeparrot/suffix_prefix/4.txt
-prefixes,suffix,longest_first,asdfgh,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']",[],f,❌,input/codeparrot/suffix_prefix/4.txt
-prefixes,suffix,longest_first,WWW,"['WWW', 'WW', 'W']",[],f,❌,input/codeparrot/suffix_prefix/4.txt
-prefixes,suffix,shortest_first,,,,e,💀,input/codeparrot/suffix_prefix/5.txt
-prefixes,suffix,shortest_first,asdfgh,,,e,💀,input/codeparrot/suffix_prefix/5.txt
-prefixes,suffix,shortest_first,WWW,,,e,💀,input/codeparrot/suffix_prefix/5.txt
-prefixes,prefix,longest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/6.txt
-prefixes,prefix,longest_first,asdfgh,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']",None,f,❌,input/codeparrot/suffix_prefix/6.txt
-prefixes,prefix,longest_first,WWW,"['WWW', 'WW', 'W']",None,f,❌,input/codeparrot/suffix_prefix/6.txt
-prefixes,prefix,shortest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/7.txt
-prefixes,prefix,shortest_first,asdfgh,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']",None,f,❌,input/codeparrot/suffix_prefix/7.txt
-prefixes,prefix,shortest_first,WWW,"['W', 'WW', 'WWW']",None,f,❌,input/codeparrot/suffix_prefix/7.txt
-prefixes,reverse the result!!!,longest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/8.txt
-prefixes,reverse the result!!!,longest_first,asdfgh,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']",None,f,❌,input/codeparrot/suffix_prefix/8.txt
-prefixes,reverse the result!!!,longest_first,WWW,"['WWW', 'WW', 'W']",None,f,❌,input/codeparrot/suffix_prefix/8.txt
-prefixes,reverse the result!!!,shortest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/9.txt
-prefixes,reverse the result!!!,shortest_first,asdfgh,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']",None,f,❌,input/codeparrot/suffix_prefix/9.txt
-prefixes,reverse the result!!!,shortest_first,WWW,"['W', 'WW', 'WWW']",None,f,❌,input/codeparrot/suffix_prefix/9.txt
-prefixes,12345678,longest_first,,,,p,✅,input/codeparrot/suffix_prefix/10.txt
-prefixes,12345678,longest_first,asdfgh,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']","['as', 'sd', 'df', 'fg', 'gh']",f,❌,input/codeparrot/suffix_prefix/10.txt
-prefixes,12345678,longest_first,WWW,"['WWW', 'WW', 'W']","['WW', 'WW']",f,❌,input/codeparrot/suffix_prefix/10.txt
-prefixes,12345678,shortest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/11.txt
-prefixes,12345678,shortest_first,asdfgh,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']",None,f,❌,input/codeparrot/suffix_prefix/11.txt
-prefixes,12345678,shortest_first,WWW,"['W', 'WW', 'WWW']",None,f,❌,input/codeparrot/suffix_prefix/11.txt
-suffixes,abc,longest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/12.txt
-suffixes,abc,longest_first,asdfgh,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']",None,f,❌,input/codeparrot/suffix_prefix/12.txt
-suffixes,abc,longest_first,WWW,"['WWW', 'WW', 'W']",None,f,❌,input/codeparrot/suffix_prefix/12.txt
-suffixes,abc,shortest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/13.txt
-suffixes,abc,shortest_first,asdfgh,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']",None,f,❌,input/codeparrot/suffix_prefix/13.txt
-suffixes,abc,shortest_first,WWW,"['W', 'WW', 'WWW']",None,f,❌,input/codeparrot/suffix_prefix/13.txt
-suffixes,xyz,longest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/14.txt
-suffixes,xyz,longest_first,asdfgh,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']",None,f,❌,input/codeparrot/suffix_prefix/14.txt
-suffixes,xyz,longest_first,WWW,"['WWW', 'WW', 'W']",None,f,❌,input/codeparrot/suffix_prefix/14.txt
-suffixes,xyz,shortest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/15.txt
-suffixes,xyz,shortest_first,asdfgh,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']",None,f,❌,input/codeparrot/suffix_prefix/15.txt
-suffixes,xyz,shortest_first,WWW,"['W', 'WW', 'WWW']",None,f,❌,input/codeparrot/suffix_prefix/15.txt
-suffixes,suffix,longest_first,,,,p,✅,input/codeparrot/suffix_prefix/16.txt
-suffixes,suffix,longest_first,asdfgh,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']",[],f,❌,input/codeparrot/suffix_prefix/16.txt
-suffixes,suffix,longest_first,WWW,"['WWW', 'WW', 'W']",[],f,❌,input/codeparrot/suffix_prefix/16.txt
-suffixes,suffix,shortest_first,,,,p,✅,input/codeparrot/suffix_prefix/17.txt
-suffixes,suffix,shortest_first,asdfgh,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']",[],f,❌,input/codeparrot/suffix_prefix/17.txt
-suffixes,suffix,shortest_first,WWW,"['W', 'WW', 'WWW']",[],f,❌,input/codeparrot/suffix_prefix/17.txt
-suffixes,prefix,longest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/18.txt
-suffixes,prefix,longest_first,asdfgh,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']",None,f,❌,input/codeparrot/suffix_prefix/18.txt
-suffixes,prefix,longest_first,WWW,"['WWW', 'WW', 'W']",None,f,❌,input/codeparrot/suffix_prefix/18.txt
-suffixes,prefix,shortest_first,,[],None,f,❌,input/codeparrot/suffix_prefix/19.txt
-suffixes,prefix,shortest_first,asdfgh,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']",None,f,❌,input/codeparrot/suffix_prefix/19.txt
-suffixes,prefix,shortest_first,WWW,"['W', 'WW', 'WWW']",None,f,❌,input/codeparrot/suffix_prefix/19.txt
-suffixes,reverse the result!!!,longest_first,,,,p,✅,input/codeparrot/suffix_prefix/20.txt
-suffixes,reverse the result!!!,longest_first,asdfgh,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']",[],f,❌,input/codeparrot/suffix_prefix/20.txt
-suffixes,reverse the result!!!,longest_first,WWW,"['WWW', 'WW', 'W']",[],f,❌,input/codeparrot/suffix_prefix/20.txt
-suffixes,reverse the result!!!,shortest_first,,,,p,✅,input/codeparrot/suffix_prefix/21.txt
-suffixes,reverse the result!!!,shortest_first,asdfgh,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']",[],f,❌,input/codeparrot/suffix_prefix/21.txt
-suffixes,reverse the result!!!,shortest_first,WWW,"['W', 'WW', 'WWW']",[],f,❌,input/codeparrot/suffix_prefix/21.txt
-suffixes,12345678,longest_first,,,,p,✅,input/codeparrot/suffix_prefix/22.txt
-suffixes,12345678,longest_first,asdfgh,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']",[],f,❌,input/codeparrot/suffix_prefix/22.txt
-suffixes,12345678,longest_first,WWW,"['WWW', 'WW', 'W']",[],f,❌,input/codeparrot/suffix_prefix/22.txt
-suffixes,12345678,shortest_first,,,,p,✅,input/codeparrot/suffix_prefix/23.txt
-suffixes,12345678,shortest_first,asdfgh,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']","['a', 's', 'd', 'f', 'g']",f,❌,input/codeparrot/suffix_prefix/23.txt
-suffixes,12345678,shortest_first,WWW,"['W', 'WW', 'WWW']","['W', 'W']",f,❌,input/codeparrot/suffix_prefix/23.txt
+op,example_input,order,input,result,result_emojis,model_input,expected,actual
+prefixes,abc,longest_first,,p,✅,input/codeparrot/suffix_prefix/0.txt,,
+prefixes,abc,longest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/0.txt,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']",[]
+prefixes,abc,longest_first,WWW,f,❌,input/codeparrot/suffix_prefix/0.txt,"['WWW', 'WW', 'W']","['W', 'W']"
+prefixes,abc,shortest_first,,p,✅,input/codeparrot/suffix_prefix/1.txt,,
+prefixes,abc,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/1.txt,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']","['a', 's', 'd', 'f', 'g']"
+prefixes,abc,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/1.txt,"['W', 'WW', 'WWW']","['W', 'W']"
+prefixes,xyz,longest_first,,p,✅,input/codeparrot/suffix_prefix/2.txt,,
+prefixes,xyz,longest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/2.txt,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']",[]
+prefixes,xyz,longest_first,WWW,f,❌,input/codeparrot/suffix_prefix/2.txt,"['WWW', 'WW', 'W']",[]
+prefixes,xyz,shortest_first,,p,✅,input/codeparrot/suffix_prefix/3.txt,,
+prefixes,xyz,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/3.txt,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']",[]
+prefixes,xyz,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/3.txt,"['W', 'WW', 'WWW']",[]
+prefixes,suffix,longest_first,,p,✅,input/codeparrot/suffix_prefix/4.txt,,
+prefixes,suffix,longest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/4.txt,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']","['as', 'sd', 'df', 'fg', 'gh']"
+prefixes,suffix,longest_first,WWW,f,❌,input/codeparrot/suffix_prefix/4.txt,"['WWW', 'WW', 'W']","['WW', 'WW']"
+prefixes,suffix,shortest_first,,e,💀,input/codeparrot/suffix_prefix/5.txt,,
+prefixes,suffix,shortest_first,asdfgh,e,💀,input/codeparrot/suffix_prefix/5.txt,,
+prefixes,suffix,shortest_first,WWW,e,💀,input/codeparrot/suffix_prefix/5.txt,,
+prefixes,prefix,longest_first,,p,✅,input/codeparrot/suffix_prefix/6.txt,,
+prefixes,prefix,longest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/6.txt,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']","['a', 's', 'd', 'f', 'g']"
+prefixes,prefix,longest_first,WWW,f,❌,input/codeparrot/suffix_prefix/6.txt,"['WWW', 'WW', 'W']","['W', 'W']"
+prefixes,prefix,shortest_first,,p,✅,input/codeparrot/suffix_prefix/7.txt,,
+prefixes,prefix,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/7.txt,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']",[]
+prefixes,prefix,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/7.txt,"['W', 'WW', 'WWW']",[]
+prefixes,reverse the result!!!,longest_first,,p,✅,input/codeparrot/suffix_prefix/8.txt,,
+prefixes,reverse the result!!!,longest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/8.txt,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']","['a', 's', 'd', 'f', 'g']"
+prefixes,reverse the result!!!,longest_first,WWW,f,❌,input/codeparrot/suffix_prefix/8.txt,"['WWW', 'WW', 'W']","['W', 'W']"
+prefixes,reverse the result!!!,shortest_first,,p,✅,input/codeparrot/suffix_prefix/9.txt,,
+prefixes,reverse the result!!!,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/9.txt,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']","['a', 's', 'd', 'f', 'g']"
+prefixes,reverse the result!!!,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/9.txt,"['W', 'WW', 'WWW']","['W', 'W']"
+prefixes,12345678,longest_first,,p,✅,input/codeparrot/suffix_prefix/10.txt,,
+prefixes,12345678,longest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/10.txt,"['asdfgh', 'asdfg', 'asdf', 'asd', 'as', 'a']","['as', 'sd', 'df', 'fg', 'gh']"
+prefixes,12345678,longest_first,WWW,f,❌,input/codeparrot/suffix_prefix/10.txt,"['WWW', 'WW', 'W']","['WW', 'WW']"
+prefixes,12345678,shortest_first,,p,✅,input/codeparrot/suffix_prefix/11.txt,,
+prefixes,12345678,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/11.txt,"['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']","['as', 'sd', 'df', 'fg', 'gh']"
+prefixes,12345678,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/11.txt,"['W', 'WW', 'WWW']","['WW', 'WW']"
+suffixes,abc,longest_first,,p,✅,input/codeparrot/suffix_prefix/12.txt,,
+suffixes,abc,longest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/12.txt,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']",['asdfgh']
+suffixes,abc,longest_first,WWW,f,❌,input/codeparrot/suffix_prefix/12.txt,"['WWW', 'WW', 'W']",['WWW']
+suffixes,abc,shortest_first,,p,✅,input/codeparrot/suffix_prefix/13.txt,,
+suffixes,abc,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/13.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']",['asdfgh']
+suffixes,abc,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/13.txt,"['W', 'WW', 'WWW']",['WWW']
+suffixes,xyz,longest_first,,p,✅,input/codeparrot/suffix_prefix/14.txt,,
+suffixes,xyz,longest_first,asdfgh,e,💀,input/codeparrot/suffix_prefix/14.txt,,
+suffixes,xyz,longest_first,WWW,e,💀,input/codeparrot/suffix_prefix/14.txt,,
+suffixes,xyz,shortest_first,,p,✅,input/codeparrot/suffix_prefix/15.txt,,
+suffixes,xyz,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/15.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']",[]
+suffixes,xyz,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/15.txt,"['W', 'WW', 'WWW']",[]
+suffixes,suffix,longest_first,,p,✅,input/codeparrot/suffix_prefix/16.txt,,
+suffixes,suffix,longest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/16.txt,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']","['a', 's', 'd', 'f', 'g']"
+suffixes,suffix,longest_first,WWW,f,❌,input/codeparrot/suffix_prefix/16.txt,"['WWW', 'WW', 'W']","['W', 'W']"
+suffixes,suffix,shortest_first,,p,✅,input/codeparrot/suffix_prefix/17.txt,,
+suffixes,suffix,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/17.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']","['a', 's', 'd', 'f', 'g']"
+suffixes,suffix,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/17.txt,"['W', 'WW', 'WWW']","['W', 'W']"
+suffixes,prefix,longest_first,,p,✅,input/codeparrot/suffix_prefix/18.txt,,
+suffixes,prefix,longest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/18.txt,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']",[]
+suffixes,prefix,longest_first,WWW,f,❌,input/codeparrot/suffix_prefix/18.txt,"['WWW', 'WW', 'W']",[]
+suffixes,prefix,shortest_first,,p,✅,input/codeparrot/suffix_prefix/19.txt,,
+suffixes,prefix,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/19.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']",['asdfgh']
+suffixes,prefix,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/19.txt,"['W', 'WW', 'WWW']",['WWW']
+suffixes,reverse the result!!!,longest_first,,p,✅,input/codeparrot/suffix_prefix/20.txt,,
+suffixes,reverse the result!!!,longest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/20.txt,"['asdfgh', 'sdfgh', 'dfgh', 'fgh', 'gh', 'h']",['asdfgh']
+suffixes,reverse the result!!!,longest_first,WWW,f,❌,input/codeparrot/suffix_prefix/20.txt,"['WWW', 'WW', 'W']",['WWW']
+suffixes,reverse the result!!!,shortest_first,,p,✅,input/codeparrot/suffix_prefix/21.txt,,
+suffixes,reverse the result!!!,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/21.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']",[]
+suffixes,reverse the result!!!,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/21.txt,"['W', 'WW', 'WWW']",[]
+suffixes,12345678,longest_first,,p,✅,input/codeparrot/suffix_prefix/22.txt,,
+suffixes,12345678,longest_first,asdfgh,e,💀,input/codeparrot/suffix_prefix/22.txt,,
+suffixes,12345678,longest_first,WWW,e,💀,input/codeparrot/suffix_prefix/22.txt,,
+suffixes,12345678,shortest_first,,p,✅,input/codeparrot/suffix_prefix/23.txt,,
+suffixes,12345678,shortest_first,asdfgh,f,❌,input/codeparrot/suffix_prefix/23.txt,"['h', 'gh', 'fgh', 'dfgh', 'sdfgh', 'asdfgh']",['asdfgh']
+suffixes,12345678,shortest_first,WWW,f,❌,input/codeparrot/suffix_prefix/23.txt,"['W', 'WW', 'WWW']",['WWW']

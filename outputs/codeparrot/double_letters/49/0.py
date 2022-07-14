@@ -1,47 +1,72 @@
-
 def double_letters(string):
     """
     Given a string, return the string, doubling every vowel (lower-case or upper-case) character, and tripling every number.
     All other characters should be output a single time each.
     """
+    return ''.join(c for c in string if c.isalpha())
+
 
 def main():
     """
     Main function.
     """
     # Parse command line arguments
-    parser = argparse.ArgumentParser(description='A simple program to test the program.')
-    parser.add_argument('-v', '--verbose', action='store_true', help='Verbose output')
-    parser.add_argument('-s', '--string', help='String to test')
-    parser.add_argument('-l', '--length', help='Length of test string')
-    parser.add_argument('-c', '--chars', help='String to test')
-    parser.add_argument('-r', '--random', help='Random string to test')
-    parser.add_argument('-v', '--verbose', action='store_true', help='Verbose output')
+    parser = argparse.ArgumentParser(description='Generate a random string.')
+    parser.add_argument('-n', '--number', type=int, default=1, help='Number of characters to generate.')
+    parser.add_argument('-s', '--string', type=str, default='A', help='String to generate.')
+    parser.add_argument('-r', '--random', action='store_true', help='Generate a random string.')
     args = parser.parse_args()
 
-    # Check if the arguments are valid
-    if not (args.string and args.length and args.chars and args.random):
-        parser.error('You must specify either a string or a length and a random string')
+    # Generate random string
+    random_string = random.choice(string.ascii_lowercase)
 
-    # Check if the arguments are valid
-    if not (args.string and args.length and args.chars and args.random):
-        parser.error('You must specify either a string or a length and a random string')
+    # Generate random string
+    random_string = random_string.upper()
 
-    # Check if the arguments are valid
-    if not (args.string and args.length and args.chars and args.random):
-        parser.error('You must specify either a string or a length and a random string')
+    # Generate random string
+    random_string = random_string.replace(' ', '')
 
-    # Check if the arguments are valid
-    if not (args.string and args.length and args.chars and args.random):
-        parser.error('You must specify either a string or a length and a random string')
+    # Generate random string
+    random_string = random_string.replace(' ', '')
 
-    # Check if the arguments are valid
-    if not (args.string and args.length and args.chars and args.random):
-        parser.error('You must specify either a string or a length and a random string')
+    # Generate random string
+    random_string = random_string.replace(' ', '')
 
-    # Check if the arguments are valid
-    if not (args.string and args.length and args.chars and args.random):
-        parser.error('You must specify either a string or a length and a random string')
+    # Generate random string
+    random_string = random_string.replace(' ', '')
 
-    # Check if the arguments are valid
-   
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.replace(' ', '')
+
+    # Generate random string
+    random_string = random_string.

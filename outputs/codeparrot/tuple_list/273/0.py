@@ -1,52 +1,47 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count)
 
-def some_func_with_max(lst):
+
+def test_func():
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_min(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest eleventh value.
-    """
 
-def some_func_with_sum(lst):
+def test_func_with_args():
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the sum of the values.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_product(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the product of the values.
-    """
 
-def some_func_with_sum_and_product(lst):
+def test_func_with_kwargs():
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the sum and the product of the values.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_product_and_max(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the product and the max of the values.
-    """
 
-def some_func_with_sum_and_product_and_max(lst):
+def test_func_with_args_kwargs():
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the sum and the product and the max of the values.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_product_and_min(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the product and the min of the values.
-    """
 
-def some_func_with_sum_and_product_and_min(lst):
+def test_func_with_kwargs_kwargs():
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the sum and the product and the min of the values.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_product_and_max_
+
+def test_func_with_args_kwargs_kwargs():
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest eleventh value.
+    """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4

@@ -1,337 +1,337 @@
 pos_ret,neg_ret,sep,case,input,expected,actual,result,result_emojis,model_input
-True,False,an underscore,uppercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,uppercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/14.txt
-True,False,an underscore,lowercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,an underscore,lowercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/15.txt
-True,False,two underscores,uppercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,uppercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/16.txt
-True,False,two underscores,lowercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,two underscores,lowercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/17.txt
-True,False,six underscores,uppercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,uppercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/18.txt
-True,False,six underscores,lowercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,six underscores,lowercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/19.txt
-True,False,a minus,uppercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,uppercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/20.txt
-True,False,a minus,lowercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a minus,lowercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/21.txt
-True,False,a plus,uppercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,uppercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/22.txt
-True,False,a plus,lowercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a plus,lowercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/23.txt
-True,False,a dash,uppercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,uppercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/24.txt
-True,False,a dash,lowercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a dash,lowercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/25.txt
-True,False,a question mark,uppercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,uppercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/26.txt
-True,False,a question mark,lowercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-True,False,a question mark,lowercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/27.txt
-False,True,an underscore,uppercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,AAB_CBBC,False,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,uppercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/28.txt
-False,True,an underscore,lowercase,aab_cbbbc,False,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,an underscore,lowercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/29.txt
-False,True,two underscores,uppercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,AAB__CBBC,False,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,uppercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/30.txt
-False,True,two underscores,lowercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,aab__cbbbc,False,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,two underscores,lowercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/31.txt
-False,True,six underscores,uppercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,AAB______CBBC,False,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,uppercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/32.txt
-False,True,six underscores,lowercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,aab______cbbbc,False,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,six underscores,lowercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/33.txt
-False,True,a minus,uppercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,uppercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/34.txt
-False,True,a minus,lowercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a minus,lowercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/35.txt
-False,True,a plus,uppercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,AAB+CBBC,False,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,uppercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/36.txt
-False,True,a plus,lowercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,aab+cbbbc,False,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a plus,lowercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/37.txt
-False,True,a dash,uppercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,uppercase,AAB-CBBC,False,None,f,❌,input/codeparrot/joined_seq/38.txt
-False,True,a dash,lowercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,aab-cbbbc,False,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a dash,lowercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/39.txt
-False,True,a question mark,uppercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,aab?cbbbc,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,AAB?CBBC,False,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,uppercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/40.txt
-False,True,a question mark,lowercase,aab_cbbbc,True,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,AAB_CBBC,True,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,aab__cbbbc,True,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,AAB__CBBC,True,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,aab______cbbbc,True,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,AAB______CBBC,True,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,aab?cbbbc,False,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,AAB?CBBC,True,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,aab+cbbbc,True,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,AAB+CBBC,True,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,aab-cbbbc,True,None,f,❌,input/codeparrot/joined_seq/41.txt
-False,True,a question mark,lowercase,AAB-CBBC,True,None,f,❌,input/codeparrot/joined_seq/41.txt
+True,False,an underscore,uppercase,aab_cbbbc,False,'aab cbbbc',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,AAB_CBBC,True,'AAB CBBC',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,aab__cbbbc,False,'aab  cbbbc',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,AAB__CBBC,False,'AAB  CBBC',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,aab______cbbbc,False,'aab      cbbbc',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,AAB______CBBC,False,'AAB      CBBC',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,aab?cbbbc,False,'aab?cbbbc',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,AAB?CBBC,False,'AAB?CBBC',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,aab+cbbbc,False,'aab+cbbbc',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,AAB+CBBC,False,'AAB+CBBC',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,aab-cbbbc,False,'aab-cbbbc',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,uppercase,AAB-CBBC,False,'AAB-CBBC',f,❌,input/codeparrot/joined_seq/14.txt
+True,False,an underscore,lowercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,an underscore,lowercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/15.txt
+True,False,two underscores,uppercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,uppercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/16.txt
+True,False,two underscores,lowercase,aab_cbbbc,False,'aabcbbbc',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,AAB_CBBC,False,'AABCBBC',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,aab__cbbbc,True,'aabcbbbc',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,AAB__CBBC,False,'AABCBBC',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,aab______cbbbc,False,'aabcbbbc',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,AAB______CBBC,False,'AABCBBC',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,aab?cbbbc,False,'aabcbbbc',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,AAB?CBBC,False,'AABCBBC',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,aab+cbbbc,False,'aabcbbbc',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,AAB+CBBC,False,'AABCBBC',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,aab-cbbbc,False,'aabcbbbc',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,two underscores,lowercase,AAB-CBBC,False,'AABCBBC',f,❌,input/codeparrot/joined_seq/17.txt
+True,False,six underscores,uppercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,uppercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/18.txt
+True,False,six underscores,lowercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,six underscores,lowercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/19.txt
+True,False,a minus,uppercase,aab_cbbbc,,,p,✅,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,AAB_CBBC,False,True,f,❌,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,aab__cbbbc,,,p,✅,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,AAB__CBBC,False,True,f,❌,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,aab______cbbbc,,,p,✅,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,AAB______CBBC,False,True,f,❌,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,aab?cbbbc,,,p,✅,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,AAB?CBBC,False,True,f,❌,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,aab+cbbbc,,,p,✅,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,AAB+CBBC,False,True,f,❌,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,aab-cbbbc,,,p,✅,input/codeparrot/joined_seq/20.txt
+True,False,a minus,uppercase,AAB-CBBC,,,p,✅,input/codeparrot/joined_seq/20.txt
+True,False,a minus,lowercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a minus,lowercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/21.txt
+True,False,a plus,uppercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,uppercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/22.txt
+True,False,a plus,lowercase,aab_cbbbc,False,'aab_cbbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,AAB_CBBC,False,'aab_cbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,aab__cbbbc,False,'aab__cbbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,AAB__CBBC,False,'aab__cbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,aab______cbbbc,False,'aab______cbbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,AAB______CBBC,False,'aab______cbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,aab?cbbbc,False,'aab?cbbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,AAB?CBBC,False,'aab?cbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,aab+cbbbc,True,'aab+cbbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,AAB+CBBC,False,'aab+cbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,aab-cbbbc,False,'aab-cbbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a plus,lowercase,AAB-CBBC,False,'aab-cbbc',f,❌,input/codeparrot/joined_seq/23.txt
+True,False,a dash,uppercase,aab_cbbbc,False,True,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,AAB_CBBC,False,True,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,aab__cbbbc,False,True,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,AAB__CBBC,False,True,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,aab______cbbbc,False,True,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,AAB______CBBC,False,True,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,aab?cbbbc,False,True,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,AAB?CBBC,False,True,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,aab+cbbbc,False,True,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,AAB+CBBC,False,True,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,aab-cbbbc,,,p,✅,input/codeparrot/joined_seq/24.txt
+True,False,a dash,uppercase,AAB-CBBC,True,False,f,❌,input/codeparrot/joined_seq/24.txt
+True,False,a dash,lowercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a dash,lowercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/25.txt
+True,False,a question mark,uppercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,uppercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/26.txt
+True,False,a question mark,lowercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/27.txt
+True,False,a question mark,lowercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/27.txt
+False,True,an underscore,uppercase,aab_cbbbc,True,False,f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,AAB_CBBC,False,'AAB CBBC',f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,aab__cbbbc,True,False,f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,AAB__CBBC,True,'AAB  CBBC',f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,aab______cbbbc,True,False,f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,AAB______CBBC,True,'AAB      CBBC',f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,aab?cbbbc,True,False,f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,AAB?CBBC,True,'AAB?CBBC',f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,aab+cbbbc,True,False,f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,AAB+CBBC,True,'AAB+CBBC',f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,aab-cbbbc,True,False,f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,uppercase,AAB-CBBC,True,'AAB-CBBC',f,❌,input/codeparrot/joined_seq/28.txt
+False,True,an underscore,lowercase,aab_cbbbc,False,'aabcbbbc',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,AAB_CBBC,True,'',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,aab__cbbbc,True,'aabcbbbc',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,AAB__CBBC,True,'',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,aab______cbbbc,True,'aabcbbbc',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,AAB______CBBC,True,'',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,aab?cbbbc,True,'aabcbbbc',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,AAB?CBBC,True,'',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,aab+cbbbc,True,'aabcbbbc',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,AAB+CBBC,True,'',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,aab-cbbbc,True,'aabcbbbc',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,an underscore,lowercase,AAB-CBBC,True,'',f,❌,input/codeparrot/joined_seq/29.txt
+False,True,two underscores,uppercase,aab_cbbbc,True,'aab_cbbbc',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,AAB_CBBC,True,'AAB_CBBC',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,aab__cbbbc,True,'aab__cbbbc',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,AAB__CBBC,False,'AAB__CBBC',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,aab______cbbbc,True,'aab______cbbbc',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,AAB______CBBC,True,'AAB______CBBC',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,aab?cbbbc,True,'aab?cbbbc',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,AAB?CBBC,True,'AAB?CBBC',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,aab+cbbbc,True,'aab+cbbbc',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,AAB+CBBC,True,'AAB+CBBC',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,aab-cbbbc,True,'aab-cbbbc',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,uppercase,AAB-CBBC,True,'AAB-CBBC',f,❌,input/codeparrot/joined_seq/30.txt
+False,True,two underscores,lowercase,aab_cbbbc,True,'aab_cbbbc',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,AAB_CBBC,True,'AAB_CBBC',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,aab__cbbbc,False,'aab__cbbbc',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,AAB__CBBC,True,'AAB__CBBC',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,aab______cbbbc,True,'aab______cbbbc',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,AAB______CBBC,True,'AAB______CBBC',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,aab?cbbbc,True,'aab?cbbbc',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,AAB?CBBC,True,'AAB?CBBC',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,aab+cbbbc,True,'aab+cbbbc',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,AAB+CBBC,True,'AAB+CBBC',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,aab-cbbbc,True,'aab-cbbbc',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,two underscores,lowercase,AAB-CBBC,True,'AAB-CBBC',f,❌,input/codeparrot/joined_seq/31.txt
+False,True,six underscores,uppercase,aab_cbbbc,True,'aab_cbbbc',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,AAB_CBBC,True,'AAB_CBBC',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,aab__cbbbc,True,'aab__cbbbc',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,AAB__CBBC,True,'AAB__CBBC',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,aab______cbbbc,True,'aab______cbbbc',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,AAB______CBBC,False,'AAB______CBBC',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,aab?cbbbc,True,'aab?cbbbc',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,AAB?CBBC,True,'AAB?CBBC',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,aab+cbbbc,True,'aab+cbbbc',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,AAB+CBBC,True,'AAB+CBBC',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,aab-cbbbc,True,'aab-cbbbc',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,uppercase,AAB-CBBC,True,'AAB-CBBC',f,❌,input/codeparrot/joined_seq/32.txt
+False,True,six underscores,lowercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,six underscores,lowercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/33.txt
+False,True,a minus,uppercase,aab_cbbbc,True,'AAB_CBBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,AAB_CBBC,True,'AAB_CBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,aab__cbbbc,True,'AAB__CBBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,AAB__CBBC,True,'AAB__CBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,aab______cbbbc,True,'AAB______CBBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,AAB______CBBC,True,'AAB______CBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,aab?cbbbc,True,'AAB?CBBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,AAB?CBBC,True,'AAB?CBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,aab+cbbbc,True,'AAB+CBBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,AAB+CBBC,True,'AAB+CBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,aab-cbbbc,True,'AAB-CBBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,uppercase,AAB-CBBC,False,'AAB-CBBC',f,❌,input/codeparrot/joined_seq/34.txt
+False,True,a minus,lowercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a minus,lowercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/35.txt
+False,True,a plus,uppercase,aab_cbbbc,True,'AAB_CBBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,AAB_CBBC,True,'AAB_CBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,aab__cbbbc,True,'AAB__CBBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,AAB__CBBC,True,'AAB__CBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,aab______cbbbc,True,'AAB______CBBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,AAB______CBBC,True,'AAB______CBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,aab?cbbbc,True,'AAB?CBBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,AAB?CBBC,True,'AAB?CBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,aab+cbbbc,True,'AAB+CBBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,AAB+CBBC,False,'AAB+CBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,aab-cbbbc,True,'AAB-CBBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,uppercase,AAB-CBBC,True,'AAB-CBBC',f,❌,input/codeparrot/joined_seq/36.txt
+False,True,a plus,lowercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a plus,lowercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/37.txt
+False,True,a dash,uppercase,aab_cbbbc,True,'aab_cbbbc',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,AAB_CBBC,True,'AAB_CBBC',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,aab__cbbbc,True,'aab__cbbbc',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,AAB__CBBC,True,'AAB__CBBC',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,aab______cbbbc,True,'aab______cbbbc',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,AAB______CBBC,True,'AAB______CBBC',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,aab?cbbbc,True,'aab?cbbbc',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,AAB?CBBC,True,'AAB?CBBC',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,aab+cbbbc,True,'aab+cbbbc',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,AAB+CBBC,True,'AAB+CBBC',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,aab-cbbbc,True,'aabcbbbc',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,uppercase,AAB-CBBC,False,'AABCBBC',f,❌,input/codeparrot/joined_seq/38.txt
+False,True,a dash,lowercase,aab_cbbbc,True,'aab_cbbbc',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,AAB_CBBC,True,'AAB_CBBC',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,aab__cbbbc,True,'aab__cbbbc',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,AAB__CBBC,True,'AAB__CBBC',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,aab______cbbbc,True,'aab______cbbbc',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,AAB______CBBC,True,'AAB______CBBC',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,aab?cbbbc,True,'aab?cbbbc',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,AAB?CBBC,True,'AAB?CBBC',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,aab+cbbbc,True,'aab+cbbbc',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,AAB+CBBC,True,'AAB+CBBC',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,aab-cbbbc,False,'aabcbbbc',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a dash,lowercase,AAB-CBBC,True,'AABCBBC',f,❌,input/codeparrot/joined_seq/39.txt
+False,True,a question mark,uppercase,aab_cbbbc,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,AAB_CBBC,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,aab__cbbbc,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,AAB__CBBC,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,aab______cbbbc,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,AAB______CBBC,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,aab?cbbbc,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,AAB?CBBC,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,aab+cbbbc,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,AAB+CBBC,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,aab-cbbbc,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,uppercase,AAB-CBBC,,,e,💀,input/codeparrot/joined_seq/40.txt
+False,True,a question mark,lowercase,aab_cbbbc,True,'aab_cbbbc',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,AAB_CBBC,True,'AAB_CBBC',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,aab__cbbbc,True,'aab__cbbbc',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,AAB__CBBC,True,'AAB__CBBC',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,aab______cbbbc,True,'aab______cbbbc',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,AAB______CBBC,True,'AAB______CBBC',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,aab?cbbbc,False,'aab?cbbbc',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,AAB?CBBC,True,'AAB?CBBC',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,aab+cbbbc,True,'aab+cbbbc',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,AAB+CBBC,True,'AAB+CBBC',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,aab-cbbbc,True,'aab-cbbbc',f,❌,input/codeparrot/joined_seq/41.txt
+False,True,a question mark,lowercase,AAB-CBBC,True,'AAB-CBBC',f,❌,input/codeparrot/joined_seq/41.txt

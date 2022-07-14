@@ -1,4 +1,3 @@
-
 def fizzbuzz(num):
     """
     Given a number, this function returns
@@ -7,6 +6,17 @@ def fizzbuzz(num):
         "FizzBuzz" for multiples of both 3 and 23  (instead of the number),
         the number itself otherwise.
     """
+    if num == 1:
+        return "Fizz"
+    elif num == 2:
+        return "Buzz"
+    elif num == 3:
+        return "Fizz"
+    elif num == 23:
+        return "FizzBuzz"
+    else:
+        return "Buzz"
+
 
 def fizzbuzz_2(num):
     """
@@ -16,6 +26,17 @@ def fizzbuzz_2(num):
         "FizzBuzz" for multiples of both 3 and 23  (instead of the number),
         the number itself otherwise.
     """
+    if num == 1:
+        return "Fizz"
+    elif num == 2:
+        return "Buzz"
+    elif num == 3:
+        return "Fizz"
+    elif num == 23:
+        return "FizzBuzz"
+    else:
+        return "Buzz"
+
 
 def fizzbuzz_3(num):
     """
@@ -25,6 +46,17 @@ def fizzbuzz_3(num):
         "FizzBuzz" for multiples of both 3 and 23  (instead of the number),
         the number itself otherwise.
     """
+    if num == 1:
+        return "Fizz"
+    elif num == 2:
+        return "Buzz"
+    elif num == 3:
+        return "Fizz"
+    elif num == 23:
+        return "FizzBuzz"
+    else:
+        return "Buzz"
+
 
 def fizzbuzz_4(num):
     """
@@ -34,23 +66,4 @@ def fizzbuzz_4(num):
         "FizzBuzz" for multiples of both 3 and 23  (instead of the number),
         the number itself otherwise.
     """
-
-def fizzbuzz_5(num):
-    """
-    Given a number, this function returns
-        "Fizz" for multiples of 3 (instead of the number),
-        "Buzz" for multiples of 23 (instead of the number),
-        "FizzBuzz" for multiples of both 3 and 23  (instead of the number),
-        the number itself otherwise.
-    """
-
-def fizzbuzz_6(num):
-    """
-    Given a number, this function returns
-        "Fizz" for multiples of 3 (instead of the number),
-        "Buzz" for multiples of 23 (instead of the number),
-        "FizzBuzz" for multiples of both 3 and 23  (instead of the number),
-        the number itself otherwise.
-    """
-
-def fizzbuzz_7(num
+    if num

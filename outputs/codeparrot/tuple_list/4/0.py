@@ -1,62 +1,50 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[0]
 
-def fibonacci_with_min(lst):
+
+def fibonacci_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1]
 
-def fibonacci_with_max(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest first value.
-    """
 
-def fibonacci_with_sum(lst):
+def fibonacci_with_min_max_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the sum of the values in the tuple.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1]
 
-def fibonacci_with_product(lst):
-    """
-    Given a list of tuples, write a function that returns the product of the values in the tuple.
-    """
 
-def fibonacci_with_sum_product(lst):
+def fibonacci_with_min_max_with_min_max_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the sum of the values in the tuple.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1]
 
-def fibonacci_with_product_sum(lst):
-    """
-    Given a list of tuples, write a function that returns the sum of the values in the tuple.
-    """
 
-def fibonacci_with_product_product(lst):
+def fibonacci_with_min_max_with_min_max_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the product of the values in the tuple.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1]
 
-def fibonacci_with_sum_product_product(lst):
-    """
-    Given a list of tuples, write a function that returns the sum of the values in the tuple.
-    """
 
-def fibonacci_with_product_sum_product(lst):
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the sum of the values in the tuple.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1]
 
-def fibonacci_with_sum_product_sum(lst):
-    """
-    Given a list of tuples, write a function that returns the sum of the values in the tuple.
-    """
 
-def fibonacci_with_product_sum_product(lst):
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
-    Given a list of tuples, write a function that returns the sum of the values in the tuple.
+    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return min(lst, key=lambda x: x[1])[1]
 
-def fibon
+
+def fibonacci_with_min_max_with_min_max

@@ -1,62 +1,59 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest third value.
     """
+    return max(lst, key=lst.count)[1]
 
-def some_func_with_one_arg(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest value.
-    """
 
-def some_func_with_two_args(lst):
+def some_func_with_args(lst):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest fourth value.
     """
+    return max(lst, key=lst.count)[2]
 
-def some_func_with_three_args(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the smallest value.
-    """
 
-def some_func_with_four_args(lst):
+def some_func_with_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest fifth value.
     """
+    return max(lst, key=lst.count)[3]
 
-def some_func_with_five_args(lst):
-    """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest value.
-    """
 
-def some_func_with_six_args(lst):
+def some_func_with_args_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest fifth value.
     """
+    return max(lst, key=lst.count)[4]
 
-def some_func_with_seven_args(lst):
-    """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest value.
-    """
 
-def some_func_with_eight_args(lst):
+def some_func_with_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest fifth value.
     """
+    return max(lst, key=lst.count)[5]
 
-def some_func_with_nine_args(lst):
-    """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest value.
-    """
 
-def some_func_with_ten_args(lst):
+def some_func_with_args_kwargs_kwargs(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest fifth value.
     """
+    return max(lst, key=lst.count)[6]
 
-def some_func_with_eleven_args(lst):
-    """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest value.
-    """
 
-def some_
+def some_func_with_kwargs_args_kwargs(lst):
+    """
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest fifth value.
+    """
+    return max(lst, key=lst.count)[7]
+
+
+def some_func_with_args_kwargs_args_kwargs(lst):
+    """
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest fifth value.
+    """
+    return max(lst, key=lst.count)[8]
+
+
+def some_func_with_kwargs_args_kwargs_kwargs(lst):
+    """
+    Given a list of tuples, write a function that returns the fifth value of the tuple with the largest fifth value

@@ -1,83 +1,90 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "small" if n < -100 and "large" if n >= 2 (and None if -100 <= n < 2).
     """
+    if n < -100:
+        return "small"
+    elif n < 2:
+        return "large"
+    else:
+        return None
 
-def is_prime(n):
-    """
-        Given an integer n, return True if n is prime, otherwise False.
-    """
-    if n < 2:
-        return False
-    if n == 2:
-        return True
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    if n % 7 == 0:
-        return False
-    if n % 11 == 0:
-        return False
-    return True
 
-def is_prime_factor(n):
+def get_random_string(length):
     """
-        Given an integer n, return True if n is prime factor, otherwise False.
+        Returns a random string of length length.
     """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    if n % 7 == 0:
-        return False
-    if n % 11 == 0:
-        return False
-    return True
+    return "".join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def is_prime_factor_list(n):
-    """
-        Given an integer n, return True if n is prime factor list, otherwise False.
-    """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    if n % 7 == 0:
-        return False
-    if n % 11 == 0:
-        return False
-    return True
 
-def is_prime_factor_list_with_prime_factor(n):
+def get_random_number(length):
     """
-        Given an integer n, return True if n is prime factor list with prime factor, otherwise False.
+        Returns a random number of length length.
     """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    if n % 7 == 0:
-        return False
-    if n % 11 == 0:
-        return False
-    return True
+    return random.randint(1, length)
 
-def is_prime_factor_list_with_prime_factor_and_list(n):
+
+def get_random_date(length):
     """
-        Given an integer n, return True if n is prime factor list with prime factor and list, otherwise False
+        Returns a random date of length length.
+    """
+    return datetime.date.today() + datetime.timedelta(days=length)
+
+
+def get_random_datetime(length):
+    """
+        Returns a random datetime of length length.
+    """
+    return datetime.datetime.now() + datetime.timedelta(days=length)
+
+
+def get_random_date_range(length):
+    """
+        Returns a random date range of length length.
+    """
+    return range(length)
+
+
+def get_random_time(length):
+    """
+        Returns a random time of length length.
+    """
+    return datetime.time(hour=random.randint(0, 23), minute=random.randint(0, 59), second=random.randint(0, 59))
+
+
+def get_random_datetime_range(length):
+    """
+        Returns a random datetime range of length length.
+    """
+    return range(length)
+
+
+def get_random_time_range(length):
+    """
+        Returns a random time range of length length.
+    """
+    return range(length)
+
+
+def get_random_date_range_range(length):
+    """
+        Returns a random date range of length length.
+    """
+    return range(length)
+
+
+def get_random_time_range_range(length):
+    """
+        Returns a random time range of length length.
+    """
+    return range(length)
+
+
+def get_random_datetime_range_range(length):
+    """
+        Returns a random datetime range of length length.
+    """
+    return range(length)
+
+
+def get_random_date_range

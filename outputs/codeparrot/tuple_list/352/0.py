@@ -1,57 +1,59 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest last value.
     """
+    return max(lst, key=lst.count)[0]
+
 
 def fibonacci_with_max(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the largest last value.
     """
+    return max(lst, key=lst.count)[-1]
+
 
 def fibonacci_with_min(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the smallest first value.
     """
+    return min(lst, key=lst.count)[0]
+
 
 def fibonacci_with_sum(lst):
     """
     Given a list of tuples, write a function that returns the eleventh value of the tuple with the sum of the values.
     """
+    return sum(lst, key=lst.count)[0]
 
-def fibonacci_with_product(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the product of the values.
-    """
 
-def fibonacci_with_multiply(lst):
+def fibonacci_with_mean(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the product of the values.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the mean of the values.
     """
+    return mean(lst, key=lst.count)[0]
 
-def fibonacci_with_divide(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the division of the values.
-    """
 
-def fibonacci_with_remainder(lst):
+def fibonacci_with_median(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the remainder of the values.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the median of the values.
     """
+    return median(lst, key=lst.count)[0]
 
-def fibonacci_with_power(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the power of the values.
-    """
 
-def fibonacci_with_plus(lst):
+def fibonacci_with_mode(lst):
     """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the plus of the values.
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the mode of the tuple.
     """
+    return mode(lst, key=lst.count)[0]
 
-def fibonacci_with_minus(lst):
-    """
-    Given a list of tuples, write a function that returns the eleventh value of the tuple with the minus of the values.
-    """
 
-def fibonacci_with_times(lst
+def fibonacci_with_mean_mode(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of the tuple with the mean of the values.
+    """
+    return mean_mode(lst, key=lst.count)[0]
+
+
+def fibonacci_with_mode_mean(lst):
+    """
+    Given a list of tuples, write a function that returns the eleventh value of

@@ -4,6 +4,7 @@ import re
 TARGET = 'string_sequence'
 INPUTS = list(range(100))
 ORIGIN = "humaneval"
+TEST_IMPORTS = ['random', 'string']
 
 TEXT = """
 def string_sequence(n: int) -> str:

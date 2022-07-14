@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha-256 hash equivalent string.
@@ -6,70 +5,62 @@ def string_to_hash(text):
 
     >>> string_to_hash('Hello world') == '64ec88ca00b268e5ba1a35678a1b5316d212f4f366b2477232534a8aeca37f3c'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        return hashlib.sha256(text.encode('utf-8')).hexdigest()
+    return None
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int('Hello world') == 0
-    True
+def get_file_hash(filename, block_size=2 ** 20):
     """
+    Calculate the hash of a file.
 
-def int_to_string(i):
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
-    Given an integer 'i', return its string equivalent string.
-    If 'i' is an empty string, return None.
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            hash_value = hashlib.sha256(data).hexdigest()
+            if not hash_value in file_hashes:
+                file_hashes[hash_value] = []
+            file_hashes[hash_value].append(data)
+    return file_hashes
 
-    >>> int_to_string(0) == ''
-    True
-    """
 
-def string_to_bool(text):
+def get_file_hashes(filename):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_bool('Hello world') == 'true'
-    True
+    :param filename: The filename to hash.
+    :return: The hash of the file.
     """
+    hashes = {}
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            hash_value = hashlib.sha256(data).hexdigest()
+            if not hash_value in hashes:
+                hashes[hash_value] = []
+            hashes[hash_value].append(data)
+    return hashes
 
-def bool_to_string(b):
-    """
-    Given a boolean 'b', return its string equivalent string.
-    If 'b' is an empty string, return None.
 
-    >>> bool_to_string(True) == 'true'
-    True
+def get_file_hashes_for_file(file_path, block_size=2 ** 20):
     """
+    Calculate the hash of a file.
 
-def string_to_list(text):
+    :param file_path: The path to the file.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_list('Hello world') == ['Hello world']
-    True
-    """
-
-def list_to_string(l):
-    """
-    Given a list of strings, return its string equivalent string.
-    If 'l' is an empty string, return None.
-
-    >>> list_to_string([]) == ''
-    True
-    """
-
-def string_to_dict(text):
-    """
-    Given a string 'text', return its dict equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_dict('Hello world') == {}
-    True
-    """
-
-def dict_to_string(d):
-    """
-    Given a dictionary, return its string equivalent string
+    hashes = {}
+    with open(file_path, 'rb') as f:
+        while True:
+            data = f.read(block

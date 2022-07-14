@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha512 hash equivalent string.
@@ -6,54 +5,41 @@ def string_to_hash(text):
 
     >>> string_to_hash('Hallo welt') == '9c12b8eb6bc215a7d2202eaa0f255d5dbd6f6d820bbd7d936d7771691acb952904ef6a679ff4bf9063f44cc4f219504312ea313e63c7cf60e01edd1f570a3edb'
     """
+    if not text:
+        return None
+    if len(text) == 40:
+        return sha512(text).hexdigest()
+    return None
 
-def string_to_int(text):
+
+def get_file_hash(filename):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its sha512 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_int('Hallo welt') == 0
-    >>> string_to_int('Hallo welt')
-    0
+    >>> get_file_hash('Hallo welt') == '9c12b8eb6bc215a7d2202eaa0f255d5dbd6f6d820bbd7d936d7771691acb952904ef6a679ff4bf9063f44cc4f219504312ea313e63c7cf60e01edd1f570a3edb'
     """
+    if not filename:
+        return None
+    if len(filename) == 40:
+        return sha512(filename).hexdigest()
+    return None
 
-def int_to_string(int_val):
+
+def get_file_size(filename):
     """
-    Given an integer 'int_val', return its string equivalent string.
-    If 'int_val' is an empty string, return None.
+    Given a filename, return its size equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> int_to_string(0)
-    '0'
-    >>> int_to_string(1)
-    '1'
-    >>> int_to_string(2)
-    '2'
-    >>> int_to_string(3)
-    '3'
-    >>> int_to_string(4)
-    '4'
-    >>> int_to_string(5)
-    '5'
-    >>> int_to_string(6)
-    '6'
-    >>> int_to_string(7)
-    '7'
-    >>> int_to_string(8)
-    '8'
-    >>> int_to_string(9)
-    '9'
-    >>> int_to_string(10)
-    '10'
+    >>> get_file_size('Hallo welt') == '9c12b8eb6bc215a7d2202eaa0f255d5dbd6f6d820bbd7d936d7771691acb952904ef6a679ff4bf9063f44cc4f219504312ea313e63c7cf60e01edd1f570a3edb'
     """
+    if not filename:
+        return None
+    if len(filename) == 40:
+        return os.path.getsize(filename)
+    return None
 
-def string_to_int_list(text):
+
+def get_file_md5(filename):
     """
-    Given a string 'text', return its int equivalent list.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_int_list('Hallo welt') == []
-    >>> string_to_int_list('Hallo welt')
-    []
-    >>> string_to_int_list('Hallo welt')
-    []
-    >>> string_to_int_
+    Given a filename, return its md5 equivalent

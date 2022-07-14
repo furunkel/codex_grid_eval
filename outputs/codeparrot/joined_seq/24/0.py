@@ -1,70 +1,68 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns True if the input string contains sequences of uppercase letters joined with a dash and False otherwise.
     """
+    return text.replace('-', '') == text
 
-def get_sequence(text):
-    """
-    Return the sequence of uppercase letters in the input string.
-    """
-    return text.upper().replace(' ', '')
 
-def get_sequence_with_spaces(text):
+def remove_punctuation(text):
     """
-    Return the sequence of uppercase letters in the input string with spaces removed.
+    Remove punctuation from a string.
     """
-    return text.replace(' ', '')
+    return text.translate(None, string.punctuation)
 
-def get_sequence_with_tabs(text):
-    """
-    Return the sequence of uppercase letters in the input string with tabs removed.
-    """
-    return text.replace(' ', '')
 
-def get_sequence_with_newlines(text):
+def remove_non_ascii(text):
     """
-    Return the sequence of uppercase letters in the input string with newlines removed.
+    Remove non-ASCII characters from a string.
     """
-    return text.replace('\n', '')
+    return text.translate(None, string.punctuation)
 
-def get_sequence_with_tabs_and_newlines(text):
-    """
-    Return the sequence of uppercase letters in the input string with tabs and newlines removed.
-    """
-    return text.replace('\t', ' ')
 
-def get_sequence_with_newlines_and_tabs(text):
+def remove_non_ascii_chars(text):
     """
-    Return the sequence of uppercase letters in the input string with newlines and tabs removed.
+    Remove non-ASCII characters from a string.
     """
-    return text.replace('\n', ' ')
+    return text.translate(None, string.punctuation).translate(None, string.whitespace)
 
-def get_sequence_with_leading_whitespace(text):
-    """
-    Return the sequence of uppercase letters in the input string with leading whitespace removed.
-    """
-    return text.replace(' ', ' ')
 
-def get_sequence_with_leading_tabs(text):
+def remove_non_ascii_chars_and_spaces(text):
     """
-    Return the sequence of uppercase letters in the input string with leading tabs removed.
+    Remove non-ASCII characters and spaces from a string.
     """
-    return text.replace('\t', ' ')
+    return text.translate(None, string.punctuation).translate(None, string.whitespace)
 
-def get_sequence_with_leading_newlines(text):
-    """
-    Return the sequence of uppercase letters in the input string with leading newlines removed.
-    """
-    return text.replace('\n', ' ')
 
-def get_sequence_with_tabs_and_newlines(text):
+def remove_non_ascii_chars_and_spaces_and_newlines(text):
     """
-    Return the sequence of uppercase letters in the input string with tabs and newlines removed.
+    Remove non-ASCII characters and spaces from a string.
     """
-    return text.replace('\t', ' ')
+    return text.translate(None, string.punctuation).translate(None, string.whitespace)
 
-def get_sequence_with_leading_newlines_and_tabs(text):
+
+def remove_non_ascii_chars_and_spaces_and_newlines_and_newlines(text):
     """
-    Return the sequence of uppercase letters in the input string with leading newlines and tabs removed.
+    Remove non-ASCII characters and spaces from a string.
     """
+    return text.translate(None, string.punctuation).translate(None, string.whitespace)
+
+
+def remove_non_ascii_chars_and_spaces_and_newlines_and_newlines(text):
+    """
+    Remove non-ASCII characters and spaces from a string.
+    """
+    return text.translate(None, string.punctuation).translate(None, string.whitespace)
+
+
+def remove_non_ascii_chars_and_spaces_and_newlines_and_newlines(text):
+    """
+    Remove non-ASCII characters and spaces from a string.
+    """
+    return text.translate(None, string.punctuation).translate(None, string.whitespace)
+
+
+def remove_non_ascii_chars_and_spaces_and_newlines_and_newlines(text):
+    """
+    Remove non-ASCII characters and spaces from a string.
+    """
+    return text.translate(None, string.punctuation).translate(None, string

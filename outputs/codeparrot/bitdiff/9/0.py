@@ -22,32 +22,37 @@ def get_bit_diff_str(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%s%s" % (get_bit_diff(a, b), get_bit_diff(b, a))
+    return "%s %s" % (get_bit_diff(a, b), get_bit_diff(b, a))
 
 
 def get_bit_diff_str_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%s%s%s" % (get_bit_diff_str(a, b), get_bit_diff_str(b, a), get_bit_diff_str(b, b))
+    return "%s %s" % (get_bit_diff_str(a, b), get_bit_diff_str(b, a))
 
 
 def get_bit_diff_str_list_str(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%s%s%s" % (get_bit_diff_str_list(a, b), get_bit_diff_str_list(b, a), get_bit_diff_str_list(b, b))
+    return "%s %s" % (get_bit_diff_str_list(a, b), get_bit_diff_str_list(b, a))
 
 
 def get_bit_diff_str_list_str_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%s%s%s%s" % (get_bit_diff_str_list_str(a, b), get_bit_diff_str_list_str(b, a), get_bit_diff_str_list_str(b, b))
+    return "%s %s" % (get_bit_diff_str_list_str(a, b), get_bit_diff_str_list_str(b, a))
 
 
 def get_bit_diff_str_list_str_list(a, b):
     """
     Returns the difference between the two numbers.
     """
-    return "%s%s%s%s" % (get_bit_diff_str_list_str_
+    return "%s %s" % (get_bit_diff_str_list_str_list(a, b), get_bit_diff_str_list_str_list(b, a))
+
+
+def get_bit_diff_str_list_str_list(a, b):
+    """
+    Returns the difference between the two

@@ -1,59 +1,50 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return max(lst, key=lst.count)[1]
 
-def fibonacci_2(lst):
+
+def fibonacci_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_3(lst):
+
+def fibonacci_with_min_max_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_4(lst):
+
+def fibonacci_with_min_max_with_min_max_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_5(lst):
+
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_6(lst):
+
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_7(lst):
+
+def fibonacci_with_min_max_with_min_max_with_min_max_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
+    return min(lst, key=lst.count)[1]
 
-def fibonacci_8(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
-    """
 
-def fibonacci_9(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
-    """
-
-def fibonacci_10(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
-    """
-
-def fibonacci_11(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
-    """
-
-def fibonacci_12(lst):
-    """
-    Given a list of tuples, write a function that returns the twelf
+def fibonacci_with_min_max

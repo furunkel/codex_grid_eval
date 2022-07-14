@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its SHA224 hash equivalent string.
@@ -6,70 +5,50 @@ def string_to_hash(text):
 
     >>> string_to_hash('sha1') == 'bedb87f662c96d4ae159dab7c55a49ea268f92099d198bdad0f72c35'
     """
+    if not text:
+        return None
+    return hashlib.sha224(text.encode('utf-8')).hexdigest()
 
-def string_to_int(text):
-    """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_int('sha1')
-    0
+def get_file_hash(filename):
     """
+    Given a filename, return its SHA224 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-def int_to_string(text):
+    >>> get_file_hash('sha1') == 'bedb87f662c96d4ae159dab7c55a49ea268f92099d198bdad0f72c35'
     """
-    Given a string 'text', return its string equivalent string.
-    If 'text' is an empty string, return None.
+    if not filename:
+        return None
+    return hashlib.sha224(filename.encode('utf-8')).hexdigest()
 
-    >>> int_to_string('sha1')
-    '0'
-    """
 
-def string_to_bool(text):
+def get_file_size(filename):
     """
-    Given a string 'text', return its boolean equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its size equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> string_to_bool('sha1')
-    'true'
+    >>> get_file_size('sha1') == 'bedb87f662c96d4ae159dab7c55a49ea268f92099d198bdad0f72c35'
     """
+    if not filename:
+        return None
+    return os.path.getsize(filename)
 
-def bool_to_string(text):
-    """
-    Given a string 'text', return its string equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> bool_to_string('sha1')
-    'false'
+def get_file_md5(filename):
     """
+    Given a filename, return its MD5 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-def string_to_list(text):
+    >>> get_file_md5('sha1') == 'f7b0a8a9f6b0d3255bfef95601890afd80709'
     """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
+    if not filename:
+        return None
+    return hashlib.md5(filename.encode('utf-8')).hexdigest()
 
-    >>> string_to_list('sha1')
-    ['0', '1', '2', '3']
-    """
 
-def list_to_string(text):
+def get_file_sha1(filename):
     """
-    Given a string 'text', return its string equivalent string.
-    If 'text' is an empty string, return None.
+    Given a filename, return its SHA1 hash equivalent string.
+    If 'filename' is an empty string, return None.
 
-    >>> list_to_string('sha1')
-    '0'
-    """
-
-def string_to_dict(text):
-    """
-    Given a string 'text', return its dict equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_dict('sha1')
-    {'foo': 'bar', 'baz': 'quux'}
-    """
-
-def dict_to_string(text):
-    """
-    Given a
+    >>> get_file_sha1('sha1') == 'f7b0a8a9f6b0d3255bfef95601890afd80709'

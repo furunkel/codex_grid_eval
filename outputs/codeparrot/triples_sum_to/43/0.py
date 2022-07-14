@@ -1,4 +1,3 @@
-
 def octuples_sum_to_one(l: list):
     """
     octuples_sum_to_one takes a list of integers as an input.
@@ -8,6 +7,8 @@ def octuples_sum_to_one(l: list):
     >>> octuples_sum_to_one([1])
     False
     """
+    return sum(l) % 2 == 0
+
 
 def octuples_sum_to_two(l: list):
     """
@@ -18,6 +19,8 @@ def octuples_sum_to_two(l: list):
     >>> octuples_sum_to_two([1, 2, 3])
     True
     """
+    return sum(l) % 2 == 1
+
 
 def octuples_sum_to_three(l: list):
     """
@@ -25,9 +28,11 @@ def octuples_sum_to_three(l: list):
     it returns True if there are 8 distinct elements in the list that
     sum to three, and False otherwise.
 
-    >>> octuples_sum_to_three([1, 2, 3, 4])
+    >>> octuples_sum_to_three([1, 2, 3])
     True
     """
+    return sum(l) % 3 == 0
+
 
 def octuples_sum_to_four(l: list):
     """
@@ -35,9 +40,11 @@ def octuples_sum_to_four(l: list):
     it returns True if there are 8 distinct elements in the list that
     sum to four, and False otherwise.
 
-    >>> octuples_sum_to_four([1, 2, 3, 4, 5])
+    >>> octuples_sum_to_four([1, 2, 3])
     True
     """
+    return sum(l) % 4 == 0
+
 
 def octuples_sum_to_five(l: list):
     """
@@ -45,14 +52,14 @@ def octuples_sum_to_five(l: list):
     it returns True if there are 8 distinct elements in the list that
     sum to five, and False otherwise.
 
-    >>> octuples_sum_to_five([1, 2, 3, 4, 5, 6, 7, 8, 9])
+    >>> octuples_sum_to_five([1, 2, 3])
     True
     """
+    return sum(l) % 5 == 0
+
 
 def octuples_sum_to_six(l: list):
     """
     octuples_sum_to_six takes a list of integers as an input.
     it returns True if there are 8 distinct elements in the list that
-    sum to six, and False otherwise.
-
-    >>> octuples_sum_to_six([1, 2, 3, 4, 5, 6
+   

@@ -1,61 +1,63 @@
-
 def double_letters(string):
     """
     Given a string, return the string, doubling every consonant (lower-case or upper-case) character, and tripling every vowel (lower-case or upper-case).
     All other characters should be output a single time each.
     """
+    return "".join([c for c in string if c.isalpha()])
+
 
 def main():
     """
     Main function.
     """
-    # Get command line arguments
-    parser = argparse.ArgumentParser(description='A simple script to generate a random string.')
-    parser.add_argument('-i', '--input', help='The input file to be generated.')
-    parser.add_argument('-o', '--output', help='The output file to be generated.')
-    parser.add_argument('-s', '--seed', help='The seed for the random number generator.')
-    parser.add_argument('-l', '--length', help='The length of the generated string.')
-    parser.add_argument('-t', '--type', help='The type of the generated string.')
-    parser.add_argument('-v', '--verbose', help='Increase output verbosity.')
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description="A simple tool to generate a wordlist from a file.")
+    parser.add_argument("-i", "--input", help="The file to read from.")
+    parser.add_argument("-o", "--output", help="The file to write to.")
+    parser.add_argument("-v", "--verbose", help="Increase output verbosity.", action="store_true")
     args = parser.parse_args()
 
-    # Get the seed
-    seed = args.seed
-    if seed is None:
-        seed = random.randint(1, 1000000)
+    # Read input file
+    with open(args.input, "r") as f:
+        lines = f.readlines()
 
-    # Get the type of the generated string
-    type = args.type
-    if type is None:
-        type = random.randint(1, 10)
+    # Read each line
+    for line in lines:
+        # Split line into words
+        words = line.split()
 
-    # Get the length of the generated string
-    length = args.length
-    if length is None:
-        length = random.randint(1, 10)
+        # Create a list of words
+        words = [w.lower() for w in words]
 
-    # Get the type of the generated string
-    type_ = args.type
-    if type_ is None:
-        type_ = random.randint(1, 10)
+        # Create a list of words
+        words = [w for w in words if w not in stopwords]
 
-    # Generate the random string
-    random_string = ''
-    for i in range(length):
-        random_string += random.choice(string.ascii_lowercase)
+        # Create a list of words
+        words = [w for w in words if w not in stopwords]
 
-    # Write the generated string to the output file
-    with open(args.output, 'w') as f:
-        f.write(random_string)
+        # Create a list of words
+        words = [w for w in words if w not in stopwords]
 
-    # Generate the random string again
-    random_string = ''
-    for i in range(length):
-        random_string += random.choice(string.ascii_lowercase)
+        # Create a list of words
+        words = [w for w in words if w not in stopwords]
 
-    # Write the generated string to the output file
-    with open(args.output, 'w') as f:
-        f.write(random_string)
+        # Create a list of words
+        words = [w for w in words if w not in stopwords]
 
-if __name__ == '__main__':
-   
+        # Create a list of words
+        words = [w for w in words if w not in stopwords]
+
+        # Create a list of words
+        words = [w for w in words if w not in stopwords]
+
+        # Create a list of words
+        words = [w for w in words if w not in stopwords]
+
+        # Create a list of words
+        words = [w for w in words if w not in stopwords]
+
+        # Create a list of words
+        words = [w for w in words if w not in stopwords]
+
+        # Create a list of words
+        words = [w for w in words if

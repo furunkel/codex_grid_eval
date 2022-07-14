@@ -1,4 +1,3 @@
-
 def solve(s):
     """You are given a string s.
     if s[i] is a letter, reverse its case from lower to upper or vise versa, 
@@ -11,10 +10,17 @@ def solve(s):
     solve("ab") = "BA"
     solve("#a@C") = "c@A#"
     """
+    if not s:
+        return s
+    if s[0] == s[-1]:
+        return s
+    else:
+        return s[1:] + s[0:1] + s[1:]
+
 
 def main():
-    """The main function"""
     print(solve("1234"))
+
 
 if __name__ == "__main__":
     main()
@@ -29,20 +35,34 @@ if __name__ == "__main__":
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
-from django.utils.functional import cached_property
+from django.utils.encoding import python_2_unicode_compatible
 
 from pootle.core.delegate import revision
 from pootle.core.url_helpers import split_pootle_path
 from pootle.core.utils.timezone import datetime_min
 from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
 from pootle_store.models import Unit
-from pootle_store.util import absolute_real_path, relative_real_path
-from pootle_store.util import absolute_real_path_in_pootle_store
-from pootle_store.util import relative_real_path_in_pootle_store
-from pootle_store.util import relative_real_path_in_template_store
-from pootle_store.util import relative_real_path_in_store
-from pootle_store.util import relative_real_path_in_user_store
-from pootle_store.util import relative_real_path_in_tp_store
-from pootle_store.util import relative_real_path_in_tp_user_store
-from pootle_store.util import relative_real_path_in_tp_tp_store
-from
+
+
+class UnitManager(models.Manager):
+
+    def get_queryset(self):
+        return super(UnitManager, self).get_queryset().filter(
+            store__translation_project__project__disabled=False)
+
+
+@python_2_unicode_compatible
+class Unit(models.Model):
+
+    store = models.ForeignKey(
+        Store,
+        on_delete=models.CASCADE,
+        related_name='stores',
+        verbose_name=_("Store"),
+        related_query_name='stores')
+    parent = models.ForeignKey(
+        "pootle_store.Unit",
+        related_name='children',
+        verbose_name=_("Parent"),
+        related_query_name='children')
+   

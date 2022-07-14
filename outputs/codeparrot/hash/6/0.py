@@ -1,70 +1,65 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its MD5 hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if text is None:
+        return None
+    elif isinstance(text, str):
+        return hashlib.md5(text.encode('utf-8')).hexdigest()
+    else:
+        return None
 
-def hash_to_string(hash):
-    """
-    Given a string 'hash', return its string representation.
-    If 'hash' is an empty string, return None.
-    """
 
-def string_to_key(text):
+def get_file_hash(filename):
     """
-    Given a string 'text', return its key equivalent string.
-    If 'text' is an empty string, return None.
+    Return the MD5 hash of the file with the given filename.
     """
+    hash_md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        for chunk in iter(lambda: f.read(4096), b''):
+            hash_md5.update(chunk)
+    return hash_md5.hexdigest()
 
-def key_to_string(key):
-    """
-    Given a string 'key', return its string representation.
-    If 'key' is an empty string, return None.
-    """
 
-def string_to_key_pair(text):
+def get_file_hash_from_hash(hash_md5):
     """
-    Given a string 'text', return its key equivalent string.
-    If 'text' is an empty string, return None.
+    Return the MD5 hash of the file with the given hash.
     """
+    return hash_md5.hexdigest()
 
-def key_to_string_pair(key):
-    """
-    Given a string 'key', return its key equivalent string.
-    If 'key' is an empty string, return None.
-    """
 
-def string_to_key_pair_pair(text):
+def get_file_hash_from_file(filename):
     """
-    Given a string 'text', return its key equivalent string.
-    If 'text' is an empty string, return None.
+    Return the MD5 hash of the file with the given filename.
     """
+    with open(filename, 'rb') as f:
+        return hashlib.md5(f.read()).hexdigest()
 
-def key_to_string_pair_pair(key):
-    """
-    Given a string 'key', return its key equivalent string.
-    If 'key' is an empty string, return None.
-    """
 
-def string_to_key_pair_pair_pair(text):
+def get_file_hash_from_hash_list(hash_list):
     """
-    Given a string 'text', return its key equivalent string.
-    If 'text' is an empty string, return None.
+    Return the MD5 hash of the file with the given hash list.
     """
+    return hash_list.get_hash()
 
-def key_to_string_pair_pair_pair(key):
-    """
-    Given a string 'key', return its key equivalent string.
-    If 'key' is an empty string, return None.
-    """
 
-def string_to_key_pair_pair_pair(text):
+def get_file_hash_from_file_list(filename):
     """
-    Given a string 'text', return its key equivalent string.
-    If 'text' is an empty string, return None.
+    Return the MD5 hash of the file with the given filename.
     """
+    return hash_list.get_hash_list()
 
-def key_to_string_pair_pair_pair(key):
+
+def get_file_hash_from_file_list_with_hashes(filename, hashes):
     """
-    Given a string 'key', return its key equivalent string.
+    Return the MD5 hash of the file with the given filename and hashes.
+    """
+    return hash_list.get_hash_list_with_hashes(filename, hashes)
+
+
+def get_file_hash_from_file_list_with_hashes_and_hashes(filename, hashes, hashes_and_hashes):
+    """
+    Return the MD5 hash of the file with the given filename and hashes and hashes and hashes_and_hashes.
+    """
+    return hash_list.get_hash_list_with_hashes_and_hashes(filename

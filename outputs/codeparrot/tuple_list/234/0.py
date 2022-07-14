@@ -1,57 +1,57 @@
-
 def extract_value(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
-#    print lst
-    if len(lst) == 0:
-        return 0
-    return max(lst, key=lambda x: x[1])[1]
+    return max(lst, key=lst.count)[1]
 
-def get_value(lst):
+
+def get_twelfth_value(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
-    if len(lst) == 0:
-        return 0
-    return max(lst, key=lambda x: x[1])[1]
+    return max(lst, key=lst.count)[-1]
 
-def get_value_from_list(lst):
+
+def get_twelfth_value_with_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
-    if len(lst) == 0:
-        return 0
-    return max(lst, key=lambda x: x[1])[1]
+    return max(lst, key=lst.count)[-1]
 
-def get_value_from_list_with_max(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
-    """
-    if len(lst) == 0:
-        return 0
-    return max(lst, key=lambda x: x[1])[1]
 
-def get_value_from_list_with_min(lst):
+def get_twelfth_value_with_min(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest second value.
     """
-    if len(lst) == 0:
-        return 0
-    return min(lst, key=lambda x: x[1])[1]
+    return min(lst, key=lst.count)[-1]
 
-def get_value_from_list_with_avg(lst):
+
+def get_twelfth_value_with_mean(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
-    if len(lst) == 0:
-        return 0
-    return avg(lst, key=lambda x: x[1])[1]
+    return mean(lst, key=lst.count)[-1]
 
-def get_value_from_list_with_std(lst):
+
+def get_twelfth_value_with_median(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
     """
-    if len(lst) == 0:
-        return 0
-    return std(lst,
+    return median(lst, key=lst.count)[-1]
+
+
+def get_twelfth_value_with_variance(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
+    """
+    return variance(lst, key=lst.count)[-1]
+
+
+def get_twelfth_value_with_standard_deviation(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest second value.
+    """
+    return standard_deviation(lst, key=lst.count)[-1]
+
+
+def get_twelfth_value_with_variance_de

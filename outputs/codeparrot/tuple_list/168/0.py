@@ -1,67 +1,59 @@
-
 def extract_value(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the smallest third value.
     """
-#    print lst
-    return max(lst, key=lst.count)
+    return max(lst, key=lst.count)[1]
 
-def find_max_value(lst):
-    """
-    Given a list of tuples, write a function that returns the largest value of the tuple with the smallest value.
-    """
-#    print lst
-    return max(lst, key=lst.count)
 
-def find_min_value(lst):
+def get_value(lst):
     """
-    Given a list of tuples, write a function that returns the smallest value of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest fourth value.
     """
-#    print lst
-    return min(lst, key=lst.count)
+    return max(lst, key=lst.count)[2]
 
-def find_median_value(lst):
-    """
-    Given a list of tuples, write a function that returns the median value of the tuple with the smallest value.
-    """
-#    print lst
-    return median(lst, key=lst.count)
 
-def find_mode(lst):
+def get_value_from_list(lst):
     """
-    Given a list of tuples, write a function that returns the mode of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest fourth value.
     """
-#    print lst
-    return mode(lst, key=lst.count)
+    return max(lst, key=lst.count)[3]
 
-def find_median_mode(lst):
-    """
-    Given a list of tuples, write a function that returns the median mode of the tuple with the smallest value.
-    """
-#    print lst
-    return median(lst, key=lst.count)
 
-def find_mode_median(lst):
+def get_value_from_list_with_max(lst):
     """
-    Given a list of tuples, write a function that returns the median mode of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest fourth value.
     """
-#    print lst
-    return median(lst, key=lst.count)
+    return max(lst, key=lst.count)[4]
 
-def find_mode_mode(lst):
-    """
-    Given a list of tuples, write a function that returns the mode of the tuple with the smallest value.
-    """
-#    print lst
-    return mode(lst, key=lst.count)
 
-def find_median_mode_median(lst):
+def get_value_from_list_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the median mode of the tuple with the smallest value.
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest fourth value.
     """
-#    print lst
-    return median(lst, key=lst.count)
+    return min(lst, key=lst.count)[5]
 
-def find_mode_mode_median_mode(lst):
+
+def get_value_from_list_with_sum(lst):
     """
-    Given a list
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest fourth value.
+    """
+    return sum(lst, key=lst.count)[1]
+
+
+def get_value_from_list_with_min_and_max(lst):
+    """
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the smallest fourth value.
+    """
+    return min(lst, key=lst.count)[2]
+
+
+def get_value_from_list_with_max_and_min(lst):
+    """
+    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest fourth value.
+    """
+    return max(lst, key=lst.count)[3]
+
+
+def get_value_from_list_with_min_and_max_and_sum(lst):
+    """
+    Given a list of tuples, write a function that returns the

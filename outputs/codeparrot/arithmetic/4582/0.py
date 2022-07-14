@@ -1,4 +1,3 @@
-
 def make_tuple(fkrjf4ifji4ofj, a):
     """
     Given two integers fkrjf4ifji4ofj and a, return a tuple where:
@@ -6,44 +5,42 @@ def make_tuple(fkrjf4ifji4ofj, a):
     The third element contains the sum of the two numbers.
     The second element contains the difference of the two numbers (first - second).
     """
+    return (fkrjf4ifji4ofj[0] - a[0], fkrjf4ifji4ofj[1] - a[1])
+
 
 def make_list(fkrjf4ifji4ofj, a):
     """
     Given two integers fkrjf4ifji4ofj and a, return a list where:
     The first element contains the product of the two numbers.
-    The second element contains the sum of the two numbers (first - second).
+    The second element contains the sum of the two numbers.
+    The third element contains the difference of the two numbers (first - second).
     """
+    return [a[0] - fkrjf4ifji4ofj[0], a[1] - fkrjf4ifji4ofj[1]]
 
-def make_set(fkrjf4ifji4ofj, a):
-    """
-    Given two integers fkrjf4ifji4ofj and a, return a set where:
-    The first element contains the product of the two numbers.
-    The second element contains the difference of the two numbers (first - second).
-    """
 
-def make_string(fkrjf4ifji4ofj, a):
+def make_dict(fkrjf4ifji4ofj, a):
     """
-    Given two integers fkrjf4ifji4ofj and a, return a string where:
+    Given two integers fkrjf4ifji4ofj and a, return a dict where:
     The first element contains the product of the two numbers.
-    The second element contains the sum of the two numbers (first - second).
+    The second element contains the sum of the two numbers.
+    The third element contains the difference of the two numbers (first - second).
     """
+    return {a[0]: a[1]}
 
-def make_tuple_string(fkrjf4ifji4ofj, a):
-    """
-    Given two integers fkrjf4ifji4ofj and a, return a string where:
-    The first element contains the product of the two numbers.
-    The second element contains the sum of the two numbers (first - second).
-    """
 
-def make_set_string(fkrjf4ifji4ofj, a):
+def make_list_of_lists(fkrjf4ifji4ofj, a):
     """
-    Given two integers fkrjf4ifji4ofj and a, return a set string where:
+    Given two integers fkrjf4ifji4ofj and a, return a list where:
     The first element contains the product of the two numbers.
-    The second element contains the sum of the two numbers (first - second).
+    The second element contains the sum of the two numbers.
+    The third element contains the difference of the two numbers (first - second).
     """
+    return [a[0] - a[1] for a in a]
 
-def make_string_string(fkrjf4ifji4ofj, a):
+
+def make_list_of_dicts(fkrjf4ifji4ofj, a):
     """
-    Given two integers fkrjf4ifji4ofj and a, return a string string where:
+    Given two integers fkrjf4ifji4ofj and a, return a dict where:
     The first element contains the product of the two numbers.
-    The second element contains the sum
+    The second element contains the sum of the two numbers.
+    The

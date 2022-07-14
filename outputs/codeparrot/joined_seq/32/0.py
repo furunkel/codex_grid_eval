@@ -1,72 +1,70 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns False if the input string contains sequences of uppercase letters joined with six underscores and True otherwise.
     """
+    return text.replace(' ', '_')
 
-def get_unique_words(text):
-    """
-    Return a list of unique words found in the text.
-    """
-    words = []
-    for word in text.split():
-        if word not in words:
-            words.append(word)
-    return words
 
-def get_unique_words_with_length(text):
+def get_random_string(length):
     """
-    Return a list of unique words found in the text.
+    Returns a random string of length length.
     """
-    words = []
-    for word in text.split():
-        if len(word) > len(text):
-            words.append(word)
-    return words
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def get_unique_words_with_length_and_lowercase(text):
-    """
-    Return a list of unique words found in the text.
-    """
-    words = []
-    for word in text.split():
-        if len(word) > len(text):
-            words.append(word)
-    return words
 
-def get_unique_words_with_length_and_lowercase_and_uppercase(text):
+def get_random_number(length):
     """
-    Return a list of unique words found in the text.
+    Returns a random number of length length.
     """
-    words = []
-    for word in text.split():
-        if len(word) > len(text):
-            words.append(word)
-    return words
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def get_unique_words_with_length_and_lowercase_and_uppercase_and_mixed(text):
-    """
-    Return a list of unique words found in the text.
-    """
-    words = []
-    for word in text.split():
-        if len(word) > len(text):
-            words.append(word)
-    return words
 
-def get_unique_words_with_length_and_lowercase_and_uppercase_and_mixed_and_punctuation(text):
+def get_random_date(length):
     """
-    Return a list of unique words found in the text.
+    Returns a random date of length length.
     """
-    words = []
-    for word in text.split():
-        if len(word) > len(text):
-            words.append(word)
-    return words
+    return ''.join(random.choice(date.today().strftime('%Y-%m-%d') for _ in range(length))
 
-def get_unique_words_with_length_and_lowercase_and_uppercase_and_mixed_and_punctuation_and_punctuation(text):
+
+def get_random_datetime(length):
     """
-    Return a list of unique words found in the text.
+    Returns a random datetime of length length.
     """
-    words = []
-    for word in
+    return ''.join(random.choice(datetime.now().strftime('%Y-%m-%d') for _ in range(length))
+
+
+def get_random_date_time(length):
+    """
+    Returns a random datetime of length length.
+    """
+    return ''.join(random.choice(date.today().strftime('%H:%M:%S') for _ in range(length)) for _ in range(length))
+
+
+def get_random_time(length):
+    """
+    Returns a random time of length length.
+    """
+    return ''.join(random.choice(time.localtime()) for _ in range(length))
+
+
+def get_random_datetime_time(length):
+    """
+    Returns a random datetime of length length.
+    """
+    return ''.join(random.choice(datetime.now().strftime('%H:%M:%S') for _ in range(length)) for _ in range(length))
+
+
+def get_random_time_time(length):
+    """
+    Returns a random time of length length.
+    """
+    return ''.join(random.choice(time.localtime(time.time())))
+
+
+def get_random_date_time_time(length):
+    """
+    Returns a random datetime of length length.
+    """
+    return ''.join(random.choice(datetime.now().strftime('%H:%M:%S') for _ in range(length)) for _ in range(length))
+
+

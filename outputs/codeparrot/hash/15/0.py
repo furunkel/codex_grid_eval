@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its md-5 hash equivalent string.
@@ -6,55 +5,65 @@ def string_to_hash(text):
 
     >>> string_to_hash('0') == 'cfcd208495d565ef66e7dff9f98764da'
     """
+    if text is None:
+        return None
+    text = text.strip()
+    if text == '':
+        return None
+    if len(text) == 40:
+        return text
+    return hashlib.md5(text).hexdigest()
 
-def string_to_number(text):
-    """
-    Given a string 'text', return its number equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_number('0') == 'cfcd208495d565ef66e7dff9f98764da'
+def get_file_hash(filename, block_size=2 ** 20):
     """
+    Calculate the md5 hash for a file.
 
-def string_to_datetime(text):
+    :param filename: Path to a file.
+    :param block_size: Block size to use when hashing.
+    :return: The md5 hash of the file contents.
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            md5.update(data)
+    return md5.hexdigest()
 
-    >>> string_to_datetime('0') == 'cfcd208495d565ef66e7dff9f98764da'
-    """
 
-def string_to_time(text):
+def get_file_hash_from_file(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the md5 hash for a file.
 
-    >>> string_to_time('0') == 'cfcd208495d565ef66e7dff9f98764da'
+    :param filename: Path to a file.
+    :param block_size: Block size to use when hashing.
+    :return: The md5 hash of the file contents.
     """
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            md5.update(data)
+    return md5.hexdigest()
 
-def string_to_timestamp(text):
-    """
-    Given a string 'text', return its timestamp equivalent string.
-    If 'text' is an empty string, return None.
 
-    >>> string_to_timestamp('0') == 'cfcd208495d565ef66e7dff9f98764da'
+def get_file_hash_from_string(string, block_size=2 ** 20):
     """
+    Calculate the md5 hash for a string.
 
-def string_to_boolean(text):
+    :param string: String to hash.
+    :param block_size: Block size to use when hashing.
+    :return: The md5 hash of the string contents.
     """
-    Given a string 'text', return its boolean equivalent string.
-    If 'text' is an empty string, return None.
+    return get_file_hash(string, block_size)
 
-    >>> string_to_boolean('0') == 'cfcd208495d565ef66e7dff9f98764da'
-    """
 
-def string_to_list(text):
+def get_file_hash_from_file_with_md5(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its list equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the md5 hash for a file with md5 hash.
 
-    >>> string_to_list('0') == ['0']
-    """
-
-def string_to_list_of_strings(text):
-    """
-    Given a string 'text', return its list equivalent string
+    :param filename: Path to a file.
+   

@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its sha-256 hash equivalent string.
@@ -6,58 +5,61 @@ def string_to_hash(text):
 
     >>> string_to_hash('0') == '5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9'
     """
+    if not text:
+        return None
+    if isinstance(text, str):
+        text = text.encode('utf-8')
+    return hashlib.sha256(hashlib.sha256(text).digest()).digest()
 
-def string_to_int(text):
+
+def get_file_hash(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_int('0') == 0
+    :param filename: path to the file
+    :param block_size: block size in bytes
+    :return: hash of the file
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha256(f.read(block_size)).hexdigest()
 
-def string_to_bool(text):
+
+def get_file_contents(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_bool('0') == False
+    :param filename: path to the file
+    :param block_size: block size in bytes
+    :return: hash of the file
     """
+    with open(filename, 'rb') as f:
+        return f.read(block_size)
 
-def string_to_datetime(text):
+
+def get_file_hash_from_file(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_datetime('0') == datetime.datetime(1970, 1, 1)
+    :param filename: path to the file
+    :param block_size: block size in bytes
+    :return: hash of the file
     """
+    with open(filename, 'rb') as f:
+        return hashlib.sha256(f.read(block_size)).hexdigest()
 
-def string_to_date(text):
+
+def get_file_contents_as_string(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its date equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_date('0') == datetime.date(1970, 1, 1)
+    :param filename: path to the file
+    :param block_size: block size in bytes
+    :return: hash of the file
     """
+    with open(filename, 'rb') as f:
+        return f.read(block_size)
 
-def string_to_time(text):
+
+def get_file_hash_from_file_contents(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time('0') == datetime.time(0, 0)
-    """
-
-def string_to_datetime_with_milliseconds(text):
-    """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_datetime_with_milliseconds('0') == datetime.datetime(1970, 1, 1, 0, 0)
-    """
-
-def string_to_time_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time_
+   

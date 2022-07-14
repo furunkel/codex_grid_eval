@@ -1,48 +1,87 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "large" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
     """
+    if n < -100:
+        return None
+    elif n < 2000:
+        return "small"
+    else:
+        return "large"
 
-def small_or_large_str(n):
-    """
-        Given an integer n, return "large" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
-    """
 
-def small_or_large_str_list(n):
+def get_random_string(length):
     """
-        Given an integer n, return "large" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random string of length length.
     """
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
 
-def small_or_large_str_list_list(n):
-    """
-        Given an integer n, return "large" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
-    """
 
-def small_or_large_str_list_list_list(n):
+def get_random_int(length):
     """
-        Given an integer n, return "large" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random integer of length length.
     """
+    return random.randint(0, length)
 
-def small_or_large_str_list_list_list(n):
-    """
-        Given an integer n, return "large" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
-    """
 
-def small_or_large_str_list_list_list(n):
+def get_random_float(length):
     """
-        Given an integer n, return "large" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random float of length length.
     """
+    return random.uniform(0.0, 1.0)
 
-def small_or_large_str_list_list_list(n):
-    """
-        Given an integer n, return "large" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
-    """
 
-def small_or_large_str_list_list_list(n):
+def get_random_bool(length):
     """
-        Given an integer n, return "large" if n < -100 and "small" if n >= 2000 (and None if -100 <= n < 2000).
+        Returns a random bool of length length.
     """
+    return random.choice([True, False])
 
-def small_or_large_str_list_list_list(n):
-   
+
+def get_random_date(length):
+    """
+        Returns a random date of length length.
+    """
+    return datetime.date.today() + datetime.timedelta(days=length)
+
+
+def get_random_time(length):
+    """
+        Returns a random time of length length.
+    """
+    return datetime.time(0, 0, 0)
+
+
+def get_random_datetime(length):
+    """
+        Returns a random datetime of length length.
+    """
+    return datetime.datetime.now() + datetime.timedelta(days=length)
+
+
+def get_random_date_time(length):
+    """
+        Returns a random datetime of length length.
+    """
+    return datetime.datetime.now() + datetime.timedelta(days=length)
+
+
+def get_random_time_millis(length):
+    """
+        Returns a random datetime of length length.
+    """
+    return datetime.datetime.now() + datetime.timedelta(microseconds=length)
+
+
+def get_random_date_time_millis(length):
+    """
+        Returns a random datetime of length length.
+    """
+    return datetime.datetime.now() + datetime.timedelta(microseconds=length)
+
+
+def get_random_time_millis_millis(length):
+    """
+        Returns a random datetime of length length.
+    """
+    return datetime

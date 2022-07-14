@@ -1,90 +1,65 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "large" if n < -100 and "small" if n >= 2 (and None if -100 <= n < 2).
     """
+    if n < -100:
+        return "small"
+    elif n < 2:
+        return "large"
+    else:
+        return None
 
-def is_prime(n):
+def small_or_large_or_small(n):
     """
-        Given an integer n, return True if n is prime.
+        Given an integer n, return "large" if n < -100 and "small" if n >= 2 (and None if -100 <= n < 2).
     """
-    if n < 2:
-        return False
-    if n == 2:
-        return True
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    if n % 7 == 0:
-        return False
-    if n % 11 == 0:
-        return False
-    return True
+    if n < -100:
+        return "small"
+    elif n < 2:
+        return "large"
+    else:
+        return None
 
-def is_prime_factor(n):
+def small_or_large_or_small_or_large(n):
     """
-        Given an integer n, return True if n is prime factor.
+        Given an integer n, return "large" if n < -100 and "small" if n >= 2 (and None if -100 <= n < 2).
     """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    if n % 7 == 0:
-        return False
-    if n % 11 == 0:
-        return False
-    return True
+    if n < -100:
+        return "small"
+    elif n < 2:
+        return "large"
+    else:
+        return None
 
-def is_prime_divides(n):
+def small_or_large_or_small_or_large_or_small(n):
     """
-        Given an integer n, return True if n is prime divides.
+        Given an integer n, return "large" if n < -100 and "small" if n >= 2 (and None if -100 <= n < 2).
     """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    if n % 7 == 0:
-        return False
-    if n % 11 == 0:
-        return False
-    return True
+    if n < -100:
+        return "small"
+    elif n < 2:
+        return "large"
+    else:
+        return None
 
-def is_prime_divisors(n):
+def small_or_large_or_small_or_large_or_small(n):
     """
-        Given an integer n, return True if n is prime divides with remainder.
+        Given an integer n, return "large" if n < -100 and "small" if n >= 2 (and None if -100 <= n < 2).
     """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
-    if n % 5 == 0:
-        return False
-    if n % 7 == 0:
-        return False
-    if n % 11 == 0:
-        return False
-    return True
+    if n < -100:
+        return "small"
+    elif n < 2:
+        return "large"
+    else:
+        return None
 
-def is_prime_divisor_factor(n):
+def small_or_large_or_small_or_large_or_small(n):
     """
-        Given an integer n, return True if n is prime divides with remainder.
+        Given an integer n, return "large" if n < -100 and "small" if n >= 2 (and None if -100 <= n < 2).
     """
-    if n < 2:
-        return False
-    if n % 2 == 0:
-        return False
-    if n % 3 == 0:
-        return False
+    if n < -100:
+        return "small"
+    elif n < 2:
+        return "large"
+    else:
+       

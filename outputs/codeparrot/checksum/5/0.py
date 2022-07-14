@@ -1,4 +1,3 @@
-
 def checksum(string):
     """
     Given a string, convert each character in the string into its integer ASCII value, sum them,
@@ -6,37 +5,40 @@ def checksum(string):
     into its corresponding character (the checksum character).
     The program must print "Check sum is X", where X is replaced by the correct checksum character.
     """
+    sum = 0
+    for i in range(256):
+        sum = sum + int(ord(string[i]) ^ ord(string[i+1]))
+    return sum % 256
+
 
 def main():
     """
-    Main function.
+    Main function
     """
-    # Parse command line arguments
-    parser = argparse.ArgumentParser(description='Check sum on a file.')
-    parser.add_argument('-f', '--file', help='File to check sum on.')
-    parser.add_argument('-o', '--output', help='Output file name.')
-    args = parser.parse_args()
-
-    # Check sum
-    sum_file = args.file
-    if not os.path.isfile(sum_file):
-        print('ERROR: File not found: ' + sum_file)
+    if len(sys.argv) != 3:
+        print("Usage: %s <file> <output>" % sys.argv[0])
         sys.exit(1)
 
-    # Read file
-    with open(sum_file, 'r') as sum_file_handle:
-        sum_data = sum_file_handle.read()
+    file = sys.argv[1]
+    output = sys.argv[2]
 
-    # Check sum
-    checksum_data = checksum(sum_data)
-    if checksum_data != checksum(sum_data):
-        print('ERROR: Checksum failed: ' + checksum_data)
+    if not os.path.isfile(file):
+        print("File not found: %s" % file)
         sys.exit(1)
 
-    # Print results
-    print('Checksum: ' + checksum_data)
+    with open(file, 'r') as f:
+        lines = f.readlines()
 
-if __name__ == '__main__':
+    checksum = checksum(lines[0])
+    print("Checksum: %s" % checksum)
+
+    for line in lines[1:]:
+        checksum = checksum + int(line)
+
+    print("Checksum: %s" % checksum)
+
+
+if __name__ == "__main__":
     main()
 <|endoftext|># -*- coding: utf-8 -*-
 #
@@ -47,13 +49,18 @@ if __name__ == '__main__':
 # AUTHORS file for copyright and authorship information.
 
 from django.conf import settings
-from django.contrib.auth import get_user_model
-from django.contrib.auth.models import Permission
-from django.core.urlresolvers import reverse
+from django.core.exceptions import ObjectDoesNotExist
 from django.db import models
 from django.utils.functional import cached_property
-from django.utils.translation import ugettext_lazy as _
 
 from pootle.core.mixins import CachedTreeItem
 from pootle.core.url_helpers import get_editor_filter
 from pootle.core.utils.timezone import make_aware
+from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
+from pootle_store.models import Unit
+
+
+class UnitManager(models.Manager):
+
+    def get_queryset(self):
+        return super(UnitManager, self).get_

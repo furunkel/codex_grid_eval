@@ -1,43 +1,43 @@
-
 def all_suffixes(string: str) -> List[str]:
     """ Return list of all prefixes from shortest to longest of the input string
     >>> all_suffixes('abc')
     ['c', 'bc', 'abc']
     """
-<|endoftext|># -*- coding: utf-8 -*-
-#
-# Copyright (C) Pootle contributors.
-#
-# This file is a part of the Pootle project. It is distributed under the GPL3
-# or later license. See the LICENSE file for a copy of the license and the
-# AUTHORS file for copyright and authorship information.
+    return [s for s in string.split() if len(s) > len(string.split())]
 
-from django.conf import settings
-from django.core.urlresolvers import reverse
-from django.db import models
-from django.utils.functional import cached_property
 
-from pootle.core.delegate import revision
-from pootle.core.url_helpers import split_pootle_path
-from pootle.core.utils.timezone import make_aware
-from pootle_misc.util import ajax_required
-from pootle_store.constants import FUZZY, TRANSLATED, UNTRANSLATED
-from pootle_store.models import Unit
-from pootle_store.util import absolute_real_path, relative_real_path
-from pootle_store.util import SIDEBAR
-from pootle_store.util import TRANSLATED_NAMES
-from pootle_store.util import TRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED
-from pootle_store.util import TRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from pootle_store.util import UNTRANSLATED_NAMES_MAP
-from po
+def get_all_suffixes(string: str) -> List[str]:
+    """ Return list of all suffixes from shortest to longest of the input string
+    >>> get_all_suffixes('abc')
+    ['c', 'bc', 'abc']
+    """
+    return [s for s in string.split() if len(s) > len(string.split())]
+
+
+def get_all_suffixes_with_prefix(string: str, prefix: str) -> List[str]:
+    """ Return list of all suffixes from shortest to longest of the input string
+    >>> get_all_suffixes_with_prefix('abc', 'abc')
+    ['c', 'bc', 'abc']
+    """
+    return [s for s in string.split() if len(s) > len(prefix.split())]
+
+
+def get_all_suffixes_with_suffix(string: str, suffix: str) -> List[str]:
+    """ Return list of all suffixes from shortest to longest of the input string
+    >>> get_all_suffixes_with_suffix('abc', 'abc')
+    ['c', 'bc', 'abc']
+    """
+    return [s for s in string.split() if len(s) > len(suffix.split())]
+
+
+def get_all_suffixes_with_prefix_and_suffix(string: str, prefix: str, suffix: str) -> List[str]:
+    """ Return list of all suffixes from shortest to longest of the input string
+    >>> get_all_suffixes_with_prefix_and_suffix('abc', 'abc', 'abc')
+    ['c', 'bc', 'abc']
+    """
+    return [s for s in string.split() if len(s) > len(prefix.split()) and len(s) > len(suffix.split())]
+
+
+def get_all_suffixes_with_suffix_and_prefix(string: str, suffix: str, prefix: str) -> List[str]:
+    """ Return list of all suffixes from shortest to longest of the input string
+    >>> get_all_suffixes

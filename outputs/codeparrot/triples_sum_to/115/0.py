@@ -1,4 +1,3 @@
-
 def octuples_sum_to_five(l: list):
     """
     octuples_sum_to_five takes a list of integers as an input.
@@ -8,6 +7,8 @@ def octuples_sum_to_five(l: list):
     >>> octuples_sum_to_five([1])
     False
     """
+    return sum(l) % 2 == 0
+
 
 def octuples_sum_to_ten(l: list):
     """
@@ -18,36 +19,32 @@ def octuples_sum_to_ten(l: list):
     >>> octuples_sum_to_ten([1, 2, 3])
     True
     """
+    return sum(l) % 3 == 0
 
-def octuples_sum_to_eleven(l: list):
+
+def octuples_sum_to_twenty(l: list):
     """
-    octuples_sum_to_eleven takes a list of integers as an input.
+    octuples_sum_to_twenty takes a list of integers as an input.
     it returns True if there are 8 distinct elements in the list that
-    sum to eleven, and False otherwise.
+    sum to twenty, and False otherwise.
 
-    >>> octuples_sum_to_eleven([1, 2, 3, 4, 5])
+    >>> octuples_sum_to_twenty([1, 2, 3, 4, 5, 6, 7, 8, 9])
     True
     """
+    return sum(l) % 5 == 0
 
-def octuples_sum_to_twelve(l: list):
+
+def octuples_sum_to_thirty(l: list):
     """
-    octuples_sum_to_twelve takes a list of integers as an input.
+    octuples_sum_to_thirty takes a list of integers as an input.
     it returns True if there are 8 distinct elements in the list that
-    sum to twelve, and False otherwise.
+    sum to thirty, and False otherwise.
 
-    >>> octuples_sum_to_twelve([1, 2, 3, 4, 5])
+    >>> octuples_sum_to_thirty([1, 2, 3, 4, 5, 6, 7, 8, 9])
     True
     """
+    return sum(l) % 7 == 0
 
-def octuples_sum_to_thirteen(l: list):
-    """
-    octuples_sum_to_thirteen takes a list of integers as an input.
-    it returns True if there are 8 distinct elements in the list that
-    sum to thirteen, and False otherwise.
-
-    >>> octuples_sum_to_thirteen([1, 2, 3, 4, 5])
-    True
-    """
 
 def octuples_sum_to_fourteen(l: list):
     """
@@ -55,4 +52,7 @@ def octuples_sum_to_fourteen(l: list):
     it returns True if there are 8 distinct elements in the list that
     sum to fourteen, and False otherwise.
 
-    >>> octuples_sum_to_
+    >>> octuples_sum_to_fourteen([1, 2, 3, 4, 5, 6, 7, 8, 9])
+    True
+    """
+    return sum(l) %

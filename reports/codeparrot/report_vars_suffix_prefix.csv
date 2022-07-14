@@ -1,14 +1,14 @@
 var,val,success_rate
-example_input,abc,0.0
 input,asdfgh,0.0
 input,WWW,0.0
-example_input,xyz,0.0
-example_input,prefix,0.0
-op,prefixes,0.05555555555555555
-order,shortest_first,0.08333333333333333
-order,longest_first,0.1388888888888889
-example_input,reverse the result!!!,0.16666666666666666
-op,suffixes,0.16666666666666666
 example_input,suffix,0.25
-example_input,12345678,0.25
-input,,0.3333333333333333
+op,prefixes,0.3055555555555556
+order,shortest_first,0.3055555555555556
+example_input,abc,0.3333333333333333
+order,longest_first,0.3333333333333333
+example_input,xyz,0.3333333333333333
+example_input,prefix,0.3333333333333333
+example_input,reverse the result!!!,0.3333333333333333
+example_input,12345678,0.3333333333333333
+op,suffixes,0.3333333333333333
+input,,0.9583333333333334

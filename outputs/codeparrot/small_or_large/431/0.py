@@ -1,54 +1,55 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "mouse" if n < 1000 and "house" if n >= 2000 (and neither if 1000 <= n < 2000).
     """
+    if n < 1000:
+        return "mouse"
+    elif n < 2000:
+        return "house"
+    else:
+        return "large"
 
-def small_or_large_2(n):
-    """
-        Given an integer n, return "mouse" if n < 1000 and "house" if n >= 2000 (and neither if 1000 <= n < 2000).
-    """
 
-def small_or_large_3(n):
+def get_random_number(min_value, max_value):
     """
-        Given an integer n, return "mouse" if n < 1000 and "house" if n >= 2000 (and neither if 1000 <= n < 2000).
+        Returns a random number between min_value and max_value.
     """
+    return random.randint(min_value, max_value)
 
-def small_or_large_4(n):
-    """
-        Given an integer n, return "mouse" if n < 1000 and "house" if n >= 2000 (and neither if 1000 <= n < 2000).
-    """
 
-def small_or_large_5(n):
+def get_random_number_between(min_value, max_value):
     """
-        Given an integer n, return "mouse" if n < 1000 and "house" if n >= 2000 (and neither if 1000 <= n < 2000).
+        Returns a random number between min_value and max_value.
     """
+    return random.randint(min_value, max_value)
 
-def small_or_large_6(n):
-    """
-        Given an integer n, return "mouse" if n < 1000 and "house" if n >= 2000 (and neither if 1000 <= n < 2000).
-    """
 
-def small_or_large_7(n):
+def get_random_number_between_two_numbers(min_value, max_value):
     """
-        Given an integer n, return "mouse" if n < 1000 and "house" if n >= 2000 (and neither if 1000 <= n < 2000).
+        Returns a random number between min_value and max_value.
     """
+    return random.randint(min_value, max_value)
 
-def small_or_large_8(n):
-    """
-        Given an integer n, return "mouse" if n < 1000 and "house" if n >= 2000 (and neither if 1000 <= n < 2000).
-    """
 
-def small_or_large_9(n):
+def get_random_number_between_two_numbers_and_three_numbers(min_value, max_value):
     """
-        Given an integer n, return "mouse" if n < 1000 and "house" if n >= 2000 (and neither if 1000 <= n < 2000).
+        Returns a random number between min_value and max_value.
     """
+    return random.randint(min_value, max_value), random.randint(min_value, max_value)
 
-def small_or_large_10(n):
-    """
-        Given an integer n, return "mouse" if n < 1000 and "house" if n >= 2000 (and neither if 1000 <= n < 2000).
-    """
 
-def small_or_large_11(n):
+def get_random_number_between_two_numbers_and_three_numbers_and_four_numbers(min_value, max_value):
     """
-        Given an integer n, return "mouse"
+        Returns a random number between min_value and max_value.
+    """
+    return random.randint(min_value, max_value), random.randint(min_value, max_value), random.randint(min_value, max_value)
+
+
+def get_random_number_between_two_numbers_and_four_numbers_and_five_numbers(min_value, max_value):
+    """
+        Returns a random number between min_value and max_value.
+    """
+    return random.randint(min_value, max_value), random.randint(min_value, max_value), random.randint(min_value, max_value), random.randint(min_value, max_value)
+
+
+def get_random_number_between_two_numbers_

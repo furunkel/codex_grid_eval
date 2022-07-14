@@ -1,74 +1,52 @@
-
 def f(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the largest third value.
     """
+    return max(lst, key=lst.count)[1]
 
-def g(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the smallest third value.
-    """
 
-def h(lst):
-    """
-    Given a list of tuples, write a function that returns the smallest second value of the tuple with the smallest third value.
-    """
+def main():
+    print(f([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
-def i(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
 
-def j(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
+if __name__ == '__main__':
+    main()
+<|endoftext|># Copyright (c) 2013, Web Notes Technologies Pvt. Ltd. and Contributors
+# License: GNU General Public License v3. See license.txt
 
-def k(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
+from __future__ import unicode_literals
+import frappe
+from frappe import _
+from frappe.utils import flt, cint, cstr, nowdate, getdate
+from erpnext.stock.utils import get_incoming_rate
+from erpnext.stock.stock_ledger import get_previous_sle, NegativeStockError
+from erpnext.stock.get_item_details import get_available_qty
+from erpnext.stock.doctype.serial_no.serial_no import get_auto_serial_nos
+from erpnext.stock.stock_ledger import get_valuation_rate
+from erpnext.stock.doctype.batch.batch import get_batch_qty
+from erpnext.stock.doctype.item.item import get_item_details
 
-def l(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
+class NotUpdateStockError(frappe.ValidationError): pass
+class StockOverReturnError(frappe.ValidationError): pass
+class IncorrectValuationRateError(frappe.ValidationError): pass
+class DuplicateEntryForProductionOrderError(frappe.ValidationError): pass
+class OperationsNotCompleteError(frappe.ValidationError): pass
 
-def m(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
+from erpnext.controllers.stock_controller import StockController
 
-def n(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
+form_grid_templates = {
+	"items": "templates/form_grid/stock_entry_grid.html"
+}
 
-def o(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
+class StockEntry(StockController):
+	def get_feed(self):
+		return _("From {0} to {1}").format(self.from_warehouse, self.to_warehouse)
 
-def p(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
+	def onload(self):
+		for item in self.get("items"):
+			item.update(get_available_qty(item.item_code, item.s_warehouse))
 
-def q(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
-
-def r(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
-
-def s(lst):
-    """
-    Given a list of tuples, write a function that returns the largest second value of the tuple with the largest third value.
-    """
-
-def t(lst):
-    """
-   
+	def validate(self):
+		self.pro_doc = None
+		if self.production_order:
+			self.pro_doc = frappe.get_

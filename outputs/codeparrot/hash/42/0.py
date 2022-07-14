@@ -1,68 +1,61 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its SHA224 hash equivalent string.
     If 'text' is an empty string, return None.
     """
+    if not text:
+        return None
+    return hashlib.sha224(text.encode('utf-8')).hexdigest()
 
-def hash_to_string(hash):
-    """
-    Given a string 'hash', return its SHA224 hash equivalent string.
-    If 'hash' is an empty string, return None.
-    """
 
-def string_to_key(string):
+def get_file_hash(filename):
     """
-    Given a string 'string', return its SHA224 hash equivalent string.
-    If 'string' is an empty string, return None.
+    Return the SHA224 hash of the file with the given filename.
     """
+    hash_md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hash_md5.update(chunk)
+    return hash_md5.hexdigest()
 
-def key_to_string(key):
-    """
-    Given a string 'key', return its SHA224 hash equivalent string.
-    If 'key' is an empty string, return None.
-    """
 
-def string_to_key_pair(string):
+def get_file_hash_from_hash(hash_md5):
     """
-    Given a string 'string', return its SHA224 hash equivalent string.
-    If 'string' is an empty string, return None.
+    Return the SHA224 hash of the file with the given hash_md5.
     """
+    hash_md5 = hashlib.md5()
+    with open(hash_md5, 'rb') as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hash_md5.update(chunk)
+    return hash_md5.hexdigest()
 
-def key_to_string_pair(key):
-    """
-    Given a string 'key', return its SHA224 hash equivalent string.
-    If 'key' is an empty string, return None.
-    """
 
-def string_to_key_pair_pair(string):
+def get_file_hash_from_file(filename):
     """
-    Given a string 'string', return its SHA224 hash equivalent string.
-    If 'string' is an empty string, return None.
+    Return the SHA224 hash of the file with the given filename.
     """
+    hash_md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hash_md5.update(chunk)
+    return hash_md5.hexdigest()
 
-def key_to_string_pair_pair(key):
-    """
-    Given a string 'key', return its SHA224 hash equivalent string.
-    If 'key' is an empty string, return None.
-    """
 
-def string_to_key_pair_pair_pair(string):
+def get_file_hash_from_hash_file(hash_file):
     """
-    Given a string 'string', return its SHA224 hash equivalent string.
-    If 'string' is an empty string, return None.
+    Return the SHA224 hash of the file with the given hash_file.
     """
+    hash_md5 = hashlib.md5()
+    with open(hash_file, 'rb') as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hash_md5.update(chunk)
+    return hash_md5.hexdigest()
 
-def key_to_string_pair_pair_pair(key):
-    """
-    Given a string 'key', return its SHA224 hash equivalent string.
-    If 'key' is an empty string, return None.
-    """
 
-def string_to_key_pair_pair_pair(string):
+def get_file_hash_from_file_with_md5(filename):
     """
-    Given a string 'string', return its SHA224 hash equivalent string.
-    If 'string' is an empty string, return None.
+    Return the SHA224 hash of the file with the given hash_file.
     """
-
-def key_to_string_pair
+    hash_md5 = hashlib.md5()
+    with open(filename, 'rb') as f:
+        for

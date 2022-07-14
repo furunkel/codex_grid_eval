@@ -1,65 +1,38 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns False if the input string contains sequences of lowercase letters joined with a plus and True otherwise.
     """
+    return text.translate(None, string.punctuation).replace(" ", "")
 
-def split_sequence(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation(text):
+def get_words(text):
     """
-    Splits a string into a list of words.
+    Return a list of words in the given text.
     """
-    return text.split()
+    return [word.lower() for word in text.split()]
 
-def split_sequence_with_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation(text):
+def get_sentences(text):
     """
-    Splits a string into a list of words.
+    Return a list of sentences in the given text.
     """
-    return text.split()
+    return [sentence.strip() for sentence in text.split("\n")]
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation(text):
+def get_sentences_with_punctuation(text):
     """
-    Splits a string into a list of words.
+    Return a list of sentences in the given text, with punctuation removed.
     """
-    return text.split()
+    return [sentence.strip() for sentence in text.split(" ") if sentence.strip()]
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation(text):
+def get_sentences_with_punctuation_and_punctuation(text):
     """
-    Splits a string into a list of words.
+    Return a list of sentences in the given text, with punctuation removed and punctuation removed.
     """
-    return text.split()
+    return [sentence.strip() for sentence in text.split(" ") if sentence.strip() and sentence.strip() not in string.punctuation]
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation(text):
+def get_sentences_with_punctuation_and_punctuation_and_punctuation_and_punctuation(text):
     """
-    Splits a string into a list of words.
-    """
-   
+    Return a list of sentences in the given text, with punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed and punctuation removed

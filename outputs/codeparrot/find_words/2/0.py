@@ -1,79 +1,59 @@
-
 def find_char_long(text):
     """
     Finds all words which are at most 1 characters long in a string.
     """
+    return [i for i in range(len(text)) if text[i] in "0123456789"]
+
 
 def find_char_short(text):
     """
     Finds all words which are at least 1 characters short in a string.
     """
+    return [i for i in range(len(text)) if text[i] in "abcdefghijklmnopqrstuvwxyz"]
 
-def find_char_simple(text):
-    """
-    Finds all words which are at most 1 characters simple in a string.
-    """
 
-def find_char_complex(text):
+def find_char_not_long(text):
     """
-    Finds all words which are at most 1 characters complex in a string.
+    Finds all words which are at most 1 characters long in a string.
     """
+    return [i for i in range(len(text)) if text[i] not in "0123456789"]
 
-def find_char_extended(text):
-    """
-    Finds all words which are at most 1 characters extended in a string.
-    """
 
-def find_char_extended_long(text):
+def find_char_not_short(text):
     """
-    Finds all words which are at most 1 characters extended in a string.
+    Finds all words which are at least 1 characters short in a string.
     """
+    return [i for i in range(len(text)) if text[i] not in "abcdefghijklmnopqrstuvwxyz"]
 
-def find_char_extended_short(text):
-    """
-    Finds all words which are at most 1 characters extended in a string.
-    """
 
-def find_char_extended_simple(text):
+def find_char_not_long_or_short(text):
     """
-    Finds all words which are at most 1 characters extended in a string.
+    Finds all words which are at least 1 characters long or short in a string.
     """
+    return [i for i in range(len(text)) if text[i] not in "abcdefghijklmnopqrstuvwxyz"]
 
-def find_char_extended_complex(text):
-    """
-    Finds all words which are at most 1 characters extended in a string.
-    """
 
-def find_char_extended_extended_long(text):
+def find_char_not_long_or_short_or_space(text):
     """
-    Finds all words which are at most 1 characters extended in a string.
+    Finds all words which are at least 1 characters long or short in a string.
     """
+    return [i for i in range(len(text)) if text[i] not in "abcdefghijklmnopqrstuvwxyz"]
 
-def find_char_extended_simple_long(text):
-    """
-    Finds all words which are at most 1 characters simple in a string.
-    """
 
-def find_char_extended_extended_short(text):
+def find_char_not_long_or_short_or_space_or_blank(text):
     """
-    Finds all words which are at most 1 characters extended in a string.
+    Finds all words which are at least 1 characters long or short in a string.
     """
+    return [i for i in range(len(text)) if text[i] not in "abcdefghijklmnopqrstuvwxyz"]
 
-def find_char_extended_extended_simple_long(text):
-    """
-    Finds all words which are at most 1 characters extended in a string.
-    """
 
-def find_char_extended_extended_long_long(text):
+def find_char_not_long_or_short_or_space_or_blank_or_space(text):
     """
-    Finds all words which are at most 1 characters extended in a string.
+    Finds all words which are at least 1 characters long or short in a string.
     """
+    return [i for i in range(len(text)) if text[i] not in "abcdefghijklmnopqrstuvwxyz"]
 
-def find_char_extended_extended_simple_short_long(text):
-    """
-    Finds all words which are at most 1 characters extended in a string.
-    """
 
-def find_char_extended_extended_simple_long_short(text):
+def find_char_not_long_or_short_or_space_or_blank_or_space(text):
     """
-    Finds
+   

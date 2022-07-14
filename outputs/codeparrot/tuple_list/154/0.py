@@ -1,59 +1,64 @@
-
 def fibonacci(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
     """
+    return max(lst, key=lst.count)[0]
 
-def fibonacci_with_one_element(lst):
+
+def fibonacci_with_max(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
     """
+    return max(lst, key=lst.count)[0]
 
-def fibonacci_with_two_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
-    """
 
-def fibonacci_with_three_elements(lst):
+def fibonacci_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the smallest first value.
     """
+    return min(lst, key=lst.count)[0]
 
-def fibonacci_with_four_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
-    """
 
-def fibonacci_with_five_elements(lst):
+def fibonacci_with_average(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the average first value.
     """
+    return sum(lst)/len(lst)
 
-def fibonacci_with_six_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
-    """
 
-def fibonacci_with_seven_elements(lst):
+def fibonacci_with_variance(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the variance first value.
     """
+    return math.sqrt(variance(lst))
 
-def fibonacci_with_eight_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
-    """
 
-def fibonacci_with_nine_elements(lst):
+def fibonacci_with_standard_deviation(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the standard deviation first value.
     """
+    return math.sqrt(variance(lst))
 
-def fibonacci_with_ten_elements(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest first value.
-    """
 
-def fibonacci_with_eleven_elements(lst):
+def fibonacci_with_variance_deviation(lst):
     """
-    Given a list
+    Given a list of tuples, write a function that returns the third value of the tuple with the variance first value.
+    """
+    return math.sqrt(variance(lst))
+
+
+def fibonacci_with_standard_deviation_deviation(lst):
+    """
+    Given a list of tuples, write a function that returns the third value of the tuple with the standard deviation first value.
+    """
+    return math.sqrt(variance(lst))
+
+
+def fibonacci_with_variance_standard_deviation(lst):
+    """
+    Given a list of tuples, write a function that returns the third value of the tuple with the standard deviation first value.
+    """
+    return math.sqrt(variance(lst))
+
+
+def fibonacci_

@@ -135,6 +135,6 @@ example_allergen1,chocolate,0
 name,Alice,0
 name,Destiny,0
 name,Fritz von Kitzhausdorf,0
-all_allergens,"('peanuts', 'tomatoes', 'strawberries', 'eggs', 'pollen', 'chocolate', 'shellfish', 'cats')",0
 all_allergens,"('eggs', 'tomatoes', 'peanuts', 'pollen', 'strawberries', 'cats', 'chocolate', 'shellfish')",0
 all_allergens,"('peanuts', 'eggs', 'chocolate', 'shellfish', 'cats', 'pollen', 'tomatoes', 'strawberries')",0
+all_allergens,"('peanuts', 'tomatoes', 'strawberries', 'eggs', 'pollen', 'chocolate', 'shellfish', 'cats')",0

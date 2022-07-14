@@ -1,4 +1,3 @@
-
 def make_tuple(b, fekjfwoeifjwu5gfd):
     """
     Given two integers b and fekjfwoeifjwu5gfd, return a tuple where:
@@ -6,42 +5,27 @@ def make_tuple(b, fekjfwoeifjwu5gfd):
     The second element contains the sum of the two numbers.
     The first element contains the product of the two numbers.
     """
-
-def make_list(b, fekjfwoeifjwu5gfd):
-    """
-    Given two integers b and fekjfwoeifjwu5gfd, return a list where:
-    The fourth element contains the product of the four numbers.
-    The second element contains the sum of the four numbers.
-    The third element contains the product of the four numbers.
-    """
-
-def make_set(b, fekjfwoeifjwu5gfd):
-    """
-    Given two integers b and fekjfwoeifjwu5gfd, return a set where:
-    The fourth element contains the difference of the two numbers (first - second).
-    The second element contains the sum of the two numbers.
-    The third element contains the product of the four numbers.
-    """
-
-def make_string(b, fekjfwoeifjwu5gfd):
-    """
-    Given two integers b and fekjfwoeifjwu5gfd, return a string where:
-    The fourth element contains the product of the four numbers.
-    The second element contains the sum of the four numbers.
-    The third element contains the product of the four numbers.
-    """
-
-def make_tuple_string(b, fekjfwoeifjwu5gfd):
-    """
-    Given two integers b and fekjfwoeifjwu5gfd, return a string where:
-    The fourth element contains the product of the four numbers.
-    The second element contains the sum of the four numbers.
-    The third element contains the product of the four numbers.
-    """
-
-def make_set_string(b, fekjfwoeifjwu5gfd):
-    """
-    Given two integers b and fekjfwoeifjwu5gfd, return a set string where:
-    The fourth element contains the product of the four numbers.
-    The second element contains the sum of the four numbers.
-    The third element contains
+    return (b[0] - fekjfwoeifjwu5gfd,
+            b[1] - fekjfwoeifjwu5gfd,
+            b[2] - fekjfwoeifjwu5gfd,
+            b[3] - fekjfwoeifjwu5gfd,
+            b[4] - fekjfwoeifjwu5gfd,
+            b[5] - fekjfwoeifjwu5gfd,
+            b[6] - fekjfwoeifjwu5gfd,
+            b[7] - fekjfwoeifjwu5gfd,
+            b[8] - fekjfwoeifjwu5gfd,
+            b[9] - fekjfwoeifjwu5gfd,
+            b[10] - fekjfwoeifjwu5gfd,
+            b[11] - fekjfwoeifjwu5gfd,
+            b[12] - fekjfwoeifjwu5gfd,
+            b[13] - fekjfwoeifjwu5gfd,
+            b[14] - fekjfwoeifjwu5gfd,
+            b[15] - fekjfwoeifjwu5gfd,
+            b[16] - fekjfwoeifjwu5gfd,
+            b[17] - fekjfwoeifjwu5gfd,
+            b[18] - fekjfwoeifjwu5gfd,
+            b[19] - fekjfwoeifjwu5gfd,
+            b[20] - fekjfwoeifjwu5gfd,
+            b[21] - fekjfwoeifjwu5gfd,
+            b[22] - fekjfwoeifjwu5gfd,
+            b[23] - fekjfwo

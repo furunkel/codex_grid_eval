@@ -1,4 +1,3 @@
-
 def string_to_hash(text):
     """
     Given a string 'text', return its SHA1 hash equivalent string.
@@ -6,58 +5,68 @@ def string_to_hash(text):
 
     >>> string_to_hash('0') == 'b6589fc6ab0dc82cf12099d1c2d40ab994e8410c'
     """
+    if not text:
+        return None
+    text = text.strip()
+    if not text:
+        return None
+    return hashlib.sha1(text).hexdigest()
 
-def string_to_int(text):
+
+def get_file_hash(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its int equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_int('0') == 0
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    hash_ = hashlib.sha1()
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            hash_.update(data)
+    return hash_.hexdigest()
 
-def string_to_bool(text):
+
+def get_file_hash_from_file(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its bool equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_bool('0') == False
+    :param filename: The filename to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    hash_ = hashlib.sha1()
+    with open(filename, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            hash_.update(data)
+    return hash_.hexdigest()
 
-def string_to_datetime(text):
+
+def get_file_hash_from_string(string, block_size=2 ** 20):
     """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
+    Calculate the hash of a file.
 
-    >>> string_to_datetime('0') == datetime.datetime(1970, 1, 1)
+    :param string: The string to hash.
+    :param block_size: The size of each block.
+    :return: The hash of the file.
     """
+    hash_ = hashlib.sha1()
+    with open(string, 'rb') as f:
+        while True:
+            data = f.read(block_size)
+            if not data:
+                break
+            hash_.update(data)
+    return hash_.hexdigest()
 
-def string_to_date(text):
+
+def get_file_hash_from_file_with_md5(filename, block_size=2 ** 20):
     """
-    Given a string 'text', return its date equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_date('0') == datetime.date(1970, 1, 1)
-    """
-
-def string_to_time(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time('0') == datetime.time(0, 0)
-    """
-
-def string_to_datetime_with_milliseconds(text):
-    """
-    Given a string 'text', return its datetime equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_datetime_with_milliseconds('0') == datetime.datetime(1970, 1, 1, 0, 0)
-    """
-
-def string_to_time_with_milliseconds(text):
-    """
-    Given a string 'text', return its time equivalent string.
-    If 'text' is an empty string, return None.
-
-    >>> string_to_time_with_milliseconds('0') == datetime.time(0, 0
+    Calculate

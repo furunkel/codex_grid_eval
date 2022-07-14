@@ -1,47 +1,54 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest twelfth value.
     """
-#    print "tuple_extract", lst
-    if len(lst) == 0:
-        return None
-    twelfth = lst[0][0]
-    for i in range(1, len(lst)):
-        twelfth = twelfth + lst[i][0]
-    return twelfth
+    return max(lst, key=lambda x: x[1])[0]
 
-def tuple_extract_with_twelfth(lst):
-    """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest twelfth value.
-    """
-#    print "tuple_extract_with_twelfth", lst
-    if len(lst) == 0:
-        return None
-    twelfth = lst[0][0]
-    for i in range(1, len(lst)):
-        twelfth = twelfth + lst[i][0]
-    return twelfth
 
-def tuple_extract_with_twelfth_with_twelfth(lst):
+def tuple_extract_with_last(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest twelfth value.
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
     """
-#    print "tuple_extract_with_twelfth_with_twelfth", lst
-    if len(lst) == 0:
-        return None
-    twelfth = lst[0][0]
-    for i in range(1, len(lst)):
-        twelfth = twelfth + lst[i][0]
-    return twelfth
+    return max(lst, key=lambda x: x[1])[1]
 
-def tuple_extract_with_twelfth_with_twelfth_with_twelfth(lst):
+
+def tuple_extract_with_first(lst):
     """
-    Given a list of tuples, write a function that returns the third value of the tuple with the largest twelfth value.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
     """
-#    print "tuple_extract_with_twelfth_with_twelfth_with_twelfth", lst
-    if len(lst) == 0:
-        return None
-    twelfth = lst[0][0]
-    for i in range(1, len(lst)):
-        twelfth = twelfth + lst[i][0
+    return min(lst, key=lambda x: x[1])[0]
+
+
+def tuple_extract_with_last_with_first(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
+    """
+    return max(lst, key=lambda x: x[1])[1]
+
+
+def tuple_extract_with_first_with_last(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
+    """
+    return min(lst, key=lambda x: x[1])[1]
+
+
+def tuple_extract_with_last_with_first_with_last(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
+    """
+    return max(lst, key=lambda x: x[1])[1]
+
+
+def tuple_extract_with_first_with_last_with_first(lst):
+    """
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest twelfth value.
+    """
+    return min(lst, key=lambda x: x[1])[1]
+
+
+def tuple_extract_with_last_with_first_with_last(lst):
+    """
+    Given a list of tuples, write a function that returns the last value of the tuple with the largest twelfth value.
+    """
+    return max(lst, key=lambda x: x[1])[

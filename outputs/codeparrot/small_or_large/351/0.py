@@ -1,47 +1,70 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
     """
+    if n < 1000:
+        return "mouse"
+    elif n < 2000:
+        return "small"
+    else:
+        return None
 
-def small_or_large_or_small(n):
+def get_random_string(length):
     """
-        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+        Returns a random string of length length.
     """
+    return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(length))
 
-def small_or_large_or_small_or_large(n):
+def get_random_number(length):
     """
-        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+        Returns a random number of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def small_or_large_or_small_or_large_or_small(n):
+def get_random_date(length):
     """
-        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+        Returns a random date of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def small_or_large_or_small_or_large_or_small(n):
+def get_random_datetime(length):
     """
-        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+        Returns a random datetime of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def small_or_large_or_small_or_large_or_small(n):
+def get_random_time(length):
     """
-        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+        Returns a random time of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def small_or_large_or_small_or_large_or_small(n):
+def get_random_timestamp(length):
     """
-        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+        Returns a random timestamp of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def small_or_large_or_small_or_large_or_small(n):
+def get_random_decimal(length):
     """
-        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+        Returns a random decimal of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def small_or_large_or_small_or_large_or_small(n):
+def get_random_boolean(length):
     """
-        Given an integer n, return "mouse" if n < 1000 and "small" if n >= 2000 (and None if 1000 <= n < 2000).
+        Returns a random boolean of length length.
     """
+    return ''.join(random.choice(string.digits) for _ in range(length))
 
-def small_or
+def get_random_enum(length):
+    """
+        Returns a random enum of length length.
+    """
+    return ''.join(random.choice(string.digits) for _ in range(length))
+
+def get_random_date_enum(length):
+    """
+        Returns a random date enum of length length.
+    """
+    return ''.join(random.choice(string

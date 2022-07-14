@@ -1,4 +1,3 @@
-
 def make_tuple(fkrjf4ifji4ofj, a):
     """
     Given two integers fkrjf4ifji4ofj and a, return a tuple where:
@@ -6,41 +5,34 @@ def make_tuple(fkrjf4ifji4ofj, a):
     The second element contains the difference of the two numbers (first - second).
     The third element contains the sum of the two numbers.
     """
+    return (fkrjf4ifji4ofj[0] - a[0], fkrjf4ifji4ofj[1] - a[1], fkrjf4ifji4ofj[2] - a[2])
 
-def make_tuple_with_one_element(fkrjf4ifji4ofj, a):
+
+def make_list(fkrjf4ifji4ofj, a):
     """
-    Given two integers fkrjf4ifji4ofj and a, return a tuple where:
+    Given two integers fkrjf4ifji4ofj and a, return a list where:
     The first element contains the product of the two numbers.
     The second element contains the difference of the two numbers (first - second).
     The third element contains the sum of the two numbers.
     """
+    return [fkrjf4ifji4ofj[0] - a[0], fkrjf4ifji4ofj[1] - a[1], fkrjf4ifji4ofj[2] - a[2]]
 
-def make_tuple_with_two_elements(fkrjf4ifji4ofj, a):
+
+def make_dict(fkrjf4ifji4ofj, a):
     """
-    Given two integers fkrjf4ifji4ofj and a, return a tuple where:
+    Given two integers fkrjf4ifji4ofj and a, return a dict where:
     The first element contains the product of the two numbers.
     The second element contains the difference of the two numbers (first - second).
     The third element contains the sum of the two numbers.
     """
+    return {fkrjf4ifji4ofj[0]: a[0], fkrjf4ifji4ofj[1]: a[1], fkrjf4ifji4ofj[2]: a[2]}
 
-def make_tuple_with_three_elements(fkrjf4ifji4ofj, a):
+
+def make_list_of_dicts(fkrjf4ifji4ofj, a):
     """
-    Given two integers fkrjf4ifji4ofj and a, return a tuple where:
+    Given two integers fkrjf4ifji4ofj and a, return a list where:
     The first element contains the product of the two numbers.
     The second element contains the difference of the two numbers (first - second).
     The third element contains the sum of the two numbers.
     """
-
-def make_tuple_with_four_elements(fkrjf4ifji4ofj, a):
-    """
-    Given two integers fkrjf4ifji4ofj and a, return a tuple where:
-    The first element contains the product of the two numbers.
-    The second element contains the difference of the two numbers (first - second).
-    The third element contains the sum of the two numbers.
-    """
-
-def make_tuple_with_five_elements(fkrjf4ifji4ofj, a):
-    """
-    Given two integers fkrjf4ifji4ofj and a, return a tuple where:
-    The first element contains the product of the two numbers.
-    The second element contains the difference of the
+    return [fkrjf4ifji4ofj[0],

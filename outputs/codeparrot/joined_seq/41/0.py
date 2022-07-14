@@ -1,63 +1,48 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns False if the input string contains sequences of lowercase letters joined with a question mark and True otherwise.
     """
+    return text.replace(' ', '')
 
-def split_sequence(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation(text):
+def get_text_from_file(file_name):
     """
-    Splits a string into a list of words, separated by punctuation.
+    Read a text file and return the text as a list of words.
     """
-    return text.split(punctuation)
+    with open(file_name, 'r') as f:
+        return f.read().lower().split()
 
-def split_sequence_with_numbers(text):
-    """
-    Splits a string into a list of numbers.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation_and_numbers(text):
+def get_text_from_file_with_punctuation(file_name):
     """
-    Splits a string into a list of numbers, separated by punctuation and numbers.
+    Read a text file and return the text as a list of words.
     """
-    return text.split(punctuation) + [None]
+    with open(file_name, 'r') as f:
+        return f.read().lower().split()
 
-def split_sequence_with_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of numbers, separated by punctuation and numbers.
-    """
-    return text.split(numbers) + [None]
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation(text):
+def get_text_from_file_with_punctuation_and_punctuation(file_name):
     """
-    Splits a string into a list of numbers, separated by punctuation and numbers.
+    Read a text file and return the text as a list of words.
     """
-    return text.split(punctuation) + [None]
+    with open(file_name, 'r') as f:
+        return f.read().lower().split() + [word.lower() for word in f.read().lower().split()]
 
-def split_sequence_with_numbers_and_punctuation_and_numbers(text):
-    """
-    Splits a string into a list of numbers, separated by punctuation and numbers.
-    """
-    return text.split(numbers) + [None]
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation_and_numbers(text):
+def get_text_from_file_with_punctuation_and_punctuation_and_punctuation(file_name):
     """
-    Splits a string into a list of numbers, separated by punctuation and numbers.
+    Read a text file and return the text as a list of words.
     """
-    return text.split(punctuation) + [None]
+    with open(file_name, 'r') as f:
+        return f.read().lower().split() + [word.lower() for word in f.read().lower().split() + [word.lower() for word in f.read().lower().split()]]
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of numbers, separated by punctuation and numbers.
-    """
-    return text.split(punctuation) + [None]
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation_and_numbers_and_punctuation_and_numbers(text):
+def get_text_from_file_with_punctuation_and_punctuation_and_punctuation_and_punctuation(file_name):
     """
-    Splits a string into a
+    Read a text file and return the text as a list of words.
+    """
+    with open(file_name, 'r') as f:
+        return f.read().lower().split() + [word.lower() for word in f.read().lower().split() + [word.lower() for word in f.read().lower().split() + [word.lower() for word in f.read().lower().split()]]
+
+
+def get_text_from_file_with_punctuation_and_punctuation_and_punctuation_and_punctuation_and_punctuation(file_

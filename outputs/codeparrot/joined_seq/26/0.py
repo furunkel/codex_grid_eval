@@ -1,85 +1,53 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns True if the input string contains sequences of uppercase letters joined with a question mark and False otherwise.
     """
+    return text.upper() in string.ascii_lowercase
 
-def split_sequence(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split()
 
-def split_question(text):
+def get_text_from_file(filename):
     """
-    Splits a string into a list of words.
+    Read a text file and return the text as a list of words.
     """
-    return text.split(' ')
+    with open(filename, 'r') as f:
+        return f.read().lower().split()
 
-def split_answer(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split(' ')
 
-def split_answer_with_space(text):
+def get_text_from_file_with_punctuation(filename):
     """
-    Splits a string into a list of words.
+    Read a text file and return the text as a list of words.
     """
-    return text.split(' ')
+    with open(filename, 'r') as f:
+        return f.read().lower().split()
 
-def split_answer_with_period(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split(' ')
 
-def split_answer_with_comma(text):
+def get_text_from_file_with_punctuation_and_whitespace(filename):
     """
-    Splits a string into a list of words.
+    Read a text file and return the text as a list of words.
     """
-    return text.split(',')
+    with open(filename, 'r') as f:
+        return f.read().lower().split()
 
-def split_answer_with_period_and_comma(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split(',')
 
-def split_answer_with_colon(text):
+def get_text_from_file_with_punctuation_and_whitespace_and_punctuation(filename):
     """
-    Splits a string into a list of words.
+    Read a text file and return the text as a list of words.
     """
-    return text.split(':')
+    with open(filename, 'r') as f:
+        return f.read().lower().split() + [word.lower() for word in f.read().lower().split()]
 
-def split_answer_with_period_and_colon(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split(':')
 
-def split_answer_with_comma_and_period(text):
+def get_text_from_file_with_punctuation_and_whitespace_and_punctuation_and_whitespace(filename):
     """
-    Splits a string into a list of words.
+    Read a text file and return the text as a list of words.
     """
-    return text.split(',')
+    with open(filename, 'r') as f:
+        return f.read().lower().split() + [word.lower() for word in f.read().lower().split() + [word.lower() for word in f.read().lower().split()]]
 
-def split_answer_with_period_and_period_and_colon(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split(':')
 
-def split_answer_with_colon_and_period(text):
+def get_text_from_file_with_punctuation_and_whitespace_and_punctuation_and_whitespace_and_punctuation(filename):
     """
-    Splits a string into a list of words.
+    Read a text file and return the text as a list of words.
     """
-    return text.split(':')
-
-def split_answer_with_period_and_period_and_colon(text):
-    """
-    Splits a string into a list of words.
-    """
-    return text.split(':')
-
-def split_answer_with
+    with open(filename, 'r') as f:
+        return f.read().lower().split() + [word.lower() for word in f.read().lower().split() + [word.lower() for word in f

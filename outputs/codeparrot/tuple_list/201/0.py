@@ -1,57 +1,54 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the third value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count)
+
 
 def some_func_with_max(lst):
     """
-    Given a list of tuples, write a function that returns the fourth value of the tuple with the largest eleventh value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the largest eleventh value.
     """
+    return max(lst, key=lst.count, reverse=True)
+
 
 def some_func_with_min(lst):
     """
-    Given a list of tuples, write a function that returns the fifth value of the tuple with the smallest eleventh value.
+    Given a list of tuples, write a function that returns the third value of the tuple with the smallest eleventh value.
     """
+    return min(lst, key=lst.count, reverse=True)
+
 
 def some_func_with_sum(lst):
     """
     Given a list of tuples, write a function that returns the sum of the elements in the tuple.
     """
+    return sum(lst, key=lst.count)
 
-def some_func_with_product(lst):
-    """
-    Given a list of tuples, write a function that returns the product of the elements in the tuple.
-    """
 
-def some_func_with_sum_and_product(lst):
+def some_func_with_count(lst):
     """
-    Given a list of tuples, write a function that returns the sum and product of the elements in the tuple.
+    Given a list of tuples, write a function that returns the number of elements in the tuple.
     """
+    return len(lst)
 
-def some_func_with_product_and_max(lst):
-    """
-    Given a list of tuples, write a function that returns the product and the max of the elements in the tuple.
-    """
 
-def some_func_with_sum_and_max_and_product(lst):
+def some_func_with_sum_and_count(lst):
     """
-    Given a list of tuples, write a function that returns the sum and product of the elements in the tuple.
+    Given a list of tuples, write a function that returns the sum and the number of elements in the tuple.
     """
+    return sum(lst, key=lst.count, reverse=True) + sum(lst, key=lst.count, reverse=True)
 
-def some_func_with_product_and_min(lst):
-    """
-    Given a list of tuples, write a function that returns the product and the min of the elements in the tuple.
-    """
 
-def some_func_with_sum_and_min_and_max(lst):
+def some_func_with_count_and_sum(lst):
     """
-    Given a list of tuples, write a function that returns the sum and min of the elements in the tuple.
+    Given a list of tuples, write a function that returns the sum and the number of elements in the tuple.
     """
+    return sum(lst, key=lst.count, reverse=True) + sum(lst, key=lst.count, reverse=True) + sum(lst, key=lst.count, reverse=True)
 
-def some_func_with_sum_and_min_and_max_and_product(lst):
-    """
-    Given a list of tuples, write a function that returns the sum and min of the elements in the tuple.
-    """
 
-def some_func_with_sum_and_min_and_max_and_product_and_max(lst
+def some_func_with_sum_and_count_and_sum(lst):
+    """
+    Given a list of tuples, write a function that returns the sum and the number of elements in the tuple.
+    """
+    return sum(lst, key=lst.count, reverse=True) + sum(lst, key=lst.count, reverse=True) + sum(lst, key=lst

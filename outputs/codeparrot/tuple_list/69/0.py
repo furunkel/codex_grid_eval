@@ -1,62 +1,52 @@
-
 def some_func(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
+    return max(lst, key=lst.count)[0]
 
-def some_func_with_max(lst):
+
+def test_func():
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_min(lst):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
-    """
 
-def some_func_with_sum(lst):
+def test_func_with_args():
     """
-    Given a list of tuples, write a function that returns the sum of the values of the tuple with the largest values.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_product(lst):
-    """
-    Given a list of tuples, write a function that returns the product of the values of the tuple with the largest values.
-    """
 
-def some_func_with_set(lst):
+def test_func_with_kwargs():
     """
-    Given a list of tuples, write a function that returns the set of the values of the tuple with the largest values.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_str(lst):
-    """
-    Given a list of tuples, write a function that returns the string of the tuple with the largest values.
-    """
 
-def some_func_with_tuple(lst):
+def test_func_with_args_kwargs():
     """
-    Given a list of tuples, write a function that returns the tuple of the values of the tuple with the largest values.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_set_str(lst):
-    """
-    Given a list of tuples, write a function that returns the set of the values of the tuple with the largest values.
-    """
 
-def some_func_with_tuple_str(lst):
+def test_func_with_kwargs_kwargs():
     """
-    Given a list of tuples, write a function that returns the tuple of the values of the tuple with the largest values.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_set_set(lst):
-    """
-    Given a list of tuples, write a function that returns the set of the values of the tuple with the largest values.
-    """
 
-def some_func_with_str_set(lst):
+def test_func_with_args_kwargs_kwargs():
     """
-    Given a list of tuples, write a function that returns the set of the values of the tuple with the largest values.
+    Given a list of tuples, write a function that returns the first value of the tuple with the largest last value.
     """
+    return max(some_func(lst) for lst in [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-def some_func_with_set_
+
+def test_func_with_kwargs_kwargs_kwargs():
+    """
+    Given a list

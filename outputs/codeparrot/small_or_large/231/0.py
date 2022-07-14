@@ -1,54 +1,73 @@
-
 def small_or_large(n):
     """
         Given an integer n, return "large" if n < 2 and "small" if n >= 2000 (and neither if 2 <= n < 2000).
     """
+    if n < 2:
+        return "small"
+    elif n < 2000:
+        return "large"
+    else:
+        return "small"
 
-def small_or_large_2(n):
+
+def small_or_large_or_small(n):
     """
         Given an integer n, return "large" if n < 2 and "small" if n >= 2000 (and neither if 2 <= n < 2000).
     """
+    if n < 2:
+        return "large"
+    elif n < 2000:
+        return "small"
+    else:
+        return "small"
 
-def small_or_large_3(n):
+
+def small_or_large_or_small_or_large(n):
     """
         Given an integer n, return "large" if n < 2 and "small" if n >= 2000 (and neither if 2 <= n < 2000).
     """
+    if n < 2:
+        return "large"
+    elif n < 2000:
+        return "small"
+    else:
+        return "small"
 
-def small_or_large_4(n):
+
+def small_or_large_or_small_or_large_or_small(n):
     """
         Given an integer n, return "large" if n < 2 and "small" if n >= 2000 (and neither if 2 <= n < 2000).
     """
+    if n < 2:
+        return "large"
+    elif n < 2000:
+        return "small"
+    else:
+        return "small"
 
-def small_or_large_5(n):
+
+def small_or_large_or_small_or_large_or_small(n):
     """
         Given an integer n, return "large" if n < 2 and "small" if n >= 2000 (and neither if 2 <= n < 2000).
     """
+    if n < 2:
+        return "large"
+    elif n < 2000:
+        return "small"
+    else:
+        return "small"
 
-def small_or_large_6(n):
+
+def small_or_large_or_small_or_large_or_small(n):
     """
         Given an integer n, return "large" if n < 2 and "small" if n >= 2000 (and neither if 2 <= n < 2000).
     """
+    if n < 2:
+        return "large"
+    elif n < 2000:
+        return "small"
+    else:
+        return "small"
 
-def small_or_large_7(n):
-    """
-        Given an integer n, return "large" if n < 2 and "small" if n >= 2000 (and neither if 2 <= n < 2000).
-    """
 
-def small_or_large_8(n):
-    """
-        Given an integer n, return "large" if n < 2 and "small" if n >= 2000 (and neither if 2 <= n < 2000).
-    """
-
-def small_or_large_9(n):
-    """
-        Given an integer n, return "large" if n < 2 and "small" if n >= 2000 (and neither if 2 <= n < 2000).
-    """
-
-def small_or_large_10(n):
-    """
-        Given an integer n, return "large" if n < 2 and "small" if n >= 2000 (and neither if 2 <= n < 2000).
-    """
-
-def small_or_large_11(n):
-    """
-        Given an integer n, return "large"
+def small

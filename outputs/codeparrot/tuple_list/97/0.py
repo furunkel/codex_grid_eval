@@ -1,58 +1,66 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the second value of the tuple with the smallest third value.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return tuple(lst[0])
 
-def tuple_extract_with_min(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the smallest third value.
-    """
-#    print(lst)
-    return min(lst, key=lst.count)
 
-def tuple_extract_with_max(lst):
+def tuple_concat(lst):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest third value.
+    Given a list of tuples, write a function that returns the concatenation of the two values.
     """
-#    print(lst)
-    return max(lst, key=lst.count)
+    return tuple(lst[0]) + tuple(lst[1])
 
-def tuple_extract_with_sum(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the sum of the elements in the tuple.
-    """
-#    print(lst)
-    return sum(lst, key=lst.count)
 
-def tuple_extract_with_product(lst):
+def tuple_slice(lst, start, end):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the product of the elements in the tuple.
+    Given a list of tuples, write a function that returns the slice of the two values.
     """
-#    print(lst)
-    return product(lst, key=lst.count)
+    return tuple(lst[i:i + 2] for i in range(start, end))
 
-def tuple_extract_with_sum_with_product(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the product of the elements in the tuple.
-    """
-#    print(lst)
-    return sum(lst, key=lst.count)
 
-def tuple_extract_with_min_with_max(lst):
+def tuple_slice_list(lst, start, end):
     """
-    Given a list of tuples, write a function that returns the second value of the tuple with the smallest third value.
+    Given a list of tuples, write a function that returns the slice of the two values.
     """
-#    print(lst)
-    return min(lst, key=lst.count)
+    return tuple(lst[i:i + 2] for i in range(start, end))
 
-def tuple_extract_with_max_with_min(lst):
-    """
-    Given a list of tuples, write a function that returns the second value of the tuple with the largest third value.
-    """
-#    print(lst)
-    return max(lst, key=lst.count)
 
-def tuple_extract_with_sum_with_
+def tuple_slice_dict(lst, start, end):
+    """
+    Given a list of tuples, write a function that returns the slice of the two values.
+    """
+    return dict(lst[i:i + 2] for i in range(start, end))
+
+
+def tuple_slice_string(lst, start, end):
+    """
+    Given a list of tuples, write a function that returns the slice of the two values.
+    """
+    return str(lst[i:i + 2])
+
+
+def tuple_slice_number(lst, start, end):
+    """
+    Given a list of tuples, write a function that returns the slice of the two values.
+    """
+    return int(lst[i:i + 2])
+
+
+def tuple_slice_dict_list(lst, start, end):
+    """
+    Given a list of tuples, write a function that returns the slice of the two values.
+    """
+    return [tuple(lst[i:i + 2]) for i in range(start, end)]
+
+
+def tuple_slice_string_list(lst, start, end):
+    """
+    Given a list of tuples, write a function that returns the slice of the two values.
+    """
+    return str(lst[i:i + 2])
+
+
+def tuple_slice_number_list(lst, start, end):
+    """
+    Given a list of tuples, write a function that returns the slice

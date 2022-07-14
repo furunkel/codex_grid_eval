@@ -1,4 +1,3 @@
-
 def make_tuple(b, a):
     """
     Given two integers b and a, return a tuple where:
@@ -6,6 +5,8 @@ def make_tuple(b, a):
     The third element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return (a[0] - b[0], a[1] - b[1])
+
 
 def make_list(b, a):
     """
@@ -14,48 +15,42 @@ def make_list(b, a):
     The second element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return [a[0] - b[0], a[1] - b[1]]
 
-def make_set(b, a):
+
+def make_dict(b, a):
     """
-    Given two integers b and a, return a set where:
+    Given two integers b and a, return a dict where:
     The first element contains the product of the two numbers.
     The second element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return {a[0]: b[0], a[1]: b[1]}
 
-def make_string(b, a):
+
+def make_list_of_dicts(b, a):
     """
-    Given two integers b and a, return a string where:
+    Given two integers b and a, return a list where:
     The first element contains the product of the two numbers.
     The second element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return [a[0] - b[0], a[1] - b[1]]
 
-def make_tuple_string(b, a):
+
+def make_dict_of_lists(b, a):
     """
-    Given two integers b and a, return a tuple where:
+    Given two integers b and a, return a dict where:
     The first element contains the product of the two numbers.
     The second element contains the difference of the two numbers (first - second).
     The first element contains the sum of the two numbers.
     """
+    return {a[0]: b[0], a[1]: b[1]}
 
-def make_set_string(b, a):
+
+def make_list_of_lists_of_dicts(b, a):
     """
-    Given two integers b and a, return a set where:
+    Given two integers b and a, return a list where:
     The first element contains the product of the two numbers.
     The second element contains the difference of the two numbers (first - second).
-    The first element contains the sum of the two numbers.
-    """
-
-def make_string_set(b, a):
-    """
-    Given two integers b and a, return a set where:
-    The first element contains the product of the two numbers.
-    The second element contains the difference of the two numbers (first - second).
-    The first element contains the sum of the two numbers.
-    """
-
-def make_set_set(b, a):
-    """
-    Given two integers b and a, return a set where:
     The first

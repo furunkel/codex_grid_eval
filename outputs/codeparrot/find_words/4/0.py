@@ -1,79 +1,57 @@
-
 def find_char_long(text):
     """
     Finds all words which are at least 3 characters long in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] in "0123456789"]
+
 
 def find_char_short(text):
     """
     Finds all words which are at least 3 characters short in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] in "abcdefghijklmnopqrstuvwxyz"]
 
-def find_char_simple(text):
-    """
-    Finds all words which are at least 3 characters simple in a string.
-    """
 
-def find_char_complex(text):
+def find_char_space(text):
     """
-    Finds all words which are at least 3 characters complex in a string.
+    Finds all words which are at least 3 characters long in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] in " \t\n\r\v\f"]
 
-def find_char_extended(text):
-    """
-    Finds all words which are at least 3 characters extended in a string.
-    """
 
-def find_char_extended_long(text):
+def find_char_not_space(text):
     """
-    Finds all words which are at least 3 characters extended in a string.
+    Finds all words which are at least 3 characters long in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] not in " \t\r\v\f"]
 
-def find_char_extended_short(text):
-    """
-    Finds all words which are at least 3 characters extended in a string.
-    """
 
-def find_char_extended_simple(text):
+def find_char_not_space_or_tab(text):
     """
-    Finds all words which are at least 3 characters extended in a string.
+    Finds all words which are at least 3 characters long in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] not in " \t\r\v\f"]
 
-def find_char_extended_complex(text):
-    """
-    Finds all words which are at least 3 characters extended in a string.
-    """
 
-def find_char_extended_extended_long(text):
+def find_char_not_tab(text):
     """
-    Finds all words which are at least 3 characters extended in a string.
+    Finds all words which are at least 3 characters long in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] not in " \t\r\v\f"]
 
-def find_char_extended_simple_long(text):
-    """
-    Finds all words which are at least 3 characters extended in a string.
-    """
 
-def find_char_extended_extended_short(text):
+def find_char_not_tab_or_space(text):
     """
-    Finds all words which are at least 3 characters extended in a string.
+    Finds all words which are at least 3 characters long in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] not in " \t\r\v\f"]
 
-def find_char_extended_extended_simple_long(text):
-    """
-    Finds all words which are at least 3 characters extended in a string.
-    """
 
-def find_char_extended_extended_complex(text):
+def find_char_not_tab_or_tab_or_space_or_tab(text):
     """
-    Finds all words which are at least 3 characters extended in a string.
+    Finds all words which are at least 3 characters long in a string.
     """
+    return [i for i in range(0, len(text)) if text[i] not in " \t\r\v\f"]
 
-def find_char_extended_extended_extended_long(text):
-    """
-    Finds all words which are at least 3 characters extended in a string.
-    """
 
-def find_char_extended_extended_simple_long(text):
-    """
-    Finds all words which are at least
+def

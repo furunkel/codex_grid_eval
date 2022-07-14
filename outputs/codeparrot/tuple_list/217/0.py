@@ -1,58 +1,45 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
     """
-#    print "tuple_extract", lst
-    if len(lst) == 0:
-        return None
     return tuple(lst[0])
 
-def tuple_extract_with_min(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
-    """
-#    print "tuple_extract_with_min", lst
-    if len(lst) == 0:
-        return None
-    return tuple(lst[0][0])
-
-def tuple_extract_with_max(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest first value.
-    """
-#    print "tuple_extract_with_max", lst
-    if len(lst) == 0:
-        return None
-    return tuple(lst[0][1])
 
 def tuple_extract_with_min_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
     """
-#    print "tuple_extract_with_min_max", lst
-    if len(lst) == 0:
-        return None
     return tuple(lst[0][0])
 
-def tuple_extract_with_max_min(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest first value.
-    """
-#    print "tuple_extract_with_max_min", lst
-    if len(lst) == 0:
-        return None
-    return tuple(lst[0][1])
 
-def tuple_extract_with_min_max_max(lst):
+def tuple_extract_with_min_max_with_min(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value.
     """
-#    print "tuple_extract_with_min_max_max", lst
-    if len(lst) == 0:
-        return None
-    return tuple(lst[0][1])
+    return tuple(lst[0][0][0])
 
-def tuple_extract_with_max_min_max(lst):
+
+def tuple_extract_with_min_max_with_min_and_max(lst):
     """
-    Given a list of tuples, write
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value and the second value.
+    """
+    return tuple(lst[0][0][0], lst[1][0][0], lst[2][0][0])
+
+
+def tuple_extract_with_min_max_with_min_and_max_with_min(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value and the second value.
+    """
+    return tuple(lst[0][0][0], lst[1][0][0], lst[2][0][0], lst[3][0][0])
+
+
+def tuple_extract_with_min_max_with_min_and_max_with_min_and_max(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first value and the second value.
+    """
+    return tuple(lst[0][0][0], lst[1][0][0], lst[2][0][0], lst[3][0][0], lst[4][0][0])
+
+
+def tuple_extract_with_min_max_with_min_and_max_with_min(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest first

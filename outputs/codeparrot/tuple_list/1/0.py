@@ -1,60 +1,63 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return tuple(lst[0])
 
-def tuple_join(lst):
+
+def tuple_concat(lst):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the largest first value.
     """
+    return tuple(lst[0])
+
 
 def tuple_slice(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return tuple(lst[i] for i in range(start, stop))
 
-def tuple_slice_start(lst, start, stop):
+
+def tuple_slice_list(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return tuple(lst[i] for i in range(start, stop))
 
-def tuple_slice_stop(lst, start, stop):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest first value.
-    """
 
-def tuple_slice_step(lst, start, stop):
+def tuple_slice_dict(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return tuple(lst[i] for i in range(start, stop))
 
-def tuple_slice_step_start(lst, start, stop):
+
+def tuple_slice_string(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return tuple(lst[i] for i in range(start, stop))
 
-def tuple_slice_step_stop(lst, start, stop):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest first value.
-    """
 
-def tuple_slice_reverse(lst, start, stop):
+def tuple_slice_number(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return tuple(lst[i] for i in range(start, stop))
 
-def tuple_slice_reverse_start(lst, start, stop):
+
+def tuple_slice_dict_list(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return tuple(lst[i] for i in range(start, stop))
 
-def tuple_slice_reverse_stop(lst, start, stop):
-    """
-    Given a list of tuples, write a function that returns the first value of the tuple with the largest first value.
-    """
 
-def tuple_slice_reverse_step(lst, start, stop):
+def tuple_slice_string_list(lst, start, stop):
     """
     Given a list of tuples, write a function that returns the first value of the tuple with the smallest first value.
     """
+    return tuple(lst[i] for i in range(start, stop))
+
+

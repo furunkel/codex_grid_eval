@@ -1,52 +1,61 @@
-
 def tuple_extract(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest third value.
     """
+    return max(lst, key=lambda x: x[1])[1]
+
 
 def tuple_extract_with_min(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest third value.
     """
+    return min(lst, key=lambda x: x[1])[1]
+
 
 def tuple_extract_with_max(lst):
     """
     Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
     """
+    return max(lst, key=lambda x: x[1])[1]
 
-def tuple_extract_with_mean(lst):
+
+def tuple_extract_with_avg(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the mean of the tuple with the smallest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the average third value.
     """
+    return sum(lst)/len(lst)
+
+
+def tuple_extract_with_std(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the standard third value.
+    """
+    return math.sqrt(sum(lst)/len(lst))
+
+
+def tuple_extract_with_var(lst):
+    """
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the variance third value.
+    """
+    return math.sqrt(sum(lst)/len(lst))
+
 
 def tuple_extract_with_median(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the median of the tuple with the smallest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the median third value.
     """
+    return math.median(lst)/len(lst)
 
-def tuple_extract_with_variance(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the variance of the tuple with the smallest third value.
-    """
 
-def tuple_extract_with_standard_deviation(lst):
+def tuple_extract_with_minmax(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the standard deviation of the tuple with the smallest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the smallest third value.
     """
+    return min(lst, key=lambda x: x[1])[1]
 
-def tuple_extract_with_variance_deviation(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the variance of the tuple with the smallest third value.
-    """
 
-def tuple_extract_with_standard_deviation_deviation(lst):
+def tuple_extract_with_maxmin(lst):
     """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the standard deviation of the tuple with the smallest third value.
+    Given a list of tuples, write a function that returns the twelfth value of the tuple with the largest third value.
     """
-
-def tuple_extract_with_variance_deviation_deviation(lst):
-    """
-    Given a list of tuples, write a function that returns the twelfth value of the tuple with the variance of the tuple with the smallest third value.
-    """
-
-def tuple_extract_with_standard_deviation_de
+    return

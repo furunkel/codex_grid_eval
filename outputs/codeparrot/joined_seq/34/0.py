@@ -1,73 +1,64 @@
-
 def joined_sequence(text):
     """
     Write a function to that returns False if the input string contains sequences of uppercase letters joined with a minus and True otherwise.
     """
+    return text.upper().replace(' ', '')
 
-def split_sequence(text):
-    """
-    Splits a string into a list of strings.
-    """
-    return text.split()
 
-def split_sequence_with_punctuation(text):
+def get_all_text(text):
     """
-    Splits a string into a list of strings.
+    Return a list of all the text in the given text.
     """
-    return text.split(punctuation)
+    return [x.strip() for x in text.split()]
 
-def split_sequence_with_punctuation_and_whitespace(text):
-    """
-    Splits a string into a list of strings.
-    """
-    return text.split(punctuation)
 
-def split_sequence_with_punctuation_and_numbers(text):
+def get_all_text_list(text):
     """
-    Splits a string into a list of strings.
+    Return a list of all the text in the given text.
     """
-    return text.split(punctuation)
+    return [x.strip() for x in text.split()]
 
-def split_sequence_with_punctuation_and_mixed(text):
-    """
-    Splits a string into a list of strings.
-    """
-    return text.split(punctuation)
 
-def split_sequence_with_punctuation_and_punctuation_and_mixed(text):
+def get_all_text_list_with_upper(text):
     """
-    Splits a string into a list of strings.
+    Return a list of all the text in the given text with the upper case letters removed.
     """
-    return text.split(punctuation)
+    return [x.upper() for x in text.split()]
 
-def split_sequence_with_punctuation_and_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of strings.
-    """
-    return text.split(punctuation)
 
-def split_sequence_with_punctuation_and_mixed_numbers(text):
+def get_all_text_list_with_lower(text):
     """
-    Splits a string into a list of strings.
+    Return a list of all the text in the given text with the lower case letters removed.
     """
-    return text.split(punctuation)
+    return [x.lower() for x in text.split()]
 
-def split_sequence_with_punctuation_and_mixed_numbers_and_punctuation(text):
-    """
-    Splits a string into a list of strings.
-    """
-    return text.split(punctuation)
 
-def split_sequence_with_punctuation_and_mixed_numbers_and_punctuation_and_mixed(text):
+def get_all_text_list_with_upper_and_lower(text):
     """
-    Splits a string into a list of strings.
+    Return a list of all the text in the given text with the upper and lower case letters removed.
     """
-    return text.split(punctuation)
+    return [x.upper() for x in text.split()]
 
-def split_sequence_with_punctuation_and_mixed_numbers_and_punctuation_and_mixed(text):
-    """
-    Splits a string into a list of strings.
-    """
-    return text.split(punctuation)
 
-def split_sequence_with_punctuation_and_
+def get_all_text_list_with_lower_and_upper(text):
+    """
+    Return a list of all the text in the given text with the lower and upper case letters removed.
+    """
+    return [x.lower() for x in text.split()]
+
+
+def get_all_text_list_with_upper_and_lower_and_upper(text):
+    """
+    Return a list of all the text in the given text with the upper and lower and lower case letters removed.
+    """
+    return [x.upper() for x in text.split()]
+
+
+def get_all_text_list_with_lower_and_upper_and_lower(text):
+    """
+    Return a list of all the text in the given text with the lower and upper and lower case letters removed.
+    """
+    return [x.lower() for x in text.split()]
+
+
+def get_all_text_list_with_upper_and_lower_and
