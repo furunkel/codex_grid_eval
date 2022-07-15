@@ -3,125 +3,121 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly 11 bit positions.
     """
-    diff = 0
-    for i in range(11):
-        if ((a >> i) != (b >> i)) and ((a >> i) != 0):
-            diff += 1
-    return diff
+    return bin(a^b)[-11:] == '11111111'
 
 
-def bit_length(a):
+def bit_flip(a):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise negation of a, i.e. the bitwise complement of a.
     """
-    return len(bin(a)) - 2
+    return ~a
 
 
-def bit_length_in_bits(a):
+def bit_not(a):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise inverse of a (a & ~a).
     """
-    return bit_length(a) * 8
+    return a^~a
 
 
-def bit_length_of_int(i):
+def bit_or(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise OR of a and b.
     """
-    return bit_length_in_bits(i)
+    return a|b
 
 
-def bit_length_of_float(f):
+def bit_and(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise AND of a and b.
     """
-    return bit_length_in_bits(f)
+    return a&b
 
 
-def bit_length_of_double(d):
+def bit_xor(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise XOR of a and b.
     """
-    return bit_length_in_bits(d)
+    return a^b
 
 
-def bit_length_of_string(x):
+def bit_shl(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise left shift of a and b.
     """
-    return bit_length_in_bits(len(x))
+    return a<<b
 
 
-def bit_length_of_vector(v):
+def bit_shr(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise right shift of a and b.
     """
-    return bit_length_in_bits(len(v))
+    return a>>b
 
 
-def bit_length_of_set(s):
+def bit_xorshift(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise XOR shift of a and b.
     """
-    return bit_length_in_bits(len(s))
+    return a^b
 
 
-def bit_length_of_map(m):
+def bit_rol(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise right rotation of a and b.
     """
-    return bit_length_in_bits(len(m))
+    return a>>b|a<<(32-b)
 
 
-def bit_length_of_pair(p):
+def bit_ror(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise left rotation of a and b.
     """
-    return bit_length_in_bits(len(p))
+    return a<<b|a>>(32-b)
 
 
-def bit_length_of_string(s):
+def bit_band(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise AND of a and b, i.e. the bitwise AND of (a & b).
     """
-    return bit_length_in_bits(len(s))
+    return a&b
 
 
-def bit_length_of_vector(v):
+def bit_rshift(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise right shift of a and b, i.e. the bitwise right shift of a >> b.
     """
-    return bit_length_in_bits(len(v))
+    return a>>b
 
 
-def bit_length_of_set(s):
+def bit_lshift(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise left shift of a and b, i.e. the bitwise left shift of a << b.
     """
-    return bit_length_in_bits(len(s))
+    return a<<b
 
 
-def bit_length_of_map(m):
+def bit_bandnot(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise AND of a and b, i.e. the bitwise AND of (a & b).
     """
-    return bit_length_in_bits(len(m))
+    return a&b
 
 
-def bit_length_of_pair(p):
+def bit_rshiftnot(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise right shift of a and b, i.e. the bitwise right shift of a >> b.
     """
-    return bit_length_in_bits(len(p))
+    return a>>b
 
 
-def bit_length_of_string(s):
+def bit_lshiftnot(a, b):
     """
-    Returns the number of bits required to store an integer.
+    Returns the bitwise left shift of a and b, i.e. the bitwise left shift of a << b.
     """
-    return bit_length_in_bits(len(s))
+    return a<<b
 
 
-def bit_length_of_vector(v):
+def bit_bandnot(a, b):
     """
-    Returns the number of bits 
+    Returns the bitwise AND of a and b, i.e. the bitwise AND of (

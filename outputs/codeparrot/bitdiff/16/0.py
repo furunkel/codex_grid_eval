@@ -5,78 +5,74 @@ def bit_diff(a, b):
     return (a > b) - (a < b)
 
 
-def get_bit_diff(a, b):
+def bit_count(a):
     """
-    Returns the difference between two numbers.
+    Returns the number of bits in a number.
     """
-    return (a - b)
+    return a.bit_length()
 
 
-def get_bit_diff_str(a, b):
+def bit_length(a):
     """
-    Returns the difference between two numbers.
+    Returns the number of bits in a number.
     """
-    return str(get_bit_diff(a, b))
+    return a.bit_length()
 
 
-def get_bit_diff_str_list(a, b):
+def bit_count_bits(a):
     """
-    Returns the difference between two numbers.
+    Returns the number of bits in a number of bits.
     """
-    return [get_bit_diff(a, b)]
+    return a.bit_length()
 
 
-def get_bit_diff_str_list_list(a, b):
+def bit_length_bits(a):
     """
-    Returns the difference between two numbers.
+    Returns the number of bits in a number of bits.
     """
-    return [get_bit_diff(a, b)]
+    return a.bit_length()
 
 
-def get_bit_diff_str_list_list(a, b):
+def bit_count_bits_and_offset(a):
     """
-    Returns the difference between two numbers.
+    Returns the number of bits and offset in a number of bits.
     """
-    return [get_bit_diff(a, b)]
+    return a.bit_length(), a.bit_offset()
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def bit_offset(a):
     """
-    Returns the difference between two numbers.
+    Returns the number of bits in a number of bits.
     """
-    return [get_bit_diff(a, b)]
+    return a.bit_offset()
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def bit_count_bits_and_offset_bits(a):
     """
-    Returns the difference between two numbers.
+    Returns the number of bits and offset in a number of bits.
     """
-    return [get_bit_diff(a, b)]
+    return a.bit_length(), a.bit_offset()
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def bit_offset_bits(a):
     """
-    Returns the difference between two numbers.
+    Returns the number of bits and offset in a number of bits.
     """
-    return [get_bit_diff(a, b)]
+    return a.bit_length(), a.bit_offset()
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def bit_count_bits_and_offset_bits_and_offset(a):
     """
-    Returns the difference between two numbers.
+    Returns the number of bits and offset in a number of bits and offset in a number of bits.
     """
-    return [get_bit_diff(a, b)]
+    return a.bit_length(), a.bit_offset(), a.bit_offset()
 
 
-def get_bit_diff_str_list_list_list(a, b):
+def bit_offset_bits_and_offset_bits_and_offset_bits(a):
     """
-    Returns the difference between two numbers.
+    Returns the number of bits and offset in a number of bits and offset in a number of bits and offset in a number of bits.
     """
-    return [get_bit_diff(a, b)]
+    return a.bit_length(), a.bit_offset(), a.bit_offset()
 
 
-def get_bit_diff_str_list_list_list(a, b):
-    """
-    Returns the difference between two numbers.
-    """
-    return [get_
+def bit_count_bits_and_offset_bits_and_offset_bits_and_offset(a

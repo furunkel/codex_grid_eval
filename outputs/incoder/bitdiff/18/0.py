@@ -1,90 +1,107 @@
 
 def bit_diff(a, b):
     """
-    Returns whether the two numbers differ at exactly twenty-none bit positions.
+    Returns whether the two numbers differ at exactly twenty-nine bit positions.
     """
-    return bin(a^b)[-20:] == '11111111111111111111111111111111'
+    return bin(a^b)[-19:] == "0" * 19
 
 
-def bit_flip(a):
+def bit_diffs(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bits differed in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111111'
+    return sum(bit_diff(a, b))
 
 
-def bit_flip_inverse(a):
+def bit_flips(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111110'
+    return sum(a ^ b)
 
 
-def bit_flip_complement(a):
+def bit_flips_diff(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips differed in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111110'
+    return sum(a ^ b)
 
 
-def bit_flip_complement_inverse(a):
+def bit_flips_diffs(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips differed in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111110'
+    return sum(a ^ b)
 
 
-def bit_flip_complement2(a):
+def bit_flips_diffs_diff(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips differed in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111110'
+    return sum(a ^ b)
 
 
-def bit_flip_complement3(a):
+def bit_flips_diffs_diffs(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips differed in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111110'
+    return sum(a ^ b)
 
 
-def bit_flip_complement4(a):
+def bit_flips_diffs_diffs_diff(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips differed in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111110'
+    return sum(a ^ b)
 
 
-def bit_flip_complement5(a):
+def bit_flips_diffs_diffs_diffs(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips differed in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111110'
+    return sum(a ^ b)
 
 
-def bit_flip_complement6(a):
+def bit_flips_diffs_diffs_diffs_diff(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips differed in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111110'
+    return sum(a ^ b)
 
 
-def bit_flip_complement7(a):
+def bit_flips_diffs_diffs_diffs_diffs(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips differed in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111110'
+    return sum(a ^ b)
 
 
-def bit_flip_complement8(a):
+def bit_flips_diffs_diffs_diffs_diffs_diff(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips differed in two numbers.
     """
-    return bin(~a)[-20:] == '11111111111111111111111111111110'
+    return sum(a ^ b)
 
 
-def bit_flip_complement9(a):
+def bit_flips_diffs_diffs_diffs_diffs_diffs(a, b):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the number of bit flips differed in two numbers.
     """
-    return bin(~a)[-20:] == '111111111111111111111111111111
+    return sum(a ^ b)
+
+
+def bit_flips_diffs_diffs_diffs_diffs_diffs(a, b):
+    """
+    Returns the number of bit flips differed in two numbers.
+    """
+    return sum(a ^ b)
+
+
+def bit_flips_diffs_diffs_diffs_diffs_diffs_diff(a, b):
+    """
+    Returns the number of bit flips differed in two numbers.
+    """
+    return sum(a ^ b)
+
+
+def bit_flips_diffs_diffs_diffs_diffs_diffs_

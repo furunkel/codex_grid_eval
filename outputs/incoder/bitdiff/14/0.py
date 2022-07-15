@@ -3,106 +3,90 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly eleven bit positions.
     """
-    diff = 0
-    for bit in range(0, 11):
-        if (a[bit] ^ b[bit]) != 0:
-            diff += 1
-    return diff
+    return bin(a^b)[-11:]
 
 
-def bit_diff2(a, b):
+def bit_flip(a):
     """
-    Returns whether the two numbers differ at exactly eleven bit positions.
+    Returns the bitwise negation of a, i.e. the bitwise complement of a.
     """
-    diff = 0
-    for bit in range(0, 11):
-        if (a[bit] ^ b[bit]) != 0:
-            diff += 1
-    return diff
+    return ~a
 
 
-def bit_diff3(a, b):
+def bit_flip_inverse(a):
     """
-    Returns whether the two numbers differ at exactly eleven bit positions.
+    Returns the bitwise inversion of a, i.e. the bitwise negation of a.
     """
-    diff = 0
-    for bit in range(0, 11):
-        if (a[bit] ^ b[bit]) != 0:
-            diff += 1
-    return diff
+    return a
 
 
-def bit_diff4(a, b):
+def bit_flip_complement(a):
     """
-    Returns whether the two numbers differ at exactly eleven bit positions.
+    Returns the bitwise complement of a, i.e. the bitwise negation of a.
     """
-    diff = 0
-    for bit in range(0, 11):
-        if (a[bit] ^ b[bit]) != 0:
-            diff += 1
-    return diff
+    return ~a
 
 
-def bit_diff5(a, b):
+def bit_flip_to_signed_int(a):
     """
-    Returns whether the two numbers differ at exactly eleven bit positions.
+    Returns the bitwise representation of a, but as a signed integer.
     """
-    diff = 0
-    for bit in range(0, 11):
-        if (a[bit] ^ b[bit]) != 0:
-            diff += 1
-    return diff
+    return a if a < 0 else (a ^ 0xffffffff) + 1
 
 
-def bit_diff6(a, b):
+def bit_flip_to_unsigned_int(a):
     """
-    Returns whether the two numbers differ at exactly eleven bit positions.
+    Returns the bitwise representation of a, but as an unsigned integer.
     """
-    diff = 0
-    for bit in range(0, 11):
-        if (a[bit] ^ b[bit]) != 0:
-            diff += 1
-    return diff
+    return a if a < 0 else a
 
 
-def bit_diff7(a, b):
+def bit_flip_to_signed_int_in_range(a, low, high):
     """
-    Returns whether the two numbers differ at exactly eleven bit positions.
+    Returns the bitwise representation of a, but as a signed integer in
+    the range [low, high].
     """
-    diff = 0
-    for bit in range(0, 11):
-        if (a[bit] ^ b[bit]) != 0:
-            diff += 1
-    return diff
+    return bit_flip_to_signed_int(a) if a < low else high
 
 
-def bit_diff8(a, b):
+def bit_flip_to_unsigned_int_in_range(a, low, high):
     """
-    Returns whether the two numbers differ at exactly eleven bit positions.
+    Returns the bitwise representation of a, but as an unsigned integer in
+    the range [low, high].
     """
-    diff = 0
-    for bit in range(0, 11):
-        if (a[bit] ^ b[bit]) != 0:
-            diff += 1
-    return diff
+    return bit_flip_to_unsigned_int(a) if a < low else low
 
 
-def bit_diff9(a, b):
+def bit_flip_to_signed_int_in_range_inclusive(a, low, high):
     """
-    Returns whether the two numbers differ at exactly eleven bit positions.
+    Returns the bitwise representation of a, but as a signed integer in
+    the range [low, high] inclusive.
     """
-    diff = 0
-    for bit in range(0, 11):
-        if (a[bit] ^ b[bit]) != 0:
-            diff += 1
-    return diff
+    return bit_flip_to_signed_int_in_range(a, low, high) if a < low else low
 
 
-def bit_diff10(a, b):
+def bit_flip_to_unsigned_int_in_range_inclusive(a, low, high):
     """
-    Returns whether the two numbers differ at exactly eleven bit positions.
+    Returns the bitwise representation of a, but as an unsigned integer in
+    the range [low, high] inclusive.
     """
-    diff = 0
-    for bit in range(0, 11):
-        if (a[bit] ^ b[bit]) != 0:
-            diff += 1
+    return bit_flip_to_unsigned_int_in_range(a, low, high) if a < low else high
+
+
+def bit_flip_to_signed_int_in_range_exclusive(a, low, high):
+    """
+    Returns the bitwise representation of a, but as a signed integer in
+    the range [low, high] exclusive.
+    """
+    return bit_flip_to_signed_int_in_range(a, low, high) if a < low else high - 1
+
+
+def bit_flip_to_unsigned_int_in_range_exclusive(a, low, high):
+    """
+    Returns the bitwise representation of a, but as an unsigned integer in
+    the range [low, high] exclusive.
+    """
+    return bit_flip_to_unsigned_int_in_range(a, low, high) if a < low else high - 1
+
+
+def bit_flip_to_signed_int_

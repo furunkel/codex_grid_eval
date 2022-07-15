@@ -45,7 +45,7 @@ NUMBER_MAP = {
     6: 'six',
     11: 'eleven',
     15: 'fifteen',
-    29: 'twenty-none'
+    29: 'twenty-nine'
 }
 
 def filter(vars):

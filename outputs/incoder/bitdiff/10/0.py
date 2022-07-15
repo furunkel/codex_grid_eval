@@ -6,129 +6,125 @@ def bit_diff(a, b):
     if a == b:
         return False
     bit_count = (a ^ b) >> 3
-    if bit_count <= 5:
+    if bit_count == 5:
         return True
     else:
         return False
 
-
-def bit_diff2(a, b):
+def bit_count(n):
     """
-    Returns whether the two numbers differ at exactly two bit positions.
+    Returns the number of bits required to represent n.
     """
-    if a == b:
-        return False
-    bit_count = (a ^ b) >> 1
-    if bit_count <= 2:
-        return True
-    else:
-        return False
+    return bin(n).count('1')
 
-
-def bit_diff3(a, b):
+def bit_length(n):
     """
-    Returns whether the two numbers differ at exactly three bit positions.
+    Returns the number of bits required to represent n.
     """
-    if a == b:
-        return False
-    bit_count = (a ^ b) >> 2
-    if bit_count <= 3:
-        return True
-    else:
-        return False
+    return bit_count(n) - 1
 
-
-def bit_diff4(a, b):
+def bit_to_int(n):
     """
-    Returns whether the two numbers differ at exactly four bit positions.
+    Returns the integer n represented by exactly five bits.
     """
-    if a == b:
-        return False
-    bit_count = (a ^ b) >> 3
-    if bit_count <= 4:
-        return True
-    else:
-        return False
+    return n >> 3
 
-
-def bit_diff5(a, b):
+def int_to_bit(n):
     """
-    Returns whether the two numbers differ at exactly five bit positions.
+    Returns the five bit representation of n.
     """
-    if a == b:
-        return False
-    bit_count = (a ^ b) >> 4
-    if bit_count <= 5:
-        return True
-    else:
-        return False
+    return n & 0b1111
 
-
-def bit_diff6(a, b):
+def int_to_bit_length(n):
     """
-    Returns whether the two numbers differ at exactly six bit positions.
+    Returns the number of bits required to represent n.
     """
-    if a == b:
-        return False
-    bit_count = (a ^ b) >> 5
-    if bit_count <= 6:
-        return True
-    else:
-        return False
+    return bit_count(n)
 
-
-def bit_diff7(a, b):
+def bit_to_int(n):
     """
-    Returns whether the two numbers differ at exactly seven bit positions.
+    Returns the integer n represented by exactly five bits.
     """
-    if a == b:
-        return False
-    bit_count = (a ^ b) >> 6
-    if bit_count <= 7:
-        return True
-    else:
-        return False
+    return n >> 3
 
-
-def bit_diff8(a, b):
+def int_to_bit_length(n):
     """
-    Returns whether the two numbers differ at exactly eight bit positions.
+    Returns the number of bits required to represent n.
     """
-    if a == b:
-        return False
-    bit_count = (a ^ b) >> 7
-    if bit_count <= 8:
-        return True
-    else:
-        return False
+    return bit_count(n)
 
-
-def bit_diff9(a, b):
+def bit_length(n):
     """
-    Returns whether the two numbers differ at exactly nine bit positions.
+    Returns the number of bits required to represent n.
     """
-    if a == b:
-        return False
-    bit_count = (a ^ b) >> 8
-    if bit_count <= 9:
-        return True
-    else:
-        return False
+    return bit_count(n) - 1
 
-
-def bit_diff10(a, b):
+def bit_to_int(n):
     """
-    Returns whether the two numbers differ at exactly ten bit positions.
+    Returns the integer n represented by exactly five bits.
     """
-    if a == b:
-        return False
-    bit_count = (a ^ b) >> 9
-    if bit_count <= 10:
-        return True
-    else:
-        return False
+    return n >> 3
 
-
-def bit_diff11(a, b):
+def int_to_bit_length(n):
     """
-    Returns whether the two numbers differ at exactly eleven bit 
+    Returns the number of bits required to represent n.
+    """
+    return bit_count(n)
+
+def bit_length(n):
+    """
+    Returns the number of bits required to represent n.
+    """
+    return bit_count(n) - 1
+
+def bit_to_int(n):
+    """
+    Returns the integer n represented by exactly five bits.
+    """
+    return n >> 3
+
+def int_to_bit_length(n):
+    """
+    Returns the number of bits required to represent n.
+    """
+    return bit_count(n)
+
+def bit_length(n):
+    """
+    Returns the number of bits required to represent n.
+    """
+    return bit_count(n) - 1
+
+def bit_to_int(n):
+    """
+    Returns the integer n represented by exactly five bits.
+    """
+    return n >> 3
+
+def int_to_bit_length(n):
+    """
+    Returns the number of bits required to represent n.
+    """
+    return bit_count(n)
+
+def bit_length(n):
+    """
+    Returns the number of bits required to represent n.
+    """
+    return bit_count(n) - 1
+
+def bit_to_int(n):
+    """
+    Returns the integer n represented by exactly five bits.
+    """
+    return n >> 3
+
+def int_to_bit_length(n):
+    """
+    Returns the number of bits required to represent n.
+    """
+    return bit_count(n)
+
+def bit_length(n):
+    """
+    Returns the number of bits required to represent n.

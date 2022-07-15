@@ -7,95 +7,102 @@ def bit_diff(a, b):
 
 def bit_flip(a):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Flips the 6th bit of a into the 5th and 6th bits of b.
     """
-    return bin(~a)[-6:] == "1111"
-
-def bit_not(a):
-    """
-    Returns the bitwise negation of a, i.e. the complement of a.
-    """
-    return bin(~a)[-6:] == "1111"
-
-def bit_or(a, b):
-    """
-    Returns the bitwise OR of two numbers.
-    """
-    return bin(a|b)[-6:] == "1111"
-
-def bit_and(a, b):
-    """
-    Returns the bitwise AND of two numbers.
-    """
-    return bin(a&b)[-6:] == "1111"
+    return (a<<1) ^ (a>>63)
 
 def bit_xor(a, b):
     """
     Returns the bitwise XOR of two numbers.
     """
-    return bin(a^b)[-6:] == "1111"
-
-def bit_not(a):
-    """
-    Returns the bitwise negation of a, i.e. the complement of a.
-    """
-    return bin(~a)[-6:] == "1111"
-
-def bit_shift(a, n):
-    """
-    Returns the bitwise left shift of a number by n.
-    """
-    return bin(a<<n)[-6:] == "1111"
-
-def bit_test(a, n, bit):
-    """
-    Returns whether the bit at position n in the binary representation of a
-    number is set.
-    """
-    return bin(a>>n)[-6:] == "1111"
-
-def bit_clear(a, n, bit):
-    """
-    Sets a bit in the binary representation of a number.
-    """
-    return bin(a<<n)[-6:] == "1111"
-
-def bit_flip(a):
-    """
-    Returns the bitwise negation of a, i.e. the complement of a.
-    """
-    return bin(~a)[-6:] == "1111"
-
-def bit_not(a):
-    """
-    Returns the bitwise negation of a, i.e. the complement of a.
-    """
-    return bin(~a)[-6:] == "1111"
-
-def bit_or(a, b):
-    """
-    Returns the bitwise OR of two numbers.
-    """
-    return bin(a|b)[-6:] == "1111"
+    return a ^ b
 
 def bit_and(a, b):
     """
     Returns the bitwise AND of two numbers.
     """
-    return bin(a&b)[-6:] == "1111"
+    return a & b
 
-def bit_xor(a, b):
+def bit_or(a, b):
     """
-    Returns the bitwise XOR of two numbers.
+    Returns the bitwise OR of two numbers.
     """
-    return bin(a^b)[-6:] == "1111"
+    return a | b
 
 def bit_not(a):
     """
-    Returns the bitwise negation of a, i.e. the complement of a.
+    Returns the bitwise NOT of a number.
     """
-    return bin(~a)[-6:] == "1111"
+    return ~a
 
-def bit_shift(a, n):
+def bit_shl(a, b):
     """
-    Return
+    Returns the bitwise left shift of a number by the given amount.
+    """
+    return a << b
+
+def bit_shr(a, b):
+    """
+    Returns the bitwise right shift of a number by the given amount.
+    """
+    return a >> b
+
+def bit_rol(a, b):
+    """
+    Returns the bitwise right rotation of the given number by the given amount.
+    """
+    return a >> b | a << 32 - b
+
+def bit_ror(a, b):
+    """
+    Returns the bitwise right rotation of the given number by the given amount.
+    """
+    return a << b | a >> 32 - b
+
+def bit_band(a, b):
+    """
+    Returns the bitwise AND of the two numbers where the 6th bit is the same in both.
+    """
+    return a & b
+
+def bit_rshift(a, b):
+    """
+    Returns the bitwise right shift of a number by the given amount.
+    """
+    return a >> b
+
+def bit_lshift(a, b):
+    """
+    Returns the bitwise left shift of a number by the given amount.
+    """
+    return a << b
+
+def bit_bandnot(a, b):
+    """
+    Returns the bitwise AND of the two numbers where the 6th bit is the same in both.
+    """
+    return ~(a & b)
+
+def bit_rshiftnot(a, b):
+    """
+    Returns the bitwise right shift of a number by the given amount.
+    """
+    return a >> b
+
+def bit_lshiftnot(a, b):
+    """
+    Returns the bitwise left shift of a number by the given amount.
+    """
+    return a << b
+
+def bit_bandnot(a, b):
+    """
+    Returns the bitwise AND of the two numbers where the 6th bit is the same in both.
+    """
+    return ~(a & b)
+
+def bit_rshiftnot(a, b):
+    """
+    Returns the bitwise right shift of a number by the given amount.
+    """
+    return a 

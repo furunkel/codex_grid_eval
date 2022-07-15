@@ -3,84 +3,107 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly 2 bit positions.
     """
-    return bin(a^b)[2:].count("1")==2
+    return bin(a^b)[2:].count("1")
 
-def bit_diffs(a, b):
-    """
-    Returns a generator of bit differences between the two numbers.
-    """
-    return ((i, bit_diff(a, b)) for i in range(31))
 
-def bit_diffs_count(a, b):
+def bit_flip(a, b):
     """
-    Returns the number of bit differences between the two numbers.
+    Returns whether the two numbers differ at exactly 1 bit position.
     """
-    return sum(1 for _ in bit_diffs(a, b))
+    return bin(a^b)[2:].count("0")
 
-def bit_diffs_sum(a, b):
-    """
-    Returns the sum of bit differences between the two numbers.
-    """
-    return sum(bit_diff(a, b) for a, b in bit_diffs(a, b))
 
-def bit_diffs_product(a, b):
+def bit_flip2(a, b):
     """
-    Returns the product of bit differences between the two numbers.
+    Returns whether the two numbers differ at exactly 0 bit positions.
     """
-    return bit_diffs_sum(a, b)*bit_diffs_count(a, b)
+    return bin(a^b)[2:].count("0") == 0
 
-def bit_diffs_quotient(a, b):
-    """
-    Returns the quotient of bit differences between the two numbers.
-    """
-    return bit_diffs_sum(a, b)/bit_diffs_count(a, b)
 
-def bit_diffs_remainder(a, b):
+def bit_flip3(a, b):
     """
-    Returns the remainder of bit differences between the two numbers.
+    Returns whether the two numbers differ at exactly 1 bit position.
     """
-    return bit_diffs_sum(a, b) % bit_diffs_count(a, b)
+    return bin(a^b)[2:].count("1") == 1
 
-def bit_diffs_quotient_count(a, b):
-    """
-    Returns the number of bit differences between the two numbers.
-    """
-    return bit_diffs_count(a, b)/bit_diffs_count(a, b)
 
-def bit_diffs_quotient_sum(a, b):
+def bit_flip4(a, b):
     """
-    Returns the sum of bit differences between the two numbers.
+    Returns whether the two numbers differ at exactly 0 bit positions.
     """
-    return bit_diffs_sum(a, b)/bit_diffs_count(a, b)
+    return bin(a^b)[2:].count("0") == 0
 
-def bit_diffs_quotient_product(a, b):
-    """
-    Returns the product of bit differences between the two numbers.
-    """
-    return bit_diffs_sum(a, b)*bit_diffs_quotient_count(a, b)
 
-def bit_diffs_quotient_quotient(a, b):
+def bit_flip5(a, b):
     """
-    Returns the quotient of bit differences between the two numbers.
+    Returns whether the two numbers differ at exactly 1 bit position.
     """
-    return bit_diffs_sum(a, b)/bit_diffs_quotient_count(a, b)
+    return bin(a^b)[2:].count("1") == 1
 
-def bit_diffs_quotient_remainder(a, b):
-    """
-    Returns the remainder of bit differences between the two numbers.
-    """
-    return bit_diffs_sum(a, b) % bit_diffs_quotient_count(a, b)
 
-def bit_diffs_quotient_quotient_count(a, b):
+def bit_flip6(a, b):
     """
-    Returns the number of bit differences between the two numbers.
+    Returns whether the two numbers differ at exactly 0 bit positions.
     """
-    return bit_diffs_quotient_count(a, b)/bit_diffs_quotient_count(a, b)
+    return bin(a^b)[2:].count("0") == 0
 
-def bit_diffs_quotient_quotient_sum(a, b):
-    """
-    Returns the sum of bit differences between the two numbers.
-    """
-    return bit_diffs_sum(a, b)/bit_diffs_quotient_count(a, b)
 
-def 
+def bit_flip7(a, b):
+    """
+    Returns whether the two numbers differ at exactly 1 bit position.
+    """
+    return bin(a^b)[2:].count("1") == 1
+
+
+def bit_flip8(a, b):
+    """
+    Returns whether the two numbers differ at exactly 0 bit positions.
+    """
+    return bin(a^b)[2:].count("0") == 0
+
+
+def bit_flip9(a, b):
+    """
+    Returns whether the two numbers differ at exactly 1 bit position.
+    """
+    return bin(a^b)[2:].count("1") == 1
+
+
+def bit_flip10(a, b):
+    """
+    Returns whether the two numbers differ at exactly 0 bit positions.
+    """
+    return bin(a^b)[2:].count("0") == 0
+
+
+def bit_flip11(a, b):
+    """
+    Returns whether the two numbers differ at exactly 1 bit position.
+    """
+    return bin(a^b)[2:].count("1") == 1
+
+
+def bit_flip12(a, b):
+    """
+    Returns whether the two numbers differ at exactly 0 bit positions.
+    """
+    return bin(a^b)[2:].count("0") == 0
+
+
+def bit_flip13(a, b):
+    """
+    Returns whether the two numbers differ at exactly 1 bit position.
+    """
+    return bin(a^b)[2:].count("1") == 1
+
+
+def bit_flip14(a, b):
+    """
+    Returns whether the two numbers differ at exactly 0 bit positions.
+    """
+    return bin(a^b)[2:].count("0") == 0
+
+
+def bit_flip15(a, b):
+    """
+    Returns whether the two numbers differ at exactly 1 bit position.

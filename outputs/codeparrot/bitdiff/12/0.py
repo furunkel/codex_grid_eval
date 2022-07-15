@@ -9,52 +9,58 @@ def get_random_bytes(size):
     """
     Returns a random string of the given size.
     """
-    return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(size))
+    return ''.join(chr(random.randint(0, 255)) for _ in range(size))
 
 
 def get_random_string(size):
     """
     Returns a random string of the given size.
     """
-    return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(size))
+    return ''.join(chr(random.randint(0, 255)) for _ in range(size))
 
 
-def get_random_bytes_from_file(file_path):
+def get_random_bytes_as_hex(size):
     """
-    Returns a random string of the given size from the given file path.
+    Returns a random string of the given size as a hex string.
     """
-    with open(file_path, 'rb') as f:
-        return f.read(get_random_bytes(1024))
+    return ''.join(chr(random.randint(0, 255)) for _ in range(size))
 
 
-def get_random_bytes_from_file_with_random_bytes(file_path):
+def get_random_string_as_hex(size):
     """
-    Returns a random string of the given size from the given file path.
+    Returns a random string of the given size as a hex string.
     """
-    return get_random_bytes(get_random_bytes_from_file(file_path))
+    return ''.join(chr(random.randint(0, 255)) for _ in range(size))
 
 
-def get_random_string_from_file(file_path):
+def get_random_bytes_as_hex_as_hex(size):
     """
-    Returns a random string of the given size from the given file path.
+    Returns a random string of the given size as a hex string.
     """
-    return get_random_string(get_random_bytes_from_file(file_path))
+    return ''.join(chr(random.randint(0, 255)) for _ in range(size))
 
 
-def get_random_bytes_from_file_with_random_bytes(file_path):
+def get_random_string_as_hex_as_hex(size):
     """
-    Returns a random string of the given size from the given file path.
+    Returns a random string of the given size as a hex string.
     """
-    return get_random_bytes_from_file(get_random_bytes_from_file(file_path))
+    return ''.join(chr(random.randint(0, 255)) for _ in range(size))
 
 
-def get_random_string_from_file_with_random_bytes_with_random_bytes(file_path):
+def get_random_bytes_as_hex_as_hex(size):
     """
-    Returns a random string of the given size from the given file path.
+    Returns a random string of the given size as a hex string.
     """
-    return get_random_string_from_file(get_random_bytes_from_file(file_path))
+    return ''.join(chr(random.randint(0, 255)) for _ in range(size))
 
 
-def get_random_bytes_from_file_with_random_bytes_with_random_bytes(file_path):
+def get_random_string_as_hex_as_hex(size):
     """
-    Returns a random string of the given size from the given
+    Returns a random string of the given size as a hex string.
+    """
+    return ''.join(chr(random.randint(0, 255)) for _ in range(size))
+
+
+def get_random_bytes_as_hex_as_hex(size):
+    """
+    Returns a random string of the given size as a hex

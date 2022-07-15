@@ -20,11 +20,11 @@ def find_common_letters(a, b):
     """
     Finds the common letters between two box IDs.
     """
-    return ''.join(chr(x) for x in a if chr(x) in b)
+    return ''.join(chr(x) for x, y in zip(a, b) if x == y)
 
 
 def main():
-    box_ids = [int(x) for x in read_input()]
+    box_ids = [int(x, 2) for x in read_input()]
     a, b = find_correct_box_ids(box_ids)
     print(find_common_letters(a, b))
 

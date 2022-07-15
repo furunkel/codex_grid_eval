@@ -3,88 +3,155 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly 4 bit positions.
     """
-    return bin(a^b)[-4:] == "111"
+    return bin(a^b)[-4:] == "100"
 
+# ______________________________________________________________________________
+# Simple Tasks
+# ______________________________________________________________________________
 
-def bit_diffs(a, b, n=4):
-    """
-    Returns the number of bit differences between two numbers.
-    """
-    return sum((bit_diff(a, b) for _ in xrange(n)))
+def id(x):
+    return x
 
+def inc(x):
+    return x + 1
 
-def bit_flips(a, b, n=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((bit_flip(a, b) for _ in xrange(n)))
+def dec(x):
+    return x - 1
 
+def double(x):
+    return x * 2
 
-def bit_flip(a, b, bits=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((1 << (bits-i-1) if a >> i & 1 else 0 for i in xrange(bits)))
+def halve(x):
+    return x / 2
 
+def plus(a, b):
+    return a + b
 
-def bit_flips(a, b, n=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((bit_flip(a, b) for _ in xrange(n)))
+def times(a, b):
+    return a * b
 
+def divides(a, b):
+    return a / b
 
-def bit_flips_diff(a, b, bits=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((1 << (bits-i-1) if a >> i & 1 else 0 for i in xrange(bits)))
+def power(a, b):
+    return a ** b
 
+def modulo(a, b):
+    return a % b
 
-def bit_flips_diffs(a, b, n=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((bit_flips_diff(a, b) for _ in xrange(n)))
+def lt(a, b):
+    return a < b
 
+def le(a, b):
+    return a <= b
 
-def bit_flips_diffs_diff(a, b, bits=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((1 << (bits-i-1) if a >> i & 1 else 0 for i in xrange(bits)))
+def eq(a, b):
+    return a == b
 
+def neq(a, b):
+    return a != b
 
-def bit_flips_diffs_diffs(a, b, n=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((bit_flips_diffs_diff(a, b) for _ in xrange(n)))
+def ge(a, b):
+    return a >= b
 
+def gt(a, b):
+    return a > b
 
-def bit_flips_diffs_diffs_diff(a, b, bits=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((1 << (bits-i-1) if a >> i & 1 else 0 for i in xrange(bits)))
+def bit_or(a, b):
+    return a | b
 
+def bit_and(a, b):
+    return a & b
 
-def bit_flips_diffs_diffs_diffs(a, b, n=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((bit_flips_diffs_diffs_diff(a, b) for _ in xrange(n)))
+def bit_xor(a, b):
+    return a ^ b
 
+def bit_shl(a, b):
+    return a << b
 
-def bit_flips_diffs_diffs_diffs_diff(a, b, bits=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((1 << (bits-i-1) if a >> i & 1 else 0 for i in xrange(bits)))
+def bit_shr(a, b):
+    return a >> b
 
+def bit_xor(a, b):
+    return a ^ b
 
-def bit_flips_diffs_diffs_diffs_diffs(a, b, n=4):
-    """
-    Returns the number of bit flips between two numbers.
-    """
-    return sum((bit_flips_diffs_diffs_diffs_diff(a, b) for _ in xrange(n)))
+def list_append(a, b):
+    a.append(b)
+    return a
+
+def list_length(a):
+    return len(a)
+
+def list_index(a, x):
+    i = a.index(x)
+    if i == -1: return None
+    return i
+
+def list_insert(a, i, x):
+    a.insert(i, x)
+    return a
+
+def list_remove(a, i):
+    a.pop(i)
+    return a
+
+def list_reverse(a):
+    a.reverse()
+    return a
+
+def list_concat(a, b):
+    return a + b
+
+def list_contains(a, b):
+    return b in a
+
+def range_contains(a, b):
+    return b in a # a.find(b) != -1
+
+def list_sum(a):
+    return sum(a)
+
+def list_sort(a):
+    a.sort()
+    return a
+
+def list_copy(a):
+    return a[:]
+
+def list_concat(a, b):
+    return a + b
+
+def list_contains(a, b):
+    return b in a
+
+def list_sum(a):
+    return sum(a)
+
+def list_sort(a):
+    a.sort()
+    return a
+
+def list_copy(a):
+    return a[:]
+
+def list_concat(a, b):
+    return a + b
+
+def list_contains(a, b):
+    return b in a
+
+def list_sum(a):
+    return sum(a)
+
+def list_sort(a):
+    a.sort()
+    return a
+
+def list_copy(a):
+    return a[:]
+
+def list_concat(a, b):
+    return a + b
+
+def list_contains(a, b):
+    return b in 

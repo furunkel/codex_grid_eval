@@ -1,5 +1,5 @@
 
 def bit_diff(a, b):
     """
-    Returns whether the two numbers differ at exactly twenty-none bit positions.
+    Returns whether the two numbers differ at exactly twenty-nine bit positions.
     """

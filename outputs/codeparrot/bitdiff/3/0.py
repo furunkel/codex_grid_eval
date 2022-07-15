@@ -2,75 +2,50 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly 1 bit position.
     """
-    return int(a[0] - b[0]) != int(a[1] - b[1])
+    return int(a[0] != b[0]) - int(a[1] != b[1])
 
 
-def get_file_size(path):
+def get_all_files(directory):
     """
-    Returns the size of the given file.
+    Returns a list of all files in a directory.
     """
-    return os.path.getsize(path)
+    return [os.path.join(directory, f) for f in os.listdir(directory)]
 
 
-def get_file_md5(path):
+def get_all_files_in_directory(directory):
     """
-    Returns the md5 of the given file.
+    Returns a list of all files in a directory.
     """
-    return hashlib.md5(open(path, 'rb').read()).hexdigest()
+    return [os.path.join(directory, f) for f in os.listdir(directory)]
 
 
-def get_file_size_mb(path):
+def get_all_files_in_directory_with_extension(directory, extension):
     """
-    Returns the size of the given file in MB.
+    Returns a list of all files in a directory with the given extension.
     """
-    return os.path.getsize(path) / (1024 * 1024)
+    return [os.path.join(directory, f) for f in os.listdir(directory)
+            if f.endswith(extension)]
 
 
-def get_file_md5_mb(path):
+def get_all_files_in_directory_with_extension_in_directory(directory, extension):
     """
-    Returns the md5 of the given file in MB.
+    Returns a list of all files in a directory with the given extension in the given directory.
     """
-    return hashlib.md5(open(path, 'rb').read()).hexdigest()
+    return [os.path.join(directory, f) for f in os.listdir(directory)
+            if f.endswith(extension) and os.path.isfile(os.path.join(directory, f))]
 
 
-def get_file_size_gb(path):
+def get_all_files_in_directory_with_extension_in_directory_with_extension_in_directory(directory, extension):
     """
-    Returns the size of the given file in GB.
+    Returns a list of all files in a directory with the given extension in the given directory.
     """
-    return os.path.getsize(path) / (1024 * 1024 * 1024)
+    return [os.path.join(directory, f) for f in os.listdir(directory)
+            if f.endswith(extension) and os.path.isfile(os.path.join(directory, f))]
 
 
-def get_file_md5_gb(path):
+def get_all_files_in_directory_with_extension_in_directory_with_extension_in_directory_with_extension_in_directory(directory, extension):
     """
-    Returns the md5 of the given file in GB.
+    Returns a list of all files in a directory with the given extension in the given directory.
     """
-    return hashlib.md5(open(path, 'rb').read()).hexdigest()
-
-
-def get_file_size_tb(path):
-    """
-    Returns the size of the given file in TB.
-    """
-    return os.path.getsize(path) / (1024 * 1024 * 1024 * 1024)
-
-
-def get_file_md5_tb(path):
-    """
-    Returns the md5 of the given file in TB.
-    """
-    return hashlib.md5(open(path, 'rb').read()).hexdigest()
-
-
-def get_file_size_tb(path):
-    """
-    Returns the size of the given file in TB.
-    """
-    return os.path.getsize(path) / (1024 * 1024 * 1024 * 1024)
-
-
-def get_file_md5_tb(path):
-    """
-    Returns the md5 of the given file in TB.
-    """
-    return hashlib.md5(open(path, 'rb').read()).hexdigest()
-
+    return [os.path.join(directory, f) for f in os.listdir(directory)
+            if f.endswith(extension

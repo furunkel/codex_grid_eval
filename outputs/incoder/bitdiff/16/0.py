@@ -3,99 +3,112 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly fifteen bit positions.
     """
+    if a == b:
+        return False
     bit_diff = 0
-    for bit_idx in range(16):
-        if (a[bit_idx] != b[bit_idx]) and (a[bit_idx] & 1):
-            bit_diff += 1
-    return bit_diff
+    for bit_position in range(0, 16):
+        bit_diff = (bit_diff << 1) | (a & 1)
+        a >>= 1
+    return bit_diff != 0
 
 
-def bit_diff2(a, b):
+def bit_count(n):
     """
-    Returns whether the two numbers differ at exactly eight bit positions.
+    Returns the number of bits necessary to encode the given number
+    in binary.
     """
-    bit_diff = 0
-    for bit_idx in range(8):
-        if (a[bit_idx] != b[bit_idx]) and (a[bit_idx] & 1):
-            bit_diff += 1
-    return bit_diff
+    count = 0
+    while n != 0:
+        count += 1
+        n >>= 1
+    return count
 
 
-def bit_diff3(a, b):
+def bit_length(n):
     """
-    Returns whether the two numbers differ at exactly four bit positions.
+    Returns the number of bits necessary to encode the given number
+    in decimal.
     """
-    bit_diff = 0
-    for bit_idx in range(4):
-        if (a[bit_idx] != b[bit_idx]) and (a[bit_idx] & 1):
-            bit_diff += 1
-    return bit_diff
+    count = 0
+    while n != 0:
+        count += 1
+        n >>= 1
+    return count
 
 
-def bit_diff4(a, b):
+def bit_to_binary(n, num_bits):
     """
-    Returns whether the two numbers differ at exactly two bit positions.
+    Returns the binary representation of the given number in base 2.
     """
-    bit_diff = 0
-    for bit_idx in range(2):
-        if (a[bit_idx] != b[bit_idx]) and (a[bit_idx] & 1):
-            bit_diff += 1
-    return bit_diff
+    return bin(n)[2:].zfill(num_bits)
 
 
-def bit_diff5(a, b):
+def bit_to_decimal(n, num_bits):
     """
-    Returns whether the two numbers differ at exactly one bit position.
+    Returns the decimal representation of the given number in base 2.
     """
-    bit_diff = 0
-    if a[15] != b[15] and a[15] & 1:
-        bit_diff += 1
-    return bit_diff
+    return int(bin(n)[2:].zfill(num_bits), 2)
 
 
-def bit_diff6(a, b):
+def bit_to_hex(n, num_bits):
     """
-    Returns whether the two numbers differ at exactly zero bit positions.
+    Returns the hexadecimal representation of the given number in base 2.
     """
-    bit_diff = 0
-    if a[15] != b[15] and not a[15] & 1:
-        bit_diff += 1
-    return bit_diff
+    return hex(int(bin(n)[2:].zfill(num_bits), 2))
 
 
-def bit_diff7(a, b):
+def bit_to_octal(n, num_bits):
     """
-    Returns whether the two numbers differ at exactly one bit position.
+    Returns the octal representation of the given number in base 2.
     """
-    bit_diff = 0
-    if a[7] != b[7] and a[7] & 1:
-        bit_diff += 1
-    return bit_diff
+    return oct(int(bin(n)[2:].zfill(num_bits), 2))
 
 
-def bit_diff8(a, b):
+def bit_to_words(n, num_bits):
     """
-    Returns whether the two numbers differ at exactly two bit positions.
+    Returns the words of the given number in base 2.
     """
-    bit_diff = 0
-    if a[7] != b[7] and a[7] & 1:
-        bit_diff += 1
-    return bit_diff
+    words = []
+    while n != 0:
+        words.append(n & 1)
+        n >>= 1
+    return words
 
 
-def bit_diff9(a, b):
+def bit_to_bytes(n, num_bits):
     """
-    Returns whether the two numbers differ at exactly four bit positions.
+    Returns the bytes of the given number in base 2.
     """
-    bit_diff = 0
-    if a[7] != b[7] and a[7] & 1:
-        bit_diff += 1
-    return bit_diff
+    bytes = []
+    while n != 0:
+        bytes.append(n & 1)
+        n >>= 8
+    return bytes
 
 
-def bit_diff10(a, b):
+def bit_to_int(n, num_bits):
     """
-    Returns whether the two numbers differ at exactly eight bit positions.
+    Returns the integer representation of the given number in base 2.
     """
-    bit_diff = 0
-    if a[7] != b[7] and a[
+    return int(bin(n)[2:].zfill(num_bits), 2)
+
+
+def bit_to_float(n, num_bits):
+    """
+    Returns the float representation of the given number in base 2.
+    """
+    return float(bin(n)[2:].zfill(num_bits))
+
+
+def bit_to_hexfloat(n, num_bits):
+    """
+    Returns the hexfloat representation of the given number in base 2.
+    """
+    return hexfloat(bin(n)[2:].zfill(num_bits))
+
+
+def bit_to_hexfloats(n, num_bits):
+    """
+    Returns the hexfloats of the given number in base 2.
+    """
+    return hexfloats(bin

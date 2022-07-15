@@ -3,111 +3,90 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly 29 bit positions.
     """
-    diff = 0
-    for x, y in zip(a, b):
-        diff += x ^ y
-    return 29 - diff
-
+    return bin(a^b)[-29:] == '0'*29
 
 def bit_diffs(a, b):
     """
-    Returns a list of pairs (a,b) where a differs from b
-    at exactly 29 bit positions.
+    Returns a generator of bit differences between the two numbers.
     """
-    diffs = []
-    for x, y in zip(a, b):
-        diffs.append((x, y))
-    return diffs
+    return zip(range(len(a)), bit_diff(a, b))
 
-
-def bit_diffs_pairs(a, b):
+def bit_diffs_count(a, b):
     """
-    Returns a list of pairs (a,b) where a differs from b
-    at exactly 29 bit positions.
+    Returns the number of bit differences between the two numbers.
     """
-    diffs = []
-    for x, y in zip(a, b):
-        diffs.append((x, y))
-    return diffs
+    return sum(1 for _ in bit_diffs(a, b))
 
-
-def bit_diffs_pairs2(a, b):
+def bit_diffs_ratio(a, b):
     """
-    Returns a list of pairs (a,b) where a differs from b
-    at exactly 29 bit positions.
+    Returns the ratio of bit differences between the two numbers.
     """
-    diffs = []
-    for x, y in zip(a, b):
-        diffs.append((x, y))
-    return diffs
+    return bit_diffs_count(a, b)/len(a)
 
-
-def bit_diffs_pairs3(a, b):
+def bit_diffs_ratio_count(a, b):
     """
-    Returns a list of pairs (a,b) where a differs from b
-    at exactly 29 bit positions.
+    Returns the number of bit differences between the two numbers.
     """
-    diffs = []
-    for x, y in zip(a, b):
-        diffs.append((x, y))
-    return diffs
+    return bit_diffs_count(a, b)/len(a)
 
-
-def bit_diffs_pairs4(a, b):
+def bit_diffs_ratio_sum(a, b):
     """
-    Returns a list of pairs (a,b) where a differs from b
-    at exactly 29 bit positions.
+    Returns the sum of bit differences between the two numbers.
     """
-    diffs = []
-    for x, y in zip(a, b):
-        diffs.append((x, y))
-    return diffs
+    return sum(bit_diffs_ratio(a, b))
 
-
-def bit_diffs_pairs5(a, b):
+def bit_diffs_ratio_sum_count(a, b):
     """
-    Returns a list of pairs (a,b) where a differs from b
-    at exactly 29 bit positions.
+    Returns the number of bit differences between the two numbers.
     """
-    diffs = []
-    for x, y in zip(a, b):
-        diffs.append((x, y))
-    return diffs
+    return bit_diffs_count(a, b)/len(a)
 
-
-def bit_diffs_pairs6(a, b):
+def bit_diffs_ratio_sum_diff(a, b):
     """
-    Returns a list of pairs (a,b) where a differs from b
-    at exactly 29 bit positions.
+    Returns the sum of bit differences between the two numbers.
     """
-    diffs = []
-    for x, y in zip(a, b):
-        diffs.append((x, y))
-    return diffs
+    return sum(bit_diffs_ratio(a, b))/len(a)
 
-
-def bit_diffs_pairs7(a, b):
+def bit_diffs_ratio_sum_diff_count(a, b):
     """
-    Returns a list of pairs (a,b) where a differs from b
-    at exactly 29 bit positions.
+    Returns the number of bit differences between the two numbers.
     """
-    diffs = []
-    for x, y in zip(a, b):
-        diffs.append((x, y))
-    return diffs
+    return bit_diffs_count(a, b)/len(a)
 
-
-def bit_diffs_pairs8(a, b):
+def bit_diffs_ratio_sum_diff_sum(a, b):
     """
-    Returns a list of pairs (a,b) where a differs from b
-    at exactly 29 bit positions.
+    Returns the sum of bit differences between the two numbers.
     """
-    diffs = []
-    for x, y in zip(a, b):
-        diffs.append((x, y))
-    return diffs
+    return sum(bit_diffs_ratio(a, b))/len(a)
 
-
-def bit_diffs_pairs9(a, b):
+def bit_diffs_ratio_sum_diff_sum_count(a, b):
     """
-    Returns a list of pairs (a,b) where a differs from b
+    Returns the number of bit differences between the two numbers.
+    """
+    return bit_diffs_count(a, b)/len(a)
+
+def bit_diffs_ratio_sum_diff_sum_diff(a, b):
+    """
+    Returns the sum of bit differences between the two numbers.
+    """
+    return sum(bit_diffs_ratio(a, b))/len(a)
+
+def bit_diffs_ratio_sum_diff_sum_diff_count(a, b):
+    """
+    Returns the number of bit differences between the two numbers.
+    """
+    return bit_diffs_count(a, b)/len(a)
+
+def bit_diffs_ratio_sum_diff_sum_diff_sum(a, b):
+    """
+    Returns the sum of bit differences between the two numbers.
+    """
+    return sum(bit_diffs_ratio(a, b))/len(a)
+
+def bit_diffs_ratio_sum_diff_sum_diff_sum_count(a, b):
+    """
+    Returns the number of bit differences between the two numbers.
+    """
+    return bit_diffs_count(a, b)/len(a)
+
+def bit_diffs_ratio_sum_diff_sum_diff_sum_diff(a, b):

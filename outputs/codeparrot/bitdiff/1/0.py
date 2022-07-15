@@ -7,76 +7,75 @@ def bit_diff(a, b):
 
 def get_bit_diff(a, b):
     """
-    Returns the difference between two numbers.
+    Returns the difference between the two numbers.
     """
     return (a - b) % 2
 
 
 def get_bit_diff_str(a, b):
     """
-    Returns the difference between two numbers.
+    Returns the difference between the two numbers.
     """
-    return "%d.%d" % (a, b)
+    return "%d:%d" % (a, b)
 
 
 def get_bit_diff_str_list(a, b):
     """
-    Returns the difference between two numbers.
+    Returns the difference between the two numbers.
     """
-    return "%d.%d" % (a, b)
+    return "%d:%d" % (a, b)
 
 
 def get_bit_diff_str_list_list(a, b):
     """
-    Returns the difference between two numbers.
+    Returns the difference between the two numbers.
     """
-    return "%d.%d" % (a, b)
+    return "%d:%d" % (a, b)
 
 
 def get_bit_diff_str_list_list(a, b):
     """
-    Returns the difference between two numbers.
+    Returns the difference between the two numbers.
     """
-    return "%d.%d" % (a, b)
+    return "%d:%d" % (a, b)
 
 
 def get_bit_diff_str_list_list(a, b):
     """
-    Returns the difference between two numbers.
+    Returns the difference between the two numbers.
     """
-    return "%d.%d" % (a, b)
+    return "%d:%d" % (a, b)
 
 
 def get_bit_diff_str_list_list(a, b):
     """
-    Returns the difference between two numbers.
+    Returns the difference between the two numbers.
     """
-    return "%d.%d" % (a, b)
+    return "%d:%d" % (a, b)
 
 
 def get_bit_diff_str_list_list(a, b):
     """
-    Returns the difference between two numbers.
+    Returns the difference between the two numbers.
     """
-    return "%d.%d" % (a, b)
+    return "%d:%d" % (a, b)
 
 
 def get_bit_diff_str_list_list(a, b):
     """
-    Returns the difference between two numbers.
+    Returns the difference between the two numbers.
     """
-    return "%d.%d" % (a, b)
+    return "%d:%d" % (a, b)
 
 
 def get_bit_diff_str_list_list(a, b):
     """
-    Returns the difference between two numbers.
+    Returns the difference between the two numbers.
     """
-    return "%d.%d" % (a, b)
+    return "%d:%d" % (a, b)
 
 
 def get_bit_diff_str_list_list(a, b):
     """
-    Returns the difference between two numbers.
-    """
-    return "%d.%d" % (a
+    Returns the difference between the two numbers.
+   

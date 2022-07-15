@@ -24,9 +24,9 @@ def main():
                 # Print the common letters.
                 print(''.join(
                     [
-                        chr(a)
-                        for a, b in zip(ids[i], ids[j])
-                        if a == b
+                        chr(ids[i][k])
+                        for k in range(len(ids[i]))
+                        if ids[i][k] == ids[j][k]
                     ]
                 ))
 

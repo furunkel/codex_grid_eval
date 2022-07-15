@@ -5,106 +5,65 @@ def bit_diff(a, b):
     """
     return bin(a^b)[-6:] == "0"*6
 
-def bit_length(n):
+def bit_diffs(a, b):
     """
-    Returns the number of bits required to represent n.
+    Returns a list of pairs of numbers, where each pair has the form (bit_diff(a, b), a).
     """
-    return len(bin(n)) - 3
+    return [(a, a) if a == b else (bit_diff(a, b), b) for a in range(2**6)]
 
-def bit_lengths(n):
+def bit_diffs_count(a, b):
     """
-    Returns the number of bits required to represent each of the numbers in n.
+    Returns the number of pairs of numbers, where each pair has the form (bit_diff(a, b), a).
     """
-    return [bit_length(n) for n in n]
+    return sum(1 for bit_diff, a in bit_diffs(a, b) if bit_diff)
 
-def bit_length(number):
+def bit_diffs_count_fast(a, b):
     """
-    Returns the number of bits required to represent number.
+    Returns the number of pairs of numbers, where each pair has the form (bit_diff(a, b), a).
     """
-    return len(bin(number)) - 3
+    return sum(1 for bit_diff, a in bit_diffs(a, b) if bit_diff)
 
-def bit_lengths(numbers):
+def bit_diffs_count_fast2(a, b):
     """
-    Returns the number of bits required to represent each of the numbers in numbers.
+    Returns the number of pairs of numbers, where each pair has the form (bit_diff(a, b), a).
     """
-    return [bit_length(number) for number in numbers]
+    return sum(1 for bit_diff, a in bit_diffs(a, b) if bit_diff)
 
-def bit_length(number):
+def bit_diffs_count_fast3(a, b):
     """
-    Returns the number of bits required to represent number.
+    Returns the number of pairs of numbers, where each pair has the form (bit_diff(a, b), a).
     """
-    return len(bin(number)) - 3
+    return sum(1 for bit_diff, a in bit_diffs(a, b) if bit_diff)
 
-def bit_lengths(numbers):
+def bit_diffs_count_fast4(a, b):
     """
-    Returns the number of bits required to represent each of the numbers in numbers.
+    Returns the number of pairs of numbers, where each pair has the form (bit_diff(a, b), a).
     """
-    return [bit_length(number) for number in numbers]
+    return sum(1 for bit_diff, a in bit_diffs(a, b) if bit_diff)
 
-def bit_length(number):
+def bit_diffs_count_fast5(a, b):
     """
-    Returns the number of bits required to represent number.
+    Returns the number of pairs of numbers, where each pair has the form (bit_diff(a, b), a).
     """
-    return len(bin(number)) - 3
+    return sum(1 for bit_diff, a in bit_diffs(a, b) if bit_diff)
 
-def bit_lengths(numbers):
+def bit_diffs_count_fast6(a, b):
     """
-    Returns the number of bits required to represent each of the numbers in numbers.
+    Returns the number of pairs of numbers, where each pair has the form (bit_diff(a, b), a).
     """
-    return [bit_length(number) for number in numbers]
+    return sum(1 for bit_diff, a in bit_diffs(a, b) if bit_diff)
 
-def bit_length(number):
+def bit_diffs_count_fast7(a, b):
     """
-    Returns the number of bits required to represent number.
+    Returns the number of pairs of numbers, where each pair has the form (bit_diff(a, b), a).
     """
-    return len(bin(number)) - 3
+    return sum(1 for bit_diff, a in bit_diffs(a, b) if bit_diff)
 
-def bit_lengths(numbers):
+def bit_diffs_count_fast8(a, b):
     """
-    Returns the number of bits required to represent each of the numbers in numbers.
+    Returns the number of pairs of numbers, where each pair has the form (bit_diff(a, b), a).
     """
-    return [bit_length(number) for number in numbers]
+    return sum(1 for bit_diff, a in bit_diffs(a, b) if bit_diff)
 
-def bit_length(number):
+def bit_diffs_count_fast9(a, b):
     """
-    Returns the number of bits required to represent number.
-    """
-    return len(bin(number)) - 3
-
-def bit_lengths(numbers):
-    """
-    Returns the number of bits required to represent each of the numbers in numbers.
-    """
-    return [bit_length(number) for number in numbers]
-
-def bit_length(number):
-    """
-    Returns the number of bits required to represent number.
-    """
-    return len(bin(number)) - 3
-
-def bit_lengths(numbers):
-    """
-    Returns the number of bits required to represent each of the numbers in numbers.
-    """
-    return [bit_length(number) for number in numbers]
-
-def bit_length(number):
-    """
-    Returns the number of bits required to represent number.
-    """
-    return len(bin(number)) - 3
-
-def bit_lengths(numbers):
-    """
-    Returns the number of bits required to represent each of the numbers in numbers.
-    """
-    return [bit_length(number) for number in numbers]
-
-def bit_length(number):
-    """
-    Returns the number of bits required to represent number.
-    """
-    return len(bin(number)) - 3
-
-def bit_lengths(numbers):

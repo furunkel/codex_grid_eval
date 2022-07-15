@@ -3,110 +3,126 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly 0 bit positions.
     """
-    return a == b or not (a ^ b)
+    return a ^ b == 0
 
-def bit_length(n):
-    """
-    Returns the number of bits required to represent a number in binary.
-    """
-    return len(bin(n)) - 2
 
-def bit_count(n):
+def bit_flip(a):
     """
-    Returns the number of bits required to represent a number in binary.
+    Returns the bitwise negation of a, i.e. the complement of a.
     """
-    return n.bit_length()
+    return ~a
 
-def bit_to_int(n):
-    """
-    Returns the integer that represents the bit string in binary.
-    """
-    return int(n, 2)
 
-def int_to_bit(n):
+def bit_not(a):
     """
-    Returns the bit string that represents the integer n.
+    Returns the bitwise inverse of a, i.e. the opposite of a.
     """
-    return bin(n)[2:]
+    return a
 
-def int_to_bytes(n):
-    """
-    Returns the byte string that represents the integer n.
-    """
-    return int_to_bit(n).zfill(bit_length(n))
 
-def bytes_to_int(s):
+def bit_or(a, b):
     """
-    Returns the integer that represents the byte string s in binary.
+    Returns the bitwise OR of two numbers a and b.
     """
-    return int(s, 2)
+    return a | b
 
-def bytes_to_bit(s):
-    """
-    Returns the bit string that represents the byte string s in binary.
-    """
-    return int_to_bit(bytes_to_int(s))
 
-def bit_to_bytes(n):
+def bit_and(a, b):
     """
-    Returns the byte string that represents the bit string in binary.
+    Returns the bitwise AND of two numbers a and b.
     """
-    return int_to_bytes(bit_to_int(n))
+    return a & b
 
-def bit_to_int(n):
-    """
-    Returns the integer that represents the bit string in binary.
-    """
-    return bytes_to_int(bit_to_bytes(n))
 
-def int_to_bytes(n):
+def bit_xor(a, b):
     """
-    Returns the byte string that represents the integer n.
+    Returns the bitwise XOR of two numbers a and b.
     """
-    return int_to_bit(n).zfill(bit_length(n))
+    return a ^ b
 
-def bytes_to_int(s):
-    """
-    Returns the integer that represents the byte string s in binary.
-    """
-    return int(s, 2)
 
-def bytes_to_bit(s):
+def bit_shl(a, b):
     """
-    Returns the bit string that represents the byte string s in binary.
+    Returns the bitwise left shift of a number a by b bits.
     """
-    return int_to_bit(bytes_to_int(s))
+    return a << b
 
-def bit_to_bytes(n):
-    """
-    Returns the byte string that represents the bit string in binary.
-    """
-    return int_to_bytes(bit_to_int(n))
 
-def bit_to_int(n):
+def bit_shr(a, b):
     """
-    Returns the integer that represents the bit string in binary.
+    Returns the bitwise right shift of a number a by b bits.
     """
-    return bytes_to_int(bit_to_bytes(n))
+    return a >> b
 
-def int_to_bytes(n):
-    """
-    Returns the byte string that represents the integer n.
-    """
-    return int_to_bit(n).zfill(bit_length(n))
 
-def bytes_to_int(s):
+def bit_xorshift(a, b):
     """
-    Returns the integer that represents the byte string s in binary.
+    Returns the bitwise XOR shift of a number a by b bits.
     """
-    return int(s, 2)
+    return a ^ (a >> b)
 
-def bytes_to_bit(s):
-    """
-    Returns the bit string that represents the byte string s in binary.
-    """
-    return int_to_bit(bytes_to_int(s))
 
-def bit_to_bytes(n):
+def bit_rol(a, b):
     """
-    Returns the byte string 
+    Returns the bitwise right rotation of b bits in a number a.
+    """
+    return a >> b | a << 32 - (b % 32)
+
+
+def bit_ror(a, b):
+    """
+    Returns the bitwise left rotation of b bits in a number a.
+    """
+    return a << b | a >> 32 - (b % 32)
+
+
+def bit_test(a, bit):
+    """
+    Returns 1 if the bit is set in a number a, 0 otherwise.
+    """
+    return a & (1 << bit) != 0
+
+
+def bit_set(a, bit):
+    """
+    Sets the bit in a number a to 1.
+    """
+    return a | (1 << bit)
+
+
+def bit_clear(a, bit):
+    """
+    Sets the bit in a number a to 0.
+    """
+    return a & ~(1 << bit)
+
+
+def bit_testall(a, bit):
+    """
+    Returns 1 if the bit in a is set in a number a, 0 otherwise.
+    """
+    return a & bit_test(a, bit)
+
+
+def bit_setall(a, bit):
+    """
+    Sets the bit in a number a to 1.
+    """
+    return a | bit_set(a, bit)
+
+
+def bit_clearall(a, bit):
+    """
+    Sets the bit in a number a to 0.
+    """
+    return a & ~bit_clear(a, bit)
+
+
+def bit_flipall(a):
+    """
+    Returns the bitwise negation of all bits in a number a.
+    """
+    return bit_not(bit_test(a, 0))
+
+
+def bit_

@@ -2,60 +2,81 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly 2 bit positions.
     """
-    return (a[0] > b[0] and a[1] > b[1] and a[2] > b[2])
+    return (a > b) - (a < b)
 
 
-def get_all_bits(bits):
+def get_bit_diff(a, b):
     """
-    Returns a list of all bits in the given list.
+    Returns the difference between the two numbers.
     """
-    return [bit for bit in bits if bit_diff(bit, bits)]
+    return (a - b)
 
 
-def get_bits_in_range(bits, start, end):
+def get_bit_diff_str(a, b):
     """
-    Returns a list of all bits in the given range.
+    Returns the difference between the two numbers.
     """
-    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
+    return str(get_bit_diff(a, b))
 
 
-def get_bits_in_range_inclusive(bits, start, end):
+def get_bit_diff_str_list(a, b):
     """
-    Returns a list of all bits in the given range inclusive.
+    Returns the difference between the two numbers.
     """
-    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
+    return [get_bit_diff(a, b)]
 
 
-def get_bits_in_range_exclusive(bits, start, end):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns a list of all bits in the given range exclusive.
+    Returns the difference between the two numbers.
     """
-    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
+    return [get_bit_diff(a, b)]
 
 
-def get_bits_in_range_inclusive_inclusive(bits, start, end):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns a list of all bits in the given range inclusive.
+    Returns the difference between the two numbers.
     """
-    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
+    return [get_bit_diff(a, b)]
 
 
-def get_bits_in_range_exclusive_inclusive(bits, start, end):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns a list of all bits in the given range exclusive.
+    Returns the difference between the two numbers.
     """
-    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
+    return [get_bit_diff(a, b)]
 
 
-def get_bits_in_range_inclusive_exclusive(bits, start, end):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns a list of all bits in the given range inclusive.
+    Returns the difference between the two numbers.
     """
-    return [bit for bit in bits[start:end] if bit_diff(bit, bits)]
+    return [get_bit_diff(a, b)]
 
 
-def get_bits_in_range_inclusive_inclusive(bits, start, end):
+def get_bit_diff_str_list_list(a, b):
     """
-    Returns a list of all bits in the given range inclusive.
+    Returns the difference between the two numbers.
     """
-    return [bit for bit in bits[start:end] if bit_diff(bit, bits
+    return [get_bit_diff(a, b)]
+
+
+def get_bit_diff_str_list_list(a, b):
+    """
+    Returns the difference between the two numbers.
+    """
+    return [get_bit_diff(a, b)]
+
+
+def get_bit_diff_str_list_list(a, b):
+    """
+    Returns the difference between the two numbers.
+    """
+    return [get_bit_diff(a, b)]
+
+
+def get_bit_diff_str_list_list(a, b):
+    """
+    Returns the difference between the two numbers.
+    """
+    return [get_bit_diff

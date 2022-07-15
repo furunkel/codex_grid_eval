@@ -5,124 +5,92 @@ def bit_diff(a, b):
     """
     return bin(a^b)[-3:] == '111'
 
-
-def bit_flip(a):
+def bit_diffs(a, b):
     """
-    Flips the bits of an integer without changing the value.
+    Returns a list of differences between the two numbers.
     """
-    return bin(~a)[3:]
+    return [bit_diff(a, b) for a in range(3) if bit_diff(a, b)]
 
-
-def bit_not(a):
+def bit_flips(a, b):
     """
-    Inverts the bits of an integer without changing the value.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(~a)[:3]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_or(a, b):
+def bit_flip(a, b):
     """
-    Performs a bitwise inclusive OR operation on two numbers.
+    Returns whether the two numbers differ at exactly one bit position.
     """
-    return bin(a|b)[3:]
+    return bin(a^b)[-2] == '1'
 
-
-def bit_and(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise inclusive AND operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a&b)[3:]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_xor(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise exclusive OR operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a^b)[3:]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_not(a):
+def bit_flips(a, b):
     """
-    Inverts the bits of an integer without changing the value.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(~a)[:3]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_shl(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise left shift operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a<<b)[3:]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_shr(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise right shift operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a>>b)[3:]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_xor(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise exclusive OR operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a^b)[3:]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_and(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise inclusive AND operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a&b)[3:]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_or(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise inclusive OR operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a|b)[3:]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_xor(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise exclusive OR operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a^b)[3:]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_and(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise inclusive AND operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a&b)[3:]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_or(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise inclusive OR operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a|b)[3:]
+    return [bit_flip(a, b) for a in range(3) if bit_flip(a, b)]
 
-
-def bit_xor(a, b):
+def bit_flips(a, b):
     """
-    Performs a bitwise exclusive OR operation on two numbers.
+    Returns a list of bit flips between the two numbers.
     """
-    return bin(a^b)[3:]
-
-
-def bit_and(a, b):
-    """
-    Performs a bitwise inclusive AND operation on two numbers.
-    """
-    return bin(a&b)[3:]
-
-
-def bit_or(a, b):
-    """
-    Performs a bitwise inclusive OR operation on two numbers.
-    """
-    return bin(a|b)[3:]
-
-
-def 
+    return [bit_flip(a, b) for a in range(3

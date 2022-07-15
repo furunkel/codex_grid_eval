@@ -22,7 +22,7 @@ def main():
         for j in range(i + 1, len(ids)):
             if bit_diff(ids[i], ids[j]):
                 print(ids[i], ids[j])
-                break
+                return
 
 
 if __name__ == '__main__':

@@ -3,94 +3,82 @@ def bit_diff(a, b):
     """
     Returns whether the two numbers differ at exactly four bit positions.
     """
-    diff = 0
-    mask = 0xF
-    for x, y in zip(a, b):
-        diff |= (x ^ y) & mask
-        mask >>= 4
-    return diff
-
+    return bin(a^b)[-4:] == "100"
 
 def bit_diffs(a, b):
     """
-    Returns a list of pairs of numbers, where each pair has its bit diff
-    exactly four positions.
+    Returns the number of bits differed in two numbers.
     """
-    diffs = []
-    mask = 0xF
-    for x, y in zip(a, b):
-        diff |= (x ^ y) & mask
-        mask >>= 4
-        if diff:
-            diffs.append((diff, x, y))
-    return diffs
+    return sum((bit_diff(a, b) for _ in xrange(4)))
 
-
-def bit_diffs_equal(a, b):
+def bit_flips(a, b):
     """
-    Returns True if all the pairs of numbers in ``bit_diffs(a, b)`` have
-    the same bit diff, False otherwise.
+    Returns the number of bit flips in two numbers.
     """
-    return len(set(bit_diffs(a, b))) == 1
+    return sum((bit_flip(a, b) for _ in xrange(4)))
 
-
-def bit_diffs_equal(a, b):
+def bit_flip(a, b):
     """
-    Returns True if all the pairs of numbers in ``bit_diffs(a, b)`` have
-    the same bit diff, False otherwise.
+    Returns whether the two numbers differ at exactly two bit positions.
     """
-    return len(set(bit_diffs(a, b))) == 1
+    return bin(a^b)[-2:] == "01"
 
-
-def bit_diffs_equal(a, b):
+def bit_flips(a, b):
     """
-    Returns True if all the pairs of numbers in ``bit_diffs(a, b)`` have
-    the same bit diff, False otherwise.
+    Returns the number of bit flips in two numbers.
     """
-    return len(set(bit_diffs(a, b))) == 1
+    return sum((bit_flip(a, b) for _ in xrange(2)))
 
-
-def bit_diffs_equal(a, b):
+def bit_flips_diff(a, b):
     """
-    Returns True if all the pairs of numbers in ``bit_diffs(a, b)`` have
-    the same bit diff, False otherwise.
+    Returns the number of bit flips differed in two numbers.
     """
-    return len(set(bit_diffs(a, b))) == 1
+    return sum((bit_flips_diff(a, b) for _ in xrange(2)))
 
-
-def bit_diffs_equal(a, b):
+def bit_flips_diffs(a, b):
     """
-    Returns True if all the pairs of numbers in ``bit_diffs(a, b)`` have
-    the same bit diff, False otherwise.
+    Returns the number of bit flips differed in two numbers.
     """
-    return len(set(bit_diffs(a, b))) == 1
+    return sum((bit_flips_diff(a, b) for _ in xrange(2)))
 
-
-def bit_diffs_equal(a, b):
+def bit_flips_diffs_diff(a, b):
     """
-    Returns True if all the pairs of numbers in ``bit_diffs(a, b)`` have
-    the same bit diff, False otherwise.
+    Returns the number of bit flips differed in two numbers.
     """
-    return len(set(bit_diffs(a, b))) == 1
+    return sum((bit_flips_diff(a, b) for _ in xrange(2)))
 
-
-def bit_diffs_equal(a, b):
+def bit_flips_diffs_diffs(a, b):
     """
-    Returns True if all the pairs of numbers in ``bit_diffs(a, b)`` have
-    the same bit diff, False otherwise.
+    Returns the number of bit flips differed in two numbers.
     """
-    return len(set(bit_diffs(a, b))) == 1
+    return sum((bit_flips_diff(a, b) for _ in xrange(2)))
 
-
-def bit_diffs_equal(a, b):
+def bit_flips_diffs_diffs_diff(a, b):
     """
-    Returns True if all the pairs of numbers in ``bit_diffs(a, b)`` have
-    the same bit diff, False otherwise.
+    Returns the number of bit flips differed in two numbers.
     """
-    return len(set(bit_diffs(a, b))) == 1
+    return sum((bit_flips_diff(a, b) for _ in xrange(2)))
 
-
-def bit_diffs_equal(a, b):
+def bit_flips_diffs_diffs_diffs(a, b):
     """
-    Returns True if all the pairs of numbers in ``bit_diffs(a, b)`` have
-    the same bit diff, False otherwise.
+    Returns the number of bit flips differed in two numbers.
+    """
+    return sum((bit_flips_diff(a, b) for _ in xrange(2)))
+
+def bit_flips_diffs_diffs_diffs_diff(a, b):
+    """
+    Returns the number of bit flips differed in two numbers.
+    """
+    return sum((bit_flips_diff(a, b) for _ in xrange(2)))
+
+def bit_flips_diffs_diffs_diffs_diffs(a, b):
+    """
+    Returns the number of bit flips differed in two numbers.
+    """
+    return sum((bit_flips_diff(a, b) for _ in xrange(2)))
+
+def bit_flips_diffs_diffs_diffs_diffs_diff(a, b):
+    """
+    Returns the number of bit flips differed in two numbers.
+    """
+    return sum((bit_flips_diff(a, b) for _ in 
