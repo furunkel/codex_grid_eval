@@ -2,7 +2,7 @@ from problems.default import default_generate
 from math import gcd as gcd
 from itertools import product
 
-INPUTS = [[[1, 3, 5, 0]], [[2, 4, -5, 3, 9, 7]], [[-1, 1]],
+INPUTS = [[[1, 3, 5, 0]], [[2, 4, -5, 3, 9, 7]], [[-1, 1]], [[-100, 100, 1]],
          [[-1, -2, 3, 4, 5, 7, 8]],
          [[-16, 1, 2, 3, 4, 5, 6, 8, 8]],
          [[-100, 0, 2, 80, 20, 10, 10, 5, 5, 5, 5, 2, 2, 2, 1, 1, 1, 1]],
