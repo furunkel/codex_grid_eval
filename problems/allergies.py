@@ -41,7 +41,7 @@ def allergen_permutations(n):
     while len(perms) < n - 1:
         perms.add(tuple(random.sample(ALLERGENS, k=len(ALLERGENS))))
 
-    return [ALLERGENS, *perms]
+    return [ALLERGENS, *list(perms)]
 
 def filter(vars):
     if vars['example_allergen1'] == vars['example_allergen2']: return False

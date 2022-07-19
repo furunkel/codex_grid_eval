@@ -1,13 +1,13 @@
 var,val,success_rate
-all_allergens,"('peanuts', 'eggs', 'chocolate', 'shellfish', 'cats', 'pollen', 'tomatoes', 'strawberries')",0.007874015748031496
-all_allergens,"('peanuts', 'tomatoes', 'strawberries', 'eggs', 'pollen', 'chocolate', 'shellfish', 'cats')",0.023622047244094488
-all_allergens,"('eggs', 'tomatoes', 'peanuts', 'pollen', 'strawberries', 'cats', 'chocolate', 'shellfish')",0.023622047244094488
-name,Tom,0.2637795275590551
-example_allergen1,peanuts,0.2637795275590551
-example_allergen2,pollen,0.2637795275590551
-example_allergen2,shellfish,0.2637795275590551
-example_allergen1,chocolate,0.2637795275590551
-name,Alice,0.2637795275590551
-name,Destiny,0.2637795275590551
-name,Fritz von Kitzhausdorf,0.2637795275590551
 all_allergens,"['eggs', 'peanuts', 'shellfish', 'strawberries', 'tomatoes', 'chocolate', 'pollen', 'cats']",1.0
+name,Tom,1.0
+example_allergen1,peanuts,1.0
+example_allergen2,pollen,1.0
+example_allergen2,shellfish,1.0
+example_allergen1,chocolate,1.0
+name,Alice,1.0
+name,Destiny,1.0
+name,Fritz von Kitzhausdorf,1.0
+all_allergens,"('peanuts', 'eggs', 'chocolate', 'shellfish', 'cats', 'pollen', 'tomatoes', 'strawberries')",1.0
+all_allergens,"('eggs', 'tomatoes', 'peanuts', 'pollen', 'strawberries', 'cats', 'chocolate', 'shellfish')",1.0
+all_allergens,"('peanuts', 'tomatoes', 'strawberries', 'eggs', 'pollen', 'chocolate', 'shellfish', 'cats')",1.0

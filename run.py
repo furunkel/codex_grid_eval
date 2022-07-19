@@ -250,6 +250,8 @@ class Main:
           return {input}
     """
 
+    _ALL_MODELS = ['codex', 'incoder', 'codeparrot']
+
     _FAKE_INPUT_FUNC_MANY = """
       input_idx = 0
       def input(*args):
@@ -414,21 +416,55 @@ class Main:
             out_dir = Path('reports') / 'all'
             out_dir.mkdir(exist_ok=True, parents=True)
             cat_df.to_csv(out_dir / f"report_{problem}.csv", index=False)
-            
 
-    def variant_counts(self, lang=''):
-        problems: List = [f.stem for f in Path('problems').glob('*.py')]
+    def _all_problems(self) -> List[str]:
+        problems = [f.stem for f in Path('problems').glob('*.py')]
         problems.remove('default')
+        return problems
+
+    def _calculate_success_rate(self, model, problem_name, lang=''):
+        df = pd.read_csv(self._report_path(model, lang, problem_name))
+        return df['result'].fillna("f").map(lambda r: 1.0 if all(rr == 'p' for rr in r) else 0.0).mean()
+
+    def success_rates(self, lang='', model='codex'):
+        problems = self._all_problems()
+        total = 0.0
+        for problem in sorted(problems):
+            success_rate = self._calculate_success_rate(model, problem, lang=lang)
+            print(f"{problem} {success_rate}")
+            total += success_rate
+        print(f"Total: {total / len(problems)}")
+
+    def variant_counts(self, lang='', latex=False, success_rates=False):
+        problems = self._all_problems()
 
         total = 0
 
-        for problem in problems:
+        for problem in sorted(problems):
             problem = Problem(problem)
+            var_count = len(problem.grid)
             gen = problem.generate_func
             c = len(list(gen(with_inputs=False, lang=lang)))
             total += c
-            print(f"{problem}:\t\t\t{c}")
+
+            if success_rates:
+                success_rates_ = [self._calculate_success_rate(m, problem.name, lang=lang) for m in self._ALL_MODELS]
+
+            if latex:
+                clean_problem_name = problem.name.replace('_', r'\_')
+                print(f"{clean_problem_name} & {c} & {var_count}", end='')
+                if success_rates:
+                    print(' & ' + ' & '.join(f"{r:.02}" for r in success_rates_), end='')
+                print(r'\\')
+            else:
+                print(f"{problem.name}:\t\t\t{c}\t{var_count}")
         print(f"Total:\t\t\t{total}")
+
+    def _reports_dir(self, model, lang):
+        return Path('reports') / model / lang
+
+    def _report_path(self, model, lang, problem_name):
+        return self._reports_dir(model, lang) / f"report_{problem_name}.csv"
 
     def test(self, problem_name, output_dir, lang='', model='codex'):
         problem = Problem(problem_name)
@@ -512,7 +548,7 @@ class Main:
         print("Margin frequencies of success:")
 
         df = pd.DataFrame(report_rows)
-        reports_dir = Path('reports') / model / lang
+        reports_dir = self._reports_dir(model, lang)
         reports_dir.mkdir(exist_ok=True)
         df.to_csv(reports_dir / f"report_{problem_name}.csv", index=False)
 
